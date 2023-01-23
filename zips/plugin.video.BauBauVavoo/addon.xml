@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.BauBauVavoo" version="1.0.1" name="[COLOR deepskyblue]BauBau[/COLOR] [COLOR white]Vavoo[/COLOR]" provider-name="dEXE">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="service.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<language>en</language>
+		<platform>all</platform>
+		<summary lang="en">BauBau Vavoo</summary>
+		<description lang="en">Live TV</description>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content.</disclaimer>
+		<license>GNU General Public License v3.0</license>
+		<assets>
+			<icon>icon.png</icon>  
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
