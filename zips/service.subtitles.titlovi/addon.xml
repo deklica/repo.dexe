@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.subtitles.titlovi"
+       name="Titlovi.com Unofficial"
+       version="1.3.0"
+       provider-name="dEXE, tturkalj">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.22.0"/>
+        <import addon="script.module.simplecache" version="2.0.0"/>
+    </requires>
+    <extension point="xbmc.subtitle.module" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Titlovi.com Subtitles Addon</summary>
+        <description lang="en_GB">Search and download subtitles for movies and tv series from [B]Titlovi.com[/B].[CR]And if you wish, convert serbian latin to cyrillic or vice versa.[CR]Supported languages: English, Serbian, Croatian, Bosnian, Macedonian and Slovenian.[CR][CR]When using manual search for [B]TV shows[/B] please use this example format for season and episode numbers:[CR]The Wire [B]S01E01[/B] or The Wire [B]S1E1[/B][CR][CR]Tip:[CR]Use [B]E00[/B] or [B]E0[/B] for season pack, [B]S00E00[/B] or [B]S0E0[/B] for all episodes pack, and IMDb tag e.g. [B]tt1234567[/B] for more precise search...</description>
+        <description lang="hr_HR">Pretražite i preuzmite podnaslove sa [B]Titlovi.com[/B].[CR][CR]Kada koristite prilagođenu pretragu za [B]TV serije[/B] koristite format za sezonu i epizodu kao u ovom primjeru:[CR]The Wire [B]S01E01[/B] ili The Wire [B]S1E1[/B][CR][CR]Savjet:[CR]Koristite [B]E00[/B] ili [B]E0[/B] za sezonski paket, [B]S00E00[/B] ili [B]S0E0[/B] za paket svih epizoda i IMDb oznaku, npr. [B]tt1234567[/B] za precizniju pretragu</description>
+        <description lang="sr_RS">Pretražite i preuzmite titlove sa [B]Titlovi.com[/B].[CR][CR]Kada koristite ručno pretraživanje za [B]TV serije[/B] koristite format za sezonu i epizodu kao u ovom primeru:[CR]The Wire [B]S01E01[/B] ili The Wire [B]S1E1[/B][CR][CR]Tip:[CR]Koristite [B]E00[/B] ili [B]E0[/B] za sezonski paket, [B]S00E00[/B] ili [B]S0E0[/B] za paket svih epizoda i IMDb tag na pr. [B]tt1234567[/B] za preciznije pretraživanje...</description>
+        <disclaimer lang="en_GB">Users need to provide [B]Titlovi.com[/B] username and password in add-on configuration</disclaimer>
+        <disclaimer lang="hr_HR">Korisnici moraju upisati [B]Titlovi.com[/B] korisničko ime i lozinku u postavke dodatka</disclaimer>
+        <disclaimer lang="sr_RS">Korisnici moraju da unesu [B]Titlovi.com[/B] korisničko ime i lozinku u podešavanjima dodatka</disclaimer>
+        <news>[B]Prerađen oficijalni Titlovi.com addon v1.2.0...[/B]
+
+[B]Ispravke:[/B]
+- pronalaženje titlova serija koje u imenu fajla imaju naziv epizode
+- pronalaženje i prikaz i ćiriličnih titlova ukoliko je izabran srpski jezik
+- pronalaženje sezonskih titlova (cela sezona u jednom fajlu, netflix), posledica toga je da za pojedinačne titlove izbacuje u prikazu sve titlove sezone umesto samo za datu epizodu
+- omogućena i jednocifrena pretraga sezona i epizoda (dozvoljen format je 'S##E##', broj ## je ranga 0-99)
+- sređena notifikacija/greška koja izlazi ukoliko ne nađe nikakav rezultat
+- sređen prikaz svih notifikacija/grešaka
+- izmenjen prikaz rezultata pretrage, radi lakšeg izbora titla:
+  ispis naziva serije/filma
+  dodata godina (naročito korisno kod filmova sa istim nazivom iz različitih godina)
+  sređen prikaz sezone/epizode
+- sređeno sortiranje titlova iz zip fajla sezone, koji se randomizirao ukoliko je već skinut i čita se iz keša
+
+[B]Dodato:[/B]
+- srpski jezik interfejsa
+- prikaz logo-a
+- izmene tektualno-vizuelne i u strukturi fajlova
+        </news>
+        <language>en sr hr bs mk sl</language>
+        <platform>all</platform>
+		<license>GNU General Public License v3.0</license>
+        <website>https://dexe.win</website>
+        <email>info [at] titlovi {dot} com</email>
+        <forum>https://forum.titlovi.com/titlovicom-oficijalni-kodi-plugin_t87385_n1.html</forum>
+        <source>https://github.com/deklica/service.subtitles.titlovi</source>
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
+            <banner></banner>
+            <clearlogo></clearlogo>
+			<screenshot>resources/media/screenshot-1.jpg</screenshot>
+			<screenshot>resources/media/screenshot-2.jpg</screenshot>
+			<screenshot>resources/media/screenshot-3.jpg</screenshot>
+		</assets>
+    </extension>
+</addon>
