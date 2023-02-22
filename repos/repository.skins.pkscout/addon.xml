@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.skins.pkscout" name="pkscout's Skin Modifications" version="1.2.1" provider-name="pkscout">
+	<extension point="xbmc.addon.repository" name="Skin modifications by pkscout">
+		<dir minversion="20.0.0">
+			<info>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/addons.xml</info>
+			<checksum>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.github.com/pkscout/repository.skins.pkscout/nexus/download</datadir>
+			<artdir>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/download</artdir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="19.0.0" maxversion="19.9.0">
+			<info compressed="true">https://raw.github.com/pkscout/repository.skins.pkscout/matrix/addons.xml</info>
+			<checksum>https://raw.github.com/pkscout/repository.skins.pkscout/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.github.com/pkscout/repository.skins.pkscout/matrix/download</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="17.0.0" maxversion="18.9.0">
+			<info compressed="true">https://raw.github.com/pkscout/repository.skins.pkscout/helix/addons.xml</info>
+			<checksum>https://raw.github.com/pkscout/repository.skins.pkscout/helix/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.github.com/pkscout/repository.skins.pkscout/helix/download</datadir>
+			<hashes>false</hashes>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Install skin modifications by pkscout</summary>
+		<description lang="en">Download and install skin modifications from pkscout.</description>
+		<disclaimer lang="en">These skin mods are only lightly supported.</disclaimer>
+		<platform>all</platform>
+		<nofanart>true</nofanart>
+	</extension>
+</addon>

@@ -1,0 +1,8 @@
+[B]Version 4.0[/B]
+- Major Update and Base Change
+
+[B]Version 2.0[/B]
+- Repo update to GitHub
+
+[B]Version 1.0[/B]
+- First Release of the amazing add-on which has all your Kodi Needs catered for

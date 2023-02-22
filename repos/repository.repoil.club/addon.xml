@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.repoil.club" name="[COLOR white]Repo IL[/COLOR] [COLOR FF1864ab]Club[/COLOR]" version="1.1.0" provider-name="RepoIL.Club">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Repo IL Club">
+		<dir minversion="17.0.0">
+			<info>https://raw.githubusercontent.com/repoil/club/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/repoil/club/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/repoil/club/master/</datadir>
+		</dir>	
+		<dir minversion="19.0.0">
+			<info>https://raw.githubusercontent.com/repoil/club19/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/repoil/club19/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/repoil/club19/master/</datadir>
+		</dir>	
+	</extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repo IL Club</summary>
+        <description>All new addons you need</description>
+        <platform>all</platform>
+    </extension>
+</addon>

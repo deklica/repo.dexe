@@ -1,0 +1,4 @@
+[B]Version 1.0[/B]
+- ResolveURL and URLResolver official repository from jsergio123 and tvaddonsco respectively
+[B]Version 1.1[/B]
+- ResolveURL official repository from jsergio123
