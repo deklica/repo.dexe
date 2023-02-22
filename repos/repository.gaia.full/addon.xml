@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.gaia.full" version="6.1.0" name="Gaia Repository (Full)" provider-name="Gaia">
+	<extension point="xbmc.addon.repository" name="Gaia Repository (Full)">
+		<dir minversion="19.0.0">
+			<info compressed="false">https://github.com/gaiakodi/gaiamain/raw/master/addons.xml?v=6.1.0</info>
+			<checksum>https://github.com/gaiakodi/gaiamain/raw/master/addons.xml.md5?v=6.1.0</checksum>
+			<datadir zip="true">https://github.com/gaiakodi/gaiamain/raw/master/</datadir>
+		</dir>
+		<dir minversion="19.0.0">
+			<info compressed="false">https://github.com/gaiakodi/gaiamain/raw/master/common/addons.full.xml?v=6.1.0</info>
+			<checksum>https://github.com/gaiakodi/gaiamain/raw/master/common/addons.full.xml.md5?v=6.1.0</checksum>
+			<datadir zip="true">https://github.com/gaiakodi/gaiamain/raw/master/common/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Gaia Extended Repository</summary>
+		<description lang="en">The Gaia repository containing both essential and optional addons. The repository holds addons that are needed to install Gaia, but also has optional third-party addons that can be installed to extended the functionality of Gaia.</description>
+		<disclaimer lang="en">Gaia and its developers are not affiliated with Kodi or any of the services used in the addon. Gaia and its developers do not create, host, or distribute any of the content displayed in the addon. Gaia simply searches publicly available sources for content. Gaia is, and always will be, free and open-source. None of its code or resources may be sold or redistributed for commercial purposes.</disclaimer>
+
+		<platform>all</platform>
+		<license>GPL 3.0</license>
+
+		<website>https://gaiakodi.com</website>
+		<forum>https://gaiakodi.com/support</forum>
+
+		<assets>
+			<icon>resources/icon.png</icon>
+			<clearlogo>resources/clearlogo.png</clearlogo>
+			<fanart>resources/fanart.jpg</fanart>
+			<banner>resources/banner.jpg</banner>
+		</assets>
+	</extension>
+</addon>

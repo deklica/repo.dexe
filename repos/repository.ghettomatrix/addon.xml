@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <addon id="repository.ghettomatrix" name="Ghetto Astronaut Matrix Repo" version="1.1.1" provider-name="Ghetto Astronaut">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Ghetto Astronaut Matrix Repo">
+            <info compressed="false">http://famdamnlyman.one/Matrix/_zipfiles/addons.xml</info>
+            <checksum>http://famdamnlyman.one/Matrix/_zipfiles/addons.xml.md5</checksum>
+            <datadir zip="true">http://famdamnlyman.one/Matrix/_zipfiles/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Ghetto Astronaut Build Wizard Repo</summary>
+            <description>Ghetto Astronaut, Kodi 19, Build Wizard Repository</description>
+            <platform>all</platform>
+  <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+     </assets>
+            <genre>movies,usa</genre>
+        </extension>
+    </addon>

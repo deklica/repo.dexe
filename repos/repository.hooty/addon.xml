@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.hooty" name="Hooty's Repository" version="1.0" provider-name="Goldenfreddy0703">
+    <extension point="xbmc.addon.repository" name="Hooty's Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Goldenfreddy0703/repository.hooty/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Goldenfreddy0703/repository.hooty/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Goldenfreddy0703/repository.hooty/master/repo/zips/</datadir>
+        </dir>
+        <dir minversion="18.0.0" maxversion="18.9.9">
+            <info compressed="false">https://raw.githubusercontent.com/Goldenfreddy0703/repository.hooty/master/leia/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Goldenfreddy0703/repository.hooty/master/leia/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Goldenfreddy0703/repository.hooty/master/leia/zips/</datadir>
+        </dir>
+        <dir minversion="19.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/Goldenfreddy0703/repository.hooty/master/matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Goldenfreddy0703/repository.hooty/master/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Goldenfreddy0703/repository.hooty/master/matrix/zips/</datadir>
+        </dir>
+        <dir minversion="20.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/Goldenfreddy0703/repository.hooty/master/nexus/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Goldenfreddy0703/repository.hooty/master/nexus/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Goldenfreddy0703/repository.hooty/master/nexus/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Hooty's Repository</summary>
+        <description>A repository for maintained releases of addons</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

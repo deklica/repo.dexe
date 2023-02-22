@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.gsports" name="[COLOR yellow]G-Sports+ Repository[/COLOR]" version="1.2.0" provider-name="G-Man">
+<extension point="xbmc.addon.repository" name="G-Sport Repository">
+    <dir>
+        <info compressed="false">https://github.com/mrgsi/repository.gsports/raw/master/addons.xml</info>
+        <checksum>https://github.com/mrgsi/repository.gsports/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.gsports/master/</datadir>
+    </dir>  
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/mrgsi/repository.glive/master/addons.xml</info>   <checksum>https://raw.githubusercontent.com/mrgsi/repository.glive/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.glive/master/</datadir>
+    </dir>   
+    <dir>
+		<info compressed="false">https://mullafabz.xyz/Plugins/K19/Plugins/addons.xml</info>
+		<checksum>https://mullafabz.xyz/Plugins/K19/Plugins/addons.xml.md5</checksum>
+		<datadir zip="true">https://mullafabz.xyz/Plugins/K19/Plugins/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+	<summary>Kodi Sports and IPTV Add-ons</summary>
+    <description>A collection of Good Add-ons and Repos for On-Demand Sports and Live Sports.[CR]Works for Kodi 19/20</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+</extension>
+</addon>

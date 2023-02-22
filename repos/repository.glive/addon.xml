@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.glive" name="[COLOR orangered]G-Live Repository[/COLOR]" version="1.0.6" provider-name="G-Man">
+<extension point="xbmc.addon.repository" name="G-Live Repository">
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/mrgsi/repository.glive/master/addons.xml</info>   <checksum>https://raw.githubusercontent.com/mrgsi/repository.glive/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.glive/master/</datadir>
+    </dir>   
+</extension>
+<extension point="xbmc.addon.metadata">
+	<summary>A collection of Free-IPTV Add-ons</summary>
+    <description>These IPTV add-ons are free to use, but keep in mind Free IPTV services can be a bit unstable and break easily.</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+</extension>
+</addon>
