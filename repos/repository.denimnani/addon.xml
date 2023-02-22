@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.denimnani" name="DenimNani Repo" version="0.0.2" provider-name="DenimNani">
+	<extension point="xbmc.addon.repository" name="DenimNani Repo">
+	<dir>
+        <info compressed="false">https://raw.githubusercontent.com/denimnani/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/denimnani/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/denimnani/zips/master/</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">DenimNani repository.</summary>
+		<description lang="en"></description>
+		<platform>all</platform>
+	</extension>
+</addon>
