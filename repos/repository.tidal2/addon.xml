@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.tidal2" name="TIDAL2 Addons" version="0.2.1" provider-name="arneson">
+    <extension point="xbmc.addon.repository" name="TIDAL2 Addons">
+    	<dir maxversion="18.9.0">
+            <info compressed="false">https://github.com/arnesongit/repository.tidal2/raw/until-leia/addons.xml</info>
+            <checksum>https://github.com/arnesongit/repository.tidal2/raw/until-leia/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/arnesongit/repository.tidal2/raw/until-leia</datadir>
+            <hashes>false</hashes>
+    	</dir>
+        <dir minversion="19.0.0">
+            <info compressed="false">https://github.com/arnesongit/repository.tidal2/raw/main/addons.xml</info>
+            <checksum>https://github.com/arnesongit/repository.tidal2/raw/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/arnesongit/repository.tidal2/raw/main</datadir>
+            <hashes>false</hashes>
+    	</dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Install TIDAL2 Addons</summary>
+        <description>Download and install addons by arneson</description>
+        <platform>all</platform>
+    </extension>
+</addon>

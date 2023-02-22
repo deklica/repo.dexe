@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.xonfluence" name="Xonfluence Repository" version="1.0.2" provider-name="bsoriano">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Xonfluence Repo">
+		<dir minversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/bartolomesoriano/repository.xonfluence/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/bartolomesoriano/repository.xonfluence/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/bartolomesoriano/repository.xonfluence/master</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Xonfluence skin for Matrix</summary>
+		<description>Repository for Xonfluence</description>
+		<platform>all</platform>
+		<news>[I]v1.0.2[/I][CR]- Include Xonfluence backgrounds addon in repo</news>
+	</extension>
+</addon>

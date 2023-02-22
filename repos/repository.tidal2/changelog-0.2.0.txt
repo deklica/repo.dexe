@@ -1,0 +1,3 @@
+v0.2.0 (2021-04-08)
+- Branch "main" of repository.tidal2 contains addon versions for
+  Kodi 19 and later versions.

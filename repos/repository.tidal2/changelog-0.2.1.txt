@@ -1,0 +1,2 @@
+v0.2.1 (2022-04-09)
+- Modifies addon structure for Leis/Matrix/Nexus
