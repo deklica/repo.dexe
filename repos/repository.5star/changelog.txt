@@ -1,0 +1,5 @@
+[B]6.1.0[/B] - Kodi 20
+[B]1.0.8[/B] - LastPlayed Kodi 18
+[B]1.0.4[/B] - autoSRT
+[B]1.0.3[/B] - New site starmovies.org
+[B]1.0.1[/B] - Initial Release

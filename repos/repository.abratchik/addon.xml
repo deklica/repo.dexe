@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.abratchik"
+    version="1.0.2"
+    name="Alex Bratchik Kodi repository"
+    provider-name="Alex Bratchik">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Alex Bratchik Kodi repository">
+        <dir minversion="18.0" maxversion="18.9.0">
+            <info compressed="false">https://abratchik.github.io/kodi.repository/leia/addons.xml</info>
+            <checksum>https://abratchik.github.io/kodi.repository/leia/addons.xml.md5</checksum>
+            <datadir zip="true">https://abratchik.github.io/kodi.repository/leia/</datadir>
+        </dir>
+        <dir minversion="18.9.1">
+            <info compressed="false">https://abratchik.github.io/kodi.repository/matrix/addons.xml</info>
+            <checksum>https://abratchik.github.io/kodi.repository/matrix/addons.xml.md5</checksum>
+            <datadir zip="true">https://abratchik.github.io/kodi.repository/matrix/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <news>First release for Multi-version</news>
+        <summary lang="en_GB">Alex Bratchik Kodi repository</summary>
+        <description lang="en_GB">This repository is created for distributing my own Kodi plugins. Enjoy!</description>
+        <disclaimer lang="en_GB">This repository is non-commercial GPL-3. You may use it as is at your own discretion and risk.
+        </disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
