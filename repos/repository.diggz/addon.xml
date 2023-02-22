@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.diggz" name="Diggz Repository" version="6" provider-name="Diggz">
+    <extension point="xbmc.addon.repository" name="Diggz Repository">
+        <dir minversion="18.9.0" maxversion="19.9.0">
+            <info compressed="false">https://archive.org/download/matrixrepo/_repo/addons.xml</info>
+            <checksum>https://archive.org/download/matrixrepo/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://archive.org/download/matrixrepo/_repo/</datadir>
+        </dir>
+        <dir minversion="19.9.1">
+            <info compressed="false">https://archive.org/download/nexusrepo/_repo//addons.xml</info>
+            <checksum>https://archive.org/download/nexusrepo/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://archive.org/download/nexusrepo/_repo/</datadir>
+        </dir>
+        <dir minversion="18.9.0" maxversion="19.9.0">
+            <info compressed="false">https://diggz1.me/Repo/_repo/addons.xml</info>
+            <checksum>https://diggz1.me/Repo/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://diggz1.me/Repo/_repo/</datadir>
+        </dir>
+        <dir minversion="19.9.1">
+            <info compressed="false">https://diggz1.me/Nexus_Repo/_repo/addons.xml</info>
+            <checksum>https://diggz1.me/Nexus_Repo/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://diggz1.me/Nexus_Repo/_repo/</datadir>
+        </dir>		
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/</datadir>
+        </dir>
+		<dir minversion="18.0" maxversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/leia/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/leia/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/leia/zips/</datadir>
+        </dir>
+        <dir minversion="18.9.0" maxversion="19.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/matrix/zips/</datadir>
+        </dir>
+        <dir minversion="19.9.1">
+            <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/nexusrepo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/nexusrepo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/nexusrepo/zips/</datadir>
+        </dir>		
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Diggz Repository</summary>
+        <description>Diggz Kodi Repository.</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>

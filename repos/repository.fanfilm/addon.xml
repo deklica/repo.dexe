@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	    <addon id="repository.fanfilm" name="FanFilm repo" version="0.9" provider-name="fanfilm">
+			<extension point="xbmc.addon.repository" name="FanFilm repo">
+				<dir maxversion="17.9.0">
+					<info compressed="false">https://raw.githubusercontent.com/fanfilm/repository.fanfilm/master/zips/addons.xml</info>
+					<checksum>https://raw.githubusercontent.com/fanfilm/repository.fanfilm/master/zips/addons.xml.md5</checksum>
+					<datadir zip="true">https://raw.github.com/fanfilm/repository.fanfilm/master/zips</datadir>
+				</dir>
+				<dir minversion="18.9.0">
+					<info compressed="false">https://raw.githubusercontent.com/fanfilm/repository.fanfilm/master/zips19/addons.xml</info>
+					<checksum>https://raw.githubusercontent.com/fanfilm/repository.fanfilm/master/zips19/addons.xml.md5</checksum>
+					<datadir zip="true">https://raw.github.com/fanfilm/repository.fanfilm/master/zips19</datadir>
+				</dir>
+				<dir> <!-- https://raw.githubusercontent.com/fanfilm/repository.fanfilm/master/zips19/addons.xmlresolvera -->
+					<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+					<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+					<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+				</dir>
+				<dir minversion="18.9.701" maxversion="19.8.999">
+            		<info compressed="false">https://zip.libka.pl/dists/main/19/addons.xml</info>
+            		<checksum>https://zip.libka.pl/dists/main/19/addons.xml.md5</checksum>
+            	<datadir zip="true">https://zip.libka.pl/pool/19/</datadir>
+        		</dir>
+        		<dir minversion="19.9">
+            		<info compressed="false">https://zip.libka.pl/dists/main/20/addons.xml</info>
+            		<checksum>https://zip.libka.pl/dists/main/20/addons.xml.md5</checksum>
+            		<datadir zip="true">https://zip.libka.pl/pool/20/</datadir>
+        		</dir>
+			</extension>
+			<extension point="xbmc.addon.metadata">
+				<summary>Repozytorium wtyczki FanFilm</summary>
+				<description>MrKnow tribute...</description>
+				<platform>all</platform>
+				<assets>
+				    <icon>icon.png</icon>
+				    <fanart>fanart.jpg</fanart>			
+				</assets>
+			</extension>
+    </addon>
