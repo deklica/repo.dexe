@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.lime" name="Lime Add-ons" version="1.0.2" provider-name="groggyegg">
+    <extension point="xbmc.addon.repository" name="Lime Add-ons">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/groggyegg/lime/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/groggyegg/lime/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/groggyegg/lime/master</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Lime Repository</summary>
+        <description lang="en_GB">Download and install add-ons from Lime Repository.</description>
+        <platform>all</platform>
+        <license>MIT License</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+</addon>

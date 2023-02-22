@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.lanik_p3" name="Lanik (Python 3) Repository" provider-name="Dalibor Lanik" version="1.0.0">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0" />
+        </requires>
+        <extension name="Lanik (Python 3) Repository" point="xbmc.addon.repository">
+            <info compressed="false">http://kodi.lanik.org/_p3repo/addons.xml</info>
+            <checksum>http://kodi.lanik.org/_p3repo/addons.xml.md5</checksum>
+            <datadir zip="true">http://kodi.lanik.org/_p3repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Repository for my KODI plugins</summary>
+            <description>KODI Repository for stuff made by D. Lanik</description>
+            <platform>all</platform>
+    </extension>
+</addon>
