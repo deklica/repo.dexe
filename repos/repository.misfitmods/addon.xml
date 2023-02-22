@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.misfitmods" name="[COLOR red][B]misfit mods:[/B][/COLOR] [COLOR snow][B]Repository[/B][/COLOR]" version="1.5" provider-name="The Turtle">
+	<extension point="xbmc.addon.repository" name="misfit mods: Repository">
+	    <info compressed="false">http://misfitmods.com/mmwiz/repo/files/addons.xml</info>
+        <checksum>http://misfitmods.com/mmwiz/repo/files/addons.xml.md5</checksum>
+        <datadir zip="true">http://misfitmods.com/mmwiz/repo/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Home of the Misfit Mods Wizard</summary>
+		<description lang="en"></description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+        </assets>
+	</extension>
+</addon>

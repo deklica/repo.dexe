@@ -1,0 +1,15 @@
+
+[B]4.5.0 (2022.09.09)[/B]
+- Fix for Kodi 20.
+
+[B]4.0.0 (2019.12.30)[/B]
+- Major new version upgrade.
+
+[B]3.3.0 (2019.08.12)[/B]
+- Version increase for new repository.
+
+[B]3.0.0 (2019.06.26)[/B]
+- Major version upgrade.
+
+[B]1.0.0 (2018.07.22)[/B]
+- Initial release.

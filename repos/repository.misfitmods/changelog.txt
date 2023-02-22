@@ -1,0 +1,10 @@
+
+[B]version 1.2[/B]
+- new wizard
+
+[B]version 1.1[/B]
+- fixed bugs
+
+[B]Version 1.0[/B]
+- Initial version
+
