@@ -82,6 +82,7 @@ repository.thewarehouse
 repository.tidal2
 repository.tikipeter
 repository.titan.bingie.mod
+repository.torrest
 repository.twilight0
 repository.twilight0.libs
 repository.umbrella
@@ -2406,6 +2407,38 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
             <fanart>fanart.jpg</fanart>
         </assets>
 	</extension>
+</addon>
+
+
+<addon id="repository.torrest" name="Torrest Add-on repository" provider-name="i96751414" version="0.0.7">
+    <requires>
+        <!--<import addon="xbmc.python" version="3.0.0"/>-->
+    </requires>
+    <extension point="xbmc.addon.repository">
+        <dir>
+            <info>http://127.0.0.1:61234/addons.xml</info>
+            <checksum>http://127.0.0.1:61234/addons.xml.md5</checksum>
+            <datadir>http://127.0.0.1:61234/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.python.script" library="default.py"/>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>See https://github.com/i96751414/repository.github/blob/master/LICENSE</license>
+        <source>https://github.com/i96751414/repository.github</source>
+        <summary lang="en">GitHub virtual Add-on repository</summary>
+        <description lang="en">Customizable repository which acts as a proxy for defined GitHub users' add-ons updates.</description>
+        <news>
+            - Add platform check support
+            - Fix arch detection for aarch with 32 bits
+            - Add support to Kodi 20
+            - Small improvements (os_platform, logging)
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
 </addon>
 
 
