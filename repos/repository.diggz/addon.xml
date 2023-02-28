@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.diggz" name="Diggz Repository" version="14" provider-name="Diggz">
+<addon id="repository.diggz" name="Diggz Repository" version="15" provider-name="Diggz">
     <extension point="xbmc.addon.repository" name="Diggz Repository">
         <dir minversion="19.0.0" maxversion="19.9.9">
             <info compressed="false">https://raw.githubusercontent.com/nebulous42069/Nexus/master/matrix/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/nebulous42069/Nexus/master/matrix/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/nebulous42069/Nexus/master/matrix/zips/</datadir>
         </dir>
-        <dir minversion="20.0.0" maxversion="20.9.9">
+        <dir minversion="20.0.0" maxversion="21.9.9">
             <info compressed="false">https://raw.githubusercontent.com/nebulous42069/Nexus/master/nexus/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/nebulous42069/Nexus/master/nexus/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/nebulous42069/Nexus/master/nexus/zips/</datadir>
