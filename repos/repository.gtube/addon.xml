@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.gtube" name="[COLOR snow]G-Tube Repository[/COLOR]" version="1.0.1" provider-name="G-Man">
+<extension point="xbmc.addon.repository" name="G-Tube Repository">
+    <dir>
+        <info compressed="false">https://github.com/mrgsi/repository.gtube/raw/master/addons.xml</info>
+        <checksum>https://github.com/mrgsi/repository.gtube/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.gtube/master/</datadir>
+    </dir>  
+    <dir>
+        <info compressed="false">http://j1wizard.net/butter-addons/_repo/addons.xml</info>
+        <checksum>http://j1wizard.net/butter-addons/_repo/addons.xml.md5</checksum>
+        <datadir zip="true">http://j1wizard.net/butter-addons/_repo/</datadir>
+    </dir>        
+    <dir>
+        <info compressed="false">https://Rockodi.com/Kodi-19/addons.xml</info>
+        <checksum>https://Rockodi.com/Kodi-19/addons.xml.md5</checksum>
+        <datadir zip="true">https://Rockodi.com/Kodi-19/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+	<summary>YouTube Category Add-ons</summary>
+    <description>A collection of Add-ons which focus on specific YouYube channels sorted by topic.[CR]You will need a personal YouTube api key from Google, entered into the Youtube add-on which will work on all the add-ons.[CR]Instruction video:[CR]https://youtu.be/N18czV5tj5o </description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+</extension>
+</addon>

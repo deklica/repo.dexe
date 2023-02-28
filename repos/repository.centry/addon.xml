@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.centry" name="centry" version="0.0.1" provider-name="centry">
+    <extension point="xbmc.addon.repository" name="centry">
+        <dir minversion="19.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/centry7/centry7.github.io/main/matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/centry7/centry7.github.io/main/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/centry7/centry7.github.io/main/matrix/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>centry</summary>
+        <description>Welcome to the world of free sports and live TV</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+        <!--
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        -->
+        </assets>
+    </extension>
+</addon>

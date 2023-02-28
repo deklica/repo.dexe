@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon	id="repository.One" name="[B][COLOR white]Repositorio[/COLOR]: [COLOR aquamarine]ONE[/COLOR][COLOR white]PLAY[/COLOR][/B]" version="1.10"	provider-name="TEAM [COLOR aquamarine]ONE[/COLOR][COLOR white]PLAY[/COLOR]">
+
+	<requires>
+    	<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+
+	<extension point="xbmc.addon.repository" name="OnePlay Repositorio">
+		<dir>
+    		<info compressed="false">https://github.com/Gujal00/smrzips/raw/master/addons.xml</info>
+    		<checksum>https://github.com/Gujal00/smrzips/raw/master/addons.xml.md5</checksum>
+    		<datadir zip="true">https://github.com/Gujal00/smrzips/raw/master/zips</datadir>
+			<hashes>false</hashes>
+		</dir>
+
+  		<dir minversion="17.0.0" maxversion="18.9.0">
+			<info compressed="false">https://onepod.inrupt.net/public/repooneplay/leia/addons.xml</info>
+			<checksum>https://onepod.inrupt.net/public/repooneplay/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/zoreu/OneRepo/raw/master/leia</datadir>
+			<hashes>false</hashes>
+    	</dir>
+
+  		<dir minversion="18.9.1">
+			<info compressed="false">https://onepod.inrupt.net/public/repooneplay/matrix/addons.xml</info>
+			<checksum>https://onepod.inrupt.net/public/repooneplay/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/zoreu/OneRepo/raw/master/matrix</datadir>
+			<hashes>false</hashes>
+    	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="pt_br">Repositorio Oficial OnePlay</summary>
+        <description lang="pt_br">Repositorio OnePlay - AGREGADOR de ADDONS, assim como o Google.com, apenas agrega e organiza ADDON OnePlay e Complementos.</description>
+        <disclaimer	lang="pt_br"></disclaimer>
+		<platform>all</platform>
+		<source>https://github.com/zoreu/OneRepo</source>
+		 <assets>
+            <icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+        </assets>
+	    <news></news>
+	</extension>
+</addon>

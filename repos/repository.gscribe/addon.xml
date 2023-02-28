@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.gscribe" name="[COLOR orange]G-Scribe Repository[/COLOR]" version="1.1.0" provider-name="G-Man">
+<extension point="xbmc.addon.repository" name="G-Scribe Repository">
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/mrgsi/repository.gscribe/master/addons.xml</info>       <checksum>https://raw.githubusercontent.com/mrgsi/repository.gscribe/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.gscribe/master/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages-py3/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages-py3/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages-py3/</datadir>
+    </dir>        
+    <dir>
+        <info compressed="false">https://k.slyguy.xyz/.repo/addons.xml</info>
+        <checksum>https://k.slyguy.xyz/.repo/addons.xml.md5</checksum>
+        <datadir zip="true">https://k.slyguy.xyz/.repo/</datadir>
+    </dir>
+    <dir minversion="19.0.0">
+		<info compressed="false">https://github.com/CastagnaIT/repository.castagnait/raw/kodi/kodi19/addons.xml</info>
+        <checksum>https://github.com/CastagnaIT/repository.castagnait/raw/kodi/kodi19/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/CastagnaIT/repository.castagnait/raw/kodi/kodi19</datadir>
+	</dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Dis90/repository.dis90/matrix/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Dis90/repository.dis90/matrix/zips/addons.xml.md5</checksum>
+       <datadir zip="true">https://raw.githubusercontent.com/Dis90/repository.dis90/matrix/zips/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+	<summary>A repository of Subscription Add-ons</summary>
+    <description>Access your paid Streaming subsriptions with these add-ons.</description>
+    <platform>all</platform>
+    <assets>
+    <icon>icon.png</icon>
+    </assets>
+</extension>
+</addon>

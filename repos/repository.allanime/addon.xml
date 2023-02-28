@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.allanime" name="[COLOR aqua]All Anime Repository[/COLOR]" version="1.0.1" provider-name="G-Man">
+<extension point="xbmc.addon.repository" name="All Anime Repository">
+    <dir>
+        <info compressed="false">https://github.com/mrgsi/repository.allanime/raw/master/addons.xml</info>
+        <checksum>https://github.com/mrgsi/repository.allanime/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.allanime/master/</datadir>
+    </dir> 
+    <dir>
+        <info compressed="false">https://github.com/mrgsi/repository.wnt2/raw/master/addons.xml</info>
+        <checksum>https://github.com/mrgsi/repository.wnt2/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.wnt2/master/</datadir>
+    </dir> 
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/pikdum/repository.pikdum/master/repo/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/pikdum/repository.pikdum/master/repo/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/pikdum/repository.pikdum/master/repo/zips/</datadir>
+    </dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Nothing but Anime Add-ons here</summary>
+    <description>If you like Anime, these are the best for Kodi Matrix</description>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+</extension>
+</addon>
