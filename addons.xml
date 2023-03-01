@@ -51,8 +51,6 @@ resource.font.robotocjksc
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.beautifulsoup4" />
 		<import addon="script.module.requests" />
-
-
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="main.py">
 		<provides>video</provides>
@@ -61,7 +59,6 @@ resource.font.robotocjksc
 	<extension point="kodi.context.item">
 		<menu id="kodi.core.main">
 			<menu>
-
 				<label>[COLOR red]Premiumizer[/COLOR]</label>
 				<item library="context/updatecache.py">
 					<label>New Cloud Cache</label>
@@ -78,12 +75,10 @@ resource.font.robotocjksc
 			</menu>
 		</menu>
 	</extension>
-
 	<extension point="xbmc.addon.metadata">
         <description>Premiumize Cloud Addon with a twist!
 		This addon is inteded for use with content that you currently own! The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.
 		</description>
-
 		<summary lang="en">premiumizer Cloud Addon</summary>
 		<platform>all</platform>
 		<forum>-</forum>
@@ -125,7 +120,7 @@ resource.font.robotocjksc
 2018.01.04
 
 - Initial Release
-                </news>
+        </news>
 	</extension>
 </addon>
 
@@ -135,20 +130,13 @@ resource.font.robotocjksc
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.beautifulsoup4" />
 		<import addon="script.module.requests" />
-
-
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="main.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="startup" />
-
-
 	<extension point="xbmc.addon.metadata">
-        <description>Cloud Addon with a twist!
-		This addon is inteded for use with content that you currently own! The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.
-		</description>
-
+        <description>Cloud Addon with a twist![CR]This addon is inteded for use with content that you currently own! The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</description>
 		<summary lang="en">Realizer Cloud Addon</summary>
 		<platform>all</platform>
 		<forum>-</forum>
@@ -172,7 +160,7 @@ resource.font.robotocjksc
 2019.01.22 - Improved matching titles and torrent checks
 2019.01.20 - Fixed Scraping Bugs and fallback for Torrent Packs
 2019.x.x - Initial Release
-                </news>
+        </news>
 	</extension>
 </addon>
 
@@ -211,9 +199,7 @@ resource.font.robotocjksc
     <requires>
         <import addon="kodi.resource" version="1.0.0"/>
     </requires>
-    
     <extension point="kodi.resource.font" compile="false" />
-    
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Roboto CJKSC fonts</summary>
         <description lang="en_GB"></description>
