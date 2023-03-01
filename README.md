@@ -1,2 +1,2 @@
-# <a href="https://gitfront.io/r/dexe/U1bBgF5SXUd8/repo.dexe/" target="_blank">repo.dexe</a>
+# <a href="https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/repository.dexe/repository.dexe-1.0.0.zip" target="_blank">dEXE's Addons Repo</a>
 Kodi Repository
