@@ -3,9 +3,9 @@
 <addon id="repository.roooar" name=" [COLOR limegreen]R[/COLOR]epo [COLOR limegreen]o[/COLOR]f [COLOR limegreen]a[/COLOR]ll [COLOR limegreen]R[/COLOR]epositories" version="1.0.0" provider-name="dEXE">
 	<extension point="xbmc.addon.repository" name="Repo of all Repositories">
 	<dir>
-		<info compressed="false">https://gitfront.io/r/dexe/U1bBgF5SXUd8/repo.dexe/raw/repos/addons.xml</info>
-		<checksum>https://gitfront.io/r/dexe/U1bBgF5SXUd8/repo.dexe/raw/repos/addons.xml.md5</checksum>
-		<datadir zip="true">https://gitfront.io/r/dexe/U1bBgF5SXUd8/repo.dexe/raw/repos/</datadir>
+		<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/</datadir>
 		<hashes>false</hashes>
 	</dir>
 	</extension>
