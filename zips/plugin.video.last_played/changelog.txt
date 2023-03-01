@@ -1,0 +1,19 @@
+[B]6.1.1[/B] - Fix to work on Kodi 19 & Kodi 20
+[B]6.1.0[/B] - Kodi 20
+[B]6.0.3[/B] - Fix error clearing history
+[B]6.0.0[/B] - Kodi 19
+[B]1.3.1[/B] - Fixes
+[B]1.3.0[/B] - Setting to allow music
+[B]1.2.2[/B] - Kodi 18 Update
+[B]1.2.0[/B] - Monitor videos files only
+[B]1.1.10[/B] - New site starmovies.org
+[B]1.1.9[/B] - Wildcard Blacklist
+[B]1.1.8[/B] - Blacklist and New Site
+[B]1.0.8[/B] - New replay method and some minor improvements
+[B]1.0.7[/B] - New list format and add 5star-movies
+[B]1.0.6[/B] - Configuration options
+[B]1.0.5[/B] - Add debug options 
+[B]1.0.4[/B] - New options: Split by addon and display date and time 
+[B]1.0.3[/B] - Improve metadata info. Aloow item removal. Make it kodi repo compliant
+[B]1.0.2[/B] - Set media type on list items
+[B]1.0.1[/B] - Initial Release
