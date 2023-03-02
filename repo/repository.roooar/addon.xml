@@ -10,11 +10,11 @@
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Roooar!</summary>
+		<description>Quickly and easily install all the best Kodi repositories.[CR][CR](Part of dEXE's Addons Repository)[CR][CR]Instalirajte željeni repozitorijum.[CR]Kolekcija najboljih Kodi repozitorijuma.</description>
+		<disclaimer lang="en">None of the Repos are hosted by this addon. All Repos are the official repositories of the addon developers. The author does not develop or provide any content in these repositories.</disclaimer>
 		<language>en</language>
 		<platform>all</platform>
-		<summary lang="en">Roooar!</summary>
-		<description>Quickly and easily install all the best Kodi repositories.[CR][CR](Part of dEXE's Addons Repository)[CR][CR]Instalirajte željeni repozitorijum.[CR]Opciono iz 'Information/Dependencies' pristupite instalaciji preporučenih zvaničnih dodataka.</description>
-		<disclaimer lang="en">None of the Repos are hosted by this addon. All Repos are the official repositories of the addon developers. The author does not develop or provide any content in these repositories.</disclaimer>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>

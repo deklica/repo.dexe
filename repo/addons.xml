@@ -19,41 +19,14 @@
 </addon>
 
 <addon id="repository.roooar" name=" [COLOR limegreen]R[/COLOR]epo [COLOR limegreen]o[/COLOR]f [COLOR limegreen]a[/COLOR]ll [COLOR limegreen]R[/COLOR]epositories" version="1.0.0" provider-name="dEXE">
-	<requires>
-		<!-- <import addon="xbmc.addon" version="12.0.0"/> -->
-		<import addon="inputstream.adaptive"/>
-		<import addon="inputstream.ffmpegdirect"/>
-		<import addon="inputstream.rtmp"/>
-		<import addon="script.module.youtube.dl" optional="true"/>
-		<import addon="context.item.extras" optional="true"/>
-		<import addon="script.extendedinfo" optional="true"/>
-		<import addon="script.globalsearch" optional="true"/>
-		<import addon="plugin.program.autocompletion" optional="true"/>
-		<import addon="script.keymap" optional="true"/>
-		<import addon="script.logviewer" optional="true"/>
-		<import addon="script.speedtester" optional="true"/>
-		<import addon="service.upnext" optional="true"/>
-		<import addon="script.xbmc.unpausejumpback" optional="true"/>
-		<import addon="script.service.checkpreviousepisode" optional="true"/>
-		<import addon="script.audio.profiles" optional="true"/>
-		<import addon="service.autostop" optional="true"/>
-		<import addon="script.common.plugin.cache" optional="true"/>
-		<import addon="script.xbmcbackup" optional="true"/>
-		<import addon="script.cu.lrclyrics" optional="true"/>
-		<import addon="weather.gismeteo" optional="true"/>
-		<import addon="script.trakt" optional="true"/>
-		<import addon="script.tubecast" optional="true"/>
-		<import addon="plugin.video.youtube" optional="true"/>
-		<import addon="plugin.video.ytchannels" optional="true"/>
-	</requires>
 	<extension point="xbmc.addon.repository" name="Repo of all Repositories">
 	</extension>
 	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Roooar!</summary>
+		<description>Quickly and easily install all the best Kodi repositories.[CR][CR](Part of dEXE's Addons Repository)[CR][CR]Instalirajte željeni repozitorijum.[CR]Kolekcija najboljih Kodi repozitorijuma.</description>
+		<disclaimer lang="en">None of the Repos are hosted by this addon. All Repos are the official repositories of the addon developers. The author does not develop or provide any content in these repositories.</disclaimer>
 		<language>en</language>
 		<platform>all</platform>
-		<summary lang="en">Roooar!</summary>
-		<description>Quickly and easily install all the best Kodi repositories.[CR][CR](Part of dEXE's Addons Repository)[CR][CR]Instalirajte željeni repozitorijum.[CR]Opciono iz 'Information/Dependencies' pristupite instalaciji preporučenih zvaničnih dodataka.</description>
-		<disclaimer lang="en">None of the Repos are hosted by this addon. All Repos are the official repositories of the addon developers. The author does not develop or provide any content in these repositories.</disclaimer>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
