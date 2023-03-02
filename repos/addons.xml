@@ -117,6 +117,8 @@ repository.zachmorris
 
 
 <addon id="repository.5star" name="Repository for 5Star Kodi addons 2" version="6.1.0" provider-name="Luis Rodrigues">
+	<extension point="xbmc.addon.repository" name="Repository for 5Star Kodi addons 2">
+	</extension>
     <extension point="xbmc.addon.metadata">
         <summary>Repository for 5Star Kodi addons</summary>
         <description>Repository for 5Star Kodi addons</description>
