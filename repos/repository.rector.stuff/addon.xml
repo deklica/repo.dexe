@@ -19,7 +19,6 @@
 		<summary lang="en">A little place for my stuff.</summary>
 		<description lang="en">I'm Rector, I do stuff, I put it here.</description>
 		<platform>all</platform>
-		<disclaimer />
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
