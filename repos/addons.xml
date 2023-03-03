@@ -219,7 +219,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.0.7" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.0.8" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1297,7 +1297,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.southpaw" name="The South Paw Repository" version="0.2.0" provider-name="Tom">
+<addon id="repository.southpaw" name="The South Paw Repository" version="0.2.1" provider-name="Tom">
 	<extension point="xbmc.addon.repository" name="The South Paw Repository"> 
 	</extension>
 	<extension point="xbmc.addon.metadata">
