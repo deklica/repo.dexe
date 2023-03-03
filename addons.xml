@@ -18,14 +18,17 @@ script.ezmaintenanceplus
 script.hideosd
 script.kcleaner
 script.module.inputstreamhelper
+script.module.youtube.dl
 script.service.sponsorblock
 script.tvskipintro
 script.video.F4mProxy
+service.subtitles.subloader
 
 script.module.microjenscrapers
 script.module.thetvdb
 
 resource.font.robotocjksc
+script.service.argonforty-device
 
 script.module.resolveurl
 script.module.resolveurl.xxx
@@ -661,6 +664,34 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
+<addon id="script.module.youtube.dl" name="youtube-dl Control" version="21.303.0+matrix.1" provider-name="ytdl-org,ruuk,sy6sy2,wwark">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.addon.signals" version="0.0.5+matrix.1"/>
+        <import addon="script.module.kodi-six" version="0.1.3"/>
+    </requires>
+    <extension point="xbmc.python.script" library="control.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Module providing access to youtube-dl video stream extraction</summary>
+        <description lang="en_GB">Module providing access to youtube-dl video stream extraction for hundreds of sites. Version is based on youtube-dl date version: YY.MDD.V where V is the addon specific sub-version. Also provides downloading with the option for background downloading with a queue and queue manager.</description>
+        <summary lang="el_EL">Βοηθητική μονάδα πρόσβασης στους επιλυτές youtube-dl για την εξαγωγή ροών βίντεο</summary>
+        <description lang="el_EL">Βοηθητική μονάδα πρόσβασης στους επιλυτές youtube-dl για την εξαγωγή ροών βίντεο από εκατοντάδες ιστότοπους. Η έκδοση βασίζεται στην έκδοση ημερομηνίας του youtube-dl: EE.MHH.EK όπου ΕΚ η υπό-έκδοση συγκεκριμένα για το πρόσθετο. Επιπλέον δίνει δυνατότητα μεταφόρτωσης στο παρασκήνιο με ουρά και διαχειριστή αυτής.</description>
+        <summary lang="es_ES">Módulo que proporciona acceso a YouTube-dl para la extracción de flujos de video</summary>
+        <description lang="es_ES">Módulo que proporciona acceso a YouTube-dl para la extracción de flujos de video de cientos de sitios. La versión está basada en la versión de fecha youtube-dl: YY.MDD.V donde V es la subversión específica del complemento. También permite descargas con la opción de descarga en segundo plano con una cola y un administrador de colas.</description>
+        <license>LGPL-2.1-only</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=200877</forum>
+        <source>https://github.com/Catch-up-TV-and-More/script.module.youtube.dl</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+
 <addon id="script.service.sponsorblock" version="0.4.0" name="SponsorBlock" provider-name="siku2">
     <requires>
         <import addon="script.module.requests" version="2.15.1"/>
@@ -763,6 +794,52 @@ Benutzer melden diverse Segmente die dann automatisch übersprungen werden.
 </addon>
 
 
+<addon id="service.subtitles.subloader" name="SubLoader" version="0.1.7c" provider-name="DenimNani">
+	<requires></requires>
+	<extension point="xbmc.subtitle.module" library="service.py"/>
+	<extension point="xbmc.service" library="monitor.py" start="login"></extension>  
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Automatic subtitles for your content</summary>
+		<description lang="en">Auto download the best subtitle automatically as soon you start the video.[CR]Special thanks to OpenSubtitles.org for providing a unique UA for Subloader.</description>
+		<platform>all</platform>
+		<language>en</language>
+		<license>GPL</license>
+		<website>https://github.com/denimnani</website>
+		<source>https://github.com/denimnani/service.subloader</source>
+		<forum></forum>
+		<email></email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+			<screenshot>resources/media/screenshots/screenshot1subLoader.jpg</screenshot>
+			<screenshot>fanart.png</screenshot>
+		</assets>
+<news>
+0.1.7c    23.11.2022
+G-Mod - G-Man made adjustments to the name and addon.xml file to display in Kodi's subtitles folder.
+
+0.1.7a    16.11.2022
+peno64 fix/extend exclude pvr
+
+0.1.7a    11.10.2022
+helviojr made a patch so the function videosource() returns the stream url if it is a .strm file. That way it can detect the addon used to open the file/url and can use the addons exclusions.
+        
+0.1.6     05.05.2021
+Bug fix on open subtitle dialog.
+
+0.1.5     21.02.2021
+Subloader now runs on KODI v19 (Special thanks to peno/64).
+Added python 3 compatibility.
+Some grammatical corrections (Special thanks to AlexNaga).
+
+0.1.4     23.07.2019
+Added Dutch language (Special thanks to Tinuz97).
+Clean up project files.
+</news>
+	</extension>
+</addon>
+
+
 <addon id="script.module.microjenscrapers" name="MicroJen Scraper Module" version="1.3" provider-name="MicroJen Community">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -830,6 +907,38 @@ Benutzer melden diverse Segmente die dann automatisch übersprungen werden.
         <disclaimer></disclaimer>
         <assets>
             <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="script.service.argonforty-device" name="ArgonForty Device Configuration" version="0.0.1" provider-name="ArgonForty">
+    <requires>
+        <import addon="virtual.rpi-tools" />
+        <import addon="virtual.system-tools" />
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="main.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">ArgonForty Device Configuration</summary>
+        <description lang="en_GB">Install services to manage ArgonForty Devices such as power button and fan speed. This will also enable gpio-ir, i2c and UART.
+
+        * Disable then Enable Service for settings to take effect (or reboot) 
+        </description>
+        <language></language>
+        <platform>linux</platform>
+        <license>MIT</license>
+        <forum></forum>
+        <website>argon40.com</website>
+        <email>cs@argon40.com</email>
+        <source></source>
+        <news></news>
+        <disclaimer></disclaimer>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
