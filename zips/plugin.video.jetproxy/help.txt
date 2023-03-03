@@ -1,0 +1,22 @@
+Plugin link:
+plugin://plugin.video.jetproxy/play/http://oscartv.mine.nu:25461/live/jmr1234/jmr1234/6139.m3u8
+
+Jen (jetextractors.py):
+{
+    "type": "item",
+    "title": "JetProxy Test",
+    "sportjetextractors": ["jetproxy://http://oscartv.mine.nu:25461/live/jmr1234/jmr1234/6139.m3u8"]
+}
+
+Jen (plug.py):
+{
+    "type": "plugin",
+    "title": "JetProxy Plugin Test",
+    "link": "RunPlugin(plugin://plugin.video.jetproxy/play/http://oscartv.mine.nu:25461/live/jmr1234/jmr1234/6139.m3u8)"
+}
+
+Python (xbmc.executebuiltin):
+xbmc.executebuiltin("RunPlugin(plugin://plugin.video.jetproxy/play/http://oscartv.mine.nu:25461/live/jmr1234/jmr1234/6139.m3u8)")
+
+Python (xbmc.Player)
+xbmc.Player().play("plugin://plugin.video.jetproxy/play/http://oscartv.mine.nu:25461/live/jmr1234/jmr1234/6139.m3u8")

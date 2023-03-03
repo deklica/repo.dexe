@@ -1,0 +1,32 @@
+[B]v2.0.3 (24 November 2021):[/B]
+- Minor fixes, code cleanup
+
+[B]v2.0.3 (24 November 2021):[/B]
+- Fixed error when data_file doesn't exists
+
+[B]v2.0.2 (24 November 2021):[/B]
+- Added startup service that will turn off addons that are turned back on when updated.(ain't that ironic😅) 
+
+[B]v2.0.1 (16 November 2021):[/B]
+- Matrix compatible
+
+[B]v1.0.1 (31 March 2015):[/B]
+- Little tweaks.
+- Submittion to Kodi official Kodi repository.
+- Cosmetic changes.
+
+[B]v1.0.0 (28 de Marco de 2015):[/B]
+- Limpeza de codigo.
+- Novo addon_id.
+- Outras correccoes.
+
+[B]v0.1.00 (13 de Novembro de 2014):[/B]
+- Melhorias de performance.
+- Adicionado logotipo do addon a cada pasta.
+- Outras correccoes.
+
+[B]v0.0.02 (21 de Dezembro de 2013):[/B]
+- Logotipo adicionado.
+
+[B]v0.0.01 (5 de Dezembro de 2013):[/B]
+- Release inicial.

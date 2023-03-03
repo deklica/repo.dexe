@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.jetproxy" version="1.0.3" name="JetProxy" provider-name="t4ils">
+<requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+  <import addon="script.module.routing"/>
+  <import addon="script.module.requests"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>executable</provides>
+</extension>
+<extension point="xbmc.service" library="service.py" />
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">JetProxy</summary>
+  <description lang="en_GB">JetProxy</description>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>  
+  </assets>
+</extension>
+</addon>

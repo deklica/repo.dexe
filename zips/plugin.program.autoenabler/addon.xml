@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.autoenabler" name="Auto Enabler" version="1.0.0" provider-name="slam">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+        <language/>
+        <summary lang="en_GB">Addon Enabler Script</summary>
+        <description lang="en_GB">This script enables all addons that are disabled.</description>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum></forum>
+        <source></source>
+        <email></email>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+</addon>
