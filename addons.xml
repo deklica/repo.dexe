@@ -1,17 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<!--  Video / Program&Services / Other  -----------------------------------
+<!--  Video / Program&Services / Dependencies / Other / External  -----------------------------------
 
+plugin.video.daddylive
 plugin.video.last_played
 plugin.video.premiumizerx
 plugin.video.realizerx
 script.realdebrid
 
+plugin.program.autoenabler
+plugin.program.openwizard
+plugin.video.f4mTester
+plugin.video.jetproxy
+plugin.video.live.streamspro
+script.autoruns
+script.ezmaintenanceplus
+script.hideosd
+script.kcleaner
+script.module.inputstreamhelper
+script.service.sponsorblock
+script.tvskipintro
+script.video.F4mProxy
+
+script.module.microjenscrapers
+script.module.thetvdb
+
 resource.font.robotocjksc
+
+script.module.resolveurl
+script.module.resolveurl.xxx
+plugin.program.thumbcache.cleaner
+plugin.video.smr_link_tester
 
 -->
 
 <addons>
+
+
+<addon id="plugin.video.daddylive" name="Daddylive" version="2.1a" provider-name="mbebe">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper"/>
+        <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Live TV and Sports</summary>
+        <description lang="en">Live TV and Sports</description>
+        <disclaimer lang="en">test</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website></website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
 
 
 <addon id="plugin.video.last_played" name="Last Played" version="6.1.1" provider-name="Luis Rodrigues">
@@ -76,9 +125,7 @@ resource.font.robotocjksc
 		</menu>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-        <description>Premiumize Cloud Addon with a twist!
-		This addon is inteded for use with content that you currently own! The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.
-		</description>
+        <description>Premiumize Cloud Addon with a twist![CR]This addon is inteded for use with content that you currently own! The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</description>
 		<summary lang="en">premiumizer Cloud Addon</summary>
 		<platform>all</platform>
 		<forum>-</forum>
@@ -191,6 +238,576 @@ resource.font.robotocjksc
     		<icon>icon.png</icon>
     		<fanart>fanart.png</fanart>
         </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.program.autoenabler" name="Auto Enabler" version="1.0.0" provider-name="slam">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+        <language/>
+        <summary lang="en_GB">Addon Enabler Script</summary>
+        <description lang="en_GB">This script enables all addons that are disabled.</description>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum></forum>
+        <source></source>
+        <email></email>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.program.openwizard" name="[COLOR limegreen]Open[/COLOR]Wizard" version="2.0.7" provider-name="drinfernoo, slamious">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
+        <import addon="script.speedtester" optional="true" version="1.1.2" />
+    </requires>
+    
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+    
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR limegreen]Open[/COLOR]Wizard</summary>
+        <description lang="en">[COLOR limegreen]Open[/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
+        <news>
+2.0.7
+ - Fix Error when using default log settings
+2.0.6
+ - Fix regex for formatting tags
+ - Fix theme selection after build install
+ - Fix downloading into invalid path
+2.0.5
+ - Add Enable All Add-ons after Build Install
+2.0.4
+ - Fix leftover broken dialogs
+2.0.3
+ - Don't show previous version builds in Matrix
+2.0.2
+ - Replace remaining occurences of LOGNOTICE
+2.0.1
+ - Add attribution to @slamious
+2.0.0
+ - Initial Matrix support
+1.4.5
+ - Fix bugs with unintended files being cleared`
+1.4.4
+ - Transfer ownership
+1.4.3
+ - Fix missing artwork on items (thanks @xulek)
+1.4.2
+ - A few bug fixes
+1.4.1
+ - Fix crash on fresh installs
+1.4.0
+ - Fix APK Installer
+ - Convert official APK downloader to use official script
+ - Add scrollbar to Save Data dialog
+ - Fix skin path in build info
+1.3.7
+ - Fix import lock error
+1.3.6
+ - Fix notifications
+ - Cleanup log files
+1.3.5
+ - Add Fen
+ - Add Shadow
+ - Fix restoring saved data every boot
+1.3.4
+ - Fix bad indent
+1.3.3
+ - Fix Unicode characters in notification window
+1.3.2
+ - Fix build restore
+1.3.1
+ - Fix "Keep Login Info" menu        
+1.3.0
+ - Fix formatting of saved restore times
+ - Fix local build zip being deleted on restore
+ - Add YouTube API saving
+ - Remove broken context menus
+ - Fix repeating dialogs from shortcuts/favorites
+ - Remove "Normal Install" option
+ - Add "Logging Tools" menu
+ - Add option to save guisettings.xml
+ - Add TMDbHelper Fanart.tv saving
+ - More fixes for OS X
+ - Fix Seren Fanart.tv saving
+1.2.9
+ - Fix NuMb3r5 cache clearing
+ - Fix hang during repo force check
+ - Fix logins being restored every startup
+ - Fix some file permission errors
+ - Fix OS X backup errors
+1.2.8
+ - Add Gaia PM OAuth
+ - Fix binary add-on restoration
+ - Fix some issues with old settings
+ - Fix timing on many startup tasks
+1.2.7
+ - Add TheMovieDb Helper
+1.2.6
+ - Fix Seren PM OAuth    
+1.2.5
+ - Fix typo in debridit.py
+1.2.4
+ - Cover more edge cases during binary detection
+1.2.3
+ - Fix notification ID bug
+1.2.2
+ - Add Seren PM OAuth
+ - Add AllDebrid spport for Gaia, Seren, ResolveURL, and URLResolver
+1.2.1
+ - General bug fixes
+1.2.0
+ - Silence save data notifications on startup
+ - Fix Addon Installer menu
+ - Convert addons.txt to JSON format
+1.1.1
+ - Fix error on advancedsettings categories
+1.1.0
+ - Add back advancedsettings area under System Tweaks/Fixes
+ - Rudimentary version of advancedsettings editor. Can currently only handle editing pre-existing tags under 'cache' and 'network'.
+ - Convert advanced.txt to JSON format
+ - Add "built-in" advancedsettings.xml presets
+1.0.3
+ - Update artwork
+ - Fix rare issues with URLs not working
+ - Fix repetitive build prompt (again)
+ - Fix builds downloading twice
+ - Fix title coloring on notifications
+ - Fix auto repo install
+ - Fix first run settings not being respected
+1.0.2
+ - Fix crash in login menu
+ - Fix auto install repo
+1.0.1
+ - Fix double startup
+ - Fix repetitive build prompt
+ - Fix main menu not opening on Krypton
+ - Fix notification timeout
+ - Fix crash in Trakt menu
+1.0.0
+ - Initial Commit
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.f4mTester" version="4.0.7" name="f4mTester" provider-name="Joel e Tiago">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.video.F4mProxy" version="4.0.7"/>		
+        <import addon="inputstream.ffmpegdirect"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>  
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+        <assets>
+			<icon>icon.png</icon>
+		</assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.jetproxy" version="1.0.3" name="JetProxy" provider-name="t4ils">
+<requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+  <import addon="script.module.routing"/>
+  <import addon="script.module.requests"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>executable</provides>
+</extension>
+<extension point="xbmc.service" library="service.py" />
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">JetProxy</summary>
+  <description lang="en_GB">JetProxy</description>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>  
+  </assets>
+</extension>
+</addon>
+
+
+<addon id="plugin.video.live.streamspro" name="LiveStreamsPro" version="3.0.0~alpha4" provider-name="gujal">
+	<requires>
+		<import addon="script.module.six" />
+		<import addon="script.module.kodi-six" />
+		<import addon="script.module.requests" optional="true"/>
+		<import addon="script.module.websocket" version="0.50.0"  optional="true"/>
+		<import addon="script.module.youtube.dl" optional="true"/>
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.dateutil" optional="true" />
+		<import addon="script.module.resolveurl" optional="true"/>
+		<import addon="script.module.urlresolver" optional="true"/>
+		<import addon="script.module.cloudscraper" optional="true"/>
+		<import addon="script.module.inputstreamhelper" optional="true"/>
+		<import addon="script.module.slproxy" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+
+	<extension point="xbmc.addon.metadata">
+		<summary>livestreamspro- shamelessly forked from livestreams but added many things</summary>
+		<description>
+In addition to what livestreams allowed you to do, you can now,
+1. call regex in regex,
+2. multiple regex in page, regex in session, also htmlunescape responses
+3. create session from one regex and pass onto next in line
+4. save sessions to a file and open again later
+5. write python code in .py file, put in the profile directory and then call from your regex.
+6. use epoctime, guid and unpack as functions already defined.
+7. Use it to post values to the pages to get the proper responses
+8. support many headers, like origin, X-Requested-With
+9. you can now append cookies in response and then read in regex using includeheaders
+10. You can now link to another web url via your xml using externallink
+11. support for google captcha, now you can show and then post the text		
+		</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="script.autoruns"
+       name="Autoruns"
+       version="6"
+       provider-name="fight night, Jon Bovi">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />		
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+		<source>https://github.com/fightnight/fightnight-addons/tree/master/script.autoruns</source>
+		<summary lang="en">Disable startup services on Kodi</summary>
+		<summary lang="pt">Desactive serviços do arranque no Kodi</summary>
+		<description lang="en">You can disable startup services, improving Kodi internal speed.</description>
+		<description lang="pt">Pode desactivar serviços do arranque, melhorando a velocidade interna do Kodi.</description>
+		<disclaimer lang="en">Opensource addon not endorsed with Team Kodi.</disclaimer>
+		<disclaimer lang="pt">Addon opensource não afliado com a Equipa Kodi.</disclaimer>
+		<assets>
+				<icon>icon.png</icon>
+		</assets>
+    </extension>
+</addon>
+
+
+<addon id="script.ezmaintenanceplus" name="EZ Maintenance+" version="2023.01.01.0" provider-name="aenema, peno">
+  <requires>
+    <import addon="script.module.requests" version="1.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+	<summary>A Streamlined Utility Tool for Kodi</summary>
+	<description>No Bloatware, no Nonsense! Just Keep your Kodi sharp and clean with this utility tool... Now with a Custom Wizard.</description>
+    <language></language>
+    <platform>all</platform>
+    <license>The MIT License</license>
+    <forum>-</forum>
+    <source>https://github.com</source>
+    <assets>
+	    <icon>icon.png</icon>
+	    <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+
+<addon id="script.hideosd" version="2023.01.25" name="Hide Video OSD" provider-name="aenema">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+        <description>A Simple script to autohide video osd for inactivity. Timeout can be set in the addon settings</description>
+		<summary lang="en">Autohide Video OSD</summary>
+		<platform>all</platform>
+		<website>-</website>
+		<email>-</email>
+		<forum>-</forum>
+		<source>-</source>
+		<news></news>
+        <assets>
+            <icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="script.kcleaner" name="KCleaner" provider-name="Dalibor Lanik" version="4.02.1"> 
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" /> 
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>executable</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service" start="startup"> 
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata"> 
+    <platform>all</platform>
+    <website>http://projects.lanik.org/KodiProject_KCleaner.htm</website>
+    <summary lang="en_GB">Clean up temporary files in Kodi.</summary>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=307919</forum>
+    <email>dalibor@lanik.org</email>
+    <description lang="en_GB">Clean up temporary files in Kodi.</description>
+    <news>v4.0 [CR]
+- Python 3 version [CR]
+</news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshot-01.jpg</screenshot>
+        <screenshot>resources/screenshot-02.jpg</screenshot>
+        <screenshot>resources/screenshot-03.jpg</screenshot>
+        <banner>resources/banner.jpg</banner>
+        <logo>resources/logo.png</logo>
+    </assets>
+  </extension>
+</addon>
+
+
+<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="0.5.10+matrix.1" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
+  <requires>
+    <!--py3 compliant-->
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.pysocks" version="1.6.8" optional="true"/>
+  </requires>
+  <!-- This is needed to get an add-on icon -->
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de_DE">Kodi InputStream und DRM Wiedergabe einfach gemacht</summary>
+    <summary lang="el_GR">Βοηθός Inputstream για το Kodi και εύκολη αναπαραγωγή DRM</summary>
+    <summary lang="en_GB">Kodi InputStream and DRM playback made easy</summary>
+    <summary lang="es_ES">Kodi InputStream y reproducción DRM echa fácil</summary>
+    <summary lang="fr_FR">La lecture Kodi InputStream et DRM en toute simplicité</summary>
+    <summary lang="hr_HR">Kodi InputStream olakšava reprodukciju DRM zaštićenog sadržaja</summary>
+    <description lang="de_DE">Dieses einfache Kodi-Modul macht das Leben für Addon Entwickler einfacher, die auf InputStream basierte Addons und DRM Wiedergabe angewiesen sind.</description>
+    <description lang="el_GR">Μία απλή μονάδα για το Kodi η οποία διευκολύνει την ζωή των προγραμματιστών οι οποίοι εξαρτώνται από τα πρόσθετσ InputStream και αναπαραγωγή τύπου DRM.</description>
+    <description lang="en_GB">A simple Kodi module that makes life easier for add-on developers relying on InputStream based add-ons and DRM playback.</description>
+    <description lang="es_ES">Un módulo Kodi simple que hace la vida más fácil para los desarrolladores de complementos que dependen de complementos basados en InputStream y reproducción de DRM.</description>
+    <description lang="fr_FR">Un simple module Kodi qui simplifie la vie des développeurs de modules complémentaires en s’appuyant sur des modules complémentaires basés sur InputStream et sur la lecture de DRM.</description>
+    <description lang="hr_HR">Jednostavan Kodi modul koji olakšava razvijanje dodataka koji se temelje na InputStream dodatku i reprodukciji DRM zaštićenog sadržaja.</description>
+    <description lang="ru_RU">Простой модуль для Kodi, который облегчает жизнь разработчикам дополнений, с использованием InputStream дополнений и воспроизведения DRM контента.</description>
+    <news>
+v0.5.10 (2022-04-18)
+- Fix automatic submission of release
+- Update German translation
+- Fix update_frequency setting
+- Fix install_from
+- Improve/Fix Widevine extraction from Chrome OS images
+
+v0.5.9 (2022-03-22)
+- Update Croatian translation
+- Replace deprecated LooseVersion
+- Fix http_get decode error
+- Option to install Widevine from specified source
+    </news>
+    <platform>all</platform>
+    <license>MIT</license>
+    <website>https://github.com/emilsvennesson/script.module.inputstreamhelper/wiki</website>
+    <source>https://github.com/emilsvennesson/script.module.inputstreamhelper</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+
+<addon id="script.service.sponsorblock" version="0.4.0" name="SponsorBlock" provider-name="siku2">
+    <requires>
+        <import addon="script.module.requests" version="2.15.1"/>
+        <import addon="script.module.six" version="1.13.0"/>
+        <import addon="plugin.video.youtube" version="6.7.0"/>
+    </requires>
+
+    <extension point="xbmc.service" library="service.py"/>
+
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="context.py">
+                <label>32027</label>
+                <visible>String.IsEqual(ListItem.Property(Addon.ID),plugin.video.youtube)</visible>
+            </item>
+        </menu>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Skip YouTube in-video sponsors</summary>
+        <description lang="en_GB">
+SponsorBlock browser extension ported to Kodi's YouTube plugin.
+
+SponsorBlock is a crowdsourced project to skip sponsor segments in YouTube videos.
+Users submit when a sponsor happens and the add-on automatically skips sponsors it knows about.
+        </description>
+        <disclaimer lang="en_GB">This is an unoffical port of the SponsorBlock browser extension</disclaimer>
+        <news>
+- Get current player's time after a delay instead of relying on seek target (#28)
+- Add option to reduce all skips by some time (#30)
+- Ignore segments that do not fit into reduce skips setting (#31)
+- Reset existing playback when new video starts playing (#32)
+        </news>
+
+        <summary lang="de">Überspringe Sponsoren, betteln um Abonnenten und mehr in YouTube Videos</summary>
+        <description lang="de">
+SponsorBlock für Kodis YouTube Plugin.
+
+SponsorBlock ist ein Crowdsourcing-Projekt zum Überspringen von Sponsorensegmenten in YouTube Videos.
+Benutzer melden diverse Segmente die dann automatisch übersprungen werden.
+        </description>
+
+        <platform>all</platform>
+        <license>MIT</license>
+        <source>https://github.com/siku2/script.service.sponsorblock</source>
+        <assets>
+            <icon>resources/images/icon.png</icon>
+            <fanart>resources/images/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="script.tvskipintro" version="2023.01.25" name="TV Skip Intro" provider-name="aenema">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+        <description>Prompt a Skip Intro dialog Netflix style. Skips intro for your favourite shows. The addon creates a database of your shows and stores a custom set skip value</description>
+		<summary lang="en">Skip TV Shows Intro</summary>
+		<platform>all</platform>
+		<website>-</website>
+		<email>-</email>
+		<forum>-</forum>
+		<source>-</source>
+		<news></news>
+        <assets>
+            <icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="script.video.F4mProxy" 
+	     name="F4mProxy" 
+	     version="4.0.7" 
+	     provider-name="Joel e Tiago">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" />
+        <import addon="inputstream.ffmpegdirect" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+    
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Proxy for f4m</summary>
+		<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="script.module.microjenscrapers" name="MicroJen Scraper Module" version="1.3" provider-name="MicroJen Community">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">MicroJen Scrapers Module</summary>
+            <description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts. [CR]Massive thanks and respect to Crucial Minds for permission to use the Base Code and to The Jen Crew for their valuable contributions in bringing this project together.</description>
+                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    <news></news>
+    </extension>
+</addon>
+
+
+<addon id="script.module.thetvdb"
+       name="The TVDB API v2"
+       version="1.0.34"
+       provider-name="marcelveldt and others">
+    <requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+        <import addon="script.module.simplejson" version="3.17.0"/>
+        <import addon="script.module.simplecache" version="2.0.2"/>
+        <import addon="script.module.arrow" version="0.15.5"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>TheTVDB API v2 python module for Kodi</summary>
+        <description>TheTVDB API v3 python module for Kodi</description>
+        <license>Apache 2.0</license>
+        <source>https://github.com/kodi-community-addons/script.module.thetvdb</source>
+        <platform>all</platform>
     </extension>
 </addon>
 
