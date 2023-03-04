@@ -22,7 +22,7 @@ script.module.youtube.dl
 script.service.sponsorblock
 script.tvskipintro
 script.video.F4mProxy
-service.subtitles.subloader
+service.subloader
 
 script.module.microjenscrapers
 script.module.thetvdb
@@ -794,9 +794,8 @@ Benutzer melden diverse Segmente die dann automatisch übersprungen werden.
 </addon>
 
 
-<addon id="service.subtitles.subloader" name="SubLoader" version="0.1.7c" provider-name="DenimNani">
+<addon id="service.subloader" name="SubLoader" version="0.1.7c" provider-name="DenimNani">
 	<requires></requires>
-	<extension point="xbmc.subtitle.module" library="service.py"/>
 	<extension point="xbmc.service" library="monitor.py" start="login"></extension>  
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Automatic subtitles for your content</summary>
@@ -815,13 +814,9 @@ Benutzer melden diverse Segmente die dann automatisch übersprungen werden.
 			<screenshot>fanart.png</screenshot>
 		</assets>
 <news>
-0.1.7c    23.11.2022
-G-Mod - G-Man made adjustments to the name and addon.xml file to display in Kodi's subtitles folder.
-
-0.1.7b    16.11.2022
+0.1.7     23.11.2022
+G-Mod - removed
 peno64 fix/extend exclude pvr
-
-0.1.7a    11.10.2022
 helviojr made a patch so the function videosource() returns the stream url if it is a .strm file. That way it can detect the addon used to open the file/url and can use the addons exclusions.
         
 0.1.6     05.05.2021
