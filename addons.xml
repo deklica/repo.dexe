@@ -794,7 +794,7 @@ Benutzer melden diverse Segmente die dann automatisch übersprungen werden.
 </addon>
 
 
-<addon id="service.subloader" name="SubLoader" version="0.1.7c" provider-name="DenimNani">
+<addon id="service.subloader" name="SubLoader" version="0.1.7" provider-name="DenimNani">
 	<requires></requires>
 	<extension point="xbmc.service" library="monitor.py" start="login"></extension>  
 	<extension point="xbmc.addon.metadata">
