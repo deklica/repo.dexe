@@ -1,0 +1,227 @@
+v7.0
+- Python 3 version 
+
+v6.4
+- Language file format related changes 
+
+v6.3
+- Small bug fixes 
+
+v6.2
+- Option to change text color with black bar (background)
+- Fix for smb:// paths in Android, Linux, MacOS
+
+v6.1
+- Option to display black bar (background) under subtitles for better visibility with hard coded subs
+
+v6.0
+- Updated Dutch Transleation (Thanx Peter!)
+- Updated definitions in the package
+
+v5.9
+- Optimized reading of definitions to database
+
+v5.8
+- Icon change
+
+v5.7
+- Option to delete original subtitles while scanning path/lib
+- Clean bold, italic, color, etc. tags
+
+v5.6
+- Bug fix with heuristics
+
+v5.5
+- Optimized logic and reading of definitions
+- Definitions are now checked not only on Kodi start but every 100 minutes
+
+v5.4
+- Bug fix
+- Slightly optimized logic of reading definitions
+- Progress bar during reading of definitions
+
+v5.3
+- Bug fix
+
+v5.2
+- Clean double spaces after cleaning hearing impaired
+- Added more codepages (hebrew, arabic, japanese)
+
+v5.1
+- Bug fix
+
+v5.0
+- Optimize stats collection
+
+v4.9
+- Bug fix
+
+v4.8
+- Uses language(s) selected in Kodi subtitle settings
+
+v4.7
+- Improve logic
+
+v4.6
+- json paths bugfix when scanning library
+
+v4.5
+- Change all xml settings reading from xml.dom to json
+- Added Dutch translation (thanx Peter!) :)
+
+v4.4
+- Improve heuristic search (thanx Peter!)
+
+v4.3
+- Set how many lines from start/end of subtitle heuristics will clean
+- Small optimizations, better exception handling
+
+v4.2
+- NFS paths work in Standalone mode, arbitrary folder
+
+v4.1
+- Bug fix
+
+v4.0
+- Bug fix
+
+v3.9
+- Recognize custom folder for subtitles set in Kodi
+- Logic update
+- Performance improvements
+
+v3.8
+- Update statistics server
+
+v3.7
+- Added another (backup) server for definitions update
+
+v3.6
+- Subtitle provider logo changes
+- Logo, banner, fanart
+
+v3.5
+- Reliability fixes
+
+v3.4
+- Bug fix
+
+v3.3
+- On-off switch added
+- Typo fixed
+- Small bug fix
+
+v3.2
+- Stats server update
+
+v3.1
+- Init overlays bug fix
+
+v3.0
+- Small bug fix
+
+v2.9
+- Overall optimization and code cleanup, cleaning of files in local folders
+
+v2.8
+- SMB fix
+
+v2.7
+- NSF warning, local movies fix
+
+v2.6
+- NSF + SMB fix
+
+v2.5
+- Added logo for providers
+- Small fixes
+
+v2.4
+- Bug fix
+
+v2.3
+- Added option to remove closed captions
+- Unicode bug fixed
+
+v2.2
+- Added option to download customized definitions, set on web http://cleansub.heliohost.org
+
+v2.1
+- Small bug fix
+- Removed excess logging
+
+v2.0
+- Improve heuristic search according to false positives in stats
+
+v1.9
+- MySQL fix
+
+v1.8
+- Unicode fixes
+
+v1.7
+- More strings read from language files
+- Unicode error fix
+- Not saving subs if no changes were made
+
+v1.6
+- Improved standalone cleaner logic
+- All strings read from language files
+
+v1.5
+- Added standalone cleaner to clean subtitles from any directory selected (set in addon settings)
+- Small optimizations
+
+v1.4
+- Added standalone instance to programs which can cleanup subtitles in video (movies) library
+- small fixes
+
+v1.3
+- Overall optimizations, better error checking/handling
+- Added anonymous statistics collection for better heuristic analysis
+- Optimized overlay animation
+
+v1.2
+- Optimizations, bug fixes
+- New overlay animation
+
+v1.1
+- Small changes, bug fixes
+
+v1.0
+- Added more definitions, added languages: Slovak, Polish, Hungarian
+- Added heuristics cleanup which should be faster but also less thorough
+- i.e. with definitions: removed 3 lines in 0.68 seconds, with heuristics: removed 3 lines in 0.08 seconds
+- You can select to perform only definitions cleanup, heuristics cleanup or both
+- Various small optimizations
+
+v0.9
+- Complete change of logic, should be more reliable
+
+v0.8
+- Added option to turn off icon overlay notification upon cleaning subtitles
+- updated definitions file in plugin
+
+v0.7
+- Added definitions file to local folder in case it can't be downloaded
+
+v0.6
+- Added sub subtitles format
+
+v0.5
+- Better debugging
+- Turn off subs as soon as possible before processing
+
+v0.4
+- Added overlay to display when subtitles are processed
+- Cleanup the code
+
+v0.3
+- Fixed bugs which prevented script running on Android
+
+v0.2
+- Parse subs into list and delete whole subtitle blocks when cleaning string found + reindex subs
+- Better error handling
+
+v0.1
+- Initial release
