@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<addon id="plugin.audio.datpiff" name="datPiff" version="2.0.0" provider-name="mfd">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.beautifulsoup4" version="4.9.3"/>
+		<import addon="script.module.requests" version="2.22.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="datpiff.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">datpiff Mixtapes</summary>
+		<description lang="en">Streams mixtapes from datpiff.com</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<language/>
+		<website>www.datpiff.com</website>
+		<forum/>
+		<source>https://github.com/michaelfdeberry/plugin.audio.datpiff</source>
+		<email>mdeberry at vitreousoft dot com</email>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+    	</assets>
+	</extension>
+</addon>
