@@ -1,0 +1,44 @@
+# Kodi Media Center language file
+# Addon Name: Play Trailer-Mod
+# Addon id: context.trailer.play
+msgid ""
+msgstr ""
+
+msgctxt "#32000"
+msgid "Play Trailer"
+msgstr ""
+
+msgctxt "#32001"
+msgid "Play Trailer (multi select)"
+msgstr ""
+
+msgctxt "#32002"
+msgid "General"
+msgstr ""
+
+msgctxt "#32003"
+msgid "Play trailer in a window"
+msgstr ""
+
+msgctxt "#32004"
+msgid "Context Menu options"
+msgstr ""
+
+msgctxt "#32005"
+msgid "      [COLOR FFA0C12C]Auto Play trailers (use addon default)[/COLOR]"
+msgstr ""
+
+msgctxt "#32006"
+msgid "      [COLOR FFA0C12C]YouTube Trailer list (search select)[/COLOR]"
+msgstr ""
+
+msgctxt "#32007"
+msgid ""
+msgstr ""
+
+msgctxt "#32008"
+msgid "    api Language"
+msgstr ""
+
+
+

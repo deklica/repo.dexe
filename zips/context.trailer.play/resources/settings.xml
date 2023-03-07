@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings>
+	<category label="32002">
+		<setting  id="windowed" label="32003" type="bool" default="false"/>
+		<setting type="lsep" label="32004" />
+		<setting id="context.trailer.autoplay"label="32000" type="bool" default="true" />
+		<setting id="context.trailer.message1" label="32005" type="action" default="[B][COLOR FFA0C12C]$ADDON[context.trailer.play 32007][/COLOR][/B]" enable="true" />
+		<setting id="context.trailer.selectplay" label="32001" type="bool"  default="false" />
+		<setting id="context.trailer.message2" label="32006" type="action" default="[B][COLOR FFA0C12C]$ADDON[context.trailer.play 32007][/COLOR][/B]" enable="true"/>
+		<setting id="api.language" type="select" label="32008" values="AUTO|English|Bulgarian|Chinese|Croatian|Czech|Danish|Dutch|Finnish|French|German|Greek|Hebrew|Hungarian|Italian|Japanese|Korean|Norwegian|Polish|Portuguese|Romanian|Russian|Serbian|Slovak|Slovenian|Spanish|Swedish|Thai|Turkish|Ukrainian" default="English" enable="eq(-2,true)" />
+	</category>
+</settings>

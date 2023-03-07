@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="context.trailer.play"
+       name="Context Trailer Play"
+       provider-name="[COLORpurple]• [COLORorchid]Tech [COLORdarkorchid]E [COLORplum]Coyote [COLORpurple]•[/COLOR]"
+       version="22.5.8">
+    <requires>
+        <import addon="script.module.requests" version="2.19.1" />
+        <import addon="plugin.video.youtube" version="6.2.0" />
+    </requires>
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="autoplay.py">
+                <label>32000</label>
+                <visible>
+                    String.IsEqual(Window(home).Property(context.trailer.autoplay),true) +
+                    [String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,episode)] +
+                    !String.IsEmpty(ListItem.Trailer)
+                </visible>
+            </item>
+            <item library="selectplay.py">
+                <label>32001</label>
+                <visible>
+                    String.IsEqual(Window(home).Property(context.trailer.selectplay),true) +
+                    [String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,episode)]
+                </visible>
+            </item>
+        </menu>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="kodi.addon.metadata">
+        <summary lang="en">Play a movie or show trailer from the context menu in the library.</summary>
+        <description lang="en">Adds a context menu entry for movies or shows that have a trailer in the database. Choose windowed or fullscreen play in the settings.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum></forum>
+        <website></website>
+        <source></source>
+        <disclaimer lang="en"></disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot></screenshot>
+        </assets>
+        <news></news>
+    </extension>
+</addon>
