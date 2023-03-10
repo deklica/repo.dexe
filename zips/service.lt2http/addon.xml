@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.lt2http" name="lt2http" version="0.0.16" provider-name="ElementumOrg">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="repository.elementum" optional="true" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py" />
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">LT2http: LibTorrent-to-HTTP streaming addon</summary>
+        <description lang="en">LT2http is a torrent download and streaming engine.</description>
+        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+        <language>en el es de fi fr he hr it nl pt ro sk</language>
+        <platform>all</platform>
+        <website>http://elementum.surge.sh/</website>
+        <source>https://github.com/ElementumOrg/lt2http</source>
+        <forum></forum>
+        <license>Non commercial. See https://github.com/ElementumOrg/service/blob/master/LICENSE</license>
+        <assets>
+            <fanart>fanart.png</fanart>
+        </assets>
+    </extension>
+</addon>
