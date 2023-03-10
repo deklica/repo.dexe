@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.elementum" name="Elementum Repository" version="0.1.87" provider-name="elgatito">
+	<requires></requires>
+	<extension point="xbmc.addon.repository" name="Elementum Repository">
+		<dir>
+			<info compressed="false">http://127.0.0.1:65220/repository/elgatito/plugin.video.elementum/addons.xml</info>
+			<checksum>http://127.0.0.1:65220/repository/elgatito/plugin.video.elementum/addons.xml.md5</checksum>
+			<datadir zip="true">http://127.0.0.1:65220/repository/elgatito/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">GitHub repository for Elementum updates</summary>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+	</extension>
+</addon>
