@@ -616,8 +616,8 @@ Random updates by lolage.
 		<source>https://github.com/elgatito/context.elementum</source>
 		<forum></forum>
 		<assets>
-			<icon>meta/icon.png</icon>
-			<fanart>meta/fanart.jpg</fanart>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
