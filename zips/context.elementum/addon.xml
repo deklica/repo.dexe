@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="context.elementum" name="Elementum Context Helper" version="0.0.10" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="script.module.requests"/>
+		<import addon="plugin.video.elementum" optional="true"/>
+		<import addon="script.module.future" version="0.16.0.4"/>
+	</requires>
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<menu>
+				<label>32011</label>
+				<item library="context_play.py">
+					<label>32000</label>
+					<visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season)</visible>
+				</item>
+				<item library="context_download.py">
+					<label>32012</label>
+					<visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season)</visible>
+				</item>
+				<item library="context_assign.py">
+					<label>32002</label>
+					<visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season)</visible>
+				</item>
+				<item library="context_library.py" args="remove">
+					<label>32017</label>
+					<visible>Integer.IsGreater(ListItem.DBID,0)+[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+				</item>
+				<item library="context_trakt.py" args="watched">
+					<label>32018</label>
+					<visible>[Integer.IsGreater(ListItem.DBID,0) | Integer.IsGreater(ListItem.UniqueID(tmdb),0)]+Integer.IsEqual(ListItem.PlayCount,0)+[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+				</item>
+				<item library="context_trakt.py" args="unwatched">
+					<label>32019</label>
+					<visible>[Integer.IsGreater(ListItem.DBID,0) | Integer.IsGreater(ListItem.UniqueID(tmdb),0)]+Integer.IsGreater(ListItem.PlayCount,0)+[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+				</item>
+				<item library="context_info.py">
+					<label>32001</label>
+					<visible>System.GetBool(debug.extralogging)+[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+				</item>
+			</menu>
+		</menu>
+	</extension>
+	<extension point="kodi.addon.metadata">
+		<summary lang="ru">Elementum Контекстное меню</summary>
+		<summary lang="en">Elementum Context Menu</summary>
+		<description lang="ru">Контекстное меню для Elementum.</description>
+		<description lang="en">Context Menu for Elementum.</description>
+		<disclaimer lang="ru">Автор не несёт ответственности за использование дополнения, не распространяет данные, выводимые дополнением.</disclaimer>
+		<disclaimer lang="en">The author is not responsible for addon usage and does not host or distribute any of the content displayed by this addon.</disclaimer>
+		<license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
+		<website>https://elementum.surge.sh</website>
+		<source>https://github.com/elgatito/context.elementum</source>
+		<forum></forum>
+		<assets>
+			<icon>meta/icon.png</icon>
+			<fanart>meta/fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
