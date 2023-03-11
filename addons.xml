@@ -18,11 +18,9 @@ context.trailer.play
 plugin.program.autoenabler
 plugin.program.openwizard
 plugin.program.super.favourites
-plugin.program.thumbcache.cleaner
 plugin.video.f4mTester
 plugin.video.jetproxy
 plugin.video.live.streamspro
-plugin.video.smr_link_tester
 script.autoruns
 script.elementum.burst
 script.ezmaintenanceplus
@@ -55,6 +53,8 @@ script.module.tmdbhelper
 resource.font.robotocjksc
 script.service.argonforty-device
 
+plugin.program.thumbcache.cleaner
+plugin.video.smr_link_tester
 script.module.resolveurl
 script.module.resolveurl.xxx
 
@@ -62,6 +62,7 @@ script.module.resolveurl.xxx
 
 <addons>
 
+<addon id="script.module.oriontest" visible="false" />
 
 <addon id="plugin.video.daddylive" name="Daddylive" version="2.1a" provider-name="mbebe">
     <requires>
@@ -1018,26 +1019,6 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.program.thumbcache.cleaner" name="Thumbnail Cache Cleaner" version="1.0.04" provider-name="Tiki">
-    <requires />
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.python.module" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Clean Kodi's Thumbnail Cache</summary>
-        <description lang="en">Clean Kodi's Thumbnail Cache</description>
-        <platform>all</platform>
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-        <source>/</source>
-        <news></news>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
-</addon>
-
-
 <addon id="plugin.video.f4mTester" version="4.0.7" name="f4mTester" provider-name="Joel e Tiago">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -1119,28 +1100,6 @@ In addition to what livestreams allowed you to do, you can now,
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-	</extension>
-</addon>
-
-
-<addon id="plugin.video.smr_link_tester" version="1.1.9" name="SMR Link Tester" provider-name="gujal">
-    <requires>
-        <!-- <import addon="xbmc.python" version="3.0.0"/> -->
-        <import addon="script.module.resolveurl"/>
-        <import addon="script.module.resolveurl.xxx"/>
-        <import addon="script.module.six" version="0.0.1"/>
-        <import addon="script.module.kodi-six" version="0.0.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>SMR Link Tester Addon</summary>
-        <description></description>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
 	</extension>
 </addon>
 
