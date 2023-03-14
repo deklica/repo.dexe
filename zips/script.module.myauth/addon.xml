@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.myauth" name="myauthact" version="1.0.2" provider-name="Zaxxon709, drinferno">
+    <extension point="xbmc.python.pluginsource" library="default.py">
+    <extension point="xbmc.addon.metadata">
+    </extension>
+        <summary lang="en">Authorize Debrid Accounts</summary>
+        <description lang="en">Debrid Accounts Manager</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://</source>
+    </extension>
+</addon>
