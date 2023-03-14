@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.709" name=" The[COLOR green] [B]7o9[/B][/COLOR]Repo" version="1.3" provider-name="Zaxxon709">
+    <extension point="xbmc.addon.repository" name="The7o9Repo">
+        <dir minversion="19.0.0" maxversion="19.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/Zaxxon709/matrix/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Zaxxon709/matrix/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Zaxxon709/matrix/master/zips/</datadir>
+        </dir>
+        <dir minversion="20.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/Zaxxon709/nexus/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Zaxxon709/nexus/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Zaxxon709/nexus/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>The 7o9Repo</summary>
+        <description>7o9 Repository</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
