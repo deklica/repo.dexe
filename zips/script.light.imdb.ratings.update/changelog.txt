@@ -1,0 +1,159 @@
+v5.1.1 (2022-12-12)
+- Fixed import module error (for Python 2)
+
+v5.1.0 (2022-12-04)
+- Fixed Internet connection check
+- Other minor updates
+
+v5.0.3 (2022-07-15)
+- Changed the domain for Internet connection check
+- Fixed translatePath for Kodi 20
+
+v5.0.2 (2021-09-25)
+- Fixed context menu opening inside categories
+- Fixed update progress not closing properly
+
+v5.0.1 (2021-07-17)
+- Fixed Internet connection check
+
+v5.0.0 (2021-07-10)
+- Added support for Kodi 17/18
+- Added the option to choose the method for TV shows ratings update
+- Removed tmdbsimple and tvdbsimple wrappers
+- Added TMDB API requests to retrieve IMDB IDs
+- Added IMDB ID retrieval for movies
+- Added french translation (thanks to Mirgolth)
+- Other minor updates and fixes
+
+v4.4.0 (2021-05-27)
+- Updated scraper to support new version of IMDb pages
+- Added option for complete log file
+
+v4.3.0 (2021-02-28)
+- Migrated to python 3
+- Improved service management
+- Updated tmdbsimple and tvdbsimple wrappers
+- Other minor updates
+
+v4.2.3 (2021-01-28)
+- Fixed settings.xml for Kodi 17 compatibility
+
+v4.2.2 (2020-04-12)
+- Changed from akas.imdb.com to www.imdb.com
+
+v4.2.1 (2020-02-06)
+- Added the number of threads in the settings
+
+v4.1.1 (2019-12-05)
+- Reverted to python 2.25.0 dependency for Kodi 17 compatibility
+
+v4.1.0 (2019-12-02)
+- Added back IMDb, TMDB and TVDB IDs in the context menu for episodes
+- Reverted to the rating update method based on IMDb ID for single episode 
+- Fixed bug in log file
+
+v4.0.2 (2019-11-13)
+- Fixed bug in context menu for movie sets
+- Removed myconnpy dependency
+
+v4.0.1 (2019-10-15)
+- Fixed bug in show progress
+
+v4.0.0 (2019-02-04)
+- New IMDb scraping method for TV shows
+- Added Internet connection check
+- Revised context menu
+- Revised log file
+- Revised settings
+- Fixed bug in scheduled update
+- Other minor updates
+
+v3.5.1 (2019-01-09)
+- Fixed error when opening context menu for episodes in the Home screen
+- Added ratings update for the All Seasons item (context menu)
+- Added management of The Movie Database request rate limiting
+
+v3.5.0 (2018-12-06)
+- Fixed bug of overwriting default ratings
+- Added option to set IMDb rating as default rating
+- Added option to disable notifications sound
+- Moved the IMDb rating update entry in the main context menu
+- Other minor updates
+
+v3.4.1 (2018-06-23)
+- Fixed bug when show update progress is disabled
+- Added actual rating, votes and Top 250 in the context menu
+
+v3.4.0 (2018-03-19)
+- Added TV Shows/Episodes IMDb ID retrieval from The Movie Database
+
+v3.3.2 (2017-11-10)
+- Fixed context menu for Episodes selected from All Seasons
+
+v3.3.1 (2017-11-08)
+- Fixed error for TV Show titles having special characters (context menu)
+
+v3.3.0 (2017-11-05)
+- Added IMDb ID and TVDB ID edit options in context menu
+- Added option to enable log file
+- Added backup of previous log file
+- Extended log file for the updates through context menu
+- Revised some debug log and update progress messages
+- Revised Episodes update through context menu of TV Show
+- Fixed IMDb/TheTVDB.com sites access errors
+- Fixed bug for Season update through context menu
+
+v3.2.0 (2017-10-29)
+- Removed the need of a personal API key for TheTVDB.com
+- Added option to exclude watched Movies/TV Shows/Episodes from the update
+- Added option to set the number of threads
+- Added log file to report Movies/TV Shows/Episodes having issues
+- Revised debug log and update progress messages for TV Shows
+
+v3.1.0 (2017-10-21) by dziobak
+- Added multiple-threads for IMDb requests
+- Changed HTML processing to regexp (removed BeautifulSoup)
+- Changed IMDb site to akas
+- Added gzip support to IMDb requests
+- Fixed crash when socket timeout
+- Fixed error when IMDb has no rating
+- Fixed error when TheTVDB.com has no IMDb ID for TV Show/Episode
+- Fixed error when TheTVDB.com returns IMDb ID without "tt"
+- Changed behaviour on IMDb connection error
+- Fixed other minor bugs
+
+v3.0.0 (2017-10-18)
+- New IMDb scraper based on python (removed PHP)
+- Added manual update from the Home menu (under Add-on sub-menu)
+- Added update of single Movie/TV Show/Season/Episode through context menu
+- Added TV Shows/Episodes IMDb ID retrieval from TheTVDB.com (need API key)
+- Added check to avoid multiple concurrent updates
+- Fixed IMDb ID check for Episodes
+- Revised all debug log messages
+
+v2.1.1 (2017-08-27)
+- Fixed standalone TV Show update
+
+v2.1.0 (2017-08-19)
+- Added support for Nvidia Shield
+- Fixed bug in python
+
+v2.0.0 (2017-07-30):
+- Added support for Ubuntu, Debian, LibreELEC and Android
+- Added automatic PHP installation
+- Revised Top 250 update for Movies
+- Revised scheduled update information save
+- Added option to disable scheduled update
+- Fixed deprecated constructor in PHP 7.0.x
+
+v1.1.1 (2017-06-21):
+- Bug fix
+
+v1.1.0 (2017-06-21):
+- Added manual update
+
+v1.0.1 (2017-06-20):
+- Improved configuration
+
+v1.0.0 (2017-05-26):
+- First add-on release
