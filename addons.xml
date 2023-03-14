@@ -25,6 +25,7 @@ script.elementum.burst
 script.ezmaintenanceplus
 script.hideosd
 script.kcleaner
+script.light.imdb.ratings.update
 script.module.inputstreamhelper
 script.module.myaccts
 script.module.myauth
@@ -1225,6 +1226,37 @@ In addition to what livestreams allowed you to do, you can now,
         <logo>resources/logo.png</logo>
     </assets>
   </extension>
+</addon>
+
+
+<addon id="script.light.imdb.ratings.update" name="Light IMDb Ratings Update" version="5.1.1" provider-name="axlt2002">
+    <requires>
+        <import addon="script.module.simplejson" version="3.3.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.module.web-pdb" optional="true" />
+    </requires>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.python.script" library="main.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="kodi.context.item" library="context.py">
+        <item>
+            <label>32000</label>
+            <visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,episode)</visible>
+        </item>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <platform>all</platform>
+        <forum>https://forum.kodi.tv/showthread.php?tid=316342</forum>
+        <summary lang="en">Light IMDb Ratings Update is a Kodi add-on that keeps updated the IMDb ratings for your movies and TV shows.</summary>
+        <summary lang="it">Light IMDb Ratings Update è un add-on di Kodi che mantiene aggiornate le valutazioni IMDb dei tuoi film e serie TV.</summary>
+        <description lang="en">Light IMDb Ratings Update runs as a Kodi service to update the ratings, votes and Top 250 for movies as well as the ratings and votes for TV shows (including episodes) by scraping the data from the IMDb site. The update can be run manually or scheduled once a week and it will run as soon as possible after a scheduled start is missed. Please check the add-on thread in the Kodi forum for more details.</description>
+        <description lang="it">Light IMDb Ratings Update viene eseguito come un servizio di Kodi per aggiornare le valutazioni, i voti e la Top 250 per i film così come le valutazioni ed i voti per le serie TV (inclusi gli episodi) ottenendo i dati dal sito IMDb. L'aggiornamento può essere eseguito manualmente o pianificato una volta alla settimana e sarà avviato appena possibile se un avvio pianificato non viene eseguito. Per ulteriori dettagli si veda il thread dell'add-on nel forum di Kodi.</description>
+    </extension>
 </addon>
 
 
