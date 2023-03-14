@@ -130,7 +130,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.709" name=" The 7o9Repo" version="1.3" provider-name="Zaxxon709">
+<addon id="repository.709" name="The 7o9Repo" version="1.3" provider-name="Zaxxon709">
     <extension point="xbmc.addon.repository" name="The7o9Repo">
     </extension>
     <extension point="xbmc.addon.metadata">
