@@ -2,6 +2,7 @@
 
 <!--  Repositories  -----------------------------------
 repository.5star
+repository.709
 repository.a4kstreaming
 repository.a4ksubtitles
 repository.abratchik
@@ -129,6 +130,21 @@ repository.zachmorris
 	</extension>
 </addon>
 
+<addon id="repository.709" name=" The 7o9Repo" version="1.3" provider-name="Zaxxon709">
+    <extension point="xbmc.addon.repository" name="The7o9Repo">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>The 7o9Repo</summary>
+        <description>7o9 Repository</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="repository.a4kstreaming" name="a4kStreaming Repository" version="1.0.0" provider-name="Unknown">
 	<extension point="xbmc.addon.repository" name="a4kStreaming Repository">
 	</extension>
@@ -219,7 +235,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.0.9" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.1.0" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -731,7 +747,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.gsource" name="G-Source Repository" version="1.0.2" provider-name="G-Man">
+<addon id="repository.gsource" name="G-Source Repository" version="1.1.0" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="G-Source Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1297,7 +1313,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.southpaw" name="The South Paw Repository" version="0.2.2" provider-name="Tom">
+<addon id="repository.southpaw" name="The South Paw Repository" version="0.2.3" provider-name="Tom">
 	<extension point="xbmc.addon.repository" name="The South Paw Repository"> 
 	</extension>
 	<extension point="xbmc.addon.metadata">
