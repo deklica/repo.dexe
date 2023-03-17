@@ -1,28 +1,49 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="script.autoruns"
-       name="Autoruns"
-       version="9"
-       provider-name="fight night, Jon Bovi">
+<addon id="script.autoruns" name="Autoruns" version="1.0.2" provider-name="fightnight, bittor7x0">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />		
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
     </extension>
-    <extension point="xbmc.service" library="service.py" />
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-		<source>https://github.com/fightnight/fightnight-addons/tree/master/script.autoruns</source>
-		<summary lang="en">Disable startup services on Kodi</summary>
-		<summary lang="pt">Desactive serviços do arranque no Kodi</summary>
-		<description lang="en">You can disable startup services, improving Kodi internal speed.</description>
-		<description lang="pt">Pode desactivar serviços do arranque, melhorando a velocidade interna do Kodi.</description>
-		<disclaimer lang="en">Opensource addon not endorsed with Team Kodi.</disclaimer>
-		<disclaimer lang="pt">Addon opensource não afliado com a Equipa Kodi.</disclaimer>
-		<assets>
-				<icon>icon.png</icon>
-		</assets>
+        <source>https://github.com/bittor7x0/kodi.script.autoruns</source>
+        <summary lang="en">Disable startup services on Kodi</summary>
+        <summary lang="pt">Desactive serviços do arranque no Kodi</summary>
+        <summary lang="es">Desactive el inicio de servicios en Kodi</summary>
+        <description lang="en">You can disable startup services, improving Kodi internal speed.</description>
+        <description lang="pt">Pode desactivar serviços do arranque, melhorando a velocidade interna do Kodi.</description>
+        <description lang="es">Puede desactivar el inicio de servicios, mejorando la velocidad interna de Kodi.</description>
+        <disclaimer lang="en">Opensource addon not endorsed with Team Kodi.</disclaimer>
+        <disclaimer lang="pt">Addon opensource não afliado com a Equipa Kodi.</disclaimer>
+        <disclaimer lang="es">Addon opensource no afiliado con el Equipo de Kodi.</disclaimer>
+        <license>GPL-3.0-or-later</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+        <news>[B]v1.0.2 (14 November 2022):[/B]
+- Update for Kodi v19 Matrix.
+
+[B]v1.0.1 (31 March 2015):[/B]
+- Little tweaks.
+- Submittion to Kodi official Kodi repository.
+- Cosmetic changes.
+
+[B]v1.0.0 (28 de Marco de 2015):[/B]
+- Limpeza de codigo.
+- Novo addon_id.
+- Outras correccoes.
+
+[B]v0.1.00 (13 de Novembro de 2014):[/B]
+- Melhorias de performance.
+- Adicionado logotipo do addon a cada pasta.
+- Outras correccoes.
+
+[B]v0.0.02 (21 de Dezembro de 2013):[/B]
+- Logotipo adicionado.
+
+[B]v0.0.01 (5 de Dezembro de 2013):[/B]
+- Release inicial.</news>
     </extension>
 </addon>
