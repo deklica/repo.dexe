@@ -32,6 +32,7 @@ script.module.myaccts
 script.module.myauth
 script.module.youtube.dl
 script.service.sponsorblock
+script.speedtester
 script.toolbox
 script.tvskipintro
 script.video.F4mProxy
@@ -41,6 +42,7 @@ service.cleansubs
 service.lt2http
 service.stinger.notification
 service.subloader
+service.vpn.manager
 
 plugin.audio.dashradio
 plugin.audio.datpiff
@@ -1446,31 +1448,52 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.autoruns"
-       name="Autoruns"
-       version="6"
-       provider-name="fight night, Jon Bovi">
+<addon id="script.autoruns" name="Autoruns" version="1.0.2" provider-name="fightnight, bittor7x0">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />		
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
     </extension>
-    <extension point="xbmc.service" library="service.py" />
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-		<source>https://github.com/fightnight/fightnight-addons/tree/master/script.autoruns</source>
-		<summary lang="en">Disable startup services on Kodi</summary>
-		<summary lang="pt">Desactive serviços do arranque no Kodi</summary>
-		<description lang="en">You can disable startup services, improving Kodi internal speed.</description>
-		<description lang="pt">Pode desactivar serviços do arranque, melhorando a velocidade interna do Kodi.</description>
-		<disclaimer lang="en">Opensource addon not endorsed with Team Kodi.</disclaimer>
-		<disclaimer lang="pt">Addon opensource não afliado com a Equipa Kodi.</disclaimer>
-		<assets>
-				<icon>icon.png</icon>
-		</assets>
+        <source>https://github.com/bittor7x0/kodi.script.autoruns</source>
+        <summary lang="en">Disable startup services on Kodi</summary>
+        <summary lang="pt">Desactive serviços do arranque no Kodi</summary>
+        <summary lang="es">Desactive el inicio de servicios en Kodi</summary>
+        <description lang="en">You can disable startup services, improving Kodi internal speed.</description>
+        <description lang="pt">Pode desactivar serviços do arranque, melhorando a velocidade interna do Kodi.</description>
+        <description lang="es">Puede desactivar el inicio de servicios, mejorando la velocidad interna de Kodi.</description>
+        <disclaimer lang="en">Opensource addon not endorsed with Team Kodi.</disclaimer>
+        <disclaimer lang="pt">Addon opensource não afliado com a Equipa Kodi.</disclaimer>
+        <disclaimer lang="es">Addon opensource no afiliado con el Equipo de Kodi.</disclaimer>
+        <license>GPL-3.0-or-later</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+        <news>[B]v1.0.2 (14 November 2022):[/B]
+- Update for Kodi v19 Matrix.
+
+[B]v1.0.1 (31 March 2015):[/B]
+- Little tweaks.
+- Submittion to Kodi official Kodi repository.
+- Cosmetic changes.
+
+[B]v1.0.0 (28 de Marco de 2015):[/B]
+- Limpeza de codigo.
+- Novo addon_id.
+- Outras correccoes.
+
+[B]v0.1.00 (13 de Novembro de 2014):[/B]
+- Melhorias de performance.
+- Adicionado logotipo do addon a cada pasta.
+- Outras correccoes.
+
+[B]v0.0.02 (21 de Dezembro de 2013):[/B]
+- Logotipo adicionado.
+
+[B]v0.0.01 (5 de Dezembro de 2013):[/B]
+- Release inicial.</news>
     </extension>
 </addon>
 
@@ -1677,11 +1700,11 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.myaccts" version="1.1.4" name="Debrid Manager" provider-name="Zaxxon709, Ezra Hubbard">
+<addon id="script.module.myaccts" version="1.1.5" name="Debrid Manager" provider-name="Zaxxon709, Ezra Hubbard">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-            <import addon="script.module.myauth" version="1.0.2" />
+            <import addon="script.module.myauth" version="1.0.3" />
 	</requires>
 	<extension point="xbmc.python.script" library="lib/default.py">
 		<provides>executable</provides>
@@ -1702,10 +1725,10 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.myauth" name="myauthact" version="1.0.2" provider-name="Zaxxon709, drinferno">
-    <extension point="xbmc.python.pluginsource" library="default.py">
+<addon id="script.module.myauth" name="myauthact" version="1.0.3" provider-name="Zaxxon709, drinferno">
+	<extension point="xbmc.python.module" library="resources/libs" /> <!-- Must be placed after xbmc.python.pluginsource, otherwise the addon does not show in the repository. -->
+    <extension point="xbmc.python.pluginsource" library="default.py" />
     <extension point="xbmc.addon.metadata">
-    </extension>
         <summary lang="en">Authorize Debrid Accounts</summary>
         <description lang="en">Debrid Accounts Manager</description>
         <platform>all</platform>
@@ -1793,6 +1816,49 @@ Benutzer melden diverse Segmente die dann automatisch übersprungen werden.
             <fanart>resources/images/fanart.jpg</fanart>
         </assets>
     </extension>
+</addon>
+
+
+<addon id="script.speedtester" name="Speed Tester" version="1.1.2+matrix.1" provider-name="Dr0idGuy, dagwieers">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="resources/lib/addon_entry.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Test your Internet bandwidth</summary>
+    <description lang="en_GB">This add-on tests your Internet bandwith and reports both download and upload speeds and latency from within Kodi.
+
+Use this if you are experiencing streaming issues and you suspect your network to be the cause.</description>
+    <disclaimer lang="en_GB">Speed Tester is powered by speedtest.net</disclaimer>
+    <language>en</language>
+    <license>Apache-2.0</license>
+    <email>dag@wieers.com</email>
+    <website>https://kodi.wiki/view/Add-on:Speed_Tester</website>
+    <source>https://github.com/add-ons/script.speedtester</source>
+    <news>
+v1.1.1 (2020-10-10)
+- Fix issues for Kodi repo review
+
+v1.1.1 (2020-10-10)
+- Add localization
+
+v1.1.0 (2020-09-26)
+- Move add-on to Add-ons project
+- Fix typos and structure of standard output
+
+v1.0.1 (2019-08-06)
+- Initial release
+    </news>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <screenshot>resources/media/screenshot01.jpg</screenshot>
+      <screenshot>resources/media/screenshot02.jpg</screenshot>
+      <screenshot>resources/media/screenshot03.jpg</screenshot>
+    </assets>
+  </extension>
 </addon>
 
 
@@ -2060,6 +2126,37 @@ Clean up project files.
 	</extension>
 </addon>
 
+
+<addon id="service.vpn.manager"
+       name="VPN Manager for OpenVPN"
+       version="7.0.1"
+       provider-name="Zomboided">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.python.module" library="libs" />
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news></news>
+    <platform>all</platform>
+    <summary lang="en">Configure and manage VPN connections using openVPN</summary>
+    <description lang="en">Establish a connection to a VPN service and automatically switch VPN locations based on the add-on being used.</description>
+    <license>GPL-2.0-or-later</license>
+    <forum>https://forum.libreelec.tv/thread/5032-vpn-manager-for-openvpn/</forum>
+    <source>https://github.com/Zomboided/service.vpn.manager</source>
+    <assets>
+        <icon>resources/icon.png</icon>
+        <fanart></fanart>
+        <banner></banner>
+        <clearlogo></clearlogo>
+        <screenshot></screenshot>
+    </assets>
+  </extension>
+</addon>
+
 <!-- ---------------------------------------------------------------------- -->
 
 <addon id="plugin.audio.dashradio" name="Dash Radio" version="420.3" provider-name="Diggz">
@@ -2251,7 +2348,7 @@ Clean up project files.
 
 <addon id="plugin.audio.ytmusic.exp"
        name="YT [COLOR red]Music[/COLOR] EXP"
-       version="1.0~beta12"
+       version="1.0~beta13"
        provider-name="ForeverGuest">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -2265,9 +2362,10 @@ Clean up project files.
     <summary lang="en">Experimental Youtube [COLOR red]Music[/COLOR] plugin</summary>
     <description lang="en">EXPerimental plugin that lets you play music from Youtube Music.</description>
     <news>
-1.0~beta12 (2022-11-20)
-- Fix errors caused by the introduction of album IDs in song data
-- Fix an error causing the artist in playlist songs to be displayed as -???-
+1.0~beta13 (2023-03-16)
+- Update ytmusicapi to version `0.25.0` to restore library and playlist functionality.
+- Refresh playlist after deleting a song from the playlist.
+- Fix error when attempting to display an empty playlist.
     </news>
     <assets>
       <icon>resources/icon.png</icon>
