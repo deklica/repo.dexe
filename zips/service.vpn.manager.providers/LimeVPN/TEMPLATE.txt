@@ -1,0 +1,13 @@
+client
+dev tun
+proto #PROTO
+remote #SERVER #PORT
+redirect-gateway def1
+tls-client
+cipher AES-256-CBC
+remote-cert-tls server
+resolv-retry 30
+ca #CERT
+auth-user-pass #PASS
+verb 3
+
