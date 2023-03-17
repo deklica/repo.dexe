@@ -1,0 +1,18 @@
+client
+dev tun
+proto #PROTO
+remote #SERVER #PORT
+nobind
+auth-user-pass #PASS
+resolv-retry 30
+cipher AES-256-GCM
+ncp-ciphers AES-256-GCM:AES-256-CBC:AES-128-GCM
+auth SHA512
+verb 2
+mute-replay-warnings
+remote-cert-tls server
+persist-key
+persist-tun
+key-direction 1
+ca #CERT
+tls-auth #TLSKEY
