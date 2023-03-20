@@ -747,12 +747,12 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.gsource" name="G-Source Repository" version="1.1.0" provider-name="G-Man">
+<addon id="repository.gsource" name="G-Source Repository" version="1.2.0" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="G-Source Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>For Kodi 19 and above</summary>
-		<description>Discover Huge Directory of Repos and Add-ons for Kodi 19 and above.</description>
+		<description>Discover Huge Directory of Repos and Add-ons for Kodi 19 and above.[CR]Contains the "Repo Source Installer" program add-on, Many Skins in the "Look and feel" Directory and a Huge list of repositories in the "Add-on repository Directory".</description>
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
