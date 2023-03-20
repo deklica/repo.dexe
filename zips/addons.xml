@@ -1,0 +1,3146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!--  Video / Program&Services / Audio / Dependencies / Other / External  -----------------------------------
+
+plugin.video.daddylive
+plugin.video.elementum
+plugin.video.json_iptv
+plugin.video.last_played
+plugin.video.premiumizerx
+plugin.video.realizerx
+plugin.video.ukturk19
+plugin.video.watchnixtoons2
+script.realdebrid
+
+context.elementum
+context.themoviedb.helper
+context.trailer.play
+plugin.program.autoenabler
+plugin.program.autowidget
+plugin.program.openwizard
+plugin.program.super.favourites
+plugin.video.f4mTester
+plugin.video.jetproxy
+plugin.video.live.streamspro
+script.autoruns
+script.elementum.burst
+script.ezmaintenanceplus
+script.hideosd
+script.kcleaner
+script.light.imdb.ratings.update
+script.module.inputstreamhelper
+script.module.myaccts
+script.module.myauth
+script.module.youtube.dl
+script.service.sponsorblock
+script.speedtester
+script.toolbox
+script.tvskipintro
+script.video.F4mProxy
+script.xbmcbackup
+service.banners
+service.blackbarsremover
+service.cleansubs
+service.lt2http
+service.stinger.notification
+service.subloader
+service.vpn.manager
+
+plugin.audio.dashradio
+plugin.audio.datpiff
+plugin.audio.mp3streams
+plugin.audio.radio_de
+plugin.audio.tuneinradio
+plugin.audio.ytmusic.exp
+
+script.module.microjenscrapers
+script.module.thetvdb
+script.module.tmdbhelper
+
+plugin.games.rom.collection.browser.widget
+plugin.program.moonlight-qt
+resource.font.robotocjksc
+script.games.rom.collection.browser
+script.service.argonforty-device
+service.rom.collection.browser
+
+plugin.program.thumbcache.cleaner
+plugin.video.smr_link_tester
+script.module.resolveurl
+script.module.resolveurl.xxx
+
+plugin.video.themoviedb.helper
+script.module.infotagger
+
+-->
+
+<addons>
+
+<addon id="script.module.oriontest" visible="false" />
+
+<addon id="plugin.video.daddylive" name="Daddylive" version="2.1a" provider-name="mbebe">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper"/>
+        <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Live TV and Sports</summary>
+        <description lang="en">Live TV and Sports</description>
+        <disclaimer lang="en">test</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website></website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.87+android" provider-name="elgatito">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="repository.elementum" optional="true" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ru">Elementum: Стриминг видео</summary>
+        <summary lang="en">Elementum: Media streaming</summary>
+        <summary lang="hr">Elementum: Medijsko strujanje</summary>
+        <summary lang="es">Elementum: Transmisión de medios</summary>
+        <summary lang="sv">Elementum: medieströmning</summary>
+        <description lang="ru">Elementum это дополнение для поиска и воспроизведения торрентов. Дополнение не ходит на запрещенные сайты самостоятельно. Хотя, для поиска используются дополнения (называемые провайдерами), которые устанавливаются отдельно.[CR]Этот проект является ответвлением хорошо извесных, но не поддерживаемых Pulsar/Quasar от steeve и scakemyer.</description>
+        <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+        <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+        <description lang="es">Elementum es un motor de búsqueda y transmisión torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
+        <description lang="sv">Elementum är en torrentsöknings- och strömningsmotor. Det går inte till torrentwebbplatser av juridiska skäl. Den anropar dock speciellt utformade tillägg (kallade leverantörer) som installeras separat.[CR]Detta projekt är en förgrening av de välkända, men inte längre underhållna Pulsar/Quasar-projekten av steeve och scakemyer. </description>
+        <disclaimer lang="ru">Автор дополнения не несёт ответственности за скачивание или поиск информации и содержимого в этом дополнении. Автор никак не связан с Kodi, командой Kodi, или XBMC Foundation.</disclaimer>
+        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+        <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
+        <disclaimer lang="sv">Skaparen äger inte eller är värd av något innehåll som finns i detta tillägg. Författaren är inte ansluten till eller på något annat sätt en del av Kodi, Team Kodi eller XBMC Foundation.</disclaimer>
+        <language>en el es de fi fr he hr it nl pt ro sk sv</language>
+        <platform>android android-armv7 android-aarch64 android-i686</platform>
+        <website>http://elementum.surge.sh/</website>
+        <source>https://github.com/elgatito/plugin.video.elementum</source>
+        <forum></forum>
+        <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>meta/icon.png</icon>
+			<fanart>meta/fanart.jpg</fanart>
+			<screenshot>meta/home.png</screenshot>
+			<screenshot>meta/movies.png</screenshot>
+			<screenshot>meta/webui.png</screenshot>
+		</assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.87+linux" provider-name="elgatito">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="repository.elementum" optional="true" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ru">Elementum: Стриминг видео</summary>
+        <summary lang="en">Elementum: Media streaming</summary>
+        <summary lang="hr">Elementum: Medijsko strujanje</summary>
+        <summary lang="es">Elementum: Transmisión de medios</summary>
+        <summary lang="sv">Elementum: medieströmning</summary>
+        <description lang="ru">Elementum это дополнение для поиска и воспроизведения торрентов. Дополнение не ходит на запрещенные сайты самостоятельно. Хотя, для поиска используются дополнения (называемые провайдерами), которые устанавливаются отдельно.[CR]Этот проект является ответвлением хорошо извесных, но не поддерживаемых Pulsar/Quasar от steeve и scakemyer.</description>
+        <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+        <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+        <description lang="es">Elementum es un motor de búsqueda y transmisión torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
+        <description lang="sv">Elementum är en torrentsöknings- och strömningsmotor. Det går inte till torrentwebbplatser av juridiska skäl. Den anropar dock speciellt utformade tillägg (kallade leverantörer) som installeras separat.[CR]Detta projekt är en förgrening av de välkända, men inte längre underhållna Pulsar/Quasar-projekten av steeve och scakemyer. </description>
+        <disclaimer lang="ru">Автор дополнения не несёт ответственности за скачивание или поиск информации и содержимого в этом дополнении. Автор никак не связан с Kodi, командой Kodi, или XBMC Foundation.</disclaimer>
+        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+        <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
+        <disclaimer lang="sv">Skaparen äger inte eller är värd av något innehåll som finns i detta tillägg. Författaren är inte ansluten till eller på något annat sätt en del av Kodi, Team Kodi eller XBMC Foundation.</disclaimer>
+        <language>en el es de fi fr he hr it nl pt ro sk sv</language>
+        <platform>linux</platform>
+        <website>http://elementum.surge.sh/</website>
+        <source>https://github.com/elgatito/plugin.video.elementum</source>
+        <forum></forum>
+        <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>meta/icon.png</icon>
+			<fanart>meta/fanart.jpg</fanart>
+			<screenshot>meta/home.png</screenshot>
+			<screenshot>meta/movies.png</screenshot>
+			<screenshot>meta/webui.png</screenshot>
+		</assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.87+mac" provider-name="elgatito">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="repository.elementum" optional="true" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ru">Elementum: Стриминг видео</summary>
+        <summary lang="en">Elementum: Media streaming</summary>
+        <summary lang="hr">Elementum: Medijsko strujanje</summary>
+        <summary lang="es">Elementum: Transmisión de medios</summary>
+        <summary lang="sv">Elementum: medieströmning</summary>
+        <description lang="ru">Elementum это дополнение для поиска и воспроизведения торрентов. Дополнение не ходит на запрещенные сайты самостоятельно. Хотя, для поиска используются дополнения (называемые провайдерами), которые устанавливаются отдельно.[CR]Этот проект является ответвлением хорошо извесных, но не поддерживаемых Pulsar/Quasar от steeve и scakemyer.</description>
+        <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+        <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+        <description lang="es">Elementum es un motor de búsqueda y transmisión torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
+        <description lang="sv">Elementum är en torrentsöknings- och strömningsmotor. Det går inte till torrentwebbplatser av juridiska skäl. Den anropar dock speciellt utformade tillägg (kallade leverantörer) som installeras separat.[CR]Detta projekt är en förgrening av de välkända, men inte längre underhållna Pulsar/Quasar-projekten av steeve och scakemyer. </description>
+        <disclaimer lang="ru">Автор дополнения не несёт ответственности за скачивание или поиск информации и содержимого в этом дополнении. Автор никак не связан с Kodi, командой Kodi, или XBMC Foundation.</disclaimer>
+        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+        <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
+        <disclaimer lang="sv">Skaparen äger inte eller är värd av något innehåll som finns i detta tillägg. Författaren är inte ansluten till eller på något annat sätt en del av Kodi, Team Kodi eller XBMC Foundation.</disclaimer>
+        <language>en el es de fi fr he hr it nl pt ro sk sv</language>
+        <platform>osx osx64 osx32 osx-x86_64 osx-i686 ios ios-armv7 ios-aarch64 tvos tvos-aarch64</platform>
+        <website>http://elementum.surge.sh/</website>
+        <source>https://github.com/elgatito/plugin.video.elementum</source>
+        <forum></forum>
+        <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>meta/icon.png</icon>
+			<fanart>meta/fanart.jpg</fanart>
+			<screenshot>meta/home.png</screenshot>
+			<screenshot>meta/movies.png</screenshot>
+			<screenshot>meta/webui.png</screenshot>
+		</assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.87+windows" provider-name="elgatito">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="repository.elementum" optional="true" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ru">Elementum: Стриминг видео</summary>
+        <summary lang="en">Elementum: Media streaming</summary>
+        <summary lang="hr">Elementum: Medijsko strujanje</summary>
+        <summary lang="es">Elementum: Transmisión de medios</summary>
+        <summary lang="sv">Elementum: medieströmning</summary>
+        <description lang="ru">Elementum это дополнение для поиска и воспроизведения торрентов. Дополнение не ходит на запрещенные сайты самостоятельно. Хотя, для поиска используются дополнения (называемые провайдерами), которые устанавливаются отдельно.[CR]Этот проект является ответвлением хорошо извесных, но не поддерживаемых Pulsar/Quasar от steeve и scakemyer.</description>
+        <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+        <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+        <description lang="es">Elementum es un motor de búsqueda y transmisión torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
+        <description lang="sv">Elementum är en torrentsöknings- och strömningsmotor. Det går inte till torrentwebbplatser av juridiska skäl. Den anropar dock speciellt utformade tillägg (kallade leverantörer) som installeras separat.[CR]Detta projekt är en förgrening av de välkända, men inte längre underhållna Pulsar/Quasar-projekten av steeve och scakemyer. </description>
+        <disclaimer lang="ru">Автор дополнения не несёт ответственности за скачивание или поиск информации и содержимого в этом дополнении. Автор никак не связан с Kodi, командой Kodi, или XBMC Foundation.</disclaimer>
+        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+        <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
+        <disclaimer lang="sv">Skaparen äger inte eller är värd av något innehåll som finns i detta tillägg. Författaren är inte ansluten till eller på något annat sätt en del av Kodi, Team Kodi eller XBMC Foundation.</disclaimer>
+        <language>en el es de fi fr he hr it nl pt ro sk sv</language>
+        <platform>windx windows windows-i686 windows-x86_64 windowsstore</platform>
+        <website>http://elementum.surge.sh/</website>
+        <source>https://github.com/elgatito/plugin.video.elementum</source>
+        <forum></forum>
+        <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>meta/icon.png</icon>
+			<fanart>meta/fanart.jpg</fanart>
+			<screenshot>meta/home.png</screenshot>
+			<screenshot>meta/movies.png</screenshot>
+			<screenshot>meta/webui.png</screenshot>
+		</assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.json_iptv" version="1.0.08" name="Json IPTV" provider-name="JewBMX">
+    <requires>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>IPTV Addon.</summary>
+        <description>json_iptv is a large pile of iptv m3u/m3u8 files collected from various places which have been converted by hand to some simple json lists saved as .py to build quick easy lists in addons or used in this addon lol. plus a few iptv sites scraped as well.</description>
+        <license>Free the People!, Free the World!!</license>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>resources/images/fanart.jpg</fanart>
+        </assets>
+        <news>Check ChangeLog.</news>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.last_played" name="Last Played" version="6.1.1" provider-name="Luis Rodrigues">
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Last Played</summary>
+		<summary lang="en_US">Last Played</summary>
+		<summary lang="en_AU">Last Played</summary>
+		<summary lang="en_NZ">Last Played</summary>
+		<summary lang="pt_PT">Ultimos Vistos</summary>
+		<summary lang="pt_BR">Ultimos Vistos</summary>
+		<summary lang="sk_sk">Last Played (naposledy videné)</summary>
+		<description lang="en_GB">List of the last movies, episodes and music played, including streaming sources from any addon</description>
+		<description lang="en_US">List of the last movies, episodes and music played, including streaming sources from any addon</description>
+		<description lang="en_AU">List of the last movies, episodes and music played, including streaming sources from any addon</description>
+		<description lang="en_NZ">List of the last movies, episodes and music played, including streaming sources from any addon</description>
+		<description lang="pt_PT">Ultimos filmes, episodios e musicas tocadas, incluindo fontes de streaming de qualquer addon</description>
+		<description lang="pt_BR">Ultimos filmes, episodios e musicas tocadas, incluindo fontes de streaming de qualquer addon</description>
+		<description lang="sk_SK">Naposledy prehrávané filmy, seriály a hudba, vrátane streamov z ľubovoľného doplnku</description>
+		<disclaimer lang="en_GB"></disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+		<source>https://github.com/5-star/plugin.video.last_played</source>
+		<assets>
+			<icon>icon.png</icon>
+		    <fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="plugin.video.premiumizerx" version="2023.01.24" name="Premiumizer" provider-name="aenema">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<menu>
+				<label>[COLOR red]Premiumizer[/COLOR]</label>
+				<item library="context/updatecache.py">
+					<label>New Cloud Cache</label>
+					<visible>System.HasAddon(plugin.video.premiumizerx)</visible>
+				</item>
+				<item library="context/updatelibrary.py">
+					<label>Update Library</label>
+					<visible>System.HasAddon(plugin.video.premiumizerx)</visible>
+				</item>
+				<item library="context/contextTools.py">
+					<label>Settings</label>
+					<visible>System.HasAddon(plugin.video.premiumizerx)</visible>
+				</item>
+			</menu>
+		</menu>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <description>Premiumize Cloud Addon with a twist![CR]This addon is inteded for use with content that you currently own! The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</description>
+		<summary lang="en">premiumizer Cloud Addon</summary>
+		<platform>all</platform>
+		<forum>-</forum>
+		<website>http://premiumize.me</website>
+		<source>-</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+2023.01.24 - Merged pushes from Peno64 - thanks fro the fixes 	
+2022.01.16 - Changed call translatePath from xbmc to xbmcvfs. Still works on kodi matrix but now also on nexus
+2021.04.23 - Updated Addon to Python 3, compatible to Kodi 19
+2019.02.17 - Switched to Oauth Authorization
+2019.02.09 - Added sort options for Trakt Lists
+2019.02.06 - (SETTINGS) Added ability to see and play non  video files.
+2018.11.28 - Hotfixes and changed NextUp skin
+2018.08.06 - Fixed missing tv shows seasons while browsing content
+2018.08.05 - Fixed Playback Issues
+2018.07.10 - Improved post playback routines and checks
+2018.05.10 - User Requests: Transcoded option for playback - Show Only Video Files
+2018.05.10 - Added Delete Items after Watched + autodelete setting, Added Autoplay under Scraper Settings
+2018.04.21 - Library now match your cloud folders and files structures. Selective sync updated and improved to reflect changes
+2018.04.17 - Rewrote Cloud Sync to Library. Now is a selective Mode instead of a full Cloud Copy. Some improvements in handling files.
+2018.04.13 - Code improvements. Improved library sync all around
+2018.03.26 - Scraper Recursive Folders
+2018.03.25 - Added Library Sync
+2018.03.06 - Recursive Metadata in Cloud Folders and improved overall
+2018.01.22 - User Request. Added Filesize to files
+2018.01.14 - Improved code and title matching. Added TV Shows metadata in cloud sections(need to be enabled in the settings)
+2018.01.12 - Improved title matching and playback. Overall cleanup
+2018.01.12 - Fixed Playback Issues and some code cleanup. Better Title matching in Cloud Section
+2018.01.11 - Added Meta to Movies in Cloud Section if title starts with the format "TITLE (YEAR)" i.e: Dunkirk (2017)
+2018.01.08 - Added Rename - Match in Browse Lists and some additional cleanups
+2018.01.05.3 - Added Download Features and tweaked lists
+2018.01.05
+
+- Improved results and transfer functions
+2018.01.04
+
+- Initial Release
+        </news>
+	</extension>
+</addon>
+
+
+<addon id="plugin.video.realizerx" version="2023.01.24" name="Realizer" provider-name="aenema">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+        <description>Cloud Addon with a twist![CR]This addon is inteded for use with content that you currently own! The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</description>
+		<summary lang="en">Realizer Cloud Addon</summary>
+		<platform>all</platform>
+		<forum>-</forum>
+		<website></website>
+		<source>-</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+2023.01.24 - Merged pushes from Peno64 - thanks fro the fixes 			
+2022.01.16 - Changed call translatePath from xbmc to xbmcvfs. Still works on kodi matrix but now also on nexus
+2021.04.24 - Forked Realizer to Realizer py3 - new version will work on python 3 and kodi matrix
+2019.05.01 - Improved RSS Manager - added Rss Reader Mode - Added a Timer for auto RSS update
+2019.02.09 - Added sort options for Trakt Lists
+2019.02.06.2 - Hotfix Torrent Packs are now sorted alphabetically
+2019.02.06 - Improved Multipage Scraping for Torrent Packs and Single Items
+2019.01.31 - Hotfixes on paginations and api calls
+2019.01.30 - Added Rss Manager, Improved modules and lists
+2019.01.27.5 - Improved multi pages torrent lists and scraping, (OPTION) Cached cloud list option, (OPTION) sort torrent list alphabetically
+2019.01.22 - Improved matching titles and torrent checks
+2019.01.20 - Fixed Scraping Bugs and fallback for Torrent Packs
+2019.x.x - Initial Release
+        </news>
+	</extension>
+</addon>
+
+
+<addon id="plugin.video.ukturk19" name="UK Turk Playlists" version="1.0.5" provider-name="UKTurk">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="script.module.resolveurl" />
+		<import addon="inputstream.adaptive" />
+		<import addon="plugin.video.youtube" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<!--<extension point="xbmc.service" library="service.py" />-->
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">UK Turk Playlists 19</summary>
+		<description lang="en_GB"></description>
+		<disclaimer lang="en_GB"></disclaimer>
+		<language>en</language>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<forum></forum>
+		<website></website> 
+		<email></email>
+		<source></source>
+		<news>0.0.8 - Kodi 19 ready</news>
+		<assets>
+				<icon>icon.png</icon>
+				<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.10.5" provider-name="WNT2">
+    <requires>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">WatchNixtoons2</summary>
+        <description lang="en">
+Watch cartoons and anime from [COLOR orange][B]www.wcofun.com[/B][/COLOR].
+
+Support the WatchCartoonOnline website with a PayPal donation to:
+[COLOR khaki][B]wcohelp@yandex.com[/B][/COLOR]
+
+Add-on originally by doko.
+Random updates by lolage.
+        </description>
+        <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
+        <language>en</language>
+        <platform lang="en">all</platform>
+        <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.10.5:[/B]
+- Set mediatype
+- Update Thumbnail Hashes
+
+[B]0.10.4:[/B]
+- Revert Force mount session on each request
+- Change Domain
+- Some Code cleanup
+
+[B]0.10.3:[/B]
+- Force mount session on each request
+
+[B]0.10.2:[/B]
+- Change session mount
+
+[B]0.10.1:[/B]
+- Revert clean title changes
+
+[B]0.10.0:[/B]
+- Fix listitem deprecated warnings
+- Latest Movies Now show thumbnails if available
+- Some Code clean-up
+- Update Thumbnail Hashes
+- Update User Agent</news>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="script.realdebrid" name="RealDebrid" version="0.7" provider-name="ptom, peno">
+    <requires>
+        <import addon="script.module.requests" version="2.3.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+	<provides>video</provides>
+    </extension>
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+          <item library="addon.py">
+            <label>Play using RealDebrid</label>
+            <visible>Container.Content(episodes) | Container.Content(movies)</visible>
+          </item>
+        </menu>
+    </extension>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+	<description lang="en">Unofficial RealDebrid client. Manage your torrents, unrestricted links and view host statuses all within Kodi.</description>
+        <summary>Unofficial RealDebrid client. Manage your torrents, unrestricted links and view host statuses all within Kodi.</summary>
+        <news>v0.6 - Made it Matrix complient + several fixes</news>
+	<platform>all</platform>
+	<language>en</language>
+        <assets>
+    		<icon>icon.png</icon>
+    		<fanart>fanart.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<!-- ---------------------------------------------------------------------- -->
+
+<addon id="context.elementum" name="Elementum Context Helper" version="0.0.10" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="script.module.requests"/>
+		<import addon="plugin.video.elementum" optional="true"/>
+		<import addon="script.module.future" version="0.16.0.4"/>
+	</requires>
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<menu>
+				<label>32011</label>
+				<item library="context_play.py">
+					<label>32000</label>
+					<visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season)</visible>
+				</item>
+				<item library="context_download.py">
+					<label>32012</label>
+					<visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season)</visible>
+				</item>
+				<item library="context_assign.py">
+					<label>32002</label>
+					<visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season)</visible>
+				</item>
+				<item library="context_library.py" args="remove">
+					<label>32017</label>
+					<visible>Integer.IsGreater(ListItem.DBID,0)+[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+				</item>
+				<item library="context_trakt.py" args="watched">
+					<label>32018</label>
+					<visible>[Integer.IsGreater(ListItem.DBID,0) | Integer.IsGreater(ListItem.UniqueID(tmdb),0)]+Integer.IsEqual(ListItem.PlayCount,0)+[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+				</item>
+				<item library="context_trakt.py" args="unwatched">
+					<label>32019</label>
+					<visible>[Integer.IsGreater(ListItem.DBID,0) | Integer.IsGreater(ListItem.UniqueID(tmdb),0)]+Integer.IsGreater(ListItem.PlayCount,0)+[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+				</item>
+				<item library="context_info.py">
+					<label>32001</label>
+					<visible>System.GetBool(debug.extralogging)+[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+				</item>
+			</menu>
+		</menu>
+	</extension>
+	<extension point="kodi.addon.metadata">
+		<summary lang="ru">Elementum Контекстное меню</summary>
+		<summary lang="en">Elementum Context Menu</summary>
+		<description lang="ru">Контекстное меню для Elementum.</description>
+		<description lang="en">Context Menu for Elementum.</description>
+		<disclaimer lang="ru">Автор не несёт ответственности за использование дополнения, не распространяет данные, выводимые дополнением.</disclaimer>
+		<disclaimer lang="en">The author is not responsible for addon usage and does not host or distribute any of the content displayed by this addon.</disclaimer>
+		<license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
+		<website>https://elementum.surge.sh</website>
+		<source>https://github.com/elgatito/context.elementum</source>
+		<forum></forum>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="context.themoviedb.helper" version="1.1.1" name="TMDbHelper - Additional Context Menu Items" provider-name="jurialmunkey">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="plugin.video.themoviedb.helper" version="4.10.30" />
+    </requires>
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <menu>
+                <label>$ADDON[plugin.video.themoviedb.helper 32145]</label>
+                <item library="context.py" args="play_using">
+                    <label>$ADDON[plugin.video.themoviedb.helper 32322]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]</visible>
+                </item>
+                <item library="context.py" args="related_lists">
+                    <label>$ADDON[plugin.video.themoviedb.helper 32235]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie)]</visible>
+                </item>
+                <item library="context.py" args="sync_trakt">
+                    <label>$ADDON[plugin.video.themoviedb.helper 32295]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie)]</visible>
+                </item>
+                <item library="context.py" args="refresh_details">
+                    <label>$ADDON[plugin.video.themoviedb.helper 32233]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie)]</visible>
+                </item>
+                <item library="context.py" args="manage_artwork">
+                    <label>$ADDON[plugin.video.themoviedb.helper 32222]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie)]</visible>
+                </item>
+                <item library="context.py" args="add_to_library">
+                    <label>$ADDON[plugin.video.themoviedb.helper 32151]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie)]</visible>
+                </item>
+            </menu>
+        </menu>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Additional context menu items for TMDbHelper</summary>
+        <description lang="en">Adds additional TMDbHelper context menu items
+        </description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <website>https://github.com/jurialmunkey/plugin.video.themoviedb.helper</website>
+        <forum>https://forum.kodi.tv/showthread.php?tid=345847</forum>
+        <source></source>
+        <disclaimer lang="en"></disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="context.trailer.play"
+       name="Context Trailer Play"
+       provider-name="[COLORpurple]• [COLORorchid]Tech [COLORdarkorchid]E [COLORplum]Coyote [COLORpurple]•[/COLOR]"
+       version="22.5.8">
+    <requires>
+        <import addon="script.module.requests" version="2.19.1" />
+        <import addon="plugin.video.youtube" version="6.2.0" />
+    </requires>
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="autoplay.py">
+                <label>32000</label>
+                <visible>
+                    String.IsEqual(Window(home).Property(context.trailer.autoplay),true) +
+                    [String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,episode)] +
+                    !String.IsEmpty(ListItem.Trailer)
+                </visible>
+            </item>
+            <item library="selectplay.py">
+                <label>32001</label>
+                <visible>
+                    String.IsEqual(Window(home).Property(context.trailer.selectplay),true) +
+                    [String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,episode)]
+                </visible>
+            </item>
+        </menu>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="kodi.addon.metadata">
+        <summary lang="en">Play a movie or show trailer from the context menu in the library.</summary>
+        <description lang="en">Adds a context menu entry for movies or shows that have a trailer in the database. Choose windowed or fullscreen play in the settings.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum></forum>
+        <website></website>
+        <source></source>
+        <disclaimer lang="en"></disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot></screenshot>
+        </assets>
+        <news></news>
+    </extension>
+</addon>
+
+
+<addon id="plugin.program.autoenabler" name="Auto Enabler" version="1.0.0" provider-name="slam">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+        <language/>
+        <summary lang="en_GB">Addon Enabler Script</summary>
+        <description lang="en_GB">This script enables all addons that are disabled.</description>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum></forum>
+        <source></source>
+        <email></email>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.program.autowidget" name="AutoWidget" version="3.7.0" provider-name="drinfernoo">
+    <requires>
+        <import addon="script.module.pil" />
+        <import addon="script.module.six" />
+    </requires>
+    
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>executable</provides>
+    </extension>
+    
+    <extension point="xbmc.service" library="service.py" />
+    
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="context_add.py">
+                <label>$ADDON[plugin.program.autowidget 30003]</label>
+                <visible>String.IsEqual(Window(10000).Property(context.autowidget),true)</visible>
+            </item>
+            <item library="context_refresh.py">
+                <label>$ADDON[plugin.program.autowidget 30006]</label>
+                <visible>String.Contains(ListItem.FolderPath, plugin://plugin.program.autowidget)</visible>
+            </item>
+			<item library="context_refresh_single.py">
+                <label>$ADDON[plugin.program.autowidget 30046]</label>
+                <visible>!String.IsEmpty(ListItem.Property(autoID)) + [!String.IsEqual(ListItem.Property(autoAction),static) + !String.IsEqual(ListItem.Property(autoAction),merged)]</visible>
+            </item>
+			<item library="clear_cache_single.py">
+                <label>$ADDON[plugin.program.autowidget 30116]</label>
+                <visible>!String.IsEmpty(ListItem.Property(autoCache))</visible>
+            </item>
+        </menu>
+    </extension>
+    
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en_GB">Automatically changes out widgets</summary>
+        <description lang="en_GB">Automatically changes out widgets on the homescreen for a more interesting browsing experience.</description>
+	<summary lang="es_ES">Cambia los widgets automáticamente</summary>
+	<description lang="es_ES">Cambia los widgets en la pantalla de inicio automáticamente para una experiencia de navegación más interesante.</description>
+	<platform>all</platform>
+        <license>LGPL-3.0</license>
+        <website>https://www.github.com/drinfernoo/</website>
+        <source>https://www.github.com/drinfernoo/plugin.program.autowidget/</source>
+        <news>
+3.7.0
+ - Optimize caching for performance and reliability
+ - Fix direct shortcuts
+ - Fix Settings Shortcuts for dependency add-ons
+3.6.1
+ - Fix playing direct shortcuts for some items
+ - Fix cache clearing again
+3.6.0
+ - Convert all file and path handling to xbmcvfs
+ - Add more feedback and granular controls during backup/restore
+3.5.1
+ - Fix sorting bug with higher group counts
+3.5.0
+ - Allow bulk operations in some groups
+ - More informative dialogs
+ - Allow manually sorting groups in "My Groups"
+ - Fixes for direct shortcuts
+ - Update "version" attribute in metafiles when updating
+3.4.2
+ - Some fixes for constant notification
+3.4.1
+ - Fix clearing cache from settings
+3.4.0
+ - Rework caching mechanism
+ - Add more notifications of progress
+ - Add placeholder items when no content is loaded
+3.3.7
+ - Delay widget updates during library scans or when in media views
+ - Fix widget cleaning scan for skins which don't use Skin Shortcuts
+ - Fix refreshing widgets created before 3.3.0
+ - Add more content type choices in editor dialog
+3.3.6
+ - Fix "Next Page" for Python 2.7
+3.3.5
+ - Better handling of error and empty states
+ - Better handling of "Next Page" items
+ - Fix "Active Widgets" menu
+ - Delay library updates when inside media views
+3.3.4
+ - Fix "Next Page" localizations
+3.3.3
+ - Fix "Clear Cache"
+3.3.2
+ - Fix bug when paths return no items
+3.3.1
+ - Fix bug when Skin Shortcuts is not installed
+ - More improvements to page item handling
+3.3.0
+ - Add "Copy Group" in group context menu
+ - Add "Create New ... Group" in "My Groups" menu
+ - Add "Clear Cache" in "Tools" menu
+ - Add "Refresh Widget" to widget context menu
+ - Add "Clear Cache" to widget context menu
+ - Add rudimentary error item for failed widgets
+ - Add "Icon Packs" for library widgets from genres, studios, and countries
+ - Remove dependency on Kodi Six
+ - Allow editing content type
+ - Allow Cycling Widgets to pull from a subset of paths
+ - Support cast thumbnails for Kodi N
+ - Fix translatePath reference again
+ - Faster and more robust item creation
+ - Make `.widget` files much simpler
+ - Better support for library paths
+ - Better support for music
+3.2.3
+ - Add English (US) and Portugese localizations
+3.2.2
+ - Add more localizations
+ - Better "Next Page" detection
+ - Support for "Next Page" items in other languages
+3.2.1
+ - Fix for items with no artwork
+3.2.0
+ - Add setting to prefer episodes/shows when removing duplicates
+ - Rework duplicate removal
+ - Fix bug in Active Widgets editor dialog
+ - Fix landscape art for some items
+ - Fix paged widgets not resetting on boot
+ - Format with black
+3.1.9
+ - Fix error with translatePath
+3.1.8
+ - Fix resume progress on items
+3.1.7
+ - Fix widget cleaning
+ - Fix Active Widgets menu
+3.1.6
+ - Fix detection of JSON-RPC version
+3.1.5
+ - Fix editor dialog
+3.1.4
+ - Fix settings shortcuts
+ - Fix some Unicode errors
+ - Fix some dialog labels in editor
+3.1.3
+ - Fix hashing in Matrix
+3.1.2
+ - Fix "Clear Cache"
+3.1.1
+ - Fixes for cache mechanism
+ - Add "Force Refresh Widgets" to context menu for AutoWidget items
+3.1.0
+ - Improved background caching for paths that change frequently
+ - Fix unneeded refreshes
+ - Fix caching on merged widgets
+ - Fix more Unicode errors
+3.0.2
+ - Fix bug in background caching
+3.0.1
+ - Fix bug when adding paths
+3.0.0
+ - Huge speed improvements thanks to @djay's background caching implementation
+ - Fix merged widget duplicate removal
+2.3.7
+ - Unicode fixes
+ - Fix method calls
+ - Fix separator in menus
+ - Fix logging in Kodi 19
+ - Update Spanish translation
+2.3.6
+ - Fix separator in shortcut groups
+2.3.5
+ - Fix various shortcut- and refresh-related bugs
+ - Fix error when path contained no items
+ - Add more debug logging
+ - Add widget ID as ListItem property (autoID)
+ - Reduce library updates (again)
+2.3.4
+ - Fix logging error
+2.3.3
+ - Fix shortcuts to Android apps
+2.3.2
+ - Fix error in debug logging logic
+2.3.1
+ - Fix editing and adding new groups
+ - Overall cleanup
+ - Trim as many library updates as possible
+2.3.0
+ - Huge simplification of plugin paths
+ - Speed improvements
+ - Better detection for "Next Page" items in various add-ons
+ - Add dedicated debug log
+ - Allow 'path' to be editing for static widgets
+2.2.0
+ - Reduce library updates to improve overall speed
+ - Sort "Active Widgets" by most recently refreshed
+ - Fix any straggling widget errors, I hope :D
+2.1.6
+ - Fix "Next Page" error
+2.1.5
+ - Fix non-merged paths :D
+2.1.4
+ - Support more add-ons' "Next Page" items
+ - Fix merged paths
+2.1.3
+- Fixes for Unicode characters in path labels
+- Fix for viewing groups in Kodi 17.x
+- Change "Icon Color" to a per-path basis
+2.1.2
+ - Add per-widget icon color
+2.1.1
+ - Fix "Icon Color"
+2.1.0
+ - New artwork for add-on
+ - Add icon coloring
+ - Improved "Active Widgets" menu
+ - Added "Clean Old Widget Files" shortcut in Tools
+ - Fix shortcut paths
+ - Fix missing InfoLabels
+2.0.2
+ - Make artwork for groups and paths more consistent
+2.0.1
+ - Add "Toggle Skin Debugging" shortcut
+2.0.0
+ - Rewrite most of add-on functions
+ - Add "Static Path" option
+ - Add "Merged Path" option
+ - Add "Paged Widgets"
+ - Revamp editor dialog
+ - More complete skin compatibility
+ - More miscellaneous fixes
+1.6.8
+ - Add setting for notification sound
+1.6.7
+ - Fix crash when window cannot be detected. Notably fixes Disney+ support.
+1.6.6
+ - Fix extract location
+1.6.5
+ - Add backup/restore features
+1.6.4
+ - Fix more rogue refreshes
+ - Fix wording in Spanish translation (again, thanks to @roliverosc)
+1.6.3
+ - Update settings localizations
+1.6.2
+ - Fix bug that caused Skin Shortcuts to not be able to rebuild the skin
+1.6.1
+ - Fix bug with shortcut widgets being "converted"
+1.6.0
+ - Android App shortcut support (thanks to @Sandmann79)
+ - Add Spanish translation (thanks to @roliverosc)
+ - Fix bug with empty action nodes
+ - Reduce refreshes
+ - Prettify .props file output
+1.5.5
+ - Fix regex for labels in some skins
+1.5.4
+ - Fix recursion crash during refresh
+1.5.3
+ - Fix indent error
+1.5.2
+ - Fix shortcut calls for YouTube
+1.5.1
+ - Fix error in editor dialog
+ - Fix changelog
+1.5.0
+ - Add "Active Widgets" menu
+ - Consistency fixes during initialization and refresh
+ - Allow adding playable items as shortcuts
+ - Fix crashes in Krypton
+ - Fix crashes from invalid group/widget files
+ - Fix Unicode compatibility
+1.4.5
+ - Refresh Shortcut widgets Automatically
+ - Add "Next Path" widget action
+ - Add "Clone" and "Explode" widget modes
+ - Allow refreshing between 15m-2h, at 15m intervals
+1.4.3
+ - Add context menu on more items
+ - Fix some log spam
+ - Catch more errors from invalid files
+ - Fix "Settings" shortcuts
+ - Gracefully handle remote artwork
+ - Use special paths for artwork
+1.4.2
+ - Fix bug in conversion
+1.4.1
+ - Fix bug in migration
+1.4.0
+ - Add "Clean Old References" shortcuts
+ - Change main menu layout
+1.3.9
+ - Fix label bug in Embuary (and maybe elsewhere)
+1.3.8
+ - Add "Wipe Add-on Data" shortcuts
+ - Allow Unicode characters in labels
+1.3.7
+ - Fix typo in path handling
+1.3.6
+ - Fix error handling
+1.3.5
+ - Add extra error checking for file operations
+1.3.4
+ - Add proper migration from old JSON to current
+1.3.3
+ - Rewrite editor dialog
+ - Fix path conversion for skin string paths
+1.3.2
+ - Fixes and cleanup in editor dialog
+1.3.1
+ - Cleanup skin string conversion
+1.3.0
+ - Add group editing dialog
+ - Non-Skin Shortcuts skin support
+ - Fix issues with groups and paths with the same name
+ - Fix settings shortcuts
+ - Add rudimentary JSON migration
+1.2.5
+ - Update some skin localizations
+ - Add more widget artwork
+ - Update documentation
+1.2.3
+ - Fix paths made from add-on browser
+ - Add ability to set plot
+1.2.2
+ - Fix group dialog calls
+1.2.1
+ - Fix imports
+1.2.0
+ - Better handling of art
+ - Better add-on art added
+ - Redesigned path addition dialog
+ - Settings shortcuts added
+1.1.2
+ - Add art editing for paths
+ - Add group renaming
+1.1.1
+ - Add setting to disable notification
+1.1.0
+ - Remove Skin Shortcuts dependency
+ - Expand context menu options
+ - Add support for skins with "basic" Skin Shortcuts integration
+ - Add setting to pause AutoWidget's service
+1.0.7
+ - Fix context menu option not showing
+1.0.6
+ - Fix paths not saving
+1.0.5
+ - Raise required Skin Shortcuts version to  1.0.19
+1.0.4
+ - Allow custom labels
+ - Add removal notifications    
+1.0.3
+ - Fix shortcuts and widgets added from context menu
+1.0.2
+ - Fix crash from non-XML files
+1.0.1
+ - Fix crash from non-existent context menu setting
+1.0.0
+ - First stable release
+        </news>
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.png</fanart>
+            <poster>resources/media/poster.png</poster>
+            <banner>resources/media/banner.png</banner>
+            <clearlogo>resources/media/clearlogo.png</clearlogo>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.program.openwizard" name="[COLOR limegreen]Open[/COLOR]Wizard" version="2.0.7" provider-name="drinfernoo, slamious">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
+        <import addon="script.speedtester" optional="true" version="1.1.2" />
+    </requires>
+    
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+    
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR limegreen]Open[/COLOR]Wizard</summary>
+        <description lang="en">[COLOR limegreen]Open[/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
+        <news>
+2.0.7
+ - Fix Error when using default log settings
+2.0.6
+ - Fix regex for formatting tags
+ - Fix theme selection after build install
+ - Fix downloading into invalid path
+2.0.5
+ - Add Enable All Add-ons after Build Install
+2.0.4
+ - Fix leftover broken dialogs
+2.0.3
+ - Don't show previous version builds in Matrix
+2.0.2
+ - Replace remaining occurences of LOGNOTICE
+2.0.1
+ - Add attribution to @slamious
+2.0.0
+ - Initial Matrix support
+1.4.5
+ - Fix bugs with unintended files being cleared`
+1.4.4
+ - Transfer ownership
+1.4.3
+ - Fix missing artwork on items (thanks @xulek)
+1.4.2
+ - A few bug fixes
+1.4.1
+ - Fix crash on fresh installs
+1.4.0
+ - Fix APK Installer
+ - Convert official APK downloader to use official script
+ - Add scrollbar to Save Data dialog
+ - Fix skin path in build info
+1.3.7
+ - Fix import lock error
+1.3.6
+ - Fix notifications
+ - Cleanup log files
+1.3.5
+ - Add Fen
+ - Add Shadow
+ - Fix restoring saved data every boot
+1.3.4
+ - Fix bad indent
+1.3.3
+ - Fix Unicode characters in notification window
+1.3.2
+ - Fix build restore
+1.3.1
+ - Fix "Keep Login Info" menu        
+1.3.0
+ - Fix formatting of saved restore times
+ - Fix local build zip being deleted on restore
+ - Add YouTube API saving
+ - Remove broken context menus
+ - Fix repeating dialogs from shortcuts/favorites
+ - Remove "Normal Install" option
+ - Add "Logging Tools" menu
+ - Add option to save guisettings.xml
+ - Add TMDbHelper Fanart.tv saving
+ - More fixes for OS X
+ - Fix Seren Fanart.tv saving
+1.2.9
+ - Fix NuMb3r5 cache clearing
+ - Fix hang during repo force check
+ - Fix logins being restored every startup
+ - Fix some file permission errors
+ - Fix OS X backup errors
+1.2.8
+ - Add Gaia PM OAuth
+ - Fix binary add-on restoration
+ - Fix some issues with old settings
+ - Fix timing on many startup tasks
+1.2.7
+ - Add TheMovieDb Helper
+1.2.6
+ - Fix Seren PM OAuth    
+1.2.5
+ - Fix typo in debridit.py
+1.2.4
+ - Cover more edge cases during binary detection
+1.2.3
+ - Fix notification ID bug
+1.2.2
+ - Add Seren PM OAuth
+ - Add AllDebrid spport for Gaia, Seren, ResolveURL, and URLResolver
+1.2.1
+ - General bug fixes
+1.2.0
+ - Silence save data notifications on startup
+ - Fix Addon Installer menu
+ - Convert addons.txt to JSON format
+1.1.1
+ - Fix error on advancedsettings categories
+1.1.0
+ - Add back advancedsettings area under System Tweaks/Fixes
+ - Rudimentary version of advancedsettings editor. Can currently only handle editing pre-existing tags under 'cache' and 'network'.
+ - Convert advanced.txt to JSON format
+ - Add "built-in" advancedsettings.xml presets
+1.0.3
+ - Update artwork
+ - Fix rare issues with URLs not working
+ - Fix repetitive build prompt (again)
+ - Fix builds downloading twice
+ - Fix title coloring on notifications
+ - Fix auto repo install
+ - Fix first run settings not being respected
+1.0.2
+ - Fix crash in login menu
+ - Fix auto install repo
+1.0.1
+ - Fix double startup
+ - Fix repetitive build prompt
+ - Fix main menu not opening on Krypton
+ - Fix notification timeout
+ - Fix crash in Trakt menu
+1.0.0
+ - Initial Commit
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.2.6" provider-name="jmooremcc, spoyser">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.metahandler" optional="true" />
+  </requires>
+
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+
+  
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+    <summary lang="es_ES">Ponga todas sus partes favoritas de todos sus complementos favoritos en un complemento fácil de usar.</summary>
+    <description lang="en_GB">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+    <description lang="es_ES">Super Favoritos es la mejor forma de administrar sus favoritos de Kodi.[CR][CR]Prácticamente cualquier elemento de menú dentro de Kodi se puede agregar a Súper favoritos, incluso desde complementos que normalmente no brindan esta función.[CR][CR]Super Favoritos le permite administrar mejor sus favoritos de Kodi, incluída la creación de subcarpetas, en las que puede copiar o mover sus secciones o addons preferidos.[CR][CR]Esto le permite crear su propio complemento personalizado con lo mejor. Busque sus addons preferidos, reproduzca su música favorita, lea sus historias favoritas, seleccione sus listas de reproducción, explore sus películas, escuche sus estaciones de radio, vea sus dibujos animados, las posibilidades son infinitas, todos sus favoritos desde un solo uso addon, fácil de añadir.</description>
+    <platform>all</platform>
+    <language>en es</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+    <website />
+    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+    <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
+    <email>seanpoyser at gmail.com</email>
+    <email>jmooremcc at hotmail.com</email>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+
+    <news>
+2.2.6 April 2022
+      - Fix context menu settings bug
+      - Fix more issues with activateWindowCommand
+
+2.2.5 February 2022
+      - Generic Fix for activateWindowCommand
+
+2.2.4 February 2022
+      - Fix URL Playback
+
+2.2.3 February 2022
+      - Fix folder lock
+      - Fix name colorization
+
+2.2.1 February 2022
+      - Minor Bug Fix
+
+2.2.0 December 2021
+      - Fixed Play From Here functionality
+      - Fixed handling of local folders so that back button now works correctly
+      - Added threading decorator to utils
+
+2.1.0: 9 October 2021
+      - Added Spanish Translation contributed by populc
+      - Fixed issue in player module
+
+2.0.11: 26 August 2021
+      - Fixed bug in download module that prevented videos from being downloaded
+
+2.0.10: 6 June 2021
+      - Fixed bug that prevented Hebrew language for working
+
+2.0.9: 15 May 2021
+      - Fixed bug in Player.def activateWindowCommand(cmd) that was messing up the ability
+        to return from child direrctories
+
+2.0.8: 14 May 2021
+      - Fixed various incompatibilities with latest version of Matrix involving decode('utf-8')
+        that caused crashes.
+
+2.0.7: 17 February 2021
+    - Fixed remote folder access via another plugin
+
+2.0.6: 11 January 2021
+      - Fixed access to local folders and smb folders
+
+2.0.5: 12 December 2020
+      - More Fixes for Network Folder Failure to Launch
+
+2.0.0: 29 November 2020
+      - Matrix Version
+
+1.0.60: 1 November 2020
+    - Fixed launch issues in Kodi Leia
+
+1.0.59: 29th May 2017
+    - 'Now playing' text now defined by SF due to skin variations
+    </news>
+
+  </extension>
+
+
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+
+      <item library="capture.py">
+        <label>$ADDON[plugin.program.super.favourites 30002]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED),True) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_addtofaves.py">
+        <label>$ADDON[plugin.program.super.favourites 30047]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED),True) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_download.py">
+        <label>$ADDON[plugin.program.super.favourites 30259]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED),True) + Player.IsInternetStream</visible>
+      </item>
+
+    </menu>
+  </extension>
+
+</addon>
+
+
+<addon id="plugin.video.f4mTester" version="4.0.8" name="f4mTester" provider-name="Joel e Tiago">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.video.F4mProxy" version="4.0.9"/>		
+        <import addon="inputstream.ffmpegdirect"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>  
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+        <assets>
+			<icon>icon.png</icon>
+		</assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.jetproxy" version="1.0.3" name="JetProxy" provider-name="t4ils">
+<requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+  <import addon="script.module.routing"/>
+  <import addon="script.module.requests"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>executable</provides>
+</extension>
+<extension point="xbmc.service" library="service.py" />
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">JetProxy</summary>
+  <description lang="en_GB">JetProxy</description>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>  
+  </assets>
+</extension>
+</addon>
+
+
+<addon id="plugin.video.live.streamspro" name="LiveStreamsPro" version="3.0.0~alpha4" provider-name="gujal">
+	<requires>
+		<import addon="script.module.six" />
+		<import addon="script.module.kodi-six" />
+		<import addon="script.module.requests" optional="true"/>
+		<import addon="script.module.websocket" version="0.50.0"  optional="true"/>
+		<import addon="script.module.youtube.dl" optional="true"/>
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.dateutil" optional="true" />
+		<import addon="script.module.resolveurl" optional="true"/>
+		<import addon="script.module.urlresolver" optional="true"/>
+		<import addon="script.module.cloudscraper" optional="true"/>
+		<import addon="script.module.inputstreamhelper" optional="true"/>
+		<import addon="script.module.slproxy" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+
+	<extension point="xbmc.addon.metadata">
+		<summary>livestreamspro- shamelessly forked from livestreams but added many things</summary>
+		<description>
+In addition to what livestreams allowed you to do, you can now,
+1. call regex in regex,
+2. multiple regex in page, regex in session, also htmlunescape responses
+3. create session from one regex and pass onto next in line
+4. save sessions to a file and open again later
+5. write python code in .py file, put in the profile directory and then call from your regex.
+6. use epoctime, guid and unpack as functions already defined.
+7. Use it to post values to the pages to get the proper responses
+8. support many headers, like origin, X-Requested-With
+9. you can now append cookies in response and then read in regex using includeheaders
+10. You can now link to another web url via your xml using externallink
+11. support for google captcha, now you can show and then post the text		
+		</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="script.autoruns" name="Autoruns" version="1.0.2" provider-name="fightnight, bittor7x0">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <source>https://github.com/bittor7x0/kodi.script.autoruns</source>
+        <summary lang="en">Disable startup services on Kodi</summary>
+        <summary lang="pt">Desactive serviços do arranque no Kodi</summary>
+        <summary lang="es">Desactive el inicio de servicios en Kodi</summary>
+        <description lang="en">You can disable startup services, improving Kodi internal speed.</description>
+        <description lang="pt">Pode desactivar serviços do arranque, melhorando a velocidade interna do Kodi.</description>
+        <description lang="es">Puede desactivar el inicio de servicios, mejorando la velocidad interna de Kodi.</description>
+        <disclaimer lang="en">Opensource addon not endorsed with Team Kodi.</disclaimer>
+        <disclaimer lang="pt">Addon opensource não afliado com a Equipa Kodi.</disclaimer>
+        <disclaimer lang="es">Addon opensource no afiliado con el Equipo de Kodi.</disclaimer>
+        <license>GPL-3.0-or-later</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+        <news>[B]v1.0.2 (14 November 2022):[/B]
+- Update for Kodi v19 Matrix.
+
+[B]v1.0.1 (31 March 2015):[/B]
+- Little tweaks.
+- Submittion to Kodi official Kodi repository.
+- Cosmetic changes.
+
+[B]v1.0.0 (28 de Marco de 2015):[/B]
+- Limpeza de codigo.
+- Novo addon_id.
+- Outras correccoes.
+
+[B]v0.1.00 (13 de Novembro de 2014):[/B]
+- Melhorias de performance.
+- Adicionado logotipo do addon a cada pasta.
+- Outras correccoes.
+
+[B]v0.0.02 (21 de Dezembro de 2013):[/B]
+- Logotipo adicionado.
+
+[B]v0.0.01 (5 de Dezembro de 2013):[/B]
+- Release inicial.</news>
+    </extension>
+</addon>
+
+
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.73" provider-name="elgatito">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="plugin.video.elementum" optional="true"/>
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.future" version="0.16.0.4"/>
+    </requires>
+    <extension point="xbmc.python.script" library="burst.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Elementum torrents provider</summary>
+        <summary lang="hr">Elementum torrent pružatelji usluga</summary>
+        <summary lang="es">Proveedor de torrents Elementum</summary>
+        <summary lang="ru">Поисковое дополнение Elementum</summary>
+        <summary lang="sv">Elementum-torrentleverantör</summary>
+        <description lang="en">Elementum Burst is a lean and mean multi-provider for Elementum.</description>
+        <description lang="hr">Elementum Burst je višestruki pružatelj usluga za Elementum.</description>
+        <description lang="es">Elementum Burst es un multi-proveedor simple y eficiente para Elementum.</description>
+        <description lang="ru">Elementum Burst это поисковое дополнение, для поиска торрентов для Elementum.</description>
+        <description lang="sv">Elementum Burst är en enkel och effektiv multi-leverantör för Elementum.</description>
+        <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa bilo kojim izvorom sadržaja.</disclaimer>
+        <disclaimer lang="es">El autor no aloja ni distribuye ninguno de los contenidos mostrados por este complemento. El autor no tiene ninguna afiliación con los proveedores de contenido.</disclaimer>
+        <disclaimer lang="ru">Автор не несёт ответственности за использование дополнения, не распространяет данные, выводимые дополнением.</disclaimer>
+        <disclaimer lang="sv">Skaparen är inte värd eller distribuerar något av innehållet som visas av detta tillägg. Skaparen har ingen anslutning till innehållsleverantörerna.</disclaimer>
+        <license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
+        <website>https://elementum.surge.sh</website>
+        <source>https://github.com/elgatito/script.elementum.burst</source>
+        <forum>TODO</forum>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="script.ezmaintenanceplus" name="EZ Maintenance+" version="2023.01.01.0" provider-name="aenema, peno">
+  <requires>
+    <import addon="script.module.requests" version="1.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+	<summary>A Streamlined Utility Tool for Kodi</summary>
+	<description>No Bloatware, no Nonsense! Just Keep your Kodi sharp and clean with this utility tool... Now with a Custom Wizard.</description>
+    <language></language>
+    <platform>all</platform>
+    <license>The MIT License</license>
+    <forum>-</forum>
+    <source>https://github.com</source>
+    <assets>
+	    <icon>icon.png</icon>
+	    <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+
+<addon id="script.hideosd" version="2023.01.25" name="Hide Video OSD" provider-name="aenema">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+        <description>A Simple script to autohide video osd for inactivity. Timeout can be set in the addon settings</description>
+		<summary lang="en">Autohide Video OSD</summary>
+		<platform>all</platform>
+		<website>-</website>
+		<email>-</email>
+		<forum>-</forum>
+		<source>-</source>
+		<news></news>
+        <assets>
+            <icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="script.kcleaner" name="KCleaner" provider-name="Dalibor Lanik" version="4.02.1"> 
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" /> 
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>executable</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service" start="startup"> 
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata"> 
+    <platform>all</platform>
+    <website>http://projects.lanik.org/KodiProject_KCleaner.htm</website>
+    <summary lang="en_GB">Clean up temporary files in Kodi.</summary>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=307919</forum>
+    <email>dalibor@lanik.org</email>
+    <description lang="en_GB">Clean up temporary files in Kodi.</description>
+    <news>v4.0 [CR]
+- Python 3 version [CR]
+</news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshot-01.jpg</screenshot>
+        <screenshot>resources/screenshot-02.jpg</screenshot>
+        <screenshot>resources/screenshot-03.jpg</screenshot>
+        <banner>resources/banner.jpg</banner>
+        <logo>resources/logo.png</logo>
+    </assets>
+  </extension>
+</addon>
+
+
+<addon id="script.light.imdb.ratings.update" name="Light IMDb Ratings Update" version="5.1.1" provider-name="axlt2002">
+    <requires>
+        <import addon="script.module.simplejson" version="3.3.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.module.web-pdb" optional="true" />
+    </requires>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.python.script" library="main.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="kodi.context.item" library="context.py">
+        <item>
+            <label>32000</label>
+            <visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,episode)</visible>
+        </item>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <platform>all</platform>
+        <forum>https://forum.kodi.tv/showthread.php?tid=316342</forum>
+        <summary lang="en">Light IMDb Ratings Update is a Kodi add-on that keeps updated the IMDb ratings for your movies and TV shows.</summary>
+        <summary lang="it">Light IMDb Ratings Update è un add-on di Kodi che mantiene aggiornate le valutazioni IMDb dei tuoi film e serie TV.</summary>
+        <description lang="en">Light IMDb Ratings Update runs as a Kodi service to update the ratings, votes and Top 250 for movies as well as the ratings and votes for TV shows (including episodes) by scraping the data from the IMDb site. The update can be run manually or scheduled once a week and it will run as soon as possible after a scheduled start is missed. Please check the add-on thread in the Kodi forum for more details.</description>
+        <description lang="it">Light IMDb Ratings Update viene eseguito come un servizio di Kodi per aggiornare le valutazioni, i voti e la Top 250 per i film così come le valutazioni ed i voti per le serie TV (inclusi gli episodi) ottenendo i dati dal sito IMDb. L'aggiornamento può essere eseguito manualmente o pianificato una volta alla settimana e sarà avviato appena possibile se un avvio pianificato non viene eseguito. Per ulteriori dettagli si veda il thread dell'add-on nel forum di Kodi.</description>
+    </extension>
+</addon>
+
+
+<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="0.5.10+matrix.1" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
+  <requires>
+    <!--py3 compliant-->
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.pysocks" version="1.6.8" optional="true"/>
+  </requires>
+  <!-- This is needed to get an add-on icon -->
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de_DE">Kodi InputStream und DRM Wiedergabe einfach gemacht</summary>
+    <summary lang="el_GR">Βοηθός Inputstream για το Kodi και εύκολη αναπαραγωγή DRM</summary>
+    <summary lang="en_GB">Kodi InputStream and DRM playback made easy</summary>
+    <summary lang="es_ES">Kodi InputStream y reproducción DRM echa fácil</summary>
+    <summary lang="fr_FR">La lecture Kodi InputStream et DRM en toute simplicité</summary>
+    <summary lang="hr_HR">Kodi InputStream olakšava reprodukciju DRM zaštićenog sadržaja</summary>
+    <description lang="de_DE">Dieses einfache Kodi-Modul macht das Leben für Addon Entwickler einfacher, die auf InputStream basierte Addons und DRM Wiedergabe angewiesen sind.</description>
+    <description lang="el_GR">Μία απλή μονάδα για το Kodi η οποία διευκολύνει την ζωή των προγραμματιστών οι οποίοι εξαρτώνται από τα πρόσθετσ InputStream και αναπαραγωγή τύπου DRM.</description>
+    <description lang="en_GB">A simple Kodi module that makes life easier for add-on developers relying on InputStream based add-ons and DRM playback.</description>
+    <description lang="es_ES">Un módulo Kodi simple que hace la vida más fácil para los desarrolladores de complementos que dependen de complementos basados en InputStream y reproducción de DRM.</description>
+    <description lang="fr_FR">Un simple module Kodi qui simplifie la vie des développeurs de modules complémentaires en s’appuyant sur des modules complémentaires basés sur InputStream et sur la lecture de DRM.</description>
+    <description lang="hr_HR">Jednostavan Kodi modul koji olakšava razvijanje dodataka koji se temelje na InputStream dodatku i reprodukciji DRM zaštićenog sadržaja.</description>
+    <description lang="ru_RU">Простой модуль для Kodi, который облегчает жизнь разработчикам дополнений, с использованием InputStream дополнений и воспроизведения DRM контента.</description>
+    <news>
+v0.5.10 (2022-04-18)
+- Fix automatic submission of release
+- Update German translation
+- Fix update_frequency setting
+- Fix install_from
+- Improve/Fix Widevine extraction from Chrome OS images
+
+v0.5.9 (2022-03-22)
+- Update Croatian translation
+- Replace deprecated LooseVersion
+- Fix http_get decode error
+- Option to install Widevine from specified source
+    </news>
+    <platform>all</platform>
+    <license>MIT</license>
+    <website>https://github.com/emilsvennesson/script.module.inputstreamhelper/wiki</website>
+    <source>https://github.com/emilsvennesson/script.module.inputstreamhelper</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+
+<addon id="script.module.myaccts" version="1.1.5" name="Debrid Manager" provider-name="Zaxxon709, Ezra Hubbard">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" version="2.19.1" />
+            <import addon="script.module.myauth" version="1.0.3" />
+	</requires>
+	<extension point="xbmc.python.script" library="lib/default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<summary lang="en">Accounts Module</summary>
+		<description>Debrid Authorization Manager</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<disclaimer lang="en">The author is not responsible for the use of this addon. [CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="script.module.myauth" name="myauthact" version="1.0.3" provider-name="Zaxxon709, drinferno">
+	<extension point="xbmc.python.module" library="resources/libs" /> <!-- Must be placed after xbmc.python.pluginsource, otherwise the addon does not show in the repository. -->
+    <extension point="xbmc.python.pluginsource" library="default.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Authorize Debrid Accounts</summary>
+        <description lang="en">Debrid Accounts Manager</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://</source>
+    </extension>
+</addon>
+
+
+<addon id="script.module.youtube.dl" name="youtube-dl Control" version="21.303.0+matrix.1" provider-name="ytdl-org,ruuk,sy6sy2,wwark">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.addon.signals" version="0.0.5+matrix.1"/>
+        <import addon="script.module.kodi-six" version="0.1.3"/>
+    </requires>
+    <extension point="xbmc.python.script" library="control.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Module providing access to youtube-dl video stream extraction</summary>
+        <description lang="en_GB">Module providing access to youtube-dl video stream extraction for hundreds of sites. Version is based on youtube-dl date version: YY.MDD.V where V is the addon specific sub-version. Also provides downloading with the option for background downloading with a queue and queue manager.</description>
+        <summary lang="el_EL">Βοηθητική μονάδα πρόσβασης στους επιλυτές youtube-dl για την εξαγωγή ροών βίντεο</summary>
+        <description lang="el_EL">Βοηθητική μονάδα πρόσβασης στους επιλυτές youtube-dl για την εξαγωγή ροών βίντεο από εκατοντάδες ιστότοπους. Η έκδοση βασίζεται στην έκδοση ημερομηνίας του youtube-dl: EE.MHH.EK όπου ΕΚ η υπό-έκδοση συγκεκριμένα για το πρόσθετο. Επιπλέον δίνει δυνατότητα μεταφόρτωσης στο παρασκήνιο με ουρά και διαχειριστή αυτής.</description>
+        <summary lang="es_ES">Módulo que proporciona acceso a YouTube-dl para la extracción de flujos de video</summary>
+        <description lang="es_ES">Módulo que proporciona acceso a YouTube-dl para la extracción de flujos de video de cientos de sitios. La versión está basada en la versión de fecha youtube-dl: YY.MDD.V donde V es la subversión específica del complemento. También permite descargas con la opción de descarga en segundo plano con una cola y un administrador de colas.</description>
+        <license>LGPL-2.1-only</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=200877</forum>
+        <source>https://github.com/Catch-up-TV-and-More/script.module.youtube.dl</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="script.service.sponsorblock" version="0.4.0" name="SponsorBlock" provider-name="siku2">
+    <requires>
+        <import addon="script.module.requests" version="2.15.1"/>
+        <import addon="script.module.six" version="1.13.0"/>
+        <import addon="plugin.video.youtube" version="6.7.0"/>
+    </requires>
+
+    <extension point="xbmc.service" library="service.py"/>
+
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="context.py">
+                <label>32027</label>
+                <visible>String.IsEqual(ListItem.Property(Addon.ID),plugin.video.youtube)</visible>
+            </item>
+        </menu>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Skip YouTube in-video sponsors</summary>
+        <description lang="en_GB">
+SponsorBlock browser extension ported to Kodi's YouTube plugin.
+
+SponsorBlock is a crowdsourced project to skip sponsor segments in YouTube videos.
+Users submit when a sponsor happens and the add-on automatically skips sponsors it knows about.
+        </description>
+        <disclaimer lang="en_GB">This is an unoffical port of the SponsorBlock browser extension</disclaimer>
+        <news>
+- Get current player's time after a delay instead of relying on seek target (#28)
+- Add option to reduce all skips by some time (#30)
+- Ignore segments that do not fit into reduce skips setting (#31)
+- Reset existing playback when new video starts playing (#32)
+        </news>
+
+        <summary lang="de">Überspringe Sponsoren, betteln um Abonnenten und mehr in YouTube Videos</summary>
+        <description lang="de">
+SponsorBlock für Kodis YouTube Plugin.
+
+SponsorBlock ist ein Crowdsourcing-Projekt zum Überspringen von Sponsorensegmenten in YouTube Videos.
+Benutzer melden diverse Segmente die dann automatisch übersprungen werden.
+        </description>
+
+        <platform>all</platform>
+        <license>MIT</license>
+        <source>https://github.com/siku2/script.service.sponsorblock</source>
+        <assets>
+            <icon>resources/images/icon.png</icon>
+            <fanart>resources/images/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="script.speedtester" name="Speed Tester" version="1.1.3+matrix.1" provider-name="Dr0idGuy, dagwieers">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="resources/lib/addon_entry.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Test your Internet bandwidth</summary>
+    <description lang="en_GB">This add-on tests your Internet bandwith and reports both download and upload speeds and latency from within Kodi.
+
+Use this if you are experiencing streaming issues and you suspect your network to be the cause.</description>
+    <disclaimer lang="en_GB">Speed Tester is powered by speedtest.net</disclaimer>
+    <language>en</language>
+    <license>Apache-2.0</license>
+    <email>dag@wieers.com</email>
+    <website>https://kodi.wiki/view/Add-on:Speed_Tester</website>
+    <source>https://github.com/add-ons/script.speedtester</source>
+    <news>
+v1.1.3 (2023-2-3)
+- Fix for Nexus
+
+v1.1.1 (2020-10-10)
+- Fix issues for Kodi repo review
+
+v1.1.1 (2020-10-10)
+- Add localization
+
+v1.1.0 (2020-09-26)
+- Move add-on to Add-ons project
+- Fix typos and structure of standard output
+
+v1.0.1 (2019-08-06)
+- Initial release
+    </news>
+    <assets>
+      <icon>icon.png</icon>
+      <screenshot>screenshot01.jpg</screenshot>
+      <screenshot>screenshot02.jpg</screenshot>
+      <screenshot>screenshot03.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>
+
+
+<addon id="script.toolbox" name="ToolBox Script" version="2.0.1" provider-name="phil65,sualfred">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.pil" version="1.1.7"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <language/>
+        <summary lang="en_GB">ToolBox Script</summary>
+        <description lang="en_GB">This script exposes several python functions to the UI engine as well as some other stuff to make life for skinners a bit easier.</description>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=207618</forum>
+        <source>https://github.com/phil65/script.toolbox</source>
+        <email>phil65@kodi.tv</email>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="script.tvskipintro" version="2023.01.25" name="TV Skip Intro" provider-name="aenema">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+        <description>Prompt a Skip Intro dialog Netflix style. Skips intro for your favourite shows. The addon creates a database of your shows and stores a custom set skip value</description>
+		<summary lang="en">Skip TV Shows Intro</summary>
+		<platform>all</platform>
+		<website>-</website>
+		<email>-</email>
+		<forum>-</forum>
+		<source>-</source>
+		<news></news>
+        <assets>
+            <icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="script.video.F4mProxy" 
+	     name="F4mProxy" 
+	     version="4.0.9" 
+	     provider-name="Joel e Tiago">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" />
+        <import addon="inputstream.ffmpegdirect" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+    
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Proxy for f4m</summary>
+		<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="script.xbmcbackup"
+    name="Backup" version="1.6.9~beta1" provider-name="robweber">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.dateutil" version="2.8.0" />
+    <import addon="script.module.future" version="0.18.2+matrix.1" />
+    <import addon="script.module.dropbox" version="9.4.0" />
+    <import addon="script.module.pyqrcode" version="1.2.1+matrix.1" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <license>MIT</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=129499</forum>
+    <source>https://github.com/robweber/xbmcbackup</source>
+    <assets>
+    	<icon>icon.png</icon>
+		<screenshot>screenshot1.jpg</screenshot>
+		<screenshot>screenshot2.jpg</screenshot>
+		<screenshot>screenshot3.jpg</screenshot>
+		<screenshot>screenshot4.jpg</screenshot>
+		<screenshot>screenshot5.jpg</screenshot>
+		<screenshot>screenshot6.jpg</screenshot>
+    </assets>
+    <news>Version 1.6.8
+Updated language files with Weblate integration
+Bring in saved sources from File Manager to file browser
+Fixed Dropbox authorization flow
+Minor UI fixes
+</news>
+    <summary lang="ar_SA">إنسخ إحتياطياً قاعده بيانات إكس بى إم سى وملفات اﻹعدادات فى حاله وقوع إنهيار مع إمكانيه اﻹسترجاع</summary>
+    <summary lang="be_BY">Backup and restore your Kodi database and configuration files in the event of a crash or file corruption.</summary>
+    <summary lang="bg_BG">Добавката може да създава резервни копия и възстановява базата данни и настройките на Kodi, в случай на срив или повреда на файловете.</summary>
+    <summary lang="ca_ES">Feu còpies de seguretat i restaureu la vostra base de dades de l'Kodi i dels fitxers de configuració en el cas de fallada o corrupció dels fitxers.</summary>
+    <summary lang="cs_CZ">Zálohování a obnovení vaší databáze Kodi a konfiguračních souborů v případě chyby nebo poškození souboru.</summary>
+    <summary lang="da_DK">Sikkerhedskopiér og genskab din Kodi database og konfigurationsfiler i tilfælde af et nedbrud eller en ødelagt fil.</summary>
+    <summary lang="de_DE">Die Kodi-Datenbank sichern und bei Dateiverlust oder Beschädigung wiederherstellen.</summary>
+    <summary lang="el_GR">Δημιουργήστε αντίγραφα ασφαλείας της βάσης δεδομένων και των ρυθμίσεων του Kodi για την πιθανότητα σφαλμάτων ή καταστροφής αρχείων.</summary>
+    <summary lang="en_GB">Backup and restore your Kodi database and configuration files in the event of a crash or file corruption.</summary>
+    <summary lang="en_NZ">Backup and restore your Kodi database and configuration files in the event of a crash or file corruption.</summary>
+    <summary lang="en_US">Backup and restore your Kodi database and configuration files in the event of a crash or file corruption.</summary>
+    <summary lang="es_ES">Haz copia de seguridad de tu base de datos y configuración y recupera todo en caso de fallo.</summary>
+    <summary lang="es_MX">Respalda y restaura tu base de datos y archivos de configuración de Kodi dado el evento de un cuelgue o corrupción de archivos.</summary>
+    <summary lang="eu_ES">Kodi datu-basea eta konfigurazio fitxategien babes-kopia egin kraskatze edo fitxategi hondamena saihesteko</summary>
+    <summary lang="fi_FI">Varmuuskopioi ja palauttaa Kodin tietokannan ja asetukset kaatumisen tai tiedostojen korruptoitumisen varalta.</summary>
+    <summary lang="fr_CA">Sauvegarder et restaurer votre base de données et vos fichiers de configuration Kodi dans le cas d'un plantage ou d'une corruption de fichier.</summary>
+    <summary lang="fr_FR">Sauvegarder et restaurer les bases de données Kodi et les fichiers de configuration personnels en cas de plantage ou de fichiers corrompus.</summary>
+    <summary lang="gl_ES">Crear copia de seguranza e restaurar a base de datos e ficheiros de configuración de Kodi no caso dun fallo ou corrupción de ficheiros.</summary>
+    <summary lang="he_IL">גיבוי ושחזור מסד הנתונים וקבצי ההגדרות של קודי במקרה של קריסה או קבצים פגומים.</summary>
+    <summary lang="hr_HR">Sigurnosno kopirajte i obnovite vašu Kodi bazu podataka i datoteke podešavanja prilikom rušenja ili oštećenja datoteka.</summary>
+    <summary lang="hu_HU">Biztonsági mentés készítése az Kodi adatbázisról és a beállítófájlokról vagy állítsa helyre azokat egy rendszerösszeomlás vagy adatvesztés után.</summary>
+    <summary lang="id_ID">Cadangkan dan kembalikan basis data Kodi Anda beserta berkas konfigurasi apabila terjadi kerusakan atau korupsi berkas.</summary>
+    <summary lang="it_IT">Effettua il backup o ripristina il tuo database di Kodi e i file di configurazione qualora si verifichi una chiusura imprevista o un danneggiamento dei file.</summary>
+    <summary lang="ja_JP">システムのクラッシュやファイル破損に備えて、Kodi のデータベースや設定ファイルをバックアップ・リストアできます。</summary>
+    <summary lang="ko_KR">Kodi 데이터베이스와 설정 파일을 백업하고 복구합니다.</summary>
+    <summary lang="lt_LT">Sukurkite savo Kodi duomenų bazės ir konfigūracijos failų atsarginę kopiją ir atstatykite iš jos, jei sistema užstrigtų ar susigadintų failas.</summary>
+    <summary lang="nb_NO">Sikkerhetskopier og gjenopprett dine Kodi-databaser og -konfigurasjonsfiler i tilfelle et krasj eller filkorrupsjon.</summary>
+    <summary lang="nl_NL">Backup en herstel je Kodi database- en configuratiebestanden in geval van een crash of bestandscorruptie.</summary>
+    <summary lang="pl_PL">Tworzenie i przywracanie kopii zapasowej bazy danych i konfiguracji Kodi, na wypadek awarii lub uszkodzenia pliku.</summary>
+    <summary lang="pt_BR">Faça backup e restaure o banco de dados do Kodi e seus arquivos de configuração, no caso de falha ou corrupção de arquivo.</summary>
+    <summary lang="pt_PT">Crie cópias de segurança da base de dados do Kodi e dos ficheiros de configuração. Pode restaurar o conteúdo se ocorrer um crash ou corrupção de ficheiros.</summary>
+    <summary lang="ru_RU">Сохраняйте и восстанавливайте базу данных и конфигурационные файлы Kodi, чтобы не допустить потерю данных в случае аварии или повреждений файлов.</summary>
+    <summary lang="sk_SK">Zálohovanie a obnova Kodi databázy a konfiguračných súborov pre prípad havárie alebo poškodenia súboru.</summary>
+    <summary lang="sl_SI">Varnostno kopirajte in obnovite svojo zbirko podatkov Kodi in prilagoditvene datoteke za primer sesutja ali okvare datotek.</summary>
+    <summary lang="sv_SE">Ta backupp av eller återställ din Kodi-databas och konfigurationsfiler i händelse av en krash eller filkorruption.</summary>
+    <summary lang="zh_CN">备份和恢复 Kodi 数据库和配置文件，以防范系统崩溃或文件损坏问题。</summary>
+    <description lang="ar_SA">أسبق لك ان أضعت تخصيصاتك المفضله ورغبت لو كان بإمكانك نسخهم إحتياطياً ؟ اﻷن بات بإمكانك ذلك. يمكنك إستخراج قاعده بياناتك وقوائم التشغيل والملحقات وتخصيصاتك المفضله وغيره الى اى مصدر خارجى قابل للكتابه من قِبَل إكس بى إم سى او مباشرتاً الى نظام تخزين سحابى. يمكنك تفعيل النسخ اﻹحتياطى عند الحاجه او جدولته مُسبقاً</description>
+    <description lang="be_BY">Ever hosed your Kodi configuration and wished you'd had a backup? Now you can with one easy click. You can export your database, playlist, thumbnails, addons and other configuration details to any source writeable by Kodi or directly to Dropbox cloud storage. Backups can be run on demand or via a scheduler. </description>
+    <description lang="bg_BG">Да сте губили всички настройки, които сте правили по Kodi? А разполагахте ли с резервно копие? Сега можете да създавате копие само с едно кликване - на базата данни, плейлистите, миниатюрите, добавките и други, в определено от вас място или директно в Dropbox. Можете да настроите и автоматично създаване на копия през определен интервал от време.</description>
+    <description lang="ca_ES">Alguna vegada s'ha carregat la seva configuració de l'Kodi i ha desitjat tenir una còpia de seguretat? Ara pot fer-ho amb un simple clic. Pot exportar la seva base de dades, llista de reproducció, miniatures, complements i altres detalls de la configuració a qualsevol font que pugui ser escrita per l'Kodi o directament a l'emmagatzematge en el núvol Dropbox. Les còpies de seguretat es poden executar sota demanda o per mitjà d'un planificador.</description>
+    <description lang="cs_CZ">Pokazila se vám někdy konfigurace Kodi a přáli jste si, abyste měli zálohu? Nyní ji můžete mít pomocí jednoho jednoduchého kliknutí. Můžete exportovat svou databázi, seznam stop, náhledy, doplňky a další konfigurace do jakéhokoliv zdroje, do kterého může Kodi zapisovat, nebo přímo do cloudového úložiště Dropbox. Zálohy mohou být spuštěny na vyžádání nebo prostřednictvím plánovače.</description>
+    <description lang="da_DK">Har du prøvet at slette din Kodi opsætning, og ønsket at du havde haft sikkerhedskopi? Nu kan du få det med et enkelt klik. Du kan eksportere din database, afspilninglister, miniaturebilleder, addons og andre opsætningsdetaljer til enhver kilde, som er skrivbar for Kodi eller direkt til Dropbox cloud lager. Sikkerhedskopier kan køres manuelt eller via en tidsplan.</description>
+    <description lang="de_DE">Wurde jemals deine Kodi-Konfiguration zerschossen und hättest dir dann gewünscht, dass eine Datensicherung existiert? Jetzt kannst du eine Sicherung mit nur einem Klick erzeugen. Du kannst deine Datenbanken, Wiedergabelisten, Vorschaubilder, Addons und andere Konfigurationsdetails an einem für Kodi beschreibbaren Ort deiner Wahl oder direkt in den Dropbox Cloud-Speicher exportieren. Datensicherungen können auf Anfrage oder durch ein Steuerprogramm ausgeführt werden.</description>
+    <description lang="el_GR">Σας έτυχε ποτέ να χάσετε τις ρυθμίσεις του Kodi και να εύχεστε να είχατε αντίγραφο ασφαλείας; Πλέον μπορείτε με ένα απλό κλικ. Μπορείτε να εξάγετε τη βάση δεδομένων, τις λίστες αναπαραγωγής, τις μικρογραφίες, τα πρόσθετα και άλλες λεπτομέρειες της εγκατάστασης σε οποιαδήποτε πηγή στην οποία μπορεί να γράψει το Kodi, ή απευθείας στο λογαριασμό σας στο Dropbox. Τα αντίγραφα μπορούν να γίνονται κατ' επιλογή ή μέσω προγραμματισμού.</description>
+    <description lang="en_GB">Ever hosed your Kodi configuration and wished you'd had a backup? Now you can with one easy click. You can export your database, playlist, thumbnails, addons and other configuration details to any source writeable by Kodi or directly to Dropbox cloud storage. Backups can be run on demand or via a scheduler. </description>
+    <description lang="en_NZ">Ever hosed your Kodi configuration and wished you'd had a backup? Now you can with one easy click. You can export your database, playlist, thumbnails, addons and other configuration details to any source writeable by Kodi or directly to Dropbox cloud storage. Backups can be run on demand or via a scheduler. </description>
+    <description lang="en_US">Ever hosed your Kodi configuration and wished you'd had a backup? Now you can with one easy click. You can export your database, playlist, thumbnails, addons and other configuration details to any source writeable by Kodi or directly to Dropbox cloud storage. Backups can be run on demand or via a scheduler. </description>
+    <description lang="es_ES">¿Alguna vez te has cargado la configuración de Kodi y habrías deseado tener una copia de seguridad? Ahora puedes tenerla con un único click. Exporta tus base de datos, listas de reproducción, miniaturas, addons y resto de configuraciones a cualquier fuente accesible por Kodi o a tu almacenamiento en Dropbox. Las copias de seguridad pueden programarse o realizarse bajo demanda.</description>
+    <description lang="es_MX">¿Alguna vez haz echado a perder tu configuración de Kodi y haz deseado tener un respaldo? Ahora puedes tenerlo con un simple click. Puedes exportar tu base de datos, listas de reproducción, miniaturas, addons y otros detalles de configuración correspondientes a cualquier fuente que pueda escribir Kodi. Los respaldos pueden ser efectuados a pedido o mediante una programación temporal</description>
+    <description lang="fi_FI">Oletko joskus hukannut Kodin asetukset ja harmitellut varmuuskopioiden puutetta? Nyt voit varmuuskopioida asetuksesi napin painalluksella. Voit tallentaa tietokantasi, toistolistasi, kuvasi, lisäosasi ja muut tiedot mihin tahansa paikkaan, johon Kodilla on kirjoitusoikeudet. Lisäosa tukee myös varnuuskopiointia Dropboxiin. Varmuuskopionti voidaan suorittaa tarvittaessa tai tietyllä aikataululla.</description>
+    <description lang="fr_CA">Avez-vous déjà ruiné votre configuration Kodi et souhaité avoir une sauvegarde? Vous le pouvez maintenant en un seul clic. Vous pouvez exporter vos base de données, liste de lecture, imagettes, addiciels et autres détails de configurations vers n'importe quelle source inscriptible depuis Kodi ou directement vers le stockage en nuage Dropbox. Les sauvegardes peuvent être exécutées sur demande ou à l'aide d'un ordonnanceur.</description>
+    <description lang="fr_FR">Déjà perdu une configuration Kodi et espéré avoir fait une sauvegarde avant ? Maintenant, il est permis de le faire en un simple clic. Il est possible d'exporter les bases de données, listes de lecture, miniatures, extensions et autres fichiers de configuration vers n'importe quel endroit accessible depuis Kodi.</description>
+    <description lang="gl_ES">De seguro que algunha vez eliminou a configuración do Kodi e desexou ter unha copia de seguranza?. Agora pode cun só clic. Pode exportar a súa base de datos, listaxes de reprodución, miniaturas, complementos e outros detalles da configuración a calquera medio escribíbel ou directamente ao Dropbox. As copias de seguranza pódense executar baixo demanda ou programadas.</description>
+    <description lang="he_IL">האם אי פעם נפגמו הגדרות קודי וייחלת שהיה לך גיבוי ? כעת אתה יכול ליצור כזה בלחיצת כפתור. ניתן לייצא את בסיס הנתונים, רשימות ההשמעה, התמונות הממוזערות, הרחבות והגדרות נוספות לכל יעד שיש לקודי הרשאת כתיבה לו או ישירות לשירות אחסון הענן דרופבוקס. ניתן לתזמן מראש גיבויים או להריצם ידנית.</description>
+    <description lang="hr_HR">Jeste li ikada oštetili vaša Kodi podešavanja i poželjeli ste ih obnoviti iz sigurnosne kopije? Sada to možete jednim klikom. Možete izvesti vašu bazu podataka, popis izvođenja, minijature, dodatke i ostale pojedinosti podešavanja na svaki izvor dostupan Kodiju ili izravno na Dropbox oblak pohrane. Sigurnosno kopiranje se može pokrenuti na zahtjev ili u planiranom vremenu.</description>
+    <description lang="hu_HU">Sikerült már összekutyulni az Kodi beállításait és jó lett volna egy biztonsági mentés? Most megteheti egy kattintással. Exportálhatja az adatbázisait, lejátszáslistáit, könyvjelzőit, kiegészítőit és egyéb beállításokat bármely, az Kodi által írható tárhelyre vagy közvetlenül a Dropbox felhő tárolóba. A mentések kézzel vagy időzítetten indíthatóak.</description>
+    <description lang="id_ID">Pernah membuat berantakan konfigurasi Kodi Anda dan berharap Anda punya cadangannya? Sekarang Anda dapat melakukannya dengan klik mudah. Anda dapat mengekspor basis data, daftar putar, gambar kecil, addon dan rincian konfigurasi lainnya ke sumber mana saja yang dapat ditulis oleh Kodi atau langsung ke penyimpanan awan Dropbox. Pencadangan dapat dijalankan sesuai permintaan atau terjadwal.</description>
+    <description lang="it_IT">Hai mai distrutto la tua configurazione di Kodi ma non ne avevi una copia di backup? Ora puoi farlo con un semplice click. Puoi esportare il tuo database, le playlist, le anteprime, gli add-on ed altre configurazioni su ogni percorso accessibile da Kodi o direttamente su Dropbox. I backup si possono fare a richiesta o possono essere pianificati.</description>
+    <description lang="ja_JP">Kodiの設定が消えてしまい、バックアップをとっておけば... と思ったことはありますか？これからは1クリックで簡単にバックアップできます。データベース、プレイリスト、サムネール、アドオン、その他設定項目を、Kodi が書き込み可能なメディアに書き出せます。Dropbox クラウドストレージにも直接書き出せます。スケジューラによる自動バックアップと、オンデマンドでのバックアップの両方が使えます。</description>
+    <description lang="ko_KR">Kodi 설정 백업본이 있었으면 하고 원했던 적이 있습니까? 이제 한 번의 클릭으로 가능합니다. 데이터베이스, 재생목록, 썸네일, 애드온과 기타 세부 설정을 어디에나 내보내거나 직접 Dropbox 에 저장할 수 있습니다. 백업은 수동 또는 예약으로 실행할 수 있습니다. </description>
+    <description lang="lt_LT">Ar kada nors praradote savo Kodi konfigūraciją ir gailėjotės, kad neturėjote atsarginės kopijos? Dabar galite ją turėti vienu paspaudimu. Jūs galite išeksportuoti duomenų bazę, grojaraščius, priedus ir kitą konfigūracijos informaciją į bet kokį Kodi palaikomą šaltinį ar tiesiai į Dropbox debesų saugyklą. Atsarginės kopijos gali būti daromos rankiniu arba automatiniu būdu.</description>
+    <description lang="nb_NO">Har du noen gang ødelagt Kodi-installasjonen din og ønsket at du hadde en sikkerhetskopi? Det kan du nå med et enkelt trykk. Du kan eksportere din database, spillelister, miniatyrer, utvidelser og andre konfigurasjonsdetaljer til enhver kilde som er tilgjengelig for Kodi eller til Dropbox. Du kan lage sikkerhetskopier ved behov eller med en timeplan.</description>
+    <description lang="nl_NL">Ooit je Kodi-configuratie verknald en hoopte je dat je een backup had? Nu kan dat met een simpele klik. Je kunt je bibliotheek, afspeellijsten, miniaturen, addons en andere configuratie-opties naar elke bron die door Kodi beschrijfbaar is of direct naar een Dropbox-cloudopslag exporteren. Backups kunnen op aanvraag of via planning gemaakt worden.</description>
+    <description lang="pl_PL">Doświadczyłeś utraty konfiguracji Kodi i marzyłeś o posiadaniu kopii zapasowej? Teraz możesz ją mieć i to w prosty sposób. Możesz wyeksportować bazę danych, listy odtwarzania, miniatury, dodatki oraz pozostałe pliki do dowolnego źródła, włączając w to Dropbox, bezpośrednio z Kodi. Kopie zapasowe mogą zostać utworzone na żądanie lub wg harmonogramu.</description>
+    <description lang="pt_BR">Sempre se preocupou com sua configuração do Kodi e desejou ter um backup? Agora você pode com um simples clique. Você pode exportar seu banco de dados, listas de reprodução, miniaturas, addons e outros detalhes de configuração para qualquer fonte gravável pelo Kodi ou diretamente ao armazenamento na nuvem Dropbox. Os backups podem ser executados sob demanda ou por agendamento.</description>
+    <description lang="pt_PT">Já arruinou a sua configuração do Kodi e desejou ter feito uma cópia de segurança? Agora pode, com apenas um clique. Exporte a base de dados, listas de reprodução, miniaturas, add-ons e outras configurações para qualquer fonte acedível pelo Kodi. As cópias de segurança podem ser executadas manualmente ou por temporizador.</description>
+    <description lang="ru_RU">Хотите получить резервную копию настроек Kodi? Теперь можете это сделать одним щелчком мыши. Вы можете выгрузить вашу базу данных, плейлисты, эскизы, дополнения и другую нужную Вам информацию и сохранить её с помощью Kodi или выгрузить в облачное хранилище Dropbox. Резервную копию можно сделать по требованию или запускать по расписанию.</description>
+    <description lang="sk_SK">Už ste niekedy poškodili konfiguráciu Kodi a priali si mať zálohu? Teraz môžete - na jeden klik. Môžete exportovať Vašu databázu, playlist, náhľady, doplnky a konfigurácie na ktorýkoľvek zdroj zapisovateľný Kodi. Zálohy môžu byť púšťané na požiadanie alebo plánovačom. </description>
+    <description lang="sv_SE">Har du någonsin tappat bort din Kodi konfiguration och önskat att du hade en backup? Nu kan du enkelt med ett klick. Du kan exportera din databas, spellista, minityrer, tillägg och andra konfigurationsdetaljer till valfri källa som är skrivbar för Kodi. Backupper kan köras på begäran eller via scheman.</description>
+    <description lang="zh_CN">你是否经常折腾你的 Kodi，因而希望能够有个备份？现在可以通过简单点击来实现。你可以把资料库、播放列表、缩略图、插件和其他配置细节导出到 Kodi 可以写入的任意位置或 Dropgox 云存储空间。备份可以按需运行或通过计划任务执行。</description>
+  </extension>
+</addon>
+
+
+<addon id="service.banners" name="Banners" provider-name="Dalibor Lanik" version="3.0"> 
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" /> 
+    <import addon="script.module.pil" version="1.1.7" />
+  </requires>
+  <extension library="default.py" point="xbmc.service" start="startup"> 
+  </extension>
+  <extension library="standalone.py" point="xbmc.python.script">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata"> 
+    <platform>all</platform>
+    <website>http://projects.lanik.org/KodiProject_Banners.htm</website>
+    <summary lang="en_GB">Display banners while video plays</summary>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=283342</forum>
+    <email>dalibor@lanik.org</email>
+    <description lang="en_GB">Displays banners while playing video</description>
+    <news>v3.0 [CR]
+- Python 3 version  [CR]
+</news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshot-01.jpg</screenshot>
+        <screenshot>resources/screenshot-02.jpg</screenshot>
+        <screenshot>resources/screenshot-03.jpg</screenshot>
+        <banner>resources/banner.jpg</banner>
+        <logo>resources/logo.png</logo>
+    </assets>
+  </extension>
+</addon>
+
+
+<addon 
+    id="service.blackbarsremover"
+    name="Black Bars Remover"
+    version="3.0.0"
+    provider-name="milaq">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_gb">Automatically fit video to screen</summary>
+        <description lang="en_gb">Automatically adjusts the zoomlevel to eliminate black bars in videos. This addon also respects Kodi's "minimise black bars" setting.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+        <forum></forum>
+        <website>https://milaq.net</website>
+        <email></email>
+        <source>https://github.com/milaq/kodi_addon_blackbarsremover</source>
+        <news></news>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart></fanart>
+            <screenshot></screenshot>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="service.cleansubs" name="CleanSubs" provider-name="Dalibor Lanik" version="7.0"> 
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" /> 
+    <import addon="script.module.myconnpy" version="1.1.7" />
+    <import addon="script.module.pil" version="1.1.7" />
+  </requires>
+  <extension library="default.py" point="xbmc.service" start="startup"> 
+  </extension>
+    <extension library="standalone.py" point="xbmc.python.script">
+        <provides>executable</provides>
+    </extension>
+  <extension point="xbmc.addon.metadata"> 
+    <platform>all</platform>
+    <website>http://projects.lanik.org/KodiProject_CleanSubs.htm</website>
+    <summary lang="en_GB">Clean up downloaded subs from ads, etc</summary>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=283342</forum>
+    <email>dalibor@lanik.org</email>
+    <description lang="en_GB">Clean up downloaded subs from ads and other rubbish, i.e. who translated subtitles or from which web they were downloaded. Should work with all encodings (tested with 1250, 1251 and utf-8) and srt, sub subtitles. I created basic definitions which are downloaded from my web at runtime. Mostly for serbo-croatian and czech, and there are definitions for english, german, french, polish, slovak, hungarian, dutch and portugese. If you have any strings you need removed in your language, submit them to me in UTF8 format an I can add them.</description>
+    <news>v7.0 [CR]
+- Python 3 version [CR]
+</news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshot-01.jpg</screenshot>
+        <screenshot>resources/screenshot-02.jpg</screenshot>
+        <screenshot>resources/screenshot-03.jpg</screenshot>
+        <banner>resources/banner.jpg</banner>
+        <logo>resources/logo.png</logo>
+    </assets>
+  </extension>
+</addon>
+
+
+<addon id="service.lt2http" name="lt2http" version="0.0.16" provider-name="ElementumOrg">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="repository.elementum" optional="true" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py" />
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">LT2http: LibTorrent-to-HTTP streaming addon</summary>
+        <description lang="en">LT2http is a torrent download and streaming engine.</description>
+        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+        <language>en el es de fi fr he hr it nl pt ro sk</language>
+        <platform>all</platform>
+        <website>http://elementum.surge.sh/</website>
+        <source>https://github.com/ElementumOrg/lt2http</source>
+        <forum></forum>
+        <license>Non commercial. See https://github.com/ElementumOrg/service/blob/master/LICENSE</license>
+        <assets>
+            <fanart>fanart.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="service.stinger.notification" name="Stinger scene notification" version="2.0.0" provider-name="rmrector">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" version="2.9.1" />
+	</requires>
+	<extension point="xbmc.service" start="login" library="python/service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">This service notifies you of stinger scenes in the currently playing movie.</summary>
+		<description lang="en_gb">This add-on notifies you of stinger scenes in the current movie, popping up a notification when the credits roll. It uses tags to identify movies that have a stinger scene, which can be automatically added by the Universal Movie Scraper from The Movie Database.</description>
+		<disclaimer lang="en_gb">This add-on requires the tags 'aftercreditsstinger' and/or 'duringcreditsstinger' on movies with a stinger scene.</disclaimer>
+		<summary lang="pl_pl">Ta usługa powiadamia o dodatkowych scenach po napisach końcowych w aktualnie odtwarzanym filmie.</summary>
+		<description lang="pl_pl">Ten dodatek powiadamia o dodatkowych scenach po napisach końcowych w aktualnie odtwarzanym filmie, wyświetlając powiadomienie podczas napisów końcowych. Do tego celu używa tagów aby zidentyfikować filmy posiadające takie sceny. Tagi mogą być automatycznie dodawane przez Universal Movie Scraper z bazy The Movie Database. Dodatek może również wysyłać zapytania do bazy ChapterDb aby zidentyfikować moment wyświetlania końcowych napisów, jeśli odtwarzany film nie zawiera osadzonych informacji o rozdziałach.</description>
+		<disclaimer lang="pl_pl">Ten dodatek wymaga tagów 'aftercreditsstinger' i/lub 'duringcreditsstinger' w filmach ze scenami występującymi w trakcie lub po napisach końcowych.</disclaimer>
+		<news>v2.0.0 (2021-01-31)
+- Kodi 19 Matrix / Python 3 compatibility. Breaks compatibility with previous versions of Kodi.
+- remove ChapterDB</news>
+		<source>https://github.com/rmrector/service.stinger.notification</source>
+		<forum>https://forum.kodi.tv/showthread.php?tid=254004</forum>
+		<license>The MIT License</license>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="service.subloader" name="SubLoader" version="0.1.7" provider-name="DenimNani">
+	<requires></requires>
+	<extension point="xbmc.service" library="monitor.py" start="login"></extension>  
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Automatic subtitles for your content</summary>
+		<description lang="en">Auto download the best subtitle automatically as soon you start the video.[CR]Special thanks to OpenSubtitles.org for providing a unique UA for Subloader.</description>
+		<platform>all</platform>
+		<language>en</language>
+		<license>GPL</license>
+		<website>https://github.com/denimnani</website>
+		<source>https://github.com/denimnani/service.subloader</source>
+		<forum></forum>
+		<email></email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+			<screenshot>resources/media/screenshots/screenshot1subloader.jpg</screenshot>
+			<screenshot>fanart.png</screenshot>
+		</assets>
+<news>
+0.1.7     23.11.2022
+G-Mod - removed
+peno64 fix/extend exclude pvr
+helviojr made a patch so the function videosource() returns the stream url if it is a .strm file. That way it can detect the addon used to open the file/url and can use the addons exclusions.
+        
+0.1.6     05.05.2021
+Bug fix on open subtitle dialog.
+
+0.1.5     21.02.2021
+Subloader now runs on KODI v19 (Special thanks to peno/64).
+Added python 3 compatibility.
+Some grammatical corrections (Special thanks to AlexNaga).
+
+0.1.4     23.07.2019
+Added Dutch language (Special thanks to Tinuz97).
+Clean up project files.
+</news>
+	</extension>
+</addon>
+
+
+<addon id="service.vpn.manager"
+       name="VPN Manager for OpenVPN"
+       version="7.0.1"
+       provider-name="Zomboided">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.python.module" library="libs" />
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news></news>
+    <platform>all</platform>
+    <summary lang="en">Configure and manage VPN connections using openVPN</summary>
+    <description lang="en">Establish a connection to a VPN service and automatically switch VPN locations based on the add-on being used.</description>
+    <license>GPL-2.0-or-later</license>
+    <forum>https://forum.libreelec.tv/thread/5032-vpn-manager-for-openvpn/</forum>
+    <source>https://github.com/Zomboided/service.vpn.manager</source>
+    <assets>
+        <icon>resources/icon.png</icon>
+        <fanart></fanart>
+        <banner></banner>
+        <clearlogo></clearlogo>
+        <screenshot></screenshot>
+    </assets>
+  </extension>
+</addon>
+
+<!-- ---------------------------------------------------------------------- -->
+
+<addon id="plugin.audio.dashradio" name="Dash Radio" version="420.3" provider-name="Diggz">
+<requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>audio</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+    <summary lang="en">Dash Radio</summary>
+    <description lang="en">Dash Radio is a digital radio broadcasting platform over 80 original stations. These stations are curated by DJs, radio personalities, musicians, and music tastemakers. The platform includes partner stations curated by Snoop Dogg, Kylie Jenner, Lil Wayne, Tech N9ne, Borgore, B-Real of Cypress Hill, and others.</description>
+    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Free</license>
+    <platform>all</platform>
+  <assets>
+            <icon>icon.png</icon>
+            <fanart></fanart>
+     </assets>	
+    </extension>
+</addon>
+
+
+<addon id="plugin.audio.datpiff" name="datPiff" version="2.0.0" provider-name="mfd">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.beautifulsoup4" version="4.9.3"/>
+		<import addon="script.module.requests" version="2.22.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="datpiff.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">datpiff Mixtapes</summary>
+		<description lang="en">Streams mixtapes from datpiff.com</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<language/>
+		<website>www.datpiff.com</website>
+		<forum/>
+		<source>https://github.com/michaelfdeberry/plugin.audio.datpiff</source>
+		<email>mdeberry at vitreousoft dot com</email>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+    	</assets>
+	</extension>
+</addon>
+
+
+<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2022.0.2" provider-name="Jon Bovi">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.future"/>
+        <import addon="script.module.mutagen"/>
+        <import addon="script.module.requests"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.service" library="playerMP3.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>A music streaming Collection.</summary>
+        <description>MP3 Streams Kodi 19+</description>
+        <news>2022.0.2 - Fix errors loading pages. 2022.0.1 - Small fix, Kodi 20 ready. 2021.0.6 - Fixed issue with hanging  when skipping tracks. 2021.0.4 - Fixed Settings, 2021.0.3 - Bugfixes. Enjoy!</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.audio.radio_de" name="Radio" provider-name="Tristan Fischer, enen92" version="3.0.9+matrix.1">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.xbmcswift2" version="19.0.6" />
+    </requires>
+    <extension library="addon.py" point="xbmc.python.pluginsource">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <website>https://www.radio.de</website>
+        <source>https://github.com/XBMC-Addons/plugin.audio.radio_de</source>
+        <forum>https://forum.kodi.tv/showthread.php?tid=119362</forum>
+        <license>GPL-2.0-only</license>
+        <news>v3.0.9+matrix.1 (31/12/2021)
+            [new] Sync translations
+        </news>
+        <assets>
+            <icon>resources/art/icon.png</icon>
+            <fanart>resources/art/fanart.jpg</fanart>
+            <screenshot>resources/art/screenshot-1.png</screenshot>
+            <screenshot>resources/art/screenshot-2.png</screenshot>
+            <screenshot>resources/art/screenshot-3.png</screenshot>
+            <screenshot>resources/art/screenshot-4.png</screenshot>
+        </assets>
+        <summary lang="ca_ES">accedeix a mes de 30000 emissores de radio</summary>
+        <summary lang="da_DK">Få adgang til &gt;30000 radioudsendelser</summary>
+        <summary lang="de_DE">Zugang zu mehr als 30000 Radiosendern</summary>
+        <summary lang="el_GR">Πρόσβαση σε πάνω από 30000 εκπομπές</summary>
+        <summary lang="en_GB">Access &gt;30000 radio broadcasts</summary>
+        <summary lang="en_NZ">Access &gt;30000 radio broadcasts</summary>
+        <summary lang="en_US">Access &gt;30000 radio broadcasts</summary>
+        <summary lang="es_ES">Escuche más de 30000 emisoras de radio</summary>
+        <summary lang="es_MX">Accede a &gt;30000 transmisiones de radio</summary>
+        <summary lang="fr_CA">Accéder à &gt; 30000 radiodiffusions</summary>
+        <summary lang="fr_FR">Ecoutez plus de 30000 stations de radio</summary>
+        <summary lang="gl_ES">Escoite máis de 30000 emisoras de radio</summary>
+        <summary lang="he_IL">גישה ליותר מ־30000 שידורי רדיו</summary>
+        <summary lang="hr_HR">Pristup &gt;30000 radio emitiranja</summary>
+        <summary lang="hu_HU">Hozzáférés 30000-nél is több rádióadáshoz</summary>
+        <summary lang="id_ID">Akses &gt;30000 siaran radio</summary>
+        <summary lang="it_IT">Accedi a più di 30000 trasmissioni radio</summary>
+        <summary lang="ko_KR">&gt;3만개의 라디오 방송국 연결</summary>
+        <summary lang="lt_LT">Prieiga&gt; 30000 radijo transliacijų</summary>
+        <summary lang="nl_NL">Toegang tot &gt;30000 radio uitzendingen</summary>
+        <summary lang="pl_PL">Dostęp do ponad 30000 stacji radiowych</summary>
+        <summary lang="pt_BR">Acesse&gt;30000 broadcasts rádios</summary>
+        <summary lang="pt_PT">Aceda a mais de 30000 transmissões de rádio</summary>
+        <summary lang="ru_RU">Доступ к &gt;30000 радиостанциям</summary>
+        <summary lang="sk_SK">Pristupujte k vyše 30000 vysielaniam</summary>
+        <summary lang="sv_SE">Få tillgång till &gt;30000 radiosändningar</summary>
+        <summary lang="ta_IN">30000 க்கும் மேல் வானொலி ஒளிபரப்புகளை அணுகவும்</summary>
+        <summary lang="zh_CN">访问大于7000个电台广播</summary>
+        <description lang="ca_ES">Plugin de música per escoltar més de 30000 emissores de ràdio internacionals des rad.io, radio.de i radio.fr[CR]Característiques actuals:[CR]- Traduccions a l'anglès, alemany i francès[CR]- Cercador d'emissores per ubicació, gènere, tema, país, ciutat o idioma[CR]- Cercador d'emissores[CR]- 115 gèneres, 59 temes, 94 països, 1010 ciutats, 63 idiomes</description>
+        <description lang="da_DK">Musikplugin som giver adgang til over 30000 internationale radioudsendelser fra rad.io, radio.de, radio.fr, radio.pt og radio.es[CR]Nuværende funktioner[CR]- Oversat til engelsk, tysk og fransk[CR]- Gennemse stationer efter lokalitet, genre, emne, land, by og sprog[CR]- Søg efter stationer[CR]- 115 genrer, 59 emner, 94 lande, 1010 byer og 63 sprog</description>
+        <description lang="de_DE">Das Radio im Internet mit über 30000 Radiosendern, Internetradiostationen, gratis Streams und Podcasts live von rad.io, radio.de und radio.fr.[CR]Features[CR]- Auf deutsch, englisch und französisch übersetzt[CR]- Sortiert nach: in der Nähe, Genre, Thema, Land und Sprache[CR]- nach Sendern suchen[CR]- 115 Genre, 59 Themen, 94 Länder, 1010 Städte, 63 Sprachen</description>
+        <description lang="el_GR">Μουσικό plugin για πρόσβαση σε περισσότερους από 30000 διεθνείς ραδιοφωνικές εκπομπές από τα rad.io, radio.de και radio.fr[CR]Υποστηρίζονται[CR]- Μεταφράσεις σε Αγγλικά, Γερμανικά και Γαλλικά[CR]- Περιήγηση σταθμών ανά τοποθεσία, είδος, θέμα, χώρα, πόλη και γλώσσα[CR]- Αναζήτηση σταθμών[CR]- 115 είδη, 59 θέματα, 94 χώρες, 1010 πόλεις, 63 γλώσσες</description>
+        <description lang="en_GB">Music plugin to access over 30000 international radio broadcasts from rad.io, radio.de, radio.fr, radio.pt and radio.es[CR]Currently features[CR]- English, german, french translated[CR]- Browse stations by location, genre, topic, country, city and language[CR]- Search for stations[CR]- 115 genres, 59 topics, 94 countrys, 1010 citys, 63 languages</description>
+        <description lang="en_NZ">Music plugin to access over 30000 international radio broadcasts from rad.io, radio.de, radio.fr, radio.pt and radio.es[CR]Currently features[CR]- English, german and french translated[CR]- Browse stations by location, genre, topic, country, city and language[CR]- Search for stations[CR]- 115 genres, 59 topics, 94 countrys, 1010 citys, 63 languages</description>
+        <description lang="en_US">Music plugin to access over 30000 international radio broadcasts from rad.io, radio.de and radio.fr[CR]Currently features[CR]- English, german and french translated[CR]- Browse stations by location, genre, topic, country, city and language[CR]- Search for stations[CR]- 115 genres, 59 topics, 94 countrys, 1010 citys, 63 languages</description>
+        <description lang="es_ES">Complemento de música para escuchar más de 30000 emisoras de radio de todo el mundo desde rad.io, radio.de, radio.fr, radio.pt y radio.es.[CR]Funciones:[CR]- Traducciones al inglés, alemán, francés, portugués y español.[CR]- Buscador de emisoras por ubicación, género, tema, país, ciudad o idioma.[CR]- Buscador de emisoras por nombre.[CR]- 73 géneros, 103 temas, 174 países y multitud de ciudades e idiomas.</description>
+        <description lang="es_MX">Complemento de música para acceder a más de 30000 transmisiones de radio internacionales de rad.io, radio.de, radio.fr, radio.pt y radio.es[CR]Características actuales[CR]- Traducido a inglés, alemán, francés y español[CR]- Explora estaciones por ubicación, género, tópico, país, ciudad e idioma[CR]Busca estaciones[CR]- 115 géneros, 59 tópicos, 94 países, 1010, ciudades, 63 idiomas</description>
+        <description lang="fr_CA">Plugiciel de musique pour accéder à plus de 30000 radiodiffusions internationales de rad.io, radio.de et radio.fr[CR]Offre présentement [CR]- Traductions en anglais, allemand et français[CR]- Parcourir des stations par lieux, genres, sujets, pays, villes et langues[CR]- Rechercher des stations[CR]- 115 genres, 59 sujets, 94 pays, 1 010 villes, 63 langues.</description>
+        <description lang="fr_FR">Plugin musical pour écouter plus de 30000 stations de radio internationales de rad.io, radio.de et radio.fr[CR]Fonctionnalités[CR]- Traduit en Anglais, Allemand et Français[CR]- Parcourir les stations par genre, thème, pays, ville et langue[CR]- Recherche de stations[CR]- 115 genres, 59 thèmes, 94 pays, 1010 villes, 63 langues</description>
+        <description lang="gl_ES">Engadido de música para escoitar máis de 30000 emisoras de radio internacionais de rad.io, radio.de e radio.fr.[CR]Características:[CR]- Traducións ao inglés, alemán, francés e castelán.[CR]- Busca de emisoras por localización, xénero, tema, país, cidade ou idioma.[CR]- Busca de emisoras.[CR]- 115 xéneros, 59 temas, 94 países, 1010 cidades, 63 idiomas.</description>
+        <description lang="he_IL">הרחבת מוזיקה המספקת גישה ליותר מ־30000 שידורי רדיו בינלאומים מ־rad.io, radio.de ו־radio.fr[CR]מאפיינים נוכחיים[CR]- שפות אנגלית, גרמנית וצרפתית[CR]- עיון לפי מיקום, סגנון, נושא, מדינה, עיר ושפה[CR]- חיפוש תחנות[CR]- 115 סגנונות, 59 נושאים, 94 מדינות 1010 ערים, 63 שפות</description>
+        <description lang="hr_HR">Glazbeni dodatak za pristup 30000 međunarodnih radio stanica na rad.io, radio.de i radio.fr[CR]Trenutne značajke[CR]- engleski, njemački i francuski prijevodi[CR]- Pregledavajte stanice prema lokaciji, žanru, temi, zemlji, gradu i jeziku[CR]- Pretraživanje stanica[CR]- 115 žanrova, 59 tema, 94 zemalja, 1010 gradova, 63 jezika</description>
+        <description lang="hu_HU">Beépülő modul több, mint 30000 nemzetközi rádióadás eléréséhez a rad.io, radio.de és radio.fr oldalakról[CR]Jelenlegi tulajdonságok[CR]- Angol, német, francia és magyar nyelv[CR]- Állomások böngészése hely, műfaj, téma, ország, város és nyelv szerint[CR]- Állomások keresése[CR]- 115 műfaj, 59 téma, 94 ország, 1010 város, 63 nyelv</description>
+        <description lang="id_ID">Plugin musik untuk mengakses lebih dari 30000 siaran radio internasional dari rad.io, radio.de dan radio.fr[CR]Fitur saat ini[CR]- Terjemahan Inggris, Jerman dan Perancis[CR]- Jelajah stasiun berdasarkan lokasi, tema, topik, negara, kota dan bahasa[CR]- Cari stasiun[CR]- 115 tema, 59 topik, 94 negara, 1010 kota, 63 bahasa</description>
+        <description lang="it_IT">Plugin per accedere a oltre 30000 trasmissioni internazionali radiofoniche da rad.io, radio.de e radio.fr[CR]Caratteristiche[CR]- Supporta inglese, tedesco e francese[CR]- Sfoglia le stazioni per località, genere, argomento, paese, citta e lingua[CR]- Ricerca delle stazioni[CR]- 115 generi, 59 argomenti, 94 paesi, 1010 città e 63 lingue</description>
+        <description lang="ko_KR">rad.io, radio.de, radio.fr, radio.pt 및 radio.es에서 3만개 이상의 국제 라디오 방송에 액세스할 수 있는 음악 플러그인[CR]현재 기능[CR]- 영어, 독일어, 프랑스어 번역[CR]- 방송국 검색 위치, 장르, 주제, 국가, 도시 및 언어별[CR]- 방송국 검색[CR]- 115개 장르, 59개 주제, 94개 국가, 1010개 도시, 63개 언어</description>
+        <description lang="lt_LT">Muzikos įskiepio prieiga prie daugiau nei 30000 tarptautinių radijo transliacijų iš rad.io, radio.de ir radio.fr [CR] Šiuo metu programoja išversta į [Cr] - anglų, vokiečių ir prancūzų kalbas [CR] - Naršyti stotis pagal: vietovę, žanrą, temą, šalį, miestą ir/ar kalbą [CR] - Ieškoti radio stočių pagal:[Cr] - 115 žanrai, 59 temos, 94 šalys, 1010 miestų, 63 kalbos</description>
+        <description lang="nl_NL">muziek plug-in om toegang te krijgen tot over 30000 internationale radiouitzendingen van rad.io, radio.de en radio.fr[CR]Huidige functies[CR]- engels, duits en frans vertaalt[CR]- Zoek naar stations vanuit locatie, genre, onderwerp, land, plaats en taal[CR]- zoek voor stations[CR]- 115 genres. 59 onderwerpen, 94 landen. 1010 plaatsen, 63 talen</description>
+        <description lang="pl_PL">Wtyczka muzyczna dająca dostęp do ponad 30000 międzynarodowych stacji radiowych z[CR]rad.io, radio.de, daio.fr[CR]Obecnie w językach[CR]- Angielski, Niemiecki i Francuski[CR]- Szukaj stacji według lokacji, gatunku, tematu, kraju, miasta czy języka[CR]- 115 gatunków, 59 tematów, 94 kraje, 1010 miasta, 63 języki</description>
+        <description lang="pt_BR">Plugin de música para acessar mais de 30000 emissoras de rádio internacionais de rad.io, radio.de, radio.fr, radio.pt e radio.es [CR] Principais características [CR] - Inglês, Alemão e Francês traduzido [CR] - Procure estações por localização, gênero, tópico, país , cidade e linguagem [CR] - Procure estações [CR] - 115 gêneros, 59 temas, 94 países, 1010 cidades, 63 idiomas</description>
+        <description lang="pt_PT">Plugin de música para aceder a mais de 30000 transmissões de rádio internacionais de rad.io, radio.de, radio.fr, radio.pt e radio.es[CR]Actualmente, disponibiliza:[CR]- Traduções em vários idiomas[CR]- Navegar estações por localização, género, tópico, país, cidade e idioma[CR]- Procurar por estações[CR]- 115 géneros, 59 tópicos, 94 países, 1010 cidades, 63 idiomas</description>
+        <description lang="ru_RU">Музыкальный плагин для доступа к более чем 30000 международным радиостанциям с rad.io, radio.de, radio.fr, radio.pt и radio.es[CR]Текущие возможности[CR]- Английский, немецкий, французский переводы[CR]- Просмотр станций по расположению, жанру, теме, стране, городу и языку[CR]- Поиск станций[CR]- 115 жанров, 59 тем, 94 страны, 1010 городов, 63 языка</description>
+        <description lang="sk_SK">Hudobný doplnok na prístup k vyše 30000 medzinárodným rádio vysielaniam z rad.io, radio.de a radio.fr&amp;#10;Momentálne podporuje:&amp;#10;- anglické, nemecké a francúzske preklady&amp;#10;- prehliadanie staníc podľa umiestnenia, žánru, témy, krajiny, mesta a jazyka&amp;#10;- vyhľadávanie staníc&amp;#10;- 115 žánrov, 59 tém, 94 krajín, 1010 miest, 63 jazykov</description>
+        <description lang="sv_SE">Musiktillägg som ger åtkomst till över 30000 internationella radiosändningar från rad.io, radio.de och radio.fr[CR]Nuvarande funktioner[CR]- Engelsk, tysk, och fransk översättning[]- Bläddra efter stationer baserat på genre, ämne, land, stad och språk[CR]- Sök efter stationer[CR]-115 genres, 59 ämnen, 94 länder, 1010 städer, 63 språk</description>
+        <description lang="ta_IN">இசை துணை பயன் rad.io, radio.de மற்றும் radio.fr இருந்து 30000 க்கும் மேல் வானொலி ஒளிபரப்புகளை அணுக உதவி செய்யும்[CR]தற்போதைய அம்சங்கள்[CR]- ஆங்கிலம், ஜெர்மன் மற்றும் பிரெஞ்சு மொழியாக்கம்[CR]- இருப்பிடம், வகை, தலைப்பு, நாடு, நகரம் மற்றும் மொழி கொண்டு நிலையங்களை உலாவ முடியும்[CR]- நிலையங்களை தேடுதல்[CR]- 115 வகைகள், 59 தலைப்புகள், 94 நாடுகள், 1010 நகரங்கள், 63 மொழிகள்</description>
+        <description lang="zh_CN">访问rad.io、radio.de和radio.fr上超过7000个国际电台广播的音频插件[CR]现有功能[CR]- 英语、德语和法语支持[CR]- 按地点、类别、主题、国家、城市和语言浏览站点[CR]- 搜索站点[CR]- 115个类别、59个主题、94个国家、1010城市、63种语言</description>
+    </extension>
+</addon>
+
+
+<addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="4.0.2" provider-name="joaconigro">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.simplejson" version="3.17.0"/>
+		<!-- <import addon="script.module.web-pdb" /> -->
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <language>en es</language>
+        <platform>all</platform>
+        <forum></forum>
+        <website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
+        <email>joaquinnigro@gmail.com</email>
+		<summary lang="en_GB">TuneIn Radio</summary>
+		<summary lang="es_ES">TuneIn Radio</summary>
+		<description lang="en_GB">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
+		<description lang="es_ES">TuneIn Radio es un servicio gratuito que te permite escuchar cualquier cosa del mundo desde donde te encuentres. Si deseas escuchar música, deportes, noticias o eventos actuales. TuneIn Radio ofrece más de 50,000 estaciones radiales para escoger, desde estaciones locales hasta descubrir nuevas estaciones alrededor del mundo, TuneIn Radio te lleva a donde tu quieras estar.</description>
+		<license>MIT</license>
+		<website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
+		<source>https://github.com/joaconigro/plugin.audio.tuneinradio</source>
+		<assets>
+        	<icon>resources/icon.png</icon>
+        	<fanart>resources/fanart.jpg</fanart>
+    	</assets>
+	</extension>	
+</addon>
+
+
+<addon id="plugin.audio.ytmusic.exp"
+       name="YT [COLOR red]Music[/COLOR] EXP"
+       version="1.0~beta14"
+       provider-name="ForeverGuest">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="1.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="resources/lib/addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Experimental Youtube [COLOR red]Music[/COLOR] plugin</summary>
+    <description lang="en">EXPerimental plugin that lets you play music from Youtube Music.</description>
+    <news>
+1.0~beta14 (2023-03-19)
+- Fix syntax error in api.py introduced in 1.0~beta13.
+- Enable pytube JS parser to recognize regular expressions.
+    </news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.png</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<!-- ---------------------------------------------------------------------- -->
+
+<addon id="script.module.microjenscrapers" name="MicroJen Scraper Module" version="1.3" provider-name="MicroJen Community">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">MicroJen Scrapers Module</summary>
+            <description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts. [CR]Massive thanks and respect to Crucial Minds for permission to use the Base Code and to The Jen Crew for their valuable contributions in bringing this project together.</description>
+                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    <news></news>
+    </extension>
+</addon>
+
+
+<addon id="script.module.thetvdb"
+       name="The TVDB API v2"
+       version="1.0.34"
+       provider-name="marcelveldt and others">
+    <requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+        <import addon="script.module.simplejson" version="3.17.0"/>
+        <import addon="script.module.simplecache" version="2.0.2"/>
+        <import addon="script.module.arrow" version="0.15.5"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>TheTVDB API v2 python module for Kodi</summary>
+        <description>TheTVDB API v3 python module for Kodi</description>
+        <license>Apache 2.0</license>
+        <source>https://github.com/kodi-community-addons/script.module.thetvdb</source>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+
+<addon id="script.module.tmdbhelper" name="TMDbHelper Common" provider-name="jurialmunkey" version="0.0.8">
+  <extension point="xbmc.python.module" library="resources/modules" />
+  <extension point="xbmc.addon.metadata">
+    <description lang="en">Common code required by TMDbHelper and other related jurialmunkey add-ons</description>
+    <reuselanguageinvoker>false</reuselanguageinvoker>
+    <license></license>
+    <language></language>
+    <website></website>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<!-- ---------------------------------------------------------------------- -->
+
+<addon
+  id="plugin.games.rom.collection.browser.widget"
+  version="0.3.0"
+  name="Rom Collection Browser Widget"
+  provider-name="malte">
+  <requires>
+    <!-- Require Kodi Krypton or above -->
+    <import addon="xbmc.addon" version="17.0.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="service.rom.collection.browser" version="1.0.0"/>
+	<import addon="script.games.rom.collection.browser" version="2.2.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">    
+    <summary lang="de">Zusatz Addon für den Rom Collection Browser. Wird verwendet, um Spiele auf dem Kodi Home Screen anzuzeigen. Nur für Skins, die das Skin shortcuts addon unterstützen.</summary>
+    <summary lang="en">Supplement addon for Rom Collection Browser. Used to add your games to Kodis home screen. Only for skins that support the skin shortcuts addon.</summary>    
+    <description lang="de"></description>    
+    <description lang="en"></description>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>forum.kodi.tv/showthread.php?tid=70115</forum>
+    <website>https://github.com/maloep/romcollectionbrowser</website>
+    <source>https://github.com/maloep/romcollectionbrowser</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.program.moonlight-qt" name="Moonlight" version="0.2.1" provider-name="veldenb">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="service.system.docker" optional="true" version="9.80.11.133"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>game</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Launcher for Moonlight game streaming on LibreELEC Raspberry Pi 4 and Generic x86_64 devices.</summary>
+        <summary lang="nl_NL">Starter voor Moonlight game streaming voor LibreELEC Raspberry Pi 4 en generieke x86_64 apparaten.</summary>
+        <summary lang="de_DE">Starter für Moonlight-Spiel-Streaming für LibreELEC Raspberry Pi 4 und generischen x86_64-Geräten.</summary>
+        <summary lang="fr_FR">Lanceur pour Moonlight pour les appareils LibreELEC Raspberry Pi 4 et appareils génériques en x86_64.</summary>
+        <description lang="en_GB">This add-on launches Moonlight-qt. This add-on also has the ability to launch a specific game and update Moonlight-qt.</description>
+        <description lang="nl_NL">Deze uitbreiding start Moonlight-qt. Deze uitbreiding heeft ook de mogelijkheid om een specifiek spel op te starten en Moonlight-qt bij te werken.</description>
+        <description lang="de_DE">Diese Erweiterung startet Moonlight-qt. Diese Erweiterung bietet auch die Möglichkeit, ein bestimmtes Spiel zu starten und Moonlight-qt zu aktualisieren.</description>
+        <description lang="fr_FR">Cet add-on lance Moonlight-qt. Cet add-on permet aussi de lancer un jeu directement et de mettre à jour Moonlight.</description>
+        <language>en nl de fr</language>
+        <platform>linux</platform>
+        <license>GPL-3.0-or-later</license>
+        <website>https://github.com/veldenb/plugin.program.moonlight-qt</website>
+        <source>https://github.com/veldenb/plugin.program.moonlight-qt</source>
+        <news>
+v0.2.1
+- Fix issue switching audio device
+        </news>
+        <disclaimer lang="en_GB">Feel free to use this at your own risk.</disclaimer>
+        <disclaimer lang="nl_NL">Voel je vrij om dit te gebruiken maar wel op eigen risico.</disclaimer>
+        <disclaimer lang="de_DE">Sie können dies auf eigenes Risiko verwenden.</disclaimer>
+        <disclaimer lang="fr_FR">Utilisez cet add-on à vos risques et périls.</disclaimer>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+            <screenshot>resources/screenshot-01.jpg</screenshot>
+            <screenshot>resources/screenshot-02.jpg</screenshot>
+            <screenshot>resources/screenshot-03.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="resource.font.robotocjksc" name="Roboto CJKSC" version="0.0.1" provider-name="jurialmunkey">
+    <requires>
+        <import addon="kodi.resource" version="1.0.0"/>
+    </requires>
+    <extension point="kodi.resource.font" compile="false" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Roboto CJKSC fonts</summary>
+        <description lang="en_GB"></description>
+        <language></language>
+        <platform>all</platform>
+        <license>Apache-2.0</license>
+        <forum></forum>
+        <email></email>
+        <source></source>
+        <news></news>
+        <disclaimer></disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="script.games.rom.collection.browser" name="Rom Collection Browser" provider-name="bruny, malte" version="2.3.1">
+  <requires>
+    <import addon="xbmc.addon" version="17.0.0" />
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" version="2.18.4" />
+	<import addon="vfs.libarchive" version="1.0.7" />
+    <import addon="service.rom.collection.browser" version="1.0.0" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.script">
+    <provides>game</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>2.3.0 (04/2020)
+- change url to thegamesdb API
+- remove legacy.thegamesdb.net scraper
+    </news>
+    <summary lang="be_BY">Import, browse and launch games in XBMC</summary>
+    <summary lang="ca_ES">Importa, cerca i arranca jocs en l'XBMC</summary>
+    <summary lang="da_DK">Importere, gennemse og starte spil i XBMC</summary>
+    <summary lang="de_DE">Importiert, verwaltet und startet Spiele in XBMC</summary>
+    <summary lang="el_GR">Εισαγάγετε, αναζητήστε και εκτελέστε παιχνίδια στο XBMC.</summary>
+    <summary lang="en_GB">Import, browse and launch games in XBMC</summary>
+    <summary lang="en_NZ">Import, browse and launch games in XBMC</summary>
+    <summary lang="es_ES">Importa, explora y ejecuta juegos en XBMC</summary>
+    <summary lang="fr_FR">Importez, parcourez et lancez vos jeux depuis XBMC</summary>
+    <summary lang="fr_CA">Importer, parcourir et lancer des jeux dans XBMC</summary>
+    <summary lang="gl_ES">Importar, buscar e executar xogos no XBMC</summary>
+    <summary lang="hu_HU">Konzol játék ROM-ok böngészése</summary>
+    <summary lang="id_ID">Impor, telusuri dan mainkan permainan di XMBC</summary>
+    <summary lang="it_IT">Importa, sfoglia e lancia i giochi da XBMC</summary>
+    <summary lang="nl_NL">Importeer, doorzoek en start spellen in XBMC</summary>
+    <summary lang="pl_PL">Importowanie, przeglądanie i uruchamianie gier w XBMC</summary>
+    <summary lang="pt_PT">Importe, navegue e execute jogos no XBMC</summary>
+    <summary lang="pt_BR">Importe, navegue e execute jogos no XBMC</summary>
+    <summary lang="ru_RU">Импорт, обзор и запуск игр в XBMC</summary>
+    <summary lang="sv_SE">Importera, bläddra och starta spel i XBMC</summary>
+    <summary lang="zh_CN">在 XBMC 中导入、浏览和运行游戏</summary>
+    <description lang="be_BY">With this Addon you can browse and launch emulator roms and standalone games in XBMC. See the wiki page for more information: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+First Use:
+  * On first launch RCB will start a simple configuration wizard
+  * After the wizard is completed RCB will ask you to import your games
+  * If needed you can launch the wizard anytime via context menu
+  * Just press "C" on your keyboard or "Menu" on your remote
+
+Features:
+  * scan your rom folders and import games to local database
+  * scrape artwork and meta data from various online sources
+  * import local available descriptions, artwork and videos
+  * filter games by console, genre, year and publisher
+  * favorites function
+  * automatic video playback in video window
+  * fullscreen video browser
+  * game details page
+  * dedicated MAME views to display cabinets and marquees
+  * launch roms and standalone games in solo or non-solo mode
+  * detect games in zip and 7z archives and ask user which game to load
+  * direct launching of savestate files
+  * ...
+</description>
+    <description lang="de_DE">Mit diesem Addon können Roms und PC-Spiele verwaltet und gestartet werden. Mehr Informationen im RCB wiki: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Erste Schritte:
+  * Beim ersten Aufruf startet RCB einen Konfigurations-Assistenten
+  * Nach der Konfiguration importiert RCB die Spiele in seine Datenbank
+  * Der Assistent kann auch jederzeit aus RCB heraus gestartet werden
+  * Drücke dazu "C" auf der Tastatur oder "Menu" auf der Fernbedienung
+
+Features:
+  * Scannt Verzeichnisse rekursiv und importiert Spiele in die Datenbank
+  * Liest Artwork und Metadaten aus verschiedenen Online-Quellen
+  * Importiert lokal verfügbare Infos, Artwork und Videos
+  * Filtert Spiele nach Konsole, Genre, Jahr und Herausgeber
+  * Favoriten-Funktion
+  * Automatisches Abspielen von Videos
+  * Fullscreen Video Browser
+  * Detailseite mit weiteren Spiele-Infos
+  * spezielle MAME Sichten für Cabinets und Banner
+  * Startet Spiele im Solo-Modus (beendet XBMC vor dem Start des Spiels)
+  * Erkennt Spiele in zip und 7z Archiven
+  * Savestates können direkt gestartet werden (Emulator-abhängig)
+  * ...
+</description>
+    <description lang="el_GR">Με αυτό το Πρόσθετο μπορείτε να βρείτε και να παίξετε παιχνίδια εξομοιωτών (Rom) καθώς και αυτόνομα παιχνίδια στο XBMC. Δείτε τη σελίδα του wiki για περισσότερες πληροφορίες: http://code.google.com/p/romcollectionbrowser/wiki/Welcome
+
+Πρώτη Χρήση:
+  * Κατά την πρώτη εκτέλεση του RCB θα ξεκινήσει ένας οδηγός εγκατάστασης
+  * Μετά την ολοκλήρωση του οδηγού το RCB θα σας ζητήσει να εισάγετε τα παιχνίδια σας
+  * Αν χρειαστεί, μπορείτε να εκτελέσετε τον οδηγό ανά πάσα στιγμή από το μενού επιλογών
+  * Απλά πιέστε το "C" στο πληκτρολόγιό σας ή το "Μενού" στο τηλεχειριστήριό σας
+
+Χαρακτηριστικά:
+  * σαρώστε τους φακέλους των rom σας και εισάγετε παιχνίδια στην τοπική βάση δεδομένων
+  * λήψη εικόνων και μετα-δεδομένων μέσω της διαδικασίας του scrape από διάφορες διαδικτυακές πηγές
+  * εισαγωγή διαθέσιμων τοπικών περιγραφών, εικόνων και βίντεο
+  * φιλτράρισμα παιχνιδιών ανά παιχνιδομηχανή, είδος, έτος και εταιρεία
+  * λειτουργία αγαπημένων
+  * αυτόματη αναπαραγωγή βίντεο σε παράθυρο
+  * προβολή βίντεο πλήρους οθόνης
+  * σελίδα πληροφοριών παιχνιδιών
+  * εξειδικευμένες προβολές MAME για εμφάνιση cabinet και marquee
+  * έναρξη rom και παιχνιδιών σε λειτουργία solo και μη
+  * εντοπισμός παιχνιδιών σε αρχεία zip και 7z και ερώτηση χρήστη σχετικά με το ποιο παιχνίδι να φορτωθεί
+  * άμεση έναρξη των αποθηκευμένων αρχείων
+  * ...
+</description>
+    <description lang="en_GB">With this Addon you can browse and launch emulator roms and standalone games in XBMC. See the wiki page for more information: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+First Use:
+  * On first launch RCB will start a simple configuration wizard
+  * After the wizard is completed RCB will ask you to import your games
+  * If needed you can launch the wizard anytime via context menu
+  * Just press "C" on your keyboard or "Menu" on your remote
+
+Features:
+  * scan your rom folders and import games to local database
+  * scrape artwork and meta data from various online sources
+  * import local available descriptions, artwork and videos
+  * filter games by console, genre, year and publisher
+  * favorites function
+  * automatic video playback in video window
+  * fullscreen video browser
+  * game details page
+  * dedicated MAME views to display cabinets and marquees
+  * launch roms and standalone games in solo or non-solo mode
+  * detect games in zip and 7z archives and ask user which game to load
+  * direct launching of savestate files
+  * ...
+</description>
+    <description lang="en_NZ">With this Addon you can browse and launch emulator roms and standalone games in XBMC. See the wiki page for more information: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+First Use:
+  * On first launch RCB will start a simple configuration wizard
+  * After the wizard is completed RCB will ask you to import your games
+  * If needed you can launch the wizard anytime via context menu
+  * Just press "C" on your keyboard or "Menu" on your remote
+
+Features:
+  * scan your rom folders and import games to local database
+  * scrape artwork and meta data from various online sources
+  * import local available descriptions, artwork and videos
+  * filter games by console, genre, year and publisher
+  * favourites function
+  * automatic video playback in video window
+  * fullscreen video browser
+  * game details page
+  * dedicated MAME views to display cabinets and marquees
+  * launch roms and standalone games in solo or non-solo mode
+  * detect games in zip and 7z archives and ask user which game to load
+  * direct launching of savestate files
+  * ...
+</description>
+    <description lang="es_ES">Con este complemento puedes explorar y ejecutar ROMs de emulador y juegos independientes en XBMC. Visita la página wiki para más información: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Primer Uso:
+  * Al ejecutarse por primera vez, RCB mostrará un sencillo asistente de configuración
+  * Una vez completado el asistente, RCB te solicitará importar tus juegos
+  * Si lo necesitas, puedes ejecutar el asistente en cualquier momento a través del menú contextual
+  * Tan solo tienes que pulsar "C" en el teclado o "Menú" en el mando a distancia
+
+Características:
+  * escanea tus carpetas con ROMs e importa los juegos a una base de datos local
+  * descarga imágenes y metadatos desde varias fuentes online
+  * importa descripciones, imágenes y videos disponibles localmente
+  * filtra los juegos por consola, género, año y editor
+  * función de favoritos
+  * reproducción automática de videos en ventana de video
+  * navegador de videos a pantalla completa
+  * página de detalles del juego
+  * vistas de MAME dedicadas, mostrando máquinas y marcos
+  * ejecuta ROMs y juegos independiente en modo solo o no-solo
+  * detecta juegos en archivos zip y 7z y pregunta al usuario qué juego desea cargar
+  * ejecución directa de archivos de partidas guardadas
+  * ...
+</description>
+    <description lang="fr_FR">Avec cette extension, vous pouvez parcourir et lancer des roms d'émulateur ainsi que des jeux autonomes. Visitez le wiki pour plus d'informations : http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+Première utilisation :
+* Au premier démarrage RCB lancera un assistant de configuration simplifié.
+* Une fois cette configuration terminée RCB vous proposera d'importer vos jeux.
+* Au besoin, vous pouvez relancer l'assistant de configuration à tout moment depuis le menu contextuel.
+* Appuyez sur la touche "C" de votre clavier ou sur "Menu" de votre télécommande.
+
+Caractéristiques :
+* Analyse votre dossier de roms et importe les jeux dans une base de données locale
+* Récupère les illustrations et métadonnées depuis différentes sources en ligne
+* Importe vos descriptifs, illustrations et vidéos stockés localement
+* Filtre vos jeux par console, genre, année et éditeur
+* Gestion des favoris
+* lecture automatique des vidéos dans une fenêtre
+* Navigation parmi les vidéos en plein écran
+* Fiche de jeux détaillée
+* Vues dédiées pour MAME affichant cabinets et marquees
+* Lancement des roms et jeux en mode solo ou non
+* Détecte les jeux dans les fichiers zip et 7z et demande à l'utilisateur quel jeux lancer
+* lance directement une sauvegarde
+
+</description>
+    <description lang="fr_CA">Avec cet addiciel vous pouvez parcourir et lancer des roms d'émulateurs et des jeux autonomes dans XBMC. Consulter le wiki pour plus d'informations : http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Première utilisation :
+* au premier lancement RCB lancera un assistant simple de configuration
+* un fois l'assistant terminé RCB vous demandera d'importer vos jeux
+* au besoin vous pouvez lancer l'assistant à tout moment avec le menu contextuel
+* pesez juste sur « C » sur votre clavier, ou « Menu » sur votre télécommande
+
+Caractéristiques :
+* balayer votre dossier de ROM et importer les jeux dans la base de données locale
+* extraire les illustrations et les métadonnées de diverses sources en ligne
+* importer les descriptions, les illustrations et les vidéos locales disponibles
+* filtrer les jeux par console, genre, année et éditeur
+* fonction favoris
+* lecture vidéo automatique dans la fenêtre vidéo
+* navigateur vidéo en plein écran
+* page de détails des jeux
+* vues MAME dédiées pour afficher les cabinets et les marquises
+* lancer les ROM et les jeux autonomes en mode solo ou non
+* détecter les jeux dans les archives zip et 7z et demander à l'utilisateur quel jeu charger
+* lancement direct des fichiers de sauvegarde d'état
+* ... 
+</description>
+    <description lang="hu_HU">Jelenlegi funkciók:
+  * játékok szűrése konzoltípus, műfaj, év és kiadó alapján
+  * rom-ok indítása külső emulátorral
+  * a program beállítása egy xml fájl segítségével
+  * egyszerű de testreszabható leírófájl-feldolgozó
+  * játékonként különböző képek és videók megjelenítése
+  * játéktartalom és kiegészítő információk megjelenítése
+</description>
+    <description lang="id_ID">Dengan Addon ini Anda dapat menelusuri dan menjalankan rom emulator dan program permainan di XBMC. Lihat halaman wiki untuk informasi lebih lanjut: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Pemakaian Pertama:
+* Saat pertama kali menjalankan RCB akan memulai penuntun konfigurasi sederhana
+* Setelah tuntunan selesai RCB akan menanyakan Anda untuk mengimpor permainan
+* Jika diperlukan Anda dapat menjalankan tuntunan kapan saja melalui menu konteks
+* Tekan "C" pada papan ketik atau "Menu" pada remote Anda
+
+Fitur:
+* pindai folder rom Anda dan impor permainan ke basis data lokal
+* salin karya seni dan meta data dari berbagai sumber daring
+* impor deskripsi, karya seni dan video yang tersedia lokal
+* filter permainan berdasarkan konsol, tema, tahun dan penerbit
+* fungsi favorit
+* pemaran video otomatis di jendela video
+* Penelusuran video layar penuh
+* halaman rincian permainan
+* tampilan MAME dedikasi untuk menampilkan kabinet dan marquee
+* deteksi permainan dalam arsip zip dan 7z serta menanyakan pengguna permainan mana yang akan dimuat
+* menjalankan langsung dari berkas savestate
+* ...
+</description>
+    <description lang="it_IT">Con questo addon puoi sfogliare e lanciare le rom degli emulatori o giochi standalone in XBMC. Consulta la pagina wiki per maggiori informazioni : http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Prima uso:
+  * Al primo avvio, RCB avvia una semplice procedura di configurazione
+  * Al termine, RCB ti chiederà di importare i tuoi giochi
+  * Se necessario, puoi avviare la procedura di configurazione in qualsiasi momento tramite il menu contestuale
+  * Premi semplicemente "C" sulla tua tastiera o il tasto "Menu" del tuo telecomando
+
+Caratteristiche:
+  * Scansiona le tue cartelle contenenti rom e importa i giochi in un database locale
+  * Esegui lo scraping degli artwork e dei metadati da varie sorgenti online
+  * Importa descrizioni, artwork e video già disponibili in locale
+  * Filtra i giochi per console, genere, anno e editore
+  * Funzione preferiti 
+  * Esecuzione automatica dei video nella finestra video
+  * Sfoglia video a schermo intero
+  * Pagina dettagli del gioco
+  * Viste specifiche per MAME per visualizzare i cabinet e i marquee
+  * Lancia rom e giochi standalone in modalità "Solo" e "Non solo"
+  * Rileva giochi in archivi .zip e .7z, e chiede all'utente quale gioco eseguire
+  * Lancio diretto da file di salvataggio del gioco
+  * ...
+</description>
+    <description lang="nl_NL">Met deze Add-on kan je zoeken en starten van emulator roms en alleenstaande Spellen in XBMC. Zie de wikipagina voor meer informatie:
+http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Bij eerste keer:
+* Bij de eerste keer Starten zal RCB een gemakkelijke configuratie wizard starten
+* Nadat de wizard gereed is zal RCB jou vragen jouw spellen te importeren
+* wanneer nodig kan je de wizard elke keer starten via het context menu
+* Druk alleen "C" op je toetsenbord of "menu"op jouw afstandsbediening
+
+Functies:
+* Scan jouw rom folders en importeer spellen naar jou lokale database
+* scrape Artwork en Meta data van uit verschillende online bronnen
+* importeer lokaal beschikbare omschrijvingen, artwork en video`s
+* Filter spellen op Console, genre, jaar en uitgever
+* Favorieten functie
+* Automatisch film terugspelen optie in videoscherm
+* Volledig scherm Video browser
+* Spel details pagina
+* Toegewijde MAME weergaven om Cabinets en marquees*
+* Start Roms en Alleenstaande spellen in Solo of niet-solo modus
+* detecteer spellen in zip en 7z archieven en vraag gebruiker welk spel te laden
+* direct starten van opgeslagen bestanden
+* ...
+
+</description>
+    <description lang="pt_PT">Com este Addon pode navegar e jogar roms de emuladores e jogos individuais no seu XBMC. Veja a página de wiki para mais informação: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Primeiro uso:
+  * Na primeira execução, RCB iniciará um assistente de configuração
+  * Após a configuraçã estar completa, o RCB irá importar os seus jogos
+  * Se precisar, pode iniciar o assistente através do menu de contexto
+  * Basta premir "C" no seu teclado ou "Menu" no seu remoto
+
+Funcionalidades:
+  * analisar as suas pastas de roms e importar jogos para a base de dados local
+  * obter artwork e metadados de várias fontes online
+  * importar descrições, artwork e vídeos disponíveis localmente
+  * filtrar jogos por consola, género, ano e editora
+  * função de favoritos
+  * reprodução de vídeo automática na janela de vídeo
+  * navegador de vídeos em ecrã cheio
+  * página de detalhes do jogo
+  * vistas especiais de MAME para exibir cabinets e marquees
+  * iniciar roms e jogos autónomos em modo solo ou não-solo
+  * detectar jogos em ficheiros zip e 7z e perguntar ao utilizador qual é o jogo a iniciar
+  * iniciar directamente ficheiros de savestate
+  * ...
+</description>
+    <description lang="pt_BR">Com esse addon você pode navegar e lançar roms de emuladores e jogos através do xbmc. Veja a pagina de wiki para mais informações:
+http://code.google.com/p/romcollectionbrowser/wiki/Welcome.(\n)(\n)
+Primeiro Uso:
+ No primeiro lançamento o RCB irá iniciar um assistente de configuração simples(
+*Depois de concluir o assistente RCB irá pedir para importar seus jogos
+*Se necessário, você pode iniciar o assistente a qualquer momento através do menu de contexto
+* Basta pressionar "C" no seu teclado ou "Menu" em seu controle remoto
+
+Características:
+* varredura de suas pastas com roms e importação de jogos para um banco de dados local
+* procura arte e meta-dados de várias fontes on-line
+* importação local para descrições e obras de arte e vídeos se disponíveis
+* filtrar jogos por console, gênero, ano e editor
+* função favoritos
+* reprodução automática de videos na janela do navegador(\n)
+*vídeo em tela cheia no navegador
+* pagina de detalhes do jogo
+* vistas dedicadas a MAME para exibir cabines e letreiros(\n)
+* lançamento de roms e jogos independentes no modo sozinho ou não sozinho
+* detectar jogos em arquivos ZIP e 7z e perguntar ao usuário qual jogo carregar
+* lançamento direto de arquivos de savestate
+.
+</description>
+    <description lang="ru_RU">С помощью этого дополнения можно просматривать и запускать ROM эмуляторы и игры XBMC. Дополнительную информацию можно увидеть на странице Wiki по адресу: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Первый запуск:
+  * При первом запуске RCB будет запущен простой мастер конфигураций
+  * После завершения мастера RCB спросит Вас, какие игры импортировать
+  * Если нужно, вы можете запустить мастер повторно в контекстном меню
+  * Нажмите "C" на клавиатуре или "Menu" на пульте управления
+
+Возможности:
+  * Сканирование папок с образами игр и добавление их в вашу базу данных
+  * Искать обложки и мета данные  с различных онлайн источников
+  * загружать доступные локальные описания, обложки и видео
+  * фильтровать игры по типу консоли, жанру, году, издателю
+  * избранное
+  * автоматическое воспроизведение видео в окне
+  * полноэкранный видео браузер
+  * страница описаний игр
+  * dedicated MAME views to display cabinets and marquees
+  * Запускать образы и игры в одно и многопользовательском режимах
+  * определять игры в архивах zip и 7z и затем спрашивать пользователя, что загружать
+  * Прямой запуск по файлам сохранений
+  * ...
+</description>
+    <description lang="sv_SE">Med detta tillägg kan du bläddra och starta emulatorbaserade ROMS och spel i XBMC.
+Se wiki för mer information: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Första start:
+  * Vid första start kommer RCB starta en enkel inställningsguide
+  * När guiden är klar kommer RCB be dig importera dina spel
+  * Om du behöver, kan du starta guiden när som helst via undermenyn
+  * Tryck "C" på ditt tangentbord eller "Meny" på din fjärrkontroll
+
+Egenskaper:
+  * sök igenom mappar med roms och importera spel till lokal databas
+  * skrapa bilder och metadata från olika onlinekällor
+  * importera lokala beskrivningar, bilder och filmer
+  * filtrera spel efter konsol, genre, år och utgivare
+  * favoriter
+  * automatisk filmuppspelning i videofönster
+  * fullskärmsbläddrare för film
+  * sida med detaljerad spelinformation
+  * dedikerade MAME-vyer för att visa spelkabinett
+  * starta roms och spel i solo eller non-solo läge
+  * hitta spel i zip och 7z arkiv och fråga användaren vilket spel att ladda
+  * direktstart av savestate fier
+  * ...
+</description>
+    <language />
+    <platform>android freebsd ios linux osx windows</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>forum.kodi.tv/showthread.php?tid=70115</forum>
+    <website>https://github.com/maloep/romcollectionbrowser</website>
+    <source>https://github.com/maloep/romcollectionbrowser</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+
+<addon id="script.service.argonforty-device" name="ArgonForty Device Configuration" version="0.0.1" provider-name="ArgonForty">
+    <requires>
+        <import addon="virtual.rpi-tools" />
+        <import addon="virtual.system-tools" />
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="main.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">ArgonForty Device Configuration</summary>
+        <description lang="en_GB">Install services to manage ArgonForty Devices such as power button and fan speed. This will also enable gpio-ir, i2c and UART.
+
+        * Disable then Enable Service for settings to take effect (or reboot) 
+        </description>
+        <language></language>
+        <platform>linux</platform>
+        <license>MIT</license>
+        <forum></forum>
+        <website>argon40.com</website>
+        <email>cs@argon40.com</email>
+        <source></source>
+        <news></news>
+        <disclaimer></disclaimer>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon
+  id="service.rom.collection.browser"
+  version="1.1.0"
+  name="Rom Collection Browser Service"
+  provider-name="malte">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension point="xbmc.service" library="default.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <language></language>
+    <summary>Performs Rom Collection Browser startup tasks</summary>    
+    <description>Some features in Rom Collection Browser require actions on XBMC startup: starting RCB after launching emulators in solo mode and scraping games on XBMC startup.</description>
+    <license>GPL 2.0</license>
+    <platform>android freebsd ios linux osx windows</platform>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+
+</addons>
