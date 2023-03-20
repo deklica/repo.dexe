@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.gsource" name="[COLOR lime]G-Source Repository[/COLOR]" version="1.1.0" provider-name="G-Man">
+<addon id="repository.gsource" name="[COLOR lime]G-Source Repository[/COLOR]" version="1.2.0" provider-name="G-Man">
 <extension point="xbmc.addon.repository" name="G-Source Repository">
     <dir>
-        <info compressed="false">https://raw.githubusercontent.com/mrgsi/repository.gsource/master/addons.xml</info>       <checksum>https://raw.githubusercontent.com/mrgsi/repository.gsource/master/addons.xml.md5</checksum>
+        <info compressed="false">https://raw.githubusercontent.com/mrgsi/repository.gsource/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/mrgsi/repository.gsource/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.gsource/master/</datadir>
     </dir>   
     <dir>
@@ -26,9 +27,15 @@
         <datadir zip="true">https://raw.githubusercontent.com/zach-morris/repository.zachmorris/master/</datadir>
     </dir>
     <dir minversion="18.9.0">
-        <info compressed="false">https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml</info> <checksum>https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml.md5</checksum>
+        <info compressed="false">https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml</info>
+        <checksum>https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml.md5</checksum>
 	    <datadir zip="true">https://raw.github.com/jmooremcc/Repository.jmooremcc/master</datadir>
     </dir>
+    <dir>
+		<info compressed="false">https://raw.github.com/kaffepausse71/SKINBASE.NEXUS/master/addons.xml</info>
+		<checksum>https://raw.github.com/kaffepausse71/SKINBASE.NEXUS/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/kaffepausse71/SKINBASE.NEXUS/master/</datadir>
+	</dir>
     <dir>
 	    <info compressed="false">https://raw.githubusercontent.com/akeotaseo/World-Repo-Repository/main/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/akeotaseo/World-Repo-Repository/main/addons.xml.md5</checksum>
@@ -37,7 +44,7 @@
 </extension>
 <extension point="xbmc.addon.metadata">
 	<summary>For Kodi 19 and above</summary>
-    <description>Discover Huge Directory of Repos and Add-ons for Kodi 19 and above.</description>
+    <description>Discover Huge Directory of Repos and Add-ons for Kodi 19 and above.[CR]Contains the "Repo Source Installer" program add-on, Many Skins in the "Look and feel" Directory and a Huge list of repositories in the "Add-on repository Directory".</description>
     <platform>all</platform>
     <assets>
         <icon>icon.png</icon>
