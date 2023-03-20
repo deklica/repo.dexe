@@ -1575,7 +1575,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.ezmaintenanceplus" name="EZ Maintenance+" version="2023.01.01.0" provider-name="aenema, peno">
+<addon id="script.ezmaintenanceplus" name="EZ Maintenance+" version="2023.01.09.0" provider-name="aenema, peno">
   <requires>
     <import addon="script.module.requests" version="1.0.0" />
   </requires>
@@ -1595,6 +1595,33 @@ In addition to what livestreams allowed you to do, you can now,
 	    <icon>icon.png</icon>
 	    <fanart>fanart.jpg</fanart>
     </assets>
+    <news>
+2023.01.09.0
+ - Added AutoClean Cache functionality every x days at a given hour.
+ - Backup always replaced the home folder reference in xml files with special://home
+   Not all addons can handle this replace so it is now possible via a setting to disable this.
+ - Backup Cancel didn't work. This is now fixed.
+
+2023.01.01.0
+ - Fix a fix on 2022.12.28.0
+
+2022.12.28.0
+ - Fix crash with full backup when there are foreign, like Hebrew, characters in xml files
+
+2021.12.19.0
+ - Made kodi 19 (Matrix) compatible.
+
+2021.11.03.0
+- Fix Speedtest crash.
+
+2020.12.19.1
+- The plugin was also installed under Video add-ons. Now it only is in Program add-ons where it belongs
+- Clean removed some files created by Common plugin cache or StorageServer or script.common.plugin.cache at kodi startup.
+  This resulted in breaking cache functionality of kodi
+- Upload kodi log file to pastebin didn't always work and the first bytes were binary characters
+- Made all decode calls UTF-8
+- Improved ADVANCED SETTINGS(BUFFER SIZE) functionality
+    </news>
   </extension>
 </addon>
 
