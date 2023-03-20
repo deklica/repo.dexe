@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="plugin.games.rom.collection.browser.widget"
+  version="0.3.0"
+  name="Rom Collection Browser Widget"
+  provider-name="malte">
+  <requires>
+    <!-- Require Kodi Krypton or above -->
+    <import addon="xbmc.addon" version="17.0.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="service.rom.collection.browser" version="1.0.0"/>
+	<import addon="script.games.rom.collection.browser" version="2.2.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">    
+    <summary lang="de">Zusatz Addon für den Rom Collection Browser. Wird verwendet, um Spiele auf dem Kodi Home Screen anzuzeigen. Nur für Skins, die das Skin shortcuts addon unterstützen.</summary>
+    <summary lang="en">Supplement addon for Rom Collection Browser. Used to add your games to Kodis home screen. Only for skins that support the skin shortcuts addon.</summary>    
+    <description lang="de"></description>    
+    <description lang="en"></description>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>forum.kodi.tv/showthread.php?tid=70115</forum>
+    <website>https://github.com/maloep/romcollectionbrowser</website>
+    <source>https://github.com/maloep/romcollectionbrowser</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
