@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.ats" name="Add That Source" version="0.1.7" provider-name="MicroJen">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.routing" version="0.2.0" />
+	<import addon="script.module.beautifulsoup4" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Thank you to Kodis for code to add repos from context menu. Thank you to all repo hosts and addon developers.</summary>
+    <description lang="en_GB">Quickly and easily add kodi sources to your file manager. None of the Repos are hosted by this addon. All Sources are the official sources of the addon developers. ATS does not develop or provide any of the content in these Repositories.</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GPL-2.0-or-later</license>
+    <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+  </assets>
+  </extension>
+</addon>
