@@ -702,10 +702,10 @@ repository.zachmorris
 		<website>https://gaiakodi.com</website>
 		<forum>https://gaiakodi.com/support</forum>
 		<assets>
-			<icon>resources/icon.png</icon>
-			<clearlogo>resources/clearlogo.png</clearlogo>
-			<fanart>resources/fanart.jpg</fanart>
-			<banner>resources/banner.jpg</banner>
+			<icon>icon.png</icon>
+			<clearlogo>clearlogo.png</clearlogo>
+			<fanart>fanart.jpg</fanart>
+			<banner>banner.jpg</banner>
 		</assets>
 	</extension>
 </addon>
@@ -984,7 +984,7 @@ repository.zachmorris
 		<platform>all</platform>
 		<license>MIT License</license>
 		<assets>
-			<icon>resources/icon.png</icon>
+			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>
@@ -1466,9 +1466,9 @@ repository.zachmorris
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/art/ss/1.png</screenshot>
-			<screenshot>resources/art/ss/2.png</screenshot>
-			<screenshot>resources/art/ss/3.png</screenshot>
+			<screenshot>1.png</screenshot>
+			<screenshot>2.png</screenshot>
+			<screenshot>3.png</screenshot>
 		</assets>
 	</extension>
 </addon>
