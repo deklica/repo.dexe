@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.wltv" name="WorldLiveTV Addon Repository" version="1.0.2" provider-name="WLTV-Group">
+	<extension point="xbmc.addon.repository" name="WorldLiveTV Addon Repository">
+		<dir>
+			<info compressed="false">https://WorldLiveTV.github.io/repo/addons.xml</info>
+			<checksum>https://WorldLiveTV.github.io/repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://WorldLiveTV.github.io/repo/</datadir>
+			<hashes>true</hashes>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>WorldLiveTV Repository</summary>
+		<description>The official repo of WorldLiveTV.</description>
+		<disclaimer>WorldLiveTV is not it responsible for the use that the user makes of the addon itself.</disclaimer>
+		<platform>all</platform>
+		<forum>https://t.me/worldlivetv</forum>
+		<social>https://t.me/worldlivetv</social>
+		<website>https://WorldLiveTV.github.io</website>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>

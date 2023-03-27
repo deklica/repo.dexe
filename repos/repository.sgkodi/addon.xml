@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<addon id="repository.sgkodi" name="[B][COLORdeepskyblue]SGK[/COLOR][/B][COLORwhite]ODI REPOSITORY[/COLOR]" version="1.1.6" provider-name="SGK">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="[B][COLORdeepskyblue]SGK[/COLOR][/B][COLORwhite]ODI REPOSITORY[/COLOR]">
+       <dir minversion="13.0.0" maxversion="18.9.0">
+            <info compressed="true">https://kodi-unlimited-support.de/repo/data/addons.xml</info>
+            <checksum>https://kodi-unlimited-support.de/repo/data/addons.xml.md5</checksum>
+            <datadir zip="true">https://kodi-unlimited-support.de/repo/data/</datadir>
+            <hashes>false</hashes>
+        </dir>
+		<dir minversion="18.9.9">
+            <info compressed="true">https://kodi-unlimited-support.de/repo/matrix/data/addons.xml</info>
+            <checksum>https://kodi-unlimited-support.de/repo/matrix/data/addons.xml.md5</checksum>
+            <datadir zip="true">https://kodi-unlimited-support.de/repo/matrix/data</datadir>
+            <hashes>false</hashes>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[B][COLORdeepskyblue]SGK[/COLOR][/B][COLORwhite]ODI REPOSITORY[/COLOR]</summary>
+        <description lang="en">A collection of KODI repositories and addons.[CR][CR]Contact + support:[CR][COLORdeepskyblue]https://www.facebook.com/groups/kodiunlimited[/COLOR][CR]Donation:[CR][COLORdeepskyblue]https://www.paypal.me/KodiUnlimited[/COLOR]</description>
+        <disclaimer lang="en">[COLORred]The creator of the repository is not the creator of the add-ons and is therefore not responsible for its content![/COLOR]</disclaimer>
+		<summary lang="de">[COLORdeepskyblue]K.U.S-REPOSITORY[/COLOR]</summary>
+        <description lang="de">Eine Sammlung von KODI-Repositories und Addons.[CR][CR]Kontakt + Support:[CR][COLORdeepskyblue]https://www.facebook.com/groups/kodiunlimited[/COLOR][CR]Spende:[CR][COLORdeepskyblue]https://www.paypal.me/KodiUnlimited[/COLOR]</description>
+         <disclaimer lang="de">[COLORred]Der Ersteller des Repository ist nicht der Ersteller der Addons und somit nicht Verantwortlich für dessen Inhalt![/COLOR]</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

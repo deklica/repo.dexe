@@ -8,6 +8,7 @@ repository.a4ksubtitles
 repository.abratchik
 repository.addons4kodi
 repository.aenemapy
+repository.aeonmq5_mod
 repository.alado.tv
 repository.aliunde
 repository.allanime
@@ -51,6 +52,7 @@ repository.gsports
 repository.gtube
 repository.gujal
 repository.hooty
+repository.ivarbrandt
 repository.ivueguide
 repository.jenrepo
 repository.jewrepo
@@ -66,6 +68,7 @@ repository.Magnetic
 repository.marcelveldt
 repository.mbebe
 repository.melies
+repository.michaz
 repository.misfitmods
 repository.NarcacistWizard
 repository.newdiamond
@@ -79,12 +82,14 @@ repository.orion
 repository.peno64
 repository.pikdum
 repository.prototype
+repository.realcopacetic
 repository.rector.stuff
 repository.repoil.club
 repository.resolveurl
 repository.Rising.Tides
 repository.Rockcrusher
 repository.sandmann79-py3.plugins
+repository.sgkodi
 repository.skins.pkscout
 repository.slyguy
 repository.southpaw
@@ -104,6 +109,7 @@ repository.ukturk
 repository.umbrella
 repository.universalscrapers
 repository.Wherethemonsterslive
+repository.wltv
 repository.wnt2
 repository.World
 repository.WorldNexus
@@ -220,6 +226,21 @@ repository.zachmorris
 	</extension>
 </addon>
 
+<addon id="repository.aeonmq5_mod" name="Aeon MQ5 Mod Skin Repository" version="11.1.0" provider-name="scott967">
+	<extension point="xbmc.addon.repository" name="Aeon MQ5 Leiamod Skin Repository">
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Install Aeon MQ 5 Mod skin from Add-on Repository</summary>
+		<description lang="en">Mod of skin Aeon MQ5 developed by Marcos Qui for XBMC Gotham intended for use in Kodi Leia/Matrix/Nexus (ver 18.+)</description>
+		<disclaimer/>
+		<platform>all</platform>
+	</extension>
+	<assets>
+		<news></news>
+		<icon>icon.png</icon>
+	</assets>
+</addon>
+
 <addon id="repository.alado.tv" name="Alado Repository" version="0.0.2" provider-name="ALADO">
 	<extension point="xbmc.addon.repository" name="repository.alado.tv">
 	</extension>
@@ -332,7 +353,7 @@ repository.zachmorris
     </extension>
 </addon>
 
-<addon id="repository.butter" name="Butter Fingers Repo" version="2.1.4" provider-name="J1">
+<addon id="repository.butter" name="Butter Fingers Repo" version="2.1.5" provider-name="J1">
 	<extension point="xbmc.addon.repository" name="Butter Fingers Repo">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -813,6 +834,21 @@ repository.zachmorris
 	</extension>
 </addon>
 
+<addon id="repository.ivarbrandt" name="ivarbrandt's Repository" version="1.0.0" provider-name="Ivar Brandt">
+    <extension point="xbmc.addon.repository" name="ivarbrandt's Repository">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>ivarbrandt's Repository</summary>
+        <description>Kodi repository for the FENtastic skin and other projects</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="repository.ivueguide" name="iVue2 TV Guide Repo" version="0.0.1" provider-name="iVue">
 	<extension point="xbmc.addon.repository" name="iVue2 TV Guide Add-ons Repository">
 	</extension>
@@ -1023,6 +1059,22 @@ repository.zachmorris
 	</extension>
 </addon>
 
+<addon id="repository.michaz" name="Michaz Repository" provider-name="Michaz" version="3.1.1">
+  <extension point="xbmc.addon.repository" name="Michaz Repository">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <description lang="en">Addons by Michaz</description>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
+    <assets>
+      <icon>icon.png</icon>
+    </assets> 
+  </extension>
+</addon>
+
 <addon id="repository.misfitmods" name="misfit mods Repository" version="1.5" provider-name="The Turtle">
 	<extension point="xbmc.addon.repository" name="misfit mods: Repository">
 	</extension>
@@ -1209,6 +1261,21 @@ repository.zachmorris
 	</extension>
 </addon>
 
+<addon id="repository.realcopacetic" name="realcopacetic Repository" version="1.0" provider-name="realcopacetic">
+    <extension point="xbmc.addon.repository" name="realcopacetic Repository">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>realcopacetic Repository</summary>
+        <description>Repository for the skin Copacetic and other projects</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="repository.rector.stuff" name="Rector Stuff" version="1.0.4" provider-name="rmrector">
 	<extension point="xbmc.addon.repository" name="Rector Repository">
 	</extension>
@@ -1284,6 +1351,24 @@ repository.zachmorris
 		<summary>Various Addons for Kodi</summary>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="repository.sgkodi" name="SGKODI REPOSITORY" version="1.1.6" provider-name="SGK">
+    <extension point="xbmc.addon.repository" name="SGKODI REPOSITORY">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">SGKODI REPOSITORY</summary>
+        <description lang="en">A collection of KODI repositories and addons.[CR][CR]Contact + support:[CR]https://www.facebook.com/groups/kodiunlimited[CR]Donation:[CR]https://www.paypal.me/KodiUnlimited</description>
+        <disclaimer lang="en">The creator of the repository is not the creator of the add-ons and is therefore not responsible for its content!</disclaimer>
+		<summary lang="de">K.U.S-REPOSITORY</summary>
+        <description lang="de">Eine Sammlung von KODI-Repositories und Addons.[CR][CR]Kontakt + Support:[CR]https://www.facebook.com/groups/kodiunlimited[CR]Spende:[CR]https://www.paypal.me/KodiUnlimited</description>
+         <disclaimer lang="de">Der Ersteller des Repository ist nicht der Ersteller der Addons und somit nicht Verantwortlich für dessen Inhalt!</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="repository.skins.pkscout" name="pkscout's Skin Modifications" version="1.2.1" provider-name="pkscout">
@@ -1562,8 +1647,23 @@ repository.zachmorris
 			<icon>icon.png</icon>
 			<fanart></fanart>
 		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.wltv" name="WorldLiveTV Addon Repository" version="1.0.2" provider-name="WLTV-Group">
+	<extension point="xbmc.addon.repository" name="WorldLiveTV Addon Repository">
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>WorldLiveTV Repository</summary>
+		<description>The official repo of WorldLiveTV.</description>
+		<disclaimer>WorldLiveTV is not it responsible for the use that the user makes of the addon itself.</disclaimer>
+		<platform>all</platform>
+		<forum>https://t.me/worldlivetv</forum>
+		<social>https://t.me/worldlivetv</social>
+		<website>https://WorldLiveTV.github.io</website>
 		<assets>
 			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
 		</assets>
 	</extension>
 </addon>

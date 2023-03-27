@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.aeonmq5_mod" name="Aeon MQ5 Mod Skin Repository" version="11.1.0" provider-name="scott967">
+	<requires>
+		<import addon="xbmc.addon" version="13.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Aeon MQ5 Leiamod Skin Repository">
+		<dir minversion="17.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/scott967/repo-Aeon_MQ5_Mod/master/leia/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/scott967/repo-Aeon_MQ5_Mod/master/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/scott967/repo-Aeon_MQ5_Mod/master/leia</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/scott967/repo-Aeon_MQ5_Mod/master/matrix/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/scott967/repo-Aeon_MQ5_Mod/master/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/scott967/repo-Aeon_MQ5_Mod/master/matrix</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="19.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/scott967/repo-Aeon_MQ5_Mod/master/nexus/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/scott967/repo-Aeon_MQ5_Mod/master/nexus/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/scott967/repo-Aeon_MQ5_Mod/master/nexus</datadir>
+			<hashes>false</hashes>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Install Aeon MQ 5 Mod skin from Add-on Repository</summary>
+		<description lang="en">Mod of skin Aeon MQ5 developed by Marcos Qui for XBMC Gotham intended for use in Kodi Leia/Matrix/Nexus (ver 18.+)</description>
+		<disclaimer/>
+		<platform>all</platform>
+	</extension>
+	<assets>
+		<news></news>
+		<icon>icon.png</icon>
+	</assets>
+</addon>
