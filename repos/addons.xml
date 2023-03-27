@@ -236,7 +236,6 @@ repository.zachmorris
 		<platform>all</platform>
 	</extension>
 	<assets>
-		<news></news>
 		<icon>icon.png</icon>
 	</assets>
 </addon>
