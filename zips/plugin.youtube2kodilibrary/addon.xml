@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.youtube2kodilibrary" name="YouTube to Library" version="0.1.2" provider-name="Evantaur">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Import YouTube channels as TV-shows to library.</summary>
+        <description lang="en_GB">Add channels and playlists from YouTube to Library as TV-shows, movies or music videos.</description>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GPL-2.0</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=354748</forum>
+        <website>valkyr.xyz</website>
+        <email></email>
+        <source>https://github.com/evantaur/plugin.youtube2kodilibrary</source>
+        <news>Changelog:
+            v0.1.2 (2021.1.28)            
+            - Improvements in progress
+              dialog when adding a playlist.
+            - Removed hardcoded strings.
+            
+            v0.1.1 (2021.1.28)
+            - Bug fixes
+            - Support for Tuber (Matrix only)
+            
+            v0.1.0 Beta (2020.11.30)
+            - Support for playlists.
+            - Folder structure changed
+              so channel ID is used
+              instead of channel name.
+            - Fixed search for Leia.
+            - Split addon to multiple
+              files instead of one 
+              blob.
+
+            v0.0.8 Beta (2020.6.9)
+            - Support for music videos.
+              (Thumbnails broken for v19)
+            - EGG is now considered a valid
+              unit of time.
+            - Bug fixes.
+
+            v0.0.7 Beta (2020.6.6)
+            - Multilanguage support added.
+
+            v0.0.6 Beta (2020.6.6)
+            - One codebase to rule
+              them all!
+
+            v0.0.5 Beta (2020.6.5)
+            - Rewrote parser engine
+              to handle big channels.
+            - Some little fixes.   
+
+            v0.0.4 Beta (2020.6.2)
+            - Fixed new episodes not
+              getting scanned.
+
+            v0.0.3 Alpha (2020/05/31)
+            - Added management for channels. 
+
+            v0.0.2 Alpha (2020/05/30)
+            - Added background service.
+
+            v0.0.1 Alpha (2020/05/21)
+            - Released Alpha.
+        </news>
+        <disclaimer></disclaimer>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+            <screenshot>resources/screenshot_01.jpg</screenshot>
+            <screenshot>resources/screenshot_02.jpg</screenshot>
+            <screenshot>resources/screenshot_03.jpg</screenshot>
+            <screenshot>resources/screenshot_04.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>

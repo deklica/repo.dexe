@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.heppen" name="Heppen's Repository" version="7.0.0" provider-name="heppen">
+    <extension point="xbmc.addon.repository" name="Heppen's Repository">
+        <dir minversion="19.0.0">
+            <info>https://raw.githubusercontent.com/heppen7/repository.heppen/main/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/heppen7/repository.heppen/main/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.github.com/heppen7/repository.heppen/main/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>heppen's repository</summary>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/icon.jpg</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

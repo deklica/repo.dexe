@@ -3,6 +3,7 @@
 <!--  Video / Program&Services / Audio / Dependencies / Other / External  -----------------------------------
 
 plugin.video.daddylive
+plugin.video.earthtv
 plugin.video.elementum
 plugin.video.json_iptv
 plugin.video.last_played
@@ -10,11 +11,13 @@ plugin.video.premiumizerx
 plugin.video.realizerx
 plugin.video.ukturk19
 plugin.video.watchnixtoons2
+script.module.youtube_channels
 script.realdebrid
 
 context.elementum
 context.themoviedb.helper
 context.trailer.play
+plugin.program.autocompletion
 plugin.program.autoenabler
 plugin.program.autowidget
 plugin.program.openwizard
@@ -22,6 +25,7 @@ plugin.program.super.favourites
 plugin.video.f4mTester
 plugin.video.jetproxy
 plugin.video.live.streamspro
+plugin.youtube2kodilibrary
 script.autoruns
 script.elementum.burst
 script.ezmaintenanceplus
@@ -54,6 +58,7 @@ plugin.audio.radio_de
 plugin.audio.tuneinradio
 plugin.audio.ytmusic.exp
 
+script.module.autocompletion
 script.module.microjenscrapers
 script.module.thetvdb
 script.module.tmdbhelper
@@ -61,6 +66,8 @@ script.module.tmdbhelper
 plugin.games.rom.collection.browser.widget
 plugin.program.moonlight-qt
 resource.font.robotocjksc
+resource.uisounds.kodi-12
+resource.uisounds.kodi-24
 script.games.rom.collection.browser
 script.service.argonforty-device
 service.rom.collection.browser
@@ -105,6 +112,44 @@ script.module.infotagger
 </addon>
 
 
+<addon id="plugin.video.earthtv" version="3.0.2" name="earthTV" provider-name="Mark König">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">earthTV</summary>
+        <description lang="en">The earthTV cameras show impressions from different locations: sizzling metropolises, impressive landscapes, famous sights and more.</description>
+		<description lang="de">Die earthTV-Kameras zeigen Eindrücke von verschiedenen Orten: pulsiernde Metropolen, beeindruckende Landschaften, berühmte Sehenswürdigkeiten und vieles mehr.</description>
+        <license>GPL 2.0</license>
+        <platform>all</platform>
+        <language>en</language>
+        <email>mark.koenig@kleiner-schelm.de</email>
+        <website>https://github.com/mking2203/plugin.video.earthtv_com</website>
+        <source>https://github.com/mking2203/plugin.video.earthtv_com</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>nasa.jpg</fanart>
+            <screenshot>screenshot000.jpg</screenshot>
+            <screenshot>screenshot001.jpg</screenshot>
+            <screenshot>screenshot002.jpg</screenshot>
+            <screenshot>screenshot003.jpg</screenshot>
+            <screenshot>screenshot004.jpg</screenshot>
+        </assets>
+		<news>
+[B]Version 3.0.2 - 2023-03-17[/B]
+- fix deprecated xbmc.translatePath
+
+[B]Version 3.0.1 - 2021-01-29[/B]
+- new Matrix version
+		</news>
+    </extension>
+</addon>
+
+
 <addon id="plugin.video.elementum" name="Elementum" version="0.1.87+android" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
@@ -141,11 +186,11 @@ script.module.infotagger
         <forum></forum>
         <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
 		<assets>
-			<icon>meta/icon.png</icon>
-			<fanart>meta/fanart.jpg</fanart>
-			<screenshot>meta/home.png</screenshot>
-			<screenshot>meta/movies.png</screenshot>
-			<screenshot>meta/webui.png</screenshot>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>home.png</screenshot>
+			<screenshot>movies.png</screenshot>
+			<screenshot>webui.png</screenshot>
 		</assets>
     </extension>
 </addon>
@@ -306,7 +351,7 @@ script.module.infotagger
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>
-            <fanart>resources/images/fanart.jpg</fanart>
+            <fanart>fanart.jpg</fanart>
         </assets>
         <news>Check ChangeLog.</news>
     </extension>
@@ -549,6 +594,27 @@ Random updates by lolage.
 </addon>
 
 
+<addon id="script.module.youtube_channels" name="YouTube Channels" version="0.2.0" provider-name="Alexander Seiler">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="plugin.video.youtube" version="6.8.18+matrix.1"/>
+    <import addon="script.module.simplecache" version="2.0.2"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Helps you to include YouTube channels in a Kodi plugin.</summary>
+    <description lang="en_GB">YouTube Channels offers helper function to include a list of different YouTube channels into your Kodi plugin.</description>
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+    <email>seileralex@gmail.com</email>
+    <source>https://github.com/goggle/script.module.youtube_channels</source>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+
 <addon id="script.realdebrid" name="RealDebrid" version="0.7" provider-name="ptom, peno">
     <requires>
         <import addon="script.module.requests" version="2.3.0"/>
@@ -742,6 +808,34 @@ Random updates by lolage.
 </addon>
 
 
+<addon id="plugin.program.autocompletion" name="AutoCompletion for virtual keyboard" version="2.1.2" provider-name="Philipp Temminghoff (phil65), sualfred, xulek, finkleandeinhorn">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.autocompletion" version="2.0.5"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.python.pluginsource" library="plugin.py" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">AutoCompletion for the virtual keyboard (needs skin support)</summary>
+        <description lang="en_GB">AutoCompletion for the virtual keyboard (needs skin support)</description>
+        <summary lang="es_ES">Autocompletar para el teclado virtual (necesita soporte de skin)</summary>
+        <description lang="es_ES">Autocompletar para el teclado virtual (necesita soporte de skin)</description>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <source>https://github.com/finkleandeinhorn/plugin.program.autocompletion</source>
+        <assets>
+            <icon>icon.png</icon>
+            <screenshot>screenshot-01.jpg</screenshot>
+            <screenshot>screenshot-02.jpg</screenshot>
+            <screenshot>screenshot-03.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+
 <addon id="plugin.program.autoenabler" name="Auto Enabler" version="1.0.0" provider-name="slam">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -760,7 +854,7 @@ Random updates by lolage.
         <source></source>
         <email></email>
         <assets>
-            <icon>resources/icon.png</icon>
+            <icon>icon.png</icon>
         </assets>
     </extension>
 </addon>
@@ -1122,11 +1216,11 @@ Random updates by lolage.
  - First stable release
         </news>
         <assets>
-            <icon>resources/media/icon.png</icon>
-            <fanart>resources/media/fanart.png</fanart>
-            <poster>resources/media/poster.png</poster>
-            <banner>resources/media/banner.png</banner>
-            <clearlogo>resources/media/clearlogo.png</clearlogo>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+            <poster>poster.png</poster>
+            <banner>banner.png</banner>
+            <clearlogo>clearlogo.png</clearlogo>
         </assets>
     </extension>
 </addon>
@@ -1487,6 +1581,90 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
+<addon id="plugin.youtube2kodilibrary" name="YouTube to Library" version="0.1.2" provider-name="Evantaur">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Import YouTube channels as TV-shows to library.</summary>
+        <description lang="en_GB">Add channels and playlists from YouTube to Library as TV-shows, movies or music videos.</description>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GPL-2.0</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=354748</forum>
+        <website>valkyr.xyz</website>
+        <email></email>
+        <source>https://github.com/evantaur/plugin.youtube2kodilibrary</source>
+        <news>Changelog:
+            v0.1.2 (2021.1.28)            
+            - Improvements in progress
+              dialog when adding a playlist.
+            - Removed hardcoded strings.
+            
+            v0.1.1 (2021.1.28)
+            - Bug fixes
+            - Support for Tuber (Matrix only)
+            
+            v0.1.0 Beta (2020.11.30)
+            - Support for playlists.
+            - Folder structure changed
+              so channel ID is used
+              instead of channel name.
+            - Fixed search for Leia.
+            - Split addon to multiple
+              files instead of one 
+              blob.
+
+            v0.0.8 Beta (2020.6.9)
+            - Support for music videos.
+              (Thumbnails broken for v19)
+            - EGG is now considered a valid
+              unit of time.
+            - Bug fixes.
+
+            v0.0.7 Beta (2020.6.6)
+            - Multilanguage support added.
+
+            v0.0.6 Beta (2020.6.6)
+            - One codebase to rule
+              them all!
+
+            v0.0.5 Beta (2020.6.5)
+            - Rewrote parser engine
+              to handle big channels.
+            - Some little fixes.   
+
+            v0.0.4 Beta (2020.6.2)
+            - Fixed new episodes not
+              getting scanned.
+
+            v0.0.3 Alpha (2020/05/31)
+            - Added management for channels. 
+
+            v0.0.2 Alpha (2020/05/30)
+            - Added background service.
+
+            v0.0.1 Alpha (2020/05/21)
+            - Released Alpha.
+        </news>
+        <disclaimer></disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>screenshot_01.jpg</screenshot>
+            <screenshot>screenshot_02.jpg</screenshot>
+            <screenshot>screenshot_03.jpg</screenshot>
+            <screenshot>screenshot_04.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+
 <addon id="script.autoruns" name="Autoruns" version="1.0.2" provider-name="fightnight, bittor7x0">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -1508,7 +1686,7 @@ In addition to what livestreams allowed you to do, you can now,
         <disclaimer lang="es">Addon opensource no afiliado con el Equipo de Kodi.</disclaimer>
         <license>GPL-3.0-or-later</license>
         <assets>
-            <icon>resources/icon.png</icon>
+            <icon>icon.png</icon>
         </assets>
         <news>[B]v1.0.2 (14 November 2022):[/B]
 - Update for Kodi v19 Matrix.
@@ -1760,7 +1938,7 @@ v0.5.9 (2022-03-22)
     <website>https://github.com/emilsvennesson/script.module.inputstreamhelper/wiki</website>
     <source>https://github.com/emilsvennesson/script.module.inputstreamhelper</source>
     <assets>
-      <icon>resources/icon.png</icon>
+      <icon>icon.png</icon>
     </assets>
   </extension>
 </addon>
@@ -1878,8 +2056,8 @@ Benutzer melden diverse Segmente die dann automatisch übersprungen werden.
         <license>MIT</license>
         <source>https://github.com/siku2/script.service.sponsorblock</source>
         <assets>
-            <icon>resources/images/icon.png</icon>
-            <fanart>resources/images/fanart.jpg</fanart>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
@@ -1949,7 +2127,7 @@ v1.0.1 (2019-08-06)
         <source>https://github.com/phil65/script.toolbox</source>
         <email>phil65@kodi.tv</email>
         <assets>
-            <icon>resources/icon.png</icon>
+            <icon>icon.png</icon>
         </assets>
     </extension>
 </addon>
@@ -2168,11 +2346,11 @@ Minor UI fixes
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
-        <screenshot>resources/screenshot-01.jpg</screenshot>
-        <screenshot>resources/screenshot-02.jpg</screenshot>
-        <screenshot>resources/screenshot-03.jpg</screenshot>
-        <banner>resources/banner.jpg</banner>
-        <logo>resources/logo.png</logo>
+        <screenshot>screenshot-01.jpg</screenshot>
+        <screenshot>screenshot-02.jpg</screenshot>
+        <screenshot>screenshot-03.jpg</screenshot>
+        <banner>banner.jpg</banner>
+        <logo>logo.png</logo>
     </assets>
   </extension>
 </addon>
@@ -2198,7 +2376,7 @@ Minor UI fixes
         <source>https://github.com/milaq/kodi_addon_blackbarsremover</source>
         <news></news>
         <assets>
-            <icon>resources/icon.png</icon>
+            <icon>icon.png</icon>
             <fanart></fanart>
             <screenshot></screenshot>
         </assets>
@@ -2231,11 +2409,11 @@ Minor UI fixes
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
-        <screenshot>resources/screenshot-01.jpg</screenshot>
-        <screenshot>resources/screenshot-02.jpg</screenshot>
-        <screenshot>resources/screenshot-03.jpg</screenshot>
-        <banner>resources/banner.jpg</banner>
-        <logo>resources/logo.png</logo>
+        <screenshot>screenshot-01.jpg</screenshot>
+        <screenshot>screenshot-02.jpg</screenshot>
+        <screenshot>screenshot-03.jpg</screenshot>
+        <banner>banner.jpg</banner>
+        <logo>logo.png</logo>
     </assets>
   </extension>
 </addon>
@@ -2311,7 +2489,7 @@ Minor UI fixes
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.png</fanart>
-			<screenshot>resources/media/screenshots/screenshot1subloader.jpg</screenshot>
+			<screenshot>screenshot1subloader.jpg</screenshot>
 			<screenshot>fanart.png</screenshot>
 		</assets>
 <news>
@@ -2357,7 +2535,7 @@ Clean up project files.
     <forum>https://forum.libreelec.tv/thread/5032-vpn-manager-for-openvpn/</forum>
     <source>https://github.com/Zomboided/service.vpn.manager</source>
     <assets>
-        <icon>resources/icon.png</icon>
+        <icon>icon.png</icon>
         <fanart></fanart>
         <banner></banner>
         <clearlogo></clearlogo>
@@ -2409,8 +2587,8 @@ Clean up project files.
 		<source>https://github.com/michaelfdeberry/plugin.audio.datpiff</source>
 		<email>mdeberry at vitreousoft dot com</email>
 		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
     	</assets>
 	</extension>
 </addon>
@@ -2458,12 +2636,12 @@ Clean up project files.
             [new] Sync translations
         </news>
         <assets>
-            <icon>resources/art/icon.png</icon>
-            <fanart>resources/art/fanart.jpg</fanart>
-            <screenshot>resources/art/screenshot-1.png</screenshot>
-            <screenshot>resources/art/screenshot-2.png</screenshot>
-            <screenshot>resources/art/screenshot-3.png</screenshot>
-            <screenshot>resources/art/screenshot-4.png</screenshot>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>screenshot-1.png</screenshot>
+            <screenshot>screenshot-2.png</screenshot>
+            <screenshot>screenshot-3.png</screenshot>
+            <screenshot>screenshot-4.png</screenshot>
         </assets>
         <summary lang="ca_ES">accedeix a mes de 30000 emissores de radio</summary>
         <summary lang="da_DK">Få adgang til &gt;30000 radioudsendelser</summary>
@@ -2548,8 +2726,8 @@ Clean up project files.
 		<website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
 		<source>https://github.com/joaconigro/plugin.audio.tuneinradio</source>
 		<assets>
-        	<icon>resources/icon.png</icon>
-        	<fanart>resources/fanart.jpg</fanart>
+        	<icon>icon.png</icon>
+        	<fanart>fanart.jpg</fanart>
     	</assets>
 	</extension>	
 </addon>
@@ -2583,6 +2761,25 @@ Clean up project files.
 </addon>
 
 <!-- ---------------------------------------------------------------------- -->
+
+<addon id="script.module.autocompletion" name="AutoCompletion library" version="2.1.1" provider-name="Philipp Temminghoff (phil65), bbaronSVK, finkleandeinhorn, berkhornet">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" version="2.9.1"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Module providing some AutoCompletion functions</summary>
+        <description lang="en_GB">Module providing some AutoCompletion functions</description>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <source>https://github.com/finkleandeinhorn/script.module.autocompletion</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
 
 <addon id="script.module.microjenscrapers" name="MicroJen Scraper Module" version="1.3" provider-name="MicroJen Community">
     <requires>
@@ -2713,11 +2910,11 @@ v0.2.1
         <disclaimer lang="de_DE">Sie können dies auf eigenes Risiko verwenden.</disclaimer>
         <disclaimer lang="fr_FR">Utilisez cet add-on à vos risques et périls.</disclaimer>
         <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
-            <screenshot>resources/screenshot-01.jpg</screenshot>
-            <screenshot>resources/screenshot-02.jpg</screenshot>
-            <screenshot>resources/screenshot-03.jpg</screenshot>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>screenshot-01.jpg</screenshot>
+            <screenshot>screenshot-02.jpg</screenshot>
+            <screenshot>screenshot-03.jpg</screenshot>
         </assets>
     </extension>
 </addon>
@@ -2743,6 +2940,38 @@ v0.2.1
             <icon>icon.png</icon>
         </assets>
     </extension>
+</addon>
+
+
+<addon id="resource.uisounds.kodi-12" version="1.0.1" name="Kodi UI Sounds -12dB" provider-name="Team Kodi">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">Kodi GUI sounds</summary>
+    <description lang="en">Kodi GUI sounds reduced by 12 dB from default</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+
+<addon id="resource.uisounds.kodi-24" version="1.0.1" name="Kodi UI Sounds -24dB" provider-name="Team Kodi">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">Kodi GUI sounds</summary>
+    <description lang="en">Kodi GUI sounds reduced by 24 dB from default</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
 </addon>
 
 
@@ -3175,8 +3404,8 @@ Egenskaper:
         <news></news>
         <disclaimer></disclaimer>
         <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
