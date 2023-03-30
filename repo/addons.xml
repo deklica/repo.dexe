@@ -23,7 +23,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Roooar!</summary>
-		<description>Quickly and easily install all the best Kodi repositories and selected skins.[CR][CR](Part of dEXE's Addons Repository)[CR][CR]Instalirajte željeni repozitorijum.[CR]Kolekcija najboljih Kodi repozitorijuma i skinova.</description>
+		<description>Quickly and easily install all the best Kodi repositories and selected skins.[CR][CR](Part of dEXE's Addons Repository)[CR][CR]Instalirajte željeni repozitorijum.[CR]Kolekcija najboljih Kodi repozitorijuma i odabranih skinova.</description>
 		<disclaimer lang="en">None of the Repos are hosted by this addon. All Repos are the official repositories of the addon developers. The author does not develop or provide any content in these repositories.</disclaimer>
 		<language>en</language>
 		<platform>all</platform>
