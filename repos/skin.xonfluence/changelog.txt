@@ -1,0 +1,64 @@
+Nexus Fixes:
+-Subtitle color chooser
+-Screen Calibration fix.
+-OSD seek/progress bar
+-etc
+
+Mods:
+-Extend to 10 submenu items for each menu item
+-Extend to 40 addon shortcuts for each menu item
+-script.favorites added to (requires).
+
+
+[B]4.1.5[/B] 
+- More items for small poster widgets
+- Fix next aired widget information
+- Properly implement per menu widget layout option
+
+[B]4.1.4[/B] 
+- Fix playing video in background if using mouse from OSD
+- Add per menu item widget layout options
+
+[B]4.1.3[/B] 
+- Fix initial install issue. Now will exit Kodi on initial install.
+
+[B]4.1.2[/B] 
+- Same Director button in video info dialog
+- Swap power and favourites bottom buttons
+- Fix posters in search select dialog
+- Allow random fanart background for playlist widgets
+- Keep playlist widgets sorted by playlist
+- Add more specific type to playlist menus
+- Add date to PVR windows and media windows
+- Consistent notifications at top left if enabled
+- Add up to 15 addon sets instead of 12
+- Add option to hide widgets until focused
+- Ratings in media views optional
+- Fix tv show posters in OSD if using cases
+- Add runtime to media views
+- Rework seek bar. Add cutlist and chapters (optional)
+- Added watched/in-progress overlays to widgets
+- Fix flags/info for music videos
+- Misc. fixes
+
+[B]4.1.1[/B] 
+- Matrix version
+- Fixed poster/thumb not showing in video views/OSD/widgets
+- Added Versions button to addon info
+- Fixed sideblade not showing in global search dialog
+- Changed most widget content to be dynamic instead of dependent on addons
+- Added option to use script.embuary.info for Next Aired widget
+- Added Recent widgets with watched items for movies/episodes/concerts
+- Added PVR Guide Controls dialog
+- Fixed In Progress Tv Shows path
+- Added Play random button for videos (needs script.playrandomvideos)
+- Added option to show menu text in all caps
+- Added less bright icons (thanks rafikw)
+- Added watched/in-progress overlays to widgets
+- Added support for Artist Slideshow 3.x
+- Added Artists menu option for Concerts
+- Fixed episode counts in Media Info 2 view
+- Fixed issue with logging off profiles
+- Made optional the use of script.favourites and service.library.data.provider
+- Fixed show info on start for live streams (GitHub #52)
+- Added options to show larger seekbar on intro and when seeking
