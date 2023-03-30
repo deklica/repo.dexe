@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<addon id="repository.roooar" name=" [COLOR limegreen]R[/COLOR]epo [COLOR limegreen]o[/COLOR]f [COLOR limegreen]a[/COLOR]ll [COLOR limegreen]R[/COLOR]epositories" version="1.0.0" provider-name="dEXE">
+<addon id="repository.roooar" name=" [COLOR limegreen]R[/COLOR]epo [COLOR limegreen]o[/COLOR]f [COLOR limegreen]a[/COLOR]ll [COLOR limegreen]R[/COLOR]epositories" version="1.0.1" provider-name="dEXE">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0" />
+	</requires>
 	<extension point="xbmc.addon.repository" name="Repo of all Repositories">
+	
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/</datadir>
 			<hashes>false</hashes>
 		</dir>
+		
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Roooar!</summary>
-		<description>Quickly and easily install all the best Kodi repositories.[CR][CR](Part of dEXE's Addons Repository)[CR][CR]Instalirajte željeni repozitorijum.[CR]Kolekcija najboljih Kodi repozitorijuma.</description>
+		<description>Quickly and easily install all the best Kodi repositories and selected skins.[CR][CR](Part of dEXE's Addons Repository)[CR][CR]Instalirajte željeni repozitorijum.[CR]Kolekcija najboljih Kodi repozitorijuma i skinova.</description>
 		<disclaimer lang="en">None of the Repos are hosted by this addon. All Repos are the official repositories of the addon developers. The author does not develop or provide any content in these repositories.</disclaimer>
 		<language>en</language>
 		<platform>all</platform>
@@ -19,5 +24,6 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
+		<news></news>
 	</extension>
 </addon>
