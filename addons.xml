@@ -2,9 +2,11 @@
 
 <!--  Video / Program&Services / Audio / Dependencies / Other / External  -----------------------------------
 
+plugin.video.crackle
 plugin.video.daddylive
 plugin.video.earthtv
 plugin.video.elementum
+plugin.video.gratis
 plugin.video.json_iptv
 plugin.video.last_played
 plugin.video.premiumizerx
@@ -56,7 +58,9 @@ plugin.audio.mp3streams
 plugin.audio.radio_de
 plugin.audio.tuneinradio
 plugin.audio.ytmusic.exp
+
 script.module.autocompletion
+script.module.jetextractors
 script.module.microjenscrapers
 script.module.thetvdb
 script.module.youtube_channels
@@ -74,6 +78,7 @@ plugin.program.thumbcache.cleaner
 plugin.video.smr_link_tester
 script.module.resolveurl
 script.module.resolveurl.xxx
+
 plugin.video.themoviedb.helper
 script.module.tmdbhelper
 context.themoviedb.helper
@@ -85,6 +90,35 @@ resource.font.robotocjksc
 <addons>
 
 <addon id="script.module.oriontest" visible="false" />
+
+<addon id="plugin.video.crackle" name="Crackle" version="2022.10.19" provider-name="eracknaphobia">
+  <requires>
+      <import addon="xbmc.python" version="3.0.0"/>
+      <import addon="script.module.requests"/>
+      <import addon="script.module.inputstreamhelper"/>
+      <import addon="script.module.kodi-six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Crackle delivers popular, award-winning TV, movies and originals. With no limit to how much you can watch across all your devices, you can binge all you want, wherever you want.</summary>
+    <description lang="en_GB">Crackle is a video streaming distributor of original web shows, Hollywood movies, and TV shows. Founded in the early 2000s as Grouper, and rebranded in 2007, Crackle is owned by Sony Pictures Entertainment.</description>
+      <news>
+        - Update to f-strings
+      </news>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <forum></forum>
+    <source>https://github.com/eracknaphobia/plugin.video.crackle</source>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
 
 <addon id="plugin.video.daddylive" name="Daddylive" version="2.1a" provider-name="mbebe">
     <requires>
@@ -334,6 +368,33 @@ resource.font.robotocjksc
 </addon>
 
 
+<addon id="plugin.video.gratis" name="Gratis" version="1.1.4" provider-name="Jon Bovi">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.resolveurl"/>
+		<import addon="script.module.beautifulsoup4"/>
+		<import addon="inputstream.adaptive"/>
+		<import addon="plugin.video.youtube"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Come here for the latest.</summary>
+		<description lang="en_GB">Merriam-Webster definition of GRATIS: without charge or recompense : FREE!!!</description>
+		<platform>all</platform>
+		<license>GPL-3.0-or-later</license>
+		<website></website>
+		<source></source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+
 <addon id="plugin.video.json_iptv" version="1.0.08" name="Json IPTV" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
@@ -540,7 +601,7 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.10.5" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.10.6" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -563,6 +624,11 @@ Random updates by lolage.
         <language>en</language>
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.10.6:[/B]
+- Small cleanup of code, remove BASEURL_ALT, how context menus are added
+- Update Thumbnail Hashes
+- Update User Agent
+
 [B]0.10.5:[/B]
 - Set mediatype
 - Update Thumbnail Hashes
@@ -1897,11 +1963,11 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.myaccts" version="1.1.5" name="Debrid Manager" provider-name="Zaxxon709, Ezra Hubbard">
+<addon id="script.module.myaccts" version="1.1.6" name="Debrid Manager" provider-name="Zaxxon709, Ezra Hubbard">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-            <import addon="script.module.myauth" version="1.0.3" />
+            <import addon="script.module.myauth" version="1.0.5" />
 	</requires>
 	<extension point="xbmc.python.script" library="lib/default.py">
 		<provides>executable</provides>
@@ -1922,7 +1988,7 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.myauth" name="myauthact" version="1.0.3" provider-name="Zaxxon709, drinferno">
+<addon id="script.module.myauth" name="myauthact" version="1.0.5" provider-name="Zaxxon709, drinferno">
 	<extension point="xbmc.python.module" library="resources/libs" /> <!-- Must be placed after xbmc.python.pluginsource, otherwise the addon does not show in the repository. -->
     <extension point="xbmc.python.pluginsource" library="default.py" />
     <extension point="xbmc.addon.metadata">
@@ -2731,6 +2797,32 @@ Clean up project files.
             <icon>icon.png</icon>
         </assets>
     </extension>
+</addon>
+
+
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.75a" provider-name="THE TEAM">
+	<requires>
+		<import addon="script.module.requests" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="script.module.dateutil" />
+		<import addon="script.module.soupsieve" />
+		<import addon="script.module.pyairtable" />
+		<import addon="script.module.pyamf" />
+		<import addon="script.module.pycryptodome" optional="true" />
+		<import addon="script.module.pyjsparser" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Jet Extractors</summary>
+		<description lang="en">Jet Extractors</description>
+		<disclaimer lang="en"></disclaimer>
+		<license>MIT</license>
+		<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 

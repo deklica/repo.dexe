@@ -23,10 +23,11 @@ Supported Addons:
 Seren
 Ezra
 Fen
+POV
 Umbrella
 Shadow
 Ghost
-Genocide
+Unleashed
 Chain Reaction
 Twisted
 Base19
