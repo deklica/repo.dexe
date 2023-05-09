@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.3" provider-name="Kodinerds">
+<?xml version="1.0"?>
+<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.4" provider-name="Kodinerds">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -10,13 +10,19 @@
             <datadir zip="true">https://repo.kodinerds.net/addons</datadir>
             <hashes>false</hashes>
         </dir>
-        <dir minversion="19.9.9">
+        <dir minversion="20.9.9" maxversion="21.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/omega/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/omega/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/omega/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="20.0.0" maxversion="21.9.0">
             <info compressed="true">https://repo.kodinerds.net/addons/nexus/addons.xml</info>
             <checksum>https://repo.kodinerds.net/addons/nexus/addons.xml.md5</checksum>
             <datadir zip="true">https://repo.kodinerds.net/addons/nexus/zip/</datadir>
             <hashes>false</hashes>
         </dir>
-        <dir minversion="19.0.0">
+        <dir minversion="19.0.0" maxversion="21.9.0">
             <info compressed="true">https://repo.kodinerds.net/addons/matrix/addons.xml</info>
             <checksum>https://repo.kodinerds.net/addons/matrix/addons.xml.md5</checksum>
             <datadir zip="true">https://repo.kodinerds.net/addons/matrix/zip/</datadir>
@@ -64,6 +70,7 @@
         <description lang="en">The 'Nerdsrepo' is the Repository of the german Kodi Community 'Kodinerds' (www.kodinerds.net). Most of the hosted Addons here are active developed and supported by the members of the Community. Nerdsrepo is an unofficial Repository of the Kodi Media Center Software</description>
         <summary lang="de">Addon Repository der Kodinerds Community</summary>
         <description lang="de">Das 'Nerdsrepo' ist das Addon Repository der deutschen Kodi-Community 'Kodinerds' (www.kodinerds.net). Die meisten der hier im Nerdsrepo gehosteten Addons werden von den Mitgliedern der Community aktiv entwickelt und unterstützt. Das Nerdsrepo ist ein unoffizielles Repository der Kodi Media Center Software.</description>
+        <disclaimer/>
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.onealliancereborn" name="OneAlliance Reborn Repo" version="7.0.1" provider-name="RedWizard">
+    <extension point="xbmc.addon.repository" name="OneAlliance Reborn Repo">
+        <dir>
+            <info compressed="false">https://repo.1ar.cc/1ARebornRepo/addons.xml</info>
+            <checksum>https://repo.1ar.cc/1ARebornRepo/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.1ar.cc/1ARebornRepo/</datadir>
+        </dir>
+        <dir minversion="18.9.0">
+            <info compressed="false">https://repo.1ar.cc/1ARepo19/zips/addons.xml</info>
+            <checksum>https://repo.1ar.cc/1ARepo19/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.1ar.cc/1ARepo19/zips/</datadir>
+        </dir>
+		<dir minversion="19.9.0">
+            <info compressed="false">https://repo.1ar.cc/1ARepo20/zips/addons.xml</info>
+            <checksum>https://repo.1ar.cc/1ARepo20/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.1ar.cc/1ARepo20/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">OneAlliance Reborn Builds and Add-ons</summary>
+		<description lang="en_GB">The OneAlliance Reborn Repo for OneAlliance Reborn Builds and Add-ons.</description>
+		<disclaimer lang="en_GB"></disclaimer>
+		<news>2022-05-09
+- Directory added for Kodi 20 Nexus
+- Change to addon.xml</news>
+		<platform>all</platform>
+		<language>en</language>
+		<license>GNU GENERAL PUBLIC LICENSE Version 3</license>
+		<email></email>
+		<website>https://www.facebook.com/groups/OneAllianceReborn/</website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

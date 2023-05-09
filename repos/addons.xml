@@ -81,6 +81,7 @@ repository.nixgates
 repository.ocean
 repository.octopus
 repository.One
+repository.onealliancereborn
 repository.openscrapers
 repository.openwizard
 repository.orion
@@ -383,7 +384,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.1.0" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.1.4" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -480,7 +481,7 @@ repository.zachmorris
     </extension>
 </addon>
 
-<addon id="repository.butter" name="Butter Fingers Repo" version="2.1.5" provider-name="J1">
+<addon id="repository.butter" name="Butter Fingers Repo" version="2.1.6" provider-name="J1">
 	<extension point="xbmc.addon.repository" name="Butter Fingers Repo">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -666,7 +667,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.dirtyg" name="Dirty-G Repository" version="1.3.0" provider-name="G-Man">
+<addon id="repository.dirtyg" name="Dirty-G Repository" version="1.4.1" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="Dirty-G Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -790,7 +791,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.freeg" name="Free-G Repository" version="1.2.0" provider-name="G-Man">
+<addon id="repository.freeg" name="Free-G Repository" version="1.3.0" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="Free-G Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -895,17 +896,17 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.gsource" name="G-Source Repository" version="1.2.0" provider-name="G-Man">
+<addon id="repository.gsource" name="[COLOR lime]G-Source Repository[/COLOR]" version="1.3.1" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="G-Source Repository">
 	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>For Kodi 19 and above</summary>
-		<description>Discover Huge Directory of Repos and Add-ons for Kodi 19 and above.[CR]Contains the "Repo Source Installer" program add-on, Many Skins in the "Look and feel" Directory and a Huge list of repositories in the "Add-on repository Directory".</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-	</extension>
+<extension point="xbmc.addon.metadata">
+	<summary>For Kodi 19 and above</summary>
+    <description>Find Repos and Add-ons for Kodi Matrix and Nexus.[CR]Contains the "Repo Source Installer" program add-on.</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+</extension>
 </addon>
 
 <addon id="repository.gsports" name="G-Sports+ Repository" version="1.2.0" provider-name="G-Man">
@@ -979,7 +980,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.ivarbrandt" name="ivarbrandt's Repository" version="1.0.0" provider-name="Ivar Brandt">
+<addon id="repository.ivarbrandt" name="ivarbrandt's Repository" version="1.0.1" provider-name="Ivar Brandt">
     <extension point="xbmc.addon.repository" name="ivarbrandt's Repository">
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -1091,20 +1092,21 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.3" provider-name="Kodinerds">
+<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.4" provider-name="Kodinerds">
 	<extension point="xbmc.addon.repository" name="Kodinerds Addon Repo">
 	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Addon repository of the Kodinerds Community</summary>
-		<description lang="en">The 'Nerdsrepo' is the Repository of the german Kodi Community 'Kodinerds' (www.kodinerds.net). Most of the hosted Addons here are active developed and supported by the members of the Community. Nerdsrepo is an unofficial Repository of the Kodi Media Center Software</description>
-		<summary lang="de">Addon Repository der Kodinerds Community</summary>
-		<description lang="de">Das 'Nerdsrepo' ist das Addon Repository der deutschen Kodi-Community 'Kodinerds' (www.kodinerds.net). Die meisten der hier im Nerdsrepo gehosteten Addons werden von den Mitgliedern der Community aktiv entwickelt und unterstützt. Das Nerdsrepo ist ein unoffizielles Repository der Kodi Media Center Software.</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Addon repository of the Kodinerds Community</summary>
+        <description lang="en">The 'Nerdsrepo' is the Repository of the german Kodi Community 'Kodinerds' (www.kodinerds.net). Most of the hosted Addons here are active developed and supported by the members of the Community. Nerdsrepo is an unofficial Repository of the Kodi Media Center Software</description>
+        <summary lang="de">Addon Repository der Kodinerds Community</summary>
+        <description lang="de">Das 'Nerdsrepo' ist das Addon Repository der deutschen Kodi-Community 'Kodinerds' (www.kodinerds.net). Die meisten der hier im Nerdsrepo gehosteten Addons werden von den Mitgliedern der Community aktiv entwickelt und unterstützt. Das Nerdsrepo ist ein unoffizielles Repository der Kodi Media Center Software.</description>
+        <disclaimer/>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="repository.lanik_p3" name="Lanik Repository" provider-name="Dalibor Lanik" version="1.0.0a">
@@ -1317,6 +1319,28 @@ repository.zachmorris
 			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
+</addon>
+
+<addon id="repository.onealliancereborn" name="OneAlliance Reborn Repo" version="7.0.1" provider-name="RedWizard">
+    <extension point="xbmc.addon.repository" name="OneAlliance Reborn Repo">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">OneAlliance Reborn Builds and Add-ons</summary>
+		<description lang="en_GB">The OneAlliance Reborn Repo for OneAlliance Reborn Builds and Add-ons.</description>
+		<disclaimer lang="en_GB"></disclaimer>
+		<news>2022-05-09
+- Directory added for Kodi 20 Nexus
+- Change to addon.xml</news>
+		<platform>all</platform>
+		<language>en</language>
+		<license>GNU GENERAL PUBLIC LICENSE Version 3</license>
+		<email></email>
+		<website>https://www.facebook.com/groups/OneAllianceReborn/</website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="repository.openscrapers" name="OpenScrapers Repository" version="1.0" provider-name="A4K">
@@ -1543,7 +1567,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.southpaw" name="The South Paw Repository" version="0.2.3" provider-name="Tom">
+<addon id="repository.southpaw" name="The South Paw Repository" version="0.2.7" provider-name="Tom">
 	<extension point="xbmc.addon.repository" name="The South Paw Repository"> 
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1751,7 +1775,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.umbrella" name="Umbrella Repository" version="2.2.2" provider-name="Umbrella">
+<addon id="repository.umbrella" name="Umbrella Repository" version="2.2.3" provider-name="Umbrella">
 	<extension point="xbmc.addon.repository" name="Umbrella Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1882,7 +1906,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.xbmcadult" name="XBMC-Adult Addons" version="1.0.7" provider-name="xbmc-adult">
+<addon id="repository.xbmcadult" name="XBMC-Adult Addons" version="1.0.8" provider-name="xbmc-adult">
 	<extension point="xbmc.addon.repository" name="XBMC Adult Addons">
 	</extension>
 	<extension point="xbmc.addon.metadata">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.ivarbrandt" name="ivarbrandt's Repository" version="1.0.0" provider-name="Ivar Brandt">
+<addon id="repository.ivarbrandt" name="ivarbrandt's Repository" version="1.0.1" provider-name="Ivar Brandt">
     <extension point="xbmc.addon.repository" name="ivarbrandt's Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/ivarbrandt/repository.ivarbrandt/master/repo/zips/addons.xml</info>
