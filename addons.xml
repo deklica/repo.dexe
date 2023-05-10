@@ -1799,7 +1799,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.embuary.info" name="Embuary Info" version="2.0.8" provider-name="sualfred">
+<addon id="script.embuary.info" name="Embuary Info" version="2.0.10" provider-name="sualfred">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.9.1"/>
@@ -1815,10 +1815,6 @@ In addition to what livestreams allowed you to do, you can now,
     </extension>
     <extension point="xbmc.service" library="service.py" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Embuary Info Script</summary>
-        <summary lang="de_DE">Embuary Info Script</summary>
-        <description lang="en_GB">Helper script to provide The Movie DB informations for persons, shows and movies. Works best with a skin integration.</description>
-        <description lang="de_DE">Helfer Script das Abfragen von The Movie DB informationen für Personen, Serien und Filme zu ermöglichen. Funktioniert am besten mit einer Skin Integration.</description>
         <platform>all</platform>
         <license>Apache-2.0</license>
         <forum>https://forum.kodi.tv/showthread.php?tid=346034</forum>
@@ -1827,6 +1823,12 @@ In addition to what livestreams allowed you to do, you can now,
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
         </assets>
+        <summary lang="de_DE">Embuary Info Script</summary>
+        <summary lang="de_DE">Embuary Info Script</summary>
+        <summary lang="en_GB">Embuary Info Script</summary>
+        <description lang="de_DE">Helfer Script das Abfragen von The Movie DB informationen für Personen, Serien und Filme zu ermöglichen. Funktioniert am besten mit einer Skin Integration.</description>
+        <description lang="de_DE">Helfer Script das Abfragen von The Movie DB informationen für Personen, Serien und Filme zu ermöglichen. Funktioniert am besten mit einer Skin Integration.</description>
+        <description lang="en_GB">Helper script to provide The Movie DB informations for persons, shows and movies. Works best with a skin integration.</description>
     </extension>
 </addon>
 
