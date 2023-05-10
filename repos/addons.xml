@@ -5,6 +5,17 @@
 repository.roooar
 repository.dexe
 
+repository.jurialmunkey
+repository.ivarbrandt
+repository.realcopacetic
+
+skin.xonfluence
+resource.images.moviegenrefanart.xonfluence
+resource.images.skinbackgrounds.xonfluence
+
+plugin.program.ats
+plugin.program.rsi
+
 repository.5star
 repository.709
 repository.a4kstreaming
@@ -57,12 +68,10 @@ repository.gtube
 repository.gujal
 repository.heppen
 repository.hooty
-repository.ivarbrandt
 repository.ivueguide
 repository.jenrepo
 repository.jewrepo
 repository.jsergio
-repository.jurialmunkey
 repository.kodi.yatse.tv
 repository.kodifitzwell
 repository.kodinerds
@@ -88,7 +97,6 @@ repository.orion
 repository.peno64
 repository.pikdum
 repository.prototype
-repository.realcopacetic
 repository.rector.stuff
 repository.repoil.club
 repository.resolveurl
@@ -385,7 +393,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.1.4" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.1.5" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -981,21 +989,6 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.ivarbrandt" name="ivarbrandt's Repository" version="1.0.1" provider-name="Ivar Brandt">
-    <extension point="xbmc.addon.repository" name="ivarbrandt's Repository">
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>ivarbrandt's Repository</summary>
-        <description>Kodi repository for the FENtastic skin and other projects</description>
-        <disclaimer></disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
 <addon id="repository.ivueguide" name="iVue2 TV Guide Repo" version="0.0.1" provider-name="iVue">
 	<extension point="xbmc.addon.repository" name="iVue2 TV Guide Add-ons Repository">
 	</extension>
@@ -1049,19 +1042,6 @@ repository.zachmorris
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.jurialmunkey" name="jurialmunkey Alpha Repository" version="3.3" provider-name="jurialmunkey">
-	<extension point="xbmc.addon.repository" name="jurialmunkey Alpha Repository">
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>jurialmunkey Alpha Repository</summary>
-		<description>A repository for alpha releases of jurialmunkey's skins.</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>
@@ -1429,21 +1409,6 @@ repository.zachmorris
 			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
-</addon>
-
-<addon id="repository.realcopacetic" name="realcopacetic Repository" version="1.0" provider-name="realcopacetic">
-    <extension point="xbmc.addon.repository" name="realcopacetic Repository">
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>realcopacetic Repository</summary>
-        <description>Repository for the skin Copacetic and other projects</description>
-        <disclaimer></disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
 </addon>
 
 <addon id="repository.rector.stuff" name="Rector Stuff" version="1.0.4" provider-name="rmrector">
