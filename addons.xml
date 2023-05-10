@@ -799,8 +799,8 @@ Random updates by lolage.
 		<forum>https://forum.kodi.tv/showthread.php?tid=346034</forum>
 		<source>https://github.com/sualfred/context.embuary.info</source>
 		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
@@ -1820,8 +1820,8 @@ In addition to what livestreams allowed you to do, you can now,
         <forum>https://forum.kodi.tv/showthread.php?tid=346034</forum>
         <source>https://github.com/sualfred/script.embuary.info</source>
         <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
         <summary lang="de_DE">Embuary Info Script</summary>
         <summary lang="de_DE">Embuary Info Script</summary>
