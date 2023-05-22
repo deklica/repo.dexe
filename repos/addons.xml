@@ -1542,7 +1542,7 @@ repository.zachmorris
     </extension>
 </addon>
 
-<addon id="repository.skinbase.nexus" name="GUIDOS SKINBASE Only Skins for Kodi 19+20" version="3.0.04" provider-name="SKINBASE | Kodiman | HSK-DE">
+<addon id="repository.skinbase.nexus" name="GUIDOS SKINBASE Only Skins for Kodi 19+20" version="3.0.06" provider-name="TEAM-SKINBASE">
 	<extension point="xbmc.addon.repository" name="GUIDOS SKINBASE REPO">
 	</extension>
 	<extension point="xbmc.addon.metadata">
