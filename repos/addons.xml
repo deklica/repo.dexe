@@ -5,16 +5,16 @@
 repository.roooar
 repository.dexe
 
-repository.jurialmunkey
-repository.ivarbrandt
-repository.realcopacetic
+ repository.jurialmunkey
+ repository.ivarbrandt
+ repository.realcopacetic
 
-skin.xonfluence
-resource.images.moviegenrefanart.xonfluence
-resource.images.skinbackgrounds.xonfluence
+ skin.xonfluence
+ resource.images.moviegenrefanart.xonfluence
+ resource.images.skinbackgrounds.xonfluence
 
-plugin.program.ats
-plugin.program.rsi
+  plugin.program.ats
+  plugin.program.rsi
 
 repository.5star
 repository.709
@@ -37,6 +37,7 @@ repository.canuck
 repository.castagnait
 repository.catchuptvandmore
 repository.centry
+repository.chainsrepo
 repository.cMaNWizard
 repository.coldkeys
 repository.cywteow
@@ -47,6 +48,7 @@ repository.denimnani
 repository.diggz
 repository.diggzmatrixskins
 repository.dirtyg
+repository.dis90
 repository.djaythemes
 repository.dobbelina
 repository.doomzday
@@ -393,7 +395,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.1.5" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.1.6" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -490,7 +492,7 @@ repository.zachmorris
     </extension>
 </addon>
 
-<addon id="repository.butter" name="Butter Fingers Repo" version="2.1.6" provider-name="J1">
+<addon id="repository.butter" name="Butter Fingers Repo" version="2.1.7" provider-name="J1">
 	<extension point="xbmc.addon.repository" name="Butter Fingers Repo">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -560,6 +562,25 @@ repository.zachmorris
 	</extension>
 </addon>
 
+<addon id="repository.chainsrepo" name="Chains Repository" provider-name="Chains" version="0.0.15">
+	<extension point="xbmc.addon.repository" name="Chains Repo" >
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Welcome to the Chains Repository</summary>
+		<description lang="en"></description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot></screenshot>
+			<screenshot></screenshot>
+			<screenshot></screenshot>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.cMaNWizard" name="cMaN's Wizard Repository" version="1.0.7" provider-name="cMaN">
 	<extension point="xbmc.addon.repository" name="cMaN's Wizard Repository">
 	</extension>
@@ -588,7 +609,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.cywteow" name="cywteow Add-ons" version="1.1.0" provider-name="cywteow">
+<addon id="repository.cywteow" name="cywteow Add-ons" version="1.1.1" provider-name="cywteow">
 	<extension point="xbmc.addon.repository" name="cywteow Add-ons">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -687,6 +708,21 @@ repository.zachmorris
 			<icon>icon.png</icon>
 		</assets>
 	</extension>
+</addon>
+
+<addon id="repository.dis90" name="Dis90 add-on repository" version="1.0.1" provider-name="Dis90">
+    <extension point="xbmc.addon.repository" name="Example Repository">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Dis90 Repository for Kodi 19</summary>
+        <description>Dis90 Repository for Kodi 19 add-ons</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="repository.djaythemes" name="Djay Themes" version="2.5" provider-name="Djay">
@@ -1541,7 +1577,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.4">
+<addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.8">
 	<extension point="xbmc.addon.repository" name="SlyGuy Repository (slyguy.uk)">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1553,7 +1589,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.southpaw" name="The South Paw Repository" version="0.2.7" provider-name="Tom">
+<addon id="repository.southpaw" name="The South Paw Repository" version="0.3.0" provider-name="Tom">
 	<extension point="xbmc.addon.repository" name="The South Paw Repository"> 
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1685,7 +1721,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.topg" name="Top-G Repository" version="1.1.0" provider-name="G-Man">
+<addon id="repository.topg" name="Top-G Repository" version="1.2.0" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="Top-G Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">

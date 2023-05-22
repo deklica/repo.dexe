@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.topg" name="[COLOR khaki]Top-G Repository[/COLOR]" version="1.1.0" provider-name="G-Man">
+<addon id="repository.topg" name="[COLOR khaki]Top-G Repository[/COLOR]" version="1.2.0" provider-name="G-Man">
 <extension point="xbmc.addon.repository" name="Top-G Repository">
     <dir>
         <info compressed="false">https://github.com/mrgsi/repository.topg/raw/master/addons.xml</info>
@@ -65,11 +65,6 @@
         <checksum>http://narcacist.com/_repo/addons.xml.md5</checksum>
         <datadir zip="true">http://narcacist.com/_repo/</datadir>
 	</dir>
-   <dir minversion="18.9.0">
-        <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/</datadir>
-    </dir>
     <dir>
         <info compressed="false">https://raw.githubusercontent.com/peno64/repository.peno64/master/repo/zips/addons.xml</info>
        <checksum>https://raw.githubusercontent.com/peno64/repository.peno64/master/repo/zips/addons.xml.md5</checksum>
