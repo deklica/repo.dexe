@@ -1,3 +1,12 @@
+5.5.1
+- Try to allight subtitles better in case of bottom/bottom
+- Allow negative vertical margin
+- Make Auto Charset the default (again)
+
+5.5.0
+- Allows to put the subtitles on bottom/top; bottom/bottom; bottom - left/right
+- Allows to change the relative location of the subtitle
+
 5.4.0
 - Allows to extend the time the subtitle(s) are shown on screen for slow readers.
 

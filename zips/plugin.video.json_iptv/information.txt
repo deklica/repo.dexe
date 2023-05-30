@@ -1,4 +1,11 @@
 
+[B]-[/B]Player Choice setting: playItem is the use of xbmc.Player() | playMedia is the use of execute('PlayMedia(%s)').
+
+[B]-[/B]Personal Channels settings: gives the option to add your own custom channels/links. (no resolvers used.)
+
+[B]-[/B]Personal Lists settings: gives the option to add your own custom channel lists. (made from my template found below...)
+Examples and a test list can be found here... https://raw.githubusercontent.com/jewbmx/json_iptv_lists/main/example_test_list.json
+
 [B]-[/B]Artwork: icon.png and fanart2.jpg made by User Jim.
 [B]-[/B]This IPTV Addon is untested and user input based, meaning i dont know what works or doesnt work unless you tell me.
 [B]-[/B]Feel free to contact me about anything and if reporting info on these sections try to include enough info like...

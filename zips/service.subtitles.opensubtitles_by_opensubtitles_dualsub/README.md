@@ -6,6 +6,9 @@ See https://github.com/moham96/service.subtitles.opensubtitles_by_opensubtitles
 
 Changelog
 
+5.5.0
+- Allows to show the subtitles on top/bottom, bottom/left - right, bottom/bottom
+
 5.4.0
 - Allows to extend the time the subtitle(s) are shown on screen for slow readers.
 
