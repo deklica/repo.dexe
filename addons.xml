@@ -609,7 +609,7 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.10.6" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.10.8" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -620,7 +620,7 @@ resource.font.robotocjksc
     <extension point="xbmc.addon.metadata">
         <summary lang="en">WatchNixtoons2</summary>
         <description lang="en">
-Watch cartoons and anime from [COLOR orange][B]www.wcofun.com[/B][/COLOR].
+Watch cartoons and anime from [COLOR orange][B]www.wcofun.org[/B][/COLOR].
 
 Support the WatchCartoonOnline website with a PayPal donation to:
 [COLOR khaki][B]wcohelp@yandex.com[/B][/COLOR]
@@ -632,6 +632,13 @@ Random updates by lolage.
         <language>en</language>
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.10.8:[/B]
+- Change domain to wcofun.org
+
+[B]0.10.7:[/B]
+- Update Thumbnail Hashes
+- Update User Agent
+
 [B]0.10.6:[/B]
 - Small cleanup of code, remove BASEURL_ALT, how context menus are added
 - Update Thumbnail Hashes
@@ -668,7 +675,7 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.ytchannels" name="YouTube Channels" version="0.4.4+matrix.1" provider-name="natko1412,mintsoft,yeahme49">
+<addon id="plugin.video.ytchannels" name="YouTube Channels" version="0.4.5+matrix.1" provider-name="natko1412,mintsoft,yeahme49">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.six" version="1.11.0"/>
@@ -2017,7 +2024,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="0.6.0+matrix.1" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
+<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="0.6.1+matrix.1" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
   <requires>
     <!--py3 compliant-->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -2043,10 +2050,14 @@ In addition to what livestreams allowed you to do, you can now,
     <description lang="hr_HR">Jednostavan Kodi modul koji olakšava razvijanje dodataka koji se temelje na InputStream dodatku i reprodukciji DRM zaštićenog sadržaja.</description>
     <description lang="ru_RU">Простой модуль для Kodi, который облегчает жизнь разработчикам дополнений, с использованием InputStream дополнений и воспроизведения DRM контента.</description>
     <news>
+v0.6.1 (2023-05-30)
+- Performance improvements on Linux ARM
+- This will be the last release for Python 2 i.e. Kodi 18 (Leia) and below. The next release will require Python 3 and Kodi 19 (Matrix) or higher.
+
 v0.6.0 (2023-05-03)
-- Initial support for AARCH64 Linux (@horstle)
-- Initial support for AARCH64 Macs (@mediaminister)
-- New option to install a specific version on most platforms (@horstle)
+- Initial support for AARCH64 Linux
+- Initial support for AARCH64 Macs
+- New option to install a specific version on most platforms
 
 v0.5.10 (2022-04-18)
 - Fix automatic submission of release
