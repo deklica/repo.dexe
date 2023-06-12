@@ -2153,7 +2153,7 @@ v0.5.9 (2022-03-22)
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-            <import addon="script.module.myauth" version="1.0.0" />
+            <import addon="script.module.myauth" version="1.0.7" />
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">
