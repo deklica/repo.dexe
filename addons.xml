@@ -11,6 +11,7 @@ plugin.video.json_iptv
 plugin.video.last_played
 plugin.video.premiumizerx
 plugin.video.realizerx
+plugin.video.thetvapp
 plugin.video.ukturk19
 plugin.video.watchnixtoons2
 plugin.video.ytchannels
@@ -576,6 +577,31 @@ resource.font.robotocjksc
 2019.x.x - Initial Release
         </news>
 	</extension>
+</addon>
+
+
+<addon id="plugin.video.thetvapp" name="The TV app" version="0.2" provider-name="xxxxxx">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">The TV app</description>
+        <disclaimer lang="en">https://thetvapp.to</disclaimer>	
+        <summary lang="en">https://thetvapp.to</summary>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website>https://thetvapp.to</website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 
