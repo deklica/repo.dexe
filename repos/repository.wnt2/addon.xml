@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.wnt2" name="[COLOR gold]WatchNixtoons2 Repository[/COLOR]" version="1.0.0" provider-name="G-Man">
+<addon id="repository.wnt2" name="[COLOR gold]WatchNixtoons2 Repository[/COLOR]" version="1.0.1" provider-name="G-Man">
 <extension point="xbmc.addon.repository" name="WatchNixtoons2 Repository">
     <dir>
         <info compressed="false">https://github.com/mrgsi/repository.wnt2/raw/master/addons.xml</info>
@@ -10,7 +10,7 @@
 <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary>A simple repo for WatchNixtoons2</summary>
-    <description>WatchNixtoons2 is an Anime Add-on that gets frequent updates, but available in multiple repos so having it's own main repo makes maintaining updates much easier. The repo is by G-man but the add-on is maintained by lolage on reddit: http://bit.ly/3Oq0EEU</description>
+    <description>WatchNixtoons2 is an Anime and Chartoon Add-on that gets frequent updates. The repo is by G-Man but the add-on is maintained by lolage331 on reddit: http://bit.ly/wnt2dev</description>
     <assets>
         <icon>icon.png</icon>
     </assets>

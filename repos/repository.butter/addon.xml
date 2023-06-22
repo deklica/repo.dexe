@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.butter" name="Butter Fingers Repo" version="2.1.8" provider-name="J1">
+    <addon id="repository.butter" name="Butter Fingers Repo" version="2.1.9" provider-name="J1">
         <extension point="xbmc.addon.repository" name="Butter Fingers Repo">
         <dir> 
             <info compressed="false">http://j1wizard.net/butter-addons/_repo/addons.xml</info>
