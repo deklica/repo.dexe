@@ -1224,7 +1224,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.michaz" name="Michaz Repository" provider-name="Michaz" version="4.2">
+<addon id="repository.michaz" name="Michaz Repository" provider-name="Michaz" version="4.3">
 	<extension point="xbmc.addon.repository" name="Michaz Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1251,7 +1251,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.NarcacistWizard" name="Narcacist's Wizard Repository" version="1.1.8" provider-name="Narcacist">
+<addon id="repository.NarcacistWizard" name="Narcacist's Wizard Repository" version="1.1.9" provider-name="Narcacist">
 	<extension point="xbmc.addon.repository" name="Narcacist's Wizard Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1617,7 +1617,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.StreamArmy" name="Stream Army Repo" version="13.0.003" provider-name="@Nemzzy668 / @_Manc_">
+<addon id="repository.StreamArmy" name="Stream Army Repo" version="14.0.001" provider-name="@Nemzzy668 / @_Manc_">
 	<extension point="xbmc.addon.repository" name="Stream Army">
 	</extension>
 	<extension point="xbmc.addon.metadata">
