@@ -196,7 +196,7 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.87+android" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.89+android" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementum" optional="true" />
@@ -242,7 +242,7 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.87+linux" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.89+linux" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementum" optional="true" />
@@ -288,7 +288,7 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.87+mac" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.89+mac" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementum" optional="true" />
@@ -334,7 +334,7 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.87+windows" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.89+windows" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementum" optional="true" />
@@ -1771,7 +1771,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.73" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.74" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="plugin.video.elementum" optional="true"/>
