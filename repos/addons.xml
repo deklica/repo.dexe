@@ -942,7 +942,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.gsource" name="[COLOR lime]G-Source Repository[/COLOR]" version="1.3.1" provider-name="G-Man">
+<addon id="repository.gsource" name="G-Source Repository" version="1.4.0" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="G-Source Repository">
 	</extension>
 <extension point="xbmc.addon.metadata">
@@ -968,7 +968,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.gtube" name="G-Tube Repository" version="1.0.1" provider-name="G-Man">
+<addon id="repository.gtube" name="G-Tube Repository" version="1.1.0" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="G-Tube Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1617,11 +1617,11 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.StreamArmy" name="Stream Army Repo" version="14.0.001" provider-name="@Nemzzy668 / @_Manc_">
+<addon id="repository.StreamArmy" name="Stream Army Addons" version="15.0.002" provider-name="@Nemzzy668 / @_Manc_ // LordJD">
 	<extension point="xbmc.addon.repository" name="Stream Army">
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Stream Army Repo 18 / 19 Compatible Addons</summary>
+		<summary>Stream Army Repo</summary>
 		<description>Repo For Stream Army, Bought to you by @Nemzzy668 /  @_MANC_</description>
 		<disclaimer>Educational use only, not for public release.</disclaimer>
 		<platform>all</platform>

@@ -196,12 +196,12 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.89+android" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.91+android" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementum" optional="true" />
         <import addon="script.module.kodi-six" />
-        <import addon="script.module.requests" />
+        <import addon="script.module.requests" version="2.9.1" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="navigation.py">
         <provides>video</provides>
@@ -242,12 +242,12 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.89+linux" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.91+linux" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementum" optional="true" />
         <import addon="script.module.kodi-six" />
-        <import addon="script.module.requests" />
+        <import addon="script.module.requests" version="2.9.1" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="navigation.py">
         <provides>video</provides>
@@ -288,12 +288,12 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.89+mac" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.91+mac" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementum" optional="true" />
         <import addon="script.module.kodi-six" />
-        <import addon="script.module.requests" />
+        <import addon="script.module.requests" version="2.9.1" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="navigation.py">
         <provides>video</provides>
@@ -334,12 +334,12 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.89+windows" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.91+windows" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementum" optional="true" />
         <import addon="script.module.kodi-six" />
-        <import addon="script.module.requests" />
+        <import addon="script.module.requests" version="2.9.1" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="navigation.py">
         <provides>video</provides>
@@ -3170,7 +3170,7 @@ v5.2.14 (2017-01-23)
 
 <addon id="plugin.audio.ytmusic.exp"
        name="YT [COLOR red]Music[/COLOR] EXP"
-       version="1.0~beta15"
+       version="1.0~beta16"
        provider-name="ForeverGuest">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -3185,9 +3185,8 @@ v5.2.14 (2017-01-23)
     <summary lang="en">Experimental Youtube [COLOR red]Music[/COLOR] plugin</summary>
     <description lang="en">EXPerimental plugin that lets you play music from Youtube Music.</description>
     <news>
-1.0~beta15 (2023-06-10)
-- Update to pytube version 15.0.0
-- Fix a dump in extract.py which apparently only occurs in a kodi environment.
+1.0~beta16 (2023-07-06)
+- Apply fix to PyTube cipher.py from PyTube Pull Request #1680.
     </news>
     <assets>
       <icon>icon.png</icon>
@@ -3217,7 +3216,7 @@ v5.2.14 (2017-01-23)
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.77c" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.77d" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />

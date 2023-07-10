@@ -10,7 +10,7 @@ All credit goes to Foreverguest.
 # Used libraries and versions
 
 - https://github.com/sigma67/ytmusicapi/tree/0.25.0
-- https://github.com/pytube/pytube/tree/v12.0.0
+- https://github.com/pytube/pytube/tree/v15.0.0
 
 ## Requires:
 
@@ -18,11 +18,11 @@ Kodi 19 Matrix
 
 # Installation & Updates
 
-_You can install it via repository to provide automatic updates_
+_You can install it via repository to provide automatic updates (future updates may require to rebuild database)_
 
-- Download repository: [repository.hooty](https://github.com/Goldenfreddy0703/repository.hooty/blob/master/repo/zips/repository.hooty/repository.hooty-1.0.zip)
+- Download repository: [repository.ytmusic](https://github.com/Goldenfreddy0703/repository.ytmusic/blob/master/repository.ytmusic-1.0.zip?raw=true)
 - Or install it via Kodi file-manager
-  - add source: https://goldenfreddy0703.github.io/repository.hooty
+  - add source: <https://goldenfreddy0703.github.io/repository.ytmusic>
 
 _or install it manually (updates should be installed manually)_
 

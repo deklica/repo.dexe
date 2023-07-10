@@ -37,7 +37,7 @@
 
 <!--
 Do not include the repository. Even if the repo is not installed, Kodi will pull in repo's URL and complain about unsecure HTTP.
-<addon id="repository.elementum" name="Elementum Repository" version="0.1.89" provider-name="elgatito">
+<addon id="repository.elementum" name="Elementum Repository" version="0.1.91" provider-name="elgatito">
 	<requires></requires>
 	<extension point="xbmc.addon.repository" name="Elementum Repository">
 		<dir>
