@@ -132,7 +132,7 @@ resource.font.robotocjksc
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="2.2.1" provider-name="mbebe">
+<addon id="plugin.video.daddylive" name="Daddylive" version="2.5" provider-name="mbebe, THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -380,7 +380,7 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.gratis" name="Gratis" version="1.1.6" provider-name="Jon Bovi">
+<addon id="plugin.video.gratis" name="Gratis" version="1.1.9" provider-name="Jon Bovi">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests"/>
@@ -3218,7 +3218,7 @@ v5.2.14 (2017-01-23)
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.77f" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.78" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
