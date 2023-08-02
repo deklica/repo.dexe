@@ -20,6 +20,12 @@
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
+            <screenshot>resources/media/screenshot-01.jpg</screenshot>
+            <screenshot>resources/media/screenshot-02.jpg</screenshot>
+            <screenshot>resources/media/screenshot-03.jpg</screenshot>
+            <screenshot>resources/media/screenshot-04.jpg</screenshot>
+            <screenshot>resources/media/screenshot-05.jpg</screenshot>
+            <screenshot>resources/media/screenshot-06.jpg</screenshot>
         </assets>
     </extension>
 </addon>
