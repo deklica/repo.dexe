@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.tikipeter" name="Tikipeter's Repository" version="1.0.1" provider-name="Tikipeter">
+<addon id="repository.tikipeter" name="Tikipeter's Repository" version="1.0.2" provider-name="Tikipeter">
     <extension point="xbmc.addon.repository" name="Tikipeter's Repository">
-        <dir>
+        <dir minversion="20.0">
             <info compressed="false">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/zips</datadir>
         </dir>
-        <dir>
+        <dir minversion="19.0">
             <info compressed="false">https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/</datadir>
