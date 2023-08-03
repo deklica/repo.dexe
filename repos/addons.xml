@@ -33,6 +33,7 @@ repository.atreides.tools
 repository.autowidget
 repository.bugatsinho
 repository.butter
+repository.burekasKodi
 repository.canuck
 repository.castagnait
 repository.catchuptvandmore
@@ -505,6 +506,23 @@ repository.zachmorris
 			<fanart>fanart.jpg</fanart>			
 		</assets>
 	</extension>
+</addon>
+
+<addon id="repository.burekasKodi" name="Burekas Repo" version="1.0.2" provider-name="burekas">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Burekas Repo">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Burekas Repo For Kodi - The addons with the plus</summary>
+        <description></description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <clearlogo>logo.png</clearlogo>
+        </assets>            
+    </extension>
 </addon>
 
 <addon id="repository.canuck" name="Canuck Repository" version="0.1.0" provider-name="The Crazy Canuck">

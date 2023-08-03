@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.burekasKodi" name="Burekas Repo" version="1.0.2" provider-name="burekas">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Burekas Repo">
+        <dir>    
+            <info compressed="false">https://raw.githubusercontent.com/burekasKodi/repository.burekasKodi/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/burekasKodi/repository.burekasKodi/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/burekasKodi/repository.burekasKodi/main/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Burekas Repo For Kodi - The addons with the plus</summary>
+        <description></description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <clearlogo>logo.png</clearlogo>
+        </assets>            
+    </extension>
+</addon>
