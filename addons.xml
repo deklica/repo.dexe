@@ -207,10 +207,10 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.96+android" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.92+android" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="repository.elementumorg" optional="true" />
+        <import addon="repository.elementum" optional="true" />
         <import addon="script.module.kodi-six" />
         <import addon="script.module.requests" version="2.9.1" />
     </requires>
@@ -253,10 +253,10 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.96+linux" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.92+linux" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="repository.elementumorg" optional="true" />
+        <import addon="repository.elementum" optional="true" />
         <import addon="script.module.kodi-six" />
         <import addon="script.module.requests" version="2.9.1" />
     </requires>
@@ -299,10 +299,10 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.96+mac" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.92+mac" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="repository.elementumorg" optional="true" />
+        <import addon="repository.elementum" optional="true" />
         <import addon="script.module.kodi-six" />
         <import addon="script.module.requests" version="2.9.1" />
     </requires>
@@ -345,10 +345,10 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.96+windows" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.92+windows" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="repository.elementumorg" optional="true" />
+        <import addon="repository.elementum" optional="true" />
         <import addon="script.module.kodi-six" />
         <import addon="script.module.requests" version="2.9.1" />
     </requires>
