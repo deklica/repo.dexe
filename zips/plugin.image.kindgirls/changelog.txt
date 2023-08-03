@@ -1,0 +1,9 @@
+0.2.1 - by fr33p0rt
+- Update for Kodi19+ only
+
+0.2 - by DaM 06/02/2015
+- Add more galleries link
+- Add video gallery
+
+0.1 - by DaM 06/01/2015
+- Initial version

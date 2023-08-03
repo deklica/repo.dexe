@@ -1,0 +1,492 @@
+CHANGE HISTORY 	Kodi-Addon-TuneIn2017 (previosly plugin for Plexmediaserver)
+--------------	Releases: Releases: https://github.com/rols1/Kodi-Addon-TuneIn2017/releases/latest	
+--------------	Wicki: https://github.com/rols1/TuneIn2017/wiki
+
+			Support Forum Kodinerds:
+			https://www.kodinerds.net/index.php/Thread/66559-RELEASE-Kodi-Addon-TuneIn2017
+			Plex-Forum:
+			https://forums.plex.tv/discussion/288260/rel-tunein2017
+			
+28.01.2023	1.7.2	Main: Fix search pattern for title after changes in Tunein website.
+			Modul updater: adapted for Kodi 20 Nexus (adjust_line: addon id, python version).
+			GetContent: skip "DynamicPrompt" in title (not analysed).
+
+10.07.2022	1.7.1	getStreamMeta: Permanent-Redirect-Check expanded from 308 to 301.
+			myradiostations-TV-Audio.txt, myradiostations-Mix.txt: renewed url's.
+			Release-ZIP on Github-Repo: changed to Matrix version. 
+			
+22.05.2022	1.7.0	Main: Fixes after changes in Tunein website (start + end of main menu,
+			getting addon icons).
+			GetContent: cut log statement of index (max. 100 chars).
+			Github-Release-ZIP: changed to Matrix-version, Github-README updated.
+
+24.10.2021	1.6.9	rebuilded container-listing like tunein website: added code in
+			GetContent for detecting, listing and selection of container.
+
+22.10.2021	1.6.8	Main: Fix for changed navigation-menu on Website.
+			GetContent: fix block-building (__guideItemLink___).
+
+26.09.2021	1.6.7	RequestTunein: ssl.SSLContext(ssl.PROTOCOL_TLSv1) changed to
+ 			ssl.create_default_context() for security reasons - dto. in getStreamMeta.
+ 
+16.09.2021 1.6.6	allow remove/move favourit if no stream available.	
+
+22.10.2020 1.6.5	getMenuIcon: adapted to merged menus News + Talk (icon menu-talk.png).
+
+11.10.2020 1.6.4	PlayAudio_pre: use original url if RequestTunein returns an empty new location.	
+
+22.09.2020 1.6.3	Matrix-Adaption 9.0-alpha 2: change xbmc.translatePath -> 
+			xbmcvfs.translatePath via try/except.
+			Matrix-Adaption in modul util_tunein2017: set xbmc.LOGNOTICE/xbmc.LOGINFO
+			dependent on PY2/PY3. 
+			Search: use list of search-terms (max. 25).
+			StationList (line 1270): quoting special charakters in stream-url.
+			StreamTests: skip comparison bitrate with Settings, if bitrate is missing.
+			Logo Tunein2017: replace missing logo in addons root-directory.	
+
+25.08.2020 1.6.2	GetContent( section Callback Station): on call-type 'Topic' only use
+			target_id if not empty - if empty use preset_id.
+
+24.08.2020 1.6.1	PlayAudio_pre, RequestTunein: GetOnlyRedirect-Check added (needed
+			for some icecaststreams).
+			SingleMRS: codec-error fixed (py2_encode(name)).
+			getHeaders, RequestTunein: obsolet log-outputs of headers removed.
+
+09.07.2020	1.6.0	get_m3u: if the master.m3u8 contains relative m3u8 urls and cannot 
+			be assembled, the master.m3u8 is returned instead of single resolutions.
+			fanart.png changed to fanart.jpg (dto. in addon.xml).		
+
+25.04.2020	1.5.9	Updater-Modul: update adjust_AddonXml - consideration of changes
+			in addon.xml by addon-external tools (change of position of fields).
+			Update language terms (Spanish - Patrizia) - changes in addon.xml, 
+			../resource.language.es_es/strings.po, ../Strings/es.json.
+
+10.04.2020	1.5.8	Dialog-Calls for Kodi Matrix adapted: 
+			new function MyDialog (Modul util_tunein2017) added.
+			xbmcgui.Dialog().ok replaced with MyDialog().
+			xbmcgui.Dialog().yesno replaced with MyDialog(ok=False).
+			not_available_sp.mp3 soundfile (Spanish) added.
+			Fix error message (':' in 'Fehler:' replaced to make translation possible).
+
+18.03.2020	1.5.7	update (Modul Updater): new function adjust_AddonXml - adjust python-version in
+			fresh installed addon.xml (e.g. "3.0.0" if Kodi 19 is running). 	
+
+07.03.2020	1.5.6	Slideshow added: new modul slides, settings modified.
+			RecordStop: fixed missing error message (if recording process is not found). 
+			Github-Wicki https://github.com/rols1/TuneIn2017/wiki updated. 
+
+14.02.2020	1.5.5	FolderMenuList, Get Content: Fix for replacing '()' with '<>' in title 
+			(doesn't work in repl_json_chars).
+			StationList, SingleMRS: streamtype changed to 'flac' if url contains this 
+			mark.
+			Option "My Radio Stations": add a flac-stream in myradiostations-Mix.txt
+			(Radio Paradise Rock).
+
+06.02.2020	1.5.4	Favourit: Dialog replaced with Notification after added, removed and moved
+			Search (on Fail): Dialog replaced with Notification.
+			Modul util_tunein2017: import_statement shortened.
+
+24.01.2020	1.5.3	getStreamMeta: function added to follow redirects.
+			Global vars: UrlopenTimeout set to 4 from 3.
+
+27.12.2019	1.5.2	getHeaders: Fix parsing stream header (only if not empty).
+			StreamTests: Fix decoding summ (build from song + bitrate) with py2_decode.
+
+27.12.2019	1.5.1	GetContent: blockmark was changed back to "index" in the Websearch results 
+			(radio stations were missing with blockmark "token").
+
+05.12.2019	1.5.0	GetContent: new blockmark (index replaced with token) - except language groups.
+			GetContent: on stations replaced value of preset_id with target_id (preset_id 
+			no longer unique for Fav's). Set capital letter in token + TargetItemId to 
+			lowercase.
+			FolderMenuList: in tagline the prefix "Song: " added.
+			StationList: display detailed error list if no stream is found. 
+			StationList:  py2_encode(foldername) for Fav-button.
+			StreamTests: repl_json_chars for summ.
+
+29.10.2019	1.4.9	Adaptation Kodi Matrix (compatibility Python2/Python3:
+			Modul updater: replace StringIO with BytesIO in update(), replace
+			urllib2.urlopen -> urllib.request.urlopen, decode('utf-8') replaced 
+			from ADDON_PATH, page.decode('utf-8')
+			Statements in Main-PRG conformed/replaced/removed: urllib.*, UtfToStr, *.decode,
+			*.replace('\u002F', '/') -> *.replace('\\u002F', '/'), py2_encode all quoted
+			out-Args, decode('utf-8') replaced from ADDON_PATH.
+			RequestTunein: page.decode('utf-8').
+			
+not on Github	1.4.8	Main: Fix reaction on Github-problem (interpretation of updater return was wrong). 
+			getHeaders: für Python3 dict(response.info() statt response.headers.dict.
+			try/except for building OS_DETECT-string (IOError possible on iOS ARM 32-bit).
+			RLoad (Modul util_tunein2017): encoding="utf8" for reading file on PYTHON3.
+			
+not on Github	1.4.7	Adaptation Kodi Matrix (compatibility Python2/Python3:
+			Modul util_tunein2017: decode('utf-8') replaced from ADDON_PATH, msg.encoding
+			removed in PLog(), old content in UtfToStr() replaced with py2_encode, all
+			in-Args in addDir treated with py2_encode, all terms in repl_json_chars()
+			set to unicode, dto. in unescape(), dto. in transl_json, dto. in repl_json_chars. 	
+
+not on Github	1.4.6	Favorites: username added for SearchInFolders (Button "Favourite remove" was 
+			missing).)
+			List of languages (Settings): percent info added (translation status).
+			ClearUp (Modul util): Fix removing directories.
+			ClearUp (Main-PRG): Clearing M3U8STORE added.
+
+04.10.2019	1.4.5	Update language-files: Spanish (Patrizia).
+			Update Lang-terms in main prg (Main, home, StationList, PlayAudio_pre,
+			GetContent).
+			Update Lang-terms in modul update. 	
+			Update Lang-terms in modul util.
+			Update Lang-terms on PoEditor. 	
+
+01.10.2019	1.4.4	PlayAudio_pre: fix forgotten url in if-statement.
+
+01.10.2019	1.4.3	format-Parameter for tunein-calls extended with 'hls' and 'mp3' - to get more
+			streams. Functions adjusted: Main, GetContent, SearchInProfile, Favourit, Folder.
+			PlayAudio_pre: in case of 'notcompatible'-errors in favorites make a search on 
+			tunein website (it works, if the favorite was made from a working search
+			result.)	
+
+22.08.2019	1.4.2	myradiostations-TV-Audio.txt: zdf-stations removed (audio streams no longer
+			available) - ZDF, 3sat, phoenix, ZDFneo, ZDFinfo.
+			RequestTunein: fixed error_txt on exceptions (wrong string-concatenating).
+			GetContent: switch cacheToDisc=true in endOfDirectory-call (performance).
+
+08.08.2019	1.4.1	PlayAudio: Callback (prevents GetDirectory-Error) switched off (problem
+			with string-coding). We accept the GetDirectory-Error (not nice but harmless).
+			router: encoding="utf-8" switched off for func_pars (not needed for Kodi).
+			Modul util: code for Merkliste (from Kodi-Addon-ARDundZDF) removed - unused.
+			Function get_presetUrls removed - unused.
+			Favourit: strip username + password to prevent Blanks.
+			Favourit: no return after join call failed, return not before user-info
+			"problem mit username / passwort".
+			GetContent: Fix extracting Setting('customUrl') and Setting('customName') -
+			was used as bool not string.
+			get_tv_audio_url: return '' if line contains a chunklist (not streamlink). 
+			
+24.07.2019	1.4.0	Menu Premium added for testing.
+			GetContent: duration added for tagline, combinded with FollowText.
+			GetContent: fix needless | in tagline + summary. 
+			GetContent: empty title replaced with seoName. 
+
+not on Github	1.3.9	GetContent: recognition if a programm is available later then now -
+			extraction of the tunein text message. 
+			RecordsList: UtfToStr for pid_sender and pid_summ (fix codec-error).
+			Folder: UtfToStr for pid_foldername (fix codec-error). 
+			
+not on Github	1.3.8	My Radiostations: new list added with audio streams of german tv-stations.
+			StationList: Check on TV-Streams after a #400-Error extended (now master.m3u8-,
+			.m3u8-, mp3- and other Url's).
+			get_tv_audio_url: analysis changed from BANDWIDTH to CODECS (more reliable). 
+			get_pls: skip m3u8-file with ts-segments (not a playlist).
+			SetLocation: logging region added.			
+			
+21.07.2019	1.3.7	Function L: changed  split-def. from ':' to '":' (safer).
+			Fix Lang-entry #30303 (format like #30302).
+			POEditor: remove example in terms Custom Url (too long for Kodi-Settings).
+			Github https://github.com/rols1/TuneIn2017: new language-terms for Kodi
+			version in wicki added with description and pics.
+			PlayAudio_pre: catch further http-Error (now 'HTTP Error' and HTTPError').
+			Make streams available where Tune.ashx refers to json files that contain 
+			the stream data for the player (function get_tv_audio_url). 	
+			
+20.07.2019	1.3.6	Update language-files: Spanish (Tengoalhot).
+			Expanded for TV-Audio (master.m3u8-streams, hls): special opml-audience-call 
+			added in StationList and direct jump to PlayAudio (new function get_tv_audio_url)
+			Global Var partnerId set to current value in Web.
+
+19.07.2019	1.3.5	Updatefunction: code of Menu_update relocated to main menu ("new update available"
+			was shown again after update).
+			Settings: value 20 to maxStreamsPerStation added (Sonic Universe offers 16 streams).	
+
+18.07.2019	1.3.4	GetContent: reset offset on directory change (fix missing entries).
+			GetContent: remove json-incompatible chars from title.
+			GetContent: UtfToStr for oc_title2 (fix codec-error).
+			GetContent: switch PLog(indices..) from string to integer.	
+
+17.07.2019	1.3.3	Main-Menu / Updater: Fix for jump to Main after update.	
+			
+16.07.2019	1.3.2	PlayAudio (Modul util_tunein2017): callback-function outsourced for multiple 
+			use. 	
+			Exception-handling: "Exception, err" replaced with "Exception as err".
+			Languages (PO-files): fix comment lines. 
+			Title for menu Search changed (browse tunein -> search).
+			Callback in PlayAudio:.asf- and .aac-streams excluded (rekursion possible).
+
+13.07.2019	1.3.1	Migration to Kodi:
+			Settings:  UseSystemCertifikat, Debug, Cache/Löschfristen hinzugefügt.
+			Settings: Vorbelegung MyRadioStations, UseMyRadioStations hinzugefügt.
+			Main + RequestTunein: Test path.exist (SystemCertifikat)
+			Modul util_tunein2017: Übernahme Hilfsfunktionen aus Haupt-PRG, zusätzl. 
+			Hilfsfunktionen aus ardundzdf (PLog, DICT- und STORE-Funktionen, json-Behandl.).
+			Anpassung Plex-Dict -> Addon-Dict (util_tunein2017).
+			RequestTunein: HTTP.Request (Plex) entfernt, weiter 2-stufiger urllib2.Request (mit/
+			ohne Zertifikat).
+			Update version of RadioTime to 3.31 (from 2.22)
+			Sprachunterstützung: Translation-Funktion von Plex nachgebildet (json-Dateien beibehalten),
+			Anpassung der Setting-Terms an Translation-Funktion von Kodi, Lang-Test-Funktion angepasst.
+			PlayAudio: wegen nicht behebbaren GetDirectory-Errors Callback-Mechanismus eingeführt
+			(Haupt-PRG: Ermittlung/Ablage der Funktionsadressen von StationList + SingleMRS, Ablage
+			der Funktionsparamter von StationList + SingleMRS, Callback-Mechanismus in PlayAudio +
+			get_params).
+			MyRadioStations: Musterdateien neu geordnet, myradiostations-Mix.txt -> Settings.
+			
+23.11.2018	1.3.0	StreamTests: differentiation of Shoutcast and Icecast streams with port numbers.	
+22.10.2018	1.2.9	StreamTests: variable shoutcast protected against content None.	
+not on github	1.2.8	FolderMenuList: unescape title (to prevent "user&apos;s Favorite").
+27.09.2018	1.2.7	StreamTests: test p.params replaced with test len(url_split).
+			StreamTests: SHOUTcast Stream Status test ('Stream is') removed.
+			getStreamMeta: return-Parameter shoutcast added.
+01.06.2018	1.2.6	RecordStart: UserAgent "Mozilla/5.0" for streamripper added -  some stations 
+			block downloads with the default "Streamripper/1.x".
+			RecordsList: test on "unknown" in pid_summ adapted to get_details.
+			GetContent: '\r\n' in description replaced.
+26.05.2018	1.2.5	FolderMenuList / get_details: fix for PHT (empty parameters filled).
+			GetContent: Title/Subtitle aligned with Link/Station.
+			GetContent: '\"' in record replaced with '*' (compatible with stringextract).
+			GetContent: in Subtitle '\u003E' and '\u003C' removed ("<" and ">").
+			GetContent: "no items found"-info complemented by subtitle (may contains future broadcast date).
+			GetContent: log statements edited.
+			RecordsList: pid_summ in title removed if placeholder 'subtext unknown'.
+21.05.2018	1.2.4	GetContent: comparison of title (text) and preset_id in link-list aligned to tunein-method -
+			for more deails see comments (german) in GetContent near mytype = mytype.title()
+			GetContent: guideId in Station_url replaced with preset_id (guideId sometimes links not to 
+			a station) - except for links to a mp3-source.
+			GetContent: empty-test for url in index-loop removed (obsolet).
+			GetContent: wrong add factor for offset removed.
+			../Resources/textpage.mp3 updated (more acoustic understandable).
+			GetContent: FollowText (summary) replaced with seoName if FollowText = Title.
+09.05.2018	1.2.3	Main: linkage of USER_URL with serial-ID replaced with username (like in previos versions).  
+			Main: test for existing System-Certifikate added (if used in preferences).
+04.05.2018	1.2.2	GetContent: adjustments for PHT (avoiding empty function parameters).
+			Main (main menu): utf-decoding for title added.
+			RequestTunein: HEADERS - Accept-Language changed from xx_XX to xx.	
+not on github	1.2.1	get_presetUrls: removed, function done in GetContentOPML.
+			StreamTests: execute last test for Shoutcast-Status only if url ends with / (e.g. KSJZ.db). 
+			my_rfind added: left orientated helpfunction for pathfinding - used in GetContent.
+			RecordsList: 'stop' added for Stop-Button (running recordings). 		
+not on github	1.2.0	RequestTunein: 3. step added using certificate for ssl-communication.
+			Preferences: option for own certificate added (used in RequestTunein, get_pls).
+			Search: 2 search-variants: 1. opml-call, 2. tunein.com/search/?query=%s.
+			GetContentOPML: analysis for opml-call - alternative for GetContent 
+not on github 	1.1.9	single function FolderMenuList for listing folder contents.
+			get_details: extended for guide_id + playing
+			Rubriken removed
+			GetContent: Buttons integrated (folders, custom_urls, Local Radio)
+not on github 	1.1.8	Switch to get main content from tunein-webpages not from opml.radiotime.com/Browse.ashx	
+			Main menu build like Tunein Webpage (items, order).
+			GetContent: getting information of most container types. Branch to website-calls
+			for links, to opml-calls for stations, podcast or similar.
+19.04.2018	1.1.7	Main: skip return if the main browes-function (opml-call) fails or is blocked by tunein. 
+			RubrikNoOPML: uppercase for relevant parameters changed. 
+			Favourit: 2-step url-requests (executed in outsourced RequestTunein), ditto PlayAudio,
+			StationList, StreamTests,get_m3u, Search InFolders, SearchInProfile, Favourit, Folder.
+			SetLocation (Dict.Save), Rubriken (ObjectContainer: no_cache=True): to provide delete-status of 
+			Local Radio if user press Back button.
+			Favourit: addded log statement for status after tunein-association-call.
+			getStreamMeta: gcontext.verify_mode=ssl.CERT_NONE added.
+			RequestTunein, get_pls: str(exception) replaced with repr(exception) - str() missed after return.
+			PlayAudio: header-check analyzed as dict .
+			Language-files: exclamation mark added in "ohne Rueckfrage!".
+14.04.2018	1.1.6	New function RequestTunein (Tunein-calls outsourced, 2 steps-procedure), used from Main, 
+			Rubriken, RubrikNoOPML and PlayAudio (not relevant for PHT).
+			PlayAudio restructered	
+14.04.2018	1.1.5	RubrikNoOPML: 2-step url-requests - 1. HTTP.Request, 2. urllib2.Request (if 1. fails).
+14.04.2018	1.1.4	Main, RubrikNoOPML and PlayAudio: urllib2.Request now executed with ssl.SSLContext but without 
+			certifikat-check (HTTP Error 403 on some installations with PMS 1.12.2).
+10.04.2018	1.1.3	Update language-files: Danish (Tommy Mikkelsen).
+			Fixed language msg-string in SetLocation.
+06.04.2018	1.1.2	Option "set Local Radio manually": preferences changed, new icons mylocation +
+			mylocation-remove, code added in Rubriken, loop-structure changed.	
+not on github	1.1.1	TREND_URL changed to HTTPS
+			RubrikNoOPML: HTTP Error 403 (redirect) - HTTP.Request exchanged for urllib2.Request.
+22.03.2018	1.1.0	Update language-files: Italian
+21.03.2018	1.0.9	Update language-files: Italian, lang-adjustments in plugin, corrections in script convert.py
+			(dev.-env.).
+			Change menu title Plugin-Update to Lang-string.
+20.03.2018	1.0.8	Update language-files: Italian, Polish, French.
+19.03.2018	1.0.7	Update language-files: Italian (Alessio79).
+			Rubriken: extract preset_id from url, if comes empty from get_details.
+18.03.2018	1.0.6	PlayAudio: audience-opml-Call added (add station-id to Recents).
+			PlayAudio: none-parameter removed (not needed with **kwargs).			
+			PlayAudio, CreateTrackObject and calling functions: station-id sid added (needed
+			for audience-opml-Call. Excluded: Custom-Url's and MyRadioStations (could contains 
+			non-Tune.ashx-Url's).
+16.03.2018	1.0.5	Added: menu Recents - fuction RubrikNoOPML (combinded for Trend + Recents).
+			Adjustments for Recents: api.tunein.com-url instead of tunein.com, output 
+			without page segment, Uppercase for the first char of parameters. 
+			Home-menu button added in RubrikNoOPML.
+31.01.2018	1.0.4	Added: menu Trend - function RubrikTrend.
+not on github	1.0.3	SingleMRS: fix empty variable "cont", compose Servermessage3.
+			getMenuIcon: fix wrong icon for Podcast.
+			get_m3u: fix url with '.m3u' in url (not only at the end).
+25.12.2017	1.0.2	StreamTests: Recognizing of Shoutcast-streams without portnumber, without path.	
+not on github	1.0.1	Special solution for Soma-Stations with forwarding to itunes-url: load playlist
+			with http-url.
+not on github	1.0.0	PlayAudio: output mp3-message (not available) if playlists could be loaded,
+			but url quits with http-error.
+not on github	0.9.9	StationList: fix Tunein-return "#STATUS: 400" - output user-message.	
+			StreamTests: fix condition-value for line-counter ('>=' instead of '>').
+not on github	0.9.8	SingleMRS + StationList: output Servermessage3 if get_pls fails.
+			get_pls: detection redirections to itunes-url - Servermessage3 adjusted.	
+14.12.2017	0.9.7	Update language-files: Danish (Tommy Mikkelsen), French (Joyfik).
+			myradiostations.txt updated. 
+not on github	0.9.6	Option max_streams_per_station added (interpreted in StreamTests).			
+not on github	0.9.5	MyRadioStations: now Tune.ashx-Url are valid, interpreted in SingleMRS.
+			ListMRS: line number added to error message "corrupted file".
+not on github	0.9.4	Format list added (valid playlist-formats) (interpreted in get_pls).
+not on github	0.9.3	StationList: leading '|' in summary for CreateTrackObject fixed. 
+			DefaultPrefs.json: redundant comma replaced.
+10.12.2017	0.9.2	Option StartWithMyRadioStations: code, terms added.	
+not on github	0.9.1	Option "Minimum Bitrate" in Preferences added - Code in function Rubriken.
+not on github	0.9.0	Icons in Resources revised, terms in language files added.
+not on github	0.8.9	StationList: outsourcing StreamTests (wrapper for getStreamMeta) - for using by ListMRS. 
+not on github	0.8.8	Split of "File1=http://.." moved from StationList to get_pls - for using by ListMRS. 
+not on github	0.8.7	Function ListMRS created.	
+not on github	0.8.6	Menu 'MyRadioStations' in Main added.	
+not on github	0.8.5	Creation myradiostations.txt as example file.
+not on github	0.8.4	Preferences - added: option field StartWithMyRadioStations, text field MyRadioStations.	
+not on github	0.8.3	Fix ['Playlist'] in get_pls, correted to '[Playlist]'.	
+03.12.2017	0.8.2	New option "Start of plugin only with Favourites".
+not on github	0.8.1	Custom Url: Code added / adapted in function Folder and Rubriken.
+not on github	0.8.0	PlayAudio: textpage.mp3 and tonleiter_harfe.mp3 added (in Resources) as error-messages.
+not on github	0.7.9	Preferences: 2 input fields added for Custom Url (Url, Name), language terms adapted in
+			folder Strings and poeditor project.
+not on github	0.7.8	SearchInProfile: adapting to find custom url in folder	
+not on github	0.7.7	DefaultPrefs.json: adaption locale-terms to tunein (https://opml.radiotime.com/Describe.ashx?c=locales).	
+28.11.2017	0.7.6	ValidatePrefs: None for Prefs['language'] catched (first plugin start).	
+23.11.2017	0.7.5	Favourites-Tools: Url with type=download excluded (no preset_id, not processable).
+			Function get_pls: including 'Playlist' (yet only 'playlist').	
+22.11.2017	0.7.4	Voice-files (mp3) for error-message "Sorry, this station is not available" added (one for
+			every by plugin supported language).	
+21.11.2017	0.7.3	SearchUpdate: skip error-message, if Github not available (to prevent block pluginstart).
+			Update language-files.
+			Update In-Code-Doku.
+18.11.2017	0.7.2	Update language-file: Danish (Tommy Mikkelsen).	
+17.11.2017	0.7.1	Favourites-Tools: corrected summ-labels in StationList.
+17.11.2017	0.7.0	Favourites-Tools: move-function added (moving favourites to folder).
+not on github	0.6.9	Favourites-Tools: Buttons and functionality added for add/remove (functions StationList
+			and Favourit).	
+not on github	0.6.8	Favourites-Tools: SearchIDinPresets added (looks for existings preset_id's in Favourites).	
+not on github	0.6.7	Favourites-Tools: serial_random added (creates serial-ID for Tunein).
+			in Preferences added: input-field passwort, option-field UseFavourites.
+11.11.2017	0.6.6	Update language-files: Polish (Przemo), Danish (Tommy Mikkelsen). 
+			Icons fav_add.png + fav_remove.png for later use.
+11.11.2017	0.6.5	Update language-file: Ukrainian (Vlad).
+			LangTest: testfile now de.json (previos de.csv - redundant).
+			RecordsList: Home-Button added.
+08.11.2017	0.6.4	Inline-Doku aktualisiert (Recording-Funktionen, Auswertung der Streamlinks in StationList).
+			Aktualisierung Sprachdatei Polnisch + Ukrainisch (unfertig).	
+not on github	0.6.3	Recording-Funktion: div. Tests mit Stop-Funktion als Thread - wieder entfernt (keine
+			Verbesserung).
+04.11.2017	0.6.2	Update Language: French (Joyfik).
+01.11.2017	0.6.1	Aktualisierung Sprachdatei: Dänisch (Tommy Mikkelsen).
+31.10.2017	0.6.0	Aufnahme-Option: parallele Aufnahmen, Aufnahmeliste-Menü. Anpassungen für PHT.
+not on github	0.5.9	Aufnahme-Option: erweitert für Windows (Anpassungen os.path.exists, os.kill, signal).
+not on github	0.5.8	Aufnahme-Option: via Streamripper, zunächst Linux
+not on github	0.5.7	Funktion StationList: utf-Dekodierung für summary-Parameter ergänzt.	
+24.10.2017	0.5.6	Aktualisierung Sprachdatei: Dänisch (Tommy Mikkelsen).		
+23.10.2017	0.5.5	Einstellungen / Funktion Rubriken: Option "max. Objekte/Seite", um Plugin-Blockaden durch
+			Timeouts vorzubeugen.		
+not on github	0.5.4	get_m3u: Berücksichtigung kompl. m3u-Dateien (bisher nur Einzelzeilen). 		
+22.10.2017	0.5.3	Aktualisierung Sprachdatei Polnisch.	
+20.10.2017	0.5.2	Performance: AAC-Format als Option, Default ja - Einstellungen / Main().
+not on github	0.5.1	getStreamMeta / Test auf Portnummer: Ausnahme für Pfadinhalte nach Portnummer.  				 	
+not on github	0.5.0	Performance (StationList): .mp3-Files von der Meta-Auswertung in getStreamMeta ausgenommen.
+not on github	0.4.9	get_m3u: Code-Bereinigung (Performance).	
+not on github	0.4.8	global urlopen_timeout für urllib2.urlopen  + von 6 auf 3 gesetzt (Performance).
+			Start: Verzicht auf Cache-Timeout (Performance) - wieder rückgängig wg. Framework-Phänomen:
+			falscher Funktionsaufruf (Main statt PlayAudio).
+not on github	0.4.7	getStreamMeta: Test auf Portnummer geändert ->  urlparse(address).	
+not on github	0.4.6	Hinzugefügt: Menü News.
+			Austausch Content-Pfad-Variable (Dict['R']) gegen global MyContents (Performance).
+not on github	0.4.5	Austausch Mozilla-Zertikat gegen Linux-Zertikat (Performance).
+16.10.2017	0.4.4	Funktion get_pls: Absicherung last_url gegen ''.		
+16.10.2017	0.4.3	Aktualisierung Sprachdatei Dänisch. 
+not on github	0.4.2	Funktion get_pls: Zertikatverwendung (für Windows erforderlich) für "Moved Temporarily"-
+			Adressen. 
+not on github	0.4.1	Pfad zum Content-Pfad des Plugins globalisiert (Dict['R']).	
+not on github	0.4.0	Aufnahme TuneIn2017 in lokalen Watchdog (Watchdog_Plex-2.py): 1 x ROOT_URL, 1 x query.
+			Rubriken: Umbenennung switch_no_structure in switch_no_blocks.	
+12.10.2017	0.3.9 	Zusätzliche Methode für "Not Supported" Streams (Funktion Rubriken).
+10.10.2017	0.3.8	Renovierung Updater-Modul: Aufsplittung in SearchUpdate + presentUpdate, Github-Quelle 
+			umgestellt auf api-Url + entspr. Anpassungen in updater.py.
+			Integration Sprachdateien Dänisch + Polnisch.
+not on github	0.3.7	Testfunktion für Sprachdateien des Plugins: LangTest + dummy, Flag Lang_Test in Main.			
+not on github	0.3.6	Funktion myL(string): Hardcore-Lösung, falls czukowski-Lösung versagt. 	
+08.10.2017	0.3.5	get_presetUrls: Ergänzungen für PHT - dummy-Belegung von bitrate + typ.
+08.10.2017	0.3.4	Auswertung von CustomUrl's: zusätzl. Funktion get_presetUrls, Anpassung StationList (Filterung
+			'Tune.ashx?' in Url.
+			getStreamMeta (urllib2.urlopen): SSLContext für https://hr-youfm-live.sslcast.addradio.de hinzugefügt.	
+07.10.2017	0.3.3	Nutzung von poeditor.com: Account, Projekt TuneIn2017, Request OpenSource, Basisterms Englisch.
+			Sprachdateien + Code: Doppelpunkte in Strings entfernt (verursachen Probleme bei Verarbeitung mit
+			POEditor).
+			Plugin-interne L-Funktion (Lösung czukowski) integriert für die Wiederverwendung von Umlauten in
+			Sprachstrings.
+05.10.2017	0.3.2	DefaultPrefs.json: Sprachenauswahl erweitert (Afrikaans - Zulu). Plugin-intern ist weiterhin nur
+			die englische Übersetzung vorhanden.
+			Locale-Probleme: Umlaute in de.json + en.json entfernt (bis auf weiteres).	
+04.10.2017	0.3.1	Funktionen Main + Rubriken: Austausch HTTP.Request gegen urllib2.Request - damit wirkt der 
+			Language-Wert im Header korrekt auf die Tunein-Ausgabe. DefaultPrefs.json entsprechend angepasst, 
+			Bsp. "German/de/de-DE".	
+			DefaultPrefs.json: Unterstriche aus Bezeichnern entfernt (führten zum decoding-Error mit simplejson),
+			entspr. Anpassungen im Code.
+not on github	0.3.0	Neue (identische) Icon icon-default.jpg + icon-tunein2017.jpg mit Schriftzug 2017 zur
+			Unterscheidung des vorh. TuneIn-Plugins von solvek im UAS.	
+01.10.2017	0.2.9	Funktion get_pls: nicht belegte header-Variable entfernt.
+			Sprach-Korrekturen: de.json, en.json + Main().
+01.10.2017	0.2.8	Integration Tunein-eigenen mp3-Hinweis auf inkompatiblen Stream	(CreateTrackObject,
+			PlayAudio, Verzeichnis Ressources).
+not on github	0.2.7	Auswertung m3u8-Links verbessert (berücksichtigt mehr Varianten): zusätzl. Funktion 
+			get_m3u.
+not on github	0.2.6	UnicodeDecodeError beim Laden der Tune.ashx abgefangen (StationList).
+28.09.2017	0.2.5	get_pls: 2-Schrittverfahren für Playlist-Request (1. HTTP.Request, 2. urllib2.Request) -
+			Grund: urllib2.Request allein schlug (selten) fehl.
+not on github	0.2.4	Funktion Search: leere Suchergebnisse abgefangen.			
+not on github	0.2.3	Tests mit problematisch kodierten Metadaten (Bsp. in StationList) - song-Ermittlung mit
+			try abgefangen. json.dumps für metadata wieder entfernt (half hier nicht).
+			Bitrate + song aus Metadaten verwendet für summary, falls vorhanden.
+			ID3-Tags in Metadaten verworfen - Grund: selten, zusätzl. Code erforderlich. 
+not on github	0.2.2	Abfangen HTTP-Error beim Laden von Playlisten (Funktionen get_pls/StationList).
+not on github	0.2.1	Lokale mp3-Nachrichten in Exception-Behandlung von PlayAudio integriert:
+			not_available_en.mp3 + not_available_de.mp3 (Verz. ../Contents/Resources).
+not on github	0.2.0	Fehler Funktion StationList: json.dumps für metadata fehlte.
+not on github	0.1.9	Kennzeichnung in Rubrik-Liste (Stationen + Bitrate, Mehr...). 
+			
+26.09.2017	0.1.8	Neuer Icon-Satz mit den TuneIn-Motiven für Hauptmenü.	
+25.09.2017	0.1.7	Streamauswertung verbessert: Auswertung der Metadaten für Shoutcast, Icecast/Radionomy
+			und Streammachine.	
+24.09.2017	0.1.6	Suche hinzugefügt (Funktion Search, mehrteilige Suchbegiffe ermöglicht).
+			Funktionen Rubriken/get_details: Auswertung Bitrate hinzugefügt, Ausgabe in tagline.
+			Funktion StationList: Fehler "keinen Stream gefunden" abgefangen.
+			Funktionen Main + Rubriken: UnicodeDecodeError abgefangen
+			Google-Sprachausgabe erfolglos getestet - Codeanteil wieder entfernt.		
+23.09.2017	0.1.5	Lokalisierung Plugin: json-Datei mit Dialogtexten für Deutsch + Englisch
+			erstellt. Initialisierung in ValidatePrefs().
+			Funktion get_pls: Verbesserung der Playlist-Auswertung. Absicherung gegen
+			Framework-Problem "unknown url type: itunes".
+			Funktion StationList: zusammenfassende Beschreibung der Auswertung der
+			Streamlinks hinzugefügt.			
+21.09.2017	0.1.4	Funktion StationList: numerische Kennzeichnung der Streams im Titel.
+			Funktion get_pls: Ersatz HTTP.Request durch urllib2.Request wegen 
+			Framework-Problem (URLError..type: itunes>).
+			Funktion Rubriken: falschen username abgefangen.
+20.09.2017	0.1.3	Funktion SearchUpdate war beim Upload verloren gegangen - ergänzt.
+			Funktion StationList: einfache Codec-Erkennung (Stringscan) in den Streaming-Url's.
+20.09.2017	0.1.2	Integration Updater-Modul.
+			Einrichtung Github-Repo. 	
+19.09.2017	0.1.1	Analyse diverser Stream-Url's von tunein - Umsetzung in StationList.
+			Bereitstellung Testversion im GMX-Mediacenter	
+17.09.2017	0.1.0	Pluginstart: Hauptmenü mit tunein-User-Option, Funktionen Rubriken + StationList, 
+			Übernahme aus Plex-Plugin-ARDMediathek2016: CreateTrackObject, PlayAudio, Hilfsroutinen 
+			(Stringbehandlung).
+
+		
+
+
+
+
+
+
+
+
+
+	

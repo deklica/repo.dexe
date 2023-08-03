@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<!--  Video / Program&Services / Audio / Dependencies / Other / External  -----------------------------------
+<!--  Video / Program&Services / Audio / Image / Dependencies / Other / External  -----------------------------------
 
 plugin.video.crackle
 plugin.video.daddylive
@@ -9,6 +9,7 @@ plugin.video.elementum
 plugin.video.gratis
 plugin.video.json_iptv
 plugin.video.last_played
+plugin.video.megaiptv
 plugin.video.premiumizerx
 plugin.video.realizerx
 plugin.video.thetvapp
@@ -67,8 +68,12 @@ plugin.audio.dashradio
 plugin.audio.datpiff
 plugin.audio.mp3streams
 plugin.audio.radio_de
+plugin.audio.tunein2017
 plugin.audio.tuneinradio
 plugin.audio.ytmusic.exp
+
+plugin.image.flickrexplorer
+plugin.image.kindgirls
 
 script.module.autocompletion
 script.module.jetextractors
@@ -464,6 +469,29 @@ resource.font.robotocjksc
 		<assets>
 			<icon>icon.png</icon>
 		    <fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="plugin.video.megaiptv" name="[COLOR aqua]Mega IPTV[/COLOR]" version="1.3.0" provider-name="G-Man">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Live IPTV World-Wide</summary>
+		<description lang="en">An IPTV Multi Channel Add-on</description>
+		<platform>all</platform>
+		<language>en</language>
+		<license>GPL-2.0-or-later</license>
+		<source></source>
+		<news></news>
+		<assets>
+			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>
@@ -2090,58 +2118,13 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="0.6.1+matrix.1" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
-  <requires>
-    <!--py3 compliant-->
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.pysocks" version="1.6.8" optional="true"/>
-  </requires>
-  <!-- This is needed to get an add-on icon -->
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.python.module" library="lib"/>
+<addon id="script.module.inputstreamhelper" name="InputStream Helper (Slyguy Wrapper)" version="99.0.5" provider-name="SlyGuy">
+  <extension point="xbmc.service" library="service.py" />
+  <extension point="xbmc.python.module" library="resources/modules" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="de_DE">Kodi InputStream und DRM Wiedergabe einfach gemacht</summary>
-    <summary lang="el_GR">Βοηθός Inputstream για το Kodi και εύκολη αναπαραγωγή DRM</summary>
-    <summary lang="en_GB">Kodi InputStream and DRM playback made easy</summary>
-    <summary lang="es_ES">Kodi InputStream y reproducción DRM echa fácil</summary>
-    <summary lang="fr_FR">La lecture Kodi InputStream et DRM en toute simplicité</summary>
-    <summary lang="hr_HR">Kodi InputStream olakšava reprodukciju DRM zaštićenog sadržaja</summary>
-    <description lang="de_DE">Dieses einfache Kodi-Modul macht das Leben für Addon Entwickler einfacher, die auf InputStream basierte Addons und DRM Wiedergabe angewiesen sind.</description>
-    <description lang="el_GR">Μία απλή μονάδα για το Kodi η οποία διευκολύνει την ζωή των προγραμματιστών οι οποίοι εξαρτώνται από τα πρόσθετσ InputStream και αναπαραγωγή τύπου DRM.</description>
-    <description lang="en_GB">A simple Kodi module that makes life easier for add-on developers relying on InputStream based add-ons and DRM playback.</description>
-    <description lang="es_ES">Un módulo Kodi simple que hace la vida más fácil para los desarrolladores de complementos que dependen de complementos basados en InputStream y reproducción de DRM.</description>
-    <description lang="fr_FR">Un simple module Kodi qui simplifie la vie des développeurs de modules complémentaires en s’appuyant sur des modules complémentaires basés sur InputStream et sur la lecture de DRM.</description>
-    <description lang="hr_HR">Jednostavan Kodi modul koji olakšava razvijanje dodataka koji se temelje na InputStream dodatku i reprodukciji DRM zaštićenog sadržaja.</description>
-    <description lang="ru_RU">Простой модуль для Kodi, который облегчает жизнь разработчикам дополнений, с использованием InputStream дополнений и воспроизведения DRM контента.</description>
-    <news>
-v0.6.1 (2023-05-30)
-- Performance improvements on Linux ARM
-- This will be the last release for Python 2 i.e. Kodi 18 (Leia) and below. The next release will require Python 3 and Kodi 19 (Matrix) or higher.
-
-v0.6.0 (2023-05-03)
-- Initial support for AARCH64 Linux
-- Initial support for AARCH64 Macs
-- New option to install a specific version on most platforms
-
-v0.5.10 (2022-04-18)
-- Fix automatic submission of release
-- Update German translation
-- Fix update_frequency setting
-- Fix install_from
-- Improve/Fix Widevine extraction from Chrome OS images
-
-v0.5.9 (2022-03-22)
-- Update Croatian translation
-- Replace deprecated LooseVersion
-- Fix http_get decode error
-- Option to install Widevine from specified source
-    </news>
-    <platform>all</platform>
-    <license>MIT</license>
-    <website>https://github.com/emilsvennesson/script.module.inputstreamhelper/wiki</website>
-    <source>https://github.com/emilsvennesson/script.module.inputstreamhelper</source>
+    <description lang="en">Replaces Inputstream Helper with Slyguy DRM Helper</description>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <news></news>
     <assets>
       <icon>icon.png</icon>
     </assets>
@@ -2218,7 +2201,7 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.youtube.dl" name="youtube-dl Control" version="21.303.0+matrix.1" provider-name="ytdl-org,ruuk,sy6sy2,wwark">
+<addon id="script.module.youtube.dl" name="youtube-dl Control" version="2023.03.21" provider-name="Rick Phillips (ruuk)">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.addon.signals" version="0.0.5+matrix.1"/>
@@ -2238,7 +2221,7 @@ v0.5.9 (2022-03-22)
         <description lang="es_ES">Módulo que proporciona acceso a YouTube-dl para la extracción de flujos de video de cientos de sitios. La versión está basada en la versión de fecha youtube-dl: YY.MDD.V donde V es la subversión específica del complemento. También permite descargas con la opción de descarga en segundo plano con una cola y un administrador de colas.</description>
         <license>LGPL-2.1-only</license>
         <forum>https://forum.kodi.tv/showthread.php?tid=200877</forum>
-        <source>https://github.com/Catch-up-TV-and-More/script.module.youtube.dl</source>
+        <source>https://github.com/ruuk/script.module.youtube.dl</source>
         <assets>
             <icon>icon.png</icon>
         </assets>
@@ -3146,6 +3129,34 @@ v5.2.14 (2017-01-23)
 </addon>
 
 
+<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.7.2+matrix" provider-name="rols1 (rols1@gmx.de)">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+    		<import addon="script.module.kodi-six" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="tunein2017.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">tunein.com-Addon für Kodi</summary>
+		<summary lang="en">tunein.com-addon for Kodi</summary>
+		<summary lang="es">Complemento de tunein.com para Kodi</summary>
+		<description lang="de">Favoriten und Ordner (Tunein-Account erforderlich), Download-Option mit Streamripper, Standalone-Option StartWithMyRadioStations (Beispieldatei enthalten)</description>
+		<description lang="es">Favoritos y carpetas de favoritos (se requiere cuenta en TuneIn). Opción de descarga con el programa Streamripper. Opción independiente para iniciar con Mis Emisoras de Radio (incluye archivo de muestra).</description>	
+		<platform>all</platform>
+		<source>https://github.com/rols1/Kodi-Addon-TuneIn2017</source>
+		<forum>https://www.kodinerds.net/index.php/Thread/66559-RELEASE-Kodi-Addon-TuneIn2017</forum>
+		<license>The MIT License (MIT)</license>
+		<language>"en_GB"</language>
+ 		<email>rols1@gmx.de</email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>           
+		</assets>
+   </extension>
+</addon>
+
+
 <addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="4.0.2" provider-name="joaconigro">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -3205,6 +3216,72 @@ v5.2.14 (2017-01-23)
 
 <!-- ---------------------------------------------------------------------- -->
 
+<addon id="plugin.image.kindgirls"
+	name="KindGirls"
+	version="0.2.2"
+	provider-name="fr33p0rt">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.3.0"/>
+        <import addon="script.module.beautifulsoup4" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>image</provides>
+	</extension>
+	<extension point="xbmc.python.module" library="resources/lib"/>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">View photos and videos from https://www.kindgirls.com</summary>
+		<description lang="en">Kindgirls: Nude girls in erotic photos and videos</description>
+		<summary lang="cz">Prohlížejte si fotky z https://www.kindgirls.com</summary>
+		<description lang="cz">Kindgirls: Erotické fotky a videa nahých dívek</description>
+		<summary lang="pl">Zobacz zdjęcia i filmy na https://www.kindgirls.com</summary>
+		<description lang="pl">Kindgirls: Zdjęcia i filmy erotyczne z nagimi dziewczynami</description>
+		<summary lang="de">Sehen Sie sich Fotos und Videos von https://www.kindgirls.com an</summary>
+		<description lang="de">Kindgirls: Erotische Fotos und Videos mit nackten Mädchen</description>
+		<summary lang="es">Ver fotos y videos de https://www.kindgirls.com</summary>
+		<description lang="es">Kindgirls: Chicas desnudas en fotos y videos eróticos </description>
+		<license>GPL 2.0</license>
+		<language>en</language>
+		<forum>N/A</forum>
+		<website>N/A</website>
+		<source>N/A</source>
+		<email>fr33p0rt@protonmail.com</email>
+		<assets>
+    		<icon>icon.png</icon>
+    		<fanart>fanart.jpg</fanart>
+  		</assets>
+	</extension>
+</addon>
+
+<!-- ---------------------------------------------------------------------- -->
+
+<addon id="plugin.image.flickrexplorer" name="FlickrExplorer" version="0.7.6+matrix" provider-name="rols1 (rols1@gmx.de)">
+  <requires>
+   <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.kodi-six" />
+ </requires>
+  <extension point="xbmc.python.pluginsource" library="flickrexplorer.py">
+        <provides>image</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="de">flickr-Addon für Kodi</summary>
+	<summary lang="en">flickr-addon for Kodi</summary>
+	<description lang="de">Blättern und Suchen in öffentlichen Flickr-Beständen (Photostream, Gallerien, Alben, Favoriten)</description>
+	<description lang="en">Browse and search public content on Flickr (Photostream, Galleries, Albums, Faves, People)</description>
+	<platform>all</platform>
+         <source>https://github.com/rols1/Kodi-Addon-FlickrExplorer</source>
+        <forum>will be added</forum>
+	<license>The MIT License (MIT)</license>
+	<language>"en_GB"</language>
+ 	<email>rols1@gmx.de</email>
+        <assets>
+             <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>           
+     </assets>
+   </extension>
+</addon>
+
 <addon id="script.module.autocompletion" name="AutoCompletion library" version="2.1.1" provider-name="Philipp Temminghoff (phil65), bbaronSVK, finkleandeinhorn, berkhornet">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -3224,7 +3301,7 @@ v5.2.14 (2017-01-23)
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.78" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.80" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />

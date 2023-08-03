@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.image.flickrexplorer" name="FlickrExplorer" version="0.7.6+matrix" provider-name="rols1 (rols1@gmx.de)">
+  <requires>
+   <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.kodi-six" />
+ </requires>
+  <extension point="xbmc.python.pluginsource" library="flickrexplorer.py">
+        <provides>image</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="de">flickr-Addon für Kodi</summary>
+	<summary lang="en">flickr-addon for Kodi</summary>
+	<description lang="de">Blättern und Suchen in öffentlichen Flickr-Beständen (Photostream, Gallerien, Alben, Favoriten)</description>
+	<description lang="en">Browse and search public content on Flickr (Photostream, Galleries, Albums, Faves, People)</description>
+	<platform>all</platform>
+         <source>https://github.com/rols1/Kodi-Addon-FlickrExplorer</source>
+        <forum>will be added</forum>
+	<license>The MIT License (MIT)</license>
+	<language>"en_GB"</language>
+ 	<email>rols1@gmx.de</email>
+        <assets>
+             <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>           
+     </assets>
+   </extension>
+</addon>
