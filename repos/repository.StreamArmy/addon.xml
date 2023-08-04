@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.StreamArmy" name="[COLOR crimson]S[COLOR silver]tream Army Addons[/COLOR]" version="15.0.002" provider-name="@Nemzzy668 / @_Manc_ // LordJD">
+<addon id="repository.StreamArmy" name="[COLOR crimson]S[COLOR silver]tream Army Addons[/COLOR]" version="15.0.003" provider-name="@Nemzzy668 / @_Manc_ // LordJD">
 	<extension point="xbmc.addon.repository" name="Stream Army">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/nemesis668/repository.streamarmy18-19/main/addons.xml</info>
