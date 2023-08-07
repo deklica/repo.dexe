@@ -137,7 +137,7 @@ resource.font.robotocjksc
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="DaddyLive" version="3.0.0" provider-name="dEXE, THE CREW, mbebe">
+<addon id="plugin.video.daddylive" name="DaddyLive" version="3.0.1" provider-name="dEXE, THE CREW, mbebe">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
