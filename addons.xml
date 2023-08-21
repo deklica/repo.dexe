@@ -2154,8 +2154,7 @@ In addition to what livestreams allowed you to do, you can now,
 
 
 <addon id="script.module.acctview" name="acctviewer" version="2.1.6" provider-name="Zaxxon709">
-    <extension point="xbmc.python.pluginsource" library="default.py">
-    </extension>
+    <extension point="xbmc.python.pluginsource" library="default.py" />
     <extension point="xbmc.python.module" library="resources" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">View Accounts</summary>
