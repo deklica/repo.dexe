@@ -1,3 +1,7 @@
+2.3.1 - Added support for Furk/Easynews/FilePursuit. Added support for some metadata dependencies (Embuary Info, Metahandler, PVR Artwork Module). Bug fixes and cleanup.
+
+2.3.0 - Added Support for Metadata accounts. Fixed an issue with the Restore to Default function.
+
 2.2.9 - Added a service to check for Account Manager updates. Moved changelog to Advanced category
 
 2.2.8 - Fixed a small bug affected All-Debrid Authorizations.
