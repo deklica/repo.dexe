@@ -474,7 +474,7 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.megaiptv" name="[COLOR aqua]Mega IPTV[/COLOR]" version="1.3.0" provider-name="G-Man">
+<addon id="plugin.video.megaiptv" name="Mega IPTV" version="1.3.0" provider-name="G-Man">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests"/>
@@ -614,7 +614,7 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.scrubsv2" version="5.1.38" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.1.38" name="Scrubs v2" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -3407,7 +3407,7 @@ v5.2.14 (2017-01-23)
 </addon>
 
 
-<addon id="script.scrubsv2.artwork" version="1.6" name="[COLOR orange]Scrubs v2 Artwork[/COLOR]" provider-name="JewBMX">
+<addon id="script.scrubsv2.artwork" version="1.6" name="Scrubs v2 Artwork" provider-name="JewBMX">
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
         <summary>Scrubs v2 Artwork</summary>
