@@ -2,12 +2,12 @@
 
 <addons>
 
-<addon id="repository.dexe" name=" dEXE's Addons Repository" version="1.0.1" provider-name="dEXE">
+<addon id="repository.dexe" name=" dEXE's Addons Repository" version="1.0.2" provider-name="dEXE">
 	<extension point="xbmc.addon.repository" name="dEXE's Addons Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Kodi dEXE's Repo</summary>
-		<description>A collection of my, fixed, best and latest Kodi add-ons and dependencies.[CR][CR]Home for:[CR]Repo of all Repositories, Titlovi.com Unofficial, BauBau Vavoo, BauBau TV STB, GreenKlik Premium...</description>
+		<description>A collection of my, fixed/modded, best and latest Kodi add-ons and dependencies.[CR][CR]Home for:[CR]Repo of all Repositories, Titlovi.com Unofficial, BauBau Vavoo, BauBau TV STB, GreenKlik Premium...</description>
 		<disclaimer lang="en">This repository nor the addons within does not form part of the Kodi Media Centre. Please do not seek assistance with this repository or the addons from any of the Official Kodi Support Channels. The authors do not host any of the content in these add-ons and take no responsibility for the content found.</disclaimer>
 		<language>en</language>
 		<platform>all</platform>

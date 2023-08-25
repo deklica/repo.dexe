@@ -40,6 +40,7 @@ repository.catchuptvandmore
 repository.centry
 repository.chainsrepo
 repository.cMaNWizard
+repository.cocoscrapers
 repository.coldkeys
 repository.cywteow
 repository.dab
@@ -398,7 +399,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.2.0" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.2.1" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -613,6 +614,20 @@ repository.zachmorris
 			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
+</addon>
+
+<addon id="repository.cocoscrapers" name="CocoScrapers Repository" version="1.0.0" provider-name="CocoScrapers">
+    <extension point="xbmc.addon.repository" name="CocoScrapers Repository">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>CocoScrapers Repository</summary>
+        <description>Unofficial add-ons repository</description>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+    </extension>
 </addon>
 
 <addon id="repository.coldkeys" name="ColdKeys Repo" version="1.0.2" provider-name="Coldkeys">
@@ -1642,7 +1657,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.southpaw" name="The South Paw Repository" version="0.3.5" provider-name="Tom">
+<addon id="repository.southpaw" name="The South Paw Repository" version="0.3.6" provider-name="Tom">
 	<extension point="xbmc.addon.repository" name="The South Paw Repository"> 
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1746,7 +1761,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.tikipeter" name="Tikipeter's Repository" version="1.0.2" provider-name="Tikipeter">
+<addon id="repository.tikipeter" name="Tikipeter's Repository" version="1.0.3" provider-name="Tikipeter">
 	<extension point="xbmc.addon.repository" name="Tikipeter's Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1850,7 +1865,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.umbrella" name="Umbrella Repository" version="2.2.3" provider-name="Umbrella">
+<addon id="repository.umbrella" name="Umbrella Repository" version="2.2.4" provider-name="Umbrella">
 	<extension point="xbmc.addon.repository" name="Umbrella Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">

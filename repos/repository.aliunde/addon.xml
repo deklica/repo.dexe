@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.aliunde" name="[COLOR aqua]Aliunde Repository[/COLOR]" version="1.2.0" provider-name="Aliunde">
+    <addon id="repository.aliunde" name="[COLOR aqua]Aliunde Repository[/COLOR]" version="1.2.1" provider-name="Aliunde">
         <extension point="xbmc.addon.repository" name="[COLOR aqua]Aliunde Repository[/COLOR]">
 		    <dir>
                 <info compressed="false">https://fuse99.com/_aliunde/addons.xml</info>
@@ -35,7 +35,12 @@
            <info compressed="false">https://raw.githubusercontent.com/mrgsi/repository.glive/master/addons.xml</info>       
 		   <checksum>https://raw.githubusercontent.com/mrgsi/repository.glive/master/addons.xml.md5</checksum>
            <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.glive/master/</datadir>
-        </dir>  
+        </dir>          
+		<dir minversion="19.0">
+            <info compressed="false">https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/</datadir>
+        </dir>
         </extension>
         <extension point="xbmc.addon.metadata">
             <summary>Please do NOT post this Repository on Youtube, Facebook, Blogs or anywhere on the internet, thank you.</summary>

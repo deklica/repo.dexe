@@ -391,7 +391,7 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.gratis" name="Gratis" version="1.2.1" provider-name="X, Jon Bovi">
+<addon id="plugin.video.gratis" name="Gratis" version="1.2.2" provider-name="X, Jon Bovi">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests"/>
