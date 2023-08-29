@@ -1716,7 +1716,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.77" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.78" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="plugin.video.elementum" optional="true"/>
@@ -3061,7 +3061,7 @@ v5.2.14 (2017-01-23)
 
 <addon id="plugin.audio.ytmusic.exp"
        name="YT [COLOR red]Music[/COLOR] EXP"
-       version="1.0~beta16"
+       version="1.0~beta17"
        provider-name="ForeverGuest">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -3076,8 +3076,12 @@ v5.2.14 (2017-01-23)
     <summary lang="en">Experimental Youtube [COLOR red]Music[/COLOR] plugin</summary>
     <description lang="en">EXPerimental plugin that lets you play music from Youtube Music.</description>
     <news>
-1.0~beta16 (2023-07-06)
-- Apply fix to PyTube cipher.py from PyTube Pull Request #1680.
+1.0~beta17 (2023-08-26)
+- Apply another fix to PyTube cipher.py from PyTube discussions
+- Add 'Artist subscriptions' menu item to YtMusic Library menu
+- Extend navigability of artist search results
+- Add subscribe / unsubscribe context menu to artst menu items
+- Show albumart for album songs in search results
     </news>
     <assets>
       <icon>icon.png</icon>
