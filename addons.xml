@@ -1756,25 +1756,27 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.elementum.jackett" name="Elementum [COLOR FFFF6B00]Jackett[/COLOR]" version="0.0.1" provider-name="fugkco">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="plugin.video.elementum"/>
-        <import addon="script.module.urllib3"/>
-    </requires>
-    <extension point="xbmc.python.script" library="jackett.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Elementum torrents provider</summary>
-        <description lang="en">Elementum Jackett is a provider that connects Elementum to Jacket. You need to run your own Jackett server.</description>
-        <license>WTFPL, Version 2</license>
-        <website>https://github.com/fugkco/script.elementum.jackett</website>
-        <source>https://github.com/fugkco/script.elementum.jackett</source>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
+<addon id="script.elementum.jackett" name="Elementum [COLOR FF0291F7]Jackett[/COLOR]" version="2.1.0" provider-name="fugkco">  
+      <requires>    
+            <import addon="xbmc.python" version="3.0.0"/>    
+            <import addon="plugin.video.elementum"/>    
+            <import addon="script.module.urllib3"/>    
+            <import addon="script.module.kodi-six"/>    
+      </requires>  
+      <extension point="xbmc.python.script" library="src/main.py">    
+            <provides>executable</provides>    
+      </extension>  
+      <extension point="xbmc.addon.metadata">    
+            <summary lang="en">Elementum Jackett provider</summary>    
+            <description lang="en">Elementum Jackett is a provider that connects Elementum to Jacket. You need to run your own Jackett server.</description>    
+            <license>WTFPL, Version 2</license>    
+            <website>https://github.com/fugkco/script.elementum.jackett</website>    
+            <source>https://github.com/fugkco/script.elementum.jackett</source>    
+            <assets>      
+                  <icon>icon.png</icon>      
+            </assets>    
+        <news>[B]2.1.0[/B] (2023-05-29)</news>
+      </extension>  
 </addon>
 
 
