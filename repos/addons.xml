@@ -308,23 +308,17 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.a4ksubtitles" name="a4kSubtitles Repository" version="1.1.0" provider-name="Unknown">
-    <extension point="xbmc.addon.repository" name="a4kSubtitles Repository">
-		<dir>
-			<info>https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml.crc</checksum>
-			<datadir>https://github.com/newt-sc/a4kSubtitles/archive</datadir>
-			<artdir>https://github.com/a4k-openproject/a4kSubtitles/releases/download/v0.0.13</artdir>
-		</dir>
+<addon id="repository.a4ksubtitles" name="a4kSubtitles Repository" version="1.1.1" provider-name="Unknown">
+    <extension point="xbmc.addon.repository">
     </extension>
     <extension point="xbmc.addon.metadata">
-		<summary>a4kSubtitles</summary>
-		<description>a4kSubtitles Repository</description>
-		<platform>all</platform>
+        <summary>a4kSubtitles</summary>
+        <description>a4kSubtitles Repository</description>
+        <platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-	</extension>
+    </extension>
 </addon>
 
 <addon id="repository.abratchik" name="Alex Bratchik Kodi repository" version="1.0.2" provider-name="Alex Bratchik">
@@ -1031,11 +1025,6 @@ repository.zachmorris
 
 <addon id="repository.heppen" name="Heppen's Repository" version="7.0.0" provider-name="heppen">
     <extension point="xbmc.addon.repository" name="Heppen's Repository">
-        <dir minversion="19.0.0">
-            <info>https://raw.githubusercontent.com/heppen7/repository.heppen/main/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/heppen7/repository.heppen/main/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.github.com/heppen7/repository.heppen/main/zips/</datadir>
-        </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>heppen's repository</summary>
