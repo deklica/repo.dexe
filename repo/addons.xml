@@ -2,7 +2,7 @@
 
 <addons>
 
-<addon id="repository.dexe" name=" dEXE's Addons Repository" version="1.0.2" provider-name="dEXE">
+<addon id="repository.dexe" name=" dEXE's Addons Repository" version="1.0.3" provider-name="dEXE">
 	<extension point="xbmc.addon.repository" name="dEXE's Addons Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -38,11 +38,6 @@
 <addon id="repository.elementumorg" name="ElementumOrg repository" provider-name="elementumorg" version="0.0.2">
     <requires></requires>
     <extension point="xbmc.addon.repository">
-        <dir>
-            <info>http://127.0.0.1:65223/addons.xml</info>
-            <checksum>http://127.0.0.1:65223/addons.xml.md5</checksum>
-            <datadir>http://127.0.0.1:65223/</datadir>
-        </dir>
     </extension>
     <extension point="xbmc.python.script" library="default.py"/>
     <extension point="xbmc.service" library="service.py"/>
