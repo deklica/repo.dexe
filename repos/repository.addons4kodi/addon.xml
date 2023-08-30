@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.addons4kodi" name="Addons4Kodi Repository" version="2.0" provider-name="A4K">
+<addon id="repository.addons4kodi" name="Addons4Kodi Repository" version="2.1" provider-name="A4K">
 	<extension point="xbmc.addon.repository" name="Addons4Kodi Repository">
-        <dir minversion="18.0" maxversion="19.9.9">
+        <dir minversion="18.0">
             <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.addons4kodi/master/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.addons4kodi/master/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.addons4kodi/master/zips/</datadir>
@@ -16,23 +16,23 @@
             <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/leia/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/leia/zips/</datadir>
         </dir>
-        <dir minversion="19.0" maxversion="19.9.9">
+        <dir minversion="19.0">
             <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/</datadir>
         </dir>
-        <dir minversion="18.0" maxversion="19.9.9">
+        <dir minversion="18.0">
             <info>https://raw.githubusercontent.com/newt-sc/a4kStreaming/master/packages/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/newt-sc/a4kStreaming/master/packages/addons.xml.crc</checksum>
             <datadir>https://github.com/newt-sc/a4kStreaming/archive</datadir>
             <artdir>https://github.com/newt-sc/a4kStreaming/releases/download/v0.1.0</artdir>
         </dir>
-        <dir minversion="18.0" maxversion="19.9.9">
+        <dir minversion="18.0">
             <info>https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml.crc</checksum>
             <datadir>https://github.com/newt-sc/a4kSubtitles/archive</datadir>
             <artdir>https://github.com/a4k-openproject/a4kSubtitles/releases/download/v0.0.13</artdir>
-        </dir>        
+        </dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Addons4Kodi Repository</summary>

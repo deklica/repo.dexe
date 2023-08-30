@@ -115,6 +115,7 @@ repository.skins.pkscout
 repository.slyguy
 repository.southpaw
 repository.StreamArmy
+repository.subskip
 repository.tempest
 repository.temptv
 repository.thecrew
@@ -295,7 +296,7 @@ repository.zachmorris
     </extension>
 </addon>
 
-<addon id="repository.a4kstreaming" name="a4kStreaming Repository" version="1.0.0" provider-name="Unknown">
+<addon id="repository.a4kstreaming" name="a4kStreaming Repository" version="1.0.1" provider-name="Unknown">
 	<extension point="xbmc.addon.repository" name="a4kStreaming Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -336,7 +337,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.addons4kodi" name="Addons4Kodi Repository" version="2.0" provider-name="A4K">
+<addon id="repository.addons4kodi" name="Addons4Kodi Repository" version="2.1" provider-name="A4K">
 	<extension point="xbmc.addon.repository" name="Addons4Kodi Repository">
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1653,6 +1654,20 @@ repository.zachmorris
 			<icon>icon.png</icon>
 		</assets>
 	</extension>
+</addon>
+
+<addon id="repository.subskip" name="SubSkip Repository" version="1.0.0" provider-name="drinfernoo">
+    <extension point="xbmc.addon.repository" name="SubSkip Repository">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>SubSkip Repository</summary>
+        <description>Repository for SubSkip</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="repository.tempest" name="Tempest Repo" version="0.0.5" provider-name="Tempest">
