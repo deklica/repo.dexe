@@ -12,5 +12,9 @@
 		<description>The official repo for OpenScrapers!.</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
 	</extension>
 </addon>
