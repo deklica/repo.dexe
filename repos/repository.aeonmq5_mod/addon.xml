@@ -28,8 +28,8 @@
 		<description lang="en">Mod of skin Aeon MQ5 developed by Marcos Qui for XBMC Gotham intended for use in Kodi Leia/Matrix/Nexus (ver 18.+)</description>
 		<disclaimer/>
 		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
 	</extension>
-	<assets>
-		<icon>icon.png</icon>
-	</assets>
 </addon>
