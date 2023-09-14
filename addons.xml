@@ -254,7 +254,7 @@ resource.font.robotocjksc
 </addon>
 
 
-<addon id="plugin.video.gratis" name="Gratis" version="1.2.2" provider-name="X, Jon Bovi">
+<addon id="plugin.video.gratis" name="Gratis" version="1.2.5" provider-name="X, Jon Bovi">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests"/>
@@ -612,7 +612,7 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.ytchannels" name="YouTube Channels" version="0.4.5+matrix.1" provider-name="natko1412,mintsoft,yeahme49">
+<addon id="plugin.video.ytchannels" name="YouTube Channels" version="0.4.6+matrix.1" provider-name="natko1412,mintsoft,yeahme49">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.six" version="1.11.0"/>
