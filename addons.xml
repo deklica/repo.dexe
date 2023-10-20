@@ -3235,7 +3235,7 @@ v5.2.14 (2017-01-23)
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.83" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.84" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
