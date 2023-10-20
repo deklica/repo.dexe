@@ -269,6 +269,11 @@ repository.zachmorris
 
 <addon id="repository.5star" name="5Star Kodi addons" version="6.1.0" provider-name="Luis Rodrigues">
 	<extension point="xbmc.addon.repository" name="5Star Kodi addons">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension> 
 	<extension point="xbmc.addon.metadata">
 		<summary>Repository for 5Star Kodi addons</summary>
@@ -283,6 +288,11 @@ repository.zachmorris
 
 <addon id="repository.709" name="The 7o9Repo" version="1.3" provider-name="Zaxxon709">
     <extension point="xbmc.addon.repository" name="The7o9Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>The 7o9Repo</summary>
@@ -298,6 +308,11 @@ repository.zachmorris
 
 <addon id="repository.a4kstreaming" name="a4kStreaming Repository" version="1.0.1" provider-name="Unknown">
 	<extension point="xbmc.addon.repository" name="a4kStreaming Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>a4kStreaming</summary>
@@ -311,6 +326,11 @@ repository.zachmorris
 
 <addon id="repository.a4ksubtitles" name="a4kSubtitles Repository" version="1.1.1" provider-name="Unknown">
     <extension point="xbmc.addon.repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>a4kSubtitles</summary>
@@ -324,6 +344,11 @@ repository.zachmorris
 
 <addon id="repository.abratchik" name="Alex Bratchik Kodi repository" version="1.0.2" provider-name="Alex Bratchik">
 	<extension point="xbmc.addon.repository" name="Alex Bratchik Kodi repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<news>First release for Multi-version</news>
@@ -339,6 +364,11 @@ repository.zachmorris
 
 <addon id="repository.addons4kodi" name="Addons4Kodi Repository" version="2.1" provider-name="A4K">
 	<extension point="xbmc.addon.repository" name="Addons4Kodi Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Addons4Kodi Repository</summary>
@@ -354,6 +384,11 @@ repository.zachmorris
 
 <addon id="repository.aenemapy" name="Aenemapy Addons Repository" version="2021.04.23" provider-name="aenemapy">
 	<extension point="xbmc.addon.repository" name="Aenemapy Addons Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Aenemapy repo</summary>
@@ -367,6 +402,11 @@ repository.zachmorris
 
 <addon id="repository.aeonmq5_mod" name="Aeon MQ5 Mod Skin Repository" version="11.1.0" provider-name="scott967">
 	<extension point="xbmc.addon.repository" name="Aeon MQ5 Leiamod Skin Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Install Aeon MQ 5 Mod skin from Add-on Repository</summary>
@@ -381,6 +421,11 @@ repository.zachmorris
 
 <addon id="repository.alado.tv" name="Alado Repository" version="0.0.2" provider-name="ALADO">
 	<extension point="xbmc.addon.repository" name="repository.alado.tv">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>By Team Milhano</summary>
@@ -396,6 +441,11 @@ repository.zachmorris
 
 <addon id="repository.aliunde" name="Aliunde Repository" version="1.2.3" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Please do NOT post this Repository on Youtube, Facebook, Blogs or anywhere on the internet, thank you.</summary>
@@ -411,6 +461,11 @@ repository.zachmorris
 
 <addon id="repository.allanime" name="All Anime Repository" version="1.1.0" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="All Anime Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
@@ -425,6 +480,11 @@ repository.zachmorris
     
 <addon id="repository.arrownegra" name="Arrow Negra Repository" version="2.05" provider-name="Flecha Negra">
 	<extension point="xbmc.addon.repository" name="Arrow Negra Repositorio">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>repositorio Arrow Negra</summary>
@@ -441,6 +501,11 @@ repository.zachmorris
 
 <addon id="repository.arxtic-ape" name="Arxtic Ape Addon Repository" version="1.0.0" provider-name="arxtic-ape">
 	<extension point="xbmc.addon.repository" name="Arxtic Ape Addon Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install Arxtic Ape Addons</summary>
@@ -451,6 +516,11 @@ repository.zachmorris
 
 <addon id="repository.atreides.tools" name="House Atreides Tools" version="0.0.1" provider-name="MuadDib">
 	<extension point="xbmc.addon.repository" name="House Atreides Tools">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>House Atreides Official Tools Repository</summary>
@@ -466,6 +536,11 @@ repository.zachmorris
 
 <addon id="repository.autowidget" name="AutoWidget Repository" version="1.1" provider-name="drinfernoo">
 	<extension point="xbmc.addon.repository" name="AutoWidget Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>AutoWidget</summary>
@@ -477,22 +552,32 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.bugatsinho" name="Bugatsinho repository" version="2.6" provider-name="Bugatsinho">
-	<extension point="xbmc.addon.repository" name="Bugatsinho repository">
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Bugatsinho repository</summary>
-		<description>This repository contains Greek, Spanish and other addons!Read first each addon's description!</description>
-		<platform>all</platform>
-		<assets>
+<addon id="repository.bugatsinho" name=" Bugatsinho repository" version="2.7" provider-name="Bugatsinho">
+    <extension point="xbmc.addon.repository" name="Bugatsinho repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Bugatsinho repository</summary>
+        <description>This repository contains Greek, Spanish and other addons!Read first each addon's description!</description>
+        <assets>
 			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
+            <fanart>fanart.jpg</fanart>
 		</assets>
+        <platform>all</platform>
     </extension>
 </addon>
 
 <addon id="repository.butter" name="Butter Fingers Repo" version="2.2.0" provider-name="J1">
 	<extension point="xbmc.addon.repository" name="Butter Fingers Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Butter Fingers Repo</summary>
@@ -510,6 +595,11 @@ repository.zachmorris
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
     <extension point="xbmc.addon.repository" name="Burekas Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Burekas Repo For Kodi - The addons with the plus</summary>
@@ -524,6 +614,11 @@ repository.zachmorris
 
 <addon id="repository.canuck" name="Canuck Repository" version="0.1.0" provider-name="The Crazy Canuck">
 	<extension point="xbmc.addon.repository" name="Canuck Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Please do NOT post this Repository on Youtube, Facebook, Blogs or anywhere on the internet, thank you.</summary>
@@ -539,6 +634,11 @@ repository.zachmorris
 
 <addon id="repository.castagnait" name="CastagnaIT Repository" version="2.0.0" provider-name="castagnait">
 	<extension point="xbmc.addon.repository" name="CastagnaIT Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>CastagnaIT Repository</summary>
@@ -552,6 +652,11 @@ repository.zachmorris
 
 <addon id="repository.catchuptvandmore" name="Catch-up TV & More's Release repository" version="0.0.6" provider-name="SylvainCecchetto, wwark">
 	<extension point="xbmc.addon.repository" name="Catch-up TV & More's Release repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install Add-ons from Catch-up TV &amp; More repository</summary>
@@ -567,6 +672,11 @@ repository.zachmorris
 
 <addon id="repository.centry" name="centry Repo" version="0.0.1" provider-name="centry">
 	<extension point="xbmc.addon.repository" name="centry">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>centry</summary>
@@ -580,6 +690,11 @@ repository.zachmorris
 
 <addon id="repository.chainsrepo" name="Chains Repository" provider-name="Chains" version="0.0.15">
 	<extension point="xbmc.addon.repository" name="Chains Repo" >
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Welcome to the Chains Repository</summary>
@@ -599,6 +714,11 @@ repository.zachmorris
 
 <addon id="repository.cMaNWizard" name="cMaN's Wizard Repository" version="1.0.7" provider-name="cMaN">
 	<extension point="xbmc.addon.repository" name="cMaN's Wizard Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install all the latest Builds</summary>
@@ -613,6 +733,11 @@ repository.zachmorris
 
 <addon id="repository.cocoscrapers" name="CocoScrapers Repository" version="1.0.0" provider-name="CocoScrapers">
     <extension point="xbmc.addon.repository" name="CocoScrapers Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
@@ -627,6 +752,11 @@ repository.zachmorris
 
 <addon id="repository.coldkeys" name="ColdKeys Repo" version="1.0.2" provider-name="Coldkeys">
 	<extension point="xbmc.addon.repository" name="ColdKeys Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>The Coldkeys Repo</summary>
@@ -641,6 +771,11 @@ repository.zachmorris
 
 <addon id="repository.cywteow" name="cywteow Add-ons" version="1.1.1" provider-name="cywteow">
 	<extension point="xbmc.addon.repository" name="cywteow Add-ons">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>cywteow Add-ons</summary>
@@ -649,6 +784,11 @@ repository.zachmorris
 
 <addon id="repository.dab" name="DaButcher Repository" version="1.6" provider-name="DaButcher">
 	<extension point="xbmc.addon.repository" name="DaB Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>DaButcher Repo fixed for Nexus Kodi 20</summary>
@@ -663,6 +803,11 @@ repository.zachmorris
 
 <addon id="repository.daedalusbln" name="DaedalusBLN Repository" version="1.0.2" provider-name="DaedalusBLN">
 	<extension point="xbmc.addon.repository" name="DaedalusBLN Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>DaedalusBLN Repository</summary>
@@ -678,6 +823,11 @@ repository.zachmorris
 
 <addon id="repository.DejaVu" name="DejaVu Repo" version="1.0.3" provider-name="The Wombles">
 	<extension point="xbmc.addon.repository" name="DejaVu Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>DejaVu</summary>
@@ -692,6 +842,11 @@ repository.zachmorris
 
 <addon id="repository.denimnani" name="DenimNani Repo" version="0.0.2" provider-name="DenimNani">
 	<extension point="xbmc.addon.repository" name="DenimNani Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">DenimNani repository.</summary>
@@ -706,6 +861,11 @@ repository.zachmorris
 
 <addon id="repository.diggz" name="Diggz Repository" version="15" provider-name="Diggz">
 	<extension point="xbmc.addon.repository" name="Diggz Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Diggz Repository</summary>
@@ -719,6 +879,11 @@ repository.zachmorris
 
 <addon id="repository.diggzmatrixskins" name="Diggz Matrix Skins Repository" version="1.0" provider-name="Diggz">
 	<extension point="xbmc.addon.repository" name="Diggz Matrix Skins Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Diggz Matrix Skins Repo</summary>
@@ -729,6 +894,11 @@ repository.zachmorris
 
 <addon id="repository.dirtyg" name="Dirty-G Repository" version="1.4.1" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="Dirty-G Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Dirty-G Repo</summary>
@@ -742,6 +912,11 @@ repository.zachmorris
 
 <addon id="repository.dis90" name="Dis90 add-on repository" version="1.0.1" provider-name="Dis90">
     <extension point="xbmc.addon.repository" name="Example Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Dis90 Repository for Kodi 19</summary>
@@ -757,6 +932,11 @@ repository.zachmorris
 
 <addon id="repository.djaythemes" name="Djay Themes" version="2.5" provider-name="Djay">
 	<extension point="xbmc.addon.repository" name="Djay">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Repo for all of Djays awesome themes</summary>
@@ -769,9 +949,13 @@ repository.zachmorris
 	</extension>
 </addon>
 
-
 <addon id="repository.dobbelina" name="Dobbelina Repository" version="1.0.4" provider-name="dobbelina">
 	<extension point="xbmc.addon.repository" name="Dobbelina Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Unofficial Addons for Kodi</summary>
@@ -787,6 +971,11 @@ repository.zachmorris
 
 <addon id="repository.doomzday" name="Doomzday Repo" version="1.1.0" provider-name="DD Team">
 	<extension point="xbmc.addon.repository" name="Doomzday Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Doomzday Repository</summary>
@@ -802,6 +991,11 @@ repository.zachmorris
 
 <addon id="repository.ezra" name="Ezra Repository" version="0.0.2" provider-name="Ezra-Hubbard">
 	<extension point="xbmc.addon.repository" name="Ezra Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Ezra</summary>
@@ -816,6 +1010,11 @@ repository.zachmorris
 
 <addon id="repository.EzzerMacsWizard" name="EzzerMacs Wizard Repository" version="1.1.7" provider-name="EzzerMac">
 	<extension point="xbmc.addon.repository" name="EzzerMacs Wizard Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install all the latest Builds</summary>
@@ -830,6 +1029,11 @@ repository.zachmorris
 
 <addon id="repository.fanfilm" name="FanFilm repo" version="0.9" provider-name="fanfilm">
 	<extension point="xbmc.addon.repository" name="FanFilm repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Repozytorium wtyczki FanFilm</summary>
@@ -843,6 +1047,11 @@ repository.zachmorris
 
 <addon id="repository.foxystreams" name="FoxyStreams Repo" version="0.0.2" provider-name="ruinernin">
 	<extension point="xbmc.addon.repository" name="FoxyStreams">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>FoxyStreams Repo</summary>
@@ -855,7 +1064,11 @@ repository.zachmorris
 
 <addon id="repository.fr33p0rt" name="fr33p0rt Repository" version="0.9.1" provider-name="fr33p0rt">
 	<extension point="xbmc.addon.repository" name="fr33p0rt Repository">
-	</extension>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>fr33p0rt Kodi Repository</summary>
 		<description>This repository contains my addons for Kodi. http://gitlab.com/fr33p0rt</description>
@@ -869,6 +1082,11 @@ repository.zachmorris
 
 <addon id="repository.freeg" name="Free-G Repository" version="2.0.0" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="Free-G Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
@@ -882,6 +1100,11 @@ repository.zachmorris
 
 <addon id="repository.frenchdj" name="frenchdj Repository" version="0.0.3" provider-name="frenchdj">
 	<extension point="xbmc.addon.repository" name="frenchdj Add-on Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>frenchdj repository</summary>
@@ -897,6 +1120,11 @@ repository.zachmorris
 
 <addon id="repository.gaia.full" version="6.1.0" name="Gaia Repository (Full)" provider-name="Gaia">
 	<extension point="xbmc.addon.repository" name="Gaia Repository (Full)">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Gaia Extended Repository</summary>
@@ -917,6 +1145,11 @@ repository.zachmorris
 
 <addon id="repository.ghettomatrix" name="Ghetto Astronaut Matrix Repo" version="1.1.1" provider-name="Ghetto Astronaut">
 	<extension point="xbmc.addon.repository" name="Ghetto Astronaut Matrix Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Ghetto Astronaut Build Wizard Repo</summary>
@@ -930,9 +1163,13 @@ repository.zachmorris
 	</extension>
 </addon>
 
-  
 <addon id="repository.glive" name="G-Live Repository" version="1.2.0" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="G-Live Repository"> 
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>A collection of Free-IPTV Add-ons</summary>
@@ -944,9 +1181,13 @@ repository.zachmorris
 	</extension>
 </addon>
 
-
 <addon id="repository.grindhousekodi" name="Grindhouse Repository" version="1.7" provider-name="Grindhouse">
 	<extension point="xbmc.addon.repository" name="Grindhouse">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en"/>
@@ -961,6 +1202,11 @@ repository.zachmorris
 
 <addon id="repository.gscribe" name="G-Scribe Repository" version="1.3.0" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="G-Scribe Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>A repository of Subscription Add-ons</summary>
@@ -974,6 +1220,11 @@ repository.zachmorris
 
 <addon id="repository.gsource" name="G-Source Repository" version="2.1.0" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="G-Source Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 <extension point="xbmc.addon.metadata">
 	<summary>For Kodi 19 and above</summary>
@@ -987,6 +1238,11 @@ repository.zachmorris
 
 <addon id="repository.gsports" name="G-Sports+ Repository" version="1.3.2" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="G-Sport Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Kodi Sports and IPTV Add-ons</summary>
@@ -1000,6 +1256,11 @@ repository.zachmorris
 
 <addon id="repository.gtube" name="G-Tube Repository" version="1.1.0" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="G-Tube Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>YouTube Category Add-ons</summary>
@@ -1013,6 +1274,11 @@ repository.zachmorris
 
 <addon id="repository.gujal" name="Gujal Addons Repository" version="2.0.3" provider-name="gujal">
 	<extension point="xbmc.addon.repository" name="Gujal Addons Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Third party Addons for Kodi</summary>
@@ -1026,6 +1292,11 @@ repository.zachmorris
 
 <addon id="repository.heppen" name="Heppen's Repository" version="7.0.0" provider-name="heppen">
     <extension point="xbmc.addon.repository" name="Heppen's Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>heppen's repository</summary>
@@ -1039,6 +1310,11 @@ repository.zachmorris
 
 <addon id="repository.hooty" name="Hooty's Repository" version="1.0" provider-name="Goldenfreddy0703">
 	<extension point="xbmc.addon.repository" name="Hooty's Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Hooty's Repository</summary>
@@ -1053,6 +1329,11 @@ repository.zachmorris
 
 <addon id="repository.ivueguide" name="iVue2 TV Guide Repo" version="0.0.1" provider-name="iVue">
 	<extension point="xbmc.addon.repository" name="iVue2 TV Guide Add-ons Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install iVue2 TV Guide </summary>
@@ -1068,6 +1349,11 @@ repository.zachmorris
 
 <addon id="repository.jenrepo" name="Jen Repo" version="1.0.3" provider-name="Community">
 	<extension point="xbmc.addon.repository" name="Jen Addon Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Official Repo For Jen Dependencies</summary>
@@ -1083,6 +1369,11 @@ repository.zachmorris
 
 <addon id="repository.jewrepo" name="JewRepo" version="1.6.0" provider-name="JewBMX">
 	<extension point="xbmc.addon.repository" name="JewRepo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Free the People, Free the World!</summary>
@@ -1096,6 +1387,11 @@ repository.zachmorris
 
 <addon id="repository.jsergio" name="jsergio Repo" version="1.0.4" provider-name="jsergio">
 	<extension point="xbmc.addon.repository" name="jsergio repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Repo for jsergio Add-ons</summary>
@@ -1110,6 +1406,11 @@ repository.zachmorris
 
 <addon id="repository.kodi.yatse.tv" name="Yatse Kodi Add-on repository" version="1.1.0" provider-name="Yatse">
 	<extension point="xbmc.addon.repository" name="Yatse Kodi Add-on repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Yatse repository for Kodi helper addons</summary>
@@ -1125,6 +1426,11 @@ repository.zachmorris
 
 <addon id="repository.kodifitzwell" version="0.0.1" name="kodifitzwell Repository" provider-name="kodifitzwell">
 	<extension point="xbmc.addon.repository" name="kodifitzwell repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
@@ -1137,6 +1443,11 @@ repository.zachmorris
 
 <addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.4" provider-name="Kodinerds">
 	<extension point="xbmc.addon.repository" name="Kodinerds Addon Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Addon repository of the Kodinerds Community</summary>
@@ -1154,6 +1465,11 @@ repository.zachmorris
 
 <addon id="repository.lanik_p3" name="Lanik Repository" provider-name="Dalibor Lanik" version="1.0.0a">
 	<extension name="Lanik (Python 3) Repository" point="xbmc.addon.repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Repository for my KODI plugins</summary>
@@ -1168,6 +1484,11 @@ repository.zachmorris
 
 <addon id="repository.lime" name="Lime Add-ons" version="1.0.2" provider-name="groggyegg">
 	<extension point="xbmc.addon.repository" name="Lime Add-ons">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Lime Repository</summary>
@@ -1182,6 +1503,11 @@ repository.zachmorris
 
 <addon id="repository.loop" name="Loop Repository" version="3.0.3" provider-name="The Loop">
 	<extension point="xbmc.addon.repository" name="Loop Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Loop Repository</summary>
@@ -1194,6 +1520,11 @@ repository.zachmorris
 
 <addon id="repository.Magnetic" name="Magnetic Repo" version="1.1.0b" provider-name="1-cool-guy">
 	<extension point="xbmc.addon.repository" name="Magnetic Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Official Magnetic Repository</summary>
@@ -1209,6 +1540,11 @@ repository.zachmorris
 
 <addon id="repository.marcelveldt" version="1.0.3" name="Marcelveldt's BETA Repository" provider-name="marcelveldt, finkleandeinhorn">
 	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
@@ -1223,6 +1559,11 @@ repository.zachmorris
 
 <addon id="repository.mbebe" name="mbebe" version="0.10" provider-name="mbebe">
 	<extension point="xbmc.addon.repository" name="mbebe">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>...</summary>
@@ -1237,6 +1578,11 @@ repository.zachmorris
 
 <addon id="repository.melies" name="Melies Addon repository" version="0.1.5" provider-name="luizoti">
 	<extension point="xbmc.addon.repository" name="Example Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Melies Addon repository</summary>
@@ -1251,6 +1597,11 @@ repository.zachmorris
 
 <addon id="repository.michaz" name="Michaz Repository" provider-name="Michaz" version="4.3">
 	<extension point="xbmc.addon.repository" name="Michaz Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
@@ -1264,6 +1615,11 @@ repository.zachmorris
 
 <addon id="repository.misfitmods" name="misfit mods Repository" version="1.5" provider-name="The Turtle">
 	<extension point="xbmc.addon.repository" name="misfit mods: Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Home of the Misfit Mods Wizard</summary>
@@ -1278,6 +1634,11 @@ repository.zachmorris
 
 <addon id="repository.NarcacistWizard" name="Narcacist's Wizard Repository" version="1.1.9" provider-name="Narcacist">
 	<extension point="xbmc.addon.repository" name="Narcacist's Wizard Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install all the latest Builds</summary>
@@ -1292,6 +1653,11 @@ repository.zachmorris
 
 <addon id="repository.newdiamond" name="New DiamondInfo_Mod Repo" version="2.2" provider-name="fryhenryj">
 	<extension point="xbmc.addon.repository" name="newdiamondinfo_mod">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>New DiamondInfo_Mod Repo</summary>
@@ -1306,6 +1672,11 @@ repository.zachmorris
 
 <addon id="repository.nixgates" name="Nixgates Repo" version="2.2.0" provider-name="Nixgates">
 	<extension point="xbmc.addon.repository" name="Nixgates Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Nixgates</summary>
@@ -1320,6 +1691,11 @@ repository.zachmorris
 
 <addon id="repository.ocean" name="Ocean" version="0.0.1" provider-name="wahed">
 	<extension point="xbmc.addon.repository" name="Ocean">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Ocean</summary>
@@ -1333,6 +1709,11 @@ repository.zachmorris
 
 <addon id="repository.octopus" name="Octopus Repository" version="0.2.06" provider-name="Twiglet">
 	<extension point="xbmc.addon.repository" name="Octopus Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Please do NOT post this Repository on Youtube, Facebook, Blogs or anywhere on the internet, thank you.</summary>
@@ -1348,6 +1729,11 @@ repository.zachmorris
 
 <addon id="repository.One" name="ONEPLAY Repo" version="1.10" provider-name="TEAM ONE PLAY">
 	<extension point="xbmc.addon.repository" name="OnePlay Repositorio">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="pt_br">Repositorio Oficial OnePlay</summary>
@@ -1363,6 +1749,11 @@ repository.zachmorris
 
 <addon id="repository.onealliancereborn" name="OneAlliance Reborn Repo" version="7.0.1" provider-name="RedWizard">
     <extension point="xbmc.addon.repository" name="OneAlliance Reborn Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">OneAlliance Reborn Builds and Add-ons</summary>
@@ -1385,6 +1776,11 @@ repository.zachmorris
 
 <addon id="repository.openscrapers" name="OpenScrapers Repository" version="1.0" provider-name="A4K">
 	<extension point="xbmc.addon.repository" name="OpenScrapers Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>OpenScrapers Repository</summary>
@@ -1399,6 +1795,11 @@ repository.zachmorris
 
 <addon id="repository.openwizard" name="OpenWizard Repository" version="2.0" provider-name="drinfernoo">
 	<extension point="xbmc.addon.repository" name="OpenWizard Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>OpenWizard</summary>
@@ -1415,6 +1816,11 @@ repository.zachmorris
 
 <addon id="repository.orion" version="4.5.0" name="Orion Repository" provider-name="Orion">
 	<extension point="xbmc.addon.repository" name="Orion Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Addon and Update Repository</summary>
@@ -1433,6 +1839,11 @@ repository.zachmorris
 
 <addon id="repository.otaku" name="Otaku's Repository" version="1.0" provider-name="Goldenfreddy0703">
     <extension point="xbmc.addon.repository" name="Otaku's Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Otaku's Repository</summary>
@@ -1448,6 +1859,11 @@ repository.zachmorris
 
 <addon id="repository.peno64" name="peno64 Repository" version="1.3" provider-name="peno64">
 	<extension point="xbmc.addon.repository" name="peno64 repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>peno64 repository</summary>
@@ -1462,6 +1878,11 @@ repository.zachmorris
 
 <addon id="repository.pikdum" name="pikdum's Repo" version="0.1.0" provider-name="pikdum">
 	<extension point="xbmc.addon.repository" name="pikdum's repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>pikdum's repo</summary>
@@ -1472,6 +1893,11 @@ repository.zachmorris
 
 <addon id="repository.prototype" name="ProtoType Repo" version="1.0" provider-name="ProtoType">
 	<extension point="xbmc.addon.repository" name="ProtoType Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>ProtoType Repo</summary>
@@ -1487,6 +1913,11 @@ repository.zachmorris
 
 <addon id="repository.rector.stuff" name="Rector Stuff" version="1.0.4" provider-name="rmrector">
 	<extension point="xbmc.addon.repository" name="Rector Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">A little place for my stuff.</summary>
@@ -1500,6 +1931,11 @@ repository.zachmorris
 
 <addon id="repository.repoil.club" name="Repo IL Club" version="1.1.0" provider-name="RepoIL.Club">
 	<extension point="xbmc.addon.repository" name="Repo IL Club">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Repo IL Club</summary>
@@ -1513,6 +1949,11 @@ repository.zachmorris
 
 <addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
 	<extension point="xbmc.addon.repository" name="ResolveURL Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
@@ -1526,6 +1967,11 @@ repository.zachmorris
 
 <addon id="repository.Rising.Tides" name="Rising Tides Repository" version="1.1" provider-name="@mullafabz">
 	<extension point="xbmc.addon.repository" name="Rising Tides Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>All types of Contents</summary>
@@ -1540,6 +1986,11 @@ repository.zachmorris
 
 <addon id="repository.Rockcrusher" name="Rocks Repository" version="2.8" provider-name="Rock">
 	<extension point="xbmc.addon.repository" name="Rocks Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Rocks Addons</summary>
@@ -1555,6 +2006,11 @@ repository.zachmorris
 
 <addon id="repository.sandmann79-py3.plugins" name="Sandmann79s Repository" version="1.0.4" provider-name="Sandmann79">
 	<extension point="xbmc.addon.repository" name="Sandmann79s Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Various Addons for Kodi</summary>
@@ -1564,6 +2020,11 @@ repository.zachmorris
 
 <addon id="repository.sgkodi" name="SGKODI REPOSITORY" version="1.1.6" provider-name="SGK">
     <extension point="xbmc.addon.repository" name="SGKODI REPOSITORY">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">SGKODI REPOSITORY</summary>
@@ -1582,6 +2043,11 @@ repository.zachmorris
 
 <addon id="repository.skinbase.nexus" name="GUIDOS SKINBASE Only Skins for Kodi 19+20" version="3.0.06" provider-name="TEAM-SKINBASE">
 	<extension point="xbmc.addon.repository" name="GUIDOS SKINBASE REPO">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Guidos SKINBASE Repo</summary>
@@ -1602,6 +2068,11 @@ repository.zachmorris
 
 <addon id="repository.skins.pkscout" name="pkscout's Skin Modifications" version="1.2.1" provider-name="pkscout">
 	<extension point="xbmc.addon.repository" name="Skin modifications by pkscout">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Install skin modifications by pkscout</summary>
@@ -1617,6 +2088,11 @@ repository.zachmorris
 
 <addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.8">
 	<extension point="xbmc.addon.repository" name="SlyGuy Repository (slyguy.uk)">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
@@ -1629,6 +2105,11 @@ repository.zachmorris
 
 <addon id="repository.southpaw" name="The South Paw Repository" version="0.3.9" provider-name="Tom">
 	<extension point="xbmc.addon.repository" name="The South Paw Repository"> 
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Please do NOT post this Repository on Youtube, Facebook, Blogs or anywhere on the internet, thank you.</summary>
@@ -1644,6 +2125,11 @@ repository.zachmorris
 
 <addon id="repository.StreamArmy" name="Stream Army Addons" version="15.0.004" provider-name="@Nemzzy668 / @_Manc_ // LordJD">
 	<extension point="xbmc.addon.repository" name="Stream Army">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Stream Army Repo</summary>
@@ -1658,6 +2144,11 @@ repository.zachmorris
 
 <addon id="repository.subskip" name="SubSkip Repository" version="1.0.0" provider-name="drinfernoo">
     <extension point="xbmc.addon.repository" name="SubSkip Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>SubSkip Repository</summary>
@@ -1672,6 +2163,11 @@ repository.zachmorris
 
 <addon id="repository.tempest" name="Tempest Repo" version="0.0.5" provider-name="Tempest">
 	<extension point="xbmc.addon.repository" name="Tempest Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">kodi addon</summary>
@@ -1686,6 +2182,11 @@ repository.zachmorris
 
 <addon id="repository.temptv" name="Temptv Repo" version="0.0.5" provider-name="Tempest">
 	<extension point="xbmc.addon.repository" name="Tempest Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">kodi addon</summary>
@@ -1700,6 +2201,11 @@ repository.zachmorris
 
 <addon id="repository.thecrew" name="THE CREW REPO" provider-name="The Crew" version="0.3.4">
 	<extension point="xbmc.addon.repository" name="The Crew" >
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">The Crew is a team of individuals that does what it can to provide others, you the best in entertainment.</summary>
@@ -1719,6 +2225,11 @@ repository.zachmorris
 
 <addon id="repository.thewarehouse" name="The WareHouse Repository" version="22.6.8" provider-name="• Tech E Coyote •">
 	<extension point="xbmc.addon.repository" name="The WareHouse Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>The WareHouse Repository</summary>
@@ -1733,6 +2244,11 @@ repository.zachmorris
 
 <addon id="repository.tidal2" name="TIDAL2 Addons" version="0.2.1" provider-name="arneson">
 	<extension point="xbmc.addon.repository" name="TIDAL2 Addons">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install TIDAL2 Addons</summary>
@@ -1747,6 +2263,11 @@ repository.zachmorris
 
 <addon id="repository.tikipeter" name="Tikipeter's Repository" version="1.0.3" provider-name="Tikipeter">
 	<extension point="xbmc.addon.repository" name="Tikipeter's Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
@@ -1761,6 +2282,11 @@ repository.zachmorris
 
 <addon id="repository.titan.bingie.mod" name="Titan BINGIE MOD Repository" provider-name="AchillesPunks, Matke" version="2.0.0">
 	<extension name="titan bingie mod repository" point="xbmc.addon.repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Home of Titan BINGIE MOD</summary>
@@ -1775,6 +2301,11 @@ repository.zachmorris
 
 <addon id="repository.topg" name="Top-G Repository" version="1.2.0" provider-name="G-Man">
 	<extension point="xbmc.addon.repository" name="Top-G Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
@@ -1788,6 +2319,11 @@ repository.zachmorris
 
 <addon id="repository.torrest" name="Torrest Add-on repository" provider-name="i96751414" version="0.0.7">
 	<extension point="xbmc.addon.repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
@@ -1809,6 +2345,11 @@ repository.zachmorris
 
 <addon id="repository.twilight0" name="Twilight0 Addon Repository" version="1.7" provider-name="Twilight0">
 	<extension point="xbmc.addon.repository" name="Twilight0 Addon Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Repository for various of my add-ons</summary>
@@ -1823,6 +2364,11 @@ repository.zachmorris
 
 <addon id="repository.twilight0.libs" name="Twilight0 Libs Repository" version="1.4" provider-name="Twilight0">
 	<extension point="xbmc.addon.repository" name="Twilight0 Libs Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Repository for library addons</summary>
@@ -1837,6 +2383,11 @@ repository.zachmorris
 
 <addon id="repository.ukturk" name="UKTurk Addon Repository" version="3.0.1" provider-name="UKTurk">
 	<extension point="xbmc.addon.repository" name="UKTurk Addon Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Install UKTurk</summary>
@@ -1851,6 +2402,11 @@ repository.zachmorris
 
 <addon id="repository.umbrella" name="Umbrella Repository" version="2.2.4" provider-name="Umbrella">
 	<extension point="xbmc.addon.repository" name="Umbrella Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Umbrella Repository</summary>
@@ -1866,6 +2422,11 @@ repository.zachmorris
 
 <addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
 	<extension point="xbmc.addon.repository" name="universalscrapers">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
@@ -1880,6 +2441,11 @@ repository.zachmorris
 
 <addon id="repository.Wherethemonsterslive" name="Where The Monsters Live Repository" version="1.10" provider-name="Wolfey B">
 	<extension point="xbmc.addon.repository" name="Where The Monsters Live Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary></summary>
@@ -1895,6 +2461,11 @@ repository.zachmorris
 
 <addon id="repository.wltv" name="WorldLiveTV Addon Repository" version="1.0.2" provider-name="WLTV-Group">
 	<extension point="xbmc.addon.repository" name="WorldLiveTV Addon Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>WorldLiveTV Repository</summary>
@@ -1912,20 +2483,30 @@ repository.zachmorris
 </addon>
 
 <addon id="repository.wnt2" name="WatchNixtoons2 Repository" version="1.0.1" provider-name="G-Man">
-<extension point="xbmc.addon.repository" name="WatchNixtoons2 Repository">
-</extension>
-<extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary>A simple repo for WatchNixtoons2</summary>
-    <description>WatchNixtoons2 is an Anime and Chartoon Add-on that gets frequent updates. The repo is by G-Man but the add-on is maintained by lolage331 on reddit: http://bit.ly/wnt2dev</description>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-</extension>
+	<extension point="xbmc.addon.repository" name="WatchNixtoons2 Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>A simple repo for WatchNixtoons2</summary>
+		<description>WatchNixtoons2 is an Anime and Chartoon Add-on that gets frequent updates. The repo is by G-Man but the add-on is maintained by lolage331 on reddit: http://bit.ly/wnt2dev</description>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="repository.World" name="World Repository" version="0.1.3" provider-name="World">
 	<extension point="xbmc.addon.repository" name="World Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>World Repository</summary>
@@ -1940,6 +2521,11 @@ repository.zachmorris
 
 <addon id="repository.WorldNexus" name="World Nexus Repository" version="0.1.3" provider-name="World">
 	<extension point="xbmc.addon.repository" name="World Nexus Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>World Nexus Repository</summary>
@@ -1954,6 +2540,11 @@ repository.zachmorris
 
 <addon id="repository.Worldolympic" name="World-Olympic Repository" version="1.1.2" provider-name="World">
 	<extension point="xbmc.addon.repository" name="World-Olympic Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>World-Olympic Repository</summary>
@@ -1968,6 +2559,11 @@ repository.zachmorris
 
 <addon id="repository.Worldrepo" name="World-Repo Repository" version="1.1.1" provider-name="World">
 	<extension point="xbmc.addon.repository" name="World-Repo Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>World-Repo Repository</summary>
@@ -1982,6 +2578,11 @@ repository.zachmorris
 
 <addon id="repository.xbmcadult" name="XBMC-Adult Addons" version="1.0.8" provider-name="xbmc-adult">
 	<extension point="xbmc.addon.repository" name="XBMC Adult Addons">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>XBMC Addons for Adults Only</summary>
@@ -1996,6 +2597,11 @@ repository.zachmorris
 
 <addon id="repository.xonfluence" name="Xonfluence Repository" version="1.0.2" provider-name="bsoriano">
 	<extension point="xbmc.addon.repository" name="Xonfluence Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Xonfluence skin for Matrix</summary>
@@ -2010,6 +2616,11 @@ repository.zachmorris
 
 <addon id="repository.xstream" name="xStream Repository" version="1.2.0" provider-name="xStream-Team">
 	<extension point="xbmc.addon.repository" name="xStream Repository">	
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">xStream Repository</summary>
@@ -2025,6 +2636,11 @@ repository.zachmorris
 
 <addon id="repository.zachmorris" name="Zach Morris Add-ons" version="1.0.4" provider-name="zachmorris">
 	<extension point="xbmc.addon.repository" name="Zach Morris Add-ons">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Zach Morris Add-ons</summary>
