@@ -76,7 +76,6 @@ plugin.audio.ytmusic.exp
 plugin.image.flickrexplorer
 plugin.image.kindgirls
 
-script.module.autocompletion
 script.module.jetextractors
 script.module.microjenscrapers
 script.module.thetvdb
@@ -97,12 +96,12 @@ plugin.program.thumbcache.cleaner
 plugin.video.smr_link_tester
 script.module.resolveurl
 script.module.resolveurl.xxx
+script.module.autocompletion
 
 plugin.video.themoviedb.helper
 script.module.tmdbhelper
 context.themoviedb.helper
 script.module.infotagger
-resource.font.robotocjksc
 
 -->
 
@@ -2017,25 +2016,6 @@ In addition to what livestreams allowed you to do, you can now,
         <summary lang="it">Light IMDb Ratings Update è un add-on di Kodi che mantiene aggiornate le valutazioni IMDb dei tuoi film e serie TV.</summary>
         <description lang="en">Light IMDb Ratings Update runs as a Kodi service to update the ratings, votes and Top 250 for movies as well as the ratings and votes for TV shows (including episodes) by scraping the data from the IMDb site. The update can be run manually or scheduled once a week and it will run as soon as possible after a scheduled start is missed. Please check the add-on thread in the Kodi forum for more details.</description>
         <description lang="it">Light IMDb Ratings Update viene eseguito come un servizio di Kodi per aggiornare le valutazioni, i voti e la Top 250 per i film così come le valutazioni ed i voti per le serie TV (inclusi gli episodi) ottenendo i dati dal sito IMDb. L'aggiornamento può essere eseguito manualmente o pianificato una volta alla settimana e sarà avviato appena possibile se un avvio pianificato non viene eseguito. Per ulteriori dettagli si veda il thread dell'add-on nel forum di Kodi.</description>
-    </extension>
-</addon>
-
-
-<addon id="script.module.autocompletion" name="AutoCompletion library" version="2.1.1" provider-name="Philipp Temminghoff (phil65), bbaronSVK, finkleandeinhorn, berkhornet">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" version="2.9.1"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Module providing some AutoCompletion functions</summary>
-        <description lang="en_GB">Module providing some AutoCompletion functions</description>
-        <platform>all</platform>
-        <license>GPL-2.0-or-later</license>
-        <source>https://github.com/finkleandeinhorn/script.module.autocompletion</source>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
     </extension>
 </addon>
 
