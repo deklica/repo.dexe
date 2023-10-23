@@ -816,14 +816,14 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="context.subtitlesdialog.contextmenu" name="Subtitles Dialog - Contextmenu" version="1.1.1" provider-name="burekas">
+<addon id="context.subtitlesdialog.contextmenu" name="Subtitles Dialog - Contextmenu" version="1.1.2" provider-name="burekas">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
     <extension point="kodi.context.item" library="addon.py">
         <item>
             <label>32000</label>
-            <visible>true</visible>
+            <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,tvshow) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,episode)</visible>
         </item>
     </extension>
     <extension point="xbmc.addon.metadata">

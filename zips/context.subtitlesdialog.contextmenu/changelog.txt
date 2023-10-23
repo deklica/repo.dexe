@@ -1,3 +1,6 @@
+v1.1.2
+- Fixes
+
 v1.1.1
 - Kodi Matrix 19 (python 3) support
 
