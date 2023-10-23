@@ -1,0 +1,8 @@
+v1.1.1
+- Kodi Matrix 19 (python 3) support
+
+v1.0.1
+- Fixed Hebrew translation and colorized title.
+
+v1.0.0
+- Initial Release.

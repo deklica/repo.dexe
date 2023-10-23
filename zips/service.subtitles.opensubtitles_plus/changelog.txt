@@ -1,0 +1,27 @@
+1.0.2
+** OpenSubtitles Plus by Burekas **
+- Fix for search accuracy
+- Added sync matching percentages in the subtitles results
+- Arrangement of results according to sync matching percentages
+- Improving the search algorithm
+- Bug fixes, code cleaning and refactoring
+
+1.0.1
+** OpenSubtitles Plus by Burekas **
+- Added support for manual search with these characters (+,-,_,.) as a seperator
+- Kodi Nexus 20 support
+
+1.0.0
+** OpenSubtitles Plus by Burekas **
+- Forked of amet and burekas 5.4.16
+- Kodi Matrix (python 3) Support
+- Using imdb id for subtitles queries
+- Search movie results filtered by imdb id
+- Fix for Manual Search
+- Fix support for non-englise titles for "Playing" status [Playback is on]
+- Fix for non-englise titles in Kodi Library ("notPlaying" subtitles checking - Playback is off)
+- Manual search fix and improvement
+- New feature: Users are able to check for subtitles when Kodi is not playing, by using the manual search or by standing on an item and opening the subtitles search dialog (By key or by an external addon)
+- The external addon for the contextmenu can be downloaded from here: https://github.com/burekas7/context.subtitlesdialog.contextmenu
+- Users are able to download subtitles as anonymous without authentication. Updated descriptions, icons, screenshots, fanart etc
+- Bug and code fixes
