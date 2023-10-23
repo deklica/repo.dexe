@@ -439,7 +439,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.2.3" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.2.4" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
