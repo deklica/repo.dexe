@@ -11,7 +11,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Adds a subtitles dialog contextmenu button</summary>
-        <description lang="en">Adds a subtitles dialog contextmenu button to context menu, so you can use the subtitles dialog also when kodi is not playing.[CR] You can use when focusing on an item and it will automatically check it for you without typing or just using the manual search button to check if subtitles exist.[CR][CR]Only supported by [B]OpenSubtitles Plus[/B] addon.</description>
+        <description lang="en">Adds a subtitles dialog contextmenu button to context menu, so you can use the subtitles dialog also when kodi is not playing.[CR]You can use when focusing on an item and it will automatically check it for you without typing or just using the manual search button to check if subtitles exist.[CR][CR]Only supported by [B]OpenSubtitles Plus[/B] addon.</description>
         <platform>all</platform>
         <language></language>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
