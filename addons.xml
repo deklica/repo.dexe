@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<!--  Video / Program&Services / Audio / Image / Dependencies / Other / External  -----------------------------------
+<!--  Addons  -----------------------------------------
 
+--- Video ---
 plugin.video.crackle
 plugin.video.daddylive
 plugin.video.earthtv
@@ -20,9 +21,17 @@ plugin.video.watchnixtoons2
 plugin.video.ytchannels
 script.realdebrid
 
+--- Context menus ---
 context.elementum
 context.embuary.info
 context.trailer.play
+script.playrandomvideos
+
+--- Subtitles ---
+service.subtitles.localsubtitle
+service.subtitles.opensubtitles_by_opensubtitles_dualsub
+
+--- Program & Services ---
 plugin.program.autocompletion
 plugin.program.autoenabler
 plugin.program.autowidget
@@ -46,7 +55,6 @@ script.module.acctview
 script.module.inputstreamhelper
 script.module.maxql
 script.module.youtube.dl
-script.playrandomvideos
 script.service.sponsorblock
 script.speedtester
 script.toolbox
@@ -61,10 +69,9 @@ service.languagepreferencemanager
 service.lt2http
 service.stinger.notification
 service.subloader
-service.subtitles.localsubtitle
-service.subtitles.opensubtitles_by_opensubtitles_dualsub
 service.vpn.manager
 
+--- Audio ---
 plugin.audio.dashradio
 plugin.audio.datpiff
 plugin.audio.mp3streams
@@ -73,15 +80,18 @@ plugin.audio.tunein2017
 plugin.audio.tuneinradio
 plugin.audio.ytmusic.exp
 
+--- Image ---
 plugin.image.flickrexplorer
 plugin.image.kindgirls
 
+--- Dependencies ---
 script.module.jetextractors
 script.module.microjenscrapers
 script.module.thetvdb
 script.module.youtube_channels
 script.scrubsv2.artwork
 
+--- Other ---
 plugin.games.rom.collection.browser.widget
 plugin.program.moonlight-qt
 resource.uisounds.kodi-12
@@ -92,16 +102,24 @@ script.service.argonforty-device
 service.rom.collection.browser
 weather.gismeteo
 
+---
+
+--- External ---
 plugin.program.thumbcache.cleaner
 plugin.video.smr_link_tester
 script.module.resolveurl
 script.module.resolveurl.xxx
 script.module.autocompletion
 
+--- Roar ---
 plugin.video.themoviedb.helper
 script.module.tmdbhelper
 context.themoviedb.helper
 script.module.infotagger
+
+--- NoN ---
+script.embuary.helper
+script.globalsearch
 
 -->
 
