@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.gsports" name="[COLOR yellow]G-Sports+ Repository[/COLOR]" version="1.3.2" provider-name="G-Man">
+<addon id="repository.gsports" name="[COLOR yellow]G-Sports+ Repository[/COLOR]" version="1.3.3" provider-name="G-Man">
 <extension point="xbmc.addon.repository" name="G-Sport Repository">
     <dir>
         <info compressed="false">https://github.com/mrgsi/repository.gsports/raw/master/addons.xml</info>
@@ -19,12 +19,6 @@
 		<info compressed="false">https://mullafabz.xyz/Plugins/K19/Plugins/addons.xml</info>
 		<checksum>https://mullafabz.xyz/Plugins/K19/Plugins/addons.xml.md5</checksum>
 		<datadir zip="true">https://mullafabz.xyz/Plugins/K19/Plugins/</datadir>
-	</dir>
-    <dir>
-        <info compressed="false">http://racingondemand.xyz/_repo/addons.xml</info>
-        <checksum>http://racingondemand.xyz/_repo/addons.xml.md5</checksum>
-        <datadir zip="true">http://racingondemand.xyz/_repo/</datadir>
-        <hashes>false</hashes>
 	</dir>
 	<dir>
 		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
