@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.11.4" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.11.6" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -10,7 +10,7 @@
     <extension point="xbmc.addon.metadata">
         <summary lang="en">WatchNixtoons2</summary>
         <description lang="en">
-Watch cartoons and anime from [COLOR orange][B]www.wcofun.org[/B][/COLOR].
+Watch cartoons and anime from [COLOR orange][B]www.wcofun.tv[/B][/COLOR].
 
 Support the WatchCartoonOnline website with a PayPal donation to:
 [COLOR khaki][B]wcohelp@yandex.com[/B][/COLOR]
@@ -22,6 +22,12 @@ Random updates by lolage.
         <language>en</language>
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.11.6:[/B]
+- add wcofun.org in old domain list
+
+[B]0.11.5:[/B]
+- Remove wcofun.org domain
+
 [B]0.11.4:[/B]
 - Code clean-up and restructure
 - Add Warning to user if video is a premium video
@@ -35,11 +41,6 @@ Random updates by lolage.
 [B]0.11.2:[/B]
 - Fix dubbed listing
 - Some code cleanup
-- Update Thumbnail Hashes
-
-[B]0.11.1:[/B]
-- Fix dubbed listing
-- Add Recently Watched Remove Context Menu
 - Update Thumbnail Hashes</news>
         <assets>
             <icon>icon.png</icon>
