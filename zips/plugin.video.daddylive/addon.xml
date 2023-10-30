@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<addon id="plugin.video.daddylive" name="DaddyLive" version="3.0.1" provider-name="dEXE, THE CREW, mbebe">
+<addon id="plugin.video.daddylive" name="DaddyLive" version="3.0.2" provider-name="dEXE, THE CREW, mbebe">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -12,7 +12,7 @@
     <extension point="xbmc.addon.metadata">
         <summary lang="en">DaddyLiveHD - Live TV and Sports</summary>
         <description lang="en">Live Streamed Channels and Scheduled Sporting Events.[CR][CR]Multiple sources/streams works.</description>
-        <disclaimer lang="en">daddylivehd.com</disclaimer>
+        <disclaimer lang="en">daddylive.sx</disclaimer>
         <language>en</language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
@@ -20,6 +20,7 @@
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
+            <screenshot>resources/media/fanart.jpg</screenshot>
             <screenshot>resources/media/screenshot-01.jpg</screenshot>
             <screenshot>resources/media/screenshot-02.jpg</screenshot>
             <screenshot>resources/media/screenshot-03.jpg</screenshot>

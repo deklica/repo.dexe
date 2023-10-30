@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<addon id="plugin.video.thetvapp" name="The TV app" version="0.2" provider-name="xxxxxx">
+<addon id="plugin.video.thetvapp" name="TheTVApp" version="0.3" provider-name="xxxxxx">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -9,7 +9,7 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <description lang="en">The TV app</description>
+        <description lang="en">TheTVApp</description>
         <disclaimer lang="en">https://thetvapp.to</disclaimer>	
         <summary lang="en">https://thetvapp.to</summary>
         <language>en</language>

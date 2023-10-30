@@ -1,2 +1,4 @@
+0.3
+- new stream decryption
 0.1
 - initial version 

@@ -35,7 +35,6 @@ service.subtitles.opensubtitles_plus
 service.subtitles.opensubtitles-com
 
 --- Program & Services ---
-plugin.program.autocompletion
 plugin.program.autoenabler
 plugin.program.autowidget
 plugin.program.openwizard
@@ -112,6 +111,7 @@ plugin.program.thumbcache.cleaner
 plugin.video.smr_link_tester
 script.module.resolveurl
 script.module.resolveurl.xxx
+plugin.program.autocompletion
 script.module.autocompletion
 
 --- Roar ---
@@ -160,7 +160,7 @@ script.globalsearch
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="DaddyLive" version="3.0.1" provider-name="dEXE, THE CREW, mbebe">
+<addon id="plugin.video.daddylive" name="DaddyLive" version="3.0.2" provider-name="dEXE, THE CREW, mbebe">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -173,7 +173,7 @@ script.globalsearch
     <extension point="xbmc.addon.metadata">
         <summary lang="en">DaddyLiveHD - Live TV and Sports</summary>
         <description lang="en">Live Streamed Channels and Scheduled Sporting Events.[CR][CR]Multiple sources/streams works.</description>
-        <disclaimer lang="en">daddylivehd.com</disclaimer>
+        <disclaimer lang="en">daddylive.sx</disclaimer>
         <language>en</language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
@@ -181,6 +181,7 @@ script.globalsearch
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
+            <screenshot>fanart.jpg</screenshot>
             <screenshot>screenshot-01.jpg</screenshot>
             <screenshot>screenshot-02.jpg</screenshot>
             <screenshot>screenshot-03.jpg</screenshot>
@@ -556,7 +557,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.thetvapp" name="The TV app" version="0.2" provider-name="xxxxxx">
+<addon id="plugin.video.thetvapp" name="TheTVApp" version="0.3" provider-name="xxxxxx">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -566,7 +567,7 @@ script.globalsearch
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <description lang="en">The TV app</description>
+        <description lang="en">TheTVApp</description>
         <disclaimer lang="en">https://thetvapp.to</disclaimer>	
         <summary lang="en">https://thetvapp.to</summary>
         <language>en</language>
@@ -1172,34 +1173,6 @@ v1.0.1 (2023-07-28)
 
 
 <!-- ---------------------------------------------------------------------- -->
-
-
-<addon id="plugin.program.autocompletion" name="AutoCompletion for virtual keyboard" version="2.1.2" provider-name="Philipp Temminghoff (phil65), sualfred, xulek, finkleandeinhorn">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.autocompletion" version="2.0.5"/>
-    </requires>
-    <extension point="xbmc.python.script" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.python.pluginsource" library="plugin.py" />
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">AutoCompletion for the virtual keyboard (needs skin support)</summary>
-        <description lang="en_GB">AutoCompletion for the virtual keyboard (needs skin support)</description>
-        <summary lang="es_ES">Autocompletar para el teclado virtual (necesita soporte de skin)</summary>
-        <description lang="es_ES">Autocompletar para el teclado virtual (necesita soporte de skin)</description>
-        <platform>all</platform>
-        <license>GPL-2.0-or-later</license>
-        <source>https://github.com/finkleandeinhorn/plugin.program.autocompletion</source>
-        <assets>
-            <icon>icon.png</icon>
-            <screenshot>screenshot-01.jpg</screenshot>
-            <screenshot>screenshot-02.jpg</screenshot>
-            <screenshot>screenshot-03.jpg</screenshot>
-        </assets>
-    </extension>
-</addon>
 
 
 <addon id="plugin.program.autoenabler" name="Auto Enabler" version="1.0.0" provider-name="slam">
@@ -3413,24 +3386,6 @@ Clean up project files.
             <fanart>fanart.jpg</fanart>           
      </assets>
    </extension>
-</addon>
-
-<addon id="script.module.autocompletion" name="AutoCompletion library" version="2.1.1" provider-name="Philipp Temminghoff (phil65), bbaronSVK, finkleandeinhorn, berkhornet">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" version="2.9.1"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Module providing some AutoCompletion functions</summary>
-        <description lang="en_GB">Module providing some AutoCompletion functions</description>
-        <platform>all</platform>
-        <license>GPL-2.0-or-later</license>
-        <source>https://github.com/finkleandeinhorn/script.module.autocompletion</source>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
 </addon>
 
 
