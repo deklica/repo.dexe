@@ -130,6 +130,7 @@ script.globalsearch
 
 <addon id="script.module.oriontest" visible="false" />
 
+
 <addon id="plugin.video.crackle" name="Crackle" version="2023.10.11+matrix.1" provider-name="eracknaphobia">
   <requires>
       <import addon="xbmc.python" version="3.0.0"/>
@@ -160,7 +161,8 @@ script.globalsearch
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="DaddyLive" version="3.0.2" provider-name="dEXE, THE CREW, mbebe">
+
+<addon id="plugin.video.daddylive" name="DaddyLive" version="4.0.0" provider-name="dEXE, mbebe">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -172,7 +174,7 @@ script.globalsearch
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">DaddyLiveHD - Live TV and Sports</summary>
-        <description lang="en">Live Streamed Channels and Scheduled Sporting Events.[CR][CR]Multiple sources/streams works.</description>
+        <description lang="en">Live Streamed Channels and Scheduled Sporting Events.</description>
         <disclaimer lang="en">daddylive.sx</disclaimer>
         <language>en</language>
         <platform>all</platform>
@@ -181,7 +183,6 @@ script.globalsearch
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
-            <screenshot>fanart.jpg</screenshot>
             <screenshot>screenshot-01.jpg</screenshot>
             <screenshot>screenshot-02.jpg</screenshot>
             <screenshot>screenshot-03.jpg</screenshot>
@@ -557,7 +558,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.thetvapp" name="TheTVApp" version="0.3" provider-name="xxxxxx">
+<addon id="plugin.video.thetvapp" name="TheTVApp" version="0.4" provider-name="xxxxxx">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -665,7 +666,7 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.ytchannels" name="YouTube Channels" version="0.4.6+matrix.1" provider-name="natko1412,mintsoft,yeahme49">
+<addon id="plugin.video.ytchannels" name="YouTube Channels" version="0.5.0+matrix.1" provider-name="natko1412,mintsoft,yeahme49">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.six" version="1.11.0"/>
