@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.grindhousekodi" name="Grindhouse Repository" version="1.7" provider-name="Grindhouse">
+<addon id="repository.grindhousekodi" name="Grindhouse Repository" version="1.8" provider-name="Grindhouse">
 	<extension point="xbmc.addon.repository" name="Grindhouse">
 		<dir>
-			<info compressed="false">http://grindhousekodi.tk/grindhouse/repo/addons.xml</info>
-			<checksum>http://grindhousekodi.tk/grindhouse/repo/addonsmd5.txt</checksum>
-			<datadir zip="true">http://grindhousekodi.tk/grindhouse/repo/</datadir>
+			<info compressed="false">http://grindhousekodi.us/grindhouse/repo/addons.xml</info>
+			<checksum>http://grindhousekodi.us/grindhouse/repo/addonsmd5.txt</checksum>
+			<datadir zip="true">http://grindhousekodi.us/grindhouse/repo/</datadir>
 		</dir>
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>	
