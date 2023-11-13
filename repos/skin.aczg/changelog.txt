@@ -1,3 +1,61 @@
+[B]5.7.1[/B] (2023-11-06)
+
+Added support for UI accent color schemes
+
+- Default color scheme: "Kodi Blue" (which is what you have been using all along)
+- New alternative UI accent color schemes: "Perfect Pink" and "Electric Violet" 
+- New "UI accent color scheme" option can be found in the "General" tab of Skin settings
+
+Improved Login Screen
+
+- Simplified and improved visuals
+- User icons are now display in a circle (adapted this change so System Profiles also)
+
+Reworked First Run Dialog [Custom_SideMenuHelp] 
+
+- Also improved left arrow texture with new 4k variant which also affects home screen and subtitle download dialog
+- Created new hint-overlay texture (old one was too blurry)
+
+Video Info Dialog
+
+- Changed +/- icon focus color to white (green/red before)
+- Fixed Video Info Dialog poster and season poster variables code (Minor regression from a previous change regarding OSDinfodialogButtonActive==True2X)
+
+Skin settings
+
+- Added two more "darken background" options "very low" and "low"
+- Added new background options "Frosted Glass · Perfect Pink", "Frosted Glass · Electric Violet", "Frosted Glass · Graydient"
+- Moved and renamed "[Episodes]  Enable Episode Thumbnail Spoiler Protection"
+
+Shutdown menu
+
+- Corrected master mode button from togglebutton to button with label variable (togglebutton was unnecessary and caused the focus animation to fail)
+
+Wall Views and Fanart View
+
+- Non-focused elements are not darkened anymore for Wall Views
+- Non-focused elements are barely darkened anymore for Fanart View (Before: Much stronger darkening)
+
+Other improvements and visual changes:
+
+- Changed global progress bar colors to white (blueish color before for some situations)
+- Changed dialogheader label colors from "selected" to "white" (all dialogs) (Bookmarks dialog "now playing X/X" chapter header remains "selected" color, if visible)
+- VideoFullScreen/MusicVisualisation: Changed playing title color from "selected" to "white" and changed some mini menu togglebuttons to buttons (togglebuttons were unnecessary)
+- VideoFullScreen: Correced buffer bg size to be pixel perfect and centered (Adapted follow-up to recent change to busy dialog), externalized sub label to "VideoFullScreenSubLabel" variable
+- Skin settings, _variables, _includes: Improved label names of background names and similar labels
+- Addon Browser sidebar: Changed "last updated" label to light font (regular before) and the above label color to grey instead of white
+- DialogKeyboard/Numeric: Changed/improved label colors
+- Picture info dialog: header text now light font and white colored (Regular24 "selected" before)
+- Deprecated/hide some more old views by default (can still be used when using the already known "old views" skin setting)
+- System Settings entry page: Don't dim Kodi logo as much as before
+- DialogSlider: Changed label color from accent color ("blue") to white
+- Changed red dot color in OSDRecordOnFOXXX textures to white (non ideal color combination before)
+- Reworked all textures which contain the "default folder" icon to a newly created vectorized texture (visually very similar but sharper and cleaner)
+(Affects: DefaultFolderXXX DefaultSuperFolderVideosXXX DefaultHardDisk DefaultNetwork DefaultRemovableDisk DefaultSuperFolderVideosXXX)
+- Added a 4K variant for arrow-white-left
+- Changed barely used "DefaultIconInfoDRC" background color to grey for consistency ("blue" before)
+- Changed all Kodi logo textures to plain white to be used with the new UI color schemes code
+
 [B]5.7.0[/B] (2023-10-22)
 
 Remarks:
