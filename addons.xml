@@ -612,7 +612,7 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.ytchannels" name="YouTube Channels" version="0.5.1+matrix.1" provider-name="natko1412,mintsoft,yeahme49">
+<addon id="plugin.video.ytchannels" name="YouTube Channels" version="0.5.2+matrix.1" provider-name="natko1412,mintsoft,yeahme49">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.six" version="1.11.0"/>

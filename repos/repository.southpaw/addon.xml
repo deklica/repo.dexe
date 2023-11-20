@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.southpaw" name="The South Paw Repository" version="0.4.0" provider-name="Tom">
+    <addon id="repository.southpaw" name="The South Paw Repository" version="0.4.1" provider-name="Tom">
         <extension point="xbmc.addon.repository" name="The South Paw Repository">
 		    <dir>
                 <info compressed="false">https://southpawlefty2468rocky.com/_repo/addons.xml</info>
