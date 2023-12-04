@@ -6,7 +6,9 @@ CHANGE HISTORY 	Kodi-Addon-TuneIn2017 (previosly plugin for Plexmediaserver)
 			https://www.kodinerds.net/index.php/Thread/66559-RELEASE-Kodi-Addon-TuneIn2017
 			Plex-Forum:
 			https://forums.plex.tv/discussion/288260/rel-tunein2017
-			
+
+03.12.2023  1.7.3	GetContent: Dialog "This show will be available later" for empty type 
+			Show added.
 28.01.2023	1.7.2	Main: Fix search pattern for title after changes in Tunein website.
 			Modul updater: adapted for Kodi 20 Nexus (adjust_line: addon id, python version).
 			GetContent: skip "DynamicPrompt" in title (not analysed).

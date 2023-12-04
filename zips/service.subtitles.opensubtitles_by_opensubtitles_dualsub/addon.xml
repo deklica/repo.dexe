@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="service.subtitles.opensubtitles_by_opensubtitles_dualsub"
        name="OpenSubtitles.org by OpenSubtitles with dual subs"
-       version="5.5.1"
+       version="5.5.2"
        provider-name="peno64, moham96, amet, opensubtitles">
   <requires>
     <import addon="script.module.pysubs2" version="0.1.0"/>
@@ -53,11 +53,18 @@
     <disclaimer>Works without log-in</disclaimer>
 	<news>
 Improved add-on by OpenSubtitles.org
-v5.3.1 (2021-12-15)
+v5.5.2 (2023-12-02)
+- Some default settings were not applied if not changed first
+v5.5.1 (2021-12-15)
 - More font options (shadow, outline)
 - Possibility to swap bottom - top subtitles
 - Auto shift option. When enabled, the second subtitle will be synced with the first if start/end is within the time difference threshold.
-v5.3.0 (2021-12-11)
+v5.5.0 (2021-12-11)
+- Possibility to choose two subtitles. One will be shown at the bottom, the other on top
+- Works both with Python 2 (kodi 17, 18) and Python 3 (kodi 19)
+v5.4.0
+- Allows to extend the time the subtitle(s) are shown on screen for slow readers.
+v5.3.0
 - Possibility to choose two subtitles. One will be shown at the bottom, the other on top
 - Works both with Python 2 (kodi 17, 18) and Python 3 (kodi 19)
 v5.2.14 (2017-01-23)
@@ -69,7 +76,6 @@ v5.2.14 (2017-01-23)
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum>https://forum.opensubtitles.org/viewtopic.php?f=8&amp;t=15847</forum>
     <website>http://www.opensubtitles.org</website>
-    <email>admin [at] opensubtitles {dot} org</email>
 	<assets>
 	    <icon>resources/media/os_logo_512x512.png</icon>
 	    <fanart>resources/media/os_fanart.jpg</fanart>
@@ -77,6 +83,6 @@ v5.2.14 (2017-01-23)
 		<screenshot>resources/media/screenshot_2.jpg</screenshot>
 		<screenshot>resources/media/screenshot_3.jpg</screenshot>
 	</assets>
-    <source>https://github.com/opensubtitles/service.subtitles.opensubtitles_by_opensubtitles</source>
+    <source>https://github.com/peno64/service.subtitles.opensubtitles_by_opensubtitles_dualsub</source>
   </extension>
 </addon>

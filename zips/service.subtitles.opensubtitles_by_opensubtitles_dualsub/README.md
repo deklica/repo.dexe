@@ -6,6 +6,14 @@ See https://github.com/moham96/service.subtitles.opensubtitles_by_opensubtitles
 
 Changelog
 
+5.5.2 (2023-12-02)
+- Some default settings were not applied if not changed first
+
+5.5.1
+- Try to allight subtitles better in case of bottom/bottom
+- Allow negative vertical margin
+- Make Auto Charset the default (again)
+
 5.5.0
 - Allows to show the subtitles on top/bottom, bottom/left - right, bottom/bottom
 
