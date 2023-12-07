@@ -1,3 +1,15 @@
+2.0.0
+** OpenSubtitles Plus by Burekas **
+- Using the new OpenSubtitles API
+- New API Key setting
+(A guide to creating an API key is in the Readme file)
+- Bug fixes, code cleaning and refactoring
+
+1.1.0
+** OpenSubtitles Plus by Burekas **
+- Improving the search algorithm
+- Bug fixes, code cleaning and refactoring
+
 1.0.2
 ** OpenSubtitles Plus by Burekas **
 - Fix for search accuracy
