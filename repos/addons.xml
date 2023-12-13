@@ -553,7 +553,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.axbmcuser" name="axbmcuser REPO" version="1.2.0" provider-name="axbmcuser">
+<addon id="repository.axbmcuser" name="axbmcuser REPO" version="1.2.1" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -573,7 +573,11 @@ repository.zachmorris
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]1.2.0[/B] (2023-12-08)
+		<news>[B]1.2.1[/B] (2023-12-11)
+
+Added new repo tree for Kodi 21 (Omega)
+
+[B]1.2.0[/B] (2023-12-08)
 
 Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
 
@@ -605,7 +609,6 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 		</assets>
 	</extension>
 </addon>
-
 <addon id="repository.bugatsinho" name="Bugatsinho repository" version="2.7" provider-name="Bugatsinho">
     <extension point="xbmc.addon.repository" name="Bugatsinho repository">
 		<dir>
@@ -2161,7 +2164,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 	</extension>
 </addon>
 
-<addon id="repository.southpaw" name="The South Paw Repository" version="0.4.3" provider-name="Tom">
+<addon id="repository.southpaw" name="The South Paw Repository" version="0.4.4" provider-name="Tom">
 	<extension point="xbmc.addon.repository" name="The South Paw Repository"> 
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

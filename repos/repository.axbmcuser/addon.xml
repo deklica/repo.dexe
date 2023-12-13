@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.axbmcuser" name="axbmcuser REPO" version="1.2.0" provider-name="axbmcuser">
+<addon id="repository.axbmcuser" name="axbmcuser REPO" version="1.2.1" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -22,6 +22,12 @@
 			<datadir zip="true">https://github.com/axbmcuser/_repo/raw/master/matrix</datadir>
 			<hashes>false</hashes>
 		</dir>
+		<dir minversion="20.9.0">
+			<info compressed="false">https://github.com/axbmcuser/_repo/raw/master/omega/addons.xml</info>
+			<checksum>https://github.com/axbmcuser/_repo/raw/master/omega/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/axbmcuser/_repo/raw/master/omega</datadir>
+			<hashes>false</hashes>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">This repository contains KODI addons from user "axbmcuser".</summary>
@@ -32,7 +38,11 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]1.2.0[/B] (2023-12-08)
+		<news>[B]1.2.1[/B] (2023-12-11)
+
+Added new repo tree for Kodi 21 (Omega)
+
+[B]1.2.0[/B] (2023-12-08)
 
 Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
 
@@ -60,7 +70,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 - Changes for KODI 17 (Krypton): Repo is multi-dir based again (for now)
 		</news>
 		<assets>
-			<icon>icon.png</icon>
+			<icon>resources/icon.png</icon>
 		</assets>
 	</extension>
 </addon>

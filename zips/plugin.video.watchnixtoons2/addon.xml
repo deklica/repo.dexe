@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.0" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.1" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -22,6 +22,10 @@ Random updates by lolage.
         <language>en</language>
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.12.1:[/B]
+- Update User Agent
+- Update Thumbnail Hashes
+
 [B]0.12.0:[/B]
 - Code clean-up and restructure
 - allow for different site profiles
@@ -33,10 +37,7 @@ Random updates by lolage.
 - Update Thumbnail Hashes
 
 [B]0.11.6:[/B]
-- add wcofun.org in old domain list
-
-[B]0.11.5:[/B]
-- Remove wcofun.org domain</news>
+- add wcofun.org in old domain list</news>
         <assets>
             <icon>icon.png</icon>
         </assets>

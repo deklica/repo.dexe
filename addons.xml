@@ -285,6 +285,32 @@ script.globalsearch
 </addon>
 
 
+<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="1.0.06">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+    </requires>
+    <extension library="resources/lib/fenlight.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="resources/lib/service.py" point="xbmc.service"/>
+    <extension library="resources/lib/" point="xbmc.python.module"/>
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en">Access your content from Easynews and Debrid Clouds.</summary>
+        <description lang="en">This add-on is intended for advanced Kodi users only. You must own the content of any media you play through this addon. This is an English language only add-on.</description>
+        <platform>all</platform>
+		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
+        <license/>
+        <assets>
+            <icon>fenlight_icon.png</icon>
+            <fanart>fenlight_fanart.jpg</fanart>
+        </assets>
+        <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
+    </extension>
+</addon>
+
+
 <addon id="plugin.video.json_iptv" version="1.0.09" name="Json IPTV" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
@@ -570,7 +596,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.0" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.1" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -593,6 +619,10 @@ Random updates by lolage.
         <language>en</language>
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.12.1:[/B]
+- Update User Agent
+- Update Thumbnail Hashes
+
 [B]0.12.0:[/B]
 - Code clean-up and restructure
 - allow for different site profiles
@@ -604,10 +634,7 @@ Random updates by lolage.
 - Update Thumbnail Hashes
 
 [B]0.11.6:[/B]
-- add wcofun.org in old domain list
-
-[B]0.11.5:[/B]
-- Remove wcofun.org domain</news>
+- add wcofun.org in old domain list</news>
         <assets>
             <icon>icon.png</icon>
         </assets>
