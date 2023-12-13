@@ -35,6 +35,7 @@ service.subtitles.opensubtitles-com
 --- Program & Services ---
 plugin.program.autoenabler
 plugin.program.autowidget
+plugin.program.maxql
 plugin.program.openwizard
 plugin.program.super.favourites
 plugin.video.f4mTester
@@ -53,7 +54,6 @@ script.light.imdb.ratings.update
 script.module.accountmgr
 script.module.acctview
 script.module.inputstreamhelper
-script.module.maxql
 script.module.youtube.dl
 script.service.sponsorblock
 script.speedtester
@@ -1556,6 +1556,41 @@ v1.0.1 (2023-07-28)
 </addon>
 
 
+<addon id="plugin.program.maxql" name="MaxQL" version="1.1.1" provider-name="Zaxxon709">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Add-on Filter Editor</summary>
+		<description lang="en_GB">Enable/Disable add-on filters</description>
+		<disclaimer lang="en_GB">This Addon contains no content</disclaimer>
+		<language>en</language>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<forum></forum>
+		<website></website> 
+		<email></email>
+		<source></source>
+		<news>
+			1.1.1 - Minor bug fixes and cleanup
+			1.1.0 - Cleaned up code. Changed addonid from script to plugin. Added TheLab, TheLabjr, Dradis, Taz19
+			1.0.9 - Fixed bug preventing Umbrella 3D from being disabled.
+			1.0.8 - Added support for DV and 3D settings. Added Patriot, Black Lightning and 9-Lives.
+			1.0.7 - Added Coalition and Absolution. Removed The Promise.
+			1.0.6 - Added chains genocide and Quicksilver.
+			1.0.5 - Initial Release. 
+		</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+
 <addon id="plugin.program.openwizard" name="[COLOR limegreen]Open[/COLOR]Wizard" version="2.0.7" provider-name="drinfernoo, slamious">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -2084,7 +2119,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.elementum.jackett" name="Elementum [COLOR FF0291F7]Jackett[/COLOR]" version="2.1.0" provider-name="fugkco">  
+<?xml version="1.0" ?><addon id="script.elementum.jackett" name="Elementum [COLOR FF0291F7]Jackett[/COLOR]" version="3.0.0" provider-name="fugkco">  
       <requires>    
             <import addon="xbmc.python" version="3.0.0"/>    
             <import addon="plugin.video.elementum"/>    
@@ -2103,7 +2138,7 @@ In addition to what livestreams allowed you to do, you can now,
             <assets>      
                   <icon>icon.png</icon>      
             </assets>    
-        <news>[B]2.1.0[/B] (2023-05-29)</news>
+        <news>[B]3.0.0[/B] (2023-10-16)</news>
       </extension>  
 </addon>
 
@@ -2290,7 +2325,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.light.imdb.ratings.update" name="Light IMDb Ratings Update" version="5.1.1" provider-name="axlt2002">
+<addon id="script.light.imdb.ratings.update" name="Light IMDb Ratings Update" version="5.1.2" provider-name="axlt2002">
     <requires>
         <import addon="script.module.simplejson" version="3.3.0" />
         <import addon="script.module.requests" />
@@ -2321,11 +2356,11 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.module.accountmgr" version="2.3.1" name="Account Manager" provider-name="Zaxxon709">
+<addon id="script.module.accountmgr" version="2.3.9" name="Account Manager" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-            	<import addon="script.module.acctview" version="2.0.0" />
+            	<import addon="script.module.acctview" version="2.2.5" />
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">
@@ -2335,7 +2370,7 @@ In addition to what livestreams allowed you to do, you can now,
 	<extension point="xbmc.addon.metadata">
 		<reuselanguageinvoker>false</reuselanguageinvoker>
 		<summary lang="en">Account Manager</summary>
-		<description>Trakt & Debrid Account Manager</description>
+		<description>Account Manager for Trakt, Debrid, Metadata, Furk, Easynews and File Pursuit</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<disclaimer lang="en">The author is not responsible for the use of this addon. [CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
@@ -2347,11 +2382,11 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.module.acctview" name="acctviewer" version="2.1.6" provider-name="Zaxxon709">
+<addon id="script.module.acctview" name="acctviewer" version="2.2.5" provider-name="Zaxxon709">
     <extension point="xbmc.python.module" library="resources" />
     <extension point="xbmc.python.pluginsource" library="default.py" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">View Accounts</summary>
+        <summary lang="en">View Authorized Accounts</summary>
         <description lang="en">Account Manager Dependency</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
@@ -2422,36 +2457,6 @@ v0.5.9 (2022-03-22)
       <icon>icon.png</icon>
     </assets>
   </extension>
-</addon>
-
-
-<addon id="script.module.maxql" name="MaxQL" version="1.0.6" provider-name="Zaxxon709">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Max Resolution Editor</summary>
-		<description lang="en_GB">Set supported add-ons to either 1080P or 4K max</description>
-		<disclaimer lang="en_GB">This Addon contains no content</disclaimer>
-		<language>en</language>
-		<platform>all</platform>
-		<license>GPL-2.0-or-later</license>
-		<forum></forum>
-		<website></website> 
-		<email></email>
-		<source></source>
-		<news>
-1.0.6 - Added chains genocide and Quicksilver.
-1.0.5 - Initial Release. 
-		</news>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
 </addon>
 
 
@@ -2834,7 +2839,7 @@ Minor UI fixes
 <addon 
     id="service.blackbarsremover"
     name="Black Bars Remover"
-    version="3.0.0"
+    version="3.1.0"
     provider-name="milaq">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -2897,14 +2902,16 @@ Minor UI fixes
 <addon
 	id="service.languagepreferencemanager"
 	name="Language Preference Manager"
-	version="1.0.1"
+	version="1.0.2"
 	provider-name="ace20022/scott967/rockrider69"
 	>
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
 	<extension point="xbmc.service" library="default.py"/>
-	<extension point="xbmc.python.script" library="default.py"></extension>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Language Preference Manager</summary>
 		<description lang="en_GB">Sets the audio and subtitle track according to your language preferences</description>
@@ -2917,11 +2924,13 @@ Minor UI fixes
 0.1.7BETA : New Keywords Blacklist to ignore chosen subtitles tracks based on name content.
 1.0.0     : Mandatory clean-up to propose as candidate version for Kodi.tv addons repository.
 1.0.1     : Initial version for main Kodi.tv addons repository
+1.0.2     : Fix 10sec latency on subs display and possible few lines lost - at video start or when switching audio.
+            Forced sub tracks : check also subtitle field "isforced" in case field "name" is empty or misspelled.
 
 		</news>
 		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
@@ -3024,7 +3033,7 @@ Clean up project files.
 
 <addon id="service.vpn.manager"
        name="VPN Manager for OpenVPN"
-       version="7.0.1"
+       version="7.0.3"
        provider-name="Zomboided">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -3241,6 +3250,34 @@ Clean up project files.
 </addon>
 
 
+<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.7.3+nexus" provider-name="rols1 (rols1@gmx.de)">
+	<requires>
+		<import addon="xbmc.python" version="3.0.1"/>
+    		<import addon="script.module.kodi-six" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="tunein2017.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">tunein.com-Addon für Kodi</summary>
+		<summary lang="en">tunein.com-addon for Kodi</summary>
+		<summary lang="es">Complemento de tunein.com para Kodi</summary>
+		<description lang="de">Favoriten und Ordner (Tunein-Account erforderlich), Download-Option mit Streamripper, Standalone-Option StartWithMyRadioStations (Beispieldatei enthalten)</description>
+		<description lang="es">Favoritos y carpetas de favoritos (se requiere cuenta en TuneIn). Opción de descarga con el programa Streamripper. Opción independiente para iniciar con Mis Emisoras de Radio (incluye archivo de muestra).</description>	
+		<platform>all</platform>
+		<source>https://github.com/rols1/Kodi-Addon-TuneIn2017</source>
+		<forum>https://www.kodinerds.net/index.php/Thread/66559-RELEASE-Kodi-Addon-TuneIn2017</forum>
+		<license>The MIT License (MIT)</license>
+		<language>"en_GB"</language>
+ 		<email>rols1@gmx.de</email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>           
+		</assets>
+   </extension>
+</addon>
+
+
 <addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="4.0.2" provider-name="joaconigro">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -3356,6 +3393,33 @@ Clean up project files.
 <addon id="plugin.image.flickrexplorer" name="FlickrExplorer" version="0.7.6+matrix" provider-name="rols1 (rols1@gmx.de)">
   <requires>
    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.kodi-six" />
+ </requires>
+  <extension point="xbmc.python.pluginsource" library="flickrexplorer.py">
+        <provides>image</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="de">flickr-Addon für Kodi</summary>
+	<summary lang="en">flickr-addon for Kodi</summary>
+	<description lang="de">Blättern und Suchen in öffentlichen Flickr-Beständen (Photostream, Gallerien, Alben, Favoriten)</description>
+	<description lang="en">Browse and search public content on Flickr (Photostream, Galleries, Albums, Faves, People)</description>
+	<platform>all</platform>
+         <source>https://github.com/rols1/Kodi-Addon-FlickrExplorer</source>
+        <forum>will be added</forum>
+	<license>The MIT License (MIT)</license>
+	<language>"en_GB"</language>
+ 	<email>rols1@gmx.de</email>
+        <assets>
+             <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>           
+     </assets>
+   </extension>
+</addon>
+
+
+<addon id="plugin.image.flickrexplorer" name="FlickrExplorer" version="0.7.6+nexus" provider-name="rols1 (rols1@gmx.de)">
+  <requires>
+   <import addon="xbmc.python" version="3.0.1"/>
     <import addon="script.module.kodi-six" />
  </requires>
   <extension point="xbmc.python.pluginsource" library="flickrexplorer.py">
@@ -3526,7 +3590,7 @@ Clean up project files.
 </addon>
 
 
-<addon id="plugin.program.moonlight-qt" name="Moonlight" version="0.3.1" provider-name="veldenb">
+<addon id="plugin.program.moonlight-qt" name="Moonlight" version="0.4.1" provider-name="veldenb">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="service.system.docker" optional="true" version="9.80.11.133"/>
@@ -3548,21 +3612,16 @@ Clean up project files.
         <license>GPL-3.0-or-later</license>
         <website>https://github.com/veldenb/plugin.program.moonlight-qt</website>
         <source>https://github.com/veldenb/plugin.program.moonlight-qt</source>
-        <news>
-v0.3.1
-- Fix some OSMC bugs
-- Fix warning when using default audio device
-        </news>
         <disclaimer lang="en_GB">Feel free to use this at your own risk.</disclaimer>
         <disclaimer lang="nl_NL">Voel je vrij om dit te gebruiken maar wel op eigen risico.</disclaimer>
         <disclaimer lang="de_DE">Sie können dies auf eigenes Risiko verwenden.</disclaimer>
         <disclaimer lang="fr_FR">Utilisez cet add-on à vos risques et périls.</disclaimer>
         <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <screenshot>screenshot-01.jpg</screenshot>
-            <screenshot>screenshot-02.jpg</screenshot>
-            <screenshot>screenshot-03.jpg</screenshot>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+            <screenshot>resources/screenshot-01.jpg</screenshot>
+            <screenshot>resources/screenshot-02.jpg</screenshot>
+            <screenshot>resources/screenshot-03.jpg</screenshot>
         </assets>
     </extension>
 </addon>

@@ -1,3 +1,7 @@
+v5.1.2 (2023-09-24)
+- Fixed 308 Permanent Redirect error for IMDb episodes list page
+- Updated scraper for IMDb episodes list page
+
 v5.1.1 (2022-12-12)
 - Fixed import module error (for Python 2)
 

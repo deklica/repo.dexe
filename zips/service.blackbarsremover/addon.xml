@@ -2,7 +2,7 @@
 <addon 
     id="service.blackbarsremover"
     name="Black Bars Remover"
-    version="3.0.0"
+    version="3.1.0"
     provider-name="milaq">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>

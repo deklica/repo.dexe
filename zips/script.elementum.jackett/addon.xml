@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!-- note version attribute gets changed on the fly using ./scripts/update-version.py --><addon id="script.elementum.jackett" name="Elementum [COLOR FF0291F7]Jackett[/COLOR]" version="2.1.0" provider-name="fugkco">  
+<?xml version="1.0" ?><!-- note version attribute gets changed on the fly using ./scripts/update-version.py --><addon id="script.elementum.jackett" name="Elementum [COLOR FF0291F7]Jackett[/COLOR]" version="3.0.0" provider-name="fugkco">  
       <requires>    
             <import addon="xbmc.python" version="3.0.0"/>    
             <import addon="plugin.video.elementum"/>    
@@ -17,7 +17,7 @@
             <assets>      
                   <icon>resources/images/icon.png</icon>      
             </assets>    
-        <news>[B]2.1.0[/B] (2023-05-29)
+        <news>[B]3.0.0[/B] (2023-10-16)
 
 
 </news>  </extension>  
