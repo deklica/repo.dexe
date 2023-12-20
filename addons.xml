@@ -384,7 +384,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.megaiptv" name="Mega IPTV" version="1.3.0" provider-name="G-Man">
+<addon id="plugin.video.megaiptv" name="Mega IPTV" version="1.4.0" provider-name="G-Man">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests"/>
@@ -398,10 +398,9 @@ script.globalsearch
 		<platform>all</platform>
 		<language>en</language>
 		<license>GPL-2.0-or-later</license>
-		<source></source>
-		<news></news>
 		<assets>
 			<icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
