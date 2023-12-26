@@ -1,3 +1,7 @@
+2.0.1
+** OpenSubtitles Plus by Burekas **
+- Bug fixes, code cleaning and refactoring
+
 2.0.0
 ** OpenSubtitles Plus by Burekas **
 - Using the new OpenSubtitles API

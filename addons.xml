@@ -302,7 +302,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="1.0.14">
+<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="1.0.16">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -1073,31 +1073,35 @@ v5.2.14 (2017-01-23)
 </addon>
 
 
-<addon id="service.subtitles.opensubtitles_plus" name="OpenSubtitles Plus" version="2.0.0"  provider-name="burekas">
+<addon id="service.subtitles.opensubtitles_plus" name="OpenSubtitles Plus" version="2.0.1"  provider-name="burekas">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="xbmc.python" version="3.0.0" />
 	    <import addon="script.module.requests" version="2.9.1" />
     </requires>
-    <extension point="xbmc.subtitle.module"
-               library="service.py" />
+    <extension point="xbmc.subtitle.module" library="service.py" />
     <extension point="xbmc.addon.metadata">
-        <summary>OpenSubtitles by OpenSubtitles.org</summary>
-        <description lang="en">[CR]Anonymously search and download subtitles for movies and TV-Series from OpenSubtitles.org without log-in. Search in 75 languages, 4.000.000+ subtitles, daily updates.[CR][CR]Made by Burekas[CR]Thanks to: amet, opensubtitles.[CR][CR]For news, updates and more info - Visit: https://bit.ly/3DaU7JT[CR][CR]Burekas Repo: https://bit.ly/49mJge3</description>
-        <disclaimer>Works without log-in</disclaimer>                                               
+        <summary>OpenSubtitles by OpenSubtitles.com[CR][CR]Improved add-on by Burekas for OpenSubtitles.com.</summary>
+        <description lang="en">[CR]Search and download subtitles for movies and TV-Series from OpenSubtitles.com. Search in 75 languages, 6.000.000+ subtitles, daily updates. [CR][CR]Made by Burekas[CR]Thanks to: amet, opensubtitles.[CR][CR]For news, updates and more info - Visit: https://bit.ly/3DaU7JT[CR][CR]Burekas Repo: https://bit.ly/49mJge3</description>
+        <disclaimer>Register/Import your account & API on OpenSubtitles.com before use.</disclaimer>                                               
         <news>
-        Improved add-on by burekas for OpenSubtitles.org.
-        - Users are able to download subtitles as anonymous without authentication. Added localized descriptions, media files
-        - Users are able to check for subtitles when Kodi is not playing, by using the manual search or by standing on an item and opening the subtitles search dialog (By key or by an external addon)  | @burekas
-        </news>
+In order to get the API Key:
+
+1. Go to url - https://www.opensubtitles.com
+2. Register/Login
+3. On the top of the page press on the "User" logo -> API consumers -> New Consumer button
+4. Give it a Name, (Recommended) checked both: 'Allow anonymous downloads' and 'Under dev'
+5. Save
+6. Then you will see your API details, copy the API Key and put it in addon's settings with your Username and Password.</news>
         <platform>all</platform>
-        <language></language>
+        <language>en</language>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <forum>https://forum.opensubtitles.org/viewtopic.php?f=8&amp;t=15847</forum>
-        <website>http://www.opensubtitles.org</website>
-        <email>admin [at] opensubtitles {dot} org</email>                                               
+        <forum></forum>
+        <website></website>
+        <email></email>
+        <source></source>
         <assets>
-            <icon>icon.png</icon>			
-        </assets>    
+            <icon>icon.png</icon>
+        </assets>
     </extension>
 </addon>
 
@@ -1495,7 +1499,7 @@ v5.2.14 (2017-01-23)
 </addon>
 
 
-<addon id="plugin.program.maxql" name="MaxQL" version="1.1.1" provider-name="Zaxxon709">
+<addon id="plugin.program.maxql" name="MaxQL" version="1.1.3" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -1514,6 +1518,8 @@ v5.2.14 (2017-01-23)
 		<email></email>
 		<source></source>
 		<news>
+			1.1.3 - Added afFENity
+			1.1.2 - Added Fen Light
 			1.1.1 - Minor bug fixes and cleanup
 			1.1.0 - Cleaned up code. Changed addonid from script to plugin. Added TheLab, TheLabjr, Dradis, Taz19
 			1.0.9 - Fixed bug preventing Umbrella 3D from being disabled.
@@ -2295,7 +2301,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.module.accountmgr" version="2.3.9" name="Account Manager" provider-name="Zaxxon709">
+<addon id="script.module.accountmgr" version="2.4.1" name="Account Manager" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -2321,7 +2327,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.module.acctview" name="acctviewer" version="2.2.5" provider-name="Zaxxon709">
+<addon id="script.module.acctview" name="acctviewer" version="2.2.7" provider-name="Zaxxon709">
     <extension point="xbmc.python.module" library="resources" />
     <extension point="xbmc.python.pluginsource" library="default.py" />
     <extension point="xbmc.addon.metadata">
@@ -3007,8 +3013,8 @@ v1.0.0 - schumi2004,CaTz, Mafarricos
 
 		</news>
 		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
@@ -3300,35 +3306,7 @@ Clean up project files.
 </addon>
 
 
-<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.7.3+matrix" provider-name="rols1 (rols1@gmx.de)">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-    		<import addon="script.module.kodi-six" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="tunein2017.py">
-		<provides>audio</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de">tunein.com-Addon für Kodi</summary>
-		<summary lang="en">tunein.com-addon for Kodi</summary>
-		<summary lang="es">Complemento de tunein.com para Kodi</summary>
-		<description lang="de">Favoriten und Ordner (Tunein-Account erforderlich), Download-Option mit Streamripper, Standalone-Option StartWithMyRadioStations (Beispieldatei enthalten)</description>
-		<description lang="es">Favoritos y carpetas de favoritos (se requiere cuenta en TuneIn). Opción de descarga con el programa Streamripper. Opción independiente para iniciar con Mis Emisoras de Radio (incluye archivo de muestra).</description>	
-		<platform>all</platform>
-		<source>https://github.com/rols1/Kodi-Addon-TuneIn2017</source>
-		<forum>https://www.kodinerds.net/index.php/Thread/66559-RELEASE-Kodi-Addon-TuneIn2017</forum>
-		<license>The MIT License (MIT)</license>
-		<language>"en_GB"</language>
- 		<email>rols1@gmx.de</email>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>           
-		</assets>
-   </extension>
-</addon>
-
-
-<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.7.3+nexus" provider-name="rols1 (rols1@gmx.de)">
+<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.7.4+nexus" provider-name="rols1 (rols1@gmx.de)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1"/>
     		<import addon="script.module.kodi-six" />
@@ -3353,7 +3331,7 @@ Clean up project files.
 			<fanart>fanart.jpg</fanart>           
 		</assets>
    </extension>
-</addon>
+</addon> 
 
 
 <addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="4.0.2" provider-name="joaconigro">
@@ -3466,33 +3444,6 @@ Clean up project files.
 
 
 <!-- ---------------------------------------------------------------------- -->
-
-
-<addon id="plugin.image.flickrexplorer" name="FlickrExplorer" version="0.7.6+matrix" provider-name="rols1 (rols1@gmx.de)">
-  <requires>
-   <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.kodi-six" />
- </requires>
-  <extension point="xbmc.python.pluginsource" library="flickrexplorer.py">
-        <provides>image</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<summary lang="de">flickr-Addon für Kodi</summary>
-	<summary lang="en">flickr-addon for Kodi</summary>
-	<description lang="de">Blättern und Suchen in öffentlichen Flickr-Beständen (Photostream, Gallerien, Alben, Favoriten)</description>
-	<description lang="en">Browse and search public content on Flickr (Photostream, Galleries, Albums, Faves, People)</description>
-	<platform>all</platform>
-         <source>https://github.com/rols1/Kodi-Addon-FlickrExplorer</source>
-        <forum>will be added</forum>
-	<license>The MIT License (MIT)</license>
-	<language>"en_GB"</language>
- 	<email>rols1@gmx.de</email>
-        <assets>
-             <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>           
-     </assets>
-   </extension>
-</addon>
 
 
 <addon id="plugin.image.flickrexplorer" name="FlickrExplorer" version="0.7.6+nexus" provider-name="rols1 (rols1@gmx.de)">

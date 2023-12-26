@@ -11,26 +11,16 @@ An add-on to make the painful task of authorizing numerous add-ons effortless. P
 <ul>
     <li>Open the Kodi File Manager</li>
     <li>Select "Add source"</li>
-    <li>The path for the source is <code>https://zaxxon709.github.io/repo/</code> (Give it the name "709REPO")</li>
+    <li>The path for the source is <code>https://zaxxon709.github.io/repo/</code> (Give it the name "709REPO")</li><br>
 </ul>  
 
 
-### How the addon works:
-- Once authorization is complete a check is done for each supported addon to confirm if the addon is installed and if settings.xml exists for that addon.
-- If both of these checks are true your Trakt & Debrid data is retrieved from Account Manager and applied to the supported addons.
-- A one time backup can also be performed to save all Trakt & Debrid data to the default backup directory. This feature is not enabled by default but can be enabled by the user in settings/configure backup prior to completing authorization.<br>
+### Custom Trakt API Keys:
+- If you have your own Trakt API keys, please use them.<br> 
+- You can enter your keys within Account Manager's settings menu.
+- If you do not already have keys then just follow the link below to create them.<br>
 
-
-### Support for Custom API Keys:
-- Support has been added for your own Custom Trakt API keys. If you have your own keys, please use them. If you do not have keys then head on over to the Trakt website using the link below and create them.<br>
-
-<code>https://trakt.tv/oauth/applications/new</code>
-
-
-### Note for users/builders:
-- For Account Manager to function correctly you need to ensure the directories containing the settings.xml for each supported addon are present in the addon_data directory.
-- Some addons do not create the settings.xml after installation. To create it the user first has to open the addon settings menu and then choose 'ok' for the file to be created. If it's not present Account Manager simply does nothing and moves on to the next addon. So, make sure to add these to your build.
-- You'll find the option to use Custom Trakt API keys in the add-ons settings menu. I would appreciate it if builders would add their own keys to Account Manager prior to uploading their builds.<br>
+<code>https://trakt.tv/oauth/applications/new</code><br>
 
 
 ### Backup/Restore Data:
@@ -38,7 +28,7 @@ An add-on to make the painful task of authorizing numerous add-ons effortless. P
 - The options to backup, restore and clear data can be found in Account Manager's settings menu.
 - The backup created during authorization only backs up current installed add-ons. If you decide to add additional supported addons you should create another backup to save data for those add-ons.<br>
 - The default path is not persistent after build updates or fresh starts. For builders, I'd recommend your wizard data path for backups.<br>
-- The default backup path can also be changed by the user at any time via the Account Manager settings menu. If the default path is changed make sure to complete another backup.<br>
+- The default backup path can be changed any time in Account Manager's settings menu. If the default path is changed make sure to complete another backup.<br>
 
 <p>Default Backup Path = special://userdata/addon_data/plugin.program.accountmgr/</p>
 
@@ -48,7 +38,7 @@ An add-on to make the painful task of authorizing numerous add-ons effortless. P
     <li>WARNING! Use only to restore system to default settings.</li>
     <li>Open Account Manager and Navigate to the ‘Advanced’ category.
     <li>Select ‘Restore Default Settings'</li>
-    <li>This action will delete all your saved data, revoke all add-ons and reset all supported add-ons back to default.</li><br>
+    <li>This action will revoke all services, reset all add-on settings back to default, and delete all your saved data</li>
 </ul>
 
 
@@ -58,7 +48,7 @@ An add-on to make the painful task of authorizing numerous add-ons effortless. P
     <li>Navigate to the ‘Accounts’ category and choose your debrid service(s)</li>
     <li>Select 'Authorize' and proceed to pair your account</li>
     <li>Wait for the 'Sync is complete' notification and choose 'OK' to exit</li>
-    <li>All supported add-ons are now authorized!</li><br>
+    <li>All supported add-ons are now authorized!</li>
 </ul>
 
 
@@ -67,7 +57,7 @@ An add-on to make the painful task of authorizing numerous add-ons effortless. P
     <li>Open Account Manager</li>
     <li>Navigate to the ‘Accounts’ category and select ‘Authorize’ to pair your account</li>
     <li>Wait for the 'Sync is complete' notification and when prompted choose 'OK' to force close Kodi</li>
-    <li>All supported add-ons are now authorized!</li><br>
+    <li>All supported add-ons are now authorized!</li>
 </ul>
 
 
@@ -75,14 +65,20 @@ An add-on to make the painful task of authorizing numerous add-ons effortless. P
 <ul>
     <li>Open Account Manager</li>
     <li>Navigate to the ‘Accounts’ category and add your data into the appropriate field(s)</li>
-    <li>Choose 'Sync Add-ons' to sync your data with installed Add-ons</li><br>
+    <li>Choose 'Sync Add-ons' to sync your data with installed Add-ons</li>
+    <li>Wait for the 'Sync is complete' notification and when prompted choose 'OK' to force close Kodi</li>
+    <li>All supported add-ons are now synced!</li><br>
 </ul>
 
-### Open Accounts Manager:
 
-<p>RunAddon(script.module.accountmgr)</p><br>
 
-### Authorize Built-in Commands:
+### Built-in Commands:
+
+### Open Accounts Manager
+
+<p>RunAddon(script.module.accountmgr)</p>
+
+### Authorize<br>
 
 <p>Real-Debrid<br>
 RunScript(script.module.accountmgr, action=realdebridAuth)</p>
@@ -97,10 +93,10 @@ RunScript(script.module.accountmgr, action=alldebridAuth)</p>
 RunScript(script.module.accountmgr, action=traktAuth)</p>
 
 <p>TMDb<br>
-RunScript(script.module.accountmgr, action=tmdbAuth)</p><br>
+RunScript(script.module.accountmgr, action=tmdbAuth)</p>
 
 
-### Sync Built-in Commands:<br>
+### Sync<br>
 
 <p>Real-Debrid<br>
 RunScript(script.module.accountmgr, action=realdebridReSync)</p>
@@ -121,12 +117,10 @@ RunScript(script.module.accountmgr, action=ReSyncAll)</p>
 RunScript(script.module.accountmgr, action=SyncAll)</p>
 
 <p>Sync Metadata Accounts<br>
-RunScript(script.module.accountmgr, action=metaSync)</p><br>
+RunScript(script.module.accountmgr, action=metaReSync)</p>
 
 
-### View Authorized Add-ons Built-in Commands:<br>
-
-- This allows the user to view what addons are currently authorized
+### View Authorized Addons<br>
 
 <p>Real-Debrid<br>
 ActivateWindow(10001,plugin://script.module.acctview/?mode=realdebrid,return)</p>
@@ -166,104 +160,111 @@ ActivateWindow(10001,plugin://script.module.acctview/?mode=metadata,return)</p><
 12. TMDb<br>
 13. TVDb<br>
 
+### Supported Addons:
 
-### Debrid Supported Addons:
+### Debrid
 
 1.  Seren<br>                   
-2.  Fen<br>                  
-3.  Ezra<br>
-4.  The Coalition<br>
-5.  POV<br>                     
-6.  Umbrella<br>
-7.  Dradis<br>
-8.  Taz19<br>            
-9.  Shadow<br>              
-10. Ghost<br>
-11. Base19<br>                 
-12. Unleashed<br>             
-13. Chain Reaction<br>
-14. Twisted<br>
-15. Magic Dragon<br>
-16. Asgard<br>
-17. Patriot<br>
-18. Black Lightning<br>
-19. M.E.T.V<br>
-20. Aliunde K19<br>
-21. Otaku<br>
-22. All Accounts<br>
-23. My Accounts<br>
-24. ResolveURL	
+2.  Fen<br>
+3.  Fen Light<br>
+4.  afFENity<br>                  
+5.  Ezra<br>
+6.  The Coalition<br>
+7.  POV<br>                     
+8.  Umbrella<br>
+9.  Dradis<br>
+10. Taz19<br>            
+11. Shadow<br>              
+12. Ghost<br>
+13. Base<br>                 
+14. Unleashed<br>             
+15. Chain Reaction<br>
+16. Twisted<br>
+17. Magic Dragon<br>
+18. Asgard<br>
+19. Patriot<br>
+20. Black Lightning<br>
+21. M.E.T.V<br>
+22. Aliunde<br>
+23. Otaku<br>
+24. All Accounts<br>
+25. My Accounts<br>
+26. ResolveURL	
 
 
-### Trakt Supported Addons:
+### Trakt
                   
 1.  Seren (Custom Trakt API Keys Only)<br>
 2.  Fen<br>
-3.  Ezra<br>
-4.  The Coalition<br>
-5.  POV<br>                  
-6.  Umbrella<br>
-7.  Dradis<br>
-8.  Taz19<br>
-9.  Shadow<br>
-10. Ghost<br>
-11. Base19<br>
-12. Unleashed <br>           
-13. Chain Reaction<br>
-14. Magic Dragon<br>
-15. Asgard<br>
-16. Patriot<br>
-17. Black Lightning<br>
-18. Aliunde K19<br>
-19. Homelander<br>
-20. TheLab<br>
-21. Quicksilver<br>
-22. Chains Genocide<br>
-23. Absolution <br>      
-24. Shazam<br>
-25. The Crew<br>              
-26. Nightwing<br> 
-27. Alvin<br>
-28. Moria<br>
-29. 9 Lives<br>
-30. Scrubs V2<br>
-31. TheLabjr<br>
-32. TMDb Helper<br>
-33. Trakt Add-on<br>
-34. All Accounts<br>
-35. My Accounts
+3.  Fen Light<br>
+4.  afFENity<br>
+5.  Ezra<br>
+6.  The Coalition<br>
+7.  POV<br>                  
+8.  Umbrella<br>
+9.  Dradis<br>
+10. Taz19<br>
+11. Shadow<br>
+12. Ghost<br>
+13. Base<br>
+14. Unleashed<br>           
+15. Chain Reaction<br>
+16. Magic Dragon<br>
+17. Asgard<br>
+18. Patriot<br>
+19. Black Lightning<br>
+20. Aliunde K19<br>
+21. Homelander<br>
+22. TheLab<br>
+23. Quicksilver<br>
+24. Chains Genocide<br>
+25. Absolution<br>      
+26. Shazam<br>
+27. The Crew<br>              
+28. Nightwing<br> 
+29. Alvin<br>
+30. Moria<br>
+31. Nine Lives<br>
+32. Scrubs V2<br>
+33. TheLabjr<br>
+34. TMDb Helper<br>
+35. Trakt Add-on<br>
+36. All Accounts<br>
+37. My Accounts
 
 
-### Metadata Supported Addons:
+### Metadata
 
 1.  Seren<br>                  
 2.  Fen<br>
-3.  Ezra<br>
-4.  The Coalition<br>
-5.  POV<br>                   
-6.  Umbrella<br>
-7.  Dradis<br>
-8.  Taz19<br>
-9.  The Crew<br> 
-10. Homelander<br>
-11. TheLab<br> 
-12. Quicksilver<br>
-13. Chains Genocide<br>           
-14. Shazam<br>
-15. Nightwing<br>
-16. Alvin<br>
-17. Moria<br>
-18. Absolution<br>
-19. 9 Lives<br>
-20. TMDb Helper<br>
-21. Embuary Info<br>
-22. Metahandler<br>
-23. PVR Artwork Module<br>
-24. All Accounts<br>
-25. My Accounts
+3.  Fen Light<br>
+4.  afFENity<br>
+5.  Ezra<br>
+6.  The Coalition<br>
+7.  POV<br>                   
+8.  Umbrella<br>
+9.  Dradis<br>
+10. Taz19<br>
+11. The Crew<br> 
+12. Homelander<br>
+13. TheLab<br> 
+14. Quicksilver<br>
+15. Chains Genocide<br>           
+16. Shazam<br>
+17. Nightwing<br>
+18. Alvin<br>
+19. Moria<br>
+20. Absolution<br>
+21. Nine Lives<br>
+22. TMDb Helper<br>
+23. Embuary Info<br>
+24. Metahandler<br>
+25. PVR Artwork Module<br>
+26. All Accounts<br>
+27. My Accounts
 
 
-### Furk Supported Addons:
+### Furk
 
 1.  Fen<br>
 2.  Ezra<br>
@@ -282,26 +283,28 @@ ActivateWindow(10001,plugin://script.module.acctview/?mode=metadata,return)</p><
 15. Alvin<br>
 16. Moria<br>
 17. Absolution<br>
-18. 9 Lives<br>
+18. Nine Lives<br>
 19. All Accounts<br>
 20. My Accounts
 
 
-### Easynews Supported Addons:
+### Easynews
 
-1. Fen<br>
-2. Ezra<br>
-3. The Coalition<br>
-3. POV<br>
-4. Umbrella<br>
-5. Dradis<br>
-6. Taz19<br>
-7. The Crew<br>
-8. All Accounts<br>
-9. My Accounts
+1.  Fen<br>
+2.  Fen Light<br>
+3.  afFENity<br>
+4.  Ezra<br>
+5.  The Coalition<br>
+6.  POV<br>
+7.  Umbrella<br>
+8.  Dradis<br>
+9.  Taz19<br>
+10. The Crew<br>
+11. All Accounts<br>
+12. My Accounts
 
 
-### FilePursuit Supported Addons:
+### FilePursuit
 
 1. Umbrella<br>
 2. Dradis<br>

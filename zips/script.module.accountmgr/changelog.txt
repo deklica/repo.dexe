@@ -1,3 +1,23 @@
+2.4.1 - Added afFENity. Fixed Taz19 trakt auth. Fixed all-debrid revoke failing for Fen Light.
+
+2.4.0 - Added Fen light. Added Base and removed Base 19. Added support for missing settings.xml's. During the authorization process Account Manager will now create the settings.xml for any add-ons that do not create them on intial install.
+
+2.3.9 - Streamlined the initial authorization process to reduce the time taken to complete. Edited the view authorizations window to give it a cleaner look. Disabled auto-backup of Trakt & Debrid data during authorization by default. If needed, this feature can be re-enabled in settings/configure backup. Enabled update notifications by default so users who didn't install via repo will know there is an update available.
+
+2.3.8 - Fixed acctview write error during backup/revoke operations. Added Otaku.
+
+2.3.7 - Fixed a bug preventing All-Debrid Acctview from opening. Minor bug fixes and clean up.
+
+2.3.6 - Added Dradis, Taz19, TheLab, TheLabjr and All Accounts.
+
+2.3.5 - Fixed Asgard failing to auth Trakt. Added an option in settings to manually input backup directory.
+
+2.3.4 - Added Coalition and Base19. Added new artwork. Fixed a bug preventing revoke of All-Debrid data.
+
+2.3.3 - Added 9 Lives and Black Lightning. Bug fixes
+
+2.3.2 - Removed addons with broken repos. Removed addons with restrictions. Added Seren Trakt support but with custom Trakt API keys only. Added Absolution. Multiple bug fixes and cleanup
+
 2.3.1 - Added support for Furk/Easynews/FilePursuit. Added support for some metadata dependencies (Embuary Info, Metahandler, PVR Artwork Module). Bug fixes and cleanup.
 
 2.3.0 - Added Support for Metadata accounts. Fixed an issue with the Restore to Default function.

@@ -7,7 +7,18 @@ CHANGE HISTORY 	Kodi-Addon-TuneIn2017 (previosly plugin for Plexmediaserver)
 			Plex-Forum:
 			https://forums.plex.tv/discussion/288260/rel-tunein2017
 
-03.12.2023  1.7.3	GetContent: Dialog "This show will be available later" for empty type 
+15.12.2023	1.7.4	Podcast-Download added: settings.xml completed, new Button 
+			Download in StationList, new functions Download, thread_getfile,
+			get_content_length, make_filenames, cleanmark, transl_umlaute,
+			humanbytes and check_Download.
+			Recording: fetch redirected url before url-corrections, fixes for failed 
+			popen call, using textviewer for running recordings after stop button.
+			GetContent: using new functions get_Web_json() and lower_key (jsonObject)
+			for easier Debugging html-embedded json-content.
+			"Local Stations" menu restored - it is missing on the tunein website, but
+			content of tunein.com/radio/local/ is still available.
+	
+03.12.2023	1.7.3	GetContent: Dialog "This show will be available later" for empty type 
 			Show added.
 28.01.2023	1.7.2	Main: Fix search pattern for title after changes in Tunein website.
 			Modul updater: adapted for Kodi 20 Nexus (adjust_line: addon id, python version).
