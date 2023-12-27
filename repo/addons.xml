@@ -2,7 +2,7 @@
 
 <addons>
 
-<addon id="repository.dexe" name=" dEXE's Addons Repository" version="1.0.4" provider-name="dEXE">
+<addon id="repository.dexe" name=" dEXE's Addons Repository" version="1.0.5" provider-name="dEXE">
 	<extension point="xbmc.addon.repository" name="dEXE's Addons Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/addons.xml</info>
@@ -21,28 +21,10 @@
 			<datadir zip="true">https://gitfront.io/r/dexe/n7TtSm9NEVFs/dexerepo/raw/zips/</datadir>
 			<hashes>false</hashes>
 		</dir>
-		<dir minversion="20.0.0">
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/nexus/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/nexus/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/nexus/</datadir>
-			<hashes>false</hashes>
-		</dir>
-		<dir minversion="19.0.0" maxversion="19.5.0">
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/matrix/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/matrix/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/matrix/</datadir>
-			<hashes>false</hashes>
-		</dir>
-		<dir minversion="17.0.0" maxversion="18.9.0">
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/leia/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/leia/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/leia/</datadir>
-			<hashes>false</hashes>
-		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Kodi dEXE's Repo</summary>
-		<description>A collection of my, fixed/modded, best and latest Kodi add-ons and dependencies.[CR][CR]Home for:[CR]Repo of all Repositories, Titlovi.com Unofficial, BauBau Vavoo...</description>
+		<description>A collection of my, fixed/modded, best and latest Kodi add-ons and dependencies. One repo to rule them all ;)[CR][CR]Home for:[CR]Repo of all Repositories, Titlovi.com Unofficial, BauBau Vavoo...</description>
 		<disclaimer lang="en">This repository nor the addons within does not form part of the Kodi Media Centre. Please do not seek assistance with this repository or the addons from any of the Official Kodi Support Channels. The authors do not host any of the content in these add-ons and take no responsibility for the content found.</disclaimer>
 		<language>en</language>
 		<platform>all</platform>

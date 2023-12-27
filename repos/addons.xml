@@ -122,7 +122,6 @@ repository.temptv
 repository.thecrew
 repository.thewarehouse
 repository.tidal2
-repository.tikipeter
 repository.titan.bingie.mod
 repository.topg
 repository.torrest
@@ -2315,25 +2314,6 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 		<summary>Install TIDAL2 Addons</summary>
 		<description>Download and install addons by arneson</description>
 		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.tikipeter" name="Tikipeter's Repository" version="1.0.3" provider-name="Tikipeter">
-	<extension point="xbmc.addon.repository" name="Tikipeter's Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary>Tikipeter's Repository</summary>
-		<description>Unofficial add-ons repository</description>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
