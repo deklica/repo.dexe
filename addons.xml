@@ -581,7 +581,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.thetvapp" name="TheTVApp" version="0.6" provider-name="xxxxxx">
+<addon id="plugin.video.thetvapp" name="TheTVApp" version="0.7" provider-name="xxxxxx">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
