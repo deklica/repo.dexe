@@ -18,6 +18,7 @@ plugin.video.scrubsv2
 plugin.video.thetvapp
 plugin.video.ukturk19
 plugin.video.watchnixtoons2
+plugin.video.whitelodge
 plugin.video.ytchannels
 script.realdebrid
 
@@ -91,6 +92,7 @@ plugin.image.flickrexplorer
 plugin.image.kindgirls
 
 --- Dependencies ---
+resource.images.whitelodge.artwork
 script.fenstruary.helper
 script.module.jetextractors
 script.module.microjenscrapers
@@ -136,7 +138,7 @@ script.module.cocoscrapers
 
 --- Roar ---
 plugin.video.themoviedb.helper
-script.module.tmdbhelper
+script.module.jurialmunkey
 context.themoviedb.helper
 script.module.infotagger
 
@@ -681,6 +683,42 @@ Random updates by lolage.
         <assets>
             <icon>icon.png</icon>
         </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.whitelodge" name="Whitelodge" provider-name="one_eyed_jack" version="1.05.06">
+    <requires>
+        <import addon="resource.images.whitelodge.artwork" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+    </requires>
+    <extension library="whitelodge.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en_GB">Whitelodge</summary>
+        <description lang="en_GB">Fetches official stream urls/ids from various streaming services, and sends them to their equivalent Kodi add-on for playback.[CR]NOTE: This add-on uses free and legal resources for it's purposes. User has to have installed and configured (with linked active account where required) the supported services' equivalent add-ons in order to achieve playback.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum />
+        <website />
+        <source />
+        <disclaimer lang="en_GB">This project uses the TMDb, JustWatch, Trakt, Fanart.tv APIs, but is not affiliated nor endorsed by any of their respective ogranisations.[CR]Please support these ogranisations however you can.</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>screenshot-01.png</screenshot>
+            <screenshot>screenshot-02.png</screenshot>
+            <screenshot>screenshot-03.png</screenshot>
+        </assets>
+        <news>
+- See Changelog on Tools menu
+        </news>
     </extension>
 </addon>
 
@@ -3521,9 +3559,6 @@ Clean up project files.
 </addon>
 
 
-<!-- ---------------------------------------------------------------------- -->
-
-
 <addon id="plugin.image.flickrexplorer" name="FlickrExplorer" version="0.7.6+nexus" provider-name="rols1 (rols1@gmx.de)">
   <requires>
    <import addon="xbmc.python" version="3.0.1"/>
@@ -3548,6 +3583,27 @@ Clean up project files.
             <fanart>fanart.jpg</fanart>           
      </assets>
    </extension>
+</addon>
+
+
+<!-- ---------------------------------------------------------------------- -->
+
+
+<addon id="resource.images.whitelodge.artwork" name="Whitelodge Artwork" version="0.0.6" provider-name="bleak-lodge">
+    <extension point="kodi.resource.images" compile="false" type="Whitelodge" />
+    <requires>
+        <import addon="kodi.resource" version="1.0.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Themes for Whitelodge add-on</summary>
+        <description lang="en_GB">Provided separately to allow easier distribution and consume less bandwidth</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 

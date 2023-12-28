@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="resource.images.whitelodge.artwork" name="Whitelodge Artwork" version="0.0.6" provider-name="bleak-lodge">
+    <extension point="kodi.resource.images" compile="false" type="Whitelodge" />
+    <requires>
+        <import addon="kodi.resource" version="1.0.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Themes for Whitelodge add-on</summary>
+        <description lang="en_GB">Provided separately to allow easier distribution and consume less bandwidth</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
