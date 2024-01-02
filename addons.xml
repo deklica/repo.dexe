@@ -331,7 +331,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="1.0.17">
+<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="1.0.18">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -3630,7 +3630,7 @@ Clean up project files.
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.86" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.87" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
