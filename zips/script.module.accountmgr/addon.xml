@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.accountmgr" version="2.4.1" name="Account Manager" provider-name="Zaxxon709">
+<addon id="script.module.accountmgr" version="2.4.2" name="Account Manager" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-            	<import addon="script.module.acctview" version="2.2.7" />
+            	<import addon="script.module.acctview" version="2.2.8" />
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">

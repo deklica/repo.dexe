@@ -71,14 +71,11 @@ An add-on to make the painful task of authorizing numerous add-ons effortless. P
 </ul>
 
 
+### Open Account Manager:
 
-### Built-in Commands:
+<p>RunAddon(script.module.accountmgr)</p><br>
 
-### Open Accounts Manager
-
-<p>RunAddon(script.module.accountmgr)</p>
-
-### Authorize<br>
+### Authorize:<br>
 
 <p>Real-Debrid<br>
 RunScript(script.module.accountmgr, action=realdebridAuth)</p>
@@ -93,10 +90,10 @@ RunScript(script.module.accountmgr, action=alldebridAuth)</p>
 RunScript(script.module.accountmgr, action=traktAuth)</p>
 
 <p>TMDb<br>
-RunScript(script.module.accountmgr, action=tmdbAuth)</p>
+RunScript(script.module.accountmgr, action=tmdbAuth)</p><br>
 
 
-### Sync<br>
+### Sync:<br>
 
 <p>Real-Debrid<br>
 RunScript(script.module.accountmgr, action=realdebridReSync)</p>
@@ -117,10 +114,10 @@ RunScript(script.module.accountmgr, action=ReSyncAll)</p>
 RunScript(script.module.accountmgr, action=SyncAll)</p>
 
 <p>Sync Metadata Accounts<br>
-RunScript(script.module.accountmgr, action=metaReSync)</p>
+RunScript(script.module.accountmgr, action=metaReSync)</p><br>
 
 
-### View Authorized Addons<br>
+### View Authorized Addons:<br>
 
 <p>Real-Debrid<br>
 ActivateWindow(10001,plugin://script.module.acctview/?mode=realdebrid,return)</p>
@@ -187,9 +184,11 @@ ActivateWindow(10001,plugin://script.module.acctview/?mode=metadata,return)</p><
 21. M.E.T.V<br>
 22. Aliunde<br>
 23. Otaku<br>
-24. All Accounts<br>
-25. My Accounts<br>
-26. ResolveURL	
+24. Realizer<br>
+25. Premiumizer<br>
+26. All Accounts<br>
+27. My Accounts<br>
+28. ResolveURL	
 
 
 ### Trakt

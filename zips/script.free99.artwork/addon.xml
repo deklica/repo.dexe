@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.free99.artwork" version="1.0" name="[COLOR orange]Free99 Artwork[/COLOR]" provider-name="JewBMX">
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>Free99 Artwork</summary>
+        <description>Free99 Artwork</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>

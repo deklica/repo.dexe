@@ -9,6 +9,7 @@ plugin.video.earthtv
 plugin.video.elementum
 plugin.video.fen
 plugin.video.fenlight
+plugin.video.free99
 plugin.video.json_iptv
 plugin.video.last_played
 plugin.video.megaiptv
@@ -98,6 +99,7 @@ script.module.jetextractors
 script.module.microjenscrapers
 script.module.thetvdb
 script.module.youtube_channels
+script.free99.artwork
 script.scrubsv2.artwork
 
 --- Other ---
@@ -353,6 +355,34 @@ script.globalsearch
             <fanart>fenlight_fanart.jpg</fanart>
         </assets>
         <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.free99" version="1.4" name="[COLOR goldenrod]Free99[/COLOR]" provider-name="JewBMX, DIGGZ">
+    <requires>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.resolveurl" />
+        <import addon="script.free99.artwork" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Squeezing the last drop out of free scapers</summary>
+        <description lang="en">Diggz Scrubs Fork</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license></license>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news></news>
     </extension>
 </addon>
 
@@ -2417,11 +2447,11 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.module.accountmgr" version="2.4.1" name="Account Manager" provider-name="Zaxxon709">
+<addon id="script.module.accountmgr" version="2.4.2" name="Account Manager" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-            	<import addon="script.module.acctview" version="2.2.5" />
+            	<import addon="script.module.acctview" version="2.2.8" />
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">
@@ -2443,7 +2473,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.module.acctview" name="acctviewer" version="2.2.7" provider-name="Zaxxon709">
+<addon id="script.module.acctview" name="acctviewer" version="2.2.8" provider-name="Zaxxon709">
     <extension point="xbmc.python.module" library="resources" />
     <extension point="xbmc.python.pluginsource" library="default.py" />
     <extension point="xbmc.addon.metadata">
@@ -3482,7 +3512,7 @@ Clean up project files.
 
 <addon id="plugin.audio.ytmusic.exp"
        name="YT [COLOR red]Music[/COLOR] EXP"
-       version="1.0~beta18"
+       version="1.0~beta22"
        provider-name="ForeverGuest">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -3497,17 +3527,9 @@ Clean up project files.
     <summary lang="en">Experimental Youtube [COLOR red]Music[/COLOR] plugin</summary>
     <description lang="en">EXPerimental plugin that lets you play music from Youtube Music.</description>
     <news>
-1.0~beta18 (2023-09-29)
-- Apply an improved fix to PyTube parser.py from https://github.com/sluggish-yard/pytube-saguaro/pull/5/commits/e91d5281c06cb7236c66053c3ce5561e647598a6
-- Update ytmusicapi to version `1.2.1`
-- Enable OAuth login into ytmusicapi
-- Add 'Home' menu item to YtMusic Library menu
-- Add experimental 'Charts' menu item to YtMusic Library menu (songs don't work yet)
-- Show more detailed song information
-- Add albumart to songs in playlist when adding entire albums / singles
-- Add context menu items 'Play' / 'Play next' / 'Add to queue' to songs
-- Add option to turn off colored titles (for headless operation of Kodi)
-- Add wrapper class around YtMusic Library results exposing a uniform interface for results obtained from internal storage and from different API calls
+1.0~beta22 (2024-01-08)
+- Fix a bug when loading a song with no artist id (e.g. from search)
+- Fix a bug when playing playlists containing ytmusic songs and songs from other sources
     </news>
     <assets>
       <icon>icon.png</icon>
@@ -3630,7 +3652,7 @@ Clean up project files.
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.87" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.88" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
@@ -3723,6 +3745,19 @@ Clean up project files.
         <icon>icon.png</icon>
     </assets>
   </extension>
+</addon>
+
+
+<addon id="script.free99.artwork" version="1.0" name="[COLOR orange]Free99 Artwork[/COLOR]" provider-name="JewBMX">
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>Free99 Artwork</summary>
+        <description>Free99 Artwork</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
 </addon>
 
 
