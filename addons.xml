@@ -307,7 +307,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter" version="3.2.17">
+<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter" version="3.2.18">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
