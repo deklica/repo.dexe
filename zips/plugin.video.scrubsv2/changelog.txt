@@ -1,0 +1,27 @@
+[B][COLOR grey](https://github.com/jewbmx/repo/issues)[/COLOR][/B]
+[My Work is now done with/for: Kodi v20, older versions beware lol.]
+
+[B]- 5.1.39[/B] Updated the settings a little for easier user use lol.(mainly the account tab.) Updated some scrape_sources stuff like some host fixes. Removed my contact details due to fools and trolls.(AKA Fools lol) Removed pretty much all the IMDB stuff besides trailers and common imdb_number use lol. Did some light scraper work plus adding some new ones.
+
+[B][COLOR fuchsia][Save the Providers Stress and me some work lol, Disable what you Dont use.][/COLOR][/B]
+
+[If someone decent with code wants to add the service.upnext type of feature to the addon, feel free to do so and send me that version otherwise i personally wont be doing it lol.(The venom addon is said to have it in their own style and older versions that use service.upnext lol]
+
+[Update Note1: Id suggest turning off the new scrape_sources settings in the "Dev'ish Settings" tab besides the ones labeled unknown, then just turn them on when you need em as they make things run a little slower and are not really needed with most content.]
+
+[Update Note2: My work from 5.1.29 and up will now be done with my isp security features turned off so sites dont get blocked for no reason, like the gdrive scrapers of alot of hosts. This also means that some folks with these security type of features enabled will likely have some trouble where/when it applies/differs.]
+
+[Update Note3: Id suggest tinkering with the new artwork setting and search bits, but the metadata info ones are likely best set to tmdb/default unless really needed. (like the episode differences for Firefly.) This stuff isnt completely tested or coded all the way yet! lol.]
+
+[Update Note4: I have decided that when the opensubtitles.org api stops working i am just gonna remove the subtitles features and settings. Anyone using subtitles should start finding a replacement soon. a4ksubtitles is a good choice and can be found in the jewbmx.github.io source/url.]
+
+[B][COLOR orange]Previous Log Info[/COLOR][/B]
+
+Now located online, use Tools option to view or visit...
+https://github.com/jewbmx/repo/blob/master/zips/plugin.video.scrubsv2/
+previous_changelogs.txt
+or
+https://raw.githubusercontent.com/jewbmx/repo/master/zips/plugin.video.scrubsv2/
+previous_changelogs.txt
+
+

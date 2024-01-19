@@ -443,7 +443,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.megaiptv" name="Mega IPTV" version="1.4.0" provider-name="G-Man">
+<addon id="plugin.video.megaiptv" name="Mega IPTV" version="1.4.5" provider-name="G-Man">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests"/>
@@ -582,7 +582,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.scrubsv2" version="5.1.38" name="Scrubs v2" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.1.39" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -605,10 +605,10 @@ script.globalsearch
         <license>Free the People!, Free the World!!</license>
         <platform>all</platform>
         <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
+            <icon>resources/images/icon.png</icon>
+            <fanart>resources/images/fanart.jpg</fanart>
         </assets>
-        <news>Total CleanUp of Providers : Checked and Cleaned as of June 2023. [CR] Check ChangeLog For More Details. [CR] (Please Report Any Issues To Me Directly By Email Or GitHub.)</news>
+        <news>Total CleanUp of Providers : Checked and Cleaned as of June 2023. [CR] Check ChangeLog For More Details.</news>
     </extension>
 </addon>
 
@@ -3512,7 +3512,7 @@ Clean up project files.
 
 <addon id="plugin.audio.ytmusic.exp"
        name="YT [COLOR red]Music[/COLOR] EXP"
-       version="1.0~beta22"
+       version="1.0~beta23"
        provider-name="ForeverGuest">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
