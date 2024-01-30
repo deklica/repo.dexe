@@ -307,7 +307,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter" version="3.2.20">
+<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter" version="3.2.21">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -333,7 +333,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="1.0.21">
+<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="1.0.22">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -613,7 +613,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.thetvapp" name="TheTVApp" version="0.7" provider-name="xxxxxx">
+<addon id="plugin.video.thetvapp" name="TheTVApp" version="0.8" provider-name="xxxxxx">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -671,7 +671,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.1" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.2" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -682,7 +682,7 @@ script.globalsearch
     <extension point="xbmc.addon.metadata">
         <summary lang="en">WatchNixtoons2</summary>
         <description lang="en">
-Watch cartoons and anime from [COLOR orange][B]www.wcofun.tv[/B][/COLOR].
+Watch cartoons and anime from [COLOR orange][B]www.wcofun.net[/B][/COLOR].
 
 Support the WatchCartoonOnline website with a PayPal donation to:
 [COLOR khaki][B]wcohelp@yandex.com[/B][/COLOR]
@@ -694,6 +694,12 @@ Random updates by lolage.
         <language>en</language>
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.12.2:[/B]
+- Change wcofun.tv domain to wcofun.net
+- Update Thumbnail Hashes
+- Fix getting plot (wcostream)
+- Change how chapters are retrieved
+
 [B]0.12.1:[/B]
 - Update User Agent
 - Update Thumbnail Hashes
@@ -706,10 +712,7 @@ Random updates by lolage.
 - modify resolver for wcostream
 - change default setting form popular thumbnails to true
 - Update User Agent
-- Update Thumbnail Hashes
-
-[B]0.11.6:[/B]
-- add wcofun.org in old domain list</news>
+- Update Thumbnail Hashes</news>
         <assets>
             <icon>icon.png</icon>
         </assets>
@@ -3132,7 +3135,7 @@ v1.0.0 - schumi2004,CaTz, Mafarricos
 <addon
 	id="service.languagepreferencemanager"
 	name="Language Preference Manager"
-	version="1.0.2"
+	version="1.0.3"
 	provider-name="ace20022/scott967/rockrider69"
 	>
 	<requires>
@@ -3156,11 +3159,16 @@ v1.0.0 - schumi2004,CaTz, Mafarricos
 1.0.1     : Initial version for main Kodi.tv addons repository
 1.0.2     : Fix 10sec latency on subs display and possible few lines lost - at video start or when switching audio.
             Forced sub tracks : check also subtitle field "isforced" in case field "name" is empty or misspelled.
-
+1.0.3	  : Improve 10sec subs latency workaround: new option to disable it (default), or enable it at 'start only' or 'start+resume'.
+            Option to prioritize 'SignsSongs' tracks via custom conditional sub preferences. Syntax is ...>Eng:Eng-ss>...
+            New Keywords Blacklist for Audio tracks. Same principle as for Subtitles, based on track name, to skip some (ex. Commentary, ...)
+            Fix Greek and Serbian language codes according to iso639-2/T. Fix some typos.
+            Fix multiple 3 digit codes per language (ex. German ger,deu). Now OK also for Conditional Subtitles preferences.
+			
 		</news>
 		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
