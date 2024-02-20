@@ -1,0 +1,24 @@
+v21.5.0
+- Initial release
+v21.6.0
+- Migrate from botan towards native AES and SHA256 implementations for:
+  - better portability
+  - faster compilation
+  - less dependencies
+v21.6.1
+  - Switch from adaptive to manual-osd for inputstream
+  - Fix not subscribed channels leading to crash
+v21.7.0
+  - Add Android TV platform (e.g. BigScreen/4K)
+v21.7.1
+  - Adapt user agent header for platforms when streaming
+v21.7.2
+  - Fix EPG date
+v21.7.3
+  - Optionally use inputstream.ffmpegdirect
+v21.7.4
+  - Exploit some more EPG data (live, age, seasons, episodes)
+v21.7.5
+  - Fix startup with empty credentials and web
+v20.7.6
+  - Try to fix armv7a
