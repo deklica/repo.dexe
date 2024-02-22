@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="repository.torrest" name="Torrest Add-on repository" provider-name="i96751414" version="0.0.7">
+<addon id="repository.torrest" name="Torrest Add-on repository" provider-name="i96751414" version="0.0.8">
     <requires>
         <!--<import addon="xbmc.python" version="3.0.0"/>-->
     </requires>
@@ -19,10 +19,9 @@
         <summary lang="en">GitHub virtual Add-on repository</summary>
         <description lang="en">Customizable repository which acts as a proxy for defined GitHub users' add-ons updates.</description>
         <news>
-            - Add platform check support
-            - Fix arch detection for aarch with 32 bits
-            - Add support to Kodi 20
-            - Small improvements (os_platform, logging)
+- Improve HTTP server
+- Add spanish translation
+- Allow extracting information about running platform
         </news>
         <assets>
             <icon>icon.png</icon>

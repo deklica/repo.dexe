@@ -10,6 +10,7 @@ plugin.video.elementum
 plugin.video.fen
 plugin.video.fenlight
 plugin.video.free99
+plugin.video.jacktook
 plugin.video.json_iptv
 plugin.video.last_played
 plugin.video.megaiptv
@@ -262,7 +263,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.98" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.99" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementumorg" optional="true" />
@@ -385,6 +386,31 @@ script.globalsearch
         </assets>
         <news></news>
     </extension>
+</addon>
+
+
+<addon id="plugin.video.jacktook" name="Jacktook" version="0.1.7" provider-name="Sam-Max">
+	<requires>
+		<import addon="xbmc.python" version="3.00.0"/>
+		<import addon="script.module.requests" version="2.25.1"/>
+		<import addon="script.module.routing" version="0.2.3"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="jacktook.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">jacktook</summary>
+		<description lang="en">Kodi addon to integrate jackett and prowlarr with torrest</description>
+		<license>GPL-2.0-only</license>
+		<source>https://github.com/Sam-Max/plugin.video.jacktook</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+			<screenshot>home.png</screenshot>
+			<screenshot>tv.png</screenshot>
+			<screenshot>settings.png</screenshot>
+		</assets>
+	</extension>
 </addon>
 
 
@@ -2144,7 +2170,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.81" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.83" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="plugin.video.elementum" optional="true"/>

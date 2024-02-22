@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.southpaw" name="[COLOR dodgerblue]The South[/COLOR][COLOR red] Paw Repository[/COLOR]" version="0.5.6" provider-name="Tom">
+    <addon id="repository.southpaw" name="[COLOR dodgerblue]The South[/COLOR][COLOR red] Paw Repository[/COLOR]" version="0.5.7" provider-name="Tom">
         <extension point="xbmc.addon.repository" name="[COLOR dodgerblue]The South[/COLOR][COLOR red] Paw Repository[/COLOR]">
 		    <dir>
                 <info compressed="false">https://southpawlefty2468rocky.com/_repo/addons.xml</info>
