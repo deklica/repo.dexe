@@ -10,6 +10,7 @@ plugin.video.elementum
 plugin.video.fen
 plugin.video.fenlight
 plugin.video.free99
+plugin.video.gratis
 plugin.video.jacktook
 plugin.video.json_iptv
 plugin.video.last_played
@@ -389,6 +390,33 @@ script.globalsearch
 </addon>
 
 
+<addon id="plugin.video.gratis" name="Gratis" version="1.4.5" provider-name="X">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.resolveurl"/>
+		<import addon="script.module.beautifulsoup4"/>
+		<import addon="inputstream.adaptive"/>
+		<import addon="plugin.video.youtube"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Come here for the latest.</summary>
+		<description lang="en_GB">Merriam-Webster definition of GRATIS: without charge or recompense : FREE!!!</description>
+		<platform>all</platform>
+		<license>GPL-3.0-or-later</license>
+		<website></website>
+		<source></source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+
 <addon id="plugin.video.jacktook" name="Jacktook" version="0.1.7" provider-name="Sam-Max">
 	<requires>
 		<import addon="xbmc.python" version="3.00.0"/>
@@ -470,7 +498,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.megaiptv" name="Mega IPTV" version="1.4.5" provider-name="G-Man">
+<addon id="plugin.video.megaiptv" name="Mega IPTV" version="1.5.0" provider-name="G-Man">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests"/>
@@ -3687,7 +3715,7 @@ Clean up project files.
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.90" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.91" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
