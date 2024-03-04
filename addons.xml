@@ -417,7 +417,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.jacktook" name="Jacktook" version="0.1.7" provider-name="Sam-Max">
+<addon id="plugin.video.jacktook" name="Jacktook" version="0.1.9" provider-name="Sam-Max">
 	<requires>
 		<import addon="xbmc.python" version="3.00.0"/>
 		<import addon="script.module.requests" version="2.25.1"/>
@@ -3715,7 +3715,7 @@ Clean up project files.
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.91" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.92" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
