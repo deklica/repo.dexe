@@ -2,7 +2,7 @@
   <addon 
   id="repository.arrownegra" 
   name="[COLOR red]Arrow[/COLOR] [COLOR black]Negra[/COLOR] [COLORcyan]Repository[/COLOR]" 
-  version="2.05" 
+  version="2.06" 
   provider-name="Flecha Negra">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>  
