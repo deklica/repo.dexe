@@ -10,6 +10,7 @@ plugin.video.elementum
 plugin.video.fen
 plugin.video.fenlight
 plugin.video.free99
+plugin.video.fullmatchtv
 plugin.video.gratis
 plugin.video.jacktook
 plugin.video.json_iptv
@@ -17,7 +18,6 @@ plugin.video.last_played
 plugin.video.premiumizerx
 plugin.video.realizerx
 plugin.video.scrubsv2
-plugin.video.thetvapp
 plugin.video.ukturk19
 plugin.video.watchnixtoons2
 plugin.video.whitelodge
@@ -358,6 +358,32 @@ script.globalsearch
 </addon>
 
 
+<addon id="plugin.video.fullmatchtv"
+       name="Full Match TV"
+       version="0.0.2"
+       provider-name="Demonstratorz">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests"/>
+    <import addon='script.module.beautifulsoup4'/>
+    <import addon="plugin.video.youtube"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch Full Match NBA Replays NFL Replays NHL Replays of your favourite teams in HD</summary>
+    <description lang="en"></description>
+    <disclaimer lang="en">FULLMATCHTV.COM is only video embeddeding website. All of the videos found here come from 3rd party video sites such as YouTube, Openload, Ok.ru, Vidoza, StreamSB. We do not host any of the videos. Please contact to appropriate video hosting site for any video removal.</disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+
 <addon id="plugin.video.gratis" name="Gratis" version="1.4.5" provider-name="X">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -385,7 +411,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.jacktook" name="Jacktook" version="0.2.1" provider-name="Sam-Max">
+<addon id="plugin.video.jacktook" name="Jacktook" version="0.2.2" provider-name="Sam-Max">
 	<requires>
 		<import addon="xbmc.python" version="3.00.0"/>
 		<import addon="script.module.requests" version="2.25.1"/>
@@ -614,31 +640,6 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.thetvapp" name="TheTVApp" version="0.9" provider-name="xxxxxx">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.six"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <description lang="en">TheTVApp</description>
-        <disclaimer lang="en">https://thetvapp.to</disclaimer>	
-        <summary lang="en">https://thetvapp.to</summary>
-        <language>en</language>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <website>https://thetvapp.to</website>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-
 <addon id="plugin.video.ukturk19" name="UK Turk Playlists" version="1.0.5" provider-name="UKTurk">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
@@ -672,7 +673,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.2" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.3" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -695,6 +696,11 @@ Random updates by lolage.
         <language>en</language>
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.12.3:[/B]
+- Add option to play 1080p quality if available
+- Update User Agent
+- Update Thumbnail Hashes
+
 [B]0.12.2:[/B]
 - Change wcofun.tv domain to wcofun.net
 - Update Thumbnail Hashes
@@ -757,10 +763,10 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.youtube" name="YouTube" version="7.0.3.2+unofficial.1" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="7.0.4+nexus.unofficial.1" provider-name="anxdpanic, bromix">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
-        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="script.module.requests" version="2.27.1"/>
         <import addon="inputstream.adaptive" version="20.0.0"/>
         <import addon="script.module.inputstreamhelper" version="0.2.2" optional="true"/>
         <import addon="script.module.infotagger" version="0.0.5"/>
@@ -858,10 +864,17 @@ Random updates by lolage.
         <disclaimer lang="vi_VN">Plugin này không được xác nhận bởi Google</disclaimer>
         <disclaimer lang="zh_CN">此插件未被谷歌认可</disclaimer>
         <disclaimer lang="zh_TW">此附加元件未由Google支持</disclaimer>
-    <news>## v7.0.3.2
+    <news>## v7.0.4
 ### Fixed
-- Fix settings not being saved and setup wizard repeatedly activating in Kodi 20 and lower
-- Fix plugin refresh on settings change</news></extension>
+- Fix issues with Profiler running without timer when debug logging was enabled
+- Fix additional Python 2 unicode handling issues when accessing My Subscription
+
+ ### Changed
+ - Only set combined cache size to 20 MB in Setup Wizard if value is not already larger
+ - Cached playlist items will be forced to reload when deleting item from playlist rather than waiting 5 minutes
+
+ ### New
+ - Make colours used for extra details in video listings customisable in Kodi 20+</news></extension>
 </addon>
 
 
@@ -1135,7 +1148,7 @@ v2.0.0 (2021-01-29)
 
 <addon id="service.subtitles.localsubtitle"
        name="LocalSubtitle"
-       version="1.12.2"
+       version="1.12.3"
        provider-name="peno">
   <requires>
       <import addon="script.module.pysubs2" version="0.1.0"/>
@@ -1173,7 +1186,8 @@ As extra several extra feastures are added in this case:
 - Font, character set, color, ... selection: This overrules the kodi settings</description>
     <disclaimer lang="en"></disclaimer>
 	<news>
-Improved add-on by OpenSubtitles.org
+v1.12.3 (2024-03-24)
+- If the subtitle is located on a special location like samba then the addon could not load the subtitle file
 v1.12.2 (2023-12-02)
 - Some default settings were not applied if not changed first
 v1.12.1 (2021-12-15)
@@ -3768,7 +3782,7 @@ Clean up project files.
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.93" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.94" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />

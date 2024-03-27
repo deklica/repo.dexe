@@ -1,4 +1,24 @@
 
+## 0.2.2 (2024-03-22)
+* Added autoplay feature
+* Added clients timeouts and cache activation settings
+* Added new Tmdb helper addon json
+* Torrentio language improvements
+* Fixed kodi 19 compatibility
+* Other minor improvements and fixes
+
+## 0.2.1 (2024-03-12)
+* torrentio improvements (priority language, sort by language, etc)
+* added portugese translation
+* added trakt scrobbling support
+* others improvements and fixes
+
+## 0.2.0 (2024-03-04)
+* Add option to select and use all torrents clients at the same time.
+* Add pagination to tmdb and anilist search
+* Fix for real debrid download history issue (only played videos will be saved)
+
+
 ## 0.1.9 (2024-02-21)
  * Fixed RD torrent stored on cloud
  * Add sort by quality to torrentio and elfhosted

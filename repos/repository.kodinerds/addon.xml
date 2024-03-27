@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.4" provider-name="Kodinerds">
+<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.5" provider-name="Kodinerds">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
