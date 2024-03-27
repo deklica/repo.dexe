@@ -13,8 +13,8 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Watch Full Match NBA Replays NFL Replays NHL Replays of your favourite teams in HD</summary>
-    <description lang="en"></description>
+    <summary lang="en"></summary>
+    <description lang="en">Watch Full Match NBA Replays NFL Replays NHL Replays of your favourite teams in HD</description>
     <disclaimer lang="en">FULLMATCHTV.COM is only video embeddeding website. All of the videos found here come from 3rd party video sites such as YouTube, Openload, Ok.ru, Vidoza, StreamSB. We do not host any of the videos. Please contact to appropriate video hosting site for any video removal.</disclaimer>
     <language>en</language>
     <platform>all</platform>

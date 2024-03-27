@@ -372,8 +372,8 @@ script.globalsearch
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Watch Full Match NBA Replays NFL Replays NHL Replays of your favourite teams in HD</summary>
-    <description lang="en"></description>
+    <summary lang="en"></summary>
+    <description lang="en">Watch Full Match NBA Replays NFL Replays NHL Replays of your favourite teams in HD</description>
     <disclaimer lang="en">FULLMATCHTV.COM is only video embeddeding website. All of the videos found here come from 3rd party video sites such as YouTube, Openload, Ok.ru, Vidoza, StreamSB. We do not host any of the videos. Please contact to appropriate video hosting site for any video removal.</disclaimer>
     <language>en</language>
     <platform>all</platform>
@@ -632,8 +632,8 @@ script.globalsearch
         <license>Free the People!, Free the World!!</license>
         <platform>all</platform>
         <assets>
-            <icon>resources/images/icon.png</icon>
-            <fanart>resources/images/fanart.jpg</fanart>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
         <news>Total CleanUp of Providers : Checked and Cleaned as of June 2023. [CR] Check ChangeLog For More Details.</news>
     </extension>
@@ -655,7 +655,7 @@ script.globalsearch
 	<!--<extension point="xbmc.service" library="service.py" />-->
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">UK Turk Playlists 19</summary>
-		<description lang="en_GB"></description>
+		<description lang="en_GB">Open</description>
 		<disclaimer lang="en_GB"></disclaimer>
 		<language>en</language>
 		<platform>all</platform>
@@ -781,8 +781,8 @@ Random updates by lolage.
     </extension>
     <extension point="xbmc.addon.metadata">
         <assets>
-            <icon>resources/media/icon.png</icon>
-            <fanart>resources/media/fanart.jpg</fanart>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
         <platform>all</platform>
         <license>GPL-2.0-only</license>
@@ -3290,8 +3290,8 @@ v1.0.0 - schumi2004,CaTz, Mafarricos
 			
 		</news>
 		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
