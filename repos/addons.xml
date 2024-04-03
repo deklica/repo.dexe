@@ -402,8 +402,8 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.aeonmq5_mod" name="Aeon MQ5 Mod Skin Repository" version="11.1.0" provider-name="scott967">
-	<extension point="xbmc.addon.repository" name="Aeon MQ5 Leiamod Skin Repository">
+<addon id="repository.aeonmq5_mod" name="Aeon MQ5 Mod Skin Repository" version="11.2.0" provider-name="scott967">
+	<extension point="xbmc.addon.repository" name="Aeon MQ5 Mod Skin Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
@@ -412,11 +412,13 @@ repository.zachmorris
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Install Aeon MQ 5 Mod skin from Add-on Repository</summary>
-		<description lang="en">Mod of skin Aeon MQ5 developed by Marcos Qui for XBMC Gotham intended for use in Kodi Leia/Matrix/Nexus (ver 18.+)</description>
+		<description lang="en">Mod of skin Aeon MQ5 developed by Marcos Qui for XBMC Gotham intended for use in Kodi Leia/Matrix/Nexus/Omega</description>
 		<disclaimer/>
 		<platform>all</platform>
+		<news></news>
 		<assets>
 			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
