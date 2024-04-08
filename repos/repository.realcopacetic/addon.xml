@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.realcopacetic" name="realcopacetic Repository" version="1.0" provider-name="realcopacetic">
+<addon id="repository.realcopacetic" name="realcopacetic Repository" version="1.1" provider-name="realcopacetic">
     <extension point="xbmc.addon.repository" name="realcopacetic Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/realcopacetic/realcopacetic.github.io/master/repo/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/realcopacetic/realcopacetic.github.io/master/repo/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/realcopacetic/realcopacetic.github.io/master/repo/zips/</datadir>
+        </dir>
+        <dir minversion="19.9.1" maxversion="20.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/realcopacetic/realcopacetic.github.io/master/nexus/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/realcopacetic/realcopacetic.github.io/master/nexus/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/realcopacetic/realcopacetic.github.io/master/nexus/zips/</datadir>
+        </dir>
+        <dir minversion="20.9.1">
+            <info compressed="false">https://raw.githubusercontent.com/realcopacetic/realcopacetic.github.io/master/omega/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/realcopacetic/realcopacetic.github.io/master/omega/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/realcopacetic/realcopacetic.github.io/master/omega/zips/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">

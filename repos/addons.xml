@@ -482,7 +482,7 @@ repository.zachmorris
 </addon>
 
     
-<addon id="repository.arrownegra" name="Arrow Negra Repository" version="2.06" provider-name="Flecha Negra">
+<addon id="repository.arrownegra" name="Arrow Negra Repository" version="2.07" provider-name="Flecha Negra">
 	<extension point="xbmc.addon.repository" name="Arrow Negra Repositorio">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2108,7 +2108,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
     </extension>
 </addon>
 
-<addon id="repository.skinbase.nexus" name="GUIDOS SKINBASE Only Skins for Kodi 19+20" version="3.0.06" provider-name="TEAM-SKINBASE">
+<addon id="repository.skinbase.nexus" name="GUIDOS SKINBASE Only Skins for Kodi NEXUS" version="4.0.03" provider-name="TEAM-SKINBASE">
 	<extension point="xbmc.addon.repository" name="GUIDOS SKINBASE REPO">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

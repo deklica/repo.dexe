@@ -1,8 +1,0 @@
-v1.2.0
-- nexus repo
-
-v1.1.100
-- matrix repo
-
-v1.0.0:
-- gotham repo
