@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.5" provider-name="Kodinerds">
+<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.6" provider-name="Kodinerds">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -10,19 +10,25 @@
             <datadir zip="true">https://repo.kodinerds.net/addons</datadir>
             <hashes>false</hashes>
         </dir>
-        <dir minversion="20.9.9" maxversion="21.9.0">
+        <dir minversion="21.9.9" maxversion="22.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/pegasus/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/omega/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/omega/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="21.0.0" maxversion="22.9.0">
             <info compressed="true">https://repo.kodinerds.net/addons/omega/addons.xml</info>
             <checksum>https://repo.kodinerds.net/addons/omega/addons.xml.md5</checksum>
             <datadir zip="true">https://repo.kodinerds.net/addons/omega/zip/</datadir>
             <hashes>false</hashes>
         </dir>
-        <dir minversion="20.0.0" maxversion="21.9.0">
+        <dir minversion="20.0.0" maxversion="22.9.0">
             <info compressed="true">https://repo.kodinerds.net/addons/nexus/addons.xml</info>
             <checksum>https://repo.kodinerds.net/addons/nexus/addons.xml.md5</checksum>
             <datadir zip="true">https://repo.kodinerds.net/addons/nexus/zip/</datadir>
             <hashes>false</hashes>
         </dir>
-        <dir minversion="19.0.0" maxversion="21.9.0">
+        <dir minversion="19.0.0" maxversion="22.9.0">
             <info compressed="true">https://repo.kodinerds.net/addons/matrix/addons.xml</info>
             <checksum>https://repo.kodinerds.net/addons/matrix/addons.xml.md5</checksum>
             <datadir zip="true">https://repo.kodinerds.net/addons/matrix/zip/</datadir>

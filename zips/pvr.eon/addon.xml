@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="pvr.eon" version="20.7.6" name="EON PVR Client" provider-name="Nirvana">
+<addon id="pvr.eon" version="21.7.6+linux-armv7" name="EON PVR Client" provider-name="Nirvana">
 	<requires>
 		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
@@ -10,9 +10,9 @@
 		<import addon="inputstream.adaptive" minversion="20.0.0"/>
 		<import addon="script.module.inputstreamhelper" version="0.6.1"/>
 	</requires>
-	<extension point="kodi.pvrclient" library_linux="pvr.eon.so.20.7.6"/>
+	<extension point="kodi.pvrclient" library_linux="pvr.eon.so"/>
 	<extension point="xbmc.addon.metadata">
-		<platform>linux</platform>
+		<platform>linux-armv7</platform>
 		<license>GPL-2.0-or-later</license>
 		<source>https://github.com/nirvana-7777/pvr.eon</source>
 		<forum>https://www.kodinerds.net/thread/77069-release-pvr-eon-tv</forum>
@@ -47,7 +47,7 @@ EPG
 Replay (including restart of current event)
 
 [B]Notes[/B]
-Tested building it for Linux and Android / x86 and aarch64
+Tested building it for Linux and Android / x86, aarch64 and armv7a
 Only tested Telemach.ba, but other should work as well or should be easy to fix
 Depends on inputstream addon
 Fast forward and rewind won't work in Replay TV because that is handled via specific servers which inputstream does not support
