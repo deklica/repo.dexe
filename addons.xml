@@ -2155,7 +2155,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.83" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.86" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="plugin.video.elementum" optional="true"/>
@@ -3872,67 +3872,6 @@ Clean up project files.
 </addon>
 
 
-<addon id="pvr.eon" version="21.7.6+linux-armv7" name="EON PVR Client" provider-name="Nirvana">
-	<requires>
-		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
-		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-		<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
-		<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
-		<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
-		<import addon="inputstream.ffmpegdirect" minversion="20.0.0"/>
-		<import addon="inputstream.adaptive" minversion="20.0.0"/>
-		<import addon="script.module.inputstreamhelper" version="0.6.1"/>
-	</requires>
-	<extension point="kodi.pvrclient" library_linux="pvr.eon.so"/>
-	<extension point="xbmc.addon.metadata">
-		<platform>linux-armv7</platform>
-		<license>GPL-2.0-or-later</license>
-		<source>https://github.com/nirvana-7777/pvr.eon</source>
-		<forum>https://www.kodinerds.net/thread/77069-release-pvr-eon-tv</forum>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<summary lang="de_DE">EON PVR Client</summary>
-		<summary lang="en_GB">EON PVR Client</summary>
-		<summary lang="en_US">EON PVR Client</summary>
-		<description lang="de_DE">PVR-Client für Eon. Unterstützt TV, TV-Guide (EPG) und 7-Tage Replay</description>
-		<description lang="en_GB">PVR-Client for Eon. Supports TV, TV-Guide (EPG) and 7 day replay</description>
-		<description lang="en_US">PVR-Client for Eon. Supports TV, TV-Guide (EPG) and 7 day replay</description>
-		<disclaimer lang="de_DE">Keine offizielle Version. Alle Warenzeichen verbleiben bei Eon. Benutzung auf eigene Gefahr.</disclaimer>
-		<disclaimer lang="en_GB">No official version. All trademarks belong to Eon. Use at own risk.</disclaimer>
-		<disclaimer lang="en_US">No official version. All trademarks belong to Eon. Use at own risk.</disclaimer>
-		<news>[COLOR yellow][B]EON PVR Client for LibreELEC (RPi - armv7a)[/B][/COLOR]
-
-This is the EON.tv PVR client addon for Kodi. It provides Kodi integration for the streaming provider EON.tv. A user account / paid subscription is required to use this addon. Please create the user account outside of this addon. Please enter the username/password to the configuration of this addon. Some content is geo-blocked.
-
-[B]Supported service providers[/B]
-SBB
-Telemach
-NetTV Plus
-Vivacom
-Eon Hrvatska
-Nova
-
-[B]Features[/B]
-Live TV and Radio
-EPG
-Replay (including restart of current event)
-
-[B]Notes[/B]
-Tested building it for Linux and Android / x86, aarch64 and armv7a
-Only tested Telemach.ba, but other should work as well or should be easy to fix
-Depends on inputstream addon
-Fast forward and rewind won't work in Replay TV because that is handled via specific servers which inputstream does not support
-
-[B]Disclaimer[/B]
-This addon is inofficial and not linked in any form to eon.tv
-All trademarks belong to them
-</news>
-	</extension>
-</addon>
-
-
 <addon id="pvr.eon" version="20.7.3+linux-aarch64" name="EON PVR Client" provider-name="Nirvana">
 	<requires>
 		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
@@ -3946,7 +3885,7 @@ All trademarks belong to them
 	</requires>
 	<extension point="kodi.pvrclient" library_linux="pvr.eon.so"/>
 	<extension point="xbmc.addon.metadata">
-		<platform>linux-aarch64</platform>
+		<platform>linux linux-aarch64</platform>
 		<license>GPL-2.0-or-later</license>
 		<source>https://github.com/nirvana-7777/pvr.eon</source>
 		<forum>https://www.kodinerds.net/thread/77069-release-pvr-eon-tv</forum>
@@ -3994,7 +3933,7 @@ All trademarks belong to them
 </addon>
 
 
-<addon id="pvr.eon" version="21.7.6+android-armv7" name="EON PVR Client" provider-name="Nirvana">
+<addon id="pvr.eon" version="20.7.6+linux-armv7" name="EON PVR Client" provider-name="Nirvana">
 	<requires>
 		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
@@ -4003,6 +3942,66 @@ All trademarks belong to them
 		<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
 		<import addon="inputstream.ffmpegdirect" minversion="20.0.0"/>
 		<import addon="inputstream.adaptive" minversion="20.0.0"/>
+		<import addon="script.module.inputstreamhelper" version="0.6.1"/>
+	</requires>
+	<extension point="kodi.pvrclient" library_linux="pvr.eon.so"/>
+	<extension point="xbmc.addon.metadata">
+		<platform>linux linux-armv7</platform>
+		<license>GPL-2.0-or-later</license>
+		<source>https://github.com/nirvana-7777/pvr.eon</source>
+		<forum>https://www.kodinerds.net/thread/77069-release-pvr-eon-tv</forum>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<summary lang="de_DE">EON PVR Client</summary>
+		<summary lang="en_GB">EON PVR Client</summary>
+		<summary lang="en_US">EON PVR Client</summary>
+		<description lang="de_DE">PVR-Client für Eon. Unterstützt TV, TV-Guide (EPG) und 7-Tage Replay</description>
+		<description lang="en_GB">PVR-Client for Eon. Supports TV, TV-Guide (EPG) and 7 day replay</description>
+		<description lang="en_US">PVR-Client for Eon. Supports TV, TV-Guide (EPG) and 7 day replay</description>
+		<disclaimer lang="de_DE">Keine offizielle Version. Alle Warenzeichen verbleiben bei Eon. Benutzung auf eigene Gefahr.</disclaimer>
+		<disclaimer lang="en_GB">No official version. All trademarks belong to Eon. Use at own risk.</disclaimer>
+		<disclaimer lang="en_US">No official version. All trademarks belong to Eon. Use at own risk.</disclaimer>
+		<news>[COLOR yellow][B]EON PVR Client for LibreELEC (RPi - armv7a)[/B][/COLOR]
+
+This is the EON.tv PVR client addon for Kodi. It provides Kodi integration for the streaming provider EON.tv. A user account / paid subscription is required to use this addon. Please create the user account outside of this addon. Please enter the username/password to the configuration of this addon. Some content is geo-blocked.
+
+[B]Supported service providers[/B]
+SBB
+Telemach
+NetTV Plus
+Vivacom
+Eon Hrvatska
+Nova
+
+[B]Features[/B]
+Live TV and Radio
+EPG
+Replay (including restart of current event)
+
+[B]Notes[/B]
+Tested building it for Linux and Android / x86, aarch64 and armv7a
+Only tested Telemach.ba, but other should work as well or should be easy to fix
+Depends on inputstream addon
+Fast forward and rewind won't work in Replay TV because that is handled via specific servers which inputstream does not support
+
+[B]Disclaimer[/B]
+This addon is inofficial and not linked in any form to eon.tv
+All trademarks belong to them
+</news>
+	</extension>
+</addon>
+
+
+<addon id="pvr.eon" version="21.7.6+android-armv7" name="EON PVR Client" provider-name="Nirvana">
+	<requires>
+		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
+		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
+		<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
+		<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
+		<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
+		<import addon="inputstream.adaptive" minversion="21.0.0"/>
 		<import addon="script.module.inputstreamhelper" version="0.6.1"/>
 	</requires>
 	<extension point="kodi.pvrclient" library_android="libpvr.eon.so"/>
@@ -4062,8 +4061,7 @@ All trademarks belong to them
 		<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
 		<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
 		<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
-		<import addon="inputstream.ffmpegdirect" minversion="20.0.0"/>
-		<import addon="inputstream.adaptive" minversion="20.0.0"/>
+		<import addon="inputstream.adaptive" minversion="21.0.0"/>
 		<import addon="script.module.inputstreamhelper" version="0.6.1"/>
 	</requires>
 	<extension point="kodi.pvrclient" library_android="libpvr.eon.so"/>
