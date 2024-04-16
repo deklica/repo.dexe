@@ -74,6 +74,44 @@ RunPlugin(plugin://plugin.program.maxql/?mode=6)</p><br>
 35. TheLabjr<br>
 
 
+### Auto-Play
+
+1.  Seren<br>
+2.  Fen<br>
+3.  Fen Light<br>
+4.  afFENity<br>
+5.  Ezra<br>
+6.  Coalition<br>
+7.  POV<br>                  
+8.  Umbrella<br>
+9.  Dradis<br>
+10. Taz19<br>
+11. Shadow<br>
+12. Ghost<br>
+13. Base<br>
+14. Unleashed <br>           
+15. Chain Reaction<br>
+16. Magic Dragon<br>
+17. Asgard<br>
+18. Patriot<br>
+19. Black Lightning<br>
+20. Aliunde<br>
+21. Twisted<br>
+22. Homelander<br>
+23. TheLab<br>
+24. Quicksilver<br>
+25. Chains Genocide<br>
+26. Absolution <br>      
+27. Shazam<br>
+28. The Crew<br>              
+29. Nightwing<br> 
+30. Alvin<br>
+31. Moria<br>
+32. Nine Lives<br>
+33. Scrubs V2<br>
+34. TheLabjr<br>
+
+
 ### Dolby Vision
 
 1.  Seren<br>
