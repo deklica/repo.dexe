@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.lime" name="Lime Add-ons" version="1.0.2" provider-name="groggyegg">
+<addon id="repository.lime" name="Lime Add-ons" version="1.0.4" provider-name="groggyegg">
     <extension point="xbmc.addon.repository" name="Lime Add-ons">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/groggyegg/lime/master/addons.xml</info>
@@ -18,7 +18,7 @@
         <platform>all</platform>
         <license>MIT License</license>
         <assets>
-            <icon>resources/icon.png</icon>
+            <icon>icon.png</icon>
         </assets>
     </extension>
 </addon>
