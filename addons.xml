@@ -1752,7 +1752,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.program.maxql" name="MaxQL" version="1.1.4" provider-name="Zaxxon709">
+<addon id="plugin.program.maxql" name="MaxQL" version="1.1.5" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -1771,6 +1771,7 @@ In order to get the API Key:
 		<email></email>
 		<source></source>
 		<news>
+			1.1.5 - Added OneMoar.
 			1.1.4 - Added support for enabling Auto-Play.
 			1.1.3 - Added afFENity
 			1.1.2 - Added Fen Light
