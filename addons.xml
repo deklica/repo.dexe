@@ -2607,11 +2607,11 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.module.accountmgr" version="2.5.3" name="Account Manager" provider-name="Zaxxon709">
+<addon id="script.module.accountmgr" version="2.5.4" name="Account Manager" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-            	<import addon="script.module.acctview" version="2.3.5" />
+            	<import addon="script.module.acctview" version="2.3.6" />
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">
@@ -2633,7 +2633,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.module.acctview" name="acctviewer" version="2.3.5" provider-name="Zaxxon709">
+<addon id="script.module.acctview" name="acctviewer" version="2.3.6" provider-name="Zaxxon709">
     <extension point="xbmc.python.module" library="resources" />
     <extension point="xbmc.python.pluginsource" library="default.py" />
     <extension point="xbmc.addon.metadata">
