@@ -1,7 +1,4 @@
-1.0.1
+2.1.3
 
-- cleanup, take over some listitem work from AutoCompletion lib
-
-1.0.0
-
-- Initial release
+- Refactored code
+- Fix for Shield TV devices

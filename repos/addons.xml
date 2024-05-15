@@ -919,7 +919,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 	</extension>
 </addon>
 
-<addon id="repository.diggz" name="Diggz Repository" version="17" provider-name="Diggz">
+<addon id="repository.diggz" name="Diggz Repository" version="18" provider-name="Diggz">
 	<extension point="xbmc.addon.repository" name="Diggz Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

@@ -7,7 +7,10 @@
     - Source is open, so you can fork everything.
     - Some bug fixes or updates can come, to keep things working and have the latest versions.
 
-[B][COLOR red]0.1.100-0.1.101[/COLOR][/B]
+[B][COLOR red]0.1.103[/COLOR][/B]
+    - Maintenance release. Python 3.12 compatibility, Internal DNS rewritten.
+
+[B][COLOR red]0.1.100-0.1.102[/COLOR][/B]
     - Many changes around caching and parsing speed to make browsing faster.
     - Changed default 'gold' color to 'bold' to show properly on light backgrounds. (Thanks to @vasilky3)
     - Removed auto-scrape functionality to avoid bombing websites with search queries.
