@@ -645,7 +645,7 @@ script.globalsearch
 
 <addon id="plugin.video.seren" version="3.0.1" name="Seren (Omega)" provider-name="Nixgates">
     <requires>
-		<import addon="xbmc.gui" minversion="5.17.0" />
+		<import addon="xbmc.gui" version="5.17.0" minversion="5.17.0" />
         <import addon="xbmc.addon" version="17.9.910" />
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.27.0" />
