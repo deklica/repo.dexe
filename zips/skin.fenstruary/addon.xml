@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="skin.fenstruary" name="Fenstruary" provider-name="phil65, Ichabod Fletchman, Ivar Brandt, Tikipeter" version="0.6.35">
 	<requires>
-		<import addon="xbmc.gui" version="5.15.0" />
+		<import addon="xbmc.gui" version="5.16.0" />
 		<import addon="script.fenstruary.helper" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
