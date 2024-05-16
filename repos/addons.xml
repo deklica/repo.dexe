@@ -482,7 +482,7 @@ repository.zachmorris
 </addon>
 
     
-<addon id="repository.arrownegra" name="Arrow Negra Repository" version="2.07" provider-name="Flecha Negra">
+<addon id="repository.arrownegra" name="Arrow Negra Repository" version="2.20" provider-name="Flecha Negra">
 	<extension point="xbmc.addon.repository" name="Arrow Negra Repositorio">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
