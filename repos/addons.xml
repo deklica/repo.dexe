@@ -10,7 +10,11 @@ repository.elementumorg
  repository.ivarbrandt
  repository.realcopacetic
 
- skin.xonfluence
+ skin.fenstruary 20
+  script.fenstruary.helper
+ skin.fentastic 20
+  script.fentastic.helper
+ skin.xonfluence 19 20 21
  resource.images.moviegenrefanart.xonfluence
  resource.images.skinbackgrounds.xonfluence
 
@@ -147,6 +151,124 @@ repository.zachmorris
 
 <addons>
 
+<addon id="skin.fenstruary" name="Fenstruary" provider-name="phil65, Ichabod Fletchman, Ivar Brandt, Tikipeter" version="0.6.35">
+	<requires>
+		<import addon="xbmc.gui" version="5.16.0" />
+		<import addon="script.fenstruary.helper" />
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Fenstruary skin by phil65, Ichabod Fletchman, Tikipeter</summary>
+		<summary lang="en_NZ">Fenstruary skin by phil65, Ichabod Fletchman, Tikipeter</summary>
+		<summary lang="en_US">Fenstruary skin by phil65, Ichabod Fletchman, Tikipeter</summary>
+		<description lang="en_GB">Fenstruary is used with the Fen Addon.</description>
+		<description lang="en_NZ">Fenstruary is used with the Fen Addon.</description>
+		<description lang="en_US">Fenstruary is used with the Fen Addon.</description>
+		<disclaimer lang="en_GB">Fenstruary is used with the Fen Addon.</disclaimer>
+		<disclaimer lang="en_NZ">Fenstruary is used with the Fen Addon.</disclaimer>
+		<disclaimer lang="en_US">Fenstruary is used with the Fen Addon.</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="script.fenstruary.helper" name="Fenstruary Helper" provider-name="Tikipeter" version="0.7.14">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.library" library="resources/lib/default.py"/>
+    <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <news />
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum />
+        <source />
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <description lang="en_GB">Fenstruary Helper for the Fenstruary Skin.</description>
+        <description lang="en_NZ">Fenstruary Helper for the Fenstruary Skin.</description>
+        <description lang="en_US">Fenstruary Helper for the Fenstruary Skin.</description>
+    </extension>
+</addon>
+
+
+<addon id="skin.fentastic" version="1.0.24" name="FENtastic" provider-name="Ivar Brandt">
+	<requires>
+		<import addon="xbmc.gui" version="5.16.0" />
+		<import addon="script.fentastic.helper" />
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<forum>http://forum.kodi.tv/</forum>
+		<source>https://github.com/xbmc/skin.estuary/</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>customizable_widgets.jpg</screenshot>
+			<screenshot>infopanel.jpg</screenshot>
+			<screenshot>viewtypes1.jpg</screenshot>
+		</assets>
+		<summary lang="en_GB">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
+		<summary lang="en_NZ">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
+		<summary lang="en_US">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
+		<description lang="en_GB">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+		<description lang="en_NZ">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+		<description lang="en_US">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+	</extension>
+</addon>
+
+
+<addon id="script.fentastic.helper" name="FENtastic Helper" version="0.6.20a" provider-name="Tikipeter, Ivar Brandt">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+    </requires>
+    <extension point="xbmc.python.library" library="resources/lib/default.py"/>
+    <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <news />
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum />
+        <source />
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <description lang="en_GB">FENtastic Helper for the FENtastic Skin.</description>
+        <description lang="en_NZ">FENtastic Helper for the FENtastic Skin.</description>
+        <description lang="en_US">FENtastic Helper for the FENtastic Skin.</description>
+    </extension>
+</addon>
+
+
 <addon
   id="skin.xonfluence"
   version="4.1.5"
@@ -242,6 +364,56 @@ repository.zachmorris
     <news>See changelog for latest changes</news>
   </extension>
 </addon>
+
+<addon
+  id="skin.xonfluence"
+  version="5.1"
+  name="Xonfluence"
+  provider-name="Helly, bsoriano, jdig4240">
+  <requires>
+    <import addon="xbmc.gui" version="5.17.0"/>
+	<import addon="script.favourites" version="8.1.2"/>
+	<import addon="script.image.resource.select" version="3.0.2"/>	
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    debugging="false"
+    effectslowdown="1.0">
+    <res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+    <summary lang="en_US">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+    <summary lang="nl">Uitgebreide MOD van Confluence skin origineel door Jezz_X en CCM door Mudislander.</summary>
+    <description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+    <description lang="en_US">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+    <description lang="nl">Xonfluence is een MOD van Confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin (gebaseerd op Mudislander's CCM).</description>
+    <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
+    <disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
+    <disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
+    <platform>all</platform>
+	  <license>GNU General Public License version 2</license>
+	  <forum>https://forum.kodi.tv/showthread.php?tid=346302</forum>
+	  <website></website>
+	  <email></email>
+	  <source>https://github.com/bartolomesoriano/skin.xonfluence</source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+	    <screenshot>screenshot-01.jpg</screenshot>
+	    <screenshot>screenshot-02.jpg</screenshot>
+	    <screenshot>screenshot-03.jpg</screenshot>
+	    <screenshot>screenshot-04.jpg</screenshot>
+	    <screenshot>screenshot-05.jpg</screenshot>
+	    <screenshot>screenshot-06.jpg</screenshot>
+	    <screenshot>screenshot-07.jpg</screenshot>
+	    <screenshot>screenshot-08.jpg</screenshot>
+	    <screenshot>screenshot-09.jpg</screenshot>
+    </assets>
+    <news>See changelog for latest changes</news>
+  </extension>
+</addon>
+
 
 <addon id="resource.images.skinbackgrounds.xonfluence" name="Skin Backgrounds - Xonfluence" version="0.0.1" provider-name="Helly">
 	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />

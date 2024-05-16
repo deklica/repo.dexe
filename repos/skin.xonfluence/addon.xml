@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.xonfluence"
-  version="5"
+  version="5.1"
   name="Xonfluence"
   provider-name="Helly, bsoriano, jdig4240">
   <requires>
-    <import addon="xbmc.gui" version="5.16.0"/>
-	<import addon="script.favourites" version="8.1.2"/>
+    <import addon="xbmc.gui" version="5.17.0"/>
+  <import addon="script.favourites" version="8.1.2"/>
 	<import addon="script.image.resource.select" version="3.0.2"/>	
   </requires>
   <extension

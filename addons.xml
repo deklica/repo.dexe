@@ -98,8 +98,7 @@ plugin.image.kindgirls
 
 --- Dependencies ---
 resource.images.whitelodge.artwork
-script.fenstruary.helper
-script.fentastic.helper
+script.module.autocompletion
 script.module.jetextractors
 script.module.microjenscrapers
 script.module.thetvdb
@@ -117,8 +116,6 @@ script.cu.lrclyrics
 script.games.rom.collection.browser
 script.service.argonforty-device (linux)
 service.rom.collection.browser
-skin.fenstruary
-skin.fentastic
 weather.gismeteo
 
 ---
@@ -127,7 +124,6 @@ weather.gismeteo
 plugin.video.smr_link_tester
 script.module.resolveurl
 script.module.resolveurl.xxx
-script.module.autocompletion
 resource.images.studios.white
 plugin.program.iagl
 plugin.program.retrobiostool
@@ -3778,49 +3774,21 @@ Clean up project files.
 </addon>
 
 
-<addon id="script.fenstruary.helper" name="Fenstruary Helper" provider-name="Tikipeter" version="0.7.14">
+<addon id="script.module.autocompletion" name="AutoCompletion library" version="2.1.1" provider-name="Philipp Temminghoff (phil65), bbaronSVK, finkleandeinhorn, berkhornet">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" version="2.9.1"/>
     </requires>
-    <extension point="xbmc.python.library" library="resources/lib/default.py"/>
-    <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
+    <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
-        <news />
+        <summary lang="en_GB">Module providing some AutoCompletion functions</summary>
+        <description lang="en_GB">Module providing some AutoCompletion functions</description>
         <platform>all</platform>
-        <license>GPL-2.0-only</license>
-        <forum />
-        <source />
+        <license>GPL-2.0-or-later</license>
+        <source>https://github.com/finkleandeinhorn/script.module.autocompletion</source>
         <assets>
             <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
         </assets>
-        <description lang="en_GB">Fenstruary Helper for the Fenstruary Skin.</description>
-        <description lang="en_NZ">Fenstruary Helper for the Fenstruary Skin.</description>
-        <description lang="en_US">Fenstruary Helper for the Fenstruary Skin.</description>
-    </extension>
-</addon>
-
-
-<addon id="script.fentastic.helper" name="FENtastic Helper" version="0.6.20a" provider-name="Tikipeter, Ivar Brandt">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-    </requires>
-    <extension point="xbmc.python.library" library="resources/lib/default.py"/>
-    <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <news />
-        <platform>all</platform>
-        <license>GPL-2.0-only</license>
-        <forum />
-        <source />
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <description lang="en_GB">FENtastic Helper for the FENtastic Skin.</description>
-        <description lang="en_NZ">FENtastic Helper for the FENtastic Skin.</description>
-        <description lang="en_US">FENtastic Helper for the FENtastic Skin.</description>
     </extension>
 </addon>
 
@@ -4894,77 +4862,6 @@ v.0.0.8 (2024-02-18)
       <icon>icon.png</icon>
     </assets>
   </extension>
-</addon>
-
-
-<addon id="skin.fenstruary" name="Fenstruary" provider-name="phil65, Ichabod Fletchman, Ivar Brandt, Tikipeter" version="0.6.35">
-	<requires>
-		<import addon="xbmc.gui" version="5.16.0" />
-		<import addon="script.fenstruary.helper" />
-	</requires>
-	<extension point="xbmc.gui.skin" debugging="false">
-		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
-		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
-		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
-		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
-		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
-		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Fenstruary skin by phil65, Ichabod Fletchman, Tikipeter</summary>
-		<summary lang="en_NZ">Fenstruary skin by phil65, Ichabod Fletchman, Tikipeter</summary>
-		<summary lang="en_US">Fenstruary skin by phil65, Ichabod Fletchman, Tikipeter</summary>
-		<description lang="en_GB">Fenstruary is used with the Fen Addon.</description>
-		<description lang="en_NZ">Fenstruary is used with the Fen Addon.</description>
-		<description lang="en_US">Fenstruary is used with the Fen Addon.</description>
-		<disclaimer lang="en_GB">Fenstruary is used with the Fen Addon.</disclaimer>
-		<disclaimer lang="en_NZ">Fenstruary is used with the Fen Addon.</disclaimer>
-		<disclaimer lang="en_US">Fenstruary is used with the Fen Addon.</disclaimer>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-
-<addon id="skin.fentastic" version="1.0.24" name="FENtastic" provider-name="Ivar Brandt">
-	<requires>
-		<import addon="xbmc.gui" version="5.16.0" />
-		<import addon="script.fentastic.helper" />
-	</requires>
-	<extension point="xbmc.gui.skin" debugging="false">
-		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
-		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
-		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
-		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
-		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
-		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
-		<forum>http://forum.kodi.tv/</forum>
-		<source>https://github.com/xbmc/skin.estuary/</source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			<screenshot>customizable_widgets.jpg</screenshot>
-			<screenshot>infopanel.jpg</screenshot>
-			<screenshot>viewtypes1.jpg</screenshot>
-		</assets>
-		<summary lang="en_GB">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
-		<summary lang="en_NZ">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
-		<summary lang="en_US">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
-		<description lang="en_GB">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
-		<description lang="en_NZ">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
-		<description lang="en_US">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
-	</extension>
 </addon>
 
 
