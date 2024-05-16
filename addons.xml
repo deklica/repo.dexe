@@ -4899,7 +4899,7 @@ v.0.0.8 (2024-02-18)
 
 <addon id="skin.fenstruary" name="Fenstruary" provider-name="phil65, Ichabod Fletchman, Ivar Brandt, Tikipeter" version="0.6.35">
 	<requires>
-		<import addon="xbmc.gui" minversion="5.15.0" maxversion="5.16.0" />
+		<import addon="xbmc.gui" minversion="5.15.0" />
 		<import addon="script.fenstruary.helper" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
@@ -4931,8 +4931,7 @@ v.0.0.8 (2024-02-18)
 </addon>
 
 
-<addon id="skin.fentastic" version="1.0.24" name="FENtastic"
-	provider-name="Ivar Brandt">
+<addon id="skin.fentastic" version="1.0.24" name="FENtastic" provider-name="Ivar Brandt">
 	<requires>
 		<import addon="xbmc.gui" version="5.16.0" />
 		<import addon="script.fentastic.helper" />
