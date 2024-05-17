@@ -10,7 +10,6 @@ plugin.video.elementum
 plugin.video.fen
 plugin.video.fenlight
 plugin.video.free99
-plugin.video.fullmatchtv
 plugin.video.gratis
 plugin.video.jacktook
 plugin.video.json_iptv
@@ -356,32 +355,6 @@ script.globalsearch
         </assets>
         <news></news>
     </extension>
-</addon>
-
-
-<addon id="plugin.video.fullmatchtv"
-       name="Full Match TV"
-       version="0.0.2"
-       provider-name="Demonstratorz">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.requests"/>
-    <import addon='script.module.beautifulsoup4'/>
-    <import addon="plugin.video.youtube"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en">Watch Full Match NBA Replays NFL Replays NHL Replays of your favourite teams in HD</description>
-    <disclaimer lang="en">FULLMATCHTV.COM is only video embeddeding website. All of the videos found here come from 3rd party video sites such as YouTube, Openload, Ok.ru, Vidoza, StreamSB. We do not host any of the videos. Please contact to appropriate video hosting site for any video removal.</disclaimer>
-    <language>en</language>
-    <platform>all</platform>
-    <assets>
-      <icon>icon.png</icon>
-    </assets>
-  </extension>
 </addon>
 
 
