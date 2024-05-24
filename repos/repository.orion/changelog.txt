@@ -1,4 +1,7 @@
 
+[B]5.0.0 (2024.05.22)[/B]
+- Major new version upgrade.
+
 [B]4.5.0 (2022.09.09)[/B]
 - Fix for Kodi 20.
 

@@ -1,4 +1,4 @@
-<addon id="service.cleansubs" name="CleanSubs" provider-name="Dalibor Lanik" version="7.0"> 
+<addon id="service.cleansubs" name="CleanSubs" provider-name="Dalibor Lanik" version="7.1"> 
   <requires>
     <import addon="xbmc.python" version="3.0.0" /> 
     <import addon="script.module.myconnpy" version="1.1.7" />
@@ -17,7 +17,9 @@
     <forum>http://forum.kodi.tv/showthread.php?tid=283342</forum>
     <email>dalibor@lanik.org</email>
     <description lang="en_GB">Clean up downloaded subs from ads and other rubbish, i.e. who translated subtitles or from which web they were downloaded. Should work with all encodings (tested with 1250, 1251 and utf-8) and srt, sub subtitles. I created basic definitions which are downloaded from my web at runtime. Mostly for serbo-croatian and czech, and there are definitions for english, german, french, polish, slovak, hungarian, dutch and portugese. If you have any strings you need removed in your language, submit them to me in UTF8 format an I can add them.</description>
-    <news>v7.0 [CR]
+    <news>v7.1 [CR]
+- Fixed: v20 Nexus [CR]
+    v7.0 [CR]
 - Python 3 version [CR]
 </news>
     <assets>

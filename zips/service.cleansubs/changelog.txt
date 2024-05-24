@@ -1,3 +1,6 @@
+v7.1
+- Fixed: v20 Nexus 
+
 v7.0
 - Python 3 version 
 

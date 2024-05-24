@@ -73,14 +73,13 @@ script.unlock.advancedsettings
 script.video.F4mProxy
 script.xbmc.unpausejumpback
 script.xbmcbackup
-service.autosubs
 service.banners
 service.blackbarsremover
 service.cleansubs
 service.languagepreferencemanager
 service.lt2http
 service.stinger.notification
-service.subloader
+service.subloader.lite
 service.vpn.manager
 
 --- Audio ---
@@ -745,7 +744,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.3" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.4" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -768,6 +767,11 @@ Random updates by lolage.
         <language>en</language>
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.12.4:[/B]
+- Fix issue of chapters running after movie workaround if enabled
+- Update User Agent
+- Update Thumbnail Hashes
+
 [B]0.12.3:[/B]
 - Add option to play 1080p quality if available
 - Update User Agent
@@ -780,16 +784,6 @@ Random updates by lolage.
 - Change how chapters are retrieved
 
 [B]0.12.1:[/B]
-- Update User Agent
-- Update Thumbnail Hashes
-
-[B]0.12.0:[/B]
-- Code clean-up and restructure
-- allow for different site profiles
-- add wcostream.tv domain as option
-- add premium video work around for wcostream
-- modify resolver for wcostream
-- change default setting form popular thumbnails to true
 - Update User Agent
 - Update Thumbnail Hashes</news>
         <assets>
@@ -3239,7 +3233,7 @@ v1.0.0 - schumi2004,CaTz, Mafarricos
 </addon>
 
 
-<addon id="service.cleansubs" name="CleanSubs" provider-name="Dalibor Lanik" version="7.0"> 
+<addon id="service.cleansubs" name="CleanSubs" provider-name="Dalibor Lanik" version="7.1"> 
   <requires>
     <import addon="xbmc.python" version="3.0.0" /> 
     <import addon="script.module.myconnpy" version="1.1.7" />
@@ -3258,7 +3252,9 @@ v1.0.0 - schumi2004,CaTz, Mafarricos
     <forum>http://forum.kodi.tv/showthread.php?tid=283342</forum>
     <email>dalibor@lanik.org</email>
     <description lang="en_GB">Clean up downloaded subs from ads and other rubbish, i.e. who translated subtitles or from which web they were downloaded. Should work with all encodings (tested with 1250, 1251 and utf-8) and srt, sub subtitles. I created basic definitions which are downloaded from my web at runtime. Mostly for serbo-croatian and czech, and there are definitions for english, german, french, polish, slovak, hungarian, dutch and portugese. If you have any strings you need removed in your language, submit them to me in UTF8 format an I can add them.</description>
-    <news>v7.0 [CR]
+    <news>v7.1 [CR]
+- Fixed: v20 Nexus [CR]
+    v7.0 [CR]
 - Python 3 version [CR]
 </news>
     <assets>
@@ -3366,44 +3362,43 @@ v1.0.0 - schumi2004,CaTz, Mafarricos
 </addon>
 
 
-<addon id="service.subloader" name="SubLoader" version="0.1.7" provider-name="DenimNani">
-	<requires></requires>
-	<extension point="xbmc.service" library="monitor.py" start="login"></extension>  
+<addon id="service.subloader.lite" name="SubLoader Lite" version="0.1.8" provider-name="dEXE">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+
+	<extension point="xbmc.service" library="monitor.py" start="startup"></extension>
+	
+	<extension point="kodi.context.item" name="SubLoader Lite - contextmenu">
+		<menu id="kodi.core.main">
+			<item library="resources.lib.context_menu.py">
+				<label>32048</label>
+				<visible>
+					String.IsEqual(Window(10000).Property(enable_context_menu),true) + 
+					[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,tvshow) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,episode)]
+				</visible>
+			</item>
+		</menu>
+	</extension>
+
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Automatic subtitles for your content</summary>
-		<description lang="en">Auto download the best subtitle automatically as soon you start the video.[CR]Special thanks to OpenSubtitles.org for providing a unique UA for Subloader.</description>
+		<summary lang="en">Auto Search for Subtitles on Play</summary>
+		<description lang="en">SubLoader Lite auto trigger Kodi subtitle search dialog if no subtitle (language) is found for a Movie/TV Show with exclusions and adds a subtitles dialog contextmenu button.</description>
 		<platform>all</platform>
 		<language>en</language>
-		<license>GPL</license>
-		<website>https://github.com/denimnani</website>
-		<source>https://github.com/denimnani/service.subloader</source>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<website></website>
+		<source></source>
 		<forum></forum>
 		<email></email>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.png</fanart>
-			<screenshot>screenshot1subloader.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot1.jpg</screenshot>
 			<screenshot>fanart.png</screenshot>
 		</assets>
-<news>
-0.1.7     23.11.2022
-G-Mod - removed
-peno64 fix/extend exclude pvr
-helviojr made a patch so the function videosource() returns the stream url if it is a .strm file. That way it can detect the addon used to open the file/url and can use the addons exclusions.
-        
-0.1.6     05.05.2021
-Bug fix on open subtitle dialog.
-
-0.1.5     21.02.2021
-Subloader now runs on KODI v19 (Special thanks to peno/64).
-Added python 3 compatibility.
-Some grammatical corrections (Special thanks to AlexNaga).
-
-0.1.4     23.07.2019
-Added Dutch language (Special thanks to Tinuz97).
-Clean up project files.
-</news>
 	</extension>
+
 </addon>
 
 
@@ -4755,7 +4750,7 @@ Egenskaper:
 </addon>
 
 
-<addon id="script.service.argonforty-device" name="ArgonForty Device Configuration" version="0.0.14~beta2" provider-name="ArgonForty">
+<addon id="script.service.argonforty-device" name="ArgonForty Device Configuration" version="1.1.1" provider-name="ArgonForty">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="virtual.rpi-tools" version="9.80.11"/>
@@ -4767,80 +4762,102 @@ Egenskaper:
     <extension point="xbmc.service" library="main.py" start="startup"/>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">ArgonForty Device Configuration</summary>
-        <description lang="en_GB">Install services to manage ArgonForty devices such as power button and fan speed. This will also enable I2C, IR receiver and UART.[CR][CR] * Disable then Enable Service for settings to take effect (or reboot)</description>
+        <summary lang="de_DE">ArgonForty-Gerätekonfiguration</summary>
+        <summary lang="it_IT">Configurazione del dispositivo ArgonForty</summary>
+        <description lang="en_GB">Installs services to manage ArgonForty devices such as power button, fan speed and Argon REMOTE.[CR][CR]This will also enable I2C, IR receiver and UART.</description>
+        <description lang="de_DE">Installiert Dienste zum Verwalten der ArgonForty Geräte z.B. Power-Taste, Lüfter und Argon REMOTE.[CR][CR]Es aktiviert den I2C-Bus, den IR-Empfänger und UART.</description>
+        <description lang="it_IT">Installa i servizi per gestire ArgonForty : Pulsante di accensione, velocità ventola e Argon REMOTE.[CR][CR]Verranno abilitati I2C, IR e UART.</description>
         <language></language>
         <platform>linux</platform>
         <license>MIT</license>
         <forum>https://forum.libreelec.tv/thread/27360-rpi4b-argon-one-case-shutdown/?postID=182477#post182477</forum>
         <website>argon40.com</website>
         <email>cs@argon40.com</email>
-        <source>https://github.com/HungerHa/libreelec_package_argonforty-device/tree/libreelec12</source>
-        <news>v.0.0.14~beta2 (2024-05-11)
+        <source>https://github.com/HungerHa/libreelec_package_argonforty-device/</source>
+        <news>v1.1.1 (2024-05-22)
+- some typos and translation errors fixed
+
+v1.1.0 (2024-05-21)
+- add-on icon changed to follow LE style (thanks chewitt for providing this)
+- issue #5: fan art modified to be more generic
+- issue #4: localization for Italian added
+- localization for German added
+
+v1.0.0 (2024-05-19)
+- renumbering to better follow semantic versioning
+
+v0.0.15 (2024-05-19)
+- menu structure reorganized
+- regression: fan always-on setting and emergency fan (90°) doesn't worked (again)
+
+v0.0.14~beta3 (2024-05-14)
+- added fan curve for GPU and PMIC temperature
+        
+v0.0.14~beta2 (2024-05-11)
 - avoid overwriting the existing rc_maps configuration, just add Argon REMOTE
 
-v.0.0.14~beta1 (2024-05-11)
+v0.0.14~beta1 (2024-05-11)
 - automatically switch between Celsius/Fahrenheit, depending on regional/temperature setting
 - language file refactored
 - regression: fan always-on setting and emergency fan (90°) doesn't worked
 - switched to official add-on versioning
 
-v.0.0.13 (2024-03-21)
+v0.0.13 (2024-03-21)
 - added HDD/SSD/NVMe temperature support
 
-v.0.0.12b (2024-03-19)
+v0.0.12b (2024-03-19)
 - migrated to Matrix addon settings format
 - support for temperature in Fahrenheit added
 
-v.0.0.12a (2024-03-15)
-- removed lgpio exceptions setting line, which was preventing v.0.0.12 from working at LibreELEC 11
+v0.0.12a (2024-03-15)
+- removed lgpio exceptions setting line, which was preventing v0.0.12 from working at LibreELEC 11
 
-v.0.0.12 (2024-03-02)
+v0.0.12 (2024-03-02)
 - switches from gpiozero to pure lgpio if available (workaround for lgpio GPIO busy error message)
 
-v.0.0.11d (2024-02-29)
+v0.0.11d (2024-02-29)
 - “Handle power button events” is honored without reboot
 - remote control shutdown exception fixed
 - fan settings now adjustable in 1 degree steps
 
-v.0.0.11c (2024-02-28)
+v0.0.11c (2024-02-28)
 - added debug messages
 - freeing of power button detection GPIO pin forced
 - code cleanup
 
-v.0.0.11b (2024-02-26)
+v0.0.11b (2024-02-26)
 - rolled back: "use the firmware check during power off"
 
-v.0.0.11a (2024-02-26)
+v0.0.11a (2024-02-26)
 - forgotten function call removed
 
-v.0.0.11 (2024-02-25)
+v0.0.11 (2024-02-25)
 - use the firmware check during power off
 - changed to /tmp directory for lgpio workaround due to permission issues with TempDirectory function
 
-v.0.0.10 (2024-02-21)
+v0.0.10 (2024-02-21)
 - switched to event based power button detection
 - shutdown process refactored
 - workaround for remote control shutdown
 - switched from lircd to rc_maps for argon remote control
 
-v.0.0.9a (2024-02-18)
+v0.0.9a (2024-02-18)
 - fixed typo
 
-v.0.0.9 (2024-02-18)
+v0.0.9 (2024-02-18)
 - fixed power button recognition for RPi5 with LE12
 
-v.0.0.8 (2024-02-18)
+v0.0.8 (2024-02-18)
 - fixed fan fluctuation with the new firmware
 ...
         </news>
         <disclaimer>This add-on is based on version 0.0.1 of Argon40, but is currently maintained by HarryH only. If there are some issues with that, please leave a comment in the LibreELEC forum.</disclaimer>
         <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
-
 
 
 <addon
