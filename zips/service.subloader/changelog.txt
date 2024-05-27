@@ -1,12 +1,15 @@
-SubLoader Lite Changelog
-------------------------
+SubLoader Update Changelog
+--------------------------
+
+0.1.9	(27.05.2024)
+- Restored the functionality of automatic download of subtitles from opensubtitles.org and put it as the second option, the default is to open the dialog for searching subtitles with an external subtitles addon.
+- Small change to the config file
 
 0.1.8	(24.05.2024)
-- Changed addon name and addon id
 - Cosmetic changes and some small fixes
 - For now only English translation
 - Option to add subtitle search dialog contextmenu button to context menu (on by default), so you can use the subtitles dialog also when kodi is not playing. You can use when focusing on an item and it will automatically check it for you without typing or just using the manual search button to check if subtitles exist. Only supported by OpenSubtitles Plus (OpenSubtitles.com) and OpenSubtitles.org by OpenSubtitles with dual subs addon. If you have Subtitles Dialog - Contextmenu (context.subtitlesdialog.contextmenu) addon by burekas installed, remove it.
-- Removed module and functionality for automatic search and download of subtitles from opensubtitles.org (not working after api change). Use external subtitle addons.
+- Removed module and functionality for automatic search and download of subtitles from opensubtitles.org. Use external subtitle addons.
 
 0.1.7	(23.11.2022)
 - G-Mod changes removed
