@@ -8,7 +8,7 @@
 	
 	<extension point="kodi.context.item" name="SubLoader Lite - contextmenu">
 		<menu id="kodi.core.main">
-			<item library="resources.lib.context_menu.py">
+			<item library="resources/lib/context_menu.py">
 				<label>32048</label>
 				<visible>
 					String.IsEqual(Window(10000).Property(enable_context_menu),true) + 
@@ -20,7 +20,7 @@
 
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Auto Search for Subtitles on Play</summary>
-		<description lang="en">SubLoader Lite auto trigger Kodi subtitle search dialog if no subtitle (language) is found for a Movie/TV Show with exclusions and adds a subtitles dialog contextmenu button.</description>
+		<description lang="en">SubLoader Lite auto trigger Kodi subtitle search dialog if no subtitle (language) with exclusions is found for a Movie/TV Show and adds a subtitles dialog contextmenu button.</description>
 		<platform>all</platform>
 		<language>en</language>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>

@@ -1,7 +1,7 @@
 # SubLoader Lite
 
 > ### About SubLoader Lite
-SubLoader Lite auto trigger Kodi subtitle search dialog if no subtitle (language) is found for a Movie/TV Show with exclusions and adds a subtitles dialog contextmenu button.
+SubLoader Lite auto trigger Kodi subtitle search dialog if no subtitle (language) with exclusions is found for a Movie/TV Show and adds a subtitles dialog contextmenu button.
 
 
 > ### Issues

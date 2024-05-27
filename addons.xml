@@ -28,7 +28,6 @@ script.realdebrid
 --- Context menus ---
 context.elementum
 context.embuary.info
-context.subtitlesdialog.contextmenu
 context.trailer.play
 script.playrandomvideos
 
@@ -979,31 +978,6 @@ Random updates by lolage.
 			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
-</addon>
-
-
-<addon id="context.subtitlesdialog.contextmenu" name="Subtitles Dialog - Contextmenu" version="1.1.2" provider-name="burekas">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-    </requires>
-    <extension point="kodi.context.item" library="addon.py">
-        <item>
-            <label>32000</label>
-            <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,tvshow) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,episode)</visible>
-        </item>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Adds a subtitles dialog contextmenu button</summary>
-        <description lang="en">Adds a subtitles dialog contextmenu button to context menu, so you can use the subtitles dialog also when kodi is not playing.[CR]You can use when focusing on an item and it will automatically check it for you without typing or just using the manual search button to check if subtitles exist.[CR][CR]Only supported by [B]OpenSubtitles Plus[/B] addon.</description>
-        <platform>all</platform>
-        <language></language>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum></forum>
-        <source></source>
-        <assets>
-            <icon>icon.png</icon>
-        </assets> 
-    </extension>
 </addon>
 
 
@@ -3132,45 +3106,6 @@ Always recommend restart after a restore
 </addon>
 
 
-<addon id="service.autosubs"
-    name="AutoSubs" version="1.1.2" provider-name="amet,schumi2004,juokelis">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.service" library="default.py" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Auto Search for Subtitles on Play</summary>
-    <description lang="en_GB">Auto Search for Subtitles on Playback start if no subs are found.[CR][CR]Icon credits goes to zNET Computer Solutions http://www.znetcs.pl</description>
-    <news>
-v1.1.2 (2023-05-26) by Diggz
-- Fixed: v20 Nexus
-    
-v1.1.1 (2020-04-26) by juokelis
-- Fixed: Exception settings are ignored
-
-v1.1.0 (2020-03-21) by juokelis
-- Ported to python 3 to run on v19 Matrix
-- strings.xml > strings.po
-
-v1.0.0 - schumi2004,CaTz, Mafarricos
-- Several fixes
-- Clean up
-- Added translations: Dutch, Portuguese
-- Exclude setting based on video duration
-- Check for specific language
-    </news>
-    <platform>all</platform>
-    <license>GPL-2.0-only</license>
-    <source>https://github.com/amet/service.autosubs</source>
-    <forum>https://forum.xbmc.org/showthread.php?tid=198973</forum>
-    <assets>
-      <icon>srt_logo_256x256.png</icon>
-      <fanart>srt_fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-
 <addon id="service.banners" name="Banners" provider-name="Dalibor Lanik" version="3.0"> 
   <requires>
     <import addon="xbmc.python" version="3.0.0" /> 
@@ -3371,7 +3306,7 @@ v1.0.0 - schumi2004,CaTz, Mafarricos
 	
 	<extension point="kodi.context.item" name="SubLoader Lite - contextmenu">
 		<menu id="kodi.core.main">
-			<item library="resources.lib.context_menu.py">
+			<item library="resources/lib/context_menu.py">
 				<label>32048</label>
 				<visible>
 					String.IsEqual(Window(10000).Property(enable_context_menu),true) + 
@@ -3383,7 +3318,7 @@ v1.0.0 - schumi2004,CaTz, Mafarricos
 
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Auto Search for Subtitles on Play</summary>
-		<description lang="en">SubLoader Lite auto trigger Kodi subtitle search dialog if no subtitle (language) is found for a Movie/TV Show with exclusions and adds a subtitles dialog contextmenu button.</description>
+		<description lang="en">SubLoader Lite auto trigger Kodi subtitle search dialog if no subtitle (language) with exclusions is found for a Movie/TV Show and adds a subtitles dialog contextmenu button.</description>
 		<platform>all</platform>
 		<language>en</language>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
@@ -3394,7 +3329,7 @@ v1.0.0 - schumi2004,CaTz, Mafarricos
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.png</fanart>
-			<screenshot>resources/media/screenshots/screenshot1.jpg</screenshot>
+			<screenshot>screenshot1.jpg</screenshot>
 			<screenshot>fanart.png</screenshot>
 		</assets>
 	</extension>
@@ -4260,7 +4195,7 @@ All trademarks belong to them
 </addon>
 
 
-<addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="6.6.2" provider-name="Taxigps, ronie">
+<addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="6.6.4" provider-name="Taxigps, ronie">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.beautifulsoup4" version="4.8.2+matrix.1"/>
@@ -4341,7 +4276,7 @@ All trademarks belong to them
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>- fixed broken scrapers and added new ones</news>
+		<news>- support for internet radio stations must now be enabled through settings</news>
 	</extension>
 </addon>
 
