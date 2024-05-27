@@ -3330,7 +3330,7 @@ Always recommend restart after a restore
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.png</fanart>
-			<screenshot>resources/media/screenshots/screenshot1.jpg</screenshot>
+			<screenshot>screenshot1.jpg</screenshot>
 			<screenshot>fanart.png</screenshot>
 		</assets>
 	</extension>
