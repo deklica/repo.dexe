@@ -59,6 +59,7 @@ repository.dis90
 repository.djaythemes
 repository.dobbelina
 repository.doomzday
+repository.dutchgreen
 repository.ezra
 repository.EzzerMacsWizard
 repository.fanfilm
@@ -1205,6 +1206,25 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 	</extension>
 </addon>
 
+<addon id="repository.dutchgreen" name="DutchGreen's Repository" version="1.0.0" provider-name="DutchGreen">
+	<extension point="xbmc.addon.repository" name="DutchGreen's Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>DutchGreen's Repository</summary>
+		<description>A repository.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+	</extension>
+</addon>
 
 <addon id="repository.ezra" name="Ezra Repository" version="0.0.2" provider-name="Ezra-Hubbard">
 	<extension point="xbmc.addon.repository" name="Ezra Repository">
