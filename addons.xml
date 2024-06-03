@@ -435,7 +435,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.last_played" name="Last Played" version="6.1.1" provider-name="Luis Rodrigues">
+<addon id="plugin.video.last_played" name="Last Played" version="6.4.1" provider-name="Luis Rodrigues">
 	<extension point="xbmc.python.pluginsource" library="addon.py">
 		<provides>video</provides>
 	</extension>
@@ -3724,7 +3724,7 @@ Always recommend restart after a restore
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.98" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.99" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />

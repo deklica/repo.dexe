@@ -442,7 +442,7 @@ repository.zachmorris
 
 <!--  Repositories  ----------------------------------- -->
 
-<addon id="repository.5star" name="5Star Kodi addons" version="6.1.0" provider-name="Luis Rodrigues">
+<addon id="repository.5star" name="5Star Kodi addons" version="6.4.0" provider-name="Luis Rodrigues">
 	<extension point="xbmc.addon.repository" name="5Star Kodi addons">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -451,8 +451,8 @@ repository.zachmorris
 		</dir>
 	</extension> 
 	<extension point="xbmc.addon.metadata">
-		<summary>Repository for 5Star Kodi addons</summary>
-		<description>Repository for 5Star Kodi addons</description>
+		<summary>5Star Kodi addons</summary>
+		<description>5Star Kodi addons</description>
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>

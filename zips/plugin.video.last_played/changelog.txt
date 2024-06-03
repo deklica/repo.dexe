@@ -1,4 +1,4 @@
-[B]6.1.1[/B] - Fix to work on Kodi 19 & Kodi 20
+[B]6.2.0[/B] - Set user agent
 [B]6.1.0[/B] - Kodi 20
 [B]6.0.3[/B] - Fix error clearing history
 [B]6.0.0[/B] - Kodi 19
