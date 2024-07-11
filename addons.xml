@@ -192,6 +192,36 @@ script.globalsearch
 </addon>
 
 
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.16" provider-name="THE CREW">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="pl">1.2</description>
+        <disclaimer lang="pl">test
+        </disclaimer>
+        <summary lang="en">Live TV and Sports</summary>
+        <description lang="en">Live TV and Sports</description>
+        <disclaimer lang="en">test
+        </disclaimer>
+        <language>pl</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website></website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
 <addon id="plugin.video.earthtv" version="3.0.2" name="earthTV" provider-name="Mark König">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -356,7 +386,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.gratis" name="Gratis" version="1.4.5" provider-name="X">
+<addon id="plugin.video.gratis" name="Gratis" version="1.5.5" provider-name="X">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests"/>
@@ -743,7 +773,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.4" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.6" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -766,6 +796,13 @@ Random updates by lolage.
         <language>en</language>
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.12.6:[/B]
+- Fix recent and page meta for wcostream
+
+[B]0.12.5:[/B]
+- Fix recent on wcostream
+- Update Thumbnail Hashes
+
 [B]0.12.4:[/B]
 - Fix issue of chapters running after movie workaround if enabled
 - Update User Agent
@@ -780,11 +817,7 @@ Random updates by lolage.
 - Change wcofun.tv domain to wcofun.net
 - Update Thumbnail Hashes
 - Fix getting plot (wcostream)
-- Change how chapters are retrieved
-
-[B]0.12.1:[/B]
-- Update User Agent
-- Update Thumbnail Hashes</news>
+- Change how chapters are retrieved</news>
         <assets>
             <icon>icon.png</icon>
         </assets>
@@ -3589,7 +3622,7 @@ Always recommend restart after a restore
 
 <addon id="plugin.audio.ytmusic.exp"
        name="YT [COLOR red]Music[/COLOR] EXP"
-       version="1.0~beta27"
+       version="1.0~beta28.1"
        provider-name="ForeverGuest">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -3604,8 +3637,10 @@ Always recommend restart after a restore
     <summary lang="en">Experimental Youtube [COLOR red]Music[/COLOR] plugin</summary>
     <description lang="en">EXPerimental plugin that lets you play music from Youtube Music.</description>
     <news>
-1.0~beta27 (2024-04-23)
-- Update to Pytubefix 5.1.1
+1.0~beta28.1 (2024-06-09)
+- Update to Pytubefix 5.6.3
+- Add rudimentary headless mode (to be extended)
+- Add experimental settings to force viewtypes on menus
     </news>
     <assets>
       <icon>icon.png</icon>
@@ -3724,7 +3759,7 @@ Always recommend restart after a restore
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.99" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.1.01" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
@@ -4196,7 +4231,7 @@ All trademarks belong to them
 </addon>
 
 
-<addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="6.6.4" provider-name="Taxigps, ronie">
+<addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="6.6.6" provider-name="Taxigps, ronie">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.beautifulsoup4" version="4.8.2+matrix.1"/>
