@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.6" provider-name="Kodinerds">
+<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.7" provider-name="Kodinerds">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -11,9 +11,9 @@
             <hashes>false</hashes>
         </dir>
         <dir minversion="21.9.9" maxversion="22.9.0">
-            <info compressed="true">https://repo.kodinerds.net/addons/pegasus/addons.xml</info>
-            <checksum>https://repo.kodinerds.net/addons/omega/addons.xml.md5</checksum>
-            <datadir zip="true">https://repo.kodinerds.net/addons/omega/zip/</datadir>
+            <info compressed="true">https://repo.kodinerds.net/addons/piers/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/piers/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/piers/zip/</datadir>
             <hashes>false</hashes>
         </dir>
         <dir minversion="21.0.0" maxversion="22.9.0">

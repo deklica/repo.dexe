@@ -386,7 +386,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.gratis" name="Gratis" version="1.5.5" provider-name="X">
+<addon id="plugin.video.gratis" name="Gratis" version="1.5.6" provider-name="X">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests"/>
@@ -3759,7 +3759,7 @@ Always recommend restart after a restore
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="2.1.01" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.1.2" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
