@@ -192,7 +192,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.16" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.17" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -386,7 +386,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.gratis" name="Gratis" version="1.5.6" provider-name="X">
+<addon id="plugin.video.gratis" name="Gratis" version="1.5.7" provider-name="X">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests"/>
@@ -3622,7 +3622,7 @@ Always recommend restart after a restore
 
 <addon id="plugin.audio.ytmusic.exp"
        name="YT [COLOR red]Music[/COLOR] EXP"
-       version="1.0~beta28.1"
+       version="1.0~beta29"
        provider-name="ForeverGuest">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -3636,12 +3636,7 @@ Always recommend restart after a restore
     <platform>all</platform>
     <summary lang="en">Experimental Youtube [COLOR red]Music[/COLOR] plugin</summary>
     <description lang="en">EXPerimental plugin that lets you play music from Youtube Music.</description>
-    <news>
-1.0~beta28.1 (2024-06-09)
-- Update to Pytubefix 5.6.3
-- Add rudimentary headless mode (to be extended)
-- Add experimental settings to force viewtypes on menus
-    </news>
+    <news></news>
     <assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
