@@ -1,6 +1,11 @@
 SubLoader Update Changelog
 --------------------------
 
+0.2.0	(23.07.2024)
+- Added option that if the language is in the excluded list, to load it from the file if it is embedded in the video and optionally a notification for it (loads the embedded subtitle instead of starting the search/download dialog or downloading it automatically).
+- Minor changes
+
+
 0.1.9	(27.05.2024)
 - Restored the functionality of automatic download of subtitles from opensubtitles.org and put it as the second option, the default is to open the dialog for searching subtitles with an external subtitles addon.
 - Small change to the config file
@@ -13,8 +18,8 @@ SubLoader Update Changelog
 
 0.1.7	(23.11.2022)
 - G-Mod changes removed
-- fix/extend exclude pvr (peno64)
-- patch to function videosource() to returns the stream url if it is a .strm file, that way it can detect the addon used to open the file/url and can use the addons exclusions (helviojr)
+- Fix/extend exclude pvr (peno64)
+- Patch to function videosource() to returns the stream url if it is a .strm file, that way it can detect the addon used to open the file/url and can use the addons exclusions (helviojr)
 
 
 

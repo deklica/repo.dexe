@@ -1,7 +1,8 @@
 # SubLoader
 
 > ### About SubLoader
-SubLoader auto trigger Kodi subtitle search dialog if no subtitle (language) with exclusions is found, or auto download the best subtitle automatically from OpenSubtitles.org as soon you start the video for a Movie/TV Show, and adds a subtitles dialog contextmenu button.
+SubLoader auto trigger Kodi subtitle search dialog if no subtitle (language) with exclusions is found, or auto download the best subtitle automatically from OpenSubtitles.org as soon you start the video for a Movie/TV Show, or reads the embedded subtitle if it is in the excluded list.
+It also has a feature to add a subtitles dialog contextmenu button to search if subtitle is available for a video.
 
 Special thanks to [OpenSubtitles.org](http://www.opensubtitles.org ) for providing a unique UA for Subloader.
 
