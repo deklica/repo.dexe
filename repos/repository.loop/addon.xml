@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.loop" name="[COLORlime]Loop[/COLOR] Repository" version="3.0.3" provider-name="The Loop">
+<addon id="repository.loop" name="[COLORlime]Loop[/COLOR] Repository" version="3.0.4" provider-name="The Loop">
 	<extension point="xbmc.addon.repository" name="Loop Repository">
 		<dir>
 			<info compressed="false">https://loopaddon.uk/zips19/addons.xml</info>

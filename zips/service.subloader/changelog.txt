@@ -1,10 +1,13 @@
 SubLoader Update Changelog
 --------------------------
 
+0.2.1	(26.07.2024)
+- Added option to load excluded audio stream language if video file has multiple audio tracks and optionally a notification for it.
+- Minor changes
+
 0.2.0	(23.07.2024)
 - Added option that if the language is in the excluded list, to load it from the file if it is embedded in the video and optionally a notification for it (loads the embedded subtitle instead of starting the search/download dialog or downloading it automatically).
 - Minor changes
-
 
 0.1.9	(27.05.2024)
 - Restored the functionality of automatic download of subtitles from opensubtitles.org and put it as the second option, the default is to open the dialog for searching subtitles with an external subtitles addon.

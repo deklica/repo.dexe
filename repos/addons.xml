@@ -1747,7 +1747,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.loop" name="Loop Repository" version="3.0.3" provider-name="The Loop">
+<addon id="repository.loop" name="Loop Repository" version="3.0.4" provider-name="The Loop">
 	<extension point="xbmc.addon.repository" name="Loop Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
