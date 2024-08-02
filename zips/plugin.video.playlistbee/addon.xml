@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.playlistbee" name="[COLORorangered]Bee[/COLOR]" version="3.1" provider-name="Nux007, Publish3r, Silhouette2022,Bee,1X and Romy">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.22.0"/>
+    <import addon="script.module.dateutil" version="2.8.1"/>    
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Playlist Bee</summary>
+    <summary lang="de_DE">Playlist Bee</summary>
+    <description lang="en_GB">Nothing is guaranteed.The guarantee only offers you a subscription.This is an addon for free.</description>
+    <description lang="de_DE">Nichts ist garantiert.Die Garantie bietet Ihnen nur ein Abonnement.Dies ist ein kostenloses Add-on.</description>
+    <description lang="ru_RU">Ничего не гарантировано.Гарантия предлагает вам лишь подписку.Это бесплатный аддон.</description>
+    <language>en de</language>
+    <platform>all</platform>
+    <source>https://github.com/Publish3r/repository.kodi.matrix/tree/main/plugin.video.playlistloader</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+  </extension>
+</addon>

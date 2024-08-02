@@ -59,6 +59,7 @@ repository.dis90
 repository.djaythemes
 repository.dobbelina
 repository.doomzday
+repository.dregs
 repository.dutchgreen
 repository.ezra
 repository.EzzerMacsWizard
@@ -110,6 +111,7 @@ repository.otaku
 repository.peno64
 repository.pikdum
 repository.prototype
+repository.publish3r
 repository.rector.stuff
 repository.repoil.club
 repository.resolveurl
@@ -1174,6 +1176,27 @@ repository.zachmorris
 	</extension>
 </addon>
 
+<addon id="repository.dregs" name="DreGs Repository" version="1.22" provider-name="Black Eagle">
+	<extension point="xbmc.addon.repository" name="Dregs Repositorio">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>repositorio Dregs</summary>
+		<description>repositorio oficial Dregs- Proibido reproducao sem autorização prévia</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+
 <addon id="repository.dutchgreen" name="DutchGreen's Repository" version="1.0.0" provider-name="DutchGreen">
 	<extension point="xbmc.addon.repository" name="DutchGreen's Repository">
 		<dir>
@@ -2149,6 +2172,27 @@ repository.zachmorris
 		<summary>ProtoType Repo</summary>
 		<description>A repository for the things that I wanted to change. In my head I'm fixing them, results may vary. :)</description>
 		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.publish3r" name="Publish3r Repository" version="2023.3" provider-name="Publish3r">
+	<extension point="xbmc.addon.repository" name="Publish3r">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Publish3r's Official Matrix Repository</summary>
+		<summary lang="de">Publish3r's Offizielles Matrix Repository</summary>
+		<description lang="en">Publish3r's development:[CR][CR]Support in the Kodinerds forum.[CR]https://www.kodinerds.net</description>
+		<description lang="de">Publish3r's development:[CR][CR]Support im Kodinerds Forum.[CR]https://www.kodinerds.net</description>
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>

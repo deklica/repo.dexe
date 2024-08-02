@@ -1,0 +1,4 @@
+﻿2023.3 - URL Sytax fixed.
+2023.2 - Fixed for Nexus.
+2021.1 - Moved to Github.
+1.0.0 - Released.
