@@ -193,7 +193,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.17" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.18" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -800,7 +800,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.6" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.7" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -822,29 +822,7 @@ Random updates by lolage.
         <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
         <language>en</language>
         <platform lang="en">all</platform>
-        <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
-[B]0.12.6:[/B]
-- Fix recent and page meta for wcostream
-
-[B]0.12.5:[/B]
-- Fix recent on wcostream
-- Update Thumbnail Hashes
-
-[B]0.12.4:[/B]
-- Fix issue of chapters running after movie workaround if enabled
-- Update User Agent
-- Update Thumbnail Hashes
-
-[B]0.12.3:[/B]
-- Add option to play 1080p quality if available
-- Update User Agent
-- Update Thumbnail Hashes
-
-[B]0.12.2:[/B]
-- Change wcofun.tv domain to wcofun.net
-- Update Thumbnail Hashes
-- Fix getting plot (wcostream)
-- Change how chapters are retrieved</news>
+        <news></news>
         <assets>
             <icon>icon.png</icon>
         </assets>

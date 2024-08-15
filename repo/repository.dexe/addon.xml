@@ -10,7 +10,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Kodi dEXE's Repo</summary>
-		<description>A collection of my, fixed/modded, best and latest Kodi add-ons and dependencies.[CR]One repo to rule them all ;)[CR][CR][I]For additional repos & skins install Roooar! (Repo of all Repositories).[/I][CR][CR]Please do NOT post this Repository on Youtube, Facebook, Blogs, or anywhere on the internet, thank you.</description>
+		<description>A collection of my, fixed/modded, best and latest Kodi add-ons and dependencies.[CR]One repo to rule them all ;)[CR][CR][I]For additional repos and skins install Roooar! (Repo of all Repositories).[/I][CR][CR]Please do NOT post this Repository on Youtube, Facebook, Blogs, or anywhere on the internet, thank you.</description>
 		<disclaimer lang="en">This repository nor the addons within does not form part of the Kodi Media Centre. Please do not seek assistance with this repository or the addons from any of the Official Kodi Support Channels. The authors do not host any of the content in these add-ons and take no responsibility for the content found.</disclaimer>
 		<language>en</language>
 		<platform>all</platform>
