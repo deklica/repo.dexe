@@ -3335,7 +3335,7 @@ Always recommend restart after a restore
 </addon>
 
 
-<addon id="service.subloader" name="SubLoader" version="0.2.1" provider-name="dEXE, DenimNani">
+<addon id="service.subloader" name="SubLoader" version="0.2.2" provider-name="dEXE, DenimNani">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>

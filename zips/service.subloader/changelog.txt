@@ -1,6 +1,9 @@
 SubLoader Update Changelog
 --------------------------
 
+0.2.2	(16.08.2024)
+- Language changes, added support for multiple codes of the same language.
+
 0.2.1	(26.07.2024)
 - Added option to load excluded audio stream language if video file has multiple audio tracks and optionally a notification for it.
 - Minor changes
