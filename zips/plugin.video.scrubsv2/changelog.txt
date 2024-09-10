@@ -1,7 +1,7 @@
 [B][COLOR grey](https://github.com/jewbmx/repo/issues)[/COLOR][/B]
 [My Work is now done with/for: Kodi v20 or higher, older versions beware lol.]
 
-[B]- 5.1.40[/B] Did some light scraper work plus adding some new ones.(With the help of some folks from github.) Might of done more but dont recall since my updates are so far apart anymore lmao. Decided to push this update "incomplete" as i have more to do but can count it as like a stage1 and stage2 lol.
+[B]- 5.1.41[/B] Did various small code changes/tweaks to a bunch of random stuff.(user requested / supplied assistance) Also did some minor changes in settings, mainly label based. Hardcoded the wootly domain/host name to its sources due to my ocd not liking it only showing "wootly" instead of "wootly.ch" lol.
 
 [B][COLOR fuchsia][Save the Providers Stress and me some work lol, Disable what you Dont use.][/COLOR][/B]
 

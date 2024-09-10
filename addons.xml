@@ -193,7 +193,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.18" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.19" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -387,7 +387,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.gratis" name="Gratis" version="1.5.7" provider-name="X">
+<addon id="plugin.video.gratis" name="Gratis" version="1.5.9" provider-name="X">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests"/>
@@ -641,7 +641,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.scrubsv2" version="5.1.40" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.1.41" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -866,7 +866,7 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.ytchannels" name="YouTube Channels" version="0.5.4+matrix.1" provider-name="natko1412,mintsoft,yeahme49">
+<addon id="plugin.video.ytchannels" name="YouTube Channels" version="0.5.5+matrix.1" provider-name="natko1412,mintsoft,yeahme49">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.six" version="1.11.0"/>
@@ -3037,7 +3037,7 @@ v1.0.1 (2019-08-06)
 
 
 <addon id="script.xbmcbackup"
-    name="Backup" version="1.7.0" provider-name="robweber">
+    name="Backup" version="1.7.1" provider-name="robweber">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.dateutil" version="2.8.0" />
@@ -3063,12 +3063,10 @@ v1.0.1 (2019-08-06)
 		<screenshot>screenshot5.jpg</screenshot>
 		<screenshot>screenshot6.jpg</screenshot>
     </assets>
-    <news>Version 1.7.0
-Can add suffix to backup folder names
-translations sync
-Minor UI fixes
-Fixed Dropbox tokens expiring by using refresh tokens
-Always recommend restart after a restore
+    <news>Version 1.7.1
+trim spaces around Dropbox key/secret entry
+fix error with zip file restores
+added additional information when gathering files
 </news>
     <summary lang="ar_SA">إنسخ إحتياطياً قاعده بيانات إكس بى إم سى وملفات اﻹعدادات فى حاله وقوع إنهيار مع إمكانيه اﻹسترجاع</summary>
     <summary lang="bg_BG">Добавката може да създава резервни копия и възстановява базата данни и настройките на Kodi, в случай на срив или повреда на файловете.</summary>
@@ -3759,7 +3757,7 @@ Always recommend restart after a restore
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="2.1.3" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="3.0.2" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
