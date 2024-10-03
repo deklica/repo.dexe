@@ -1,3 +1,7 @@
+v5.1.3 (2024-09-22)
+- Fixed ratings update for Season mode
+- Other minor updates
+
 v5.1.2 (2023-09-24)
 - Fixed 308 Permanent Redirect error for IMDb episodes list page
 - Updated scraper for IMDb episodes list page

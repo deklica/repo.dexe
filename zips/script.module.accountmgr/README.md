@@ -73,9 +73,6 @@ RunScript(script.module.accountmgr, action=offcloudAuth)</p>
 <p>Trakt<br>
 RunScript(script.module.accountmgr, action=traktAuth)</p>
 
-<p>Simkl<br>
-RunScript(script.module.accountmgr, action=simklAuth)</p>
-
 <p>TMDb<br>
 RunScript(script.module.accountmgr, action=tmdbAuth)</p><br>
 
@@ -96,9 +93,6 @@ RunScript(script.module.accountmgr, action=offcloudReSync)</p>
 
 <p>Trakt<br>
 RunScript(script.module.accountmgr, action=traktReSync)</p>
-
-<p>Simkl<br>
-RunScript(script.module.accountmgr, action=simklReSync)</p>
 
 <p>Sync Multiple Debrid Accounts<br>
 RunScript(script.module.accountmgr, action=ReSyncAll)</p>
@@ -130,9 +124,6 @@ ActivateWindow(10001,plugin://script.module.acctview/?mode=easynews,return)</p>
 <p>Trakt<br>
 ActivateWindow(10001,plugin://script.module.acctview/?mode=trakt,return)</p>
 
-<p>Simkl<br>
-ActivateWindow(10001,plugin://script.module.acctview/?mode=simkl,return)</p>
-
 <p>View Multiple Debrid Accounts<br>
 ActivateWindow(10001,plugin://script.module.acctview/?mode=allaccts,return)</p>
 
@@ -153,15 +144,14 @@ ActivateWindow(10001,plugin://script.module.acctview/?mode=metadata,return)</p><
 3.  All-Debrid<br>
 4.  OffCloud
 5.  Trakt<br>
-6.  Simkl<br>
-7.  Easynews<br>
-8.  FilePursuit<br>
-9.  Fanart.TV<br>
-10. OMDb<br>
-11. MDbList<br>
-12. IMDb<br>
-13. TMDb<br>
-14. TVDb<br>
+6.  Easynews<br>
+7.  FilePursuit<br>
+8.  Fanart.TV<br>
+9.  OMDb<br>
+10. MDbList<br>
+11. IMDb<br>
+12. TMDb<br>
+13. TVDb<br>
 
 ### Supported Addons:
 
@@ -175,26 +165,29 @@ ActivateWindow(10001,plugin://script.module.acctview/?mode=metadata,return)</p><
 6.  The Coalition<br>
 7.  POV<br>                     
 8.  Umbrella<br>
-9.  Dradis<br>
-10. Taz19<br>            
-11. Shadow<br>              
-12. Ghost<br>
-13. Base<br>                 
-14. Unleashed<br>             
-15. Chain Reaction<br>
-16. Twisted<br>
-17. Magic Dragon<br>
-18. Asgard<br>
-19. Patriot<br>
-20. Black Lightning<br>
-21. M.E.T.V<br>
-22. Aliunde<br>
-23. Otaku<br>
-24. Realizer<br>
-25. Premiumizer<br>
-26. All Accounts<br>
-27. My Accounts<br>
-28. ResolveURL	
+9.  Infinity<br>
+10. Dradis<br>
+11. Taz19<br>            
+12. Shadow<br>              
+13. Ghost<br>
+14. Base<br>                 
+15. Unleashed<br>             
+16. Chain Reaction<br>
+17. Twisted<br>
+18. Magic Dragon<br>
+19. Asgard<br>
+20. Patriot<br>
+21. Black Lightning<br>
+22. M.E.T.V<br>
+23. Aliunde<br>
+24. Nightwing Lite<br>
+25. Chains Genocide<br>
+26. Otaku<br>
+27. Realizer<br>
+28. Premiumizer<br>
+29. All Accounts<br>
+30. My Accounts<br>
+31. ResolveURL	
 
 
 ### OffCloud
@@ -213,42 +206,34 @@ ActivateWindow(10001,plugin://script.module.acctview/?mode=metadata,return)</p><
 6.  The Coalition<br>
 7.  POV<br>                  
 8.  Umbrella<br>
-9.  Dradis<br>
-10. Taz19<br>
-11. Shadow<br>
-12. Ghost<br>
-13. Base<br>
-14. Unleashed<br>           
-15. Chain Reaction<br>
-16. Magic Dragon<br>
-17. Asgard<br>
-18. Patriot<br>
-19. Black Lightning<br>
-20. Aliunde K19<br>
-21. Homelander<br>
-22. TheLab<br>
-23. Quicksilver<br>
-24. Chains Genocide<br>
-25. Absolution<br>      
-26. Shazam<br>
-27. The Crew<br>              
-28. Nightwing<br> 
+9.  Infinity<br>
+10. Dradis<br>
+11. Taz19<br>
+12. Shadow<br>
+13. Ghost<br>
+14. Base<br>
+15. Unleashed<br>           
+16. Chain Reaction<br>
+17. Magic Dragon<br>
+18. Asgard<br>
+19. Patriot<br>
+20. Black Lightning<br>
+21. Aliunde K19<br>
+22. Nightwing Lite<br>
+23. Homelander<br>
+24. Quicksilver<br>
+25. Chains Genocide<br>
+26. Absolution<br>      
+27. Shazam<br>
+28. The Crew<br>              
 29. Alvin<br>
 30. Moria<br>
 31. Nine Lives<br>
 32. Scrubs V2<br>
-33. TheLabjr<br>
-34. TMDb Helper<br>
-35. Trakt Add-on<br>
-36. All Accounts<br>
-37. My Accounts
-
-
-### Simkl
-
-1. Umbrella<br>
-2. Otaku<br>
-3. Simkl TV Tracker
+33. TMDb Helper<br>
+34. Trakt Add-on<br>
+35. All Accounts<br>
+36. My Accounts
 
 
 ### Easynews
@@ -260,19 +245,21 @@ ActivateWindow(10001,plugin://script.module.acctview/?mode=metadata,return)</p><
 5.  The Coalition<br>
 6.  POV<br>
 7.  Umbrella<br>
-8.  Dradis<br>
-9.  Taz19<br>
-10. The Crew<br>
-11. All Accounts<br>
-12. My Accounts
+9.  Infinity<br>
+9.  Dradis<br>
+10. Taz19<br>
+11. The Crew<br>
+12. All Accounts<br>
+13. My Accounts
 
 
 ### FilePursuit
 
 1. Umbrella<br>
-2. Dradis<br>
-3. All Accounts<br>
-4. My Accounts
+2. Infinity<br>
+3. Dradis<br>
+4. All Accounts<br>
+5. My Accounts
 
 
 ### Metadata
@@ -285,22 +272,21 @@ ActivateWindow(10001,plugin://script.module.acctview/?mode=metadata,return)</p><
 6.  The Coalition<br>
 7.  POV<br>                   
 8.  Umbrella<br>
-9.  Dradis<br>
-10. Taz19<br>
-11. The Crew<br> 
-12. Homelander<br>
-13. TheLab<br> 
+9.  Infinity<br>
+10. Dradis<br>
+11. Taz19<br>
+12. The Crew<br> 
+13. Homelander<br>
 14. Quicksilver<br>
 15. Chains Genocide<br>           
 16. Shazam<br>
-17. Nightwing<br>
-18. Alvin<br>
-19. Moria<br>
-20. Absolution<br>
-21. Nine Lives<br>
-22. TMDb Helper<br>
-23. Embuary Info<br>
-24. Metahandler<br>
-25. PVR Artwork Module<br>
-26. All Accounts<br>
-27. My Accounts
+17. Alvin<br>
+18. Moria<br>
+19. Absolution<br>
+20. Nine Lives<br>
+21. TMDb Helper<br>
+22. Embuary Info<br>
+23. Metahandler<br>
+24. PVR Artwork Module<br>
+25. All Accounts<br>
+26. My Accounts

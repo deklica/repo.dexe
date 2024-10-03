@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.light.imdb.ratings.update" name="Light IMDb Ratings Update" version="5.1.1" provider-name="axlt2002">
+<addon id="script.light.imdb.ratings.update" name="Light IMDb Ratings Update" version="5.1.3" provider-name="axlt2002">
     <requires>
         <import addon="script.module.simplejson" version="3.3.0" />
         <import addon="script.module.requests" />

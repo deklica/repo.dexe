@@ -464,7 +464,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.709" name="The 7o9Repo" version="1.0.1" provider-name="Zaxxon709">
+<addon id="repository.709" name="The 7o9Repo" version="1.0.2" provider-name="Zaxxon709">
     <extension point="xbmc.addon.repository" name="The7o9Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1062,7 +1062,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.diggz" name="Diggz Repository" version="22" provider-name="Diggz">
+<addon id="repository.diggz" name="Diggz Repository" version="23" provider-name="Diggz">
 	<extension point="xbmc.addon.repository" name="Diggz Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2517,7 +2517,7 @@ repository.zachmorris
     </extension>
 </addon>
 
-<addon id="repository.thecrew" name="THE CREW REPO" provider-name="The Crew" version="0.3.6">
+<addon id="repository.thecrew" name="THE CREW REPO" provider-name="The Crew" version="0.3.7">
 	<extension point="xbmc.addon.repository" name="The Crew" >
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

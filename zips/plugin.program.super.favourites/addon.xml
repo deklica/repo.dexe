@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.2.6" provider-name="jmooremcc, spoyser">
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.3.7" provider-name="jmooremcc, spoyser">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
-    <import addon="script.module.metahandler" optional="true" />
   </requires>
 
 
@@ -34,6 +33,31 @@
     </assets>
 
     <news>
+2.3.7 September 2023
+      -Fix reported glitch
+
+2.3.6 September 2023
+      -Fixed root translation bug in imagecache module
+
+2.3.5 September 2023
+      -Restored util module ROOT variable back to special path
+
+2.3.4 September 2023
+      -Modified imagecache to ignore special paths
+
+2.3.3 August 2023
+      - Added imagecache module as part of solution to implement saving icons and fanart during export/import
+      - Modified importer module to utilize imagecache
+      - Modified default module to utilize imagecache at startup
+      - Fixed miscellaneous bugs related to xbmc function calls
+
+2.3.2 July 2023
+    -Removed metahandler from addon.xml
+    -Added new imagecache module to implement the ability to import/export custom icons.
+    -Miscellaneous bug fixes
+    -Bug fixes in imagecache module
+    -Bug fix in importer module
+
 2.2.6 April 2022
       - Fix context menu settings bug
       - Fix more issues with activateWindowCommand

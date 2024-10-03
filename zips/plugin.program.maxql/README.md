@@ -45,33 +45,32 @@ RunPlugin(plugin://plugin.program.maxql/?mode=6)</p><br>
 6.  Coalition<br>
 7.  POV<br>                  
 8.  Umbrella<br>
-9.  Dradis<br>
-10. Taz19<br>
-11. Shadow<br>
-12. Ghost<br>
-13. Base<br>
-14. Unleashed <br>           
-15. Chain Reaction<br>
-16. Magic Dragon<br>
-17. Asgard<br>
-18. Patriot<br>
-19. Black Lightning<br>
-20. Aliunde<br>
-21. Twisted<br>
-22. M.E.T.V 19<br>
-23. Homelander<br>
-24. TheLab<br>
-25. Quicksilver<br>
-26. Chains Genocide<br>
-27. Absolution <br>      
-28. Shazam<br>
-29. The Crew<br>              
-30. Nightwing<br> 
+9.  Infinity<br>
+10. Dradis<br>
+11. Taz19<br>
+12. Shadow<br>
+13. Ghost<br>
+14. Base<br>
+15. Unleashed<br>           
+16. Chain Reaction<br>
+17. Magic Dragon<br>
+18. Asgard<br>
+19. Patriot<br>
+20. Black Lightning<br>
+21. Aliunde<br>
+22. Nightwing Lite<br>
+23. Twisted<br>
+24. M.E.T.V 19<br>
+25. Homelander<br>
+26. Quicksilver<br>
+27. Chains Genocide<br>
+28. Absolution <br>      
+29. Shazam<br>
+30. The Crew<br>              
 31. Alvin<br>
 32. Moria<br>
 33. Nine Lives<br>
 34. Scrubs V2<br>
-35. TheLabjr<br>
 
 
 ### Auto-Play
@@ -84,32 +83,31 @@ RunPlugin(plugin://plugin.program.maxql/?mode=6)</p><br>
 6.  Coalition<br>
 7.  POV<br>                  
 8.  Umbrella<br>
-9.  Dradis<br>
-10. Taz19<br>
-11. Shadow<br>
-12. Ghost<br>
-13. Base<br>
-14. Unleashed <br>           
-15. Chain Reaction<br>
-16. Magic Dragon<br>
-17. Asgard<br>
-18. Patriot<br>
-19. Black Lightning<br>
-20. Aliunde<br>
-21. Twisted<br>
-22. Homelander<br>
-23. TheLab<br>
-24. Quicksilver<br>
-25. Chains Genocide<br>
-26. Absolution <br>      
-27. Shazam<br>
-28. The Crew<br>              
-29. Nightwing<br> 
+9.  Infinity<br>
+10. Dradis<br>
+11. Taz19<br>
+12. Shadow<br>
+13. Ghost<br>
+14. Base<br>
+15. Unleashed<br>           
+16. Chain Reaction<br>
+17. Magic Dragon<br>
+18. Asgard<br>
+19. Patriot<br>
+20. Black Lightning<br>
+21. Aliunde<br>
+22. Nightwing Lite<br>
+23. Twisted<br>
+24. Homelander<br>
+25. Quicksilver<br>
+26. Chains Genocide<br>
+27. Absolution<br>      
+28. Shazam<br>
+29. The Crew<br>              
 30. Alvin<br>
 31. Moria<br>
 32. Nine Lives<br>
 33. Scrubs V2<br>
-34. TheLabjr<br>
 
 
 ### Dolby Vision
@@ -122,17 +120,16 @@ RunPlugin(plugin://plugin.program.maxql/?mode=6)</p><br>
 6.  Coalition<br>
 7.  POV<br>
 8.  Umbrella<br>
-9.  Taz19<br>
-10. Homelander<br>
-11. TheLab
+9.  Infinity<br>
+10. Taz19<br>
+11. Homelander<br>
 12. Quciksilver<br>
-13. Nightwing<br>
-14. Chains Genocide<br>
-15. Absolution<br>
-16. Shazam<br>
-17. Alvin<br>
-18. Moria<br>
-19. Nine Lives
+13. Chains Genocide<br>
+14. Absolution<br>
+15. Shazam<br>
+16. Alvin<br>
+17. Moria<br>
+18. Nine Lives
 
 
 ### 3D
@@ -145,15 +142,17 @@ RunPlugin(plugin://plugin.program.maxql/?mode=6)</p><br>
 6.  Coalition<br>
 7.  POV<br>
 8.  Umbrella<br>
-9.  Taz19<br>
-10. Shadow<br>
-11. Ghost<br>
-12. Base<br>
-13. Unleashed<br>
-14. Chain Reaction<br>
-15. Magic Dragon<br>
-16. Asgard<br>
-17. Patriot<br>
-18. Black Lightning
-19. Aliunde<br>
-20. M.E.T.V<br>
+9.  Infinity<br>
+10. Taz19<br>
+11. Shadow<br>
+12. Ghost<br>
+13. Base<br>
+14. Unleashed<br>
+15. Chain Reaction<br>
+16. Magic Dragon<br>
+17. Asgard<br>
+18. Patriot<br>
+19. Black Lightning
+20. Aliunde<br>
+21. Nightwing Lite<br>
+22. M.E.T.V<br>

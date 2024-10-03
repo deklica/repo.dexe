@@ -1,15 +1,38 @@
+## 0.3.1
+* Add "rescrape item" context menu item to anime shows results
+* Several bug fixes and some improvements
+
+## 0.3.0
+* Add Trakt support with several categories
+* Update on genres menu and zilean indexer
+
+## 0.2.9
+* Add Zilean indexer support
+* Minor bug fixes
+
+## 0.2.8
+* Add resume playback for videos
+* Add new icons for main menu
+
+## 0.2.7
+* add "check if pack" context menu item
+* several fixes and improvements
+
+## 0.2.6
+* Added service for auto-update addon 
+* Added update addon setting action
+* Whole refactoring of jacktook repository
+
 ## 0.2.5
 * Added Plex support (beta)
 * Added support for torbox debrid
 * Major anime improvements
 * Faster debrid fetch
 
-
 ## 0.2.4 (2024-04-12)
 * Added jacktorr burst support
 * Improvements on torrent fetch (faster resolve)
 * Other minor improvements and fixes
-
 
 ## 0.2.3 (2024-04-06)
 * Added jacktorr torrent client support
@@ -34,7 +57,6 @@
 * Add option to select and use all torrents clients at the same time.
 * Add pagination to tmdb and anilist search
 * Fix for real debrid download history issue (only played videos will be saved)
-
 
 ## 0.1.9 (2024-02-21)
  * Fixed RD torrent stored on cloud
