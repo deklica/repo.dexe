@@ -1,7 +1,8 @@
 [B][COLOR grey](https://github.com/jewbmx/repo/issues)[/COLOR][/B]
 [My Work is now done with/for: Kodi v20 or higher, older versions beware lol.]
 
-[B]- 5.1.41[/B] Did various small code changes/tweaks to a bunch of random stuff.(user requested / supplied assistance) Also did some minor changes in settings, mainly label based. Hardcoded the wootly domain/host name to its sources due to my ocd not liking it only showing "wootly" instead of "wootly.ch" lol.
+[B]- 5.1.42[/B] Changed some setting ids for fanart settings and added one to use "fanart tv's preview size" which is supposed to reduce size and loading time lol.(untested)  Updated the cache module a bit using code from gujal, Note: there will likely be errors if any cache isnt cleared that uses this code. Also added a setting for cache timeout, set default to 12 hours, and updated all the cache code to use the timeout setting instead of the various hardcoded odd timeouts from before lol.(Not sure if any of this might cause anyone issues somewhere.) Removed the use of "control.moderator()" to try fixing some odd issue posted on reddit.
+[Side-Note: scraper updates and simkl being added will be done in the next update.(unless this update causes issues that need addressed first lol.)]
 
 [B][COLOR fuchsia][Save the Providers Stress and me some work lol, Disable what you Dont use.][/COLOR][/B]
 
