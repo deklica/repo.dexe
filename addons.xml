@@ -602,7 +602,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.scrubsv2" version="5.1.41" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.1.42" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -3357,11 +3357,11 @@ added additional information when gathering files
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <summary>A music streaming Collection.</summary>
-        <description>Diggz MP3 Streams Kodi 19 conversion by Slam</description>
-        <news>2021.0.4 - Fixed Settings, 2021.0.3 - Bugfixes. Enjoy!</news>
+        <description>Diggz MP3 Streams Kodi 19+ conversion by Slam</description>
+        <news></news>
         <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
@@ -3512,7 +3512,7 @@ added additional information when gathering files
 
 <addon id="plugin.audio.ytmusic.exp"
        name="YT [COLOR red]Music[/COLOR] EXP"
-       version="1.0~beta30"
+       version="1.0~beta31"
        provider-name="ForeverGuest">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>

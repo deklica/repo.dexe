@@ -1,5 +1,16 @@
 # Changelog
 
+## plugin.audio.ytmusic.exp-1.0~~beta31
+- Update pytubefix to version `7.3.0`
+- Update ytmusicapi to version `1.8.1`
+- Fixed a bug in the rendering of the 'Your shows' section of the home menu.
+
+## plugin.audio.ytmusic.exp-1.0~~beta30
+- Reactivated old patterns for Pytubefix
+
+## plugin.audio.ytmusic.exp-1.0~~beta29
+- Update to Pytubefix 6.3.3
+
 ## plugin.audio.ytmusic.exp-1.0~~beta28.1
 - Update to Pytubefix 5.6.3
 - Add rudimentary headless mode (to be extended)
