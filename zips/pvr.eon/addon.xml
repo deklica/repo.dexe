@@ -8,7 +8,7 @@
 		<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
 		<import addon="inputstream.ffmpegdirect" minversion="20.0.0"/>
 		<import addon="inputstream.adaptive" minversion="20.0.0"/>
-		<import addon="script.module.inputstreamhelper" version="0.6.1"/>
+		<import addon="script.module.inputstreamhelper" version="0.7.0"/>
 	</requires>
 	<extension point="kodi.pvrclient" library_linux="pvr.eon.so"/>
 	<extension point="xbmc.addon.metadata">
