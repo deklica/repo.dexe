@@ -1,4 +1,4 @@
-# Jacktook Burst, a fork of Elementum Burst adapted for using on [Jacktook](https://github.com/Sam-Max/plugin.video.jacktook) Addon
+# Jacktook Burst, a fork of [Elementum Burst](https://github.com/elgatito/script.elementum.burst) adapted for using on [Jacktook](https://github.com/Sam-Max/plugin.video.jacktook) Addon
 
 
 ### Features

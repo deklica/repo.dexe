@@ -17,8 +17,6 @@ plugin.video.playlistbee
 plugin.video.premiumizerx
 plugin.video.realizerx
 plugin.video.scrubsv2
-plugin.video.seren
-plugin.video.thetvapp
 plugin.video.ukturk19
 plugin.video.watchnixtoons2
 plugin.video.whitelodge
@@ -44,7 +42,6 @@ plugin.program.maxql
 plugin.program.openwizard
 plugin.program.super.favourites
 plugin.program.thumbcache.cleaner
-plugin.video.f4mTester
 plugin.video.jetproxy
 plugin.video.live.streamspro
 plugin.youtube2kodilibrary
@@ -63,13 +60,14 @@ script.module.accountmgr
 script.module.acctview
 script.module.inputstreamhelper
 script.module.youtube.dl
+script.service.checkpreviousepisode
+script.service.playbackresumer
 script.service.sponsorblock
 script.speedtester
 script.toolbox
 script.tubecast
 script.tvskipintro
 script.unlock.advancedsettings
-script.video.F4mProxy
 script.xbmc.unpausejumpback
 script.xbmcbackup
 service.banners
@@ -92,7 +90,6 @@ plugin.audio.ytmusic.exp
 
 --- Image ---
 plugin.image.flickrexplorer
-plugin.image.kindgirls
 
 --- Dependencies ---
 resource.images.whitelodge.artwork
@@ -222,7 +219,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.103" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.106" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementumorg" optional="true" />
@@ -268,7 +265,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter" version="3.2.29">
+<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter" version="3.2.30">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -629,101 +626,6 @@ script.globalsearch
             <fanart>fanart.jpg</fanart>
         </assets>
         <news>Total CleanUp of Providers : Checked and Cleaned as of July 2024. [CR] Check ChangeLog For More Details.</news>
-    </extension>
-</addon>
-
-
-<addon id="plugin.video.seren" version="3.0.1" name="Seren (Omega)" provider-name="Nixgates">
-    <requires>
-		<import addon="xbmc.gui" version="5.17.0" minversion="5.17.0" />
-        <import addon="xbmc.addon" version="17.9.910" />
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" version="2.27.0" />
-        <import addon="script.module.beautifulsoup4" version="4.9.3"/>
-        <import addon="context.seren" version="2.2.0"/>
-        <import addon="script.module.inputstreamhelper" version="0.5.10" optional="true"/>
-        <import addon="script.module.unidecode" version="1.1.1"/>
-        <import addon="script.module.myconnpy" version="8.0.18"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="seren.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py"/>
-    <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-        <summary lang="en">Seren - Modular Multi-source Addon</summary>
-        <description lang="en">Seren is a modular provider based, cloud service streaming software that is tightly
-            interwoven with Trakt. Seren provides the freedom to view media from a single menu system from service
-            providers of the users choosing. Please Note: This addon requires the use of a compatible cloud service.
-        </description>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum/>
-        <website>https://github.com/nixgates/plugin.video.seren</website>
-        <source>https://github.com/nixgates/plugin.video.seren</source>
-        <disclaimer lang="en">
-            Last updated: September 09, 2019.
-            The information contained within the Seren software (the "Service") is for general information purposes
-            only.
-            The author assumes no responsibility for errors, omissions in the contents on the Service, nor does it
-            assume responsibility for any material provided by any external services.
-            The use of the Service does not author the user to engage in any kind of illegal, criminal or tortious
-            activity through the use of the software, including infringement of any third party intellectual property
-            rights (including without limitation copyright, trade marks, patent, trade secrets and confidential
-            information), fraud, child pornography, trafficking in obscene material, violation of applicable export
-            restrictions, drug dealing, gambling, harassment, stalking, spamming, hacking, sending of viruses or other
-            harmful files or illegal posting of computer passwords or computer code.
-            The user is responsible for all their activity in connection with the use of the Service and the author
-            reserves the right to report any potentially criminal activity to appropriate law enforcement agencies.
-            The user must not transmit to or via the Service, any material that may infringe the intellectual property
-            rights of any third party, or any defamatory, derogatory or offensive material or publication.
-            In no event shall the author of this software be liable for any special, direct, indirect, consequential, or
-            incidental damages or any damages whatsoever, whether in an action of contract, negligence or other tort,
-            arising out of or in connection with the use of the Service or the contents of the Service.
-            The author reserves the right to make additions, deletions, or modification to the contents on the Service
-            at any time without prior notice.
-            The author of this software does not warrant that the software is free of viruses or other harmful
-            components.
-            Seren may contain links to external websites that are not provided or maintained by or in any way affiliated
-            with the author.
-            Please note that the author does not guarantee the accuracy, relevance, timeliness, or completeness of any
-            information on these external websites.
-        </disclaimer>
-        <assets>
-            <icon>ico-seren-3.png</icon>
-            <fanart>fanart-seren-3.png</fanart>
-            <clearlogo>logo-seren-3.png</clearlogo>
-            <poster>poster-seren-3.png</poster>
-            <screenshot>screenshot-01.jpg</screenshot>
-            <screenshot>screenshot-02.jpg</screenshot>
-            <screenshot>screenshot-03.jpg</screenshot>
-            <screenshot>screenshot-04.jpg</screenshot>
-        </assets>
-    </extension>
-</addon>
-
-
-<addon id="plugin.video.thetvapp" name="TheTVApp (not working)" version="0.11" provider-name="xxxxxx">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.six"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <description lang="en">TheTVApp</description>
-        <disclaimer lang="en">https://thetvapp.to</disclaimer>	
-        <summary lang="en">https://thetvapp.to</summary>
-        <language>en</language>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <website>https://thetvapp.to</website>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
     </extension>
 </addon>
 
@@ -1930,26 +1832,6 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.video.f4mTester" version="4.0.8" name="f4mTester" provider-name="Joel e Tiago">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.video.F4mProxy" version="4.0.9"/>		
-        <import addon="inputstream.ffmpegdirect"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-    </extension>  
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">f4mTester</summary>
-        <description></description>
-        <platform>all</platform>
-        <assets>
-			<icon>icon.png</icon>
-		</assets>
-    </extension>
-</addon>
-
-
 <addon id="plugin.video.jetproxy" version="1.0.3" name="JetProxy" provider-name="t4ils">
 <requires>
   <import addon="xbmc.python" version="3.0.0"/>
@@ -2149,7 +2031,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.89" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.90" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="plugin.video.elementum" optional="true"/>
@@ -2247,7 +2129,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.extendedinfo" name="ExtendedInfo Script" version="6.0.7" provider-name="scott967">
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="6.0.9" provider-name="scott967">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="resource.images.studios.white" version="0.0.25"/>
@@ -2272,7 +2154,7 @@ In addition to what livestreams allowed you to do, you can now,
 		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
 		<source>https://github.com/scott967/script.extendedinfo</source>
 		<email>scott967@kodi.tv</email>
-		<news>Python 3 fixes and Omega/Nexus/Matrix updates by scott967.  Original addon for Leia and prior by phil65 (Philipp Temminghoff).</news>
+		<news>Python 3 fixes and Piers/Omega/Nexus/Matrix updates by scott967.  Original addon for Leia and prior by phil65 (Philipp Temminghoff).</news>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -2361,7 +2243,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.jacktook.burst" name="Jacktook [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.89" provider-name="Sam-Max">
+<addon id="script.jacktook.burst" name="Jacktook [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.90" provider-name="Sam-Max">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="plugin.video.jacktook" optional="true"/>
@@ -2526,7 +2408,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="999.6.1+matrix.1" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
+<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="0.7.0" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
   <requires>
     <!--py3 compliant-->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -2552,9 +2434,11 @@ In addition to what livestreams allowed you to do, you can now,
     <description lang="hr_HR">Jednostavan Kodi modul koji olakšava razvijanje dodataka koji se temelje na InputStream dodatku i reprodukciji DRM zaštićenog sadržaja.</description>
     <description lang="ru_RU">Простой модуль для Kodi, который облегчает жизнь разработчикам дополнений, с использованием InputStream дополнений и воспроизведения DRM контента.</description>
     <news>
-v999.6.1 (v0.6.1) 
-- Version bump to over-ride broken modified versions by other developers who are not part of our development team.
-        
+v0.7.0 (2024-09-24)
+- Get rid of distutils dependency
+- Option to get Widevine from lacros image
+- Remove support for Python 2 and pre-Matrix Kodi versions
+
 v0.6.1 (2023-05-30)
 - Performance improvements on Linux ARM
 - This will be the last release for Python 2 i.e. Kodi 18 (Leia) and below. The next release will require Python 3 and Kodi 19 (Matrix) or higher.
@@ -2613,6 +2497,62 @@ v0.5.9 (2022-03-22)
             <icon>icon.png</icon>
         </assets>
     </extension>
+</addon>
+
+
+<addon id="script.service.checkpreviousepisode" version="0.4.8" name="Kodi Check Previous Episode" provider-name="bossanova808, Razzeee, Lucleonhart" >
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.yaml" version="3.11.0" />
+    <import addon="script.module.bossanova808" version="1.0.0"/>
+  </requires>
+  <extension library="default.py" point="xbmc.service" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Kodi Check Previous Episode</summary>
+    <summary lang="bg_BG">Изгледан ли е предходния епизод</summary>
+    <description lang="en_GB">This service helps prevent spoilers by checking if the previous episode in a series has been watched. If not, it will pause playback and warn you.  Specific shows can be marked to be ignored if episode order does not matter.</description>
+    <description lang="de_DE">Dieses Script überprüft die vorige Episode der TV Show die gerade gestartet werden soll und warnt falls diese noch nicht gesehen wurde oder nicht vorhanden ist!</description>
+    <description lang="bg_BG">Когато пускате епизод от даден сериал скриптът проверява предходния и предупреждава ако той отсъства от библиотеката или не е изгледан.</description>
+    <platform>all</platform>
+    <license>GPL-2.0-only</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=355464</forum>
+    <website>https://kodi.wiki/view/Add-on:XBMC_Check_Previous_Episode</website>
+    <source>https://github.com/bossanova808/script.service.checkpreviousepisode</source>
+    <news>v0.4.8
+- Remove old common code, use new module
+- Fix bug if last ignored show is removed from ignore list then that show is re-played in same Kodi session
+    </news>
+  <assets>
+     <icon>icon.png</icon>
+  </assets>
+  </extension>
+</addon>
+
+
+<addon id="script.service.playbackresumer" name="Kodi Playback Resumer" version="2.0.7" provider-name="bossanova808, bradvido88">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.bossanova808" version="1.0.0"/>
+  </requires>
+  <extension point="xbmc.service" library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Periodically sets the resume point of videos and can automatically resume last played video if Kodi crashes.</summary>
+    <description lang="en_GB">
+        Runs as a service and will periodically update the resume point while videos are playing, so you can re-start from where you were in the event of a crash.  It can also automatically resume a video if Kodi was shutdown while playing it. See setting to configure how often the resume point is set, and whether to automatically resume.
+    </description>
+    <platform>all</platform>
+	  <license>GPL-3.0-only</license>
+    <website>https://github.com/bossanova808/script.service.playbackresumer</website>
+    <source>https://github.com/bossanova808/script.service.playbackresumer</source>
+    <forum>https://forum.kodi.tv/showthread.php?tid=355383</forum>
+    <email>bossanova808@gmail.com</email>
+    <news>v2.0.7
+- Remove old common code, use new module
+    </news>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
 </addon>
 
 
@@ -2863,34 +2803,10 @@ v1.0.1 (2019-08-06)
 </addon>
 
 
-<addon id="script.video.F4mProxy" 
-	     name="F4mProxy" 
-	     version="4.0.9" 
-	     provider-name="Joel e Tiago">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.requests" />
-        <import addon="inputstream.ffmpegdirect" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>executable</provides>
-	</extension>
-    
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Proxy for f4m</summary>
-		<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-
-<addon id="script.xbmc.unpausejumpback" name="Unpause Jumpback" version="3.0.3" provider-name="bossanova808,Memphiz,Lucleonhart,schumi2004,dkadioglu">
+<addon id="script.xbmc.unpausejumpback" name="Unpause Jumpback" version="3.0.4" provider-name="bossanova808,Memphiz,Lucleonhart,schumi2004,dkadioglu">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.bossanova808" version="1.0.0"/>
   </requires>
   <extension point="xbmc.service" library="default.py"></extension>
   <extension point="xbmc.addon.metadata">
@@ -2913,8 +2829,8 @@ v1.0.1 (2019-08-06)
     <source>https://github.com/bossanova808/script.xbmc.unpausejumpback/</source>
     <forum>https://forum.kodi.tv/showthread.php?tid=355778</forum>
     <email>bossonav808@gmail.com</email>
-    <news>v3.0.3
-      - Minor bugfix for http/s sources
+    <news>v3.0.4
+- Remove old common code, use new module
     </news>
     <assets>
       <icon>icon.png</icon>
@@ -3538,45 +3454,6 @@ added additional information when gathering files
 <!-- ---------------------------------------------------------------------- -->
 
 
-<addon id="plugin.image.kindgirls"
-	name="KindGirls (not working)"
-	version="0.2.2"
-	provider-name="fr33p0rt">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.3.0"/>
-        <import addon="script.module.beautifulsoup4" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>image</provides>
-	</extension>
-	<extension point="xbmc.python.module" library="resources/lib"/>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">View photos and videos from https://www.kindgirls.com</summary>
-		<description lang="en">Kindgirls: Nude girls in erotic photos and videos</description>
-		<summary lang="cz">Prohlížejte si fotky z https://www.kindgirls.com</summary>
-		<description lang="cz">Kindgirls: Erotické fotky a videa nahých dívek</description>
-		<summary lang="pl">Zobacz zdjęcia i filmy na https://www.kindgirls.com</summary>
-		<description lang="pl">Kindgirls: Zdjęcia i filmy erotyczne z nagimi dziewczynami</description>
-		<summary lang="de">Sehen Sie sich Fotos und Videos von https://www.kindgirls.com an</summary>
-		<description lang="de">Kindgirls: Erotische Fotos und Videos mit nackten Mädchen</description>
-		<summary lang="es">Ver fotos y videos de https://www.kindgirls.com</summary>
-		<description lang="es">Kindgirls: Chicas desnudas en fotos y videos eróticos </description>
-		<license>GPL 2.0</license>
-		<language>en</language>
-		<forum>N/A</forum>
-		<website>N/A</website>
-		<source>N/A</source>
-		<email>fr33p0rt@protonmail.com</email>
-		<assets>
-    		<icon>icon.png</icon>
-    		<fanart>fanart.jpg</fanart>
-  		</assets>
-	</extension>
-</addon>
-
-
 <addon id="plugin.image.flickrexplorer" name="FlickrExplorer" version="0.7.6+nexus" provider-name="rols1 (rols1@gmx.de)">
   <requires>
    <import addon="xbmc.python" version="3.0.1"/>
@@ -3644,7 +3521,7 @@ added additional information when gathering files
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="3.0.2" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="3.0.3" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
@@ -3805,7 +3682,7 @@ added additional information when gathering files
 </addon>
 
 
-<addon id="plugin.program.moonlight-qt" name="Moonlight" version="0.4.4" provider-name="veldenb">
+<addon id="plugin.program.moonlight-qt" name="Moonlight" version="0.4.5" provider-name="veldenb">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="service.system.docker" optional="true" version="9.80.11.133"/>
@@ -4609,7 +4486,7 @@ Egenskaper:
 </addon>
 
 
-<addon id="script.service.argonforty-device" name="ArgonForty Device Configuration" version="1.1.2" provider-name="ArgonForty">
+<addon id="script.service.argonforty-device" name="ArgonForty Device Configuration" version="1.1.3" provider-name="ArgonForty">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="virtual.rpi-tools" version="9.80.11"/>

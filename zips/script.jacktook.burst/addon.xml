@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.jacktook.burst" name="Jacktook [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.89" provider-name="Sam-Max">
+<addon id="script.jacktook.burst" name="Jacktook [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.90" provider-name="Sam-Max">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="plugin.video.jacktook" optional="true"/>

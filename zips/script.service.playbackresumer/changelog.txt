@@ -1,0 +1,43 @@
+v2.0.6
+
+- Add support for non library videos
+
+v2.0.5
+- Fix wierd bug with resume points: https://forum.kodi.tv/showthread.php?tid=355383&pid=3163480#pid3163480
+
+v2.0.4
+- Handle unicode characters in video names
+
+v2.0.3
+- Bug fix for playing non-library videos
+- Use common code, better logging
+
+v2.0.2
+- Complete re-write into more modular, modern Python 3
+- Add support for advancedsettings ignoresecondsatstart and ignorepercentatend
+- Handle player seeking past end of file more gracefully
+
+v2.0.1 
+- Update settings to Matrix format
+
+v2.0.0 
+- Port to Python 3 and prepare for submission to Matrix repo
+
+v1.2.0 
+- Updated for Kodi Leia.  Dev taken over by bossanova808.
+
+v1.1.0 
+- added ability to Auto-Play a random video if nothing is playing
+
+v1.0.3 
+- converted strings.xml to strings.po
+- updated startup type to login
+
+v1.0.2 
+- changed startup type and updated links to forum/source
+
+v1.0.1 
+- updated descriptions in addon xml
+
+v1.0.0 
+- initial commit for frodo
