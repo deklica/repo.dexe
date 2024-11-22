@@ -9,9 +9,9 @@ A Kodi addon for torrent finding and streaming.
 
 **Torrent Engines**: Jacktorr, Torrest and Elementum.
 
-**Debrid Services**: Real Debrid, Premiumize and Torbox.
+**Telegram Engines**: Jackgram.
 
-**Other Clients**: Plex (Beta).
+**Debrid Services**: Real Debrid, Premiumize and Torbox.
 
 **Metadata**: TMDB, Trakt.tv, AniList, Simkl and Fanart.tv. 
 
@@ -23,7 +23,7 @@ A Kodi addon for torrent finding and streaming.
 
 The recommended way of installing the addon is through its [repository](https://github.com/Sam-Max/repository.jacktook), so that any updates will be automatically installed.
 
-You can also install the addon without installing its repository. To do so, get the [latest release](https://github.com/Sam-Max/plugin.video.jacktook/releases/download/v0.1.4/plugin.video.jacktook-0.3.1.zip) from github. Please note that, if there are any additional dependencies, they won't be resolved unless the repository is installed.
+You can also install the addon without installing its repository. To do so, get the [latest release](https://github.com/Sam-Max/plugin.video.jacktook/releases/download/v0.3.1/plugin.video.jacktook-0.3.2.zip) from github. Please note that, if there are any additional dependencies, they won't be resolved unless the repository is installed.
 
 **Note**: After each update, it is recommended that you clear cache to make sure changes take effect.
 
@@ -37,7 +37,7 @@ You can also install the addon without installing its repository. To do so, get 
 
 
 **Notes**:
-1. Jacktorr/Torrest/Elementum are optional if using Debrid services.
+1. Jacktorr/Jackgram/Torrest/Elementum are optional if using Debrid services.
 2. Prowlarr IndexerIds field is comma separated trackers ids without space. Ex. 12,13,14. (from version 0.1.5)
 3. When using Jackett or Prowlarr: select only a few trackers (3-4 max), avoid trackers with cloudflare protection (unless you configure FlareSolverr), and select if available on trackers options to retrieve magnets as priority and not torrent files, to improve search speed and results.
 4. You can deploy/install on a remote server (instructions more below) the TorrServer Engine (torrent client that uses Jacktorr Addon). After that, you need to configure Jacktorr Addon with the TorrServer Engine IP/Domain and Port.
@@ -63,6 +63,11 @@ Detailed instructions are available at [Prowlarr Website](https://prowlarr.com/#
 ## How to run Zilean service using Docker:
 
 Detailed instructions are available at [Zilean](https://github.com/iPromKnight/zilean) 
+
+
+## How to run Jackgram service using Docker:
+
+Detailed instructions are available at [Jackgram](https://github.com/sam-max/Jackgram) 
 
 ## How to run Jacktorr Engine using Docker Compose (optional):
 
