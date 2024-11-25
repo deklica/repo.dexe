@@ -623,9 +623,7 @@ script.globalsearch
     <extension point="xbmc.addon.metadata">
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <summary lang="en">Seren - Modular Multi-source Addon</summary>
-        <description lang="en">Seren is a modular provider based, cloud service streaming software that is tightly
-            interwoven with Trakt. Seren provides the freedom to view media from a single menu system from service
-            providers of the users choosing. Please Note: This addon requires the use of a compatible cloud service.
+        <description lang="en">Seren is a modular provider based, cloud service streaming software that is tightly interwoven with Trakt. Seren provides the freedom to view media from a single menu system from service providers of the users choosing. Please Note: This addon requires the use of a compatible cloud service.
         </description>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
