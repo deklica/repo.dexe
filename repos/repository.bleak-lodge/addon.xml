@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.bleak-lodge" name="bleak-lodge repo" version="1.0" provider-name="bleak-lodge">
+    <extension point="xbmc.addon.repository" name="bleak-lodge repository">
+    <dir>
+        <info compressed="false">https://github.com/bleak-lodge/repository.bleak-lodge/raw/main/addons.xml</info>
+        <checksum>https://github.com/bleak-lodge/repository.bleak-lodge/raw/main/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/bleak-lodge/repository.bleak-lodge/main/</datadir>
+    </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Testing and Learning stuff</summary>
+        <description>bleak-lodge add-ons</description>
+        <platform>all</platform>
+    </extension>
+</addon>

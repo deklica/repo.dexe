@@ -1,13 +1,13 @@
-<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="1.0.25">
+<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="2.0.02">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
     </requires>
-    <extension library="resources/lib/fenlight.py" point="xbmc.python.pluginsource">
+    <extension point="xbmc.python.pluginsource" library="resources/lib/fenlight.py">
         <provides>video</provides>
     </extension>
-    <extension library="resources/lib/service.py" point="xbmc.service"/>
-    <extension library="resources/lib/" point="xbmc.python.module"/>
+    <extension point="xbmc.service" library="resources/lib/service.py"/>
+    <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <reuselanguageinvoker>true</reuselanguageinvoker>
         <summary lang="en">Access your content from Easynews and Debrid Clouds.</summary>
@@ -17,7 +17,7 @@
         <license/>
         <assets>
             <icon>resources/media/fenlight_icon.png</icon>
-            <fanart>resources/media/fenlight_fanart.jpg</fanart>
+            <fanart>resources/media/fenlight_fanart2.jpg</fanart>
         </assets>
         <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
     </extension>

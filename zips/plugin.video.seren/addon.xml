@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.seren" version="3.0.5" name="Seren" provider-name="Nixgates">
+    <requires>
+        <import addon="xbmc.addon" version="17.9.910" />
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" version="2.27.0" />
+        <import addon="script.module.beautifulsoup4" version="4.9.3"/>
+        <import addon="context.seren" version="2.2.0"/>
+        <import addon="script.module.inputstreamhelper" version="0.5.10" optional="true"/>
+        <import addon="script.module.unidecode" version="1.1.1"/>
+        <import addon="script.module.myconnpy" version="8.0.18"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="seren.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <summary lang="en">Seren - Modular Multi-source Addon</summary>
+        <description lang="en">Seren is a modular provider based, cloud service streaming software that is tightly
+            interwoven with Trakt. Seren provides the freedom to view media from a single menu system from service
+            providers of the users choosing. Please Note: This addon requires the use of a compatible cloud service.
+        </description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum/>
+        <website>https://github.com/nixgates/plugin.video.seren</website>
+        <source>https://github.com/nixgates/plugin.video.seren</source>
+        <disclaimer lang="en">
+            Last updated: November 25, 2024.
+            The information contained within the Seren software (the "Service") is for general information purposes
+            only.
+            The author assumes no responsibility for errors, omissions in the contents on the Service, nor does it
+            assume responsibility for any material provided by any external services.
+            The use of the Service does not author the user to engage in any kind of illegal, criminal or tortious
+            activity through the use of the software, including infringement of any third party intellectual property
+            rights (including without limitation copyright, trade marks, patent, trade secrets and confidential
+            information), fraud, child pornography, trafficking in obscene material, violation of applicable export
+            restrictions, drug dealing, gambling, harassment, stalking, spamming, hacking, sending of viruses or other
+            harmful files or illegal posting of computer passwords or computer code.
+            The user is responsible for all their activity in connection with the use of the Service and the author
+            reserves the right to report any potentially criminal activity to appropriate law enforcement agencies.
+            The user must not transmit to or via the Service, any material that may infringe the intellectual property
+            rights of any third party, or any defamatory, derogatory or offensive material or publication.
+            In no event shall the author of this software be liable for any special, direct, indirect, consequential, or
+            incidental damages or any damages whatsoever, whether in an action of contract, negligence or other tort,
+            arising out of or in connection with the use of the Service or the contents of the Service.
+            The author reserves the right to make additions, deletions, or modification to the contents on the Service
+            at any time without prior notice.
+            The author of this software does not warrant that the software is free of viruses or other harmful
+            components.
+            Seren may contain links to external websites that are not provided or maintained by or in any way affiliated
+            with the author.
+            Please note that the author does not guarantee the accuracy, relevance, timeliness, or completeness of any
+            information on these external websites.
+        </disclaimer>
+        <assets>
+            <icon>resources/images/ico-seren-3.png</icon>
+            <fanart>resources/images/fanart-seren-3.png</fanart>
+            <clearlogo>resources/images/logo-seren-3.png</clearlogo>
+            <poster>resources/images/poster-seren-3.png</poster>
+            <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
+        </assets>
+        <news></news>
+    </extension>
+</addon>
