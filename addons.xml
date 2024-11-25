@@ -50,6 +50,7 @@ script.elementum.jackett
 script.embuary.info
 script.extendedinfo
 script.ezmaintenanceplus
+script.fonts.installer
 script.hideosd
 script.kcleaner
 script.light.imdb.ratings.update
@@ -2223,6 +2224,21 @@ In addition to what livestreams allowed you to do, you can now,
 - Improved ADVANCED SETTINGS(BUFFER SIZE) functionality
     </news>
   </extension>
+</addon>
+
+
+<addon id="script.fonts.installer" version="1.0.0" name="Extra SubFonts" provider-name="dEXE">
+	<extension point="xbmc.python.script" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Kodi Extra Subtitle Fonts Installer</summary>
+		<description>Installing and uninstalling custom fonts for subtitles:[CR][CR]Arvo, Calibri, Futura Md BT, Gill Sans MT, GillSans, Helvetica, Helvetica Neue, IBM Plex Mono, IBM Plex Sans, IBM Plex Serif, Lato Medium, Lucida Grande, Montserrat, Noto Serif, Open Sans, Roboto, Source Sans Pro, Tahoma, Verdana</description>
+		<disclaimer>Run the addon to install additional fonts. Running the addon again will uninstall the fonts.</disclaimer>
+		<platform>all</platform>
+		<language>en</language>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
 </addon>
 
 
