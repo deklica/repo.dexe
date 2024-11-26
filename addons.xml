@@ -269,7 +269,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter" version="3.5.01">
+<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter" version="3.5.02">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -295,7 +295,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="2.0.03">
+<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="2.0.04">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
