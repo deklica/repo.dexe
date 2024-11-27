@@ -1,5 +1,16 @@
+Changelog 3.0.6
+[BUG] Fix AD not deleting magnet if not cached
+[BUG] Fix AD Playback
+
 Changelog 3.0.5
-[BUG] Fix for Real-Debrid
+[BUG] Fix RD playback
+[BUG] Improved 3D Filtering
+[FEATURE] Added option to filer results by internet speed
+[FEATURE] Added 'Cancel' button to smartplay window
+[FEATURE] Added 'Icon Only' scraper display style option
+[FEATURE] Added 'Minimum Percentage Left Before Showing Dialog option' for smartplay window
+[FEATURE] Added option to hide resolver window when attempting to play
+[FEATURE] Added 60 FPS filter
 
 Changelog 3.0.1
 [FEATURE] Handle Kodi database version for Omega 21
