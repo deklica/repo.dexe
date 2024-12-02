@@ -1193,7 +1193,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.dregs" name="DreGs Repository" version="1.22" provider-name="Black Eagle">
+<addon id="repository.dregs" name="DreGs Repository" version="1.32" provider-name="Black Eagle">
 	<extension point="xbmc.addon.repository" name="Dregs Repositorio">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1992,7 +1992,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.octopus" name="Octopus Repository" version="0.3.0" provider-name="Twiglet">
+<addon id="repository.octopus" name="Octopus Repository" version="0.3.1" provider-name="Twiglet">
 	<extension point="xbmc.addon.repository" name="Octopus Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
