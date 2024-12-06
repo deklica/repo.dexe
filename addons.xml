@@ -160,8 +160,6 @@ script.globalsearch
 
 <addons>
 
-<addon id="script.module.oriontest" visible="false" />
-
 
 <addon id="plugin.video.crackle" name="Crackle" version="2023.10.11+matrix.1" provider-name="eracknaphobia">
   <requires>
