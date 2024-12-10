@@ -1193,7 +1193,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.dregs" name="DreGs Repository" version="1.32" provider-name="Black Eagle">
+<addon id="repository.dregs" name="DreGs Repository" version="1.38" provider-name="Black Eagle">
 	<extension point="xbmc.addon.repository" name="Dregs Repositorio">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

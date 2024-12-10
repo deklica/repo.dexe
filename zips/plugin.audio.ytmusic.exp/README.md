@@ -9,8 +9,8 @@ All credit goes to Foreverguest.
 
 # Used libraries and versions
 
-- https://github.com/sigma67/ytmusicapi/tree/1.8.1
-- https://github.com/JuanBindez/pytubefix/tree/v7.3.0
+- https://github.com/sigma67/ytmusicapi/tree/1.8.2
+- https://github.com/JuanBindez/pytubefix/tree/v8.6.0
 
 ## Requires:
 
@@ -29,6 +29,8 @@ _or install it manually (updates should be installed manually)_
 - [plugin.audio.ytmusic.exp](https://github.com/Goldenfreddy0703/plugin.audio.ytmusic.exp/archive/refs/heads/main.zip)
 
 ## Important:
+
+Due to changes in the Google API, you must now configure a API Client ID and API Client Secret in the Settings under 'API'. You can use the same values you use for the official Kodi youtube addon (and follow the instructions on how to obtain these credentials provided for that addon).
 
 On first run it will ask for OAuth authentication. Follow the instructions displayed in the UI.
 
