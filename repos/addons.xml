@@ -521,7 +521,7 @@ repository.zachmorris
     </extension>
 </addon>
 
-<addon id="repository.abratchik" name="Alex Bratchik Kodi repository" version="1.0.2" provider-name="Alex Bratchik">
+<addon id="repository.abratchik" name="Alex Bratchik Kodi repository" version="1.0.3" provider-name="Alex Bratchik">
 	<extension point="xbmc.addon.repository" name="Alex Bratchik Kodi repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1382,7 +1382,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.gaia.full" version="6.1.0" name="Gaia Repository (Full)" provider-name="Gaia">
+<addon id="repository.gaia.full" version="7.0.0" name="Gaia Repository (Full)" provider-name="Gaia">
 	<extension point="xbmc.addon.repository" name="Gaia Repository (Full)">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

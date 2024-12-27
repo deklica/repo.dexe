@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="repository.abratchik"
-    version="1.0.2"
+    version="1.0.3"
     name="Alex Bratchik Kodi repository"
     provider-name="Alex Bratchik">
     <requires>
@@ -12,10 +12,15 @@
             <checksum>https://abratchik.github.io/kodi.repository/leia/addons.xml.md5</checksum>
             <datadir zip="true">https://abratchik.github.io/kodi.repository/leia/</datadir>
         </dir>
-        <dir minversion="18.9.1">
+        <dir minversion="18.9.1" maxversion="19.5">
             <info compressed="false">https://abratchik.github.io/kodi.repository/matrix/addons.xml</info>
             <checksum>https://abratchik.github.io/kodi.repository/matrix/addons.xml.md5</checksum>
             <datadir zip="true">https://abratchik.github.io/kodi.repository/matrix/</datadir>
+        </dir>
+        <dir minversion="21.0">
+            <info compressed="false">https://abratchik.github.io/kodi.repository/omega/addons.xml</info>
+            <checksum>https://abratchik.github.io/kodi.repository/omega/addons.xml.md5</checksum>
+            <datadir zip="true">https://abratchik.github.io/kodi.repository/omega/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">

@@ -1,4 +1,7 @@
 
+[B]7.0.0 (2024.12.20)[/B]
+- Major version upgrade.
+
 [B]6.1.0 (2023.01.18)[/B]
 - Updated XML structure.
 - Updated addon icon.
