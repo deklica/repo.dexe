@@ -2433,7 +2433,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.StreamArmy" name="Stream Army Addons" version="15.0.004" provider-name="@Nemzzy668 / @_Manc_ // LordJD">
+<addon id="repository.StreamArmy" name="Stream Army Addons" version="16.0.000" provider-name="@Nemzzy668 / @_Manc_ // LordJD">
 	<extension point="xbmc.addon.repository" name="Stream Army">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
