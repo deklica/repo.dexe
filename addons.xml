@@ -192,7 +192,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.19" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.20" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -320,7 +320,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.free99" version="1.5" name="[COLOR goldenrod]Free99[/COLOR]" provider-name="JewBMX, DIGGZ">
+<addon id="plugin.video.free99" version="1.6" name="[COLOR goldenrod]Free99[/COLOR]" provider-name="JewBMX, DIGGZ">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
