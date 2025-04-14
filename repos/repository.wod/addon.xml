@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.wod" name="Wrestling Repository" version="2.1" provider-name="WOD">
+	<extension point="xbmc.addon.repository" name="Wrestling Repository">
+		<dir>
+			<info compressed="false">https://l3grthu.com/repos/wodrepo/addons.xml</info>
+			<checksum>https://l3grthu.com/repos/wodrepo/addons.xml.md5</checksum>
+			<datadir zip="true">https://l3grthu.com/repos/wodrepo/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+		</dir>				
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en"></summary>
+		<description lang="en"></description>
+		<genre>mix</genre>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>

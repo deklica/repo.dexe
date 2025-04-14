@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.dregs" name="[COLOR red]Dr[/COLOR]e[COLOR black]Gs[/COLOR] [COLORcyan]Repository[/COLOR]" version="1.38" provider-name="Black Eagle">
+<addon id="repository.dregs" name="[COLOR red]Dr[/COLOR]e[COLOR black]Gs[/COLOR] [COLORcyan]Repository[/COLOR]" version="2.36" provider-name="[COLORchocolate]@by_black[COLORgold]_eagle[/COLOR]">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>  
   </requires>
@@ -10,6 +10,12 @@
     <datadir zip="true">https://raw.github.com/dregs1/dregs1.github.io/master</datadir>
     <hashes>false</hashes>
 </dir>
+<dir minversion="29.9.9">
+      <info compressed="true">https://raw.github.com/dregs1/dregs1.github.io/master/piers/addons.xml</info>
+      <checksum>https://raw.github.com/dregs1/dregs1.github.io/master/piers/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/dregs1/dregs1.github.io/master/piers</datadir>
+      <hashes>false</hashes>
+  </dir>
 <dir minversion="20.0.0">
       <info compressed="true">https://raw.github.com/dregs1/dregs1.github.io/master/omega/addons.xml</info>
       <checksum>https://raw.github.com/dregs1/dregs1.github.io/master/omega/addons.xml.md5</checksum>

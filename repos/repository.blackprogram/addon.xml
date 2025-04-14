@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.blackprogram" name="Black Program" version="1.2" provider-name="blackprogram-02">
+    <extension point="xbmc.addon.repository" name="Black Program Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/blackprogram-02/repository.blackprogram/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/blackprogram-02/repository.blackprogram/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/blackprogram-02/repository.blackprogram/master/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Black Program</summary>
+        <description>Repo for Black Program addons</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

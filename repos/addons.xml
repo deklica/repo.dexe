@@ -37,6 +37,7 @@ repository.arxtic-ape
 repository.atreides.tools
 repository.autowidget
 repository.axbmcuser
+repository.blackprogram
 repository.bleak-lodge
 repository.bugatsinho
 repository.butter
@@ -69,6 +70,7 @@ repository.foxystreams
 repository.fr33p0rt
 repository.freeg
 repository.frenchdj
+repository.fubuz
 repository.funstersplace
 repository.gaia.full
 repository.ghettomatrix
@@ -143,6 +145,7 @@ repository.universalscrapers
 repository.Wherethemonsterslive
 repository.wltv
 repository.wnt2
+repository.wod
 repository.World
 repository.WorldNexus
 repository.Worldolympic
@@ -757,6 +760,26 @@ repository.zachmorris
 	</extension>
 </addon>
 
+<addon id="repository.blackprogram" name="Black Program" version="1.2" provider-name="blackprogram-02">
+	<extension point="xbmc.addon.repository" name="Black Program Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Black Program</summary>
+		<description>Repo for Black Program addons</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.bleak-lodge" name="bleak-lodge repo" version="1.0" provider-name="bleak-lodge">
 	<extension point="xbmc.addon.repository" name="bleak-lodge repository">
 		<dir>
@@ -951,7 +974,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.cocoscrapers" name="CocoScrapers Repository" version="1.0.0" provider-name="CocoScrapers">
+<addon id="repository.cocoscrapers" name="CocoScrapers Repository" version="1.0.1" provider-name="CocoScrapers">
     <extension point="xbmc.addon.repository" name="CocoScrapers Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1079,7 +1102,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.diggz" name="Diggz Repository" version="23" provider-name="Diggz">
+<addon id="repository.diggz" name="Diggz Repository" version="24" provider-name="Diggz">
 	<extension point="xbmc.addon.repository" name="Diggz Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1193,7 +1216,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.dregs" name="DreGs Repository" version="1.38" provider-name="Black Eagle">
+<addon id="repository.dregs" name="DreGs Repository" version="2.36" provider-name="@by_black_eagle">
 	<extension point="xbmc.addon.repository" name="Dregs Repositorio">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1354,6 +1377,26 @@ repository.zachmorris
 	<extension point="xbmc.addon.metadata">
 		<summary>frenchdj repository</summary>
 		<description>frenchdj addons repository</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.fubuz" name="FubuZ Repository" version="1.0" provider-name="FubuZ">
+	<extension point="xbmc.addon.repository" name="FubuZ Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>FubuZ Repository</summary>
+		<description>Provides installation and automatic updates for DaddyLive Kodi addon.</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 		<assets>
@@ -1861,7 +1904,7 @@ repository.zachmorris
 	</extension> 
 </addon>
 
-<addon id="repository.melies" name="Melies Addon repository" version="0.1.5" provider-name="luizoti">
+<addon id="repository.melies" name="Melies Addon repository" version="0.1.10" provider-name="luizoti">
 	<extension point="xbmc.addon.repository" name="Example Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2815,6 +2858,25 @@ repository.zachmorris
 	</extension>
 </addon>
 
+<addon id="repository.wod" name="Wrestling Repository" version="2.1" provider-name="WOD">
+	<extension point="xbmc.addon.repository" name="Wrestling Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>			
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en"></summary>
+		<description lang="en"></description>
+		<genre>mix</genre>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.World" name="World Repository" version="0.1.3" provider-name="World">
 	<extension point="xbmc.addon.repository" name="World Repository">
 		<dir>
@@ -2872,7 +2934,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.WorldOmega" name="World Omega Repository" version="1.1.0" provider-name="World">
+<addon id="repository.WorldOmega" name="World Omega Repository" version="1.1.4" provider-name="World">
 	<extension point="xbmc.addon.repository" name="World Omega Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

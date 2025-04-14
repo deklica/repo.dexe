@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="repository.elementumorg" name="ElementumOrg repository" provider-name="elementumorg" version="0.0.2">
+<addon id="repository.elementumorg" name="ElementumOrg repository" provider-name="elementumorg" version="0.0.5">
     <requires>
+        <!--<import addon="xbmc.python" version="3.0.0"/>-->
     </requires>
     <extension point="xbmc.addon.repository">
         <dir>
@@ -18,6 +19,12 @@
         <summary lang="en">GitHub virtual Add-on repository</summary>
         <description lang="en">Customizable repository which acts as a proxy for defined GitHub users' add-ons updates.</description>
         <news>
+- Allow running in standalone mode
+- Migrate to GitHub API
+- Add support for "tag_pattern" field
+- Add support for private repositories by supplying a "token"
+- Try to automatically determine zip ref from version
+- Multiple minor improvements
         </news>
         <assets>
             <icon>icon.png</icon>

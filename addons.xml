@@ -7,7 +7,7 @@ plugin.video.crackle
 plugin.video.daddylive
 plugin.video.elementum
 plugin.video.fen
-plugin.video.fenlight
+plugin.video.fenlight (Fen Light / FenLightAM / Fen Light+)
 plugin.video.free99
 plugin.video.gratis
 plugin.video.json_iptv
@@ -107,7 +107,6 @@ resource.uisounds.kodi-12
 resource.uisounds.kodi-24
 script.cu.lrclyrics
 script.games.rom.collection.browser
-script.service.argonforty-device (linux)
 service.rom.collection.browser
 weather.gismeteo
 
@@ -192,7 +191,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.20" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.24" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -222,7 +221,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.106" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.111" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementumorg" optional="true" />
@@ -294,7 +293,7 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="2.0.07">
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.18">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -312,15 +311,15 @@ script.globalsearch
 		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
         <license/>
         <assets>
-            <icon>fenlight_icon.png</icon>
-            <fanart>fenlight_fanart2.jpg</fanart>
+            <icon>fenlightam_icon.png</icon>
+            <fanart>fenlightam_fanart.jpg</fanart>
         </assets>
         <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
     </extension>
 </addon>
 
 
-<addon id="plugin.video.free99" version="1.6" name="[COLOR goldenrod]Free99[/COLOR]" provider-name="JewBMX, DIGGZ">
+<addon id="plugin.video.free99" version="1.7" name="[COLOR goldenrod]Free99[/COLOR]" provider-name="JewBMX, DIGGZ">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -706,10 +705,11 @@ script.globalsearch
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.7" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.13.3" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
+        <import addon="inputstream.adaptive"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -1704,7 +1704,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.program.maxql" name="MaxQL" version="1.1.6" provider-name="Zaxxon709">
+<addon id="plugin.program.maxql" name="MaxQL" version="1.1.7" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -2157,7 +2157,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.90" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.93" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="plugin.video.elementum" optional="true"/>
@@ -2449,11 +2449,11 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.module.accountmgr" version="2.6.0" name="Account Manager" provider-name="Zaxxon709">
+<addon id="script.module.accountmgr" version="2.6.5" name="Account Manager" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-            	<import addon="script.module.acctview" version="2.4.2" />
+            	<import addon="script.module.acctview" version="2.4.8" />
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">
@@ -2463,7 +2463,7 @@ In addition to what livestreams allowed you to do, you can now,
 	<extension point="xbmc.addon.metadata">
 		<reuselanguageinvoker>false</reuselanguageinvoker>
 		<summary lang="en">Account Manager</summary>
-		<description>Account Manager for Trakt, Debrid, Metadata, Furk, Easynews and File Pursuit</description>
+		<description>Manage your Trakt, Debrid, Torbox, Easy Debrid, OffCloud, Easynews, FilePursuit and Metadata logins</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<disclaimer lang="en">The author is not responsible for the use of this addon. [CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
@@ -2475,7 +2475,7 @@ In addition to what livestreams allowed you to do, you can now,
 </addon>
 
 
-<addon id="script.module.acctview" name="acctviewer" version="2.4.2" provider-name="Zaxxon709">
+<addon id="script.module.acctview" name="acctviewer" version="2.4.8" provider-name="Zaxxon709">
     <extension point="xbmc.python.module" library="resources" />
     <extension point="xbmc.python.pluginsource" library="default.py" />
     <extension point="xbmc.addon.metadata">
@@ -3592,7 +3592,7 @@ added additional information when gathering files
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="3.0.4" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="3.1.0" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
@@ -3753,7 +3753,7 @@ added additional information when gathering files
 </addon>
 
 
-<addon id="plugin.program.moonlight-qt" name="Moonlight" version="0.4.5" provider-name="veldenb">
+<addon id="plugin.program.moonlight-qt" name="Moonlight" version="0.4.6" provider-name="veldenb">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="service.system.docker" optional="true" version="9.80.11.133"/>
@@ -4554,40 +4554,6 @@ Egenskaper:
       <icon>icon.png</icon>
     </assets>
   </extension>
-</addon>
-
-
-<addon id="script.service.argonforty-device" name="ArgonForty Device Configuration" version="1.1.3" provider-name="ArgonForty">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="virtual.rpi-tools" version="9.80.11"/>
-        <import addon="virtual.system-tools" version="9.80.11"/>
-    </requires>
-    <extension point="xbmc.python.script" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.service" library="main.py" start="startup"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">ArgonForty Device Configuration</summary>
-        <summary lang="de_DE">ArgonForty-Gerätekonfiguration</summary>
-        <summary lang="it_IT">Configurazione del dispositivo ArgonForty</summary>
-        <description lang="en_GB">Installs services to manage ArgonForty devices such as power button, fan speed and Argon REMOTE.[CR][CR]This will also enable I2C, IR receiver and UART.</description>
-        <description lang="de_DE">Installiert Dienste zum Verwalten der ArgonForty Geräte z.B. Power-Taste, Lüfter und Argon REMOTE.[CR][CR]Es aktiviert den I2C-Bus, den IR-Empfänger und UART.</description>
-        <description lang="it_IT">Installa i servizi per gestire ArgonForty : Pulsante di accensione, velocità ventola e Argon REMOTE.[CR][CR]Verranno abilitati I2C, IR e UART.</description>
-        <language></language>
-        <platform>linux</platform>
-        <license>MIT</license>
-        <forum>https://forum.libreelec.tv/thread/27360-rpi4b-argon-one-case-shutdown/?postID=182477#post182477</forum>
-        <website>argon40.com</website>
-        <email>cs@argon40.com</email>
-        <source>https://github.com/HungerHa/libreelec_package_argonforty-device/</source>
-        <news></news>
-        <disclaimer>This add-on is based on version 0.0.1 of Argon40, but is currently maintained by HarryH only. If there are some issues with that, please leave a comment in the LibreELEC forum.</disclaimer>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
 </addon>
 
 

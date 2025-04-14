@@ -15,10 +15,10 @@
 </ul> 
 
 ### Built-in Commands:
-<p>Enable Max 4K Resolution<br>
+<p>Enable Max 1080P Resolution<br>
 RunPlugin(plugin://plugin.program.maxql/?mode=1)</p>
 
-<p>Enable Max 1080P Resolution<br>
+<p>Enable Max 4K Resolution<br>
 RunPlugin(plugin://plugin.program.maxql/?mode=2)</p>
 
 <p>Enable Dolby Vision<br>
@@ -33,126 +33,44 @@ RunPlugin(plugin://plugin.program.maxql/?mode=5)</p>
 <p>Disable 3D<br>
 RunPlugin(plugin://plugin.program.maxql/?mode=6)</p><br>
 
+<p>Enable Auto-Play<br>
+RunPlugin(plugin://plugin.program.maxql/?mode=7)</p>
+
+<p>Disable Auto-Play<br>
+RunPlugin(plugin://plugin.program.maxql/?mode=8)</p><br>
+
+
 ### Supported Addons:
 
-### Max Resolution
-
 1.  Seren<br>
 2.  Fen<br>
 3.  Fen Light<br>
-4.  afFENity<br>
-5.  Ezra<br>
-6.  Coalition<br>
-7.  POV<br>                  
-8.  Umbrella<br>
-9.  Infinity<br>
-10. Dradis<br>
-11. Taz19<br>
-12. Shadow<br>
-13. Ghost<br>
-14. Base<br>
-15. Unleashed<br>           
-16. Chain Reaction<br>
-17. Magic Dragon<br>
-18. Asgard<br>
-19. Patriot<br>
-20. Black Lightning<br>
-21. Aliunde<br>
-22. Nightwing Lite<br>
-23. Twisted<br>
-24. M.E.T.V 19<br>
-25. Homelander<br>
-26. Quicksilver<br>
-27. Chains Genocide<br>
-28. Absolution <br>      
-29. Shazam<br>
-30. The Crew<br>              
-31. Alvin<br>
-32. Moria<br>
-33. Nine Lives<br>
-34. Scrubs V2<br>
-
-
-### Auto-Play
-
-1.  Seren<br>
-2.  Fen<br>
-3.  Fen Light<br>
-4.  afFENity<br>
-5.  Ezra<br>
-6.  Coalition<br>
-7.  POV<br>                  
-8.  Umbrella<br>
-9.  Infinity<br>
-10. Dradis<br>
-11. Taz19<br>
-12. Shadow<br>
-13. Ghost<br>
-14. Base<br>
-15. Unleashed<br>           
-16. Chain Reaction<br>
-17. Magic Dragon<br>
-18. Asgard<br>
-19. Patriot<br>
-20. Black Lightning<br>
-21. Aliunde<br>
-22. Nightwing Lite<br>
-23. Twisted<br>
-24. Homelander<br>
-25. Quicksilver<br>
-26. Chains Genocide<br>
-27. Absolution<br>      
-28. Shazam<br>
-29. The Crew<br>              
-30. Alvin<br>
-31. Moria<br>
-32. Nine Lives<br>
-33. Scrubs V2<br>
-
-
-### Dolby Vision
-
-1.  Seren<br>
-2.  Fen<br>
-3.  Fen Light<br>
-4.  afFENity<br>
-5.  Ezra<br>
-6.  Coalition<br>
-7.  POV<br>
-8.  Umbrella<br>
-9.  Infinity<br>
-10. Taz19<br>
-11. Homelander<br>
-12. Quciksilver<br>
-13. Chains Genocide<br>
-14. Absolution<br>
-15. Shazam<br>
-16. Alvin<br>
-17. Moria<br>
-18. Nine Lives
-
-
-### 3D
-
-1.  Seren<br>
-2.  Fen<br>
-3.  Fen Light<br>
-4.  afFENity<br>
-5.  Ezra<br>
-6.  Coalition<br>
-7.  POV<br>
-8.  Umbrella<br>
-9.  Infinity<br>
+4.  Ezra<br>
+5.  Coalition<br>
+6.  POV<br>                  
+7.  Umbrella<br>
+8.  Infinity<br>
+9.  Dradis<br>
 10. Taz19<br>
 11. Shadow<br>
 12. Ghost<br>
 13. Base<br>
-14. Unleashed<br>
+14. Unleashed<br>           
 15. Chain Reaction<br>
 16. Magic Dragon<br>
 17. Asgard<br>
 18. Patriot<br>
-19. Black Lightning
+19. Black Lightning<br>
 20. Aliunde<br>
 21. Nightwing Lite<br>
-22. M.E.T.V<br>
+22. Twisted<br>
+23. Homelander<br>
+24. Quicksilver<br>
+25. Chains Genocide<br>
+26. Absolution<br>      
+27. Shazam<br>
+28. The Crew<br>              
+29. Alvin<br>
+30. Moria<br>
+31. Nine Lives<br>
+32. Scrubs V2<br>
