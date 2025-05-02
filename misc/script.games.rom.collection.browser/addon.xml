@@ -1,0 +1,402 @@
+<addon id="script.games.rom.collection.browser" name="Rom Collection Browser" provider-name="bruny, malte" version="2.3.1">
+  <requires>
+    <import addon="xbmc.addon" version="17.0.0" />
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" version="2.18.4" />
+	<import addon="vfs.libarchive" version="1.0.7" />
+    <import addon="service.rom.collection.browser" version="1.0.0" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.script">
+    <provides>game</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>2.3.0 (04/2020)
+- change url to thegamesdb API
+- remove legacy.thegamesdb.net scraper
+    </news>
+    <summary lang="be_BY">Import, browse and launch games in XBMC</summary>
+    <summary lang="ca_ES">Importa, cerca i arranca jocs en l'XBMC</summary>
+    <summary lang="da_DK">Importere, gennemse og starte spil i XBMC</summary>
+    <summary lang="de_DE">Importiert, verwaltet und startet Spiele in XBMC</summary>
+    <summary lang="el_GR">Εισαγάγετε, αναζητήστε και εκτελέστε παιχνίδια στο XBMC.</summary>
+    <summary lang="en_GB">Import, browse and launch games in XBMC</summary>
+    <summary lang="en_NZ">Import, browse and launch games in XBMC</summary>
+    <summary lang="es_ES">Importa, explora y ejecuta juegos en XBMC</summary>
+    <summary lang="fr_FR">Importez, parcourez et lancez vos jeux depuis XBMC</summary>
+    <summary lang="fr_CA">Importer, parcourir et lancer des jeux dans XBMC</summary>
+    <summary lang="gl_ES">Importar, buscar e executar xogos no XBMC</summary>
+    <summary lang="hu_HU">Konzol játék ROM-ok böngészése</summary>
+    <summary lang="id_ID">Impor, telusuri dan mainkan permainan di XMBC</summary>
+    <summary lang="it_IT">Importa, sfoglia e lancia i giochi da XBMC</summary>
+    <summary lang="nl_NL">Importeer, doorzoek en start spellen in XBMC</summary>
+    <summary lang="pl_PL">Importowanie, przeglądanie i uruchamianie gier w XBMC</summary>
+    <summary lang="pt_PT">Importe, navegue e execute jogos no XBMC</summary>
+    <summary lang="pt_BR">Importe, navegue e execute jogos no XBMC</summary>
+    <summary lang="ru_RU">Импорт, обзор и запуск игр в XBMC</summary>
+    <summary lang="sv_SE">Importera, bläddra och starta spel i XBMC</summary>
+    <summary lang="zh_CN">在 XBMC 中导入、浏览和运行游戏</summary>
+    <description lang="be_BY">With this Addon you can browse and launch emulator roms and standalone games in XBMC. See the wiki page for more information: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+First Use:
+  * On first launch RCB will start a simple configuration wizard
+  * After the wizard is completed RCB will ask you to import your games
+  * If needed you can launch the wizard anytime via context menu
+  * Just press "C" on your keyboard or "Menu" on your remote
+
+Features:
+  * scan your rom folders and import games to local database
+  * scrape artwork and meta data from various online sources
+  * import local available descriptions, artwork and videos
+  * filter games by console, genre, year and publisher
+  * favorites function
+  * automatic video playback in video window
+  * fullscreen video browser
+  * game details page
+  * dedicated MAME views to display cabinets and marquees
+  * launch roms and standalone games in solo or non-solo mode
+  * detect games in zip and 7z archives and ask user which game to load
+  * direct launching of savestate files
+  * ...
+</description>
+    <description lang="de_DE">Mit diesem Addon können Roms und PC-Spiele verwaltet und gestartet werden. Mehr Informationen im RCB wiki: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Erste Schritte:
+  * Beim ersten Aufruf startet RCB einen Konfigurations-Assistenten
+  * Nach der Konfiguration importiert RCB die Spiele in seine Datenbank
+  * Der Assistent kann auch jederzeit aus RCB heraus gestartet werden
+  * Drücke dazu "C" auf der Tastatur oder "Menu" auf der Fernbedienung
+
+Features:
+  * Scannt Verzeichnisse rekursiv und importiert Spiele in die Datenbank
+  * Liest Artwork und Metadaten aus verschiedenen Online-Quellen
+  * Importiert lokal verfügbare Infos, Artwork und Videos
+  * Filtert Spiele nach Konsole, Genre, Jahr und Herausgeber
+  * Favoriten-Funktion
+  * Automatisches Abspielen von Videos
+  * Fullscreen Video Browser
+  * Detailseite mit weiteren Spiele-Infos
+  * spezielle MAME Sichten für Cabinets und Banner
+  * Startet Spiele im Solo-Modus (beendet XBMC vor dem Start des Spiels)
+  * Erkennt Spiele in zip und 7z Archiven
+  * Savestates können direkt gestartet werden (Emulator-abhängig)
+  * ...
+</description>
+    <description lang="el_GR">Με αυτό το Πρόσθετο μπορείτε να βρείτε και να παίξετε παιχνίδια εξομοιωτών (Rom) καθώς και αυτόνομα παιχνίδια στο XBMC. Δείτε τη σελίδα του wiki για περισσότερες πληροφορίες: http://code.google.com/p/romcollectionbrowser/wiki/Welcome
+
+Πρώτη Χρήση:
+  * Κατά την πρώτη εκτέλεση του RCB θα ξεκινήσει ένας οδηγός εγκατάστασης
+  * Μετά την ολοκλήρωση του οδηγού το RCB θα σας ζητήσει να εισάγετε τα παιχνίδια σας
+  * Αν χρειαστεί, μπορείτε να εκτελέσετε τον οδηγό ανά πάσα στιγμή από το μενού επιλογών
+  * Απλά πιέστε το "C" στο πληκτρολόγιό σας ή το "Μενού" στο τηλεχειριστήριό σας
+
+Χαρακτηριστικά:
+  * σαρώστε τους φακέλους των rom σας και εισάγετε παιχνίδια στην τοπική βάση δεδομένων
+  * λήψη εικόνων και μετα-δεδομένων μέσω της διαδικασίας του scrape από διάφορες διαδικτυακές πηγές
+  * εισαγωγή διαθέσιμων τοπικών περιγραφών, εικόνων και βίντεο
+  * φιλτράρισμα παιχνιδιών ανά παιχνιδομηχανή, είδος, έτος και εταιρεία
+  * λειτουργία αγαπημένων
+  * αυτόματη αναπαραγωγή βίντεο σε παράθυρο
+  * προβολή βίντεο πλήρους οθόνης
+  * σελίδα πληροφοριών παιχνιδιών
+  * εξειδικευμένες προβολές MAME για εμφάνιση cabinet και marquee
+  * έναρξη rom και παιχνιδιών σε λειτουργία solo και μη
+  * εντοπισμός παιχνιδιών σε αρχεία zip και 7z και ερώτηση χρήστη σχετικά με το ποιο παιχνίδι να φορτωθεί
+  * άμεση έναρξη των αποθηκευμένων αρχείων
+  * ...
+</description>
+    <description lang="en_GB">With this Addon you can browse and launch emulator roms and standalone games in XBMC. See the wiki page for more information: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+First Use:
+  * On first launch RCB will start a simple configuration wizard
+  * After the wizard is completed RCB will ask you to import your games
+  * If needed you can launch the wizard anytime via context menu
+  * Just press "C" on your keyboard or "Menu" on your remote
+
+Features:
+  * scan your rom folders and import games to local database
+  * scrape artwork and meta data from various online sources
+  * import local available descriptions, artwork and videos
+  * filter games by console, genre, year and publisher
+  * favorites function
+  * automatic video playback in video window
+  * fullscreen video browser
+  * game details page
+  * dedicated MAME views to display cabinets and marquees
+  * launch roms and standalone games in solo or non-solo mode
+  * detect games in zip and 7z archives and ask user which game to load
+  * direct launching of savestate files
+  * ...
+</description>
+    <description lang="en_NZ">With this Addon you can browse and launch emulator roms and standalone games in XBMC. See the wiki page for more information: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+First Use:
+  * On first launch RCB will start a simple configuration wizard
+  * After the wizard is completed RCB will ask you to import your games
+  * If needed you can launch the wizard anytime via context menu
+  * Just press "C" on your keyboard or "Menu" on your remote
+
+Features:
+  * scan your rom folders and import games to local database
+  * scrape artwork and meta data from various online sources
+  * import local available descriptions, artwork and videos
+  * filter games by console, genre, year and publisher
+  * favourites function
+  * automatic video playback in video window
+  * fullscreen video browser
+  * game details page
+  * dedicated MAME views to display cabinets and marquees
+  * launch roms and standalone games in solo or non-solo mode
+  * detect games in zip and 7z archives and ask user which game to load
+  * direct launching of savestate files
+  * ...
+</description>
+    <description lang="es_ES">Con este complemento puedes explorar y ejecutar ROMs de emulador y juegos independientes en XBMC. Visita la página wiki para más información: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Primer Uso:
+  * Al ejecutarse por primera vez, RCB mostrará un sencillo asistente de configuración
+  * Una vez completado el asistente, RCB te solicitará importar tus juegos
+  * Si lo necesitas, puedes ejecutar el asistente en cualquier momento a través del menú contextual
+  * Tan solo tienes que pulsar "C" en el teclado o "Menú" en el mando a distancia
+
+Características:
+  * escanea tus carpetas con ROMs e importa los juegos a una base de datos local
+  * descarga imágenes y metadatos desde varias fuentes online
+  * importa descripciones, imágenes y videos disponibles localmente
+  * filtra los juegos por consola, género, año y editor
+  * función de favoritos
+  * reproducción automática de videos en ventana de video
+  * navegador de videos a pantalla completa
+  * página de detalles del juego
+  * vistas de MAME dedicadas, mostrando máquinas y marcos
+  * ejecuta ROMs y juegos independiente en modo solo o no-solo
+  * detecta juegos en archivos zip y 7z y pregunta al usuario qué juego desea cargar
+  * ejecución directa de archivos de partidas guardadas
+  * ...
+</description>
+    <description lang="fr_FR">Avec cette extension, vous pouvez parcourir et lancer des roms d'émulateur ainsi que des jeux autonomes. Visitez le wiki pour plus d'informations : http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+Première utilisation :
+* Au premier démarrage RCB lancera un assistant de configuration simplifié.
+* Une fois cette configuration terminée RCB vous proposera d'importer vos jeux.
+* Au besoin, vous pouvez relancer l'assistant de configuration à tout moment depuis le menu contextuel.
+* Appuyez sur la touche "C" de votre clavier ou sur "Menu" de votre télécommande.
+
+Caractéristiques :
+* Analyse votre dossier de roms et importe les jeux dans une base de données locale
+* Récupère les illustrations et métadonnées depuis différentes sources en ligne
+* Importe vos descriptifs, illustrations et vidéos stockés localement
+* Filtre vos jeux par console, genre, année et éditeur
+* Gestion des favoris
+* lecture automatique des vidéos dans une fenêtre
+* Navigation parmi les vidéos en plein écran
+* Fiche de jeux détaillée
+* Vues dédiées pour MAME affichant cabinets et marquees
+* Lancement des roms et jeux en mode solo ou non
+* Détecte les jeux dans les fichiers zip et 7z et demande à l'utilisateur quel jeux lancer
+* lance directement une sauvegarde
+
+</description>
+    <description lang="fr_CA">Avec cet addiciel vous pouvez parcourir et lancer des roms d'émulateurs et des jeux autonomes dans XBMC. Consulter le wiki pour plus d'informations : http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Première utilisation :
+* au premier lancement RCB lancera un assistant simple de configuration
+* un fois l'assistant terminé RCB vous demandera d'importer vos jeux
+* au besoin vous pouvez lancer l'assistant à tout moment avec le menu contextuel
+* pesez juste sur « C » sur votre clavier, ou « Menu » sur votre télécommande
+
+Caractéristiques :
+* balayer votre dossier de ROM et importer les jeux dans la base de données locale
+* extraire les illustrations et les métadonnées de diverses sources en ligne
+* importer les descriptions, les illustrations et les vidéos locales disponibles
+* filtrer les jeux par console, genre, année et éditeur
+* fonction favoris
+* lecture vidéo automatique dans la fenêtre vidéo
+* navigateur vidéo en plein écran
+* page de détails des jeux
+* vues MAME dédiées pour afficher les cabinets et les marquises
+* lancer les ROM et les jeux autonomes en mode solo ou non
+* détecter les jeux dans les archives zip et 7z et demander à l'utilisateur quel jeu charger
+* lancement direct des fichiers de sauvegarde d'état
+* ... 
+</description>
+    <description lang="hu_HU">Jelenlegi funkciók:
+  * játékok szűrése konzoltípus, műfaj, év és kiadó alapján
+  * rom-ok indítása külső emulátorral
+  * a program beállítása egy xml fájl segítségével
+  * egyszerű de testreszabható leírófájl-feldolgozó
+  * játékonként különböző képek és videók megjelenítése
+  * játéktartalom és kiegészítő információk megjelenítése
+</description>
+    <description lang="id_ID">Dengan Addon ini Anda dapat menelusuri dan menjalankan rom emulator dan program permainan di XBMC. Lihat halaman wiki untuk informasi lebih lanjut: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Pemakaian Pertama:
+* Saat pertama kali menjalankan RCB akan memulai penuntun konfigurasi sederhana
+* Setelah tuntunan selesai RCB akan menanyakan Anda untuk mengimpor permainan
+* Jika diperlukan Anda dapat menjalankan tuntunan kapan saja melalui menu konteks
+* Tekan "C" pada papan ketik atau "Menu" pada remote Anda
+
+Fitur:
+* pindai folder rom Anda dan impor permainan ke basis data lokal
+* salin karya seni dan meta data dari berbagai sumber daring
+* impor deskripsi, karya seni dan video yang tersedia lokal
+* filter permainan berdasarkan konsol, tema, tahun dan penerbit
+* fungsi favorit
+* pemaran video otomatis di jendela video
+* Penelusuran video layar penuh
+* halaman rincian permainan
+* tampilan MAME dedikasi untuk menampilkan kabinet dan marquee
+* deteksi permainan dalam arsip zip dan 7z serta menanyakan pengguna permainan mana yang akan dimuat
+* menjalankan langsung dari berkas savestate
+* ...
+</description>
+    <description lang="it_IT">Con questo addon puoi sfogliare e lanciare le rom degli emulatori o giochi standalone in XBMC. Consulta la pagina wiki per maggiori informazioni : http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Prima uso:
+  * Al primo avvio, RCB avvia una semplice procedura di configurazione
+  * Al termine, RCB ti chiederà di importare i tuoi giochi
+  * Se necessario, puoi avviare la procedura di configurazione in qualsiasi momento tramite il menu contestuale
+  * Premi semplicemente "C" sulla tua tastiera o il tasto "Menu" del tuo telecomando
+
+Caratteristiche:
+  * Scansiona le tue cartelle contenenti rom e importa i giochi in un database locale
+  * Esegui lo scraping degli artwork e dei metadati da varie sorgenti online
+  * Importa descrizioni, artwork e video già disponibili in locale
+  * Filtra i giochi per console, genere, anno e editore
+  * Funzione preferiti 
+  * Esecuzione automatica dei video nella finestra video
+  * Sfoglia video a schermo intero
+  * Pagina dettagli del gioco
+  * Viste specifiche per MAME per visualizzare i cabinet e i marquee
+  * Lancia rom e giochi standalone in modalità "Solo" e "Non solo"
+  * Rileva giochi in archivi .zip e .7z, e chiede all'utente quale gioco eseguire
+  * Lancio diretto da file di salvataggio del gioco
+  * ...
+</description>
+    <description lang="nl_NL">Met deze Add-on kan je zoeken en starten van emulator roms en alleenstaande Spellen in XBMC. Zie de wikipagina voor meer informatie:
+http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Bij eerste keer:
+* Bij de eerste keer Starten zal RCB een gemakkelijke configuratie wizard starten
+* Nadat de wizard gereed is zal RCB jou vragen jouw spellen te importeren
+* wanneer nodig kan je de wizard elke keer starten via het context menu
+* Druk alleen "C" op je toetsenbord of "menu"op jouw afstandsbediening
+
+Functies:
+* Scan jouw rom folders en importeer spellen naar jou lokale database
+* scrape Artwork en Meta data van uit verschillende online bronnen
+* importeer lokaal beschikbare omschrijvingen, artwork en video`s
+* Filter spellen op Console, genre, jaar en uitgever
+* Favorieten functie
+* Automatisch film terugspelen optie in videoscherm
+* Volledig scherm Video browser
+* Spel details pagina
+* Toegewijde MAME weergaven om Cabinets en marquees*
+* Start Roms en Alleenstaande spellen in Solo of niet-solo modus
+* detecteer spellen in zip en 7z archieven en vraag gebruiker welk spel te laden
+* direct starten van opgeslagen bestanden
+* ...
+
+</description>
+    <description lang="pt_PT">Com este Addon pode navegar e jogar roms de emuladores e jogos individuais no seu XBMC. Veja a página de wiki para mais informação: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Primeiro uso:
+  * Na primeira execução, RCB iniciará um assistente de configuração
+  * Após a configuraçã estar completa, o RCB irá importar os seus jogos
+  * Se precisar, pode iniciar o assistente através do menu de contexto
+  * Basta premir "C" no seu teclado ou "Menu" no seu remoto
+
+Funcionalidades:
+  * analisar as suas pastas de roms e importar jogos para a base de dados local
+  * obter artwork e metadados de várias fontes online
+  * importar descrições, artwork e vídeos disponíveis localmente
+  * filtrar jogos por consola, género, ano e editora
+  * função de favoritos
+  * reprodução de vídeo automática na janela de vídeo
+  * navegador de vídeos em ecrã cheio
+  * página de detalhes do jogo
+  * vistas especiais de MAME para exibir cabinets e marquees
+  * iniciar roms e jogos autónomos em modo solo ou não-solo
+  * detectar jogos em ficheiros zip e 7z e perguntar ao utilizador qual é o jogo a iniciar
+  * iniciar directamente ficheiros de savestate
+  * ...
+</description>
+    <description lang="pt_BR">Com esse addon você pode navegar e lançar roms de emuladores e jogos através do xbmc. Veja a pagina de wiki para mais informações:
+http://code.google.com/p/romcollectionbrowser/wiki/Welcome.(\n)(\n)
+Primeiro Uso:
+ No primeiro lançamento o RCB irá iniciar um assistente de configuração simples(
+*Depois de concluir o assistente RCB irá pedir para importar seus jogos
+*Se necessário, você pode iniciar o assistente a qualquer momento através do menu de contexto
+* Basta pressionar "C" no seu teclado ou "Menu" em seu controle remoto
+
+Características:
+* varredura de suas pastas com roms e importação de jogos para um banco de dados local
+* procura arte e meta-dados de várias fontes on-line
+* importação local para descrições e obras de arte e vídeos se disponíveis
+* filtrar jogos por console, gênero, ano e editor
+* função favoritos
+* reprodução automática de videos na janela do navegador(\n)
+*vídeo em tela cheia no navegador
+* pagina de detalhes do jogo
+* vistas dedicadas a MAME para exibir cabines e letreiros(\n)
+* lançamento de roms e jogos independentes no modo sozinho ou não sozinho
+* detectar jogos em arquivos ZIP e 7z e perguntar ao usuário qual jogo carregar
+* lançamento direto de arquivos de savestate
+.
+</description>
+    <description lang="ru_RU">С помощью этого дополнения можно просматривать и запускать ROM эмуляторы и игры XBMC. Дополнительную информацию можно увидеть на странице Wiki по адресу: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Первый запуск:
+  * При первом запуске RCB будет запущен простой мастер конфигураций
+  * После завершения мастера RCB спросит Вас, какие игры импортировать
+  * Если нужно, вы можете запустить мастер повторно в контекстном меню
+  * Нажмите "C" на клавиатуре или "Menu" на пульте управления
+
+Возможности:
+  * Сканирование папок с образами игр и добавление их в вашу базу данных
+  * Искать обложки и мета данные  с различных онлайн источников
+  * загружать доступные локальные описания, обложки и видео
+  * фильтровать игры по типу консоли, жанру, году, издателю
+  * избранное
+  * автоматическое воспроизведение видео в окне
+  * полноэкранный видео браузер
+  * страница описаний игр
+  * dedicated MAME views to display cabinets and marquees
+  * Запускать образы и игры в одно и многопользовательском режимах
+  * определять игры в архивах zip и 7z и затем спрашивать пользователя, что загружать
+  * Прямой запуск по файлам сохранений
+  * ...
+</description>
+    <description lang="sv_SE">Med detta tillägg kan du bläddra och starta emulatorbaserade ROMS och spel i XBMC.
+Se wiki för mer information: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Första start:
+  * Vid första start kommer RCB starta en enkel inställningsguide
+  * När guiden är klar kommer RCB be dig importera dina spel
+  * Om du behöver, kan du starta guiden när som helst via undermenyn
+  * Tryck "C" på ditt tangentbord eller "Meny" på din fjärrkontroll
+
+Egenskaper:
+  * sök igenom mappar med roms och importera spel till lokal databas
+  * skrapa bilder och metadata från olika onlinekällor
+  * importera lokala beskrivningar, bilder och filmer
+  * filtrera spel efter konsol, genre, år och utgivare
+  * favoriter
+  * automatisk filmuppspelning i videofönster
+  * fullskärmsbläddrare för film
+  * sida med detaljerad spelinformation
+  * dedikerade MAME-vyer för att visa spelkabinett
+  * starta roms och spel i solo eller non-solo läge
+  * hitta spel i zip och 7z arkiv och fråga användaren vilket spel att ladda
+  * direktstart av savestate fier
+  * ...
+</description>
+    <language />
+    <platform>android freebsd ios linux osx windows</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>forum.kodi.tv/showthread.php?tid=70115</forum>
+    <website>https://github.com/maloep/romcollectionbrowser</website>
+    <source>https://github.com/maloep/romcollectionbrowser</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>

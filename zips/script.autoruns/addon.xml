@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="script.autoruns" name="Autoruns" version="1.0.2" provider-name="fightnight, bittor7x0">
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="script.autoruns" name="Autoruns" version="1.0.3" provider-name="fightnight, bittor7x0">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -22,8 +22,15 @@
         <assets>
             <icon>resources/icon.png</icon>
         </assets>
-        <news>[B]v1.0.2 (14 November 2022):[/B]
+        <news>[B]v1.0.3 (6 February 2024):[/B]
+- Fix issues detected by Coverity Scan and SonarCloud.
+- Fix warning detected by kodi-addon-checker.
+- Reformat code using Black Python code formatter.
+- Reformat imports using isort Import Sorter.
+
+[B]v1.0.2 (14 November 2022):[/B]
 - Update for Kodi v19 Matrix.
+- Add Spanish translation.
 
 [B]v1.0.1 (31 March 2015):[/B]
 - Little tweaks.

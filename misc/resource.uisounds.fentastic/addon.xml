@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="resource.uisounds.fentastic" version="1.0.0" name="FENtastic UI Audio Suite" provider-name="Ivar Brandt">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">FENtastic Audio Suite</summary>
+    <description lang="en">FENtastic Audio Suite</description>
+    <platform>all</platform>
+  </extension>
+</addon>

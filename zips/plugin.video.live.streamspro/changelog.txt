@@ -1,2 +1,0 @@
-[B]Version 3.0.0[/B]
-Matrix compatible version

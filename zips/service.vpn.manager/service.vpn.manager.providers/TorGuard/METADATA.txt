@@ -1,0 +1,7 @@
+1569679042
+400 5
+DEPRECATED
+LOCATIONS.txt
+TEMPLATE.txt
+ca.crt
+ta.key

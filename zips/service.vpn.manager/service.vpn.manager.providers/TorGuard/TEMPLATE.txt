@@ -1,0 +1,26 @@
+client
+dev tun
+proto #PROTO
+remote #SERVER #PORT
+resolv-retry 30
+nobind
+persist-key
+persist-tun
+tun-mtu 1500
+tun-mtu-extra 32
+#REMOVE1mssfix 1450
+tls-client
+remote-cert-tls server
+auth-user-pass #PASS
+compress
+ncp-disable
+reneg-sec 0
+fast-io
+sndbuf 393216
+rcvbuf 393216
+cipher AES-256-GCM
+auth SHA256
+key-direction 1
+tls-auth #TLSKEY
+ca #CERT
+verb 3

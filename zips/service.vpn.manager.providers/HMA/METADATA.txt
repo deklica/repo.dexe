@@ -1,7 +1,0 @@
-1497211769
-400 6
-LOCATIONS.txt
-TEMPLATE.txt
-ca.crt
-user.crt
-user.key

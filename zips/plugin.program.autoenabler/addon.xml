@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.autoenabler" name="Auto Enabler" version="1.0.0" provider-name="slam">
+<addon id="plugin.program.autoenabler" name="Auto Enabler" version="1.0.1" provider-name="slam">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>

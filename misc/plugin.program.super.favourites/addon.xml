@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.3.7" provider-name="jmooremcc, spoyser">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+
+  
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+    <summary lang="es_ES">Ponga todas sus partes favoritas de todos sus complementos favoritos en un complemento fácil de usar.</summary>
+    <description lang="en_GB">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+    <description lang="es_ES">Super Favoritos es la mejor forma de administrar sus favoritos de Kodi.[CR][CR]Prácticamente cualquier elemento de menú dentro de Kodi se puede agregar a Súper favoritos, incluso desde complementos que normalmente no brindan esta función.[CR][CR]Super Favoritos le permite administrar mejor sus favoritos de Kodi, incluída la creación de subcarpetas, en las que puede copiar o mover sus secciones o addons preferidos.[CR][CR]Esto le permite crear su propio complemento personalizado con lo mejor. Busque sus addons preferidos, reproduzca su música favorita, lea sus historias favoritas, seleccione sus listas de reproducción, explore sus películas, escuche sus estaciones de radio, vea sus dibujos animados, las posibilidades son infinitas, todos sus favoritos desde un solo uso addon, fácil de añadir.</description>
+    <platform>all</platform>
+    <language>en es</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+    <website />
+    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+    <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
+    <email>seanpoyser at gmail.com</email>
+    <email>jmooremcc at hotmail.com</email>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+
+    <news>
+2.3.7 September 2023
+      -Fix reported glitch
+
+2.3.6 September 2023
+      -Fixed root translation bug in imagecache module
+
+2.3.5 September 2023
+      -Restored util module ROOT variable back to special path
+
+2.3.4 September 2023
+      -Modified imagecache to ignore special paths
+
+2.3.3 August 2023
+      - Added imagecache module as part of solution to implement saving icons and fanart during export/import
+      - Modified importer module to utilize imagecache
+      - Modified default module to utilize imagecache at startup
+      - Fixed miscellaneous bugs related to xbmc function calls
+
+2.3.2 July 2023
+    -Removed metahandler from addon.xml
+    -Added new imagecache module to implement the ability to import/export custom icons.
+    -Miscellaneous bug fixes
+    -Bug fixes in imagecache module
+    -Bug fix in importer module
+
+2.2.6 April 2022
+      - Fix context menu settings bug
+      - Fix more issues with activateWindowCommand
+
+2.2.5 February 2022
+      - Generic Fix for activateWindowCommand
+
+2.2.4 February 2022
+      - Fix URL Playback
+
+2.2.3 February 2022
+      - Fix folder lock
+      - Fix name colorization
+
+2.2.1 February 2022
+      - Minor Bug Fix
+
+2.2.0 December 2021
+      - Fixed Play From Here functionality
+      - Fixed handling of local folders so that back button now works correctly
+      - Added threading decorator to utils
+
+2.1.0: 9 October 2021
+      - Added Spanish Translation contributed by populc
+      - Fixed issue in player module
+
+2.0.11: 26 August 2021
+      - Fixed bug in download module that prevented videos from being downloaded
+
+2.0.10: 6 June 2021
+      - Fixed bug that prevented Hebrew language for working
+
+2.0.9: 15 May 2021
+      - Fixed bug in Player.def activateWindowCommand(cmd) that was messing up the ability
+        to return from child direrctories
+
+2.0.8: 14 May 2021
+      - Fixed various incompatibilities with latest version of Matrix involving decode('utf-8')
+        that caused crashes.
+
+2.0.7: 17 February 2021
+    - Fixed remote folder access via another plugin
+
+2.0.6: 11 January 2021
+      - Fixed access to local folders and smb folders
+
+2.0.5: 12 December 2020
+      - More Fixes for Network Folder Failure to Launch
+
+2.0.0: 29 November 2020
+      - Matrix Version
+
+1.0.60: 1 November 2020
+    - Fixed launch issues in Kodi Leia
+
+1.0.59: 29th May 2017
+    - 'Now playing' text now defined by SF due to skin variations
+    </news>
+
+  </extension>
+
+
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+
+      <item library="capture.py">
+        <label>$ADDON[plugin.program.super.favourites 30002]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED),True) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_addtofaves.py">
+        <label>$ADDON[plugin.program.super.favourites 30047]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED),True) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_download.py">
+        <label>$ADDON[plugin.program.super.favourites 30259]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED),True) + Player.IsInternetStream</visible>
+      </item>
+
+    </menu>
+  </extension>
+
+</addon>

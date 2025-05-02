@@ -1,0 +1,19 @@
+client
+dev tun
+proto #PROTO
+remote #SERVER #PORT
+resolv-retry 30
+nobind
+tun-ipv6
+remote-cert-tls server
+client
+comp-lzo
+persist-key
+persist-tun
+verb 3
+cipher AES-256-CBC
+auth SHA256
+auth-user-pass #PASS
+ca #CERT
+tls-auth #TLSKEY
+key-direction 1

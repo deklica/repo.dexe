@@ -1,0 +1,8 @@
+1680936576
+400 6
+DEPRECATED
+LOCATIONS Giganews Account.txt
+LOCATIONS VyprVPN Default Encryption.txt
+LOCATIONS VyprVPN Strong Encryption.txt
+TEMPLATE.txt
+ca.crt

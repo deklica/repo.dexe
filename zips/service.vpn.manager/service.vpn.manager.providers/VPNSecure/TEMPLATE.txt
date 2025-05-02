@@ -1,0 +1,18 @@
+client
+proto #PROTO
+dev tun
+dh #DH
+ca #CERT
+cert #USERCERT
+key #USERKEY
+askpass #USERPASS
+remote #SERVER #PORT
+cipher AES-256-CBC
+verb 3
+mute 20
+comp-lzo
+persist-key
+persist-tun
+float
+resolv-retry 30
+nobind

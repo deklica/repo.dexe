@@ -1,0 +1,19 @@
+dev tun
+tun-ipv6
+persist-tun
+persist-key
+cipher AES-256-GCM
+ncp-disable
+auth SHA256
+tls-client
+client
+resolv-retry 30
+proto #PROTO
+remote #SERVER #PORT
+dhcp-option DNS #USER1
+auth-user-pass #PASS
+remote-cert-tls server
+verb 3
+ca #CERT
+setenv CLIENT_CERT 0
+tls-crypt #TLSKEY
