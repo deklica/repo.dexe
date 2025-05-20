@@ -955,7 +955,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.cMaNWizard" name="cMaN's Wizard Repository" version="1.0.7" provider-name="cMaN">
+<addon id="repository.cMaNWizard" name="cMaN's Wizard Repository" version="2.8" provider-name="cMaN">
 	<extension point="xbmc.addon.repository" name="cMaN's Wizard Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2739,7 +2739,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.ukturk" name="UKTurk Addon Repository" version="3.0.1" provider-name="UKTurk">
+<addon id="repository.ukturk" name="UKTurk Addon Repository" version="3.0.2" provider-name="UKTurk">
 	<extension point="xbmc.addon.repository" name="UKTurk Addon Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

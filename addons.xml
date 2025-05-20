@@ -4,12 +4,11 @@
 
 --- Video ---
 plugin.video.crackle
-plugin.video.daddylivehd
+plugin.video.dlv2
 plugin.video.elementum
 plugin.video.fen
 plugin.video.fenlight (Fen Light / FenLightAM / Fen Light+)
 plugin.video.free99
-plugin.video.gratis
 plugin.video.json_iptv
 plugin.video.last_played
 plugin.video.playlistbee
@@ -17,7 +16,6 @@ plugin.video.premiumizerx
 plugin.video.realizerx
 plugin.video.scrubsv2
 plugin.video.seren
-plugin.video.ukturk19
 plugin.video.watchnixtoons2
 plugin.video.youtube
 plugin.video.ytchannels
@@ -143,7 +141,7 @@ service.subtitles.titlovi
 <addons>
 
 
-<addon id="plugin.video.crackle" name="Crackle" version="2023.10.11+matrix.1" provider-name="eracknaphobia">
+<addon id="plugin.video.crackle" name="Crackle" version="2024.7.22" provider-name="eracknaphobia">
   <requires>
       <import addon="xbmc.python" version="3.0.0"/>
       <import addon="script.module.requests"/>
@@ -154,15 +152,16 @@ service.subtitles.titlovi
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
+    <platform>android</platform>
     <summary lang="en_GB">Crackle delivers popular, award-winning TV, movies and originals. With no limit to how much you can watch across all your devices, you can binge all you want, wherever you want.</summary>
     <description lang="en_GB">Crackle is a video streaming distributor of original web shows, Hollywood movies, and TV shows. Founded in the early 2000s as Grouper, and rebranded in 2007, Crackle is owned by Sony Pictures Entertainment.</description>
       <news>
-        - Add Search Feature
-        - Switch Menu to localized strings
+        - Refactor for upstream changes
+        - Added pagination
+        - Playback is only possible on Android Devices now because of widevine VMP
+        - Added settings for page size and sort by
       </news>
     <language>en</language>
-    <platform>all</platform>
     <license>GPL-2.0-or-later</license>
     <forum></forum>
     <source>https://github.com/eracknaphobia/plugin.video.crackle</source>
@@ -174,25 +173,30 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.daddylivehd" name="DaddyLiveHD" version="5.04" provider-name="FubuZ">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" />
-        <import addon="script.module.inputstreamhelper" />
-        <import addon="script.module.six"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Live Sports and TV</summary>
-		<description lang="en">Free streaming of Live Sports and TV.</description>
-        <license>GPL-3.0</license>
-        <website>https://daddylive.sx/</website>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
+<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.1.1" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.routing" />
+    <import addon="script.module.resolveurl" />
+    <import addon="script.module.pytz" />
+    <import addon="script.module.tzlocal" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary lang="en_GB"></summary>
+	<description lang="en_GB">A Big Shout Out To The Original Creator-Forked With Their Permission</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GPL-2.0-or-later</license>
+  </extension>
 </addon>
 
 
@@ -268,9 +272,10 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.21">
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.27">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.pil" version="1.1.7"/>
         <import addon="script.module.requests" version="2.19.1"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="resources/lib/fenlight.py">
@@ -344,33 +349,6 @@ service.subtitles.titlovi
         </assets>
         <news></news>
     </extension>
-</addon>
-
-
-<addon id="plugin.video.gratis" name="Gratis" version="1.6.0" provider-name="X">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests"/>
-		<import addon="script.module.resolveurl"/>
-		<import addon="script.module.beautifulsoup4"/>
-		<import addon="inputstream.adaptive"/>
-		<import addon="plugin.video.youtube"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Come here for the latest.</summary>
-		<description lang="en_GB">Merriam-Webster definition of GRATIS: without charge or recompense : FREE!!!</description>
-		<platform>all</platform>
-		<license>GPL-3.0-or-later</license>
-		<website></website>
-		<source></source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
 </addon>
 
 
@@ -672,40 +650,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.ukturk19" name="UK Turk Playlists" version="1.0.5" provider-name="UKTurk">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.requests" />
-		<import addon="script.module.beautifulsoup4" />
-		<import addon="script.module.resolveurl" />
-		<import addon="inputstream.adaptive" />
-		<import addon="plugin.video.youtube" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<!--<extension point="xbmc.service" library="service.py" />-->
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">UK Turk Playlists 19</summary>
-		<description lang="en_GB">Open</description>
-		<disclaimer lang="en_GB"></disclaimer>
-		<language>en</language>
-		<platform>all</platform>
-		<license>GPL-2.0-or-later</license>
-		<forum></forum>
-		<website></website> 
-		<email></email>
-		<source></source>
-		<news>0.0.8 - Kodi 19 ready</news>
-		<assets>
-				<icon>icon.png</icon>
-				<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.0" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.1" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>

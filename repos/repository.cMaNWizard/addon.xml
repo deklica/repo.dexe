@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.cMaNWizard" name="cMaN's Wizard Repository" version="1.0.7" provider-name="cMaN">
+    <addon id="repository.cMaNWizard" name="cMaN's Wizard Repository" version="2.8" provider-name="cMaN">
         <extension point="xbmc.addon.repository" name="cMaN's Wizard Repository">
 		<dir>		
-            <info compressed="false">http://cmanbuilds.com/_Repo/addons.xml</info>
-            <checksum>http://cmanbuilds.com/_Repo/addons.xml.md5</checksum>
-            <datadir zip="true">http://cmanbuilds.com/_Repo/</datadir>
+            <info compressed="false">https://cmanbuildsxyz.com/cman/repo/addons.xml</info>
+            <checksum>https://cmanbuildsxyz.com/cman/repo/addonsmd5.txt</checksum>
+            <datadir zip="true">https://cmanbuildsxyz.com/cman/repo/</datadir>
 		</dir>
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
-		</dir>
-		
-		<dir>
-        <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
         </dir>
-
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/</datadir>
-            <hashes>false</hashes>
-        </dir>
-	
-		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+		</dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/</datadir>
 		</dir>
         </extension>
         <extension point="xbmc.addon.metadata">
