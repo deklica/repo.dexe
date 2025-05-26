@@ -173,7 +173,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.1.1" provider-name="X">
+<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.1.2" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -650,7 +650,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.1" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.2" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>

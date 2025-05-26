@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.1" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.2" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -24,6 +24,10 @@ Random updates by lolage.
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
 
+[B]0.14.2:[/B]
+- wcostream - add new movie workaround
+- Update Thumbnail Hashes
+
 [B]0.14.1:[/B]
 - wcoforever - add domain
 - wcofun - fix search
@@ -37,19 +41,7 @@ Random updates by lolage.
 - Code Tidyup
 - Separate Trakt Integration
 - Add TMDB thumbnails
-- Fix wcostream premium workaround
-
-[B]0.13.3:[/B]
-- Revert inputstream changes. Will use inputstream helper again when it is fixed on xbox
-- Update User Agent
-
-[B]0.13.2:[/B]
-- Update Thumbnail Hashes
-- Better handling of inputstream
-
-[B]0.13.1:[/B]
-- Update User Agent
-- Work around new video method</news>
+- Fix wcostream premium workaround</news>
         <assets>
             <icon>icon.png</icon>
         </assets>
