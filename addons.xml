@@ -324,7 +324,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.free99" version="1.7" name="[COLOR goldenrod]Free99[/COLOR]" provider-name="JewBMX, DIGGZ">
+<addon id="plugin.video.free99" version="1.8" name="[COLOR goldenrod]Free99[/COLOR]" provider-name="JewBMX, DIGGZ">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
