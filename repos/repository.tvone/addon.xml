@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.tvone" name="tvOne Repository" version="1.0" provider-name="Jax">
+<extension point="xbmc.addon.repository" name="tvOne Repository">
+        <dir minversion="19.0.0">
+            <info compressed="false">https://github.com/OldManJax/repository.tvone/raw/master/addons.xml</info>
+            <checksum>https://github.com/OldManJax/repository.tvone/raw/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/OldManJax/repository.tvone/raw/master/</datadir>
+        </dir>   
+</extension>
+<extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>All the working tvOne add-ons</summary>
+    <description>This is a simple repo for all of RACC's tvOne IPTV add-ons (Kodi 19 and up)[CR]After seeing so many versions and forks out there I wanted to provide a location for the original latest updated versions. These are taken directly from RACC's Japanese Repository and slightly modified with an icon, fanart and a date updated tag in the description. Developers are welcome to import this into their own repos.
+    - tvOne pulls from TV-Tap and was updated Oct 2024
+    - tvOne-111 pulls from Redbox and was updated Oct 2024
+    - tvOne-1112 pulls from LiveNet and was updated Oct 2024
+    - tvOne-112 pulls from RStv and was updated July 2023
+    - tvOne-11 pulled from SwiftStreams but is dead so it's not included here</description>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+</extension>
+</addon>

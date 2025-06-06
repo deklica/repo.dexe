@@ -969,7 +969,7 @@ Egenskaper:
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="3.1.0" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="3.1.3" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />

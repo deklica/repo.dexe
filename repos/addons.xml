@@ -137,6 +137,7 @@ repository.tidal2
 repository.titan.bingie.mod
 repository.topg
 repository.torrest
+repository.tvone
 repository.twilight0
 repository.twilight0.libs
 repository.ukturk
@@ -1923,7 +1924,7 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.michaz" name="Michaz Repository" provider-name="Michaz" version="4.3">
+<addon id="repository.michaz" name="Michaz Repository" provider-name="Michaz" version="5.0">
 	<extension point="xbmc.addon.repository" name="Michaz Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2695,6 +2696,29 @@ repository.zachmorris
 - Add spanish translation
 - Allow extracting information about running platform
 		</news>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.tvone" name="tvOne Repository" version="1.0" provider-name="Jax">
+	<extension point="xbmc.addon.repository" name="tvOne Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>All the working tvOne add-ons</summary>
+		<description>This is a simple repo for all of RACC's tvOne IPTV add-ons (Kodi 19 and up)[CR]After seeing so many versions and forks out there I wanted to provide a location for the original latest updated versions. These are taken directly from RACC's Japanese Repository and slightly modified with an icon, fanart and a date updated tag in the description. Developers are welcome to import this into their own repos.
+    - tvOne pulls from TV-Tap and was updated Oct 2024
+    - tvOne-111 pulls from Redbox and was updated Oct 2024
+    - tvOne-1112 pulls from LiveNet and was updated Oct 2024
+    - tvOne-112 pulls from RStv and was updated July 2023
+    - tvOne-11 pulled from SwiftStreams but is dead so it's not included here</description>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
