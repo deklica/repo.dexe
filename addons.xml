@@ -21,6 +21,7 @@ plugin.video.realizerx
 plugin.video.scrubsv2
 plugin.video.seren
 plugin.video.watchnixtoons2
+plugin.video.whitelodge
 plugin.video.youtube
 plugin.video.ytchannels
 script.realdebrid
@@ -51,6 +52,7 @@ script.ezmaintenanceplus
 script.fonts.installer
 script.hideosd
 script.kcleaner
+script.keymapedit
 script.light.imdb.ratings.update
 script.module.accountmgr
 script.module.acctview
@@ -96,6 +98,7 @@ script.scrubsv2.artwork
 --- Other ---
 plugin.program.moonlight-qt (linux)
 pvr.eon (linux, android)
+resource.images.whitelodge.artwork
 resource.uisounds.kodi-12
 resource.uisounds.kodi-24
 script.cu.lrclyrics
@@ -124,9 +127,6 @@ plugin.video.pov (affenity, dradis, infinity)
 plugin.video.jacktook
 script.otaku.mappings
 script.jacktook.burst
-plugin.video.whitelodge
-resource.images.whitelodge.artwork
-script.keymapedit
 plugin.video.youtube
 script.module.cocoscrapers
 
@@ -206,7 +206,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.34" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="DaddyLive" version="4.34" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -810,6 +810,42 @@ Random updates by lolage.
         <assets>
             <icon>icon.png</icon>
         </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.whitelodge" name="Whitelodge" provider-name="one_eyed_jack" version="1.05.23">
+    <requires>
+        <import addon="resource.images.whitelodge.artwork" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+    </requires>
+    <extension library="whitelodge.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en_GB">Whitelodge</summary>
+        <description lang="en_GB">Fetches official stream urls/ids from various streaming services, and sends them to their equivalent Kodi add-on for playback.[CR]NOTE: This add-on uses free and legal resources for it's purposes. User has to have installed and configured (with linked active account where required) the supported services' equivalent add-ons in order to achieve playback.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum />
+        <website />
+        <source />
+        <disclaimer lang="en_GB">This project uses the TMDb, JustWatch, Trakt, Fanart.tv APIs, but is not affiliated nor endorsed by any of their respective ogranisations.[CR]Please support these ogranisations however you can.</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>screenshot-01.png</screenshot>
+            <screenshot>screenshot-02.png</screenshot>
+            <screenshot>screenshot-03.png</screenshot>
+        </assets>
+        <news>
+- See Changelog on Tools menu
+        </news>
     </extension>
 </addon>
 
@@ -1992,6 +2028,37 @@ In order to get the API Key:
         <logo>resources/logo.png</logo>
     </assets>
   </extension>
+</addon>
+
+
+<addon id="script.keymapedit" name="Keymap Edit" provider-name="takoi, host505" version="0.1.7">
+    <requires>
+        <import addon="xbmc.addon" version="17.0.0" />
+    </requires>
+    <extension library="main.py" point="xbmc.python.script" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">An editor for keymap files</summary>
+        <description lang="en_GB">Keymap Edit is a GUI for configuring mappings for remotes, keyboard and other inputs supported by xbmc. Note: existing user defined key mappings will be removed.[CR][I]This is a Keymap Editor fork. Credit goes to original creator (takoi)[/I]</description>
+        <platform>all</platform>
+        <language />
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum />
+        <source>https://github.com/bleak-lodge/script.keymapedit</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <news>[I]Changes on this fork include:[/I]
+- Forked - Rebranded to Keymap Edit
+- Added some missing actions, categories, windows introduced in Kodi v17 and v18
+- Re-organised windows and actions
+- Generated .xml is now properly indented, instead of 1 line
+- Fixed keymap reloading after save
+- Converted to current language formatting
+- Added Greek language
+- Pyhton 3/Kodi 19+ support
+- Added longpress support
+        </news>
+    </extension>
 </addon>
 
 
@@ -3441,6 +3508,24 @@ This addon is inofficial and not linked in any form to eon.tv
 All trademarks belong to them
 </news>
 	</extension>
+</addon>
+
+
+<addon id="resource.images.whitelodge.artwork" name="Whitelodge Artwork" version="0.0.7" provider-name="bleak-lodge">
+    <extension point="kodi.resource.images" compile="false" type="Whitelodge" />
+    <requires>
+        <import addon="kodi.resource" version="1.0.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Themes for Whitelodge add-on</summary>
+        <description lang="en_GB">Provided separately to allow easier distribution and consume less bandwidth</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 

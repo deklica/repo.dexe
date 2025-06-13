@@ -2,7 +2,7 @@
 
 <addons>
 
-<addon id="repository.dexe" name=" dEXE's Addons Repository" version="1.0.8" provider-name="dEXE">
+<addon id="repository.dexe" name=" dEXE's Addons Repository" version="1.0.9" provider-name="dEXE">
 	<extension point="xbmc.addon.repository" name="dEXE's Addons Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/addons.xml</info>
@@ -19,6 +19,12 @@
 			<info compressed="false">https://gitfront.io/r/dexe/n7TtSm9NEVFs/dexerepo/raw/addons.xml</info>
 			<checksum>https://gitfront.io/r/dexe/n7TtSm9NEVFs/dexerepo/raw/addons.xml.md5</checksum>
 			<datadir zip="true">https://gitfront.io/r/dexe/n7TtSm9NEVFs/dexerepo/raw/zips/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="19.0.0">
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/misc/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/misc/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/misc/</datadir>
 			<hashes>false</hashes>
 		</dir>
 	</extension>

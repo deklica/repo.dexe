@@ -23,3 +23,5 @@ For now, the addon is only compatible with Kodi 18.0 or higher.
 SubLoader is a fork from the well-known AutoSubs/AutoSrt addon. It also contains some code from a Jen base addon. All credits go to the original developers and DenimNani for original SubLoader.
 
 I'm not a programmer; all I do is trial and error to find a possible solution. So please if someone wants to help out and to push this addon forward, be my guest.
+
+<a href="https://deklica.github.io" target="_blank">**DOWNLOAD**</a><br>

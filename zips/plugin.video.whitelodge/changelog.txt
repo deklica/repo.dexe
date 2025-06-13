@@ -1,0 +1,120 @@
+[B][COLOR gold]v1.05.06[/COLOR][/B]
+- Fixed IMDb lists (again)
+
+[B][COLOR gold]v1.05.05[/COLOR][/B]
+- Minor fixes
+
+[B][COLOR gold]v1.05.04[/COLOR][/B]
+- Optimised official sources fetching functionality
+
+[B][COLOR gold]v1.05.03[/COLOR][/B]
+- Fixed Official scraper by utilising JustWatch's GraphQL API
+
+[B][COLOR gold]v1.05.02[/COLOR][/B]
+- Added certification info on TMDb movie lists
+- Pass cast info on player
+
+[B][COLOR gold]v1.05.01[/COLOR][/B]
+- Automatic subtitles download now uses the new Opensubtitles.com API
+    For more than 5 subtitle downloads per 24h, enter your
+    Opensubtitles.com credentials on Settings/Accounts
+
+[B][COLOR gold]v1.05.00[/COLOR][/B]
+- Added TMDb as main lists provider - optional, enable in settings
+    Note: TMDb lists are hardcoded to 20 items per page
+- Added page counter on Next Page items
+- Various other lists tweaks and additions
+
+[B][COLOR gold]v1.04.00[/COLOR][/B]
+- Fixed IMDb Movies/TV shows/People lists after IMDb search page changes
+
+[B][COLOR gold]v1.03.05[/COLOR][/B]
+- Fixed official scraper for episodes
+
+[B][COLOR gold]v1.03.04[/COLOR][/B]
+- Fixed biography on People menu
+- Other People and Cast context menu fixes and improvements
+
+[B][COLOR gold]v1.03.03[/COLOR][/B]
+- Fixed issue for devices with old SSL versions
+
+[B][COLOR gold]v1.03.02[/COLOR][/B]
+- Rearranged personal menus items (My Movies/My TV Shows)
+- Made 2 separate Trakt Progress lists (Recently Watched/Recently Aired)
+  instead of having one or the other via setting
+- Added context menu option to remove saved search terms
+- Updated 3rd party libs
+
+[B][COLOR gold]v1.03.01[/COLOR][/B]
+- Fixed Netflix official episode ids parsing
+
+[B][COLOR gold]v1.03.00[/COLOR][/B]
+- Enabled reuse language invoker Kodi feature
+- Fixed ITV hub add-on uri
+
+[B][COLOR gold]v1.02.04[/COLOR][/B]
+- Reverted IMDb fix, it's been sorted their side
+
+[B][COLOR gold]v1.02.03[/COLOR][/B]
+- IMDb watchlist/personal lists fix
+
+[B][COLOR gold]v1.02.02[/COLOR][/B]
+- Added ITV Hub on supported services
+  *add-on for playback is plugin.video.itvhub by dimkroon
+- Some more subtitles matching tweaks
+
+[B][COLOR gold]v1.02.01[/COLOR][/B]
+- Moved Networks icons (Discover section) from online to the Artwork module
+- Replaced most of them with better looking ones - thanks alot J.E.
+- Added a few more TV networks
+- Added support for plugin.video.tubitv by Lunatixz on Official providers
+- Reworked auto-subtitles functionality for hopefully better subtitles matching
+
+[B][COLOR gold]v1.02.00[/COLOR][/B]
+- Compatibility adjustments for Kodi 20's new (faster) list building methods
+
+[B][COLOR gold]v1.01.10[/COLOR][/B]
+- Fixed some issues with Play Random function
+- Fixed Trakt authorisation from settings
+
+[B][COLOR gold]v1.01.09[/COLOR][/B]
+- Minor code cleanup
+
+[B][COLOR gold]v1.01.08[/COLOR][/B]
+- Re-worked search functions
+- Fixed issue with cacheing
+
+[B][COLOR gold]v1.01.07[/COLOR][/B]
+- Fixed issue with search db initialisation
+
+[B][COLOR gold]v1.01.06[/COLOR][/B]
+- Added new Search My Services menu items under My Services and Search menus.
+    Searching through those paths will filter results based on user's enabled services
+
+[B][COLOR gold]v1.01.05[/COLOR][/B]
+- Fixed resuming from local resume points
+- Fixed Trakt authorisation reset
+
+[B][COLOR gold]v1.01.04[/COLOR][/B]
+- Fixed support of free streams on some services
+
+[B][COLOR gold]v1.01.03[/COLOR][/B]
+- Library and Official scrapers fixes/tweaks
+- Code cleanup
+
+[B][COLOR gold]v1.01.02[/COLOR][/B]
+- Added some more official services:
+    Pluto TV - played through plugin.video.plutotv from official Kodi repository
+    UKTV Play - played through plugin.video.catchuptvandmore from official Kodi repository
+- Added info text for Official providers on Tools menu and settings
+
+[B][COLOR gold]v1.01.01[/COLOR][/B]
+- Show info dialog if not supported services' add-ons found
+- Menus rearrangements
+- Code cleanup
+
+[B][COLOR gold]v1.01.00[/COLOR][/B]
+- Enhanced My Services menu
+
+[B][COLOR gold]v1.00.00[/COLOR][/B]
+- Initial release
