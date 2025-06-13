@@ -3,6 +3,7 @@
 <!--  Addons  -----------------------------------------
 
 --- Video ---
+plugin.video.archive.org
 plugin.video.crackle
 plugin.video.daddylive
 plugin.video.dlv2
@@ -11,6 +12,7 @@ plugin.video.elementum
 plugin.video.fen
 plugin.video.fenlight (Fen Light / FenLightAM / Fen Light+)
 plugin.video.free99
+plugin.video.imdb.trailers
 plugin.video.json_iptv
 plugin.video.last_played
 plugin.video.playlistbee
@@ -53,6 +55,7 @@ script.light.imdb.ratings.update
 script.module.accountmgr
 script.module.acctview
 script.module.inputstreamhelper
+script.module.viperscrapers
 script.module.youtube.dl
 script.service.checkpreviousepisode
 script.service.playbackresumer
@@ -141,6 +144,34 @@ service.subtitles.titlovi
 -->
 
 <addons>
+
+
+<addon id="plugin.video.archive.org" name="Internet Archive" version="1.0.0" provider-name="gujal">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>audio video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Internet Archive add-on</summary>
+    <description lang="en_GB">Watch and listen to media archived by Internet Archive</description>
+    <disclaimer lang="en_GB">This third party addon is not in any way commissioned or endorsed by Internet Archive</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GPL-2.0</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=180623</forum>
+    <website>https://archive.org/</website>
+    <email>gujal at protonmail dot com</email>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>screenshot-01.jpg</screenshot>
+      <screenshot>screenshot-02.jpg</screenshot>
+      <screenshot>screenshot-03.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>
 
 
 <addon id="plugin.video.crackle" name="Crackle" version="2024.7.22" provider-name="eracknaphobia">
@@ -234,7 +265,7 @@ service.subtitles.titlovi
 
 <addon id="plugin.video.easyflix"
        name="[COLORred]EasyFlix[/COLOR]"
-       version="1.2.6"
+       version="1.2.8"
        provider-name="">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -407,6 +438,50 @@ service.subtitles.titlovi
         </assets>
         <news></news>
     </extension>
+</addon>
+
+
+<addon id="plugin.video.imdb.trailers" name="IMDb Trailers" version="2.1.21" provider-name="gujal">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.0.0"/>
+    <import addon="script.module.six" version="1.12.0"/>
+    <import addon="script.module.kodi-six" version="0.0.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">IMDb Trailers video add-on</summary>
+    <summary lang="tr_TR">IMDb Fragmanları video eklentisi</summary>
+    <summary lang="es_ES">IMDb Trailers video añadido</summary>
+    <summary lang="de_DE">IMDb Trailers Video-Add-On</summary>
+    <summary lang="fr_FR">Module vidéo IMDb Trailers</summary>
+    <description lang="en_GB">Watch movie trailers available on IMDb</description>
+    <description lang="tr_TR">IMDb'de bulunan film fragmanlarını izle</description>
+    <description lang="es_ES">Ver trailers de películas disponibles en IMDb</description>
+    <description lang="de_DE">Filmtrailer auf IMDb ansehen</description>
+    <description lang="fr_FR">Regarder les bandes-annonces disponibles sur IMDb</description>
+    <disclaimer lang="en_GB">This third party addon is not in any way commissioned or endorsed by Amazon or IMDb</disclaimer>
+    <disclaimer lang="tr_TR">Bu üçüncü taraf eklentisi, Amazon veya IMDb tarafından hiçbir şekilde görevlendirilmemiştir veya onaylanmamıştır.</disclaimer>
+    <disclaimer lang="es_ES">Este complemento de terceros no está en modo alguno comisionado o respaldado por Amazon o IMDb</disclaimer>
+    <disclaimer lang="de_DE">Dieses Drittanbieter-Addon wird in keiner Weise von Amazon oder IMDb in Auftrag gegeben oder unterstützt</disclaimer>
+    <disclaimer lang="fr_FR">Cet additif tiers n'est en aucun cas commandé ou approuvé par Amazon ou IMDb</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GPL-2.0</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=352127</forum>
+    <website>https://www.imdb.com/trailers/</website>
+    <email>gujal at protonmail dot com</email>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>screenshot-01.jpg</screenshot>
+      <screenshot>screenshot-02.jpg</screenshot>
+      <screenshot>screenshot-03.jpg</screenshot>
+      <screenshot>screenshot-04.jpg</screenshot>
+    </assets>
+  </extension>
 </addon>
 
 
@@ -2054,6 +2129,32 @@ v0.5.9 (2022-03-22)
       <icon>icon.png</icon>
     </assets>
   </extension>
+</addon>
+
+
+<addon id="script.module.viperscrapers" name="Viper Scrapers" version="1.2" provider-name="Jax">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="lib/default.py">
+		<provides>executable</provides>
+	</extension> 
+	<extension point="xbmc.service" library="lib/service.py" start="startup" />
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<summary lang="en">Scrapers Module For Fen and Venom type Forks</summary>
+		<description>This module is a fork of CoCoScrapers with new scrapers from Kodifitzwell installed[CR]Credits to the develpers involved from former Fenom coders Venom and MrKodi to current coders Umbrella_Dev, CocoJoe, and Kodifitzwell.[CR]Compatible with Fen, Fen Light, Umbrella, Ininity and any other add-on currently using CoCoScrapers</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<disclaimer lang="en">The author is not responsible for the use of this add-on. This add-on simply searches for files on the internet. The author is not responsible for the content found using this add-on. The author does not host or own any content found within this add-on.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>This is a fork of CocoScrapers with updated scrapers from Kodifitzwell.</news>
+	</extension>
 </addon>
 
 

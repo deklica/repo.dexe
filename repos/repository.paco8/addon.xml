@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.paco8" name="Improved subtitles repository" version="2.0.4" provider-name="Paco8">
+	<extension point="xbmc.addon.repository">
+	<dir minversion="19.0.0">
+		<info compressed="false">https://raw.githubusercontent.com/Paco8/kodi-repo/master/packages-kodi-19/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Paco8/kodi-repo/master/packages-kodi-19/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Paco8/kodi-repo/master/packages-kodi-19</datadir>
+	</dir>
+	<dir maxversion="18.9.0">
+		<info compressed="false">https://raw.githubusercontent.com/Paco8/kodi-repo/master/packages/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Paco8/kodi-repo/master/packages/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Paco8/kodi-repo/master/packages</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Improved subtitles repository</summary>
+		<description>Patched addons for ttml2ssa.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+		<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>

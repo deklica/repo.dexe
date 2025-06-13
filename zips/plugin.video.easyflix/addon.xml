@@ -1,6 +1,6 @@
 <addon id="plugin.video.easyflix"
        name="[COLORred]EasyFlix[/COLOR]"
-       version="1.2.6"
+       version="1.2.8"
        provider-name="">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
