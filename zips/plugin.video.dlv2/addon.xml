@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.1.3" provider-name="X">
+<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.1.4" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
     <import addon="script.module.beautifulsoup4" />
     <import addon="script.module.routing" />
-    <import addon="script.module.resolveurl" />
     <import addon="script.module.pytz" />
     <import addon="script.module.tzlocal" />
   </requires>
@@ -18,7 +17,7 @@
       <fanart>fanart.jpg</fanart>
     </assets>
     <summary lang="en_GB"></summary>
-	<description lang="en_GB">A Big Shout Out To The Original Creator-Forked With Their Permission</description>
+	<description lang="en_GB">This is not a fork. Written by The X</description>
     <platform>all</platform>
     <language>en</language>
     <license>GPL-2.0-or-later</license>

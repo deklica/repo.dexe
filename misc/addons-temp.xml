@@ -5,7 +5,6 @@
 --- Program & Services ---
 plugin.program.autowidget
 plugin.program.super.favourites
-plugin.program.thumbcache.cleaner -
 plugin.video.jetproxy
 plugin.video.live.streamspro
 
@@ -969,7 +968,7 @@ Egenskaper:
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="3.1.4" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="3.1.5" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
