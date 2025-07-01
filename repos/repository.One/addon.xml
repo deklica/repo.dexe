@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon	id="repository.One" name="[COLOR aquamarine]ONE[/COLOR][COLOR white]PLAY[/COLOR]" version="1.10"	provider-name="TEAM [COLOR aquamarine]ONE[/COLOR][COLOR white]PLAY[/COLOR]">
+<addon	id="repository.One" name="[B][COLOR aquamarine]ONE[/COLOR][COLOR white]PLAY[/COLOR] [COLOR white]Repositorio[/COLOR][/B]" version="1.08" provider-name="TEAM [COLOR aquamarine]ONE[/COLOR][COLOR white]PLAY[/COLOR]">
 
 	<requires>
     	<import addon="xbmc.addon" version="12.0.0"/>
@@ -14,29 +14,29 @@
 		</dir>
 
   		<dir minversion="17.0.0" maxversion="18.9.0">
-			<info compressed="false">https://onepod.inrupt.net/public/repooneplay/leia/addons.xml</info>
-			<checksum>https://onepod.inrupt.net/public/repooneplay/leia/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/zoreu/OneRepo/raw/master/leia</datadir>
+			<info compressed="false">https://github.com/OnePlayHD/OneRepo/raw/master/leia/addons.xml</info>
+			<checksum>https://github.com/OnePlayHD/OneRepo/raw/master/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/OnePlayHD/OneRepo/raw/master/leia</datadir>
 			<hashes>false</hashes>
     	</dir>
 
   		<dir minversion="18.9.1">
-			<info compressed="false">https://onepod.inrupt.net/public/repooneplay/matrix/addons.xml</info>
-			<checksum>https://onepod.inrupt.net/public/repooneplay/matrix/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/zoreu/OneRepo/raw/master/matrix</datadir>
+			<info compressed="false">https://github.com/OnePlayHD/OneRepo/raw/master/matrix/addons.xml</info>
+			<checksum>https://github.com/OnePlayHD/OneRepo/raw/master/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/OnePlayHD/OneRepo/raw/master/matrix</datadir>
 			<hashes>false</hashes>
     	</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="pt_br">Repositorio Oficial OnePlay</summary>
-        <description lang="pt_br">Repositorio OnePlay - AGREGADOR de ADDONS, assim como o Google.com, apenas agrega e organiza ADDON OnePlay e Complementos.</description>
-        <disclaimer	lang="pt_br"></disclaimer>
+		<description lang="pt_br">Repositorio OnePlay - AGREGADOR de ADDONS, assim como o Google.com, apenas agrega e organiza ADDON OnePlay e Complementos.</description>
+		<disclaimer	lang="pt_br"></disclaimer>
 		<platform>all</platform>
-		<source>https://github.com/zoreu/OneRepo</source>
-		 <assets>
-            <icon>icon.png</icon>
+		<source>https://github.com/OnePlayHD/OneRepo</source>
+		<assets>
+			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-        </assets>
-	    <news></news>
+		</assets>
+		<news></news>
 	</extension>
 </addon>

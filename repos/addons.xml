@@ -960,7 +960,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.chainsrepo" name="Chains Repository" provider-name="Chains" version="0.0.15">
+<addon id="repository.chainsrepo" name="Chains Repository" provider-name="Chains" version="0.0.16">
 	<extension point="xbmc.addon.repository" name="Chains Repo" >
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2138,7 +2138,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.One" name="ONEPLAY Repo" version="1.10" provider-name="TEAM ONE PLAY">
+<addon	id="repository.One" name="ONEPLAY Repositorio" version="1.08" provider-name="TEAM ONEPLAY">
 	<extension point="xbmc.addon.repository" name="OnePlay Repositorio">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2149,12 +2149,14 @@ repository.zero
 	<extension point="xbmc.addon.metadata">
 		<summary lang="pt_br">Repositorio Oficial OnePlay</summary>
 		<description lang="pt_br">Repositorio OnePlay - AGREGADOR de ADDONS, assim como o Google.com, apenas agrega e organiza ADDON OnePlay e Complementos.</description>
+		<disclaimer	lang="pt_br"></disclaimer>
 		<platform>all</platform>
-		<source>https://github.com/zoreu/OneRepo</source>
+		<source>https://github.com/OnePlayHD/OneRepo</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
+		<news></news>
 	</extension>
 </addon>
 
