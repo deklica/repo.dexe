@@ -1,0 +1,24 @@
+<addon id="repository.enigmawiz" name="[COLOR cyan]Enigma[/COLOR] Repo" version="1.9.8" provider-name="Enigma Repo">
+<extension point="xbmc.addon.repository" name="Enigma Repo">
+<dir>
+<info compressed="false">https://team-enigma.xyz/repo/zips/addons.xml</info>
+<checksum>https://team-enigma.xyz/repo/zips/addons.xml.md5</checksum>
+<datadir zip="true">https://team-enigma.xyz/repo/zips/</datadir>
+<hashes>false</hashes>
+</dir>
+<dir>
+<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+</dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en_GB">Enigma Repository</summary>
+<description lang="en_GB">The Enigma Repo</description>
+<platform>all</platform>
+<assets>
+<icon>icon.png</icon>
+<fanart>fanart.jpg</fanart>
+</assets>
+</extension>
+</addon>

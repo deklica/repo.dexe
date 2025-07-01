@@ -7,6 +7,8 @@ plugin.video.archive.org
 plugin.video.crackle
 plugin.video.daddylive
 plugin.video.dlv2
+plugin.video.dream1click
+plugin.video.dreamtv
 plugin.video.elementum
 plugin.video.fen
 plugin.video.fenlight (Fen Light / FenLightAM / Fen Light+)
@@ -104,6 +106,7 @@ resource.uisounds.kodi-12
 resource.uisounds.kodi-24
 script.cu.lrclyrics
 weather.gismeteo
+weather.openmeteo
 
 ---
 
@@ -261,6 +264,57 @@ service.subtitles.titlovi
     <language>en</language>
     <license>GPL-2.0-or-later</license>
   </extension>
+</addon>
+
+
+<addon id="plugin.video.dream1click"
+       name="[COLOR blue]D[COLOR salmon]r[COLOR violet]e[COLOR yellow]a[COLOR orange]m[COLOR lime]1[COLOR red]C[COLOR blue]l[COLOR salmon]i[COLOR violet]c[COLOR yellow]k[/COLOR]"
+       version="25.6.4"
+       provider-name="[COLOR springgreen]Tech[/COLOR] [COLOR green]E.[/COLOR] [COLOR lime]Coyote[/COLOR]">
+    <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.22.0"/>
+    <import addon="script.module.dateutil" version="2.8.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Dream 1Click - Only in my Dreams</summary>
+    <description lang="en">This addon is for personal and private use only.</description>
+    <disclaimer lang="en">The author of this addon is not responsible for the use of it.</disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+  </extension>
+</addon>
+
+
+<addon id="plugin.video.dreamtv"
+       name="[COLOR blue]D[COLOR salmon]r[COLOR violet]e[COLOR yellow]a[COLOR orange]m[COLOR lime]T[COLOR red]v[/COLOR]"
+       version="25.6.3"
+       provider-name="[COLORorange]Mr[COLORyellow].[COLORblue]G[COLORyellow].[/COLOR]">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">DreamTv - Only in my Dreams</summary>
+        <description lang="en">This addon is for personal and private use only.</description>
+        <disclaimer lang="en">The author of this addon is not responsible for the use of it.</disclaimer>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+        <language>en</language>
+    </extension>
 </addon>
 
 
@@ -2815,12 +2869,7 @@ added additional information when gathering files
 </addon>
 
 
-<addon
-	id="service.languagepreferencemanager"
-	name="Language Preference Manager"
-	version="1.0.5"
-	provider-name="ace20022/scott967/rockrider69"
-	>
+<addon id="service.languagepreferencemanager" name="Language Preference Manager" version="1.0.6" provider-name="ace20022/scott967/rockrider69">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -2833,20 +2882,7 @@ added additional information when gathering files
 		<description lang="en_GB">Sets the audio and subtitle track according to your language preferences</description>
 		<disclaimer lang="en_GB">For bugs, requests or general questions visit the Language Preference Manager thread on the Kodi forum.</disclaimer>
 		<platform>all</platform>
-		<news>1.0.0     : Mandatory clean-up to propose as candidate version for Kodi.tv addons repository.
-1.0.1     : Initial version for main Kodi.tv addons repository
-1.0.2     : Fix 10sec latency on subs display and possible few lines lost - at video start or when switching audio.
-            Forced sub tracks : check also subtitle field "isforced" in case field "name" is empty or misspelled.
-1.0.3	  : Improve 10sec subs latency workaround: new option to disable it (default), or enable it at 'start only' or 'start+resume'.
-            Option to prioritize 'SignsSongs' tracks via custom conditional sub preferences. Syntax is ...>Eng:Eng-ss>...
-            New Keywords Blacklist for Audio tracks. Same principle as for Subtitles, based on track name, to skip some (ex. Commentary, ...)
-            Fix Greek and Serbian language codes according to iso639-2/T. Fix some typos.
-            Fix multiple 3 digit codes per language (ex. German ger,deu). Now OK also for Conditional Subtitles preferences.
-1.0.4     : Fix and simplify SignsSongs subtagging (was colliding with language codes subtagging ie. pt-br). Thanks to BrutuZ!
-1.0.5     : Add Norwegian Bokmal (nb,nob), New Nowegian (nn,nno) and English Middle (enm) language codes according to ISO639-2.
-            Clean-up some info/log message.
-			
-		</news>
+		<news></news>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -3703,6 +3739,39 @@ All trademarks belong to them
 		<news>v0.6.4 (2023-10-30)[CR]- Adapted to changes in the service API[CR]- Added German translation (kyoforkshomebrews)[CR][CR]v0.6.3 (2021-09-27)[CR]- Fixed identified bugs[CR][CR]v0.6.2 (2021-05-31)[CR]- Updated compatibility with Kodi 19[CR]- Added Icelandic translation (sveinki)[CR][CR]v0.6.1 (2021-04-03)[CR]- SimplePlugin 3 module moved into external addon[CR]- Small changes in the add-on structure [CR]- Added French translation (DavidHenryThoreau)[CR]- Added Swedish translation (Sopor)</news>
 		<assets>
 			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+
+<addon id="weather.openmeteo" name="Open-Meteo" version="1.0.0" provider-name="OpenHT">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.1+matrix.1"/>
+		<import addon="script.module.dateutil" version="2.8.1+matrix.1"/>
+		<import addon="script.module.pytz" version="2023.3.0+matrix.1"/>
+		<import addon="script.module.pil" version="1.1.7"/>
+	</requires>
+	<extension point="xbmc.python.weather" library="default.py"/>
+        <extension point="xbmc.service" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Weather forecast from Open-Meteo</summary>
+		<description lang="en_GB">Weather, maps, airquality and pollen data from open-meteo.com, rainviewer.com, weather.gc.ca and met.no</description>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<forum>https://forum.kodi.tv/forumdisplay.php?fid=155</forum>
+		<website>https://openht.org</website>
+		<email>support@openht.org</email>
+		<source>https://github.com/bkury/weather.openmeteo</source>
+		<assets>
+			<icon>icon.png</icon>
+			<banner>banner.png</banner>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>screenshot1.jpg</screenshot>
+			<screenshot>screenshot2.jpg</screenshot>
+			<screenshot>screenshot3.jpg</screenshot>
+			<screenshot>screenshot4.jpg</screenshot>
+			<screenshot>screenshot5.jpg</screenshot>
 		</assets>
 	</extension>
 </addon>

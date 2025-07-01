@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.lekma"
+       name="lekma's addon repository"
+       version="4.0.1"
+       provider-name="lekma">
+
+    <extension point="xbmc.addon.repository"
+               name="lekma's addon repository">
+        <dir>
+            <info>https://raw.githubusercontent.com/lekma/repository.lekma/master/addons/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/lekma/repository.lekma/master/addons/addons.xml.sha256</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/lekma/repository.lekma/master/addons</datadir>
+        </dir>
+        <dir minversion="19.0.0">
+            <info>https://raw.githubusercontent.com/lekma/repository.lekma/master/matrix/matrix.xml</info>
+            <checksum>https://raw.githubusercontent.com/lekma/repository.lekma/master/matrix/matrix.xml.sha256</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/lekma/repository.lekma/master/matrix</datadir>
+        </dir>
+        <dir minversion="20.0.0">
+            <info>https://raw.githubusercontent.com/lekma/repository.lekma/master/nexus/nexus.xml</info>
+            <checksum>https://raw.githubusercontent.com/lekma/repository.lekma/master/nexus/nexus.xml.sha256</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/lekma/repository.lekma/master/nexus</datadir>
+        </dir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">lekma's addon repository</summary>
+        <description lang="en_GB">lekma's repository for Kodi addons</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+
+</addon>

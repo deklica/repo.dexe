@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.animaniac" name="Animaniac Repository" version="1.0" provider-name="Jax">
+<extension point="xbmc.addon.repository" name="Animaniac Repository">
+    <dir>
+        <info compressed="false">https://github.com/OldManJax/repository.animaniac/raw/master/addons.xml</info>
+        <checksum>https://github.com/OldManJax/repository.animaniac/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/OldManJax/repository.animaniac/raw/master/</datadir>
+    </dir>  
+    <dir>
+		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Cartoons and Anime</summary>
+    <description>Cartoon and Anime, TV and Movies. Parental Guidence suggested as some content may be more oriented to a mature audience.</description>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+</extension>
+</addon>

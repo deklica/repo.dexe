@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.dream1click"
+       name="[COLOR blue]D[COLOR salmon]r[COLOR violet]e[COLOR yellow]a[COLOR orange]m[COLOR lime]1[COLOR red]C[COLOR blue]l[COLOR salmon]i[COLOR violet]c[COLOR yellow]k[/COLOR]"
+       version="25.6.4"
+       provider-name="[COLOR springgreen]Tech[/COLOR] [COLOR green]E.[/COLOR] [COLOR lime]Coyote[/COLOR]">
+    <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.22.0"/>
+    <import addon="script.module.dateutil" version="2.8.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Dream 1Click - Only in my Dreams</summary>
+    <description lang="en">This addon is for personal and private use only.</description>
+    <disclaimer lang="en">The author of this addon is not responsible for the use of it.</disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+  </extension>
+</addon>

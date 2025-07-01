@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.thelab"
+       name="TheLab Repository"
+       version="25.3.27"
+       provider-name="[COLORpurple]• [COLORorchid]Tech [COLORdarkorchid]E [COLORplum]Coyote [COLORpurple]•[/COLOR]">
+    <extension point="xbmc.addon.repository" name="TheLab Repository">
+        <dir minversion="21.0" maxversion="21.9.0"><!--TheLab Omega Repo-->
+            <info compressed="false">https://www.midian.appboxes.co/wolfyB/Th3L48/omega/zips/addons.xml</info>
+            <checksum>https://www.midian.appboxes.co/wolfyB/Th3L48/omega/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://www.midian.appboxes.co/wolfyB/Th3L48/omega/zips/</datadir>
+        </dir>
+        <dir minversion="20.0" maxversion="20.9.0"><!--TheLab Nexus Repo-->
+            <info compressed="false">https://www.midian.appboxes.co/wolfyB/Th3L48/nexus/zips/addons.xml</info>
+            <checksum>https://www.midian.appboxes.co/wolfyB/Th3L48/nexus/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://www.midian.appboxes.co/wolfyB/Th3L48/nexus/zips/</datadir>
+        </dir>
+        <dir minversion="19.0" maxversion="19.9.0"><!--TheLab Matrix Repo-->
+            <info compressed="false">https://www.midian.appboxes.co/wolfyB/Th3L48/matrix/zips/addons.xml</info>
+            <checksum>https://www.midian.appboxes.co/wolfyB/Th3L48/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://www.midian.appboxes.co/wolfyB/Th3L48/matrix/zips/</datadir>
+        </dir>
+        <dir minversion="18.0" maxversion="18.9.0"><!--TheLab Leia Repo-->
+            <info compressed="false">https://www.midian.appboxes.co/wolfyB/Th3L48/leia/zips/addons.xml</info>
+            <checksum>https://www.midian.appboxes.co/wolfyB/Th3L48/leia/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://www.midian.appboxes.co/wolfyB/Th3L48/leia/zips/</datadir>
+        </dir>
+        <dir><!--ResolveUrl-->
+            <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>TheLab Repository</summary>
+        <description>TheLab Repository</description>
+        <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    </extension>
+</addon>

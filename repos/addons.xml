@@ -32,6 +32,7 @@ repository.aeonmq5_mod
 repository.alado.tv
 repository.aliunde
 repository.allanime
+repository.animaniac
 repository.arrownegra
 repository.arxtic-ape
 repository.atreides.tools
@@ -63,6 +64,8 @@ repository.dobbelina
 repository.doomzday
 repository.dregs
 repository.dutchgreen
+repository.enigmawiz
+repository.eracknaphobia
 repository.ezra
 repository.EzzerMacsWizard
 repository.fanfilm
@@ -92,6 +95,7 @@ repository.kodi.yatse.tv
 repository.kodifitzwell
 repository.kodinerds
 repository.lanik_p3
+repository.lekma
 repository.lime
 repository.loop
 repository.Magnetic
@@ -117,6 +121,7 @@ repository.pikdum
 repository.prototype
 repository.publish3r
 repository.rector.stuff
+repository.redwizard
 repository.repoil.club
 repository.resolveurl
 repository.Rising.Tides
@@ -133,6 +138,7 @@ repository.tempest
 repository.temptv
 repository.theblackghost
 repository.thecrew
+repository.thelab
 repository.thewarehouse
 repository.tidal2
 repository.titan.bingie.mod
@@ -157,6 +163,7 @@ repository.xbmcadult
 repository.xonfluence
 repository.xstream
 repository.zachmorris
+repository.zero
 -->
 
 <addons>
@@ -326,6 +333,7 @@ repository.zachmorris
   </extension>
 </addon>
 
+
 <addon
   id="skin.xonfluence"
   version="5"
@@ -374,6 +382,7 @@ repository.zachmorris
     <news>See changelog for latest changes</news>
   </extension>
 </addon>
+
 
 <addon
   id="skin.xonfluence"
@@ -448,6 +457,7 @@ repository.zachmorris
 		<platform>all</platform>
 	</extension>
 </addon>
+
 
 <!--  Repositories  ----------------------------------- -->
 
@@ -663,7 +673,25 @@ repository.zachmorris
 	</extension>
 </addon>
 
-    
+<addon id="repository.animaniac" name="Animaniac Repository" version="1.0" provider-name="Jax">
+	<extension point="xbmc.addon.repository" name="Animaniac Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>Cartoons and Anime</summary>
+		<description>Cartoon and Anime, TV and Movies. Parental Guidence suggested as some content may be more oriented to a mature audience.</description>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.arrownegra" name="Arrow Negra Repository" version="2.20" provider-name="Flecha Negra">
 	<extension point="xbmc.addon.repository" name="Arrow Negra Repositorio">
 		<dir>
@@ -683,7 +711,6 @@ repository.zachmorris
 		</assets>
 	</extension>
 </addon>
-
 
 <addon id="repository.arxtic-ape" name="Arxtic Ape Addon Repository" version="1.0.0" provider-name="arxtic-ape">
 	<extension point="xbmc.addon.repository" name="Arxtic Ape Addon Repository">
@@ -1238,7 +1265,6 @@ repository.zachmorris
 	</extension>
 </addon>
 
-
 <addon id="repository.dutchgreen" name="DutchGreen's Repository" version="1.0.0" provider-name="DutchGreen">
 	<extension point="xbmc.addon.repository" name="DutchGreen's Repository">
 		<dir>
@@ -1255,6 +1281,44 @@ repository.zachmorris
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.png</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.enigmawiz" name="Enigma Repo" version="1.9.8" provider-name="Enigma Repo">
+	<extension point="xbmc.addon.repository" name="Enigma Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Enigma Repository</summary>
+		<description lang="en_GB">The Enigma Repo</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.eracknaphobia" name="eracknaphobia's Repo" version="1.0.0" provider-name="eracknaphobia">
+	<extension point="xbmc.addon.repository" name="eracknaphobia's Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>eracknaphobia's Repo</summary>
+		<description>eracknaphobia's Repo</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
@@ -1714,8 +1778,8 @@ repository.zachmorris
 	</extension>
 </addon>
 
-<addon id="repository.jsergio" name="jsergio Repo" version="1.0.4" provider-name="jsergio">
-	<extension point="xbmc.addon.repository" name="jsergio repo">
+<addon id="repository.jsergio" name="jsergio repo" version="1.0.7" provider-name="jsergio">
+	<extension point="xbmc.addon.repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
@@ -1723,12 +1787,11 @@ repository.zachmorris
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Repo for jsergio Add-ons</summary>
-		<description>Repo for jsergio Add-ons</description>
+		<summary lang="en_US">Repo for jsergio Add-ons</summary>
+		<description lang="en_US">Repo for jsergio Add-ons</description>
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
@@ -1808,6 +1871,24 @@ repository.zachmorris
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.lekma" name="lekma's addon repository" version="4.0.1" provider-name="lekma">
+	<extension point="xbmc.addon.repository" name="lekma's addon repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">lekma's addon repository</summary>
+		<description lang="en_GB">lekma's repository for Kodi addons</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>
@@ -2299,6 +2380,32 @@ repository.zachmorris
 	</extension>
 </addon>
 
+<addon id="repository.redwizard" name="The Red Repo" version="1.1.7" provider-name="The Red Wizard">
+	<extension point="xbmc.addon.repository" name="The Red Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">The Red Wizard Builds and Add-ons</summary>
+		<description lang="en_GB">The Red Wizard repo for The Red Wizard builds and add-ons</description>
+		<disclaimer lang="en_GB">The author of this add-on does not host any content and has no affiliation with the content providers</disclaimer>
+		<news></news>
+		<platform>all</platform>
+		<language>en</language>
+		<license>GNU GENERAL PUBLIC LICENSE Version 3</license>
+		<email>info@redwizard.xyz</email>
+		<website>https://www.redwizard.xyz/</website>
+		<forum>https://t.me/theredwizard</forum>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.repoil.club" name="Repo IL Club" version="1.1.0" provider-name="RepoIL.Club">
 	<extension point="xbmc.addon.repository" name="Repo IL Club">
 		<dir>
@@ -2617,6 +2724,25 @@ repository.zachmorris
 			<screenshot>1.png</screenshot>
 			<screenshot>2.png</screenshot>
 			<screenshot>3.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.thelab" name="TheLab Repository" version="25.3.27" provider-name="• Tech E Coyote •">
+	<extension point="xbmc.addon.repository" name="TheLab Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>TheLab Repository</summary>
+		<description>TheLab Repository</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
@@ -3093,5 +3219,25 @@ repository.zachmorris
 		</assets>
 	</extension>
 </addon>
+
+<addon id="repository.zero" name="Z3R0 Repository" version="1.0.0" provider-name="Z3R0">
+	<extension point="xbmc.addon.repository" name="Z3R0 Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Repository to install the latest versions of addons from Z3R0.</summary>
+		<description>Repository to install the latest versions of addons from Z3R0.</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 
 </addons>
