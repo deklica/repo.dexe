@@ -19,6 +19,7 @@ plugin.video.last_played
 plugin.video.neo_flix
 plugin.video.playlistbee
 plugin.video.premiumizerx
+plugin.video.ptfm
 plugin.video.realizerx
 plugin.video.scrubsv2
 plugin.video.seren
@@ -693,6 +694,32 @@ service.subtitles.titlovi
 - Initial Release
         </news>
 	</extension>
+</addon>
+
+
+<addon id="plugin.video.ptfm" name="Play That Funky Music" version="1.0.3" provider-name="Metal Dude">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.routing"/>
+    <import addon="script.module.unidecode" />
+    <import addon="script.module.inputstreamhelper" />
+    <import addon="script.module.resolveurl"/>
+    <import addon="visualization.spectrum" optional="true" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Play That Funky Music. Music of all sorts.</summary>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GPL-2.0-or-later</license>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+  </assets>
+  </extension>
 </addon>
 
 
