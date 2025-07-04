@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="repository.chainsrepo" name="Chains Repository" provider-name="Chains" version="0.0.16">
+<addon id="repository.chainsrepo" name="Chains Repository" provider-name="Chains" version="0.0.15">
 	<extension point="xbmc.addon.repository" name="Chains Repo" >
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/unhingedthemes/zips/main/_zips/addons.xml</info>

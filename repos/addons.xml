@@ -960,7 +960,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.chainsrepo" name="Chains Repository" provider-name="Chains" version="0.0.16">
+<addon id="repository.chainsrepo" name="Chains Repository" provider-name="Chains" version="0.0.15">
 	<extension point="xbmc.addon.repository" name="Chains Repo" >
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

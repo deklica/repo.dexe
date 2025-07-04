@@ -794,16 +794,16 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.seren" version="3.0.62" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="3.0.65" name="Seren" provider-name="Nixgates">
     <requires>
-        <import addon="xbmc.addon" version="17.9.910"/>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.27.0"/>
-        <import addon="script.module.beautifulsoup4" version="4.9.3"/>
-        <import addon="context.seren" version="2.2.0"/>
-        <import addon="script.module.inputstreamhelper" version="0.5.10" optional="true"/>
-        <import addon="script.module.unidecode" version="1.1.1"/>
-        <import addon="script.module.myconnpy" version="8.0.18"/>
+        <import addon="xbmc.addon" version="17.9.910" />
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" version="2.27.0" />
+        <import addon="script.module.beautifulsoup4" version="4.9.3" />
+        <import addon="context.seren" version="2.2.0" />
+        <import addon="script.module.inputstreamhelper" version="0.5.10" optional="true" />
+        <import addon="script.module.unidecode" version="1.1.1" />
+        <import addon="script.module.myconnpy" version="8.0.18" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="seren.py">
         <provides>video</provides>
@@ -820,7 +820,7 @@ service.subtitles.titlovi
         <website>https://github.com/nixgates/plugin.video.seren</website>
         <source>https://github.com/nixgates/plugin.video.seren</source>
         <disclaimer lang="en">
-            Last updated: November 29, 2024.
+            Last updated: December 6, 2024.
             The information contained within the Seren software (the "Service") is for general information purposes
             only.
             The author assumes no responsibility for errors, omissions in the contents on the Service, nor does it
