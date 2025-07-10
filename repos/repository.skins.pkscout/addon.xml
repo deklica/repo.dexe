@@ -32,5 +32,8 @@
 		<disclaimer lang="en">These skin mods are only lightly supported.</disclaimer>
 		<platform>all</platform>
 		<nofanart>true</nofanart>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
 	</extension>
 </addon>
