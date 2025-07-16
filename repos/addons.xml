@@ -13,7 +13,7 @@ repository.elementumorg
  skin.arctic.fuse 21
  skin.arctic.zephyr.mod 21
 
- skin.fenstruary 21
+ skin.fenstruary 20
   script.fenstruary.helper
  skin.fentastic 20 21
   script.fentastic.helper
@@ -269,7 +269,7 @@ repository.zero
 
 <addon id="skin.fenstruary" name="Fenstruary" provider-name="phil65, Ichabod Fletchman, Ivar Brandt, Tikipeter" version="0.6.35">
 	<requires>
-		<import addon="xbmc.gui" version="5.17.0" />
+		<import addon="xbmc.gui" version="5.16.0" />
 		<import addon="script.fenstruary.helper" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
