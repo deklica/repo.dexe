@@ -7,7 +7,6 @@
 			<datadir zip="true">https://raw.githubusercontent.com/akeotaseo/World-Repo-Repository/main/</datadir>
 		</dir>
 	</extension>
-	<extension point="xbmc.service" library="service.py"/>
 	<extension point="xbmc.addon.metadata">
 		<summary>World-Repo Repository</summary>
 		<description>World Build Repo</description>
