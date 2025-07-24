@@ -1,26 +1,7 @@
-5.5.3 (2024-04-07)
-- Add possibility to choose the Kodi selected subtitle font
-
-5.5.2 (2023-12-02)
-- Some default settings were not applied if not changed first
-
-5.5.1
-- Try to allight subtitles better in case of bottom/bottom
-- Allow negative vertical margin
-- Make Auto Charset the default (again)
-
-5.5.0
-- Allows to put the subtitles on bottom/top; bottom/bottom; bottom - left/right
-- Allows to change the relative location of the subtitle
-
-5.4.0
-- Allows to extend the time the subtitle(s) are shown on screen for slow readers.
-
 5.3.0
-- Possibility to choose two subtitles. One will be shown at the bottom, the other on top
-- Works both with Python 2 (kodi 17, 18) and Python 3 (kodi 19)
+- Kodi Matrix support
 
-5.2.14 (2017-01-23)
+5.2.14
 - New feature: Users are able to check for subtitles when Kodi is not playing, by using the manual search or by standing on an item and opening the subtitles search dialog (By key or by an external addon) | @burekas
 - The external addon for the contextmenu can be downloaded from here: https://github.com/burekas7/context.subtitlesdialog.contextmenu
 

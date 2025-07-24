@@ -1494,7 +1494,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.enigmawiz" name="Enigma Repo" version="1.9.8" provider-name="Enigma Repo">
+<addon id="repository.enigmawiz" name="Enigma Repo" version="2.0.4" provider-name="Enigma Repo">
 	<extension point="xbmc.addon.repository" name="Enigma Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

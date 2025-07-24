@@ -37,7 +37,7 @@ script.playrandomvideos
 
 --- Subtitles ---
 service.subtitles.localsubtitle
-service.subtitles.opensubtitles_by_opensubtitles_dualsub
+service.subtitles.opensubtitles_by_opensubtitles
 service.subtitles.opensubtitles_plus
 
 --- Program & Services ---
@@ -598,7 +598,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.neo_flix" name="[COLORlime]Neo Flix[/COLOR]" version="3.2.0" provider-name="">
+<addon id="plugin.video.neo_flix" name="[COLORlime]Neo Flix[/COLOR]" version="3.2.22" provider-name="">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.resolveurl"/>
@@ -1379,19 +1379,21 @@ v1.12.1 (2021-12-15)
 </addon>
 
 
-<addon id="service.subtitles.opensubtitles_by_opensubtitles_dualsub"
-       name="OpenSubtitles.org by OpenSubtitles with dual subs"
-       version="5.5.3"
-       provider-name="peno64, moham96, amet, opensubtitles">
+<addon id="service.subtitles.opensubtitles_by_opensubtitles"
+       name="OpenSubtitles.org by OpenSubtitles"
+       version="5.3.3"
+       provider-name="amet, opensubtitles, gujal">
   <requires>
-    <import addon="script.module.pysubs2" version="0.1.0"/>
-    <import addon="script.module.chardet" />
+    <!-- <import addon="xbmc.python" version="3.0.0"/> -->
+    <import addon="script.module.six" />
+    <import addon="script.module.kodi-six" />
   </requires>
   <extension point="xbmc.subtitle.module"
              library="service.py" />
   <extension point="xbmc.addon.metadata">
-    <summary>OpenSubtitles by OpenSubtitles.org with dual subs</summary>
-    <description lang="en">Anonymously search and download subtitles for movies and TV-Series from OpenSubtitles.org without log-in. Possibility to choose 2 subtitles which will be shown simultaneously. Search in 75 languages, 4.000.000+ subtitles, daily updates. </description>
+    <summary>OpenSubtitles by OpenSubtitles.org</summary>
+    <summary lang="hr">OpenSubtitles.org podnaslovi</summary>
+    <description lang="en">Anonymously search and download subtitles for movies and TV-Series from OpenSubtitles.org without log-in. Search in 75 languages, 4.000.000+ subtitles, daily updates. </description>
 	<description lang="at">Pelis and Subtítulos TV en munches llingües, milenta de subtítulos traducíos y xubíos caldía. Descarga llibre dende la fonte, sofitu API, millones d'usuarios.</description>
 	<description lang="br">Istitloù Filmoù ha TV e meur a yezh, miliadoù a istitloù troet hag uskarget bemdez. Pellgargadenn digoust diouzh ar vammenn, skoazell an API, millionoù a implijerien.</description>
 	<description lang="ca">Subtítols de films i televisió en múltiples idiomes, milers de subtítols traduïts carregats diàriament. Descàrrega gratuïta des de la font, suport de l'API, amb milions d'usuaris.</description>
@@ -1405,7 +1407,7 @@ v1.12.1 (2021-12-15)
 	<description lang="fi">Tekstityksiä useilla kielillä elokuviin ja TV-Sarjoihin, tuhansia uusia tekstityksiä päivittäin, ilmainen lataus, API tuki, miljoonia käyttäjiä.</description>
 	<description lang="fr">Les sous-titres de film et téléfilm en plusieurs langues, des milliers de sous-titres traduits tous les jours. Bénéficiez de téléchargements gratuits depuis la source, du support API, une d'une communauté de millions d'utilisateurs.</description>
 	<description lang="hi">मूवी और टीवी उपशीर्षक कई भाषाओं में अनुवाद उपशीर्षक के हजारों दैनिक अपलोड की गई। मुफ्त डाउनलोड स्रोत से , एपीआई समर्थन, उपयोगकर्ताओं के लाखों लोगों की ।</description>
-	<description lang="hr">Titlovi za filmove i TV na mnogim jezicima, tisuće prijevoda postavljenih svaki dan. Besplatno preuzimanje s izvora, podrška za API, milijuni korisnika.</description>
+	<description lang="hr">Anonimno pretraživajte i preuzimajte podnaslove za filmove i TV serije sa OpenSubtitles.org bez prijave, pretraga za 75 jezika. Dostupni milijuni podnaslova, uz svakodnevno dodavanje novih podnaslova.</description>
 	<description lang="hu">Film és TV feliratok több nyelven, naponta több ezer lefordított felirat feltöltés. Ingyenes letöltés a forrástól, API támogatás, több millió felhasználó.</description>
 	<description lang="id">Subjudul film dan serial TV dalam multibahasa, ribuan subjudul diterjemah dan diunggah setiap harinya. Pengunduhan gratis dari sumber, didukung fitur antarmuka pemrograman aplikasi, dan jutaan pengguna.</description>
 	<description lang="is">Textar fyrir myndir og sjónvarpsþ. á mörgum tungumálum, þúsundir af þýddum textum upphlaðið daglega. Frítt niðurhal frá síðu, API stuðningur, milljónir notenda.</description>
@@ -1431,41 +1433,26 @@ v1.12.1 (2021-12-15)
 	<description lang="uz">Film va TV Taglavhalari ko'p tillarda, minglab tarjima qilingan taglavhalar har kuni tizimga yuklanadi. Bepul resursdan yuklab oling, API qo'llaydi, millionlab foydalanuvchilar.</description>
 	<description lang="zh">多语种的电影及剧集字幕，每日更新千余条翻译好的字幕。免费下载，提供API接口，已拥有上百万的用户。</description>
     <disclaimer>Works without log-in</disclaimer>
+    <disclaimer lang="hr">Radi bez prijave</disclaimer>
 	<news>
 Improved add-on by OpenSubtitles.org
-v5.5.3 (2024-04-07)
-- Add possibility to choose the Kodi selected subtitle font
-v5.5.2 (2023-12-02)
-- Some default settings were not applied if not changed first
-v5.5.1 (2021-12-15)
-- More font options (shadow, outline)
-- Possibility to swap bottom - top subtitles
-- Auto shift option. When enabled, the second subtitle will be synced with the first if start/end is within the time difference threshold.
-v5.5.0 (2021-12-11)
-- Possibility to choose two subtitles. One will be shown at the bottom, the other on top
-- Works both with Python 2 (kodi 17, 18) and Python 3 (kodi 19)
-v5.4.0
-- Allows to extend the time the subtitle(s) are shown on screen for slow readers.
-v5.3.0
-- Possibility to choose two subtitles. One will be shown at the bottom, the other on top
-- Works both with Python 2 (kodi 17, 18) and Python 3 (kodi 19)
-v5.2.14 (2017-01-23)
-- Users are able to download subtitles as anonymous without authentication. Added localized descriptions, media files
-- New feature: Users are able to check for subtitles when Kodi is not playing, by using the manual search or by standing on an item and opening the subtitles search dialog (By key or by an external addon)  | @burekas
+v5.3.2 (2020-09-30)
+- Matrix and Leia compatible
 	</news>
     <platform>all</platform>
 	<language></language>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum>https://forum.opensubtitles.org/viewtopic.php?f=8&amp;t=15847</forum>
     <website>http://www.opensubtitles.org</website>
+    <email>admin [at] opensubtitles {dot} org</email>                                               
 	<assets>
 	    <icon>os_logo_512x512.png</icon>
-	    <fanart>os_fanart.jpg</fanart>
+	    <fanart>os_fanart.jpg</fanart>    
 		<screenshot>screenshot_1.jpg</screenshot>
 		<screenshot>screenshot_2.jpg</screenshot>
-		<screenshot>screenshot_3.jpg</screenshot>
+		<screenshot>screenshot_3.jpg</screenshot>				
 	</assets>
-    <source>https://github.com/peno64/service.subtitles.opensubtitles_by_opensubtitles_dualsub</source>
+    <source>https://github.com/opensubtitles/service.subtitles.opensubtitles_by_opensubtitles</source>    
   </extension>
 </addon>
 

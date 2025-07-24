@@ -69,7 +69,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.elementumorg" name="ElementumOrg repository" provider-name="elementumorg" version="0.0.6">
+<addon id="repository.elementumorg" name="ElementumOrg repository" provider-name="elementumorg" version="0.0.7">
     <requires></requires>
     <extension point="xbmc.addon.repository">
         <dir>
