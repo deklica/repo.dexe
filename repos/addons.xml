@@ -2348,28 +2348,6 @@ repository.zero
 	</extension>
 </addon>
 
-<addon	id="repository.One" name="ONEPLAY Repositorio" version="1.08" provider-name="TEAM ONEPLAY">
-	<extension point="xbmc.addon.repository" name="OnePlay Repositorio">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="pt_br">Repositorio Oficial OnePlay</summary>
-		<description lang="pt_br">Repositorio OnePlay - AGREGADOR de ADDONS, assim como o Google.com, apenas agrega e organiza ADDON OnePlay e Complementos.</description>
-		<disclaimer	lang="pt_br"></disclaimer>
-		<platform>all</platform>
-		<source>https://github.com/OnePlayHD/OneRepo</source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<news></news>
-	</extension>
-</addon>
-
 <addon id="repository.One" version="1.12" name="ONEPLAY Repositorio" provider-name="TEAM ONEPLAY">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
