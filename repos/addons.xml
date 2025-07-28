@@ -141,6 +141,7 @@ repository.slyguy
 repository.southpaw
 repository.StreamArmy
 repository.subskip
+repository.TechNEWSology
 repository.tempest
 repository.temptv
 repository.theblackghost
@@ -2369,6 +2370,39 @@ repository.zero
 	</extension>
 </addon>
 
+<addon id="repository.One" version="1.12" name="ONEPLAY Repositorio" provider-name="TEAM ONEPLAY">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="OnePlay Repositorio">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="pt_br">••• Repositorio Oficial •••</summary>
+		<description lang="pt_br">ONEREPO é um agregador de addons. Assim como o Google.com, o OnePlay atua exclusivamente como um indexador e organizador de links de conteúdos disponibilizados publicamente na internet.</description>
+		<disclaimer lang="pt_br">O plugin atua unicamente como um agregador de links. Não hospedamos, transmitimos ou reproduzimos qualquer conteúdo de mídia. A responsabilidade pelo conteúdo acessado é exclusiva do respectivo provedor ou fonte original.</disclaimer>
+		<news>
+• Adaptação das informações de acordo com a versão atual do Kodi.
+• Adição de capturas de tela em "resources" para visualização prévia.
+• Atualização dos links de apontamento para o GitHub.
+• O repositório oferecerá suporte apenas para as versões mais recentes.
+• Atualização em: 05/06/2025
+		</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshot-1.jpg</screenshot>
+			<screenshot>resources/screenshot-2.jpg</screenshot>
+			<screenshot>resources/screenshot-3.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.onealliancereborn" name="OneAlliance Reborn Repo" version="7.0.1" provider-name="RedWizard">
     <extension point="xbmc.addon.repository" name="OneAlliance Reborn Repo">
 		<dir>
@@ -2851,6 +2885,25 @@ repository.zero
             <icon>icon.png</icon>
         </assets>
     </extension>
+</addon>
+
+<addon id="repository.TechNEWSology" name="TechNEWSology Repository" version="2.2.0" provider-name="TechNEWSology">
+	<extension point="xbmc.addon.repository" name="TechNEWSology Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>TechNEWSology Repository</summary>
+		<description>TechNEWSology Build Repo</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="repository.tempest" name="Tempest Repo" version="0.0.5" provider-name="Tempest">

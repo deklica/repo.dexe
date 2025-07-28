@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.TechNEWSology" name="TechNEWSology Repository" version="2.2.0" provider-name="TechNEWSology">
+	<extension point="xbmc.addon.repository" name="TechNEWSology Repository">
+			<dir minversion="17.9.9" maxversion="19.9.9">
+				<info compressed="false">https://raw.githubusercontent.com/TechNEWSologyBuilder/tech/main/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/TechNEWSologyBuilder/tech/main/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/TechNEWSologyBuilder/tech/main/</datadir>
+			</dir>
+			<dir minversion="19.9.9">
+				<info compressed="false">https://raw.githubusercontent.com/TechNEWSologyBuilder/omega/main/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/TechNEWSologyBuilder/omega/main/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/TechNEWSologyBuilder/omega/main/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/TechNEWSologyBuilds/Builds/master/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/TechNEWSologyBuilds/Builds/master/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/TechNEWSologyBuilds/Builds/master/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+			</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>TechNEWSology Repository</summary>
+		<description>TechNEWSology Build Repo</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+	</extension>
+</addon>

@@ -1,42 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon	id="repository.One" name="[B][COLOR aquamarine]ONE[/COLOR][COLOR white]PLAY[/COLOR] [COLOR white]Repositorio[/COLOR][/B]" version="1.08" provider-name="TEAM [COLOR aquamarine]ONE[/COLOR][COLOR white]PLAY[/COLOR]">
-
+<addon	id="repository.One" 
+		version="1.12"	
+        name="[B][COLOR white]Repositorio[/COLOR]: [COLOR aquamarine]ONE[/COLOR][COLOR white]PLAY[/COLOR][/B]" 
+		provider-name="TEAM [COLOR aquamarine]ONE[/COLOR][COLOR white]PLAY[/COLOR]">
 	<requires>
     	<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
-
 	<extension point="xbmc.addon.repository" name="OnePlay Repositorio">
-		<dir>
-    		<info compressed="false">https://github.com/Gujal00/smrzips/raw/master/addons.xml</info>
-    		<checksum>https://github.com/Gujal00/smrzips/raw/master/addons.xml.md5</checksum>
-    		<datadir zip="true">https://github.com/Gujal00/smrzips/raw/master/zips</datadir>
-			<hashes>false</hashes>
-		</dir>
-
-  		<dir minversion="17.0.0" maxversion="18.9.0">
-			<info compressed="false">https://github.com/OnePlayHD/OneRepo/raw/master/leia/addons.xml</info>
-			<checksum>https://github.com/OnePlayHD/OneRepo/raw/master/leia/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/OnePlayHD/OneRepo/raw/master/leia</datadir>
-			<hashes>false</hashes>
-    	</dir>
-
-  		<dir minversion="18.9.1">
-			<info compressed="false">https://github.com/OnePlayHD/OneRepo/raw/master/matrix/addons.xml</info>
-			<checksum>https://github.com/OnePlayHD/OneRepo/raw/master/matrix/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/OnePlayHD/OneRepo/raw/master/matrix</datadir>
+  		<dir>
+			<info compressed="false">https://github.com/oneplayhd/onerepo/raw/master/addons.xml</info>
+			<checksum>https://github.com/oneplayhd/onerepo/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/oneplayhd/onerepo/raw/master</datadir>
 			<hashes>false</hashes>
     	</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="pt_br">Repositorio Oficial OnePlay</summary>
-		<description lang="pt_br">Repositorio OnePlay - AGREGADOR de ADDONS, assim como o Google.com, apenas agrega e organiza ADDON OnePlay e Complementos.</description>
-		<disclaimer	lang="pt_br"></disclaimer>
 		<platform>all</platform>
-		<source>https://github.com/OnePlayHD/OneRepo</source>
-		<assets>
-			<icon>icon.png</icon>
+		<summary lang="pt_br">[COLOR white]••• Repositorio Oficial •••[/COLOR]</summary>
+        <description lang="pt_br">[COLOR aquamarine]ONE[/COLOR]REPO é um agregador de addons. Assim como o Google.com, o OnePlay atua exclusivamente como um indexador e organizador de links de conteúdos disponibilizados publicamente na internet.</description>
+        <disclaimer lang="pt_br">[COLOR aquamarine]O plugin atua unicamente como um agregador de links. Não hospedamos, transmitimos ou reproduzimos qualquer conteúdo de mídia. A responsabilidade pelo conteúdo acessado é exclusiva do respectivo provedor ou fonte original.[/COLOR]</disclaimer>
+	    <news>
+• Adaptação das informações de acordo com a versão atual do Kodi.
+• Adição de capturas de tela em "resources" para visualização prévia.
+• Atualização dos links de apontamento para o GitHub.
+• O repositório oferecerá suporte apenas para as versões mais recentes.
+• Atualização em: 05/06/2025
+		</news>
+		 <assets>
+            <icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-		</assets>
-		<news></news>
+			<screenshot>resources/screenshot-1.jpg</screenshot>
+			<screenshot>resources/screenshot-2.jpg</screenshot>
+			<screenshot>resources/screenshot-3.jpg</screenshot>
+        </assets>
 	</extension>
 </addon>
