@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.octopus" name="[COLOR aqua]Octopus Repository[/COLOR]" version="0.3.5" provider-name="Twiglet">
+    <addon id="repository.octopus" name="[COLOR aqua]Octopus Repository[/COLOR]" version="0.3.6" provider-name="Twiglet">
         <extension point="xbmc.addon.repository" name="[COLOR aqua]Octopus Repository[/COLOR]">
 		    <dir>
                 <info compressed="false">https://fuse99.com/_octopus/addons.xml</info>

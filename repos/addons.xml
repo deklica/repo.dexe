@@ -845,7 +845,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.6.7" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.6.8" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2328,7 +2328,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.octopus" name="Octopus Repository" version="0.3.5" provider-name="Twiglet">
+<addon id="repository.octopus" name="Octopus Repository" version="0.3.6" provider-name="Twiglet">
 	<extension point="xbmc.addon.repository" name="Octopus Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
