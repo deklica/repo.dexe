@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="repository.kodifitzwell" version="0.0.1" name="kodifitzwell repository" provider-name="kodifitzwell">
     <extension point="xbmc.addon.repository" name="kodifitzwell repository">
         <dir minversion="19.0.0">
-            <info compressed="false">https://kodifitzwell.codeberg.page/repo/packages/addons.xml</info>
-            <checksum>https://kodifitzwell.codeberg.page/repo/packages/addons.xml.md5</checksum>
-            <datadir zip="true">https://kodifitzwell.codeberg.page/repo/</datadir>
+            <info compressed="false">https://kodiyashimaru.github.io/repo/packages/addons.xml</info>
+            <checksum>https://kodiyashimaru.github.io/repo/packages/addons.xml.md5</checksum>
+            <datadir zip="true">https://kodiyashimaru.github.io/repo/</datadir>
+        </dir>
+        <dir minversion="19.0.0">
+            <info compressed="false">https://kodifitzwell.github.io/repo/packages/addons.xml</info>
+            <checksum>https://kodifitzwell.github.io/repo/packages/addons.xml.md5</checksum>
+            <datadir zip="true">https://kodifitzwell.github.io/repo/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
         <description>kodifitzwell repository</description>
-        <disclaimer></disclaimer>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
+        <assets><icon>icon.png</icon></assets>
     </extension>
 </addon>
 

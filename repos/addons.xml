@@ -177,94 +177,94 @@ repository.zero
 <addons>
 
 <addon id="skin.arctic.fuse" name="Arctic Fuse" provider-name="jurialmunkey" version="0.7.39">
-    <requires>
-        <import addon="xbmc.gui" version="5.17.0" />
-        <import addon="script.skinvariables" version="2.1.14" />
-        <import addon="script.texturemaker" version="0.2.9" />
-        <import addon="plugin.video.themoviedb.helper" version="5.2.31" />
-        <import addon="resource.images.weathericons.white" version="0.0.1" />
-        <import addon="resource.images.studios.coloured" version="0.0.1" />
-        <import addon="resource.font.robotocjksc" version="0.0.1" />
-    </requires>
-    <extension debugging="false" defaultthemename="Textures.xbt" effectslowdown="1" point="xbmc.gui.skin">
-        <res aspect="16:9" default="true" folder="1080i" width="1920" height="1080" />
-        <res aspect="3:2" default="false" folder="1080i" width="1620" height="1080" />
-        <res aspect="4:3" default="false" folder="1080i" width="1440" height="1080" />
-        <res aspect="16:10" default="false" folder="1080i" width="1728" height="1080" />
-        <res aspect="17:9" default="false" folder="1080i" width="2040" height="1080" />
-        <res aspect="21:9" default="false" folder="1080i" width="2520" height="1080" />
-        <res aspect="19.5:9" default="false" folder="1080i" width="2340" height="1080" />
-        <res aspect="18:9" default="false" folder="1080i" width="2160" height="1080" />
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">A minimalist row based skin</summary>
-        <summary lang="fr">Un habillage minimaliste basé sur des lignes</summary>
-        <description lang="en">Arctic Fuse is a minimalist row based skin providing a vertical quick nav menu and customisable widgets</description>
-        <description lang="fr">Arctic Fuse est un hablillage minimaliste basé sur des lignes offrant un menu vertical pour une navigation rapide ainsi que des widgets personnalisables</description>
-        <platform>all</platform>
-        <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
-        <forum />
-        <source />
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0" />
+		<import addon="script.skinvariables" version="2.1.14" />
+		<import addon="script.texturemaker" version="0.2.9" />
+		<import addon="plugin.video.themoviedb.helper" version="5.2.31" />
+		<import addon="resource.images.weathericons.white" version="0.0.1" />
+		<import addon="resource.images.studios.coloured" version="0.0.1" />
+		<import addon="resource.font.robotocjksc" version="0.0.1" />
+	</requires>
+	<extension debugging="false" defaultthemename="Textures.xbt" effectslowdown="1" point="xbmc.gui.skin">
+		<res aspect="16:9" default="true" folder="1080i" width="1920" height="1080" />
+		<res aspect="3:2" default="false" folder="1080i" width="1620" height="1080" />
+		<res aspect="4:3" default="false" folder="1080i" width="1440" height="1080" />
+		<res aspect="16:10" default="false" folder="1080i" width="1728" height="1080" />
+		<res aspect="17:9" default="false" folder="1080i" width="2040" height="1080" />
+		<res aspect="21:9" default="false" folder="1080i" width="2520" height="1080" />
+		<res aspect="19.5:9" default="false" folder="1080i" width="2340" height="1080" />
+		<res aspect="18:9" default="false" folder="1080i" width="2160" height="1080" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">A minimalist row based skin</summary>
+		<summary lang="fr">Un habillage minimaliste basé sur des lignes</summary>
+		<description lang="en">Arctic Fuse is a minimalist row based skin providing a vertical quick nav menu and customisable widgets</description>
+		<description lang="fr">Arctic Fuse est un hablillage minimaliste basé sur des lignes offrant un menu vertical pour une navigation rapide ainsi que des widgets personnalisables</description>
+		<platform>all</platform>
+		<license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
+		<forum />
+		<source />
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 
 <addon id="skin.arctic.zephyr.mod" version="3.0.3" name="Arctic: Zephyr - Reloaded" provider-name="jurialmunkey, beatmasterrs">
-    <requires>
-        <import addon="xbmc.gui" version="5.17.0"/>
-        <import addon="script.skinshortcuts" version="0.4.0"/>
-        <import addon="script.globalsearch" version="5.0.0"/>
-        <import addon="script.image.resource.select" version="0.0.5"/>
-        <import addon="resource.images.weathericons.white" version="0.0.6"/>
-        <import addon="script.embuary.info" version="0.0.1"/>
-        <import addon="script.embuary.helper" version="1.2.14"/>
-        <import addon="plugin.video.themoviedb.helper" version="0.0.1"/>
-    </requires>
-    <extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" effectslowdown="1">
-        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <license>Creative Commons Non Commercial 3.0 License</license>
-        <forum>https://forum.kodi.tv/showthread.php?tid=337862</forum>
-        <source>https://github.com/beatmasterRS/skin.arctic.zephyr.mod</source>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <screenshot>screenshot-01.jpg</screenshot>
-            <screenshot>screenshot-02.jpg</screenshot>
-            <screenshot>screenshot-03.jpg</screenshot>
-            <screenshot>screenshot-04.jpg</screenshot>
-            <screenshot>screenshot-05.jpg</screenshot>
-            <screenshot>screenshot-06.jpg</screenshot>
-            <screenshot>screenshot-07.jpg</screenshot>
-            <screenshot>screenshot-08.jpg</screenshot>
-            <screenshot>screenshot-09.jpg</screenshot>
-            <screenshot>screenshot-10.jpg</screenshot>
-        </assets>
-        <news>3.0.3[CR]- Fixed issue with tv show indicators[CR][CR]3.0.2[CR]- Added preshow experience support[CR]- Language updates[CR][CR]3.0.1[CR]- Minor adjustments[CR]- Language updates[CR][CR]3.0.0[CR]- Kodi Omega version[CR][CR]2.0.5[CR]- Fixed possible issue with media flags[CR]- Added wikipedia script support[CR]- Added option to use keyart instead of poster[CR]- Jumpbar improvements[CR]- Code improvements[CR]- Minor adjustments[CR][CR]2.0.4[CR]- Minor adjustments[CR]- Language updates[CR][CR]2.0.3[CR]- Improved animations[CR]- Changed first start settings[CR]- Added imdb rating (!thx mkaflowski)[CR]- Added missing media flags (!thx derMaik)[CR]- Enabled now playing controls by default[CR]- Added filesize to list views (!thx Nanomani, robertlaing)[CR]- Improved skin settings (!thx derMaik)[CR]- Improved now playing info[CR]- Changed osd and now playing lists to kodi defaults[CR]- Added fanart for albums to dialogmusicinfo[CR]- Added info action to now playing info[CR]- Changes rating color to match osd rating color[CR]- Skin settings cleanup[CR]- Code improvements to icon media flags[CR]- Added onclick action to open tmdb info (!thx Nanomani)[CR]- Fixed music player rating[CR]- Code cleanup[CR]- Fixed issue with lyrics[CR]- Fixed issue with color palette[CR]- Fixed auto scroll issue[CR]- Fixed code (!thx VSeryi)[CR][CR]2.0.2[CR]- Improved media flags (!thx @Nanomani)[CR]- Added setting to use thumb instead of fanart for background on episodes[CR]- Strings update to artwork in skin shortcuts[CR]- Improved indicators[CR]- Fixed extra fanart in music section and widgets fade animation (!thx @Nanomani)[CR]- Fixed issue with duration in some cases[CR]- Improved lyrics and background[CR]- Fixed issue with indicators (!thx semool)[CR][CR]2.0.1[CR]- Improved settings category[CR]- Improved pvr artwork (!thx kalle2000)[CR]- Fixed issue with pvr views[CR]- Replaced old matrix boolean condition[CR]- Added season number to wide episodes view (!thx sPOiDar)[CR]- Fixed issue with screen calibration[CR][CR]2.0.0[CR]- Removed color picker addon support[CR]- Added color picker dialog support[CR]- Added new hdr type infolabels[CR][CR]1.1.72[CR]- Added color presets[CR]- Fixed issues with now playing widget[CR]- Fixed aspect ratio for some icons[CR]- Changed home menu icon size[CR]- Added option to show info for a few seconds, when video starts[CR]- Improvements to dialog subtitles[CR][CR]1.1.71[CR]- Added option to hide ratings in list views[CR]- CjK font added (!thx kuroehanako)[CR]- Added support for extended pvr artwork (!thx kalle2000)[CR]- Minor adjustments[CR]- Language updates[CR][CR]1.1.70[CR]- Improved fsk ratings (!thx Peiren85)[CR]- Fixed issues[CR]- Minor adjustments[CR][CR]1.1.69[CR]- Minor adjustments[CR]- Code cleanup[CR][CR]1.1.68[CR]- Improved skin shortcuts implementation[CR]- Improved widget info for episodes[CR]- Fixed issues[CR]- Code cleanup[CR][CR]1.1.67[CR]- Improved skin performance[CR]- Added option for always visible controls in extended now playing info[CR]- Fixed issues[CR]- Code improvements, cleanup[CR][CR]1.1.66[CR]- Improved extended now playing info[CR]- Minor adjustments to furniture icons[CR][CR]1.1.65[CR]- Improved overall experience[CR]- Improved star rating[CR]- Added support for animated artwork module (!thx PvD)[CR]- Improved textbox autoscroll function (!thx manfeed)[CR]- Fixed issues[CR]- Code improvements, cleanup[CR][CR]1.1.64[CR]- Improved extended now playing info[CR]- Improved auto playing trailers[CR]- Added just watch icon[CR]- Fixed issue with jumpbar[CR]- Improved overall experience[CR]- Improved textures, cleanup[CR]- Improved code, cleanup[CR]- Added lower percentage values for netflix window[CR][CR]1.1.63[CR]- Improved animations[CR]- Improved extended now playing[CR]- Improved OSD code[CR]- Improved overall experience[CR]- Fixed issues[CR][CR]1.1.62[CR]- Fixed issues with clearlogo and pvr osd[CR]- Added option for is playing indicator[CR]- Added option to use embuary helper for blur[CR]- Improved view 520[CR]- Minor adjustments[CR][CR]1.1.61[CR]- Improved container types[CR]- Improved widget information for episodes[CR]- Added indicators to featured home menu layout[CR]- Added additional music flags[CR]- Code improvements, cleanup[CR][CR]1.1.60[CR]- Improved overall experience[CR]- Fixed issues[CR]- Added EDL markers[CR]- Improved code, cleanup[CR]- Added option to ignore embedded fanart by addons (!thx Nanomani)[CR][CR]1.1.59[CR]- Added auto playing trailers[CR]- Improved home menu widgets movement[CR]- Added jumpbar to views 510, 521, 522, 523, 527[CR]- Fixed issues[CR][CR]1.1.58[CR]- Added glow/zoom option for focused items[CR]- Added new view 527[CR]- Improvements to home header (!thx Nanomani)[CR]- Fixed issues[CR][CR]1.1.57[CR]- Fixed issues[CR]- Minor improvements (!thx Nanomani)[CR][CR]1.1.56[CR]- Improvements to music osd[CR]- Improved overall usability/user experience[CR]- Updated translations[CR]- Improvements to colorpicker window, video osd and animations[CR]- Addon icon updated[CR]- Added option to flix views to disable netflix fanart window[CR]- Litebox script is now used for effects like blur, twotone or pixelate[CR]- Improved addon description and summary[CR]- Issues fixed, code cleanup[CR][CR]1.1.55[CR]- Addon infos changed[CR]- First start options set[CR][CR]1.1.54[CR]- Improvements to nowplaying info[CR]- First start options set[CR]- Music visualisation improved[CR]- Rearranged power menu items[CR]- Code improvements, cleanup[CR]- Texture update[CR][CR]1.1.53[CR]- French language update (!thx Nanomani)[CR]- Core/LibreElec settings rework (!thx Nanomani)[CR]- Improved animations[CR]- Background issues fixed[CR]- Improved nowplaying/musicvisualisation/musicosd[CR]- Improved skin settings[CR]- German language update[CR]- Code improvements, cleanup[CR][CR]1.1.52[CR]- Fixed a lot of issues[CR]- Improved performance[CR]- Language strings corrections[CR]- Improved DialogInfo animations[CR]- Added option to enable lock of skin theme/color/font[CR]- Texture update[CR]- Code cleanup[CR][CR]1.1.51[CR]- Rework on skin settings (!thx Nanomani)[CR]- Added support for colorbox script[CR]- Fixed a lot of issues[CR]- Minor adjustments[CR]- Code improvements[CR]- Added coreelec/libreelec icons (!thx Nanomani)[CR]- Fixed clearlogo position (!thx Fabricio Augusto)[CR]- Added wip option to lock skin theme/color[CR]- Added m4a icons[CR][CR]1.1.50[CR]- Fixed issues with language strings (!thx Nanomani)[CR]- Fixed issue with background[CR]- Added option to hide scrollbar for more views (!thx Fabricio Augusto)[CR]- Added option for underline items in vertical multi widgets home menu (!thx Nanomani)[CR][CR]1.1.49[CR]- Texture update[CR]- Improved netflix preview window[CR][CR]1.1.48[CR]- Fixed issue with background[CR]- Minor adjustments[CR]- Code optimization[CR][CR]1.1.47[CR]-Improved widget animations for netflix and clean/minimal layouts[CR]- Fixed an issue with weather background[CR]- Added playdisc shortcut to home menu[CR]- Added audiostreams info to furniture icons[CR]- Code optimization[CR][CR]1.1.46[CR]- Added new home menu layout[CR]- Fixed issue with background[CR]- Fixed issue with language strings (!thx Nanomani)[CR]- French language update (!thx Nanomani)[CR][CR]1.1.45[CR]- Fixed issue with background (!thx Skyla)[CR][CR]1.1.44[CR]- Added brightness setting for background/blur[CR]- Improved some skin settings[CR]- Added fading time setting for background[CR]- Added option to use thumbnail instead fanart in upnext addon[CR]- Added new viewtypes for widgets[CR]- Fixed issues[CR]- Added view 526 for seasons[CR]- German, italian language update (!thx semool, nanomani)[CR][CR]1.1.43[CR]- Added new viewtype aspect for home menu widgets[CR]- Fixed a lot of issues, e.g. musicvideos flags, strings, ...[CR]- Code improvements[CR]- Minor adjustments[CR][CR]1.1.42[CR]- Added new default mpaa flags[CR]- Improvements to DialogAddonInfo[CR]- Italian language updated (!thx Zurg)[CR]- Added option to enable IMDB position[CR]- Added view 524 for seasons[CR]- Improved views content type (!thx Nanomani)[CR]- Fixed minor issue with background[CR]- Added option to hide background of PVR channel icon[CR]- Improved colorpicker dialog[CR]- French language update (!thx Nanomani)[CR]- Added support for artwork downloader in DialogVideoInfo[CR][CR]1.1.41[CR]- Consistency update[CR]- Performance improvements[CR]- Added netflix clearlogo to netflix homemenu viewtypes[CR]- Italian language update (!thx Zurg)[CR]- German language update (!thx semool)[CR]- Fixed a lot of issues[CR]- Improvements to some views[CR]- Code cleanup[CR]- French language update (!thx Nanomani)[CR]- Added option to set fallback image for music visualisation (!thx for request: hordesprime)[CR]- Improvements to DialogPlayerProcessInfo[CR]- Improvements to Video OSD[CR]- Fixed issues with PVR OSD icons[CR][CR]1.1.40[CR]- Added pvr vertical widgets[CR]- Added tagline option for DialogVideoInfo, improvements (!thx Nanomani)[CR]- Added radio channel widgets[CR]- Cleanup the code[CR]- Added option to enable smaller icons in view 510[CR]- Changed list type option to select list type for each widget[CR]- Updated french language[CR]- Updated italian language strings (!thx Zurg)[CR][CR]1.1.39[CR]- Code improvements[CR]- Minor adjustments[CR][CR]1.1.38[CR]- Improved Skinshortcuts menu[CR]- French language updated[CR]- German language updated (!thx semool)[CR]- Fixed issues in PVR section[CR]- Cleanup the code[CR][CR]1.1.37[CR]- Added widgets content[CR]- Issues fixed[CR]- French language updated[CR]- Autoscroll widgets improvements[CR][CR]1.1.36[CR]- Fixed issue with more-item[CR][CR]1.1.35[CR]- Skin settings and viewtype options improvements[CR]- Minor adjustments[CR]- Fixed navigation issues[CR]- New screenshots added[CR]- French language updated[CR][CR]1.1.34[CR]- French language updated (!thx Nanomani)[CR]- Added support for script.arctic.zephyr.mod.autocolors (!thx semool)[CR]- Added music view 523[CR]- Texture improvements[CR][CR]1.1.33[CR]- Bugfix release[CR][CR]1.1.32[CR]- Code improvements, cleanup[CR]- Added new watched flag indicators[CR]- Language strings updates (!thx semool, Dis90)[CR]- Added by director info to dialogvideoinfo[CR]- Minor adjustments[CR][CR]1.1.31[CR]- Improvements of music OSD[CR]- Added option to disable homemenu items in skinshortcuts[CR]- Fixed issues[CR]- Added new views 521/522[CR]- Hungarian language updated (!thx frodo19)[CR][CR]1.1.30[CR]- Removed unneeded textures[CR]- Code cleanup[CR]- Improved custom blur settings[CR]- Added option for autoscroll widget titles[CR]- Fixed issues[CR]- Minor adjustments[CR][CR]1.1.29[CR]- Improved widget diffuse textures[CR]- Removed unneeded textures[CR]- Added option to disable startup window[CR]- Fixed issues[CR]- Added tvshow provider icons to extended infos[CR]- Code cleanup[CR][CR]1.1.28[CR]- Fixed issues with multi backgrounds and background playlists[CR][CR]1.1.27[CR]- Background code improvements[CR]- Added trakt - add to watchlist button[CR]- Code improvements[CR]- fixed issues (!thx)[CR]- minor adjustements[CR][CR]1.1.26[CR]- Fixed a lot of issues[CR]- Added now playing setting[CR]- Code improvements[CR]- Views adjusted for better consistency[CR][CR]1.1.25[CR]- Fixed weather issue[CR][CR]1.1.24[CR]- Added indicator setting[CR]- Fixed playback issue (!thx)[CR]- Code improvements, cleanup[CR]- Added tmdbhelper fallback labels[CR]- Added setting to diable next aired info[CR][CR]1.1.23[CR]- Code improvements, cleanup[CR]- Fixed a lot of issues[CR]- Added option for widgets fade animation [CR]- Added discart for osd [CR]- Added new HDR, DolbyVision and web-dl flags[CR]- Added option to set spotlight widget path[CR]- Added autoscroll for classic widgets[CR]- Enabled extended infos for episodes[CR][CR]1.1.22[CR]- Improvements on plot overlays[CR]- Code and texture improvements, cleanup[CR]- Language strings updated by several contributors, thx![CR][CR]1.1.21[CR]- Code improvements, cleanup[CR]- ColorPicker dialog improvements[CR]- DialogSelect using poster instead icon, if available[CR]- Scrollbar improvements[CR]- Texture improvements[CR]- Option to select media flags added[CR]- Added homemenu viewtype selector[CR]- Minor adjustments of now playing[CR]- Fixed a lot of issues[CR]- Ultra HD Blu Ray icon added[CR]- Language strings updated by several contributors, thx![CR]- Addon is renamed to Arctic: Zephyr - Reloaded[CR]- Added option to hide all indicators[CR]- Added widget 6[CR]- Added custom powermenu[CR][CR]1.1.20[CR]- Added netflix homemenu layout[CR]- Added custom widgets[CR][CR]1.1.19[CR]- Fixed issues, code cleanup[CR]- Improvements on animations[CR]- Added custom coreelec settings[CR][CR]1.1.18[CR]- Code improvements[CR]- Fixed issues[CR][CR]1.1.17[CR]- Improvements on dialoginfo overlay[CR]- Fixed issue with sets info[CR]- Added support for script.skin.info.service[CR][CR]1.1.16[CR]- Widgets cleanup, improvements on supported addons section[CR][CR]1.1.15[CR]- Fixed a lot of issues, cleaned up the code[CR]- Cinema experience support of embuary.helper addon added[CR]- Widgets added[CR]- Now playing info added[CR]- Dialog settings added[CR]- Fixed rating flags[CR]- Improvements on osd/homemenu/views[CR][CR]1.1.14[CR]- Fixed issues[CR][CR]1.1.13[CR]- Texture improvements[CR]- Fixed a lot of issues[CR]- Rework on filemanager[CR]- Added tempo function[CR]- Added new kodi 19 infolabels[CR]- Added german telecast offers support[CR]- Code improvements[CR][CR]1.1.12[CR]- Cleanup the code[CR]- Only icons version added to vertical multi widget homemenu[CR]- Added header label for hubs[CR]- Improvements on color-settings, blur settings[CR]- Switched to tmdbhelper for next aired info[CR]- More changes for matrix compatibility[CR][CR]1.1.1[CR]- First matrix version</news>
-        <summary lang="de">Klar, minimalistisch, elegant, einfach, leicht. Basiert auf dem original Arctic: Zephyr Skin von jurialmunkey.</summary>
-        <summary lang="en">Clean, minimal, elegant, simple, light. Based on the original Arctic: Zephyr skin by jurialmunkey.</summary>
-        <summary lang="en_AU">Clean, minimal, elegant, simple, light. Based on the original Arctic: Zephyr skin by jurialmunkey.</summary>
-        <summary lang="en_US">Clean, minimal, elegant, simple, light. Based on the original Arctic: Zephyr skin by jurialmunkey.</summary>
-        <summary lang="es">Limpio, minimalista, elegante, simple, ligero. Basado en el original Arctic: Zephyr skin por jurialmunkey.</summary>
-        <summary lang="fr">Clair, minimaliste, élégant, simple et léger. Basé sur le skin original Arctic: Zephyr par jurialmunkey.</summary>
-        <summary lang="fr_CA">Net, minimal, élégant, simple, léger. Basé sur le skin original Arctic: Zephyr par jurialmunkey.</summary>
-        <summary lang="lt">Švari, minimali, elegantiška, paprasta, lengva. Basato sull&apos;originale Arctic: Zephyr skin di jurialmunkey.</summary>
-        <summary lang="nl">Schoon, minimaal, elegant, simpel, licht. Gebaseerd op de originele Arctic: Zephyr skin door jurialmunkey.</summary>
-        <summary lang="pl">Prosta, minimalista, elegancka i lekka. Na podstawie oryginalnego skinu Arctic: Zephyr autorstwa jurialmunkey.</summary>
-        <summary lang="ro">Curat, minimalist, elegant, simplu, ușor. Bazat pe pielea originală Arctic: Zephyr de jurialmunkey.</summary>
-        <summary lang="ru">Опрятный, минималистичный, элегантный, простой, светлый. Основано на оригинальном скине Arctic: Zephyr от jurialmunkey.</summary>
-        <description lang="de">Arctic: Zephyr - Reloaded basiert auf dem original Arctic: Zephyr Skin von jurialmunkey und ist ein minimalistisches, klares und simples Interface für deine Medien mit dem gewissen Etwas.</description>
-        <description lang="en">Arctic: Zephyr - Reloaded is based on original Arctic: Zephyr skin, created by jurialmunkey. Arctic focuses on being simple, clean and minimalistic with a light spin.</description>
-        <description lang="en_AU">Arctic: Zephyr - Reloaded is based on original Arctic: Zephyr skin, created by jurialmunkey. Arctic focuses on being simple, clean and minimalistic with a light spin.</description>
-        <description lang="en_US">Arctic: Zephyr - Reloaded is based on original Arctic: Zephyr skin, created by jurialmunkey. Arctic focuses on being simple, clean and minimalistic with a light spin.</description>
-        <description lang="fr">Arctic: Zephyr - Reloaded est basé sur le skin original Arctic: Zephyr, créé par jurialmunkey. Arctic se focalise sur le fait d&apos;être simple, claire et minimaliste.</description>
-    </extension>
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0"/>
+		<import addon="script.skinshortcuts" version="0.4.0"/>
+		<import addon="script.globalsearch" version="5.0.0"/>
+		<import addon="script.image.resource.select" version="0.0.5"/>
+		<import addon="resource.images.weathericons.white" version="0.0.6"/>
+		<import addon="script.embuary.info" version="0.0.1"/>
+		<import addon="script.embuary.helper" version="1.2.14"/>
+		<import addon="plugin.video.themoviedb.helper" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" effectslowdown="1">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<license>Creative Commons Non Commercial 3.0 License</license>
+		<forum>https://forum.kodi.tv/showthread.php?tid=337862</forum>
+		<source>https://github.com/beatmasterRS/skin.arctic.zephyr.mod</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>screenshot-01.jpg</screenshot>
+			<screenshot>screenshot-02.jpg</screenshot>
+			<screenshot>screenshot-03.jpg</screenshot>
+			<screenshot>screenshot-04.jpg</screenshot>
+			<screenshot>screenshot-05.jpg</screenshot>
+			<screenshot>screenshot-06.jpg</screenshot>
+			<screenshot>screenshot-07.jpg</screenshot>
+			<screenshot>screenshot-08.jpg</screenshot>
+			<screenshot>screenshot-09.jpg</screenshot>
+			<screenshot>screenshot-10.jpg</screenshot>
+		</assets>
+		<news>3.0.3[CR]- Fixed issue with tv show indicators[CR][CR]3.0.2[CR]- Added preshow experience support[CR]- Language updates[CR][CR]3.0.1[CR]- Minor adjustments[CR]- Language updates[CR][CR]3.0.0[CR]- Kodi Omega version[CR][CR]2.0.5[CR]- Fixed possible issue with media flags[CR]- Added wikipedia script support[CR]- Added option to use keyart instead of poster[CR]- Jumpbar improvements[CR]- Code improvements[CR]- Minor adjustments[CR][CR]2.0.4[CR]- Minor adjustments[CR]- Language updates[CR][CR]2.0.3[CR]- Improved animations[CR]- Changed first start settings[CR]- Added imdb rating (!thx mkaflowski)[CR]- Added missing media flags (!thx derMaik)[CR]- Enabled now playing controls by default[CR]- Added filesize to list views (!thx Nanomani, robertlaing)[CR]- Improved skin settings (!thx derMaik)[CR]- Improved now playing info[CR]- Changed osd and now playing lists to kodi defaults[CR]- Added fanart for albums to dialogmusicinfo[CR]- Added info action to now playing info[CR]- Changes rating color to match osd rating color[CR]- Skin settings cleanup[CR]- Code improvements to icon media flags[CR]- Added onclick action to open tmdb info (!thx Nanomani)[CR]- Fixed music player rating[CR]- Code cleanup[CR]- Fixed issue with lyrics[CR]- Fixed issue with color palette[CR]- Fixed auto scroll issue[CR]- Fixed code (!thx VSeryi)[CR][CR]2.0.2[CR]- Improved media flags (!thx @Nanomani)[CR]- Added setting to use thumb instead of fanart for background on episodes[CR]- Strings update to artwork in skin shortcuts[CR]- Improved indicators[CR]- Fixed extra fanart in music section and widgets fade animation (!thx @Nanomani)[CR]- Fixed issue with duration in some cases[CR]- Improved lyrics and background[CR]- Fixed issue with indicators (!thx semool)[CR][CR]2.0.1[CR]- Improved settings category[CR]- Improved pvr artwork (!thx kalle2000)[CR]- Fixed issue with pvr views[CR]- Replaced old matrix boolean condition[CR]- Added season number to wide episodes view (!thx sPOiDar)[CR]- Fixed issue with screen calibration[CR][CR]2.0.0[CR]- Removed color picker addon support[CR]- Added color picker dialog support[CR]- Added new hdr type infolabels[CR][CR]1.1.72[CR]- Added color presets[CR]- Fixed issues with now playing widget[CR]- Fixed aspect ratio for some icons[CR]- Changed home menu icon size[CR]- Added option to show info for a few seconds, when video starts[CR]- Improvements to dialog subtitles[CR][CR]1.1.71[CR]- Added option to hide ratings in list views[CR]- CjK font added (!thx kuroehanako)[CR]- Added support for extended pvr artwork (!thx kalle2000)[CR]- Minor adjustments[CR]- Language updates[CR][CR]1.1.70[CR]- Improved fsk ratings (!thx Peiren85)[CR]- Fixed issues[CR]- Minor adjustments[CR][CR]1.1.69[CR]- Minor adjustments[CR]- Code cleanup[CR][CR]1.1.68[CR]- Improved skin shortcuts implementation[CR]- Improved widget info for episodes[CR]- Fixed issues[CR]- Code cleanup[CR][CR]1.1.67[CR]- Improved skin performance[CR]- Added option for always visible controls in extended now playing info[CR]- Fixed issues[CR]- Code improvements, cleanup[CR][CR]1.1.66[CR]- Improved extended now playing info[CR]- Minor adjustments to furniture icons[CR][CR]1.1.65[CR]- Improved overall experience[CR]- Improved star rating[CR]- Added support for animated artwork module (!thx PvD)[CR]- Improved textbox autoscroll function (!thx manfeed)[CR]- Fixed issues[CR]- Code improvements, cleanup[CR][CR]1.1.64[CR]- Improved extended now playing info[CR]- Improved auto playing trailers[CR]- Added just watch icon[CR]- Fixed issue with jumpbar[CR]- Improved overall experience[CR]- Improved textures, cleanup[CR]- Improved code, cleanup[CR]- Added lower percentage values for netflix window[CR][CR]1.1.63[CR]- Improved animations[CR]- Improved extended now playing[CR]- Improved OSD code[CR]- Improved overall experience[CR]- Fixed issues[CR][CR]1.1.62[CR]- Fixed issues with clearlogo and pvr osd[CR]- Added option for is playing indicator[CR]- Added option to use embuary helper for blur[CR]- Improved view 520[CR]- Minor adjustments[CR][CR]1.1.61[CR]- Improved container types[CR]- Improved widget information for episodes[CR]- Added indicators to featured home menu layout[CR]- Added additional music flags[CR]- Code improvements, cleanup[CR][CR]1.1.60[CR]- Improved overall experience[CR]- Fixed issues[CR]- Added EDL markers[CR]- Improved code, cleanup[CR]- Added option to ignore embedded fanart by addons (!thx Nanomani)[CR][CR]1.1.59[CR]- Added auto playing trailers[CR]- Improved home menu widgets movement[CR]- Added jumpbar to views 510, 521, 522, 523, 527[CR]- Fixed issues[CR][CR]1.1.58[CR]- Added glow/zoom option for focused items[CR]- Added new view 527[CR]- Improvements to home header (!thx Nanomani)[CR]- Fixed issues[CR][CR]1.1.57[CR]- Fixed issues[CR]- Minor improvements (!thx Nanomani)[CR][CR]1.1.56[CR]- Improvements to music osd[CR]- Improved overall usability/user experience[CR]- Updated translations[CR]- Improvements to colorpicker window, video osd and animations[CR]- Addon icon updated[CR]- Added option to flix views to disable netflix fanart window[CR]- Litebox script is now used for effects like blur, twotone or pixelate[CR]- Improved addon description and summary[CR]- Issues fixed, code cleanup[CR][CR]1.1.55[CR]- Addon infos changed[CR]- First start options set[CR][CR]1.1.54[CR]- Improvements to nowplaying info[CR]- First start options set[CR]- Music visualisation improved[CR]- Rearranged power menu items[CR]- Code improvements, cleanup[CR]- Texture update[CR][CR]1.1.53[CR]- French language update (!thx Nanomani)[CR]- Core/LibreElec settings rework (!thx Nanomani)[CR]- Improved animations[CR]- Background issues fixed[CR]- Improved nowplaying/musicvisualisation/musicosd[CR]- Improved skin settings[CR]- German language update[CR]- Code improvements, cleanup[CR][CR]1.1.52[CR]- Fixed a lot of issues[CR]- Improved performance[CR]- Language strings corrections[CR]- Improved DialogInfo animations[CR]- Added option to enable lock of skin theme/color/font[CR]- Texture update[CR]- Code cleanup[CR][CR]1.1.51[CR]- Rework on skin settings (!thx Nanomani)[CR]- Added support for colorbox script[CR]- Fixed a lot of issues[CR]- Minor adjustments[CR]- Code improvements[CR]- Added coreelec/libreelec icons (!thx Nanomani)[CR]- Fixed clearlogo position (!thx Fabricio Augusto)[CR]- Added wip option to lock skin theme/color[CR]- Added m4a icons[CR][CR]1.1.50[CR]- Fixed issues with language strings (!thx Nanomani)[CR]- Fixed issue with background[CR]- Added option to hide scrollbar for more views (!thx Fabricio Augusto)[CR]- Added option for underline items in vertical multi widgets home menu (!thx Nanomani)[CR][CR]1.1.49[CR]- Texture update[CR]- Improved netflix preview window[CR][CR]1.1.48[CR]- Fixed issue with background[CR]- Minor adjustments[CR]- Code optimization[CR][CR]1.1.47[CR]-Improved widget animations for netflix and clean/minimal layouts[CR]- Fixed an issue with weather background[CR]- Added playdisc shortcut to home menu[CR]- Added audiostreams info to furniture icons[CR]- Code optimization[CR][CR]1.1.46[CR]- Added new home menu layout[CR]- Fixed issue with background[CR]- Fixed issue with language strings (!thx Nanomani)[CR]- French language update (!thx Nanomani)[CR][CR]1.1.45[CR]- Fixed issue with background (!thx Skyla)[CR][CR]1.1.44[CR]- Added brightness setting for background/blur[CR]- Improved some skin settings[CR]- Added fading time setting for background[CR]- Added option to use thumbnail instead fanart in upnext addon[CR]- Added new viewtypes for widgets[CR]- Fixed issues[CR]- Added view 526 for seasons[CR]- German, italian language update (!thx semool, nanomani)[CR][CR]1.1.43[CR]- Added new viewtype aspect for home menu widgets[CR]- Fixed a lot of issues, e.g. musicvideos flags, strings, ...[CR]- Code improvements[CR]- Minor adjustments[CR][CR]1.1.42[CR]- Added new default mpaa flags[CR]- Improvements to DialogAddonInfo[CR]- Italian language updated (!thx Zurg)[CR]- Added option to enable IMDB position[CR]- Added view 524 for seasons[CR]- Improved views content type (!thx Nanomani)[CR]- Fixed minor issue with background[CR]- Added option to hide background of PVR channel icon[CR]- Improved colorpicker dialog[CR]- French language update (!thx Nanomani)[CR]- Added support for artwork downloader in DialogVideoInfo[CR][CR]1.1.41[CR]- Consistency update[CR]- Performance improvements[CR]- Added netflix clearlogo to netflix homemenu viewtypes[CR]- Italian language update (!thx Zurg)[CR]- German language update (!thx semool)[CR]- Fixed a lot of issues[CR]- Improvements to some views[CR]- Code cleanup[CR]- French language update (!thx Nanomani)[CR]- Added option to set fallback image for music visualisation (!thx for request: hordesprime)[CR]- Improvements to DialogPlayerProcessInfo[CR]- Improvements to Video OSD[CR]- Fixed issues with PVR OSD icons[CR][CR]1.1.40[CR]- Added pvr vertical widgets[CR]- Added tagline option for DialogVideoInfo, improvements (!thx Nanomani)[CR]- Added radio channel widgets[CR]- Cleanup the code[CR]- Added option to enable smaller icons in view 510[CR]- Changed list type option to select list type for each widget[CR]- Updated french language[CR]- Updated italian language strings (!thx Zurg)[CR][CR]1.1.39[CR]- Code improvements[CR]- Minor adjustments[CR][CR]1.1.38[CR]- Improved Skinshortcuts menu[CR]- French language updated[CR]- German language updated (!thx semool)[CR]- Fixed issues in PVR section[CR]- Cleanup the code[CR][CR]1.1.37[CR]- Added widgets content[CR]- Issues fixed[CR]- French language updated[CR]- Autoscroll widgets improvements[CR][CR]1.1.36[CR]- Fixed issue with more-item[CR][CR]1.1.35[CR]- Skin settings and viewtype options improvements[CR]- Minor adjustments[CR]- Fixed navigation issues[CR]- New screenshots added[CR]- French language updated[CR][CR]1.1.34[CR]- French language updated (!thx Nanomani)[CR]- Added support for script.arctic.zephyr.mod.autocolors (!thx semool)[CR]- Added music view 523[CR]- Texture improvements[CR][CR]1.1.33[CR]- Bugfix release[CR][CR]1.1.32[CR]- Code improvements, cleanup[CR]- Added new watched flag indicators[CR]- Language strings updates (!thx semool, Dis90)[CR]- Added by director info to dialogvideoinfo[CR]- Minor adjustments[CR][CR]1.1.31[CR]- Improvements of music OSD[CR]- Added option to disable homemenu items in skinshortcuts[CR]- Fixed issues[CR]- Added new views 521/522[CR]- Hungarian language updated (!thx frodo19)[CR][CR]1.1.30[CR]- Removed unneeded textures[CR]- Code cleanup[CR]- Improved custom blur settings[CR]- Added option for autoscroll widget titles[CR]- Fixed issues[CR]- Minor adjustments[CR][CR]1.1.29[CR]- Improved widget diffuse textures[CR]- Removed unneeded textures[CR]- Added option to disable startup window[CR]- Fixed issues[CR]- Added tvshow provider icons to extended infos[CR]- Code cleanup[CR][CR]1.1.28[CR]- Fixed issues with multi backgrounds and background playlists[CR][CR]1.1.27[CR]- Background code improvements[CR]- Added trakt - add to watchlist button[CR]- Code improvements[CR]- fixed issues (!thx)[CR]- minor adjustements[CR][CR]1.1.26[CR]- Fixed a lot of issues[CR]- Added now playing setting[CR]- Code improvements[CR]- Views adjusted for better consistency[CR][CR]1.1.25[CR]- Fixed weather issue[CR][CR]1.1.24[CR]- Added indicator setting[CR]- Fixed playback issue (!thx)[CR]- Code improvements, cleanup[CR]- Added tmdbhelper fallback labels[CR]- Added setting to diable next aired info[CR][CR]1.1.23[CR]- Code improvements, cleanup[CR]- Fixed a lot of issues[CR]- Added option for widgets fade animation [CR]- Added discart for osd [CR]- Added new HDR, DolbyVision and web-dl flags[CR]- Added option to set spotlight widget path[CR]- Added autoscroll for classic widgets[CR]- Enabled extended infos for episodes[CR][CR]1.1.22[CR]- Improvements on plot overlays[CR]- Code and texture improvements, cleanup[CR]- Language strings updated by several contributors, thx![CR][CR]1.1.21[CR]- Code improvements, cleanup[CR]- ColorPicker dialog improvements[CR]- DialogSelect using poster instead icon, if available[CR]- Scrollbar improvements[CR]- Texture improvements[CR]- Option to select media flags added[CR]- Added homemenu viewtype selector[CR]- Minor adjustments of now playing[CR]- Fixed a lot of issues[CR]- Ultra HD Blu Ray icon added[CR]- Language strings updated by several contributors, thx![CR]- Addon is renamed to Arctic: Zephyr - Reloaded[CR]- Added option to hide all indicators[CR]- Added widget 6[CR]- Added custom powermenu[CR][CR]1.1.20[CR]- Added netflix homemenu layout[CR]- Added custom widgets[CR][CR]1.1.19[CR]- Fixed issues, code cleanup[CR]- Improvements on animations[CR]- Added custom coreelec settings[CR][CR]1.1.18[CR]- Code improvements[CR]- Fixed issues[CR][CR]1.1.17[CR]- Improvements on dialoginfo overlay[CR]- Fixed issue with sets info[CR]- Added support for script.skin.info.service[CR][CR]1.1.16[CR]- Widgets cleanup, improvements on supported addons section[CR][CR]1.1.15[CR]- Fixed a lot of issues, cleaned up the code[CR]- Cinema experience support of embuary.helper addon added[CR]- Widgets added[CR]- Now playing info added[CR]- Dialog settings added[CR]- Fixed rating flags[CR]- Improvements on osd/homemenu/views[CR][CR]1.1.14[CR]- Fixed issues[CR][CR]1.1.13[CR]- Texture improvements[CR]- Fixed a lot of issues[CR]- Rework on filemanager[CR]- Added tempo function[CR]- Added new kodi 19 infolabels[CR]- Added german telecast offers support[CR]- Code improvements[CR][CR]1.1.12[CR]- Cleanup the code[CR]- Only icons version added to vertical multi widget homemenu[CR]- Added header label for hubs[CR]- Improvements on color-settings, blur settings[CR]- Switched to tmdbhelper for next aired info[CR]- More changes for matrix compatibility[CR][CR]1.1.1[CR]- First matrix version</news>
+		<summary lang="de">Klar, minimalistisch, elegant, einfach, leicht. Basiert auf dem original Arctic: Zephyr Skin von jurialmunkey.</summary>
+		<summary lang="en">Clean, minimal, elegant, simple, light. Based on the original Arctic: Zephyr skin by jurialmunkey.</summary>
+		<summary lang="en_AU">Clean, minimal, elegant, simple, light. Based on the original Arctic: Zephyr skin by jurialmunkey.</summary>
+		<summary lang="en_US">Clean, minimal, elegant, simple, light. Based on the original Arctic: Zephyr skin by jurialmunkey.</summary>
+		<summary lang="es">Limpio, minimalista, elegante, simple, ligero. Basado en el original Arctic: Zephyr skin por jurialmunkey.</summary>
+		<summary lang="fr">Clair, minimaliste, élégant, simple et léger. Basé sur le skin original Arctic: Zephyr par jurialmunkey.</summary>
+		<summary lang="fr_CA">Net, minimal, élégant, simple, léger. Basé sur le skin original Arctic: Zephyr par jurialmunkey.</summary>
+		<summary lang="lt">Švari, minimali, elegantiška, paprasta, lengva. Basato sull&apos;originale Arctic: Zephyr skin di jurialmunkey.</summary>
+		<summary lang="nl">Schoon, minimaal, elegant, simpel, licht. Gebaseerd op de originele Arctic: Zephyr skin door jurialmunkey.</summary>
+		<summary lang="pl">Prosta, minimalista, elegancka i lekka. Na podstawie oryginalnego skinu Arctic: Zephyr autorstwa jurialmunkey.</summary>
+		<summary lang="ro">Curat, minimalist, elegant, simplu, ușor. Bazat pe pielea originală Arctic: Zephyr de jurialmunkey.</summary>
+		<summary lang="ru">Опрятный, минималистичный, элегантный, простой, светлый. Основано на оригинальном скине Arctic: Zephyr от jurialmunkey.</summary>
+		<description lang="de">Arctic: Zephyr - Reloaded basiert auf dem original Arctic: Zephyr Skin von jurialmunkey und ist ein minimalistisches, klares und simples Interface für deine Medien mit dem gewissen Etwas.</description>
+		<description lang="en">Arctic: Zephyr - Reloaded is based on original Arctic: Zephyr skin, created by jurialmunkey. Arctic focuses on being simple, clean and minimalistic with a light spin.</description>
+		<description lang="en_AU">Arctic: Zephyr - Reloaded is based on original Arctic: Zephyr skin, created by jurialmunkey. Arctic focuses on being simple, clean and minimalistic with a light spin.</description>
+		<description lang="en_US">Arctic: Zephyr - Reloaded is based on original Arctic: Zephyr skin, created by jurialmunkey. Arctic focuses on being simple, clean and minimalistic with a light spin.</description>
+		<description lang="fr">Arctic: Zephyr - Reloaded est basé sur le skin original Arctic: Zephyr, créé par jurialmunkey. Arctic se focalise sur le fait d&apos;être simple, claire et minimaliste.</description>
+	</extension>
 </addon>
 
 
@@ -303,25 +303,25 @@ repository.zero
 
 
 <addon id="script.fenstruary.helper" name="Fenstruary Helper" provider-name="Tikipeter" version="0.7.14">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-    </requires>
-    <extension point="xbmc.python.library" library="resources/lib/default.py"/>
-    <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <news />
-        <platform>all</platform>
-        <license>GPL-2.0-only</license>
-        <forum />
-        <source />
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <description lang="en_GB">Fenstruary Helper for the Fenstruary Skin.</description>
-        <description lang="en_NZ">Fenstruary Helper for the Fenstruary Skin.</description>
-        <description lang="en_US">Fenstruary Helper for the Fenstruary Skin.</description>
-    </extension>
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.library" library="resources/lib/default.py"/>
+	<extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<news />
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+		<forum />
+		<source />
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<description lang="en_GB">Fenstruary Helper for the Fenstruary Skin.</description>
+		<description lang="en_NZ">Fenstruary Helper for the Fenstruary Skin.</description>
+		<description lang="en_US">Fenstruary Helper for the Fenstruary Skin.</description>
+	</extension>
 </addon>
 
 
@@ -401,39 +401,39 @@ repository.zero
 
 
 <addon id="script.fentastic.helper" name="FENtastic Helper" version="0.6.20a" provider-name="Tikipeter, Ivar Brandt">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-    </requires>
-    <extension point="xbmc.python.library" library="resources/lib/default.py"/>
-    <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <news />
-        <platform>all</platform>
-        <license>GPL-2.0-only</license>
-        <forum />
-        <source />
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <description lang="en_GB">FENtastic Helper for the FENtastic Skin.</description>
-        <description lang="en_NZ">FENtastic Helper for the FENtastic Skin.</description>
-        <description lang="en_US">FENtastic Helper for the FENtastic Skin.</description>
-    </extension>
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.19.1"/>
+	</requires>
+	<extension point="xbmc.python.library" library="resources/lib/default.py"/>
+	<extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<news />
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+		<forum />
+		<source />
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<description lang="en_GB">FENtastic Helper for the FENtastic Skin.</description>
+		<description lang="en_NZ">FENtastic Helper for the FENtastic Skin.</description>
+		<description lang="en_US">FENtastic Helper for the FENtastic Skin.</description>
+	</extension>
 </addon>
 
 
 <addon id="resource.uisounds.fentastic" version="1.0.0" name="FENtastic UI Audio Suite" provider-name="Ivar Brandt">
-  <requires>
-    <import addon="kodi.resource" version="1.0.0"/>
-  </requires>
-  <extension point="kodi.resource.uisounds"/>
-  <extension point="kodi.addon.metadata">
-    <summary lang="en">FENtastic Audio Suite</summary>
-    <description lang="en">FENtastic Audio Suite</description>
-    <platform>all</platform>
-  </extension>
+	<requires>
+	<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="kodi.resource.uisounds"/>
+	<extension point="kodi.addon.metadata">
+	<summary lang="en">FENtastic Audio Suite</summary>
+	<description lang="en">FENtastic Audio Suite</description>
+	<platform>all</platform>
+	</extension>
 </addon>
 
 
@@ -471,175 +471,175 @@ repository.zero
 
 
 <addon id="script.nimbus.helper" name="Nimbus Helper" version="0.0.50" provider-name="Ivar Brandt">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-        <import addon="script.module.pil" version="1.1.7"/>
-    </requires>
-    <extension point="xbmc.python.library" library="resources/lib/default.py"/>
-    <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <news />
-        <platform>all</platform>
-        <license>GPL-2.0-only</license>
-        <forum />
-        <source />
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.png</fanart>
-        </assets>
-        <description lang="en_GB">Nimbus Helper for the Nimbus Skin.</description>
-        <description lang="en_NZ">Nimbus Helper for the Nimbus Skin.</description>
-        <description lang="en_US">Nimbus Helper for the Nimbus Skin.</description>
-    </extension>
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.19.1"/>
+		<import addon="script.module.pil" version="1.1.7"/>
+	</requires>
+	<extension point="xbmc.python.library" library="resources/lib/default.py"/>
+	<extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<news />
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+		<forum />
+		<source />
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+		<description lang="en_GB">Nimbus Helper for the Nimbus Skin.</description>
+		<description lang="en_NZ">Nimbus Helper for the Nimbus Skin.</description>
+		<description lang="en_US">Nimbus Helper for the Nimbus Skin.</description>
+	</extension>
 </addon>
 
 
 <addon
-  id="skin.xonfluence"
-  version="4.1.5"
-  name="Xonfluence"
-  provider-name="Helly,bsoriano">
-  <requires>
-    <import addon="xbmc.gui" version="5.15.0"/>
-  </requires>
-  <extension
-    point="xbmc.gui.skin"
-    debugging="false"
-    effectslowdown="1.0">
-    <res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
-    <summary lang="en_US">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
-    <summary lang="nl">Uitgebreide MOD van Confluence skin origineel door Jezz_X en CCM door Mudislander.</summary>
-    <description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
-    <description lang="en_US">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
-    <description lang="nl">Xonfluence is een MOD van Confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin (gebaseerd op Mudislander's CCM).</description>
-    <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
-    <platform>all</platform>
-	  <license>GNU General Public License version 2</license>
-	  <forum>https://forum.kodi.tv/showthread.php?tid=346302</forum>
-	  <website></website>
-	  <email></email>
-	  <source>https://github.com/bartolomesoriano/skin.xonfluence</source>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-	    <screenshot>screenshot-01.jpg</screenshot>
-	    <screenshot>screenshot-02.jpg</screenshot>
-	    <screenshot>screenshot-03.jpg</screenshot>
-	    <screenshot>screenshot-04.jpg</screenshot>
-	    <screenshot>screenshot-05.jpg</screenshot>
-	    <screenshot>screenshot-06.jpg</screenshot>
-	    <screenshot>screenshot-07.jpg</screenshot>
-	    <screenshot>screenshot-08.jpg</screenshot>
-	    <screenshot>screenshot-09.jpg</screenshot>
-    </assets>
-    <news>See changelog for latest changes</news>
-  </extension>
+	id="skin.xonfluence"
+	version="4.1.5"
+	name="Xonfluence"
+	provider-name="Helly,bsoriano">
+	<requires>
+	<import addon="xbmc.gui" version="5.15.0"/>
+	</requires>
+	<extension
+	point="xbmc.gui.skin"
+	debugging="false"
+	effectslowdown="1.0">
+	<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+	<summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+	<summary lang="en_US">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+	<summary lang="nl">Uitgebreide MOD van Confluence skin origineel door Jezz_X en CCM door Mudislander.</summary>
+	<description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+	<description lang="en_US">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+	<description lang="nl">Xonfluence is een MOD van Confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin (gebaseerd op Mudislander's CCM).</description>
+	<disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
+	<disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
+	<disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
+	<platform>all</platform>
+		<license>GNU General Public License version 2</license>
+		<forum>https://forum.kodi.tv/showthread.php?tid=346302</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/bartolomesoriano/skin.xonfluence</source>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+		<screenshot>screenshot-01.jpg</screenshot>
+		<screenshot>screenshot-02.jpg</screenshot>
+		<screenshot>screenshot-03.jpg</screenshot>
+		<screenshot>screenshot-04.jpg</screenshot>
+		<screenshot>screenshot-05.jpg</screenshot>
+		<screenshot>screenshot-06.jpg</screenshot>
+		<screenshot>screenshot-07.jpg</screenshot>
+		<screenshot>screenshot-08.jpg</screenshot>
+		<screenshot>screenshot-09.jpg</screenshot>
+	</assets>
+	<news>See changelog for latest changes</news>
+	</extension>
 </addon>
 
 
 <addon
-  id="skin.xonfluence"
-  version="5"
-  name="Xonfluence"
-  provider-name="Helly, bsoriano, jdig4240">
-  <requires>
-    <import addon="xbmc.gui" version="5.16.0"/>
+	id="skin.xonfluence"
+	version="5"
+	name="Xonfluence"
+	provider-name="Helly, bsoriano, jdig4240">
+	<requires>
+	<import addon="xbmc.gui" version="5.16.0"/>
 	<import addon="script.favourites" version="8.1.2"/>
 	<import addon="script.image.resource.select" version="3.0.2"/>	
-  </requires>
-  <extension
-    point="xbmc.gui.skin"
-    debugging="false"
-    effectslowdown="1.0">
-    <res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
-    <summary lang="en_US">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
-    <summary lang="nl">Uitgebreide MOD van Confluence skin origineel door Jezz_X en CCM door Mudislander.</summary>
-    <description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
-    <description lang="en_US">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
-    <description lang="nl">Xonfluence is een MOD van Confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin (gebaseerd op Mudislander's CCM).</description>
-    <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
-    <platform>all</platform>
-	  <license>GNU General Public License version 2</license>
-	  <forum>https://forum.kodi.tv/showthread.php?tid=346302</forum>
-	  <website></website>
-	  <email></email>
-	  <source>https://github.com/bartolomesoriano/skin.xonfluence</source>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-	    <screenshot>screenshot-01.jpg</screenshot>
-	    <screenshot>screenshot-02.jpg</screenshot>
-	    <screenshot>screenshot-03.jpg</screenshot>
-	    <screenshot>screenshot-04.jpg</screenshot>
-	    <screenshot>screenshot-05.jpg</screenshot>
-	    <screenshot>screenshot-06.jpg</screenshot>
-	    <screenshot>screenshot-07.jpg</screenshot>
-	    <screenshot>screenshot-08.jpg</screenshot>
-	    <screenshot>screenshot-09.jpg</screenshot>
-    </assets>
-    <news>See changelog for latest changes</news>
-  </extension>
+	</requires>
+	<extension
+	point="xbmc.gui.skin"
+	debugging="false"
+	effectslowdown="1.0">
+	<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+	<summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+	<summary lang="en_US">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+	<summary lang="nl">Uitgebreide MOD van Confluence skin origineel door Jezz_X en CCM door Mudislander.</summary>
+	<description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+	<description lang="en_US">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+	<description lang="nl">Xonfluence is een MOD van Confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin (gebaseerd op Mudislander's CCM).</description>
+	<disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
+	<disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
+	<disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
+	<platform>all</platform>
+		<license>GNU General Public License version 2</license>
+		<forum>https://forum.kodi.tv/showthread.php?tid=346302</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/bartolomesoriano/skin.xonfluence</source>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+		<screenshot>screenshot-01.jpg</screenshot>
+		<screenshot>screenshot-02.jpg</screenshot>
+		<screenshot>screenshot-03.jpg</screenshot>
+		<screenshot>screenshot-04.jpg</screenshot>
+		<screenshot>screenshot-05.jpg</screenshot>
+		<screenshot>screenshot-06.jpg</screenshot>
+		<screenshot>screenshot-07.jpg</screenshot>
+		<screenshot>screenshot-08.jpg</screenshot>
+		<screenshot>screenshot-09.jpg</screenshot>
+	</assets>
+	<news>See changelog for latest changes</news>
+	</extension>
 </addon>
 
 
 <addon
-  id="skin.xonfluence"
-  version="5.1"
-  name="Xonfluence"
-  provider-name="Helly, bsoriano, jdig4240">
-  <requires>
-    <import addon="xbmc.gui" version="5.17.0"/>
+	id="skin.xonfluence"
+	version="5.1"
+	name="Xonfluence"
+	provider-name="Helly, bsoriano, jdig4240">
+	<requires>
+	<import addon="xbmc.gui" version="5.17.0"/>
 	<import addon="script.favourites" version="8.1.2"/>
 	<import addon="script.image.resource.select" version="3.0.2"/>	
-  </requires>
-  <extension
-    point="xbmc.gui.skin"
-    debugging="false"
-    effectslowdown="1.0">
-    <res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
-    <summary lang="en_US">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
-    <summary lang="nl">Uitgebreide MOD van Confluence skin origineel door Jezz_X en CCM door Mudislander.</summary>
-    <description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
-    <description lang="en_US">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
-    <description lang="nl">Xonfluence is een MOD van Confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin (gebaseerd op Mudislander's CCM).</description>
-    <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
-    <platform>all</platform>
-	  <license>GNU General Public License version 2</license>
-	  <forum>https://forum.kodi.tv/showthread.php?tid=346302</forum>
-	  <website></website>
-	  <email></email>
-	  <source>https://github.com/bartolomesoriano/skin.xonfluence</source>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-	    <screenshot>screenshot-01.jpg</screenshot>
-	    <screenshot>screenshot-02.jpg</screenshot>
-	    <screenshot>screenshot-03.jpg</screenshot>
-	    <screenshot>screenshot-04.jpg</screenshot>
-	    <screenshot>screenshot-05.jpg</screenshot>
-	    <screenshot>screenshot-06.jpg</screenshot>
-	    <screenshot>screenshot-07.jpg</screenshot>
-	    <screenshot>screenshot-08.jpg</screenshot>
-	    <screenshot>screenshot-09.jpg</screenshot>
-    </assets>
-    <news>See changelog for latest changes</news>
-  </extension>
+	</requires>
+	<extension
+	point="xbmc.gui.skin"
+	debugging="false"
+	effectslowdown="1.0">
+	<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+	<summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+	<summary lang="en_US">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+	<summary lang="nl">Uitgebreide MOD van Confluence skin origineel door Jezz_X en CCM door Mudislander.</summary>
+	<description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+	<description lang="en_US">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+	<description lang="nl">Xonfluence is een MOD van Confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin (gebaseerd op Mudislander's CCM).</description>
+	<disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
+	<disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
+	<disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
+	<platform>all</platform>
+		<license>GNU General Public License version 2</license>
+		<forum>https://forum.kodi.tv/showthread.php?tid=346302</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/bartolomesoriano/skin.xonfluence</source>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+		<screenshot>screenshot-01.jpg</screenshot>
+		<screenshot>screenshot-02.jpg</screenshot>
+		<screenshot>screenshot-03.jpg</screenshot>
+		<screenshot>screenshot-04.jpg</screenshot>
+		<screenshot>screenshot-05.jpg</screenshot>
+		<screenshot>screenshot-06.jpg</screenshot>
+		<screenshot>screenshot-07.jpg</screenshot>
+		<screenshot>screenshot-08.jpg</screenshot>
+		<screenshot>screenshot-09.jpg</screenshot>
+	</assets>
+	<news>See changelog for latest changes</news>
+	</extension>
 </addon>
 
 
@@ -691,23 +691,23 @@ repository.zero
 </addon>
 
 <addon id="repository.709" name="The 7o9Repo" version="1.0.2" provider-name="Zaxxon709">
-    <extension point="xbmc.addon.repository" name="The7o9Repo">
+	<extension point="xbmc.addon.repository" name="The7o9Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>The 7o9Repo</summary>
-        <description>7o9 Repository</description>
-        <disclaimer></disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>The 7o9Repo</summary>
+		<description>7o9 Repository</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="repository.a4kstreaming" name="a4kStreaming Repository" version="1.0.1" provider-name="Unknown">
@@ -729,21 +729,21 @@ repository.zero
 </addon>
 
 <addon id="repository.a4ksubtitles" name="a4kSubtitles Repository" version="1.1.1" provider-name="Unknown">
-    <extension point="xbmc.addon.repository">
+	<extension point="xbmc.addon.repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>a4kSubtitles</summary>
-        <description>a4kSubtitles Repository</description>
-        <platform>all</platform>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>a4kSubtitles</summary>
+		<description>a4kSubtitles Repository</description>
+		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-    </extension>
+	</extension>
 </addon>
 
 <addon id="repository.abratchik" name="Alex Bratchik Kodi repository" version="1.0.3" provider-name="Alex Bratchik">
@@ -860,7 +860,7 @@ repository.zero
 		<genre>movies,usa</genre>
 		<assets>
 			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>    
+			<fanart>fanart.jpg</fanart>	
 		</assets>
 	</extension>
 </addon>
@@ -1035,22 +1035,22 @@ repository.zero
 </addon>
 
 <addon id="repository.bugatsinho" name="Bugatsinho repository" version="2.7" provider-name="Bugatsinho">
-    <extension point="xbmc.addon.repository" name="Bugatsinho repository">
+	<extension point="xbmc.addon.repository" name="Bugatsinho repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Bugatsinho repository</summary>
-        <description>This repository contains Greek, Spanish and other addons!Read first each addon's description!</description>
-        <assets>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Bugatsinho repository</summary>
+		<description>This repository contains Greek, Spanish and other addons!Read first each addon's description!</description>
+		<assets>
 			<icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
+			<fanart>fanart.jpg</fanart>
 		</assets>
-        <platform>all</platform>
-    </extension>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="repository.butter" name="Butter Fingers Repo" version="2.2.0" provider-name="J1">
@@ -1073,25 +1073,25 @@ repository.zero
 </addon>
 
 <addon id="repository.burekasKodi" name="Burekas Repo" version="1.0.2" provider-name="burekas">
-    <requires>
-        <import addon="xbmc.addon" version="12.0.0"/>
-    </requires>
-    <extension point="xbmc.addon.repository" name="Burekas Repo">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Burekas Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Burekas Repo For Kodi - The addons with the plus</summary>
-        <description></description>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <clearlogo>logo.png</clearlogo>
-        </assets>            
-    </extension>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Burekas Repo For Kodi - The addons with the plus</summary>
+		<description></description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<clearlogo>logo.png</clearlogo>
+		</assets>			
+	</extension>
 </addon>
 
 <addon id="repository.canuck" name="Canuck Repository" version="0.1.0" provider-name="The Crazy Canuck">
@@ -1109,7 +1109,7 @@ repository.zero
 		<genre>movies,usa</genre>
 		<assets>
 			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>    
+			<fanart>fanart.jpg</fanart>	
 		</assets>
 	</extension>
 </addon>
@@ -1147,7 +1147,7 @@ repository.zero
 		<website>https://catch-up-tv-and-more.github.io/</website>
 		<assets>
 			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>    
+			<fanart>fanart.jpg</fanart>	
 		</assets>
 	</extension>
 </addon>
@@ -1166,7 +1166,7 @@ repository.zero
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 		<assets>
-        </assets>
+		</assets>
 	</extension>
 </addon>
 
@@ -1214,22 +1214,22 @@ repository.zero
 </addon>
 
 <addon id="repository.cocoscrapers" name="CocoScrapers Repository" version="1.0.0" provider-name="CocoScrapers">
-    <extension point="xbmc.addon.repository" name="CocoScrapers Repository">
+	<extension point="xbmc.addon.repository" name="CocoScrapers Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary>CocoScrapers Repository</summary>
-        <description>Unofficial add-ons repository</description>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>CocoScrapers Repository</summary>
+		<description>Unofficial add-ons repository</description>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.png</fanart>
 		</assets>
-    </extension>
+	</extension>
 </addon>
 
 <addon id="repository.coldkeys" name="ColdKeys Repo" version="1.0.2" provider-name="Coldkeys">
@@ -1353,7 +1353,7 @@ repository.zero
 		<summary>Diggz Repository</summary>
 		<description>Diggz Kodi Repository.</description>
 		<platform>all</platform>
-        <assets>
+		<assets>
 			<icon>icon.png</icon>
 		</assets>
 	</extension>
@@ -1378,23 +1378,23 @@ repository.zero
 </addon>
 
 <addon id="repository.dis90" name="Dis90 add-on repository" version="1.0.1" provider-name="Dis90">
-    <extension point="xbmc.addon.repository" name="Example Repository">
+	<extension point="xbmc.addon.repository" name="Example Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Dis90 Repository for Kodi 19</summary>
-        <description>Dis90 Repository for Kodi 19 add-ons</description>
-        <disclaimer></disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Dis90 Repository for Kodi 19</summary>
+		<description>Dis90 Repository for Kodi 19 add-ons</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="repository.djaythemes" name="Djay Themes" version="2.5" provider-name="Djay">
@@ -1495,7 +1495,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.enigmawiz" name="Enigma Repo" version="2.0.4" provider-name="Enigma Repo">
+<addon id="repository.enigmawiz" name="Enigma Repo" version="2.0.5" provider-name="Enigma Repo">
 	<extension point="xbmc.addon.repository" name="Enigma Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1811,11 +1811,11 @@ repository.zero
 	</extension>
 <extension point="xbmc.addon.metadata">
 	<summary>For Kodi 19 and above</summary>
-    <description>Find Repos and Add-ons for Kodi 19 and up.[CR]Contains the "Repo Source Installer" program add-on.</description>
-    <platform>all</platform>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
+	<description>Find Repos and Add-ons for Kodi 19 and up.[CR]Contains the "Repo Source Installer" program add-on.</description>
+	<platform>all</platform>
+	<assets>
+		<icon>icon.png</icon>
+	</assets>
 </extension>
 </addon>
 
@@ -1874,21 +1874,21 @@ repository.zero
 </addon>
 
 <addon id="repository.heppen" name="Heppen's Repository" version="7.0.0" provider-name="heppen">
-    <extension point="xbmc.addon.repository" name="Heppen's Repository">
+	<extension point="xbmc.addon.repository" name="Heppen's Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>heppen's repository</summary>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.jpg</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>heppen's repository</summary>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.jpg</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="repository.hooty" name="Hooty's Repository" version="1.0" provider-name="Goldenfreddy0703">
@@ -2027,21 +2027,19 @@ repository.zero
 </addon>
 
 <addon id="repository.kodifitzwell" version="0.0.1" name="kodifitzwell repository" provider-name="kodifitzwell">
-    <extension point="xbmc.addon.repository" name="kodifitzwell repository">
+	<extension point="xbmc.addon.repository" name="kodifitzwell repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <description>kodifitzwell repository</description>
-        <disclaimer></disclaimer>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<description>kodifitzwell repository</description>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.7" provider-name="Kodinerds">
@@ -2052,18 +2050,18 @@ repository.zero
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
 	</extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Addon repository of the Kodinerds Community</summary>
-        <description lang="en">The 'Nerdsrepo' is the Repository of the german Kodi Community 'Kodinerds' (www.kodinerds.net). Most of the hosted Addons here are active developed and supported by the members of the Community. Nerdsrepo is an unofficial Repository of the Kodi Media Center Software</description>
-        <summary lang="de">Addon Repository der Kodinerds Community</summary>
-        <description lang="de">Das 'Nerdsrepo' ist das Addon Repository der deutschen Kodi-Community 'Kodinerds' (www.kodinerds.net). Die meisten der hier im Nerdsrepo gehosteten Addons werden von den Mitgliedern der Community aktiv entwickelt und unterstützt. Das Nerdsrepo ist ein unoffizielles Repository der Kodi Media Center Software.</description>
-        <disclaimer/>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Addon repository of the Kodinerds Community</summary>
+		<description lang="en">The 'Nerdsrepo' is the Repository of the german Kodi Community 'Kodinerds' (www.kodinerds.net). Most of the hosted Addons here are active developed and supported by the members of the Community. Nerdsrepo is an unofficial Repository of the Kodi Media Center Software</description>
+		<summary lang="de">Addon Repository der Kodinerds Community</summary>
+		<description lang="de">Das 'Nerdsrepo' ist das Addon Repository der deutschen Kodi-Community 'Kodinerds' (www.kodinerds.net). Die meisten der hier im Nerdsrepo gehosteten Addons werden von den Mitgliedern der Community aktiv entwickelt und unterstützt. Das Nerdsrepo ist ein unoffizielles Repository der Kodi Media Center Software.</description>
+		<disclaimer/>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="repository.lanik_p3" name="Lanik Repository" provider-name="Dalibor Lanik" version="1.0.0a">
@@ -2192,7 +2190,7 @@ repository.zero
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>            
+			<fanart>fanart.jpg</fanart>			
 		</assets>
 	</extension> 
 </addon>
@@ -2267,7 +2265,7 @@ repository.zero
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>    
+			<fanart>fanart.jpg</fanart>	
 		</assets>
 	</extension>
 </addon>
@@ -2328,7 +2326,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.octopus" name="Octopus Repository" version="0.3.6" provider-name="Twiglet">
+<addon id="repository.octopus" name="Octopus Repository" version="0.3.7" provider-name="Twiglet">
 	<extension point="xbmc.addon.repository" name="Octopus Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2343,7 +2341,7 @@ repository.zero
 		<genre>movies,usa</genre>
 		<assets>
 			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>    
+			<fanart>fanart.jpg</fanart>	
 		</assets>
 	</extension>
 </addon>
@@ -2382,15 +2380,15 @@ repository.zero
 </addon>
 
 <addon id="repository.onealliancereborn" name="OneAlliance Reborn Repo" version="7.0.1" provider-name="RedWizard">
-    <extension point="xbmc.addon.repository" name="OneAlliance Reborn Repo">
+	<extension point="xbmc.addon.repository" name="OneAlliance Reborn Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">OneAlliance Reborn Builds and Add-ons</summary>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">OneAlliance Reborn Builds and Add-ons</summary>
 		<description lang="en_GB">The OneAlliance Reborn Repo for OneAlliance Reborn Builds and Add-ons.</description>
 		<disclaimer lang="en_GB"></disclaimer>
 		<news>2022-05-09
@@ -2401,11 +2399,11 @@ repository.zero
 		<license>GNU GENERAL PUBLIC LICENSE Version 3</license>
 		<email></email>
 		<website>https://www.facebook.com/groups/OneAllianceReborn/</website>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="repository.openscrapers" name="OpenScrapers Repository" version="1.0" provider-name="A4K">
@@ -2472,23 +2470,23 @@ repository.zero
 </addon>
 
 <addon id="repository.otaku" name="Otaku's Repository" version="1.0" provider-name="Goldenfreddy0703">
-    <extension point="xbmc.addon.repository" name="Otaku's Repository">
+	<extension point="xbmc.addon.repository" name="Otaku's Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Otaku's Repository</summary>
-        <description>A repository for Otaku</description>
-        <disclaimer></disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Otaku's Repository</summary>
+		<description>A repository for Otaku</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="repository.paco8" name="Improved subtitles repository" version="2.0.4" provider-name="Paco8">
@@ -2719,26 +2717,26 @@ repository.zero
 </addon>
 
 <addon id="repository.sgkodi" name="SGKODI REPOSITORY" version="1.1.6" provider-name="SGK">
-    <extension point="xbmc.addon.repository" name="SGKODI REPOSITORY">
+	<extension point="xbmc.addon.repository" name="SGKODI REPOSITORY">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">SGKODI REPOSITORY</summary>
-        <description lang="en">A collection of KODI repositories and addons.[CR][CR]Contact + support:[CR]https://www.facebook.com/groups/kodiunlimited[CR]Donation:[CR]https://www.paypal.me/KodiUnlimited</description>
-        <disclaimer lang="en">The creator of the repository is not the creator of the add-ons and is therefore not responsible for its content!</disclaimer>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">SGKODI REPOSITORY</summary>
+		<description lang="en">A collection of KODI repositories and addons.[CR][CR]Contact + support:[CR]https://www.facebook.com/groups/kodiunlimited[CR]Donation:[CR]https://www.paypal.me/KodiUnlimited</description>
+		<disclaimer lang="en">The creator of the repository is not the creator of the add-ons and is therefore not responsible for its content!</disclaimer>
 		<summary lang="de">K.U.S-REPOSITORY</summary>
-        <description lang="de">Eine Sammlung von KODI-Repositories und Addons.[CR][CR]Kontakt + Support:[CR]https://www.facebook.com/groups/kodiunlimited[CR]Spende:[CR]https://www.paypal.me/KodiUnlimited</description>
-         <disclaimer lang="de">Der Ersteller des Repository ist nicht der Ersteller der Addons und somit nicht Verantwortlich für dessen Inhalt!</disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
+		<description lang="de">Eine Sammlung von KODI-Repositories und Addons.[CR][CR]Kontakt + Support:[CR]https://www.facebook.com/groups/kodiunlimited[CR]Spende:[CR]https://www.paypal.me/KodiUnlimited</description>
+		 <disclaimer lang="de">Der Ersteller des Repository ist nicht der Ersteller der Addons und somit nicht Verantwortlich für dessen Inhalt!</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="repository.skinbase.nexus" name="GUIDOS SKINBASE Only Skins for Kodi NEXUS" version="4.0.03" provider-name="TEAM-SKINBASE">
@@ -2751,10 +2749,10 @@ repository.zero
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Guidos SKINBASE Repo</summary>
-        <description lang="de_DE">In Guidos SKINBASE findet ihr Skins ab Kodi Version 16 aus aller Welt. Von den Standard Skins bis hin zu stark Modifizierten. Die Skins sind für die jeweiligen Kodi Versionen farblich markiert.  Viel Spass wünschen euch das SKINBASE TEAM.</description>
+		<description lang="de_DE">In Guidos SKINBASE findet ihr Skins ab Kodi Version 16 aus aller Welt. Von den Standard Skins bis hin zu stark Modifizierten. Die Skins sind für die jeweiligen Kodi Versionen farblich markiert. Viel Spass wünschen euch das SKINBASE TEAM.</description>
 		<description lang="en_GB">In Guido's SKINBASE you will find skins from Kodi version 16 from all over the world. From the standard skins to heavily modified ones. The skins are color coded for the respective Kodi versions. The SKINBASE TEAM wish you a lot of fun.</description>
-        <platform>all</platform>
-        <platform>all</platform>
+		<platform>all</platform>
+		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -2837,7 +2835,7 @@ repository.zero
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Stream Army Repo</summary>
-		<description>Repo For Stream Army, Bought to you by @Nemzzy668 /  @_MANC_</description>
+		<description>Repo For Stream Army, Bought to you by @Nemzzy668 / @_MANC_</description>
 		<disclaimer>Educational use only, not for public release.</disclaimer>
 		<platform>all</platform>
 		<assets>
@@ -2847,22 +2845,22 @@ repository.zero
 </addon>
 
 <addon id="repository.subskip" name="SubSkip Repository" version="1.0.1" provider-name="drinfernoo">
-    <extension point="xbmc.addon.repository" name="SubSkip Repository">
+	<extension point="xbmc.addon.repository" name="SubSkip Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>SubSkip Repository</summary>
-        <description>Repository for SubSkip</description>
-        <disclaimer></disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>SubSkip Repository</summary>
+		<description>Repository for SubSkip</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="repository.TechNEWSology" name="TechNEWSology Repository" version="2.2.0" provider-name="TechNEWSology">
@@ -2923,19 +2921,19 @@ repository.zero
 </addon>
 
 <addon id="repository.theblackghost" name="The Black Ghost Repo" version="0.0.2" provider-name="BlackGhost">
-    <extension point="xbmc.addon.repository" name="theblackghost">
+	<extension point="xbmc.addon.repository" name="theblackghost">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		 </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
+	</extension>
+	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-        <summary>Black all Black Ghost</summary>
+		<summary>Black all Black Ghost</summary>
 		<description lang="en_GB">Black Ghost REPO</description>
 		<description lang="es_ES">Black Ghost Repositorio</description>
-        <license></license>
+		<license></license>
 		<language></language>
 		<website></website>
 		<news></news>
@@ -2943,7 +2941,7 @@ repository.zero
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets> 
-    </extension>
+	</extension>
 </addon>
 
 <addon id="repository.thecrew" name="THE CREW REPO" provider-name="The Crew" version="0.3.7">
@@ -3102,11 +3100,11 @@ repository.zero
 		<platform>all</platform>
 		<summary>All the working tvOne add-ons</summary>
 		<description>This is a simple repo for all of RACC's tvOne IPTV add-ons (Kodi 19 and up)[CR]After seeing so many versions and forks out there I wanted to provide a location for the original latest updated versions. These are taken directly from RACC's Japanese Repository and slightly modified with an icon, fanart and a date updated tag in the description. Developers are welcome to import this into their own repos.
-    - tvOne pulls from TV-Tap and was updated Oct 2024
-    - tvOne-111 pulls from Redbox and was updated Oct 2024
-    - tvOne-1112 pulls from LiveNet and was updated Oct 2024
-    - tvOne-112 pulls from RStv and was updated July 2023
-    - tvOne-11 pulled from SwiftStreams but is dead so it's not included here</description>
+	- tvOne pulls from TV-Tap and was updated Oct 2024
+	- tvOne-111 pulls from Redbox and was updated Oct 2024
+	- tvOne-1112 pulls from LiveNet and was updated Oct 2024
+	- tvOne-112 pulls from RStv and was updated July 2023
+	- tvOne-11 pulled from SwiftStreams but is dead so it's not included here</description>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
@@ -3429,8 +3427,8 @@ repository.zero
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
+	</extension>
+	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">xStream Repository</summary>
 		<description lang="de_DE">Dies ist das offizielle xStream Addon-Verzeichnis.[CR]Bei der Bereitstellung einer neuen Version von xStream wird diese auf Funktionalität geprüft. Sollten dennoch Probleme auftreten benachrichtige bitte das offizielle xStream-Team.</description>
 		<disclaimer lang="de_DE">Die dargestellten Inhalte des in diesem Verzeichnis enthaltenen Addons werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
@@ -3439,7 +3437,7 @@ repository.zero
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-    </extension>
+	</extension>
 </addon>
 
 <addon id="repository.zachmorris" name="Zach Morris Add-ons" version="1.0.4" provider-name="zachmorris">
