@@ -1,4 +1,4 @@
-<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter" version="3.5.02">
+<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter, The Red Wizard" version="3.5.05">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -19,6 +19,6 @@
             <icon>resources/media/fen_icon.png</icon>
             <fanart>resources/media/fen_fanart.png</fanart>
         </assets>
-        <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
+        <news>Unofficial updates by The Red Wizard. For the latest changes, see the Changelog in FEN->Tools.</news>
     </extension>
 </addon>

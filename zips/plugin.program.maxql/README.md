@@ -1,7 +1,7 @@
 # MaxQL
 
 ### Description:
-- This add-on will enable/disable add-on filters (4K, 1080P, Dolby Vision, 3D) for supported add-ons.<br><br>
+- Enable/disable add-on filters for supported add-ons.<br><br>
 
 ### 709 Repository
 [![Download Repo](https://img.shields.io/badge/Download-Repo-blue.svg?style=for-the-badge)](https://raw.githubusercontent.com/Zaxxon709/nexus/main/repository.709-1.0.zip)
@@ -45,32 +45,27 @@ RunPlugin(plugin://plugin.program.maxql/?mode=8)</p><br>
 1.  Seren<br>
 2.  Fen<br>
 3.  Fen Light<br>
-4.  Ezra<br>
-5.  Coalition<br>
-6.  POV<br>                  
-7.  Umbrella<br>
-8.  Infinity<br>
-9.  Dradis<br>
-10. Taz19<br>
-11. Shadow<br>
-12. Ghost<br>
-13. Base<br>
-14. Unleashed<br>           
-15. Chain Reaction<br>
-16. Magic Dragon<br>
-17. Asgard<br>
-18. Patriot<br>
-19. Black Lightning<br>
-20. Aliunde<br>
-21. Nightwing Lite<br>
-22. Twisted<br>
-23. Homelander<br>
-24. Quicksilver<br>
-25. Chains Genocide<br>
-26. Absolution<br>      
-27. Shazam<br>
-28. The Crew<br>              
-29. Alvin<br>
-30. Moria<br>
-31. Nine Lives<br>
-32. Scrubs V2<br>
+4.  Coalition<br>
+5.  POV<br>                  
+6.  Umbrella<br>
+7.  Dradis<br>
+8.  Shadow<br>
+9.  Ghost<br>
+10. Base<br>        
+11. Chain Reaction<br>
+12. Asgard<br>
+13. Patriot<br>
+14. Black Lightning<br>
+15. Aliunde<br>
+16. Nightwing Lite<br>
+17. Homelander<br>
+18. Quicksilver<br>
+19. Chains Genocide<br>
+20. Absolution<br>      
+21. Shazam<br>
+22. The Crew<br>              
+23. Alvin<br>
+24. Moria<br>
+25. Nine Lives<br>
+26. Otaku<br>
+27. Scrubs V2

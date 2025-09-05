@@ -496,7 +496,7 @@ script.module.urlresolver
 <!-- ---------------------------------------------------------------------- -->
 
 
-<addon id="plugin.video.jetproxy" version="1.0.3" name="JetProxy" provider-name="t4ils">
+<addon id="plugin.video.jetproxy" version="1.0.4" name="JetProxy" provider-name="t4ils">
 <requires>
   <import addon="xbmc.python" version="3.0.0"/>
   <import addon="script.module.routing"/>
@@ -968,7 +968,7 @@ Egenskaper:
 </addon>
 
 
-<addon id="script.module.jetextractors" name="JetExtractors" version="3.1.9" provider-name="THE TEAM">
+<addon id="script.module.jetextractors" name="JetExtractors" version="3.2.2" provider-name="THE TEAM">
 	<requires>
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />

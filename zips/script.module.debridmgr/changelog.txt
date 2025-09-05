@@ -1,0 +1,6 @@
+
+1.0.2 - Fix Otaku debrid auths. Fix Premiumizer auth.
+
+1.0.1 - Removed all non-debrid services from Account Manager. Only Debrid accounts are supported. Renamed to Debrid Manager.
+
+1.0.0 - Initial Release. 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.acctview" name="acctviewer" version="2.4.9" provider-name="Zaxxon709">
+    <extension point="xbmc.python.module" library="resources" />
+    <extension point="xbmc.python.pluginsource" library="default.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">View Authorized Accounts</summary>
+        <description lang="en">Account Manager Dependency</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://</source>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+    </extension>
+</addon>

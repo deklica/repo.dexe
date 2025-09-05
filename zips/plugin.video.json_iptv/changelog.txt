@@ -1,14 +1,16 @@
 [B][COLOR grey]
 (Contact me about any errors or issues. I dont really use Soc. Media)
 (Feel free to test anything and tell me what works and what dont.)
-(jewbmx@gmail.com OR https://github.com/jewbmx/repo/issues)[/COLOR][/B]
+(https://github.com/jewbmx/repo/issues)[/COLOR][/B]
 
-[B]- 1.0.09[/B] Added some new settings and some code plus maybe some code changes. (See About/ReadMe/Help in the tools menu for more info.)
+[B]- 1.0.11[/B] Did some small code changes, added a new site in "Site IPTV Menu" for a decent toons/anime stream, added settings and code for "Personal M3u8 Lists".(See About/ReadMe/Help in the tools menu for more info.)
 
 (Still need to properly test all content in the json sections and wouldnt mind some tester helpers lol. could simply modify the files with notes then send em.)
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
 
+[B]- 1.0.10[/B] Did some small code changes.
+[B]- 1.0.09[/B] Added some new settings and some code plus maybe some code changes. (See About/ReadMe/Help in the tools menu for more info.)
 [B]- 1.0.08[/B] Added some CricHD content supplied by a user that requested it. Might of done some other changes but dont recall.
 [B]- 1.0.07[/B] Added new artwork made by a user, and a setting that swaps the addon fanart to his. Added some label font settings and features to make things pretty.
 [B]- 1.0.06[/B] Removed dead site sections, Added a new one for good cartoons. Did some code changes all over for kodi v20, cleanup, and to improve things.

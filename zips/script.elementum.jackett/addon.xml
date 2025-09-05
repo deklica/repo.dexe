@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!-- note version attribute gets changed on the fly using ./scripts/update-version.py --><addon id="script.elementum.jackett" name="Elementum [COLOR FF0291F7]Jackett[/COLOR]" version="3.0.0" provider-name="fugkco">  
+<?xml version="1.0" ?><!-- note version attribute gets changed on the fly using ./scripts/update-version.py --><addon id="script.elementum.jackett" name="Elementum [COLOR FF0291F7]Jackett[/COLOR]" version="3.1.0" provider-name="fugkco">  
       <requires>    
             <import addon="xbmc.python" version="3.0.0"/>    
             <import addon="plugin.video.elementum"/>    
@@ -12,12 +12,12 @@
             <summary lang="en">Elementum Jackett provider</summary>    
             <description lang="en">Elementum Jackett is a provider that connects Elementum to Jacket. You need to run your own Jackett server.</description>    
             <license>WTFPL, Version 2</license>    
-            <website>https://github.com/fugkco/script.elementum.jackett</website>    
-            <source>https://github.com/fugkco/script.elementum.jackett</source>    
+            <website>https://github.com/vasilky3/script.elementum.jackett</website>    
+            <source>https://github.com/vasilky3/script.elementum.jackett</source>    
             <assets>      
                   <icon>resources/images/icon.png</icon>      
             </assets>    
-        <news>[B]3.0.0[/B] (2023-10-16)
+        <news>[B]3.1.0[/B] (2025-04-27)
 
 
 </news>  </extension>  

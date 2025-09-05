@@ -1,0 +1,35 @@
+<addon id="service.cleansubs" name="CleanSubs" provider-name="Dalibor Lanik" version="7.1"> 
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" /> 
+    <import addon="script.module.myconnpy" version="1.1.7" />
+    <import addon="script.module.pil" version="1.1.7" />
+  </requires>
+  <extension library="default.py" point="xbmc.service" start="startup"> 
+  </extension>
+    <extension library="standalone.py" point="xbmc.python.script">
+        <provides>executable</provides>
+    </extension>
+  <extension point="xbmc.addon.metadata"> 
+    <platform>all</platform>
+    <website>http://projects.lanik.org/KodiProject_CleanSubs.htm</website>
+    <summary lang="en_GB">Clean up downloaded subs from ads, etc</summary>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=283342</forum>
+    <email>dalibor@lanik.org</email>
+    <description lang="en_GB">Clean up downloaded subs from ads and other rubbish, i.e. who translated subtitles or from which web they were downloaded. Should work with all encodings (tested with 1250, 1251 and utf-8) and srt, sub subtitles. I created basic definitions which are downloaded from my web at runtime. Mostly for serbo-croatian and czech, and there are definitions for english, german, french, polish, slovak, hungarian, dutch and portugese. If you have any strings you need removed in your language, submit them to me in UTF8 format an I can add them.</description>
+    <news>v7.1 [CR]
+- Fixed: v20 Nexus [CR]
+    v7.0 [CR]
+- Python 3 version [CR]
+</news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshot-01.jpg</screenshot>
+        <screenshot>resources/screenshot-02.jpg</screenshot>
+        <screenshot>resources/screenshot-03.jpg</screenshot>
+        <banner>resources/banner.jpg</banner>
+        <logo>resources/logo.png</logo>
+    </assets>
+  </extension>
+</addon>

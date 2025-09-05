@@ -4,7 +4,7 @@
 
 --- Video ---
 plugin.video.archive.org
-plugin.video.crackle
+plugin.video.crackle (android)
 plugin.video.daddylive
 plugin.video.dlv2
 plugin.video.dream1click
@@ -58,28 +58,20 @@ script.hideosd
 script.kcleaner
 script.keymapedit
 script.light.imdb.ratings.update
-script.module.accountmgr
-script.module.acctview
+script.module.debridmgr
+script.module.dbview
 script.module.inputstreamhelper
 script.module.magneto
 script.module.viperscrapers
 script.module.youtube.dl
-script.service.checkpreviousepisode
-script.service.playbackresumer
 script.service.sponsorblock
 script.speedtester
 script.toolbox
 script.tubecast
-script.tvskipintro
 script.unlock.advancedsettings
 script.xbmc.unpausejumpback
 script.xbmcbackup
-service.banners
-service.blackbarsremover
-service.cleansubs
-service.languagepreferencemanager
 service.lt2http
-service.stinger.notification
 service.subloader
 service.vpn.manager
 
@@ -213,7 +205,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.daddylive" name="DaddyLive" version="4.37" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="DaddyLive" version="4.39" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -243,7 +235,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.1.5" provider-name="X">
+<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.1.7" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -366,7 +358,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter" version="3.5.02">
+<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter, The Red Wizard" version="3.5.05">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -387,12 +379,12 @@ service.subtitles.titlovi
             <icon>fen_icon.png</icon>
             <fanart>fen_fanart.png</fanart>
         </assets>
-        <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
+        <news>Unofficial updates by The Red Wizard. For the latest changes, see the Changelog in FEN->Tools.</news>
     </extension>
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.28">
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.35">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -411,8 +403,8 @@ service.subtitles.titlovi
 		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
         <license/>
         <assets>
-            <icon>fenlightam_icon.png</icon>
-            <fanart>fenlightam_fanart.jpg</fanart>
+            <icon>fenlight_icon_01.png</icon>
+            <fanart>fenlight_fanart_01.jpg</fanart>
         </assets>
         <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
     </extension>
@@ -542,7 +534,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.json_iptv" version="1.0.09" name="Json IPTV" provider-name="JewBMX">
+<addon id="plugin.video.json_iptv" version="1.0.11" name="Json IPTV" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -598,7 +590,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.neo_flix" name="[COLORlime]Neo Flix[/COLOR]" version="3.2.32" provider-name="">
+<addon id="plugin.video.neo_flix" name="[COLORlime]Neo Flix[/COLOR]" version="3.2.46" provider-name="">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.resolveurl"/>
@@ -889,7 +881,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.4" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.5" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -1072,7 +1064,7 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.ytchannels" name="YouTube Channels" version="0.5.5+matrix.1" provider-name="natko1412,mintsoft,yeahme49">
+<addon id="plugin.video.ytchannels" name="YouTube Channels" version="0.5.5" provider-name="natko1412,mintsoft,yeahme49">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.six" version="1.11.0"/>
@@ -1128,7 +1120,7 @@ Random updates by lolage.
 <!-- ---------------------------------------------------------------------- -->
 
 
-<addon id="context.elementum" name="Elementum Context Helper" version="0.0.13" provider-name="elgatito">
+<addon id="context.elementum" name="Elementum Context Helper" version="0.0.14" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.requests"/>
@@ -1545,7 +1537,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.program.maxql" name="MaxQL" version="1.1.7" provider-name="Zaxxon709">
+<addon id="plugin.program.maxql" name="MaxQL" version="1.1.9" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -1883,7 +1875,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.93" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.94" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="plugin.video.elementum" optional="true"/>
@@ -1923,7 +1915,7 @@ In order to get the API Key:
 </addon>
 
 
-<?xml version="1.0" ?><addon id="script.elementum.jackett" name="Elementum [COLOR FF0291F7]Jackett[/COLOR]" version="3.0.0" provider-name="fugkco">  
+<addon id="script.elementum.jackett" name="Elementum [COLOR FF0291F7]Jackett[/COLOR]" version="3.1.0" provider-name="fugkco">  
       <requires>    
             <import addon="xbmc.python" version="3.0.0"/>    
             <import addon="plugin.video.elementum"/>    
@@ -1937,12 +1929,12 @@ In order to get the API Key:
             <summary lang="en">Elementum Jackett provider</summary>    
             <description lang="en">Elementum Jackett is a provider that connects Elementum to Jacket. You need to run your own Jackett server.</description>    
             <license>WTFPL, Version 2</license>    
-            <website>https://github.com/fugkco/script.elementum.jackett</website>    
-            <source>https://github.com/fugkco/script.elementum.jackett</source>    
+            <website>https://github.com/vasilky3/script.elementum.jackett</website>    
+            <source>https://github.com/vasilky3/script.elementum.jackett</source>    
             <assets>      
                   <icon>icon.png</icon>      
             </assets>    
-        <news>[B]3.0.0[/B] (2023-10-16)</news>
+            <news>[B]3.1.0[/B] (2025-04-27)</news>
       </extension>  
 </addon>
 
@@ -2206,11 +2198,11 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.accountmgr" version="2.6.6" name="Account Manager" provider-name="Zaxxon709">
+<addon id="script.module.debridmgr" version="1.0.3" name="Debrid Manager" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-            	<import addon="script.module.acctview" version="2.4.9" />
+		<import addon="script.module.dbview" version="1.0.2" />
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">
@@ -2219,8 +2211,8 @@ In order to get the API Key:
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
 		<reuselanguageinvoker>false</reuselanguageinvoker>
-		<summary lang="en">Account Manager</summary>
-		<description>Manage your Trakt, Debrid, Torbox, Easy Debrid, OffCloud, Easynews, FilePursuit and Metadata logins</description>
+		<summary lang="en">Debrid Manager</summary>
+		<description>Manage your Debrid logins</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<disclaimer lang="en">The author is not responsible for the use of this addon. [CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
@@ -2232,18 +2224,15 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctview" name="acctviewer" version="2.4.9" provider-name="Zaxxon709">
-    <extension point="xbmc.python.module" library="resources" />
+<addon id="script.module.dbview" name="dbviewer" version="1.0.2" provider-name="Zaxxon709">
     <extension point="xbmc.python.pluginsource" library="default.py" />
+    <extension point="xbmc.python.module" library="resources" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">View Authorized Accounts</summary>
-        <description lang="en">Account Manager Dependency</description>
+        <description lang="en">Debrid Manager Dependency</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <source>https://</source>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
     </extension>
 </addon>
 
@@ -2312,7 +2301,7 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.magneto" version="5.06.01" name="Magneto Module" provider-name="Magneto">
+<addon id="script.module.magneto" version="5.09.01" name="Magneto Module" provider-name="Magneto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2385,62 +2374,6 @@ v0.5.9 (2022-03-22)
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon>
-
-
-<addon id="script.service.checkpreviousepisode" version="0.4.8" name="Kodi Check Previous Episode" provider-name="bossanova808, Razzeee, Lucleonhart" >
-  <requires>
-    <import addon="xbmc.python" version="3.0.0" />
-    <import addon="script.module.yaml" version="3.11.0" />
-    <import addon="script.module.bossanova808" version="1.0.0"/>
-  </requires>
-  <extension library="default.py" point="xbmc.service" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Kodi Check Previous Episode</summary>
-    <summary lang="bg_BG">Изгледан ли е предходния епизод</summary>
-    <description lang="en_GB">This service helps prevent spoilers by checking if the previous episode in a series has been watched. If not, it will pause playback and warn you.  Specific shows can be marked to be ignored if episode order does not matter.</description>
-    <description lang="de_DE">Dieses Script überprüft die vorige Episode der TV Show die gerade gestartet werden soll und warnt falls diese noch nicht gesehen wurde oder nicht vorhanden ist!</description>
-    <description lang="bg_BG">Когато пускате епизод от даден сериал скриптът проверява предходния и предупреждава ако той отсъства от библиотеката или не е изгледан.</description>
-    <platform>all</platform>
-    <license>GPL-2.0-only</license>
-    <forum>https://forum.kodi.tv/showthread.php?tid=355464</forum>
-    <website>https://kodi.wiki/view/Add-on:XBMC_Check_Previous_Episode</website>
-    <source>https://github.com/bossanova808/script.service.checkpreviousepisode</source>
-    <news>v0.4.8
-- Remove old common code, use new module
-- Fix bug if last ignored show is removed from ignore list then that show is re-played in same Kodi session
-    </news>
-  <assets>
-     <icon>icon.png</icon>
-  </assets>
-  </extension>
-</addon>
-
-
-<addon id="script.service.playbackresumer" name="Kodi Playback Resumer" version="2.0.7" provider-name="bossanova808, bradvido88">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.bossanova808" version="1.0.0"/>
-  </requires>
-  <extension point="xbmc.service" library="default.py" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Periodically sets the resume point of videos and can automatically resume last played video if Kodi crashes.</summary>
-    <description lang="en_GB">
-        Runs as a service and will periodically update the resume point while videos are playing, so you can re-start from where you were in the event of a crash.  It can also automatically resume a video if Kodi was shutdown while playing it. See setting to configure how often the resume point is set, and whether to automatically resume.
-    </description>
-    <platform>all</platform>
-	  <license>GPL-3.0-only</license>
-    <website>https://github.com/bossanova808/script.service.playbackresumer</website>
-    <source>https://github.com/bossanova808/script.service.playbackresumer</source>
-    <forum>https://forum.kodi.tv/showthread.php?tid=355383</forum>
-    <email>bossanova808@gmail.com</email>
-    <news>v2.0.7
-- Remove old common code, use new module
-    </news>
-    <assets>
-      <icon>icon.png</icon>
-    </assets>
-  </extension>
 </addon>
 
 
@@ -2634,30 +2567,6 @@ v1.0.1 (2019-08-06)
 </addon>
 
 
-<addon id="script.tvskipintro" version="2023.01.25" name="TV Skip Intro" provider-name="aenema">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="main.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-        <description>Prompt a Skip Intro dialog Netflix style. Skips intro for your favourite shows. The addon creates a database of your shows and stores a custom set skip value</description>
-		<summary lang="en">Skip TV Shows Intro</summary>
-		<platform>all</platform>
-		<website>-</website>
-		<email>-</email>
-		<forum>-</forum>
-		<source>-</source>
-		<news></news>
-        <assets>
-            <icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-
 <addon id="script.unlock.advancedsettings"
        name="Unlock Kodi Advanced Settings"
        version="1.0.3"
@@ -2701,10 +2610,7 @@ v1.0.1 (2019-08-06)
     <summary lang="en_GB">Kodi automatic jump back on un-pausing of videos</summary>
     <summary lang="bg_BG">Превърта назад след пауза</summary>
     <description lang="en_GB">
-        This addon will jump back a number of seconds whenever a video is un-paused - to make sure you don't miss anything.
-        You can set the amount of seconds to jump back, and the minimum duration of the pause before the addon will trigger a jump back.
-        It also allows to jump back or forward after rewind or fast-forward of a specified amount of seconds to compensate for over-shooting.
-        (Originally created by Memphiz, up-keep taken over by bossanova808 in 2020 for Kodi Matrix and beyond).
+This addon will jump back a number of seconds whenever a video is un-paused - to make sure you don't miss anything. You can set the amount of seconds to jump back, and the minimum duration of the pause before the addon will trigger a jump back. It also allows to jump back or forward after rewind or fast-forward of a specified amount of seconds to compensate for over-shooting. (Originally created by Memphiz, up-keep taken over by bossanova808 in 2020 for Kodi Matrix and beyond).
     </description>
     <description lang="bg_BG">
         Добавката прескача назад автоматично след като прекратите пауза, за да си припомните историята.
@@ -2833,127 +2739,6 @@ added additional information when gathering files
 </addon>
 
 
-<addon id="service.banners" name="Banners" provider-name="Dalibor Lanik" version="3.0"> 
-  <requires>
-    <import addon="xbmc.python" version="3.0.0" /> 
-    <import addon="script.module.pil" version="1.1.7" />
-  </requires>
-  <extension library="default.py" point="xbmc.service" start="startup"> 
-  </extension>
-  <extension library="standalone.py" point="xbmc.python.script">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata"> 
-    <platform>all</platform>
-    <website>http://projects.lanik.org/KodiProject_Banners.htm</website>
-    <summary lang="en_GB">Display banners while video plays</summary>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>http://forum.kodi.tv/showthread.php?tid=283342</forum>
-    <email>dalibor@lanik.org</email>
-    <description lang="en_GB">Displays banners while playing video</description>
-    <news>v3.0 [CR]
-- Python 3 version  [CR]
-</news>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-        <screenshot>screenshot-01.jpg</screenshot>
-        <screenshot>screenshot-02.jpg</screenshot>
-        <screenshot>screenshot-03.jpg</screenshot>
-        <banner>banner.jpg</banner>
-        <logo>logo.png</logo>
-    </assets>
-  </extension>
-</addon>
-
-
-<addon 
-    id="service.blackbarsremover"
-    name="Black Bars Remover"
-    version="3.1.0"
-    provider-name="milaq">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-    </requires>
-    <extension point="xbmc.service" library="service.py"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_gb">Automatically fit video to screen</summary>
-        <description lang="en_gb">Automatically adjusts the zoomlevel to eliminate black bars in videos. This addon also respects Kodi's "minimise black bars" setting.</description>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-        <forum></forum>
-        <website>https://milaq.net</website>
-        <email></email>
-        <source>https://github.com/milaq/kodi_addon_blackbarsremover</source>
-        <news></news>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart></fanart>
-            <screenshot></screenshot>
-        </assets>
-    </extension>
-</addon>
-
-
-<addon id="service.cleansubs" name="CleanSubs" provider-name="Dalibor Lanik" version="7.1"> 
-  <requires>
-    <import addon="xbmc.python" version="3.0.0" /> 
-    <import addon="script.module.myconnpy" version="1.1.7" />
-    <import addon="script.module.pil" version="1.1.7" />
-  </requires>
-  <extension library="default.py" point="xbmc.service" start="startup"> 
-  </extension>
-    <extension library="standalone.py" point="xbmc.python.script">
-        <provides>executable</provides>
-    </extension>
-  <extension point="xbmc.addon.metadata"> 
-    <platform>all</platform>
-    <website>http://projects.lanik.org/KodiProject_CleanSubs.htm</website>
-    <summary lang="en_GB">Clean up downloaded subs from ads, etc</summary>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>http://forum.kodi.tv/showthread.php?tid=283342</forum>
-    <email>dalibor@lanik.org</email>
-    <description lang="en_GB">Clean up downloaded subs from ads and other rubbish, i.e. who translated subtitles or from which web they were downloaded. Should work with all encodings (tested with 1250, 1251 and utf-8) and srt, sub subtitles. I created basic definitions which are downloaded from my web at runtime. Mostly for serbo-croatian and czech, and there are definitions for english, german, french, polish, slovak, hungarian, dutch and portugese. If you have any strings you need removed in your language, submit them to me in UTF8 format an I can add them.</description>
-    <news>v7.1 [CR]
-- Fixed: v20 Nexus [CR]
-    v7.0 [CR]
-- Python 3 version [CR]
-</news>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-        <screenshot>screenshot-01.jpg</screenshot>
-        <screenshot>screenshot-02.jpg</screenshot>
-        <screenshot>screenshot-03.jpg</screenshot>
-        <banner>banner.jpg</banner>
-        <logo>logo.png</logo>
-    </assets>
-  </extension>
-</addon>
-
-
-<addon id="service.languagepreferencemanager" name="Language Preference Manager" version="1.0.6" provider-name="ace20022/scott967/rockrider69">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-	</requires>
-	<extension point="xbmc.service" library="default.py"/>
-	<extension point="xbmc.python.script" library="default.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Language Preference Manager</summary>
-		<description lang="en_GB">Sets the audio and subtitle track according to your language preferences</description>
-		<disclaimer lang="en_GB">For bugs, requests or general questions visit the Language Preference Manager thread on the Kodi forum.</disclaimer>
-		<platform>all</platform>
-		<news></news>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-
 <addon id="service.lt2http" name="lt2http" version="0.0.16" provider-name="ElementumOrg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
@@ -2978,33 +2763,6 @@ added additional information when gathering files
             <fanart>fanart.png</fanart>
         </assets>
     </extension>
-</addon>
-
-
-<addon id="service.stinger.notification" name="Stinger scene notification" version="2.0.0" provider-name="rmrector">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.requests" version="2.9.1" />
-	</requires>
-	<extension point="xbmc.service" start="login" library="python/service.py" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">This service notifies you of stinger scenes in the currently playing movie.</summary>
-		<description lang="en_gb">This add-on notifies you of stinger scenes in the current movie, popping up a notification when the credits roll. It uses tags to identify movies that have a stinger scene, which can be automatically added by the Universal Movie Scraper from The Movie Database.</description>
-		<disclaimer lang="en_gb">This add-on requires the tags 'aftercreditsstinger' and/or 'duringcreditsstinger' on movies with a stinger scene.</disclaimer>
-		<summary lang="pl_pl">Ta usługa powiadamia o dodatkowych scenach po napisach końcowych w aktualnie odtwarzanym filmie.</summary>
-		<description lang="pl_pl">Ten dodatek powiadamia o dodatkowych scenach po napisach końcowych w aktualnie odtwarzanym filmie, wyświetlając powiadomienie podczas napisów końcowych. Do tego celu używa tagów aby zidentyfikować filmy posiadające takie sceny. Tagi mogą być automatycznie dodawane przez Universal Movie Scraper z bazy The Movie Database. Dodatek może również wysyłać zapytania do bazy ChapterDb aby zidentyfikować moment wyświetlania końcowych napisów, jeśli odtwarzany film nie zawiera osadzonych informacji o rozdziałach.</description>
-		<disclaimer lang="pl_pl">Ten dodatek wymaga tagów 'aftercreditsstinger' i/lub 'duringcreditsstinger' w filmach ze scenami występującymi w trakcie lub po napisach końcowych.</disclaimer>
-		<news>v2.0.0 (2021-01-31)
-- Kodi 19 Matrix / Python 3 compatibility. Breaks compatibility with previous versions of Kodi.
-- remove ChapterDB</news>
-		<source>https://github.com/rmrector/service.stinger.notification</source>
-		<forum>https://forum.kodi.tv/showthread.php?tid=254004</forum>
-		<license>The MIT License</license>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-	</extension>
 </addon>
 
 
@@ -3051,7 +2809,7 @@ added additional information when gathering files
 
 <addon id="service.vpn.manager"
        name="VPN Manager for OpenVPN"
-       version="7.0.3"
+       version="7.0.4"
        provider-name="Zomboided">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -3083,7 +2841,7 @@ added additional information when gathering files
 <!-- ---------------------------------------------------------------------- -->
 
 
-<addon id="plugin.audio.dashradio" name="Litt Live Radio" version="421.3" provider-name="Diggz">
+<addon id="plugin.audio.dashradio" name="Litt Live Radio" version="421.4" provider-name="Diggz">
 <requires>
   <import addon="xbmc.python" version="3.0.0"/>
 </requires>
@@ -3091,8 +2849,10 @@ added additional information when gathering files
   <provides>audio</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
-    <summary lang="en">Dash Radio</summary>
-    <description lang="en">Litt Live (stylized as LITT Live, formerly Dash Radio) is a digital radio broadcasting platform with over 80 radio stations. These stations are curated by DJs, radio personalities, musicians, etc. The platform includes partner stations curated by Snoop Dogg, Kylie Jenner, Lil Wayne, Tech N9ne, Borgore, B-Real of Cypress Hill, and others. Dash Radio has no subscription fees and is commercial-free.</description>
+    <summary lang="en">LITT Live Radio</summary>
+    <description lang="en">Litt Live (stylized as LITT Live, formerly Dash Radio) is a digital radio broadcasting platform with over 80 radio stations. These stations are curated by DJs, radio personalities, musicians, etc. The platform includes partner stations curated by Snoop Dogg, Kylie Jenner, Lil Wayne, Tech N9ne, Borgore, B-Real of Cypress Hill, and others. Dash Radio has no subscription fees and is commercial-free.
+
+</description>
     <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
         <license>Free</license>
     <platform>all</platform>
@@ -3156,7 +2916,7 @@ added additional information when gathering files
 </addon>
 
 
-<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.7.5+nexus" provider-name="rols1 (rols1@gmx.de)">
+<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.7.8+nexus" provider-name="rols1 (rols1@gmx.de)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1"/>
     		<import addon="script.module.kodi-six" />
@@ -3216,7 +2976,7 @@ added additional information when gathering files
 
 <addon id="plugin.audio.ytmusic.exp"
        name="YT [COLOR red]Music[/COLOR] EXP"
-       version="1.0~beta33"
+       version="1.0~beta37"
        provider-name="ForeverGuest">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -3230,11 +2990,6 @@ added additional information when gathering files
     <platform>all</platform>
     <summary lang="en">Experimental Youtube [COLOR red]Music[/COLOR] plugin</summary>
     <description lang="en">EXPerimental plugin that lets you play music from Youtube Music.</description>
-    <news>
-1.0~beta33 (2024-12-06)
-- Update ytmusciapi to version `1.8.2`
-- Add configuration settings for API Client Id and API Client Secret
-    </news>
     <assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
@@ -3246,7 +3001,7 @@ added additional information when gathering files
 <!-- ---------------------------------------------------------------------- -->
 
 
-<addon id="plugin.image.flickrexplorer" name="FlickrExplorer" version="0.7.6+nexus" provider-name="rols1 (rols1@gmx.de)">
+<addon id="plugin.image.flickrexplorer" name="FlickrExplorer" version="0.7.8+nexus" provider-name="rols1 (rols1@gmx.de)">
   <requires>
    <import addon="xbmc.python" version="3.0.1"/>
     <import addon="script.module.kodi-six" />
@@ -3346,7 +3101,7 @@ added additional information when gathering files
 <!-- ---------------------------------------------------------------------- -->
 
 
-<addon id="plugin.program.moonlight-qt" name="Moonlight" version="0.4.6" provider-name="veldenb">
+<addon id="plugin.program.moonlight-qt" name="Moonlight" version="0.5.0" provider-name="veldenb">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="service.system.docker" optional="true" version="9.80.11.133"/>
@@ -3764,7 +3519,7 @@ All trademarks belong to them
 </addon>
 
 
-<addon id="weather.gismeteo" version="0.6.4+matrix.1" name="Gismeteo" provider-name="vl.maksime">
+<addon id="weather.gismeteo" version="0.6.4" name="Gismeteo" provider-name="vl.maksime">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.simpleplugin3" version="3.0.5"/>

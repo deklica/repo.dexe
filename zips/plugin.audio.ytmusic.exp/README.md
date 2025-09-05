@@ -9,8 +9,8 @@ All credit goes to Foreverguest.
 
 # Used libraries and versions
 
-- https://github.com/sigma67/ytmusicapi/tree/1.8.2
-- https://github.com/JuanBindez/pytubefix/tree/v8.6.0
+- https://github.com/sigma67/ytmusicapi/tree/1.10.0
+- https://github.com/JuanBindez/pytubefix/tree/v8.12.1
 
 ## Requires:
 
@@ -30,9 +30,29 @@ _or install it manually (updates should be installed manually)_
 
 ## Important:
 
-Due to changes in the Google API, you must now configure a API Client ID and API Client Secret in the Settings under 'API'. You can use the same values you use for the official Kodi youtube addon (and follow the instructions on how to obtain these credentials provided for that addon).
+Due to changes in the Google API, you must now configure an API Client ID and API Client Secret in the Settings under 'API'. The OAuth2 client ID must be of type "TV and limited input". If you are reusing credentials from the official Kodi YouTube addon, make sure to use the client ID created for "TV and limited input", as the YouTube addon may have multiple client IDs.
 
 On first run it will ask for OAuth authentication. Follow the instructions displayed in the UI.
+
+Wiki Instructions: [Personal-API-Keys](https://github.com/anxdpanic/plugin.video.youtube/wiki/Personal-API-Keys)
+
+## NEW: Unlimited Playlist Loading (YouTube v3 API)
+
+This addon now supports loading complete playlists without the 100-song limitation! By default, the addon uses YouTube v3 Data API (the same approach as the successful YouTube addon) to load unlimited playlist items.
+
+### Benefits:
+- **No more 100-song limit**: Load playlists with thousands of songs
+- **Proven reliability**: Uses the same method as the YouTube addon
+- **Automatic fallback**: Falls back to YouTube Music API if needed
+
+### Setup (Recommended):
+1. Get a YouTube Data API v3 key from [Google Cloud Console](https://console.cloud.google.com/)
+2. Enable "YouTube Data API v3" for your project
+3. Add the API key in addon settings under "YouTube API Key"
+
+Without an API key, the addon will fall back to YouTube Music API (limited to ~100 songs per playlist).
+
+**For detailed setup instructions, see [YOUTUBE_V3_README.md](YOUTUBE_V3_README.md)**
 
 ## Using Cookie Data instead of OAuth:
 

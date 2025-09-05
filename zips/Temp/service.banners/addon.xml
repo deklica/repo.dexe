@@ -1,0 +1,32 @@
+<addon id="service.banners" name="Banners" provider-name="Dalibor Lanik" version="3.0"> 
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" /> 
+    <import addon="script.module.pil" version="1.1.7" />
+  </requires>
+  <extension library="default.py" point="xbmc.service" start="startup"> 
+  </extension>
+  <extension library="standalone.py" point="xbmc.python.script">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata"> 
+    <platform>all</platform>
+    <website>http://projects.lanik.org/KodiProject_Banners.htm</website>
+    <summary lang="en_GB">Display banners while video plays</summary>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=283342</forum>
+    <email>dalibor@lanik.org</email>
+    <description lang="en_GB">Displays banners while playing video</description>
+    <news>v3.0 [CR]
+- Python 3 version  [CR]
+</news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshot-01.jpg</screenshot>
+        <screenshot>resources/screenshot-02.jpg</screenshot>
+        <screenshot>resources/screenshot-03.jpg</screenshot>
+        <banner>resources/banner.jpg</banner>
+        <logo>resources/logo.png</logo>
+    </assets>
+  </extension>
+</addon>
