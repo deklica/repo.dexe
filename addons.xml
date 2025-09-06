@@ -1839,7 +1839,7 @@ In order to get the API Key:
         <disclaimer lang="es">Addon opensource no afiliado con el Equipo de Kodi.</disclaimer>
         <license>GPL-3.0-or-later</license>
         <assets>
-            <icon>resources/icon.png</icon>
+            <icon>icon.png</icon>
         </assets>
         <news>[B]v1.0.3 (6 February 2024):[/B]
 - Fix issues detected by Coverity Scan and SonarCloud.
