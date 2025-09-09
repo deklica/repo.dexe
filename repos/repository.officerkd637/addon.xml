@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.officerkd637" name="Officer KD6-3.7's Repository" version="1.0" provider-name="OfficerKD637">
+    <extension point="xbmc.addon.repository" name="Example Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/OfficerKD637/repository.officerkd637/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/OfficerKD637/repository.officerkd637/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/OfficerKD637/repository.officerkd637/master/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Officer KD6-3.7's Repository</summary>
+        <description>A repository for Officer KD6-3.7's skins</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.jpg</icon>            
+        </assets>
+    </extension>
+</addon>
