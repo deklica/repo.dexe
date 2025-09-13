@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.41" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.42" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
         <import addon="script.module.inputstreamhelper" />
+        <import addon="inputstream.ffmpegdirect" />
         <import addon="script.module.six"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
