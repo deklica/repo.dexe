@@ -38,36 +38,3 @@ RunPlugin(plugin://plugin.program.maxql/?mode=7)</p>
 
 <p>Disable Auto-Play<br>
 RunPlugin(plugin://plugin.program.maxql/?mode=8)</p><br>
-
-
-### Supported Addons:
-
-1.  Seren<br>
-2.  Fen<br>
-3.  Fen Light<br>
-4.  Coalition<br>
-5.  POV<br>
-6.  The Gears<br>                  
-7.  Umbrella<br>
-8.  Dradis<br>
-9.  Shadow<br>
-10. Ghost<br>
-11. Base<br>        
-12. Chain Reaction<br>
-13. Asgard<br>
-14. Patriot<br>
-15. Black Lightning<br>
-16. Aliunde<br>
-17. Nightwing<br>
-18. Homelander<br>
-19. Quicksilver<br>
-20. Chains Genocide<br>
-21. Jokers Absolution<br>      
-22. Shazam<br>
-23. The Crew<br>              
-24. Alvin<br>
-25. Moria<br>
-26. Nine Lives<br>
-27. Otaku<br>
-28. Otaku Testing<br>
-29. Scrubs V2

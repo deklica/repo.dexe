@@ -1,3 +1,4 @@
+1.0.3 - Add The Gears and Otaku Testing. Fix Chains Genocide
 
 1.0.2 - Fix Otaku debrid auths. Fix Premiumizer auth.
 
