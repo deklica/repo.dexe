@@ -238,7 +238,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.1.9a" provider-name="X">
+<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.2.0a" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -254,9 +254,12 @@ service.subtitles.titlovi
     <assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
+      <screenshot>screen1.jpg</screenshot>
+      <screenshot>screen2.jpg</screenshot>
+      <screenshot>screen3.jpg</screenshot>
     </assets>
-    <summary lang="en_GB"></summary>
-	<description lang="en_GB">The X</description>
+    <summary lang="en_GB">The X</summary>
+	<description lang="en_GB"></description>
     <platform>all</platform>
     <language>en</language>
     <license>GPL-2.0-or-later</license>
