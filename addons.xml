@@ -570,7 +570,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.neo_flix" name="[COLORlime]Neo Flix[/COLOR]" version="3.2.64" provider-name="">
+<addon id="plugin.video.neo_flix" name="[COLORlime]Neo Flix[/COLOR]" version="3.2.68" provider-name="">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.resolveurl"/>
@@ -2348,7 +2348,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="0.7.0" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
+<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="0.8.0" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
   <requires>
     <!--py3 compliant-->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -2374,6 +2374,10 @@ In order to get the API Key:
     <description lang="hr_HR">Jednostavan Kodi modul koji olakšava razvijanje dodataka koji se temelje na InputStream dodatku i reprodukciji DRM zaštićenog sadržaja.</description>
     <description lang="ru_RU">Простой модуль для Kodi, который облегчает жизнь разработчикам дополнений, с использованием InputStream дополнений и воспроизведения DRM контента.</description>
     <news>
+v0.8.0 (2025-09-19)
+- Fix Widevine CDM installation on Windows, Linux and Macintosh
+- Add support for LG webOS
+    
 v0.7.0 (2024-09-24)
 - Get rid of distutils dependency
 - Option to get Widevine from lacros image
@@ -2412,7 +2416,7 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.magneto" version="5.09.01" name="Magneto Module" provider-name="Magneto">
+<addon id="script.module.magneto" version="5.09.02" name="Magneto Module" provider-name="Magneto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />

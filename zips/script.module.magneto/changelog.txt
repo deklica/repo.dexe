@@ -1,3 +1,14 @@
+[COLOR red][B]Version 5.09[/B][/COLOR]
+- Added 'true_size' key/value to season/show results, returns boolean if source returns correct pack file size.
+- Added setting to change instance preference for Comet, Mediafusion, Torz.
+- Rewrite Stremthru Torz P2P, improved season/show pack detection.
+
+[COLOR red][B]Version 5.08.01[/B][/COLOR]
+- Added Zilean, Torrentsdb, Stremthru Torz P2P.
+- Fix for Comet/Mediafusion.
+- Removed Bitlord, Ext.to, Isohunt2, Knightcrawler, Torrentgalaxy, Torrentquest, Yourbittorrent.
+- Rewrite Health/Test All Torrent Providers.
+
 [COLOR red][B]Version 5.06.01[/B][/COLOR]
 - Added Health/Test All Torrent Providers.
 
