@@ -1,0 +1,7 @@
+v0.2.3 - Updated to use new api.
+
+v0.2.2 - Changed favourites file path to prevent favourites deleting when addon updates. Added autoplay option in settings which plays the first player link automatically. Disable if links don't work to attempt optional players.  Added new api for channels from Daddylive which includes more channels! Added a backup of channels to the addon as a fallback if fetching channels from the server fails.
+
+v0.2.1 - Fix some resolvers. Added extra players. 
+
+v0.2.0 - Added favourite channels. Add/remove a channel via context menu. Added toggle timeshift on/off in settings. Timeshift enables pause and rewind but requires available storage. New code framework.

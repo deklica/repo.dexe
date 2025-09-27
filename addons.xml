@@ -238,7 +238,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.2.1a" provider-name="X">
+<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.2.3" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -442,7 +442,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.free99" version="1.8" name="[COLOR goldenrod]Free99[/COLOR]" provider-name="JewBMX, DIGGZ">
+<addon id="plugin.video.free99" version="1.9" name="[COLOR goldenrod]Free99[/COLOR]" provider-name="JewBMX, DIGGZ">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
