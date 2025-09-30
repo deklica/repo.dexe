@@ -2988,7 +2988,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.thecrew" name="THE CREW REPO" provider-name="The Crew" version="0.3.7">
+<addon id="repository.thecrew" name="THE CREW REPO" provider-name="The Crew" version="0.3.8">
 	<extension point="xbmc.addon.repository" name="The Crew" >
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
