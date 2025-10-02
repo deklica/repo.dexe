@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.2.3a" provider-name="X">
+<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.2.4" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -20,7 +20,7 @@
       <screenshot>screen3.jpg</screenshot>
     </assets>
     <summary lang="en_GB">The X</summary>
-	<description lang="en_GB">v0.2.3 - Updated to use new api. v0.2.2 - Changed favourites file path to prevent favourites deleting when addon updates. Added autoplay option in settings.  Added new api for channels from Daddylive which includes more channels! v0.2.1 - Fix some resolvers. Added extra players. v0.2.0 - Added favourite channels. Add/remove a channel via context menu. Added toggle timeshift on/off in settings. Timeshift enables pause and rewind but requires available storage. New code framework.</description>
+	<description lang="en_GB">v0.2.4 - Resolver fix. v0.2.3 - Updated to use new api. v0.2.2 - Changed favourites file path to prevent favourites deleting when addon updates. Added autoplay option in settings.  Added new api for channels from Daddylive which includes more channels! v0.2.1 - Fix some resolvers. Added extra players. v0.2.0 - Added favourite channels. Add/remove a channel via context menu. Added toggle timeshift on/off in settings. Timeshift enables pause and rewind but requires available storage. New code framework.</description>
     <platform>all</platform>
     <language>en</language>
     <license>GPL-2.0-or-later</license>
