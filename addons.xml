@@ -7,8 +7,7 @@ plugin.video.archive.org
 plugin.video.crackle (android)
 plugin.video.daddylive
 plugin.video.dlv2
-plugin.video.dream1click
-plugin.video.dreamtv
+plugin.video.dreammachine
 plugin.video.elementum
 plugin.video.fen
 plugin.video.fenlight (FenLightAM / Fen Light+ / Fen Light)
@@ -267,58 +266,37 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.dream1click"
-       name="[COLOR blue]D[COLOR salmon]r[COLOR violet]e[COLOR yellow]a[COLOR orange]m[COLOR lime]1[COLOR red]C[COLOR blue]l[COLOR salmon]i[COLOR violet]c[COLOR yellow]k[/COLOR]"
-       version="25.6.4"
-       provider-name="[COLOR springgreen]Tech[/COLOR] [COLOR green]E.[/COLOR] [COLOR lime]Coyote[/COLOR]">
-    <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.requests" version="2.22.0"/>
-    <import addon="script.module.dateutil" version="2.8.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Dream 1Click - Only in my Dreams</summary>
-    <description lang="en">This addon is for personal and private use only.</description>
-    <disclaimer lang="en">The author of this addon is not responsible for the use of it.</disclaimer>
-    <language>en</language>
-    <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-  </extension>
-</addon>
-
-
-<addon id="plugin.video.dreamtv"
-       name="[COLOR blue]D[COLOR salmon]r[COLOR violet]e[COLOR yellow]a[COLOR orange]m[COLOR lime]T[COLOR red]v[/COLOR]"
-       version="25.6.3"
-       provider-name="[COLORorange]Mr[COLORyellow].[COLORblue]G[COLORyellow].[/COLOR]">
+<addon
+    id="plugin.video.dreammachine"
+    name="[COLOR blue]D[COLOR salmon]r[COLOR violet]e[COLOR yellow]a[COLOR orange]m[COLOR lime]M[COLOR red]a[COLOR blue]c[COLOR salmon]h[COLOR violet]i[COLOR yellow]n[COLOR orange]e[/COLOR]"
+    version="25.8.22"
+    provider-name="[COLOR springgreen]G[/COLOR] [COLOR magenta]I[/COLOR][COLOR violet]n[/COLOR][COLOR mediumorchid]c[/COLOR][COLOR orchid].[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.1"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.six"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <summary lang="en">DreamTv - Only in my Dreams</summary>
-        <description lang="en">This addon is for personal and private use only.</description>
-        <disclaimer lang="en">The author of this addon is not responsible for the use of it.</disclaimer>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-    </assets>
+        <summary lang="en">Where dreams do come true ...</summary>
+        <description lang="en">Where dreams do come true ...</description>
+        <website></website>
+        <license>GPL 3.0</license>
+        <platform>all</platform>
         <language>en</language>
+        <disclaimer lang="en">The author of this addon makes not responsible for the use of it</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
     </extension>
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.111" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.112" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementumorg" optional="true" />
@@ -1801,7 +1779,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.4">
+<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.5">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -1813,13 +1791,16 @@ In order to get the API Key:
         <platform>all</platform>
         <license>MIT</license>
         <source>https://gitlab.com/personal4143605/optiklean</source>
-        <summary lang="en_US">Clean and optimize Kodi utility.</summary>
-        <summary lang="it_IT">Utilità di pulizia e ottimizzazione Kodi.</summary>
-        <description lang="en_US">Advanced tool to perform various types of Kodi cleaning and optimization.</description>
-        <description lang="it_IT">Strumento avanzato che permette di eseguire vari tipi di pulizie e ottimizzazione Kodi.</description>
+        <summary lang="en">Clean and optimize Kodi utility.</summary>
+        <summary lang="it">Utilità di pulizia e ottimizzazione Kodi.</summary>
+        <description lang="en">Advanced tool to perform various types of Kodi cleaning and optimization.</description>
+        <description lang="it">Strumento avanzato che permette di eseguire vari tipi di pulizie e ottimizzazione Kodi.</description>
         <assets>
             <icon>icon.jpg</icon>
             <fanart>fanart.jpg</fanart>
+            <screenshot>screenshot-1.png</screenshot>
+            <screenshot>screenshot-2.png</screenshot>
+            <screenshot>screenshot-3.png</screenshot>
         </assets>
     </extension>
 </addon>
@@ -1986,7 +1967,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.94" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.95" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="plugin.video.elementum" optional="true"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.4">
+<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.5">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -11,13 +11,16 @@
         <platform>all</platform>
         <license>MIT</license>
         <source>https://gitlab.com/personal4143605/optiklean</source>
-        <summary lang="en_US">Clean and optimize Kodi utility.</summary>
-        <summary lang="it_IT">Utilità di pulizia e ottimizzazione Kodi.</summary>
-        <description lang="en_US">Advanced tool to perform various types of Kodi cleaning and optimization.</description>
-        <description lang="it_IT">Strumento avanzato che permette di eseguire vari tipi di pulizie e ottimizzazione Kodi.</description>
+        <summary lang="en">Clean and optimize Kodi utility.</summary>
+        <summary lang="it">Utilità di pulizia e ottimizzazione Kodi.</summary>
+        <description lang="en">Advanced tool to perform various types of Kodi cleaning and optimization.</description>
+        <description lang="it">Strumento avanzato che permette di eseguire vari tipi di pulizie e ottimizzazione Kodi.</description>
         <assets>
             <icon>resources/media/icon.jpg</icon>
             <fanart>resources/media/fanart.jpg</fanart>
+            <screenshot>resources/media/screenshot-1.png</screenshot>
+            <screenshot>resources/media/screenshot-2.png</screenshot>
+            <screenshot>resources/media/screenshot-3.png</screenshot>
         </assets>
     </extension>
 </addon>
