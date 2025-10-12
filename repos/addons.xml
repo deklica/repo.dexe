@@ -2351,7 +2351,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.octopus" name="Octopus Repository" version="0.3.7" provider-name="Twiglet">
+<addon id="repository.octopus" name="Octopus Repository" version="0.3.9" provider-name="Twiglet">
 	<extension point="xbmc.addon.repository" name="Octopus Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
