@@ -1,3 +1,7 @@
+[COLOR red][B]Version 5.10[/B][/COLOR]
+- Changed default instance for Comet, Mediafusion, Torz.
+- Removed Bitcq, Torrentfunk.
+
 [COLOR red][B]Version 5.09[/B][/COLOR]
 - Added 'true_size' key/value to season/show results, returns boolean if source returns correct pack file size.
 - Added setting to change instance preference for Comet, Mediafusion, Torz.
