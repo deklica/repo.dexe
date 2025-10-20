@@ -205,7 +205,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.daddylive" name="DaddyLive" version="4.45" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="DaddyLive" version="4.46" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -367,7 +367,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.43">
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.44">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -547,7 +547,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.neo_flix" name="[COLORlime]Neo Flix[/COLOR]" version="3.3.02" provider-name="">
+<addon id="plugin.video.neo_flix" name="[COLORlime]Neo Flix[/COLOR]" version="3.3.06" provider-name="">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.resolveurl"/>
@@ -1780,7 +1780,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.5">
+<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.6">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -1792,10 +1792,10 @@ In order to get the API Key:
         <platform>all</platform>
         <license>MIT</license>
         <source>https://gitlab.com/personal4143605/optiklean</source>
-        <summary lang="en">Clean and optimize Kodi utility.</summary>
-        <summary lang="it">Utilità di pulizia e ottimizzazione Kodi.</summary>
-        <description lang="en">Advanced tool to perform various types of Kodi cleaning and optimization.</description>
-        <description lang="it">Strumento avanzato che permette di eseguire vari tipi di pulizie e ottimizzazione Kodi.</description>
+        <summary lang="en_GB">Clean and optimize Kodi utility.</summary>
+        <summary lang="it_IT">Utilità di pulizia e ottimizzazione Kodi.</summary>
+        <description lang="en_GB">Advanced tool to perform various types of Kodi cleaning and optimization.</description>
+        <description lang="it_IT">Strumento avanzato che permette di eseguire vari tipi di pulizie e ottimizzazione Kodi.</description>
         <assets>
             <icon>icon.jpg</icon>
             <fanart>fanart.jpg</fanart>
@@ -2406,7 +2406,7 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.magneto" version="5.10.01" name="Magneto Module" provider-name="Magneto">
+<addon id="script.module.magneto" version="5.10.02" name="Magneto Module" provider-name="Magneto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
