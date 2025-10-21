@@ -1,4 +1,8 @@
-0.2.6 = Resolver fix.
+0.2.8 - Resolver fix.
+
+0.2.7 - Fix Schedule.
+
+0.2.6 - Resolver fix.
 
 0.2.5 - Added extra error handling. Force http to hopefully prevent ssl error. Some code cleanup.
 

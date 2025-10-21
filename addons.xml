@@ -236,7 +236,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.2.6" provider-name="X">
+<addon id="plugin.video.dlv2" name="DaddyLive V2" version="0.2.8" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
