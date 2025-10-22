@@ -1,4 +1,6 @@
-0.2.8 - Resolver fix.
+0.2.9 - Fix Schedule.
+
+0.2.8 - Resolver Fix.
 
 0.2.7 - Fix Schedule.
 
