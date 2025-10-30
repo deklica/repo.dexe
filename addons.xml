@@ -548,7 +548,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.neo_flix" name="[COLORlime]Neo Flix[/COLOR]" version="3.3.06" provider-name="">
+<addon id="plugin.video.neo_flix" name="[COLORlime]Neo Flix[/COLOR]" version="3.3.10" provider-name="">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.resolveurl"/>
@@ -841,7 +841,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.6" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.7" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -2292,11 +2292,11 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.debridmgr" version="1.0.5" name="Debrid Manager" provider-name="Zaxxon709">
+<addon id="script.module.debridmgr" version="1.0.6" name="Debrid Manager" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-		<import addon="script.module.dbview" version="1.0.4" />
+		<import addon="script.module.dbview" version="1.0.5" />
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">
@@ -2318,7 +2318,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.dbview" name="dbviewer" version="1.0.4" provider-name="Zaxxon709">
+<addon id="script.module.dbview" name="dbviewer" version="1.0.5" provider-name="Zaxxon709">
     <extension point="xbmc.python.pluginsource" library="default.py" />
     <extension point="xbmc.python.module" library="resources" />
     <extension point="xbmc.addon.metadata">
@@ -2327,6 +2327,9 @@ In order to get the API Key:
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <source>https://</source>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
     </extension>
 </addon>
 

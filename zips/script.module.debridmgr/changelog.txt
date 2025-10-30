@@ -1,4 +1,6 @@
-1.0.5 - Fixed premiumize auth view. Added Magneto external scrapers
+1.0.6 - Minor bug fixes. Add dialog for changing external scrapers
+
+1.0.5 - Fixed premiumize auth view and revoke. Added Magneto external scrapers
 
 1.0.4 - Minor bug fixes
 
