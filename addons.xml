@@ -204,7 +204,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.daddylive" name="DaddyLive" version="4.48" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="DaddyLive" version="4.49" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
