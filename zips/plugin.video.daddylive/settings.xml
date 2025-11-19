@@ -1,0 +1,15 @@
+<settings>
+    <category label="General">
+        <setting id="mode" type="enum" label="Default Mode" default="0" values="Live Sports|Live TV" />
+
+        <setting id="time_format" type="enum" label="Time Format" default="0" values="12-hour (Standard)|24-hour (Military)" />
+    </category>
+
+    <category label="Adult Content">
+        <setting id="adult_pw" type="text" label="Adult Access Password" default="lol" option="hidden" />
+    </category>
+
+    <category label="Advanced">
+        <setting id="debug_log" type="bool" label="Enable Debug Logging" default="false" />
+    </category>
+</settings>

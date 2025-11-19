@@ -1,3 +1,13 @@
+1.0.5 - Resolver fix.
+
+1.0.4 - Workaround for channels.  Refresh Schedule if channels are empty.
+
+1.0.3 - Removed refresh on Kodi startup. Added refresh every 8 hours during addon use. Use refresh option to check for new schedule if needed.
+
+1.0.2 - Added some color theming.
+
+1.0.1 - Added notifications window. Added option for 24-hour time format in settings. Brightened up the menus. Resolver fix.
+
 1.0.0 - Added search function.  Added schedule refresh. Added cache schedule and channels on Kodi startup.
 
 0.3.0 - Minor bugfix and code cleanup.
@@ -18,6 +28,6 @@ v0.2.3 - Updated to use new api.
 
 v0.2.2 - Changed favourites file path to prevent favourites deleting when addon updates. Added autoplay option in settings which plays the first player link automatically. Disable if links don't work to attempt optional players.  Added new api for channels from Daddylive which includes more channels! Added a backup of channels to the addon as a fallback if fetching channels from the server fails.
 
-v0.2.1 - Fix some resolvers. Added extra players. 
+v0.2.1 - Fix some resolvers. Added extra players.
 
 v0.2.0 - Added favourite channels. Add/remove a channel via context menu. Added toggle timeshift on/off in settings. Timeshift enables pause and rewind but requires available storage. New code framework.

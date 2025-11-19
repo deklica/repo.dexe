@@ -4,7 +4,6 @@
 
 --- Video ---
 plugin.video.archive.org
-plugin.video.crackle (android)
 plugin.video.daddylive
 plugin.video.dlv2
 plugin.video.dreammachine
@@ -172,39 +171,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.crackle" name="Crackle" version="2024.7.22" provider-name="eracknaphobia">
-  <requires>
-      <import addon="xbmc.python" version="3.0.0"/>
-      <import addon="script.module.requests"/>
-      <import addon="script.module.inputstreamhelper"/>
-      <import addon="script.module.kodi-six" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>android</platform>
-    <summary lang="en_GB">Crackle delivers popular, award-winning TV, movies and originals. With no limit to how much you can watch across all your devices, you can binge all you want, wherever you want.</summary>
-    <description lang="en_GB">Crackle is a video streaming distributor of original web shows, Hollywood movies, and TV shows. Founded in the early 2000s as Grouper, and rebranded in 2007, Crackle is owned by Sony Pictures Entertainment.</description>
-      <news>
-        - Refactor for upstream changes
-        - Added pagination
-        - Playback is only possible on Android Devices now because of widevine VMP
-        - Added settings for page size and sort by
-      </news>
-    <language>en</language>
-    <license>GPL-2.0-or-later</license>
-    <forum></forum>
-    <source>https://github.com/eracknaphobia/plugin.video.crackle</source>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-
-<addon id="plugin.video.daddylive" name="DaddyLive" version="4.49" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="DaddyLive" version="4.50" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -235,7 +202,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.dlv2" name="DaddyLive V2" version="1.0.0" provider-name="X">
+<addon id="plugin.video.dlv2" name="DaddyLive V2" version="1.0.5" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -247,7 +214,6 @@ service.subtitles.titlovi
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
-  <extension point="xbmc.service" library="service.py" />
   <extension point="xbmc.addon.metadata">
     <assets>
       <icon>icon.png</icon>
@@ -257,7 +223,7 @@ service.subtitles.titlovi
       <screenshot>screen3.jpg</screenshot>
     </assets>
     <summary lang="en_GB">The X</summary>
-	<description lang="en_GB"></description>
+	<description lang="en_GB">In memory of Cman 1972 - 2025.</description>
     <platform>all</platform>
     <language>en</language>
     <license>GPL-2.0-or-later</license>
@@ -367,7 +333,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.50">
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.51">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -1755,7 +1721,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.6">
+<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.7">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -1767,6 +1733,7 @@ In order to get the API Key:
         <platform>all</platform>
         <license>MIT</license>
         <source>https://gitlab.com/personal4143605/optiklean</source>
+        <license>https://opensource.org/licenses/MIT</license>
         <summary lang="en_GB">Clean and optimize Kodi utility.</summary>
         <summary lang="it_IT">Utilità di pulizia e ottimizzazione Kodi.</summary>
         <description lang="en_GB">Advanced tool to perform various types of Kodi cleaning and optimization.</description>
@@ -1943,7 +1910,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.96" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.97" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="plugin.video.elementum" optional="true"/>
