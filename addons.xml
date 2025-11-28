@@ -202,7 +202,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.dlv2" name="DaddyLive V2" version="1.0.5" provider-name="X">
+<addon id="plugin.video.dlv2" name="DaddyLive V2" version="1.0.7" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -333,7 +333,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.51">
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.59">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -781,7 +781,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.8" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.10" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>

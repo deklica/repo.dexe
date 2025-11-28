@@ -2410,7 +2410,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.One" version="1.12" name="ONEPLAY Repositorio" provider-name="TEAM ONEPLAY">
+<addon id="repository.One" version="1.13" name="ONEPLAY Repositorio" provider-name="TEAM ONEPLAY">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -2431,7 +2431,8 @@ repository.zero
 • Adição de capturas de tela em "resources" para visualização prévia.
 • Atualização dos links de apontamento para o GitHub.
 • O repositório oferecerá suporte apenas para as versões mais recentes.
-• Atualização em: 05/06/2025
+• Atualizado os links de apontamento para page.
+• Atualização em: 24/11/2025
 		</news>
 		<assets>
 			<icon>icon.png</icon>
