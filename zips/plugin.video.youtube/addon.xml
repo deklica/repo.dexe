@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.youtube" name="YouTube" version="7.2.0.3+unofficial.1" provider-name="anxdpanic, bromix, MoojMidge">
+<addon id="plugin.video.youtube" name="YouTube" version="7.3.0+unofficial.1" provider-name="anxdpanic, bromix, MoojMidge">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.27.1"/>
@@ -27,6 +27,7 @@
         <source>https://github.com/anxdpanic/plugin.video.youtube</source>
         <reuselanguageinvoker>true</reuselanguageinvoker>
         <summary lang="bg_BG">Добавка за YouTube</summary>
+        <summary lang="bs_BA">Dodatak za YouTube</summary>
         <summary lang="cs_CZ">Plugin pro YouTube</summary>
         <summary lang="da_DK">Plugin til YouTube</summary>
         <summary lang="de_DE">Plugin für YouTube</summary>
@@ -38,6 +39,7 @@
         <summary lang="et_EE">YouTube lisamoodul</summary>
         <summary lang="fi_FI">YouTube-lisäosa</summary>
         <summary lang="fr_FR">Plugin pour YouTube</summary>
+        <summary lang="ga">Breiseán do YouTube</summary>
         <summary lang="he_IL">תוסף עבור YouTube</summary>
         <summary lang="hr_HR">Dodatak za YouTube</summary>
         <summary lang="hu_HU">YouTube kiegészítő</summary>
@@ -58,6 +60,7 @@
         <summary lang="zh_CN">油管插件</summary>
         <summary lang="zh_TW">YouTube附加元件</summary>
         <description lang="bg_BG">YouTube е един от най-големите уеб сайтове за споделяне на видео в целия свят.</description>
+        <description lang="bs_BA">YouTube je jedna od najvećih svjetskih web stranica za dijeljenje videozapisa.</description>
         <description lang="cs_CZ">YouTube je jedna z největších webových stránek světa sdílející video.</description>
         <description lang="da_DK">YouTube er et af verdens største videodelingswebsteder.</description>
         <description lang="de_DE">YouTube ist eines der größten Video-Sharing-Websites der Welt.</description>
@@ -86,6 +89,7 @@
         <description lang="vi_VN">YouTube là một trong những trang web chia sẻ video lớn nhất trên thế giới.</description>
         <description lang="zh_CN">油管是世界上最大的视频分享网站之一。</description>
         <description lang="zh_TW">Youtube 是全世界最大的影片分享網站。</description>
+        <disclaimer lang="bs_BA">Ovaj dodatak nije odobren od strane Googlea</disclaimer>
         <disclaimer lang="cs_CZ">Tento plugin není schválen společností Google</disclaimer>
         <disclaimer lang="da_DK">Dette plugin er ikke godkendt af Google</disclaimer>
         <disclaimer lang="de_DE">Dieses Plugin ist nicht von Google befürwortet</disclaimer>
@@ -108,34 +112,35 @@
         <disclaimer lang="sk_SK">Tento doplnok nie je schválený spoločnosťou Google</disclaimer>
         <disclaimer lang="sv_SE">Denna insticksmodul är inte godkänd av Google</disclaimer>
         <disclaimer lang="tr_TR">Bu eklenti Google tarafından üretilmemiştir</disclaimer>
-        <disclaimer lang="uk_UA">Цей плагін не має відношення до компанії Google</disclaimer>
+        <disclaimer lang="uk_UA">Цей додаток не має відношення до компанії Google</disclaimer>
         <disclaimer lang="vi_VN">Plugin này không được xác nhận bởi Google</disclaimer>
         <disclaimer lang="zh_CN">此插件未被谷歌认可</disclaimer>
         <disclaimer lang="zh_TW">此附加元件未由Google支持</disclaimer>
-    <news>## v7.2.0.3
+    <news>## v7.3.0
 ### Fixed
-- Fix performance regression with channel filters
-- Fix regression preventing video playback from Kodi Info dialog
-- Fix exception in youtube.helper.v3.response_to_items when using Kodi 18 (Python 2)
-- Fix exception in YouTubeRequestClient.json_traverse when using Kodi 18 (Python 2)
-- Fix handling of custom Watch Later playlist in add to playlist dialog
-- Fix Liked video playlist not loading
-- Fix typo preventing some video only searches from working
-- Fix incorrect deletion of provider parameter in 10c3758
-- Fix possible hangs in multiple busy dialog workaround
-- Fix misidentifying channels in channel filter
-- Attempt to avoid race condition where user input occurs prior to window rerouting
-- Fix incorrectly referencing channels as playlist in My Subscriptions after db44928
-- Improve handling of invalid playlists in My Subscriptions after db44928
-- Update YouTube.get_related_videos and YouTube.get_related_for_home
-- Fix error with listing comments if number of replies is 1000+
-- Fix regression in opening playlists of logged in user
-- Fix regressions in checking channel filters
-- Clear old function cache values on initial run after install
-- Fix My Subscriptions not loading old or previously accessed content
-- Manually redirect video server requests if required
-- Improve logging of client ID
-- Fix possible exception that may occur if video thumbnails fail to update
-- Fix unsubscribing from My Subscriptions
-- Fix folders for channel shorts and live stream</news></extension>
+- Revert change to busy polling interval
+- Prune invalid entries from DB when closing connection
+- Fix regressions with SQLite db operations
+- Disable label masks being used in Kodi 18
+- Python 2 compatibility workaround for lack of timeout when trying to acquire an RLock
+- More expansive handling of inconsistent urllib3 exception re-raising
+- Fix regression in handling audio only setting after d154325c5b672dccc6a17413063cfdeb32256ffd
+- Fix comments not using correct sort methods
+- Fix incorrectly using playlist cache entries that have been invalidated by playlist modification
+- Fix some context menu actions failing for video item bookmarks
+- Ensure listings and items added by the addon have correct sort order
+- Fix resetting client region when playing media with subtitles enabled
+- Only add playable items to playlist when adding related items
+- Fix using invalid default end limit with Playlist.GetItems JSONRPC method
+- Fix conversion of SRT subtitles to WebVTT
+- Workaround playback failure of progressive streams
+- Fix re-sorting live search lists
+- Disable use of custom thumbnail urls
+- Workaround addon service not starting prior to plugin invocation
+- Fix unofficial version using localised sort order
+- Fix parsing of logged_in query parameter
+- Fix typo in YouTubePlayerClient error hook
+- Fix not resolving single playable items when using the uri2addon plugin endpoint
+- Correctly check whether access tokens are available to be used for player requests
+- </news></extension>
 </addon>
