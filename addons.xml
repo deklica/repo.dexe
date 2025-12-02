@@ -202,7 +202,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.dlv2" name="DaddyLive V2" version="1.0.7" provider-name="X">
+<addon id="plugin.video.dlv2" name="DaddyLive V2" version="1.0.9" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -1752,7 +1752,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.7">
+<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.8">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
