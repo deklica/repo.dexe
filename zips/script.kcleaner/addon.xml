@@ -17,9 +17,7 @@
     <forum>http://forum.kodi.tv/showthread.php?tid=307919</forum>
     <email>dalibor@lanik.org</email>
     <description lang="en_GB">Clean up temporary files in Kodi.</description>
-    <news>v4.0 [CR]
-- Python 3 version [CR]
-</news>
+    <news>v4.0 [CR]- Python 3 version [CR](Forked and fixed for kodi v20 use)</news>
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>

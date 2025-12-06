@@ -14,6 +14,7 @@ plugin.video.free99
 plugin.video.imdb.trailers
 plugin.video.json_iptv
 plugin.video.last_played
+plugin.video.neo_flix
 plugin.video.playlistbee
 plugin.video.premiumizerx
 plugin.video.ptfm
@@ -333,7 +334,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.59">
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.60">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -510,6 +511,31 @@ service.subtitles.titlovi
 		    <fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
+</addon>
+
+
+<addon id="plugin.video.neo_flix" name="[COLORlime]Neo Flix[/COLOR]" version="3.3.28" provider-name="">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.resolveurl"/>
+		<import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="inputstream.adaptive" version="2.6.0"/>
+    </requires>
+	 <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+	<description lang="en_GB">No Streams Are Stored Locally-All Are Available Freely On The Internet-A Mixture Of Free And Debrid Links</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GPL-2.0-or-later</license>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+  </assets>
+  </extension>
 </addon>
 
 
@@ -1752,7 +1778,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.8">
+<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.9">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -2186,17 +2212,15 @@ In order to get the API Key:
     <forum>http://forum.kodi.tv/showthread.php?tid=307919</forum>
     <email>dalibor@lanik.org</email>
     <description lang="en_GB">Clean up temporary files in Kodi.</description>
-    <news>v4.0 [CR]
-- Python 3 version [CR]
-</news>
+    <news>v4.0 [CR]- Python 3 version [CR](Forked and fixed for kodi v20 use)</news>
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
-        <screenshot>resources/screenshot-01.jpg</screenshot>
-        <screenshot>resources/screenshot-02.jpg</screenshot>
-        <screenshot>resources/screenshot-03.jpg</screenshot>
-        <banner>resources/banner.jpg</banner>
-        <logo>resources/logo.png</logo>
+        <screenshot>screenshot-01.jpg</screenshot>
+        <screenshot>screenshot-02.jpg</screenshot>
+        <screenshot>screenshot-03.jpg</screenshot>
+        <banner>banner.jpg</banner>
+        <logo>logo.png</logo>
     </assets>
   </extension>
 </addon>
