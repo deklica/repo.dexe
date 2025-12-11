@@ -40,7 +40,6 @@ service.subtitles.opensubtitles_by_opensubtitles
 service.subtitles.opensubtitles_plus
 
 --- Program & Services ---
-plugin.program.autocompletion
 plugin.program.autoenabler
 plugin.program.maxql
 plugin.program.openwizard
@@ -62,6 +61,7 @@ script.module.debridmgr
 script.module.dbview
 script.module.inputstreamhelper
 script.module.magneto
+script.module.microjenscrapers
 script.module.viperscrapers
 script.module.youtube.dl
 script.service.sponsorblock
@@ -86,7 +86,7 @@ plugin.audio.ytmusic.exp
 plugin.image.flickrexplorer
 
 --- Dependencies ---
-script.module.autocompletion
+script.module.pil
 script.module.youtube_channels
 script.free99.artwork
 script.scrubsv2.artwork
@@ -172,7 +172,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.daddylive" name="DaddyLive" version="4.50" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="DaddyLive" version="4.53" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -334,7 +334,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.60">
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.61">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -1549,34 +1549,6 @@ In order to get the API Key:
 <!-- ---------------------------------------------------------------------- -->
 
 
-<addon id="plugin.program.autocompletion" name="AutoCompletion for virtual keyboard" version="2.1.3" provider-name="phil65, sualfred, xulek, finkleandeinhorn, Ivar Brandt">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.autocompletion" version="2.0.5"/>
-    </requires>
-    <extension point="xbmc.python.script" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.python.pluginsource" library="plugin.py" />
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">AutoCompletion for the virtual keyboard (needs skin support)</summary>
-        <description lang="en_GB">AutoCompletion for the virtual keyboard (needs skin support)</description>
-        <summary lang="es_ES">Autocompletar para el teclado virtual (necesita soporte de skin)</summary>
-        <description lang="es_ES">Autocompletar para el teclado virtual (necesita soporte de skin)</description>
-        <platform>all</platform>
-        <license>GPL-2.0-or-later</license>
-        <source>https://github.com/ivarbrandt/plugin.program.autocompletion</source>
-        <assets>
-            <icon>icon.png</icon>
-            <screenshot>screenshot-01.jpg</screenshot>
-            <screenshot>screenshot-02.jpg</screenshot>
-            <screenshot>screenshot-03.jpg</screenshot>
-        </assets>
-    </extension>
-</addon>
-
-
 <addon id="plugin.program.autoenabler" name="Auto Enabler" version="1.0.1" provider-name="slam">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -1778,7 +1750,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.9">
+<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.1.0">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -2068,12 +2040,12 @@ In order to get the API Key:
 <addon id="script.extendedinfo" name="ExtendedInfo Script" version="6.0.9" provider-name="scott967">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="resource.images.studios.white" version="0.0.25"/>
+		<import addon="resource.images.studios.white" version="0.0.30"/>
 		<import addon="script.module.routing" version="0.2.3+matrix.1"/>
-        <import addon="script.module.pil" version="5.1.0"/>
+        <import addon="script.module.pil" version="1.1.7"/>
 		<import addon="plugin.program.autocompletion" version="2.1.2"/>
-        <import addon="script.module.autocompletion" version="2.0.3"/>
-        <import addon="script.module.requests" version="2.25.1+matrix.1"/>
+        <import addon="script.module.autocompletion" version="2.1.1"/>
+        <import addon="script.module.requests" version="2.31.0"/>
 	</requires>
 	<extension point="xbmc.python.script" library="default.py">
 		<provides>executable</provides>
@@ -2429,6 +2401,35 @@ v0.5.9 (2022-03-22)
 		<disclaimer>The author does not host or own any content found within this addon. The author is not responsible for the content found using this addon. The author is not responsible for the use of this addon.</disclaimer>
 		<assets><icon>magneto.png</icon></assets>
 	</extension>
+</addon>
+
+
+<addon id="script.module.microjenscrapers" name="MicroJen Scraper Module" version="1.5" provider-name="MicroJen Community">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">MicroJen Scrapers Module</summary>
+            <description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts. [CR]Massive thanks and respect to Crucial Minds for permission to use the Base Code and to The Jen Crew for their valuable contributions in bringing this project together.</description>
+                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    <news></news>
+    </extension>
 </addon>
 
 
@@ -2993,7 +2994,7 @@ added additional information when gathering files
 </addon>
 
 
-<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.7.8+nexus" provider-name="rols1 (rols1@gmx.de)">
+<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.7.9+nexus" provider-name="rols1 (rols1@gmx.de)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1"/>
     		<import addon="script.module.kodi-six" />
@@ -3108,22 +3109,14 @@ added additional information when gathering files
 <!-- ---------------------------------------------------------------------- -->
 
 
-<addon id="script.module.autocompletion" name="AutoCompletion library" version="2.1.1" provider-name="Philipp Temminghoff (phil65), bbaronSVK, finkleandeinhorn, berkhornet">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" version="2.9.1"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Module providing some AutoCompletion functions</summary>
-        <description lang="en_GB">Module providing some AutoCompletion functions</description>
-        <platform>all</platform>
-        <license>GPL-2.0-or-later</license>
-        <source>https://github.com/finkleandeinhorn/script.module.autocompletion</source>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
+<addon id="script.module.pil" name="Python Image Library" version="1.1.7" provider-name="PythonWare">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
 </addon>
 
 
@@ -3178,7 +3171,7 @@ added additional information when gathering files
 <!-- ---------------------------------------------------------------------- -->
 
 
-<addon id="plugin.program.moonlight-qt" name="Moonlight" version="0.5.0" provider-name="veldenb">
+<addon id="plugin.program.moonlight-qt" name="Moonlight" version="0.5.2" provider-name="veldenb">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="service.system.docker" optional="true" version="9.80.11.133"/>
@@ -3596,7 +3589,7 @@ All trademarks belong to them
 </addon>
 
 
-<addon id="weather.gismeteo" version="0.6.4" name="Gismeteo" provider-name="vl.maksime">
+<addon id="weather.gismeteo" version="0.6.4+matrix.1" name="Gismeteo" provider-name="vl.maksime">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.simpleplugin3" version="3.0.5"/>

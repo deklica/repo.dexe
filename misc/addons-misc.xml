@@ -10,7 +10,6 @@ plugin.video.live.streamspro
 
 --- Dependencies ---
 script.module.jetextractors
-script.module.microjenscrapers
 script.module.thetvdb
 
 --- Other ---
@@ -24,7 +23,6 @@ service.rom.collection.browser
 plugin.video.smr_link_tester
 
 --- NoN ---
-resource.uisounds.fentastic
 script.embuary.helper
 script.globalsearch
 script.module.urlresolver

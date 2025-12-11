@@ -7,6 +7,10 @@ CHANGE HISTORY 	Kodi-Addon-TuneIn2017 (previosly plugin for Plexmediaserver)
 			Plex-Forum:
 			https://forums.plex.tv/discussion/288260/rel-tunein2017
 
+09.12.2025 1.7.9	Adaptation to changed structure of embedded json data.
+			“News & Talk” menu reactivated (TuneIn menu changed).
+			blockextract (Modul util_tunein2017): extended with block endmark.
+
 09.03.2025	1.7.8	StreamTests: string handling for None value in ret.get('error')
 
 09.03.2025	1.7.7 	in rare cases Python's urllib library produces an SLL error, although 
