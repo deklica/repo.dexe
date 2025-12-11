@@ -86,17 +86,14 @@ plugin.audio.ytmusic.exp
 plugin.image.flickrexplorer
 
 --- Dependencies ---
-script.module.pil
 script.module.youtube_channels
 script.free99.artwork
 script.scrubsv2.artwork
+resource.images.whitelodge.artwork
 
 --- Other ---
 plugin.program.moonlight-qt (linux)
 pvr.eon (linux, android)
-resource.images.whitelodge.artwork
-resource.uisounds.kodi-12
-resource.uisounds.kodi-24
 script.cu.lrclyrics
 weather.gismeteo
 weather.openmeteo
@@ -108,9 +105,6 @@ plugin.video.smr_link_tester
 script.module.resolveurl
 script.module.resolveurl.xxx
 resource.images.studios.white
-plugin.program.iagl
-plugin.program.retrobiostool
-script.module.archive_tool
 script.yatse.kodi
 script.module.orion
 
@@ -2042,7 +2036,7 @@ In order to get the API Key:
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="resource.images.studios.white" version="0.0.30"/>
 		<import addon="script.module.routing" version="0.2.3+matrix.1"/>
-        <import addon="script.module.pil" version="1.1.7"/>
+        <import addon="script.module.pil" version="5.1.0"/>
 		<import addon="plugin.program.autocompletion" version="2.1.2"/>
         <import addon="script.module.autocompletion" version="2.1.1"/>
         <import addon="script.module.requests" version="2.31.0"/>
@@ -3109,17 +3103,6 @@ added additional information when gathering files
 <!-- ---------------------------------------------------------------------- -->
 
 
-<addon id="script.module.pil" name="Python Image Library" version="1.1.7" provider-name="PythonWare">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0" />
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-  </extension>
-</addon>
-
-
 <addon id="script.module.youtube_channels" name="YouTube Channels" version="0.2.0" provider-name="Alexander Seiler">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -3164,6 +3147,24 @@ added additional information when gathering files
             <icon>icon.png</icon>
         </assets>
         <news>Changed the fanart to be a simple small image that has a matching color tone to the theme chosen.</news>
+    </extension>
+</addon>
+
+
+<addon id="resource.images.whitelodge.artwork" name="Whitelodge Artwork" version="0.0.7" provider-name="bleak-lodge">
+    <extension point="kodi.resource.images" compile="false" type="Whitelodge" />
+    <requires>
+        <import addon="kodi.resource" version="1.0.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Themes for Whitelodge add-on</summary>
+        <description lang="en_GB">Provided separately to allow easier distribution and consume less bandwidth</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
     </extension>
 </addon>
 
@@ -3450,56 +3451,6 @@ This addon is inofficial and not linked in any form to eon.tv
 All trademarks belong to them
 </news>
 	</extension>
-</addon>
-
-
-<addon id="resource.images.whitelodge.artwork" name="Whitelodge Artwork" version="0.0.7" provider-name="bleak-lodge">
-    <extension point="kodi.resource.images" compile="false" type="Whitelodge" />
-    <requires>
-        <import addon="kodi.resource" version="1.0.0"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Themes for Whitelodge add-on</summary>
-        <description lang="en_GB">Provided separately to allow easier distribution and consume less bandwidth</description>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-
-<addon id="resource.uisounds.kodi-12" version="1.0.1" name="Kodi UI Sounds -12dB" provider-name="Team Kodi">
-  <requires>
-    <import addon="kodi.resource" version="1.0.0"/>
-  </requires>
-  <extension point="kodi.resource.uisounds"/>
-  <extension point="kodi.addon.metadata">
-    <summary lang="en">Kodi GUI sounds</summary>
-    <description lang="en">Kodi GUI sounds reduced by 12 dB from default</description>
-    <platform>all</platform>
-    <assets>
-      <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-
-<addon id="resource.uisounds.kodi-24" version="1.0.1" name="Kodi UI Sounds -24dB" provider-name="Team Kodi">
-  <requires>
-    <import addon="kodi.resource" version="1.0.0"/>
-  </requires>
-  <extension point="kodi.resource.uisounds"/>
-  <extension point="kodi.addon.metadata">
-    <summary lang="en">Kodi GUI sounds</summary>
-    <description lang="en">Kodi GUI sounds reduced by 24 dB from default</description>
-    <platform>all</platform>
-    <assets>
-      <icon>icon.png</icon>
-    </assets>
-  </extension>
 </addon>
 
 
