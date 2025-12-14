@@ -197,7 +197,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.dlv2" name="DaddyLive V2" version="1.0.9" provider-name="X">
+<addon id="plugin.video.dlv2" name="DaddyLive V2" version="1.1.0" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -868,7 +868,7 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.youtube" name="YouTube" version="7.3.0+unofficial.1" provider-name="anxdpanic, bromix, MoojMidge">
+<addon id="plugin.video.youtube" name="YouTube" version="7.3.0.1+unofficial.1" provider-name="anxdpanic, bromix, MoojMidge">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.27.1"/>
@@ -985,33 +985,8 @@ Random updates by lolage.
         <disclaimer lang="vi_VN">Plugin này không được xác nhận bởi Google</disclaimer>
         <disclaimer lang="zh_CN">此插件未被谷歌认可</disclaimer>
         <disclaimer lang="zh_TW">此附加元件未由Google支持</disclaimer>
-    <news>## v7.3.0
-### Fixed
-- Revert change to busy polling interval
-- Prune invalid entries from DB when closing connection
-- Fix regressions with SQLite db operations
-- Disable label masks being used in Kodi 18
-- Python 2 compatibility workaround for lack of timeout when trying to acquire an RLock
-- More expansive handling of inconsistent urllib3 exception re-raising
-- Fix regression in handling audio only setting after d154325c5b672dccc6a17413063cfdeb32256ffd
-- Fix comments not using correct sort methods
-- Fix incorrectly using playlist cache entries that have been invalidated by playlist modification
-- Fix some context menu actions failing for video item bookmarks
-- Ensure listings and items added by the addon have correct sort order
-- Fix resetting client region when playing media with subtitles enabled
-- Only add playable items to playlist when adding related items
-- Fix using invalid default end limit with Playlist.GetItems JSONRPC method
-- Fix conversion of SRT subtitles to WebVTT
-- Workaround playback failure of progressive streams
-- Fix re-sorting live search lists
-- Disable use of custom thumbnail urls
-- Workaround addon service not starting prior to plugin invocation
-- Fix unofficial version using localised sort order
-- Fix parsing of logged_in query parameter
-- Fix typo in YouTubePlayerClient error hook
-- Fix not resolving single playable items when using the uri2addon plugin endpoint
-- Correctly check whether access tokens are available to be used for player requests
-- </news></extension>
+        <news></news>
+    </extension>
 </addon>
 
 
