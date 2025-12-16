@@ -6,9 +6,12 @@ repository.roooar
 repository.dexe
 repository.elementumorg
 
+ repository.skins.pkscout
  repository.jurialmunkey
  repository.ivarbrandt
  repository.realcopacetic
+
+ skin.estuary.pkscout.mod 19 20 21
 
  skin.arctic.fuse 21
  skin.arctic.zephyr.mod 21
@@ -2867,7 +2870,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.skins.pkscout" name="pkscout's Skin Modifications" version="2.0.1" provider-name="pkscout">
+<addon id="repository.skins.pkscout" name="pkscout's Skin Modifications" version="2.1.1" provider-name="pkscout">
 	<extension point="xbmc.addon.repository" name="Skin modifications by pkscout">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

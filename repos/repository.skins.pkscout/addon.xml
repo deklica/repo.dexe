@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.skins.pkscout" name="pkscout's Skin Modifications" version="2.0.1" provider-name="pkscout">
+<addon id="repository.skins.pkscout" name="pkscout's Skin Modifications" version="2.1.1" provider-name="pkscout">
 	<requires>
 	<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
 	<extension point="xbmc.addon.repository" name="Skin modifications by pkscout">
-		<dir minversion="19.0.0" maxversion="19.9.0">
-			<info>https://raw.github.com/pkscout/repository.skins.pkscout/matrix/addons.xml</info>
-			<checksum>https://raw.github.com/pkscout/repository.skins.pkscout/matrix/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.github.com/pkscout/repository.skins.pkscout/matrix/download</datadir>
-			<artdir>https://raw.github.com/pkscout/repository.skins.pkscout/matrix/download</artdir>
+		<dir maxversion="19.9.0">
+			<info>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/matrix/addons.xml</info>
+			<checksum>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/matrix/download</datadir>
+			<artdir>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/matrix/download</artdir>
 			<hashes>false</hashes>
 		</dir>
-		<dir minversion="20.0.0" maxversion="20.8.900">
-			<info>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/addons.xml</info>
-			<checksum>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.github.com/pkscout/repository.skins.pkscout/nexus/download</datadir>
-			<artdir>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/download</artdir>
+		<dir maxversion="20.8.900">
+			<info>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/nexus/addons.xml</info>
+			<checksum>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/nexus/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/nexus/download</datadir>
+			<artdir>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/nexus/download</artdir>
 			<hashes>false</hashes>
 		</dir>
 		<dir minversion="20.9.0">
-			<info>https://raw.github.com/pkscout/repository.skins.pkscout/omega/addons.xml</info>
-			<checksum>https://raw.github.com/pkscout/repository.skins.pkscout/omega/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.github.com/pkscout/repository.skins.pkscout/omega/download</datadir>
-			<artdir>https://raw.github.com/pkscout/repository.skins.pkscout/omega/download</artdir>
+			<info>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/omega/addons.xml</info>
+			<checksum>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/omega/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/omega/download</datadir>
+			<artdir>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/omega/download</artdir>
 			<hashes>false</hashes>
 		</dir>
 	</extension>
