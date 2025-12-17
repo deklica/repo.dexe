@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.dlv2" name="DaddyLive V2" version="1.1.0" provider-name="X">
+<addon id="plugin.video.dlv2" name="DaddyLive V2" version="1.1.1" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -7,6 +7,7 @@
     <import addon="inputstream.ffmpegdirect" />
     <import addon="script.module.pytz" />
     <import addon="script.module.tzlocal" />
+    
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -20,7 +21,7 @@
       <screenshot>screen3.jpg</screenshot>
     </assets>
     <summary lang="en_GB">The X</summary>
-	<description lang="en_GB">In memory of Cman 1972 - 2025. 1.1.0 - Resolver fix. 1.0.9 - New domain and code cleanup. 1.0.7 - Prevent kickouts. 1.0.6 - Another resolver fix! 1.0.5 - Resolver fix. 1.0.4 - Workaround for channels.  Refresh Schedule if channels are empty. 1.0.3 - Removed refresh on Kodi startup. Added refresh every 8 hours on addon use. Use refresh option to check for new schedule if needed.  1.0.2 - Added some color theming.  1.0.1 - Added notifications window. Added option for 24-hour time format in settings. Brightened up the menus. Resolver fix.</description>
+	<description lang="en_GB">In memory of Cman 1972 - 2025. 1.1.1 - DNS bypass. 1.1.0 - Resolver fix. 1.0.9 - New domain and code cleanup. 1.0.7 - Prevent kickouts. 1.0.6 - Another resolver fix! 1.0.5 - Resolver fix. 1.0.4 - Workaround for channels.  Refresh Schedule if channels are empty. 1.0.3 - Removed refresh on Kodi startup. Added refresh every 8 hours on addon use. Use refresh option to check for new schedule if needed.  1.0.2 - Added some color theming.  1.0.1 - Added notifications window. Added option for 24-hour time format in settings. Brightened up the menus. Resolver fix.</description>
     <platform>all</platform>
     <language>en</language>
     <license>GPL-2.0-or-later</license>
