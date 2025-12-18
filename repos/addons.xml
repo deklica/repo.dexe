@@ -27,8 +27,8 @@ repository.elementumorg
   script.altus.helper
   
  skin.xonfluence 19 20 21
- resource.images.moviegenrefanart.xonfluence
- resource.images.skinbackgrounds.xonfluence
+  resource.images.moviegenrefanart.xonfluence
+  resource.images.skinbackgrounds.xonfluence
  
  resource.uisounds.kodi-12
  resource.uisounds.kodi-24
