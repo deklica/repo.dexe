@@ -1,3 +1,26 @@
+[COLOR lime][B]Version 1.4.5[/B][/COLOR]
+- Added TORRENTGALAXY
+
+[COLOR lime][B]Version 1.4.4[/B][/COLOR]
+- Fixed what I could, removed what I couldn't
+
+[COLOR lime][B]Version 1.4.3[/B][/COLOR]
+- Updated AIOSTREAMS
+
+[COLOR lime][B]Version 1.4.2[/B][/COLOR]
+- Added TORZ
+- Updated AIOSTREAMS
+
+[COLOR lime][B]Version 1.4.1[/B][/COLOR]
+- Added Providers Test function by Kodifitzwell
+- Removed dead providers
+
+[COLOR lime][B]Version 1.4.0[/B][/COLOR]
+- Updated AIOSTREAMS
+- Added TORRENTSDB
+- Removed dead providers
+- Fixed some small issues
+
 [COLOR lime][B]Version 1.2[/B][/COLOR]
 - Added AIOSTREAMS from Elfhosted
 

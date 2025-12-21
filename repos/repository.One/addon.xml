@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon	id="repository.One" 
-		version="1.14"	
+		version="1.15"	
         name="[B][COLOR white]Repositorio[/COLOR]: [COLOR aquamarine]ONE[/COLOR][COLOR white]PLAY[/COLOR][/B]" 
 		provider-name="TEAM [COLOR aquamarine]ONE[/COLOR][COLOR white]PLAY[/COLOR]">
 	<requires>
@@ -8,9 +8,9 @@
 	</requires>
 	<extension point="xbmc.addon.repository" name="OnePlay Repositorio">
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/oneplayhd/OneRepo/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/oneplayhd/OneRepo/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/OnePlayHD/OneRepo/heads/master/</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/oneplayhd/oneplayhd.github.io/refs/heads/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/oneplayhd/oneplayhd.github.io/refs/heads/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/oneplayhd/oneplayhd.github.io/refs/heads/master/</datadir>
 			<hashes>false</hashes>
 		</dir>
 	</extension>
@@ -25,7 +25,7 @@
 • Atualização dos links de apontamento para o GitHub.
 • O repositório oferecerá suporte apenas para as versões mais recentes.
 • Atualizado os links de apontamento para raw.usercontent
-• Atualização em: 10/12/2025
+• Atualização em: 18/12/2025
 		</news>
 		 <assets>
             <icon>icon.png</icon>

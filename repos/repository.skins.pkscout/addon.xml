@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.skins.pkscout" name="pkscout's Skin Modifications" version="2.1.1" provider-name="pkscout">
+<addon id="repository.skins.pkscout" name="pkscout's Skin Modifications" version="2.1.2" provider-name="pkscout">
 	<requires>
 	<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>

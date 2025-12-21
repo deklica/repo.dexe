@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.oldsalt" name="Old Salt Repository" version="1.1" provider-name="Jax">
+<extension point="xbmc.addon.repository" name="Old Salt Repository">
+    <dir>
+        <info compressed="false">https://github.com/OldManJax/repository.oldsalt/raw/master/addons.xml</info>
+        <checksum>https://github.com/OldManJax/repository.oldsalt/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/OldManJax/repository.oldsalt/raw/master/</datadir>
+    </dir> 
+    <!--IAGL-->    
+    <dir>
+        <info compressed="true">https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml</info>
+        <checksum>https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/zach-morris/repository.zachmorris/master/</datadir>
+    </dir>
+    <!--CoCoScrapers--> 
+    <dir minversion="19.0">
+        <info compressed="false">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/</datadir>
+    </dir>
+    <!--YouTube-->
+    <dir minversion="19.0.0">
+        <info compressed="false">https://download.osmc.tv/dev/anxdpanic/kodi/youtube/unofficial_testing/addons.xml</info>
+        <checksum>https://download.osmc.tv/dev/anxdpanic/kodi/youtube/unofficial_testing/addons.xml.md5</checksum>
+        <datadir zip="true">https://download.osmc.tv/dev/anxdpanic/kodi/youtube/unofficial_testing/zips</datadir>
+        <hashes>false</hashes>           
+    </dir>  
+    <!--A4K Subtitles-->
+    <dir>
+		<info compressed="false">https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml.crc</checksum>
+        <artdir>https://github.com/a4k-openproject/a4kSubtitles/releases/download/v0.0.13</artdir>
+		<datadir zip="true">https://github.com/newt-sc/a4kSubtitles/archive</datadir>
+	</dir>
+    <!--World Repo-->
+    <dir>
+		<info compressed="false">https://raw.githubusercontent.com/akeotaseo/World-Repo-Repository/main/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/akeotaseo/World-Repo-Repository/main/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/akeotaseo/World-Repo-Repository/main/</datadir>
+	</dir>
+    <!--TMDB Helper-->
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/</datadir>
+    </dir>
+    <dir minversion="19.9.1" maxversion="20.9.0">
+        <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/nexusrepo/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/nexusrepo/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/nexusrepo/zips/</datadir>
+    </dir>
+    <dir minversion="20.9.1">
+        <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/</datadir>
+    </dir>
+    <!--Umbrella-->
+    <dir minversion="18.9.701" maxversion="19.5">
+        <info compressed="false">https://raw.githubusercontent.com/umbrellaplug/umbrellaplug.github.io/master/matrix/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/umbrellaplug/umbrellaplug.github.io/master/matrix/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/umbrellaplug/umbrellaplug.github.io/master/matrix/zips/</datadir>
+    </dir>
+	<dir minversion="19.8.0">
+        <info compressed="false">https://raw.githubusercontent.com/umbrellaplug/umbrellaplug.github.io/master/nexus/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/umbrellaplug/umbrellaplug.github.io/master/nexus/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/umbrellaplug/umbrellaplug.github.io/master/nexus/zips/</datadir>
+    </dir>
+    <!--Simple Wizard-->
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Slamious/swzips/main/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Slamious/swzips/main/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Slamious/swzips/main/zips/</datadir>
+    </dir>
+    <!--ResolveURL-->
+    <dir>
+		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+	<summary>Handy Add-ons and Utilities</summary>
+    <description>This and that with a few other things to sail the high seas</description>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+</extension>
+</addon>

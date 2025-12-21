@@ -128,6 +128,7 @@ repository.nixgates
 repository.ocean
 repository.octopus
 repository.officerkd637
+repository.oldsalt
 repository.One
 repository.onealliancereborn
 repository.openscrapers
@@ -1768,7 +1769,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.gaia.full" version="7.0.0" name="Gaia Repository (Full)" provider-name="Gaia">
+<addon id="repository.gaia.full" version="8.0.0" name="Gaia Repository (Full)" provider-name="Gaia">
 	<extension point="xbmc.addon.repository" name="Gaia Repository (Full)">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2451,7 +2452,25 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.One" version="1.14" name="ONEPLAY Repositorio" provider-name="TEAM ONEPLAY">
+<addon id="repository.oldsalt" name="Old Salt Repository" version="1.1" provider-name="Jax">
+	<extension point="xbmc.addon.repository" name="Old Salt Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Handy Add-ons and Utilities</summary>
+		<description>This and that with a few other things to sail the high seas</description>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.One" version="1.15" name="ONEPLAY Repositorio" provider-name="TEAM ONEPLAY">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -2473,7 +2492,7 @@ repository.zero
 • Atualização dos links de apontamento para o GitHub.
 • O repositório oferecerá suporte apenas para as versões mais recentes.
 • Atualizado os links de apontamento para raw.usercontent
-• Atualização em: 10/12/2025
+• Atualização em: 18/12/2025
 		</news>
 		<assets>
 			<icon>icon.png</icon>
@@ -2870,7 +2889,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.skins.pkscout" name="pkscout's Skin Modifications" version="2.1.1" provider-name="pkscout">
+<addon id="repository.skins.pkscout" name="pkscout's Skin Modifications" version="2.1.2" provider-name="pkscout">
 	<extension point="xbmc.addon.repository" name="Skin modifications by pkscout">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
