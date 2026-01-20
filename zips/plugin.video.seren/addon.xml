@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.seren" version="3.0.65" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="3.0.67" name="Seren" provider-name="Nixgates">
     <requires>
         <import addon="xbmc.addon" version="17.9.910" />
         <import addon="xbmc.python" version="3.0.0" />
@@ -63,6 +63,16 @@
             <screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
         </assets>
         <news>
+            Changelog 3.0.67
+            [BUG] Reverted Changes from last release due to more bugs that were created.
+        
+            Changelog 3.0.66
+            [BUG] Resolved Kodi Omega deprecation warnings by migrating cast metadata to InfoTagVideo APIs
+            [BUG] Fixed cast normalization to build xbmc.Actor objects and stop setCast runtime exceptions
+            [BUG] Normalized unique IDs and resume data to prevent type errors and deprecated property usage
+            [BUG] Ensured widget refresh runtime flag resets correctly after triggering refresh
+            [BUG] Stopped duplicate episode rows during Trakt sync by keying upserts on show/season/number
+        
             Changelog 3.0.65
             [BUG] Improved SQLite database lock handling
             [BUG] If you skip back to the start and stop playback seren will now stop trakt scrobble and remove playback history
@@ -147,8 +157,8 @@
             [BUG] Fix typo in German localizations
             [BUG] Remove rogue \ in translations
 
-		    Changelog 2.2.4
-			[BUG] Fix bugs related to foreign key constraints
+            Changelog 2.2.4
+            [BUG] Fix bugs related to foreign key constraints
 
             Changelog 2.2.3
             [BUG] Fix Trakt Scrobbling and Playing Next

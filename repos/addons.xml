@@ -890,7 +890,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.7.0" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.7.4" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1563,7 +1563,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.enigmawiz" name="Enigma Repo" version="2.0.5" provider-name="Enigma Repo">
+<addon id="repository.enigmawiz" name="Enigma Repo" version="2.0.6" provider-name="Enigma Repo">
 	<extension point="xbmc.addon.repository" name="Enigma Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2413,7 +2413,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.octopus" name="Octopus Repository" version="0.3.9" provider-name="Twiglet">
+<addon id="repository.octopus" name="Octopus Repository" version="0.4.2" provider-name="Twiglet">
 	<extension point="xbmc.addon.repository" name="Octopus Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2470,7 +2470,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.One" version="1.15" name="ONEPLAY Repositorio" provider-name="TEAM ONEPLAY">
+<addon id="repository.One" version="1.16" name="Repositorio: ONEPLAY" provider-name="TEAM ONEPLAY">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -2483,16 +2483,17 @@ repository.zero
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary lang="pt_br">••• Repositorio Oficial •••</summary>
-		<description lang="pt_br">ONEREPO é um agregador de addons. Assim como o Google.com, o OnePlay atua exclusivamente como um indexador e organizador de links de conteúdos disponibilizados publicamente na internet.</description>
-		<disclaimer lang="pt_br">O plugin atua unicamente como um agregador de links. Não hospedamos, transmitimos ou reproduzimos qualquer conteúdo de mídia. A responsabilidade pelo conteúdo acessado é exclusiva do respectivo provedor ou fonte original.</disclaimer>
-		<news>
+      <summary lang="pt_BR">••• Repositorio Oficial •••</summary>
+      <description lang="pt_BR">ONEREPO é um agregador de addons. Assim como o Google.com, o OnePlay atua exclusivamente como um indexador e organizador de links de conteúdos disponibilizados publicamente na internet.</description>
+      <disclaimer lang="pt_BR">O plugin atua unicamente como um agregador de links. Não hospedamos, transmitimos ou reproduzimos qualquer conteúdo de mídia. A responsabilidade pelo conteúdo acessado é exclusiva do respectivo provedor ou fonte original.</disclaimer>
+    <news>
 • Adaptação das informações de acordo com a versão atual do Kodi.
 • Adição de capturas de tela em "resources" para visualização prévia.
 • Atualização dos links de apontamento para o GitHub.
 • O repositório oferecerá suporte apenas para as versões mais recentes.
 • Atualizado os links de apontamento para raw.usercontent
-• Atualização em: 18/12/2025
+• Adicionado o repositorio Gujal00: Fork do UrlResolver para XBMC/Kodi.
+• Atualização em: 2026-01-11
 		</news>
 		<assets>
 			<icon>icon.png</icon>

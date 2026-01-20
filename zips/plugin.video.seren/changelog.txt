@@ -1,3 +1,13 @@
+Changelog 3.0.67
+[BUG] Reverted Changes from last release due to more bugs that were created.
+
+Changelog 3.0.66
+[BUG] Resolved Kodi Omega deprecation warnings by migrating cast metadata to InfoTagVideo APIs
+[BUG] Fixed cast normalization to build xbmc.Actor objects and stop setCast runtime exceptions
+[BUG] Normalized unique IDs and resume data to prevent type errors and deprecated property usage
+[BUG] Ensured widget refresh runtime flag resets correctly after triggering refresh
+[BUG] Stopped duplicate episode rows during Trakt sync by keying upserts on show/season/number
+
 Changelog 3.0.65
 [BUG] Improved SQLite database lock handling
 [BUG] If you skip back to the start and stop playback will now stop trakt scrobble and remove playback history

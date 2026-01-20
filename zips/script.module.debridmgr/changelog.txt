@@ -1,3 +1,5 @@
+1.0.7 - Update All-debrid to API v4.1
+
 1.0.6 - Minor bug fixes. Add dialog for changing external scrapers
 
 1.0.5 - Fixed premiumize auth view and revoke. Added Magneto external scrapers

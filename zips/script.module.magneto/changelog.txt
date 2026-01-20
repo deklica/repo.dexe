@@ -1,3 +1,7 @@
+[COLOR red][B]Version 6.01[/B][/COLOR]
+- Removed elfhosted, elfhosted has disabled direct options.
+- Updated zilean.
+
 [COLOR red][B]Version 5.11[/B][/COLOR]
 - Added bitmagnet.
 - Updated instances urls.
