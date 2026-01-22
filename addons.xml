@@ -2347,7 +2347,7 @@ v0.5.9 (2022-03-22)
 
 <addon id="script.module.viperscrapers" 
 		name="Viper Scrapers" 
-		version="1.4.5" 
+		version="1.5.0" 
 		provider-name="Jax">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />

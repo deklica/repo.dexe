@@ -1,3 +1,6 @@
+[COLOR lime][B]Version 1.5.0[/B][/COLOR]
+- Fixed Comet and Zilean
+
 [COLOR lime][B]Version 1.4.5[/B][/COLOR]
 - Added TORRENTGALAXY
 
@@ -20,12 +23,3 @@
 - Added TORRENTSDB
 - Removed dead providers
 - Fixed some small issues
-
-[COLOR lime][B]Version 1.2[/B][/COLOR]
-- Added AIOSTREAMS from Elfhosted
-
-[COLOR lime][B]Version 1.1[/B][/COLOR]
-- Removed dead scrapers after testing both movies and tv shows for results
-
-[COLOR lime][B]Version 1.0[/B][/COLOR]
-- Forked CoCoScrapers with updated Scrapers from Kodifitzwell
