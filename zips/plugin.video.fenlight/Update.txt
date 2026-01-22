@@ -4,6 +4,7 @@ FenLightAM
 FenlightAnonyMouse
 FenlightAnonyMouse.github.io
 https://FenlightAnonyMouse.github.io/packages
+https://glorifiedsourcefinder.github.io/packages/
 
 Fen Light+
 thejason40
