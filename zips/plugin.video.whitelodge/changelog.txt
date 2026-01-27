@@ -1,3 +1,49 @@
+[B][COLOR gold]v1.06.01[/COLOR][/B]
+- More IMDb lists migrated to the API
+
+[B][COLOR gold]v1.06.00[/COLOR][/B]
+- Fixed IMDb trailer playback (using the API this time)
+- Started migrating some IMDb lists to the graphql API,
+  as scraping the site has become unreliable
+- Changed People category indexing from IMDb to TMDb
+
+[B][COLOR gold]v1.05.23[/COLOR][/B]
+- Fixed Trakt (re)authorisation
+
+[B][COLOR gold]v1.05.22[/COLOR][/B]
+- Compatibility fixes for Python 3.12
+
+[B][COLOR gold]v1.05.21[/COLOR][/B]
+- Metadata and cosmetic updates
+
+[B][COLOR gold]v1.05.19[/COLOR][/B]
+- Metadata cache adjustments
+
+[B][COLOR gold]v1.05.15[/COLOR][/B]
+- Fixed some issues with reuse language invoker
+
+[B][COLOR gold]v1.05.14[/COLOR][/B]
+- Watched indicators for local and Trakt fixes
+- Applied rate limiting on some Trakt API interactions
+- Fixed Netflix official episode ids parsing
+- Added MAX official provider
+    played through slyguy.max add-on from the slyguy repository
+    WIP - playback probably doesn't work yet
+
+[B][COLOR gold]v1.05.11[/COLOR][/B]
+- Fixed Official scraper
+- IMDb trailers tweaks
+
+[B][COLOR gold]v1.05.10[/COLOR][/B]
+- Fixed IMDb user lists sort order
+- Added pagination and cacheing on IMDb user lists and Watchlist
+- Some cleanup
+
+[B][COLOR gold]v1.05.08[/COLOR][/B]
+- Fixed IMDb user lists and Watchlist
+- Fixed trailers from imdb
+- Fixed More Keywords category
+
 [B][COLOR gold]v1.05.06[/COLOR][/B]
 - Fixed IMDb lists (again)
 
