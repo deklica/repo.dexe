@@ -1021,9 +1021,6 @@ repository.zero
 </addon>
 
 <addon id="repository.axbmcuser" name="axbmcuser REPO" version="1.2.3" provider-name="axbmcuser">
-	<requires>
-		<import addon="xbmc.addon" version="12.0.0"/>
-	</requires>
 	<extension point="xbmc.addon.repository" name="axbmcuser REPO">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1046,9 +1043,6 @@ repository.zero
 
 <addon id="repository.bingie" name="Bingie Repository" provider-name="matke" version="1.0.0">
 	<extension point="xbmc.addon.repository" name="Bingie Repository">
-		<requires>
-			<import addon="xbmc.addon" version="12.0.0"/>
-		</requires>
 		<dir minversion="20.9.1">
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
@@ -1141,9 +1135,6 @@ repository.zero
 </addon>
 
 <addon id="repository.burekasKodi" name="Burekas Repo" version="1.0.2" provider-name="burekas">
-	<requires>
-		<import addon="xbmc.addon" version="12.0.0"/>
-	</requires>
 	<extension point="xbmc.addon.repository" name="Burekas Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1563,7 +1554,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.enigmawiz" name="Enigma Repo" version="2.0.6" provider-name="Enigma Repo">
+<addon id="repository.enigmawiz" name="Enigma Repo" version="2.0.7" provider-name="Enigma Repo">
 	<extension point="xbmc.addon.repository" name="Enigma Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2413,7 +2404,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.octopus" name="Octopus Repository" version="0.4.2" provider-name="Twiglet">
+<addon id="repository.octopus" name="Octopus Repository" version="0.4.4" provider-name="Twiglet">
 	<extension point="xbmc.addon.repository" name="Octopus Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2471,9 +2462,6 @@ repository.zero
 </addon>
 
 <addon id="repository.One" version="1.16" name="Repositorio: ONEPLAY" provider-name="TEAM ONEPLAY">
-	<requires>
-		<import addon="xbmc.addon" version="12.0.0"/>
-	</requires>
 	<extension point="xbmc.addon.repository" name="OnePlay Repositorio">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

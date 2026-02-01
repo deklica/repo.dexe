@@ -1,3 +1,7 @@
+[B][COLOR gold]v1.06.02[/COLOR][/B]
+- Finalised lists migration
+- Code cleanup
+
 [B][COLOR gold]v1.06.01[/COLOR][/B]
 - More IMDb lists migrated to the API
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.whitelodge" name="Whitelodge" provider-name="one_eyed_jack" version="1.06.01">
+<addon id="plugin.video.whitelodge" name="Whitelodge" provider-name="one_eyed_jack" version="1.06.02">
     <requires>
         <import addon="resource.images.whitelodge.artwork" />
         <import addon="script.module.requests" />
