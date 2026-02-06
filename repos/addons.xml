@@ -1253,7 +1253,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.cMaNWizard" name="cMaN's Wizard Repository" version="3.2" provider-name="cMaN">
+<addon id="repository.cMaNWizard" name="cMaN's Wizard Repository" version="3.3" provider-name="cMaN">
 	<extension point="xbmc.addon.repository" name="cMaN's Wizard Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
