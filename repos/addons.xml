@@ -35,6 +35,7 @@ repository.elementumorg
  
   plugin.program.autocompletion
    script.module.autocompletion
+  script.toolbox
 
 
 repository.5star
@@ -714,6 +715,30 @@ repository.zero
 </addon>
 
 
+<addon id="script.toolbox" name="ToolBox Script" version="2.0.1" provider-name="phil65,sualfred">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.pil" version="1.1.7"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <language/>
+        <summary lang="en_GB">ToolBox Script</summary>
+        <description lang="en_GB">This script exposes several python functions to the UI engine as well as some other stuff to make life for skinners a bit easier.</description>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=207618</forum>
+        <source>https://github.com/phil65/script.toolbox</source>
+        <email>phil65@kodi.tv</email>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+
 <!--  Repositories  ----------------------------------- -->
 
 <addon id="repository.5star" name="5Star Kodi addons" version="6.4.0" provider-name="Luis Rodrigues">
@@ -1253,7 +1278,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.cMaNWizard" name="cMaN's Wizard Repository" version="3.3" provider-name="cMaN">
+<addon id="repository.cMaNWizard" name="cMaN's Wizard Repository" version="3.5" provider-name="cMaN">
 	<extension point="xbmc.addon.repository" name="cMaN's Wizard Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

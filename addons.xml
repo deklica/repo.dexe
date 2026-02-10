@@ -39,7 +39,6 @@ service.subtitles.opensubtitles_plus
 
 --- Program & Services ---
 plugin.program.autoenabler
-plugin.program.maxql
 plugin.program.openwizard
 plugin.program.optiklean
 plugin.program.thumbcache.cleaner
@@ -55,8 +54,9 @@ script.hideosd
 script.kcleaner
 script.keymapedit
 script.light.imdb.ratings.update
-script.module.debridmgr
-script.module.dbview
+script.module.acctmgr
+script.module.acctvwr
+script.module.gearsscrapers
 script.module.inputstreamhelper
 script.module.magneto
 script.module.microjenscrapers
@@ -64,7 +64,6 @@ script.module.viperscrapers
 script.module.youtube.dl
 script.service.sponsorblock
 script.speedtester
-script.toolbox
 script.tubecast
 script.unlock.advancedsettings
 script.xbmcbackup
@@ -1482,34 +1481,6 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.program.maxql" name="MaxQL" version="1.2.1" provider-name="Zaxxon709">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Add-on Filter Editor</summary>
-		<description lang="en_GB">Enable/Disable add-on filters</description>
-		<disclaimer lang="en_GB">This Addon contains no content</disclaimer>
-		<language>en</language>
-		<platform>all</platform>
-		<license>GPL-2.0-or-later</license>
-		<forum></forum>
-		<website></website> 
-		<email></email>
-		<source></source>
-		<news>
-		</news>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-
 <addon id="plugin.program.openwizard" name="[COLOR limegreen]Open[/COLOR]Wizard" version="2.0.7" provider-name="drinfernoo, slamious">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -2169,11 +2140,11 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.debridmgr" version="1.0.7" name="Debrid Manager" provider-name="Zaxxon709">
+<addon id="script.module.acctmgr" version="1.0.2" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-		<import addon="script.module.dbview" version="1.0.6" />
+		<import addon="script.module.acctvwr" version="1.0.2" />
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">
@@ -2182,8 +2153,8 @@ In order to get the API Key:
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
 		<reuselanguageinvoker>false</reuselanguageinvoker>
-		<summary lang="en">Debrid Manager</summary>
-		<description>Manage your Debrid logins</description>
+		<summary lang="en">AM Lite</summary>
+		<description>Manage your logins</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<disclaimer lang="en">The author is not responsible for the use of this addon. [CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
@@ -2195,19 +2166,41 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.dbview" name="dbviewer" version="1.0.6" provider-name="Zaxxon709">
+<addon id="script.module.acctvwr" name="[COLOR FF32D3FE][B]Account[/B][/COLOR][COLOR gold] [B]Viewer[/B][/COLOR]" version="1.0.2" provider-name="Zaxxon709">
     <extension point="xbmc.python.pluginsource" library="default.py" />
     <extension point="xbmc.python.module" library="resources" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">View Authorized Accounts</summary>
-        <description lang="en">Debrid Manager Dependency</description>
+        <description lang="en">AM Lite Dependency</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <source>https://</source>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.png</fanart>
+	</assets>
     </extension>
+</addon>
+
+
+<addon id="script.module.gearsscrapers" version="1.1.1" name="Gears Scrapers" provider-name="gearsscrapers">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="lib/default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="lib/service.py" />
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<summary>gearsscrapers</summary>
+		<description>A module to query magnet providers.[CR][CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</description>
+		<disclaimer>The author does not host or own any content found within this addon. The author is not responsible for the content found using this addon. The author is not responsible for the use of this addon.</disclaimer>
+		<assets><icon>icon.png</icon></assets>
+		<assets><fanart>fanart.jpg</fanart></assets>
+	</extension>
 </addon>
 
 
@@ -2403,7 +2396,8 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.service.sponsorblock" version="0.5.0" name="SponsorBlock" provider-name="siku2">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.service.sponsorblock" version="0.6.0" name="SponsorBlock" provider-name="siku2">
     <requires>
         <import addon="script.module.requests" version="2.15.1"/>
         <import addon="script.module.six" version="1.13.0"/>
@@ -2436,7 +2430,8 @@ Users submit when a sponsor happens and the add-on automatically skips sponsors 
 - Add option to reduce all skips by some time (#30)
 - Ignore segments that do not fit into reduce skips setting (#31)
 - Reset existing playback when new video starts playing (#32)
-- Support for Kodi's Invidious plugin
+- Support for Kodi's Invidious plugin (#45)
+- Add option to only skip if longer than minimum duration
         </news>
 
         <summary lang="de">Überspringe Sponsoren, betteln um Abonnenten und mehr in YouTube Videos</summary>
@@ -2502,30 +2497,6 @@ v1.0.1 (2019-08-06)
       <screenshot>screenshot03.jpg</screenshot>
     </assets>
   </extension>
-</addon>
-
-
-<addon id="script.toolbox" name="ToolBox Script" version="2.0.1" provider-name="phil65,sualfred">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.pil" version="1.1.7"/>
-    </requires>
-    <extension point="xbmc.python.script" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <language/>
-        <summary lang="en_GB">ToolBox Script</summary>
-        <description lang="en_GB">This script exposes several python functions to the UI engine as well as some other stuff to make life for skinners a bit easier.</description>
-        <platform>all</platform>
-        <license>GPL-2.0-only</license>
-        <forum>http://forum.kodi.tv/showthread.php?tid=207618</forum>
-        <source>https://github.com/phil65/script.toolbox</source>
-        <email>phil65@kodi.tv</email>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
 </addon>
 
 

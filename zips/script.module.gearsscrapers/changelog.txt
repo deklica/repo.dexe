@@ -1,0 +1,93 @@
+[COLOR cyan][B]Version 1.1.1[/B][/COLOR]
+
+📌 Changelog
+🔹
+• Added Torznab (Setup Needed)
+• Added Prowlarr (Setup Needed) 
+• Added Metoer
+• Media Fusion Updated
+• Updated Torz
+
+[COLOR cyan][B]Version 1.1.0[/B][/COLOR]
+
+📌 Changelog
+🔹
+• Fixed And Updated Comet.
+• Updated Settings For Best Defaults.
+• Expanded overall scraper coverage and improves result availability.
+
+[COLOR cyan][B]Version 1.0.9[/B][/COLOR]
+
+📌 Changelog
+🔹
+• Added Dmm
+• Added Lmtorrents
+• Fixed Rutor
+• Added Nyaa Anime Scraper
+• Updated Aiostreams
+
+[COLOR cyan][B]Version 1.0.8[/B][/COLOR]
+
+🔹
+• Seperated Providers In Setting.
+• Updated Aiostreams
+• Integrated Aiostreams new Url scraping source.
+
+🔹
+• Updated Bitmagnet
+• Integrated Bitmagnet as a new scraping source.
+• Expands overall scraper coverage and improves result availability.
+• Enhances source diversity for better link discovery.
+
+🔹 Initial Release
+• First public release of this modded Version.
+• Built on the solid and proven foundations of the original project.
+• Designed to bring multiple trusted components together into one streamlined solution.
+
+
+🔹 New & Updated Features
+
+• Direct Options Only
+• The addon has been streamlined to focus exclusively on direct options.
+• Improves speed, reliability, and consistency of results.
+• Removes unnecessary layers and complexity while keeping functionality clean and efficient.
+
+• Updated Zilean
+• Zilean module updated to the latest available version.
+• Improves compatibility, stability, and performance.
+• Ensures smoother operation with current Kodi environments.
+
+• Added Aiostreams
+• Integrated Aiostreams as a new source.
+• Further expands scraper coverage and source availability.
+• Improves cross-platform support and result consistency.
+
+
+
+🔹 URL & Source Updates
+
+• Updated URLs for Comet, MediaFusion, TORZ, and Aiostreams.
+• Prevents breakage caused by deprecated or changed endpoints.
+• Ensures continued functionality and long-term reliability.
+
+• Updated URLs for Zilean.
+• Refreshed all relevant endpoints to maintain scraper stability and accuracy.
+
+
+
+🔹 Fixes & Compatibility
+
+• Python 3.12 Compatibility Fix
+• Resolved an issue where Python 3.12 caused module detection failures.
+• Ensures full compatibility with newer Kodi versions using Python 3.12.
+• Improves future-proofing of the addon as Kodi continues to evolve.
+
+
+
+🧾 Credits
+
+• Full credit goes to the original developers for their excellent work and foundations:
+• Coco Joe
+• Kodifitzwell
+
+• This release is a personal modded build that brings Coco Scrapers and Magneto together in one unified package, while respecting and building upon the original projects.

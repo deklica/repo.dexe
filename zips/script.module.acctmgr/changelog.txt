@@ -1,0 +1,9 @@
+1.0.2 - Fix Torbox authorization
+
+1.0.1 - Minor bug fixes.
+
+1.0.0 - Initial Release. 
+
+ *** Account Manager completely restructured and slimmed down to my liking ***
+
+Cheers to any Kodi enthusiasts who have helped me along the way, supporters, positive thinkers and anyone who has dedicated some of their spare time to this community!
