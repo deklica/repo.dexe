@@ -672,7 +672,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.seren" version="3.0.67" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="4.0.1" name="Seren" provider-name="Nixgates">
     <requires>
         <import addon="xbmc.addon" version="17.9.910" />
         <import addon="xbmc.python" version="3.0.0" />
@@ -2183,7 +2183,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.1.1" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.1.4" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />

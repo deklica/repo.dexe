@@ -1,3 +1,7 @@
+Changelog 4.0
+- Fixed Trakt Sections, Next Up, etc.
+- Added support for Kodi 22
+
 Changelog 3.0.67
 [BUG] Reverted Changes from last release due to more bugs that were created.
 

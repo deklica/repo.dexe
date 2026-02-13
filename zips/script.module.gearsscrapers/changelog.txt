@@ -1,43 +1,24 @@
-[COLOR cyan][B]Version 1.1.1[/B][/COLOR]
+[COLOR cyan][B]Version 1.1.4[/B][/COLOR]
 
 📌 Changelog
 🔹
+
+• Added Filemood.
+• Added Apibay.
+• Comet Updated.
+• Media Fusion Updated
+• Improves compatibility, stability, and performance.
+• Ensures smoother operation with current Kodi environments.
 • Added Torznab (Setup Needed)
 • Added Prowlarr (Setup Needed) 
 • Added Metoer
-• Media Fusion Updated
 • Updated Torz
-
-[COLOR cyan][B]Version 1.1.0[/B][/COLOR]
-
-📌 Changelog
-🔹
 • Fixed And Updated Comet.
 • Updated Settings For Best Defaults.
 • Expanded overall scraper coverage and improves result availability.
-
-[COLOR cyan][B]Version 1.0.9[/B][/COLOR]
-
-📌 Changelog
-🔹
-• Added Dmm
-• Added Lmtorrents
-• Fixed Rutor
-• Added Nyaa Anime Scraper
-• Updated Aiostreams
-
-[COLOR cyan][B]Version 1.0.8[/B][/COLOR]
-
-🔹
 • Seperated Providers In Setting.
-• Updated Aiostreams
-• Integrated Aiostreams new Url scraping source.
 
-🔹
-• Updated Bitmagnet
-• Integrated Bitmagnet as a new scraping source.
-• Expands overall scraper coverage and improves result availability.
-• Enhances source diversity for better link discovery.
+
 
 🔹 Initial Release
 • First public release of this modded Version.
@@ -89,5 +70,3 @@
 • Full credit goes to the original developers for their excellent work and foundations:
 • Coco Joe
 • Kodifitzwell
-
-• This release is a personal modded build that brings Coco Scrapers and Magneto together in one unified package, while respecting and building upon the original projects.
