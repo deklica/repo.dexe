@@ -1,6 +1,0 @@
-[B]Version 1.0.0[/B]
-February 2016 - Initial version
-[B]Version 1.0.1[/B]
-February 2016 - Changed fanart and icon
-[B]Version 1.0.2[/B]
-February 2016 - changed from cdn to raw (github)

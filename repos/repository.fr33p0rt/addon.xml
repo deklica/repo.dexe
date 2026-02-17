@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.fr33p0rt" name="fr33p0rt Repository" version="0.9.1" provider-name="fr33p0rt">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0"/>
-        </requires>
+    <addon id="repository.fr33p0rt" name="fr33p0rt Repository" version="0.9.1a" provider-name="fr33p0rt">
         <extension point="xbmc.addon.repository" name="fr33p0rt Repository">
-            <info compressed="false">https://fr33p0rt-kodi.gitlab.io/repo/18/addons.xml</info>
-            <checksum>https://fr33p0rt-kodi.gitlab.io/repo/18/addons.xml.md5</checksum>
-            <datadir zip="true">https://fr33p0rt-kodi.gitlab.io/repo/18</datadir>
-            <hashes>false</hashes>
+			<dir>
+				<info compressed="false">https://fr33p0rt-kodi.gitlab.io/repo/18/addons.xml</info>
+				<checksum>https://fr33p0rt-kodi.gitlab.io/repo/18/addons.xml.md5</checksum>
+				<datadir zip="true">https://fr33p0rt-kodi.gitlab.io/repo/18</datadir>
+			</dir>
         </extension>
         <extension point="xbmc.addon.metadata">
             <summary>fr33p0rt Kodi Repository</summary>
             <description>This repository contains my addons for Kodi. http://gitlab.com/fr33p0rt</description>
             <platform>all</platform>
-    </extension>
+			<assets>
+				<icon>icon.png</icon>
+				<fanart>fanart.jpg</fanart>    
+            </assets>
+		</extension>
 </addon>

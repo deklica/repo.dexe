@@ -46,13 +46,10 @@ repository.abratchik
 repository.addons4kodi
 repository.aenemapy
 repository.aeonmq5_mod
-repository.alado.tv
 repository.aliunde
-repository.allanime
 repository.animaniac
 repository.arrownegra
 repository.arxtic-ape
-repository.atreides.tools
 repository.autowidget
 repository.axbmcuser
 repository.bingie
@@ -61,21 +58,17 @@ repository.bleak-lodge
 repository.bugatsinho
 repository.butter
 repository.burekasKodi
-repository.canuck
 repository.castagnait
 repository.catchuptvandmore
 repository.centry
 repository.chainsrepo
 repository.cMaNWizard
 repository.cocoscrapers
-repository.coldkeys
 repository.cywteow
 repository.dab
 repository.daedalusbln
-repository.DejaVu
 repository.denimnani
 repository.diggz
-repository.dirtyg
 repository.dis90
 repository.djaythemes
 repository.dobbelina
@@ -83,36 +76,25 @@ repository.doomzday
 repository.dregs
 repository.dutchgreen
 repository.enigmawiz
-repository.eracknaphobia
-repository.ezra
 repository.EzzerMacsWizard
 repository.fanfilm
 repository.foxystreams
 repository.fr33p0rt
-repository.freeg
 repository.frenchdj
 repository.fubuz
 repository.funstersplace
 repository.gaia.full
-repository.ghettomatrix
-repository.glive
 repository.grindhousekodi
-repository.gscribe
-repository.gsource
-repository.gsports
-repository.gtube
 repository.gujal
-repository.heppen
 repository.hooty
 repository.ivueguide
 repository.jacktook
-repository.jenrepo
+repository.jellyfin.kodi
 repository.jewrepo
 repository.jsergio
 repository.kodi.yatse.tv
 repository.kodifitzwell
 repository.kodinerds
-repository.lanik_p3
 repository.lekma
 repository.lime
 repository.loop
@@ -131,7 +113,6 @@ repository.octopus
 repository.officerkd637
 repository.oldsalt
 repository.One
-repository.onealliancereborn
 repository.openscrapers
 repository.openwizard
 repository.orion
@@ -147,8 +128,7 @@ repository.repoil.club
 repository.resolveurl
 repository.Rising.Tides
 repository.Rockcrusher
-repository.sandmann79-py3.plugins
-repository.sgkodi
+repository.sandmann79.plugins
 repository.skinbase.nexus
 repository.skins.pkscout
 repository.slyguy
@@ -156,15 +136,12 @@ repository.southpaw
 repository.StreamArmy
 repository.subskip
 repository.TechNEWSology
-repository.tempest
-repository.temptv
 repository.theblackghost
 repository.thecrew
 repository.thelab
 repository.thewarehouse
 repository.tidal2
 repository.titan.bingie.mod
-repository.topg
 repository.torrest
 repository.tvone
 repository.twilight0
@@ -174,7 +151,6 @@ repository.umbrella
 repository.universalscrapers
 repository.Wherethemonsterslive
 repository.wltv
-repository.wnt2
 repository.wod
 repository.World
 repository.WorldNexus
@@ -183,7 +159,6 @@ repository.WorldOmega
 repository.Worldrepo
 repository.xbmcadult
 repository.xonfluence
-repository.xstream
 repository.zachmorris
 repository.zero
 -->
@@ -895,27 +870,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.alado.tv" name="Alado Repository" version="0.0.2" provider-name="ALADO">
-	<extension point="xbmc.addon.repository" name="repository.alado.tv">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>By Team Milhano</summary>
-		<description>By Team Milhano</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.gif</icon>
-			<fanart>fanart.gif</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.7.4" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.7.5" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -931,24 +886,6 @@ repository.zero
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>	
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.allanime" name="All Anime Repository" version="1.1.0" provider-name="G-Man">
-	<extension point="xbmc.addon.repository" name="All Anime Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary>Nothing but Anime Add-ons here</summary>
-		<description>If you like Anime, these are the best for Kodi Matrix</description>
-		<assets>
-			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>
@@ -1004,26 +941,6 @@ repository.zero
 		<summary>Install Arxtic Ape Addons</summary>
 		<description>Install Arxtic Ape Addons</description>
 		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.atreides.tools" name="House Atreides Tools" version="0.0.1" provider-name="MuadDib">
-	<extension point="xbmc.addon.repository" name="House Atreides Tools">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>House Atreides Official Tools Repository</summary>
-		<description>House Atreides Official Tools Repository</description>
-		<platform>all</platform>
-		<genre>usa</genre>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
 	</extension>
 </addon>
 
@@ -1178,26 +1095,6 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.canuck" name="Canuck Repository" version="0.1.0" provider-name="The Crazy Canuck">
-	<extension point="xbmc.addon.repository" name="Canuck Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Please do NOT post this Repository on Youtube, Facebook, Blogs or anywhere on the internet, thank you.</summary>
-		<description>This repository nor the addons within does not form part of the Kodi Media Centre. Please do not seek assistance with this repository or the addons from any of the Official Kodi Support Channels.The authors do not host any of the content in these addons and takes no responsibility for content found</description>
-		<platform>all</platform>
-		<genre>movies,usa</genre>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>	
-		</assets>
-	</extension>
-</addon>
-
 <addon id="repository.castagnait" name="CastagnaIT Repository" version="2.0.1" provider-name="castagnait">
 	<extension point="xbmc.addon.repository" name="CastagnaIT Repository">
 		<dir>
@@ -1316,25 +1213,6 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.coldkeys" name="ColdKeys Repo" version="1.0.2" provider-name="Coldkeys">
-	<extension point="xbmc.addon.repository" name="ColdKeys Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>The Coldkeys Repo</summary>
-		<description>Download and install addons from the Coldkeys Repository</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
 <addon id="repository.cywteow" name="cywteow Add-ons" version="1.1.1" provider-name="cywteow">
 	<extension point="xbmc.addon.repository" name="cywteow Add-ons">
 		<dir>
@@ -1387,25 +1265,6 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.DejaVu" name="DejaVu Repo" version="1.0.3" provider-name="The Wombles">
-	<extension point="xbmc.addon.repository" name="DejaVu Repo">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>DejaVu</summary>
-		<description>DejaVu	Repository for add-on and dependencies</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
 <addon id="repository.denimnani" name="DenimNani Repo" version="0.0.2" provider-name="DenimNani">
 	<extension point="xbmc.addon.repository" name="DenimNani Repo">
 		<dir>
@@ -1436,24 +1295,6 @@ repository.zero
 	<extension point="xbmc.addon.metadata">
 		<summary>Diggz Repository</summary>
 		<description>Diggz Kodi Repository.</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.dirtyg" name="Dirty-G Repository" version="1.4.1" provider-name="G-Man">
-	<extension point="xbmc.addon.repository" name="Dirty-G Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Dirty-G Repo</summary>
-		<description>A collection of XXX Add-ons for Mature Viewers Only.[CR]Works in Kodi 19 and 20.</description>
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
@@ -1598,44 +1439,6 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.eracknaphobia" name="eracknaphobia's Repo" version="1.0.0" provider-name="eracknaphobia">
-	<extension point="xbmc.addon.repository" name="eracknaphobia's Repo">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>eracknaphobia's Repo</summary>
-		<description>eracknaphobia's Repo</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.ezra" name="Ezra Repository" version="0.0.2" provider-name="Ezra-Hubbard">
-	<extension point="xbmc.addon.repository" name="Ezra Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Ezra</summary>
-		<description>From the pen of Ezra Hubbard</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
 <addon id="repository.EzzerMacsWizard" name="EzzerMacs Wizard Repository" version="1.1.7" provider-name="EzzerMac">
 	<extension point="xbmc.addon.repository" name="EzzerMacs Wizard Repository">
 		<dir>
@@ -1690,26 +1493,8 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.fr33p0rt" name="fr33p0rt Repository" version="0.9.1" provider-name="fr33p0rt">
+<addon id="repository.fr33p0rt" name="fr33p0rt Repository" version="0.9.1a" provider-name="fr33p0rt">
 	<extension point="xbmc.addon.repository" name="fr33p0rt Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>fr33p0rt Kodi Repository</summary>
-		<description>This repository contains my addons for Kodi. http://gitlab.com/fr33p0rt</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.freeg" name="Free-G Repository" version="2.1.0" provider-name="G-Man">
-	<extension point="xbmc.addon.repository" name="Free-G Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
@@ -1717,11 +1502,12 @@ repository.zero
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
+		<summary>fr33p0rt Kodi Repository</summary>
+		<description>This repository contains my addons for Kodi. http://gitlab.com/fr33p0rt</description>
 		<platform>all</platform>
-		<summary>All FREE, No Premium Service Required</summary>
-		<description>A collection of Add-ons which uses free sources. No Debrid required.[CR]Works with Kodi Matrix and Nexus</description>
 		<assets>
 			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
@@ -1810,44 +1596,6 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.ghettomatrix" name="Ghetto Astronaut Matrix Repo" version="1.1.1" provider-name="Ghetto Astronaut">
-	<extension point="xbmc.addon.repository" name="Ghetto Astronaut Matrix Repo">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Ghetto Astronaut Build Wizard Repo</summary>
-		<description>Ghetto Astronaut, Kodi 19, Build Wizard Repository</description>
-		<platform>all</platform>
-		<genre>movies,usa</genre>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.glive" name="G-Live Repository" version="1.2.0" provider-name="G-Man">
-	<extension point="xbmc.addon.repository" name="G-Live Repository"> 
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>A collection of Free-IPTV Add-ons</summary>
-		<description>These IPTV add-ons are free to use, but keep in mind Free IPTV services can be a bit unstable and break easily.</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
 <addon id="repository.grindhousekodi" name="Grindhouse Repository" version="1.8" provider-name="Grindhouse">
 	<extension point="xbmc.addon.repository" name="Grindhouse">
 		<dir>
@@ -1863,78 +1611,6 @@ repository.zero
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.gscribe" name="G-Scribe Repository" version="1.3.1" provider-name="G-Man">
-	<extension point="xbmc.addon.repository" name="G-Scribe Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>A repository of Subscription Add-ons</summary>
-		<description>Access your paid Streaming subsriptions with these add-ons.</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.gsource" name="G-Source Repository" version="2.1.0" provider-name="G-Man">
-	<extension point="xbmc.addon.repository" name="G-Source Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-<extension point="xbmc.addon.metadata">
-	<summary>For Kodi 19 and above</summary>
-	<description>Find Repos and Add-ons for Kodi 19 and up.[CR]Contains the "Repo Source Installer" program add-on.</description>
-	<platform>all</platform>
-	<assets>
-		<icon>icon.png</icon>
-	</assets>
-</extension>
-</addon>
-
-<addon id="repository.gsports" name="G-Sports+ Repository" version="1.4.0" provider-name="G-Man">
-	<extension point="xbmc.addon.repository" name="G-Sport Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Kodi Sports and IPTV Add-ons</summary>
-		<description>A collection of Good Add-ons and Repos for On-Demand Sports and Live Sports.[CR]Works for Kodi 19/20</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.gtube" name="G-Tube Repository" version="1.1.0" provider-name="G-Man">
-	<extension point="xbmc.addon.repository" name="G-Tube Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>YouTube Category Add-ons</summary>
-		<description>A collection of Add-ons which focus on specific YouYube channels sorted by topic.[CR]You will need a personal YouTube api key from Google, entered into the Youtube add-on which will work on all the add-ons.[CR]Instruction video:[CR]https://youtu.be/N18czV5tj5o </description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>
@@ -1957,24 +1633,6 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.heppen" name="Heppen's Repository" version="7.0.0" provider-name="heppen">
-	<extension point="xbmc.addon.repository" name="Heppen's Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>heppen's repository</summary>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.jpg</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
 <addon id="repository.hooty" name="Hooty's Repository" version="1.0" provider-name="Goldenfreddy0703">
 	<extension point="xbmc.addon.repository" name="Hooty's Repository">
 		<dir>
@@ -1994,7 +1652,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.ivueguide" name="iVue2 TV Guide Repo" version="0.0.1" provider-name="iVue">
+<addon id="repository.ivueguide" name="iVue2 TV Guide Repo" version="0.0.2" provider-name="iVue">
 	<extension point="xbmc.addon.repository" name="iVue2 TV Guide Add-ons Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2034,8 +1692,8 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.jenrepo" name="Jen Repo" version="1.0.3" provider-name="Community">
-	<extension point="xbmc.addon.repository" name="Jen Addon Repo">
+<addon id="repository.jellyfin.kodi" name="Kodi Jellyfin Addons" version="1.0.0" provider-name="null_pointer,angelblue05,sualfred,im85288,xnappo">
+	<extension point="xbmc.addon.repository" name="Kodi Jellyfin Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
@@ -2043,10 +1701,10 @@ repository.zero
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Official Repo For Jen Dependencies</summary>
-		<description>Jen Brings The Dawn Of A New Day in Kodi .. You Now Have The Power To Make Your Add-On</description>
+		<summary>Kodi Jellyfin Addon Repository</summary>
+		<description>This repo contains addons related to the Jellyfin project</description>
+		<disclaimer></disclaimer>
 		<platform>all</platform>
-		<genre>movies,usa</genre>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -2140,25 +1798,6 @@ repository.zero
 		<summary lang="de">Addon Repository der Kodinerds Community</summary>
 		<description lang="de">Das 'Nerdsrepo' ist das Addon Repository der deutschen Kodi-Community 'Kodinerds' (www.kodinerds.net). Die meisten der hier im Nerdsrepo gehosteten Addons werden von den Mitgliedern der Community aktiv entwickelt und unterstützt. Das Nerdsrepo ist ein unoffizielles Repository der Kodi Media Center Software.</description>
 		<disclaimer/>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.lanik_p3" name="Lanik Repository" provider-name="Dalibor Lanik" version="1.0.0a">
-	<extension name="Lanik (Python 3) Repository" point="xbmc.addon.repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Repository for my KODI plugins</summary>
-		<description>KODI Repository for stuff made by D. Lanik</description>
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
@@ -2335,8 +1974,8 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.misfitmods" name="misfit mods Repository" version="1.5" provider-name="The Turtle">
-	<extension point="xbmc.addon.repository" name="misfit mods: Repository">
+<addon id="repository.misfitmods" name="Misfit Mods Repo" version="1.4" provider-name="The Misfits">
+	<extension point="xbmc.addon.repository" name="Misfit Mods Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
@@ -2349,7 +1988,7 @@ repository.zero
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
+			<fanart>fanart.jpg</fanart>			
 		</assets>
 	</extension>
 </addon>
@@ -2411,7 +2050,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.ocean" name="Ocean" version="0.0.1" provider-name="wahed">
+<addon id="repository.ocean" name="Ocean" version="0.0.1a" provider-name="wahed">
 	<extension point="xbmc.addon.repository" name="Ocean">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2514,33 +2153,6 @@ repository.zero
 			<screenshot>screenshot-1.jpg</screenshot>
 			<screenshot>screenshot-2.jpg</screenshot>
 			<screenshot>screenshot-3.jpg</screenshot>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.onealliancereborn" name="OneAlliance Reborn Repo" version="7.0.1" provider-name="RedWizard">
-	<extension point="xbmc.addon.repository" name="OneAlliance Reborn Repo">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">OneAlliance Reborn Builds and Add-ons</summary>
-		<description lang="en_GB">The OneAlliance Reborn Repo for OneAlliance Reborn Builds and Add-ons.</description>
-		<disclaimer lang="en_GB"></disclaimer>
-		<news>2022-05-09
-- Directory added for Kodi 20 Nexus
-- Change to addon.xml</news>
-		<platform>all</platform>
-		<language>en</language>
-		<license>GNU GENERAL PUBLIC LICENSE Version 3</license>
-		<email></email>
-		<website>https://www.facebook.com/groups/OneAllianceReborn/</website>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
@@ -2841,7 +2453,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.sandmann79-py3.plugins" name="Sandmann79s Repository" version="1.0.4" provider-name="Sandmann79">
+<addon id="repository.sandmann79.plugins" name="Sandmann79s Repository" version="1.0.4" provider-name="Sandmann79">
 	<extension point="xbmc.addon.repository" name="Sandmann79s Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2852,29 +2464,6 @@ repository.zero
 	<extension point="xbmc.addon.metadata">
 		<summary>Various Addons for Kodi</summary>
 		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.sgkodi" name="SGKODI REPOSITORY" version="1.1.6" provider-name="SGK">
-	<extension point="xbmc.addon.repository" name="SGKODI REPOSITORY">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">SGKODI REPOSITORY</summary>
-		<description lang="en">A collection of KODI repositories and addons.[CR][CR]Contact + support:[CR]https://www.facebook.com/groups/kodiunlimited[CR]Donation:[CR]https://www.paypal.me/KodiUnlimited</description>
-		<disclaimer lang="en">The creator of the repository is not the creator of the add-ons and is therefore not responsible for its content!</disclaimer>
-		<summary lang="de">K.U.S-REPOSITORY</summary>
-		<description lang="de">Eine Sammlung von KODI-Repositories und Addons.[CR][CR]Kontakt + Support:[CR]https://www.facebook.com/groups/kodiunlimited[CR]Spende:[CR]https://www.paypal.me/KodiUnlimited</description>
-		 <disclaimer lang="de">Der Ersteller des Repository ist nicht der Ersteller der Addons und somit nicht Verantwortlich für dessen Inhalt!</disclaimer>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
 	</extension>
 </addon>
 
@@ -3021,44 +2610,6 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.tempest" name="Tempest Repo" version="0.0.5" provider-name="Tempest">
-	<extension point="xbmc.addon.repository" name="Tempest Repo">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">kodi addon</summary>
-		<description lang="en">Watch Movies and Tv Shows</description>
-		<genre>movies,tvshows,usa</genre>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.temptv" name="Temptv Repo" version="0.0.5" provider-name="Tempest">
-	<extension point="xbmc.addon.repository" name="Tempest Repo">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">kodi addon</summary>
-		<description lang="en">Watch Live Tv</description>
-		<genre>live tv</genre>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
 <addon id="repository.theblackghost" name="The Black Ghost Repo" version="0.0.2" provider-name="BlackGhost">
 	<extension point="xbmc.addon.repository" name="theblackghost">
 		<dir>
@@ -3180,24 +2731,6 @@ repository.zero
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.topg" name="Top-G Repository" version="1.2.0" provider-name="G-Man">
-	<extension point="xbmc.addon.repository" name="Top-G Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary>G-Man's Top Picks of Great Repos</summary>
-		<description>A few of the best (in my opinion) repos for Kodi 19/20.[CR]There are other great options but I tried to keep the selection to a minimum.</description>
-		<assets>
-			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>
@@ -3389,24 +2922,6 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.wnt2" name="WatchNixtoons2 Repository" version="1.0.1" provider-name="G-Man">
-	<extension point="xbmc.addon.repository" name="WatchNixtoons2 Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary>A simple repo for WatchNixtoons2</summary>
-		<description>WatchNixtoons2 is an Anime and Chartoon Add-on that gets frequent updates. The repo is by G-Man but the add-on is maintained by lolage331 on reddit: http://bit.ly/wnt2dev</description>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
 <addon id="repository.wod" name="Wrestling Repository" version="2.1" provider-name="WOD">
 	<extension point="xbmc.addon.repository" name="Wrestling Repository">
 		<dir>
@@ -3555,26 +3070,6 @@ repository.zero
 		<news>v1.0.2[CR]- Include Xonfluence backgrounds addon in repo</news>
 		<assets>
 			<icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.xstream" name="xStream Repository" version="1.2.1" provider-name="xStream-Team">
-	<extension point="xbmc.addon.repository" name="xStream Repository">	
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">xStream Repository</summary>
-		<description lang="de_DE">Dies ist das offizielle xStream Addon-Verzeichnis.[CR]Bei der Bereitstellung einer neuen Version von xStream wird diese auf Funktionalität geprüft. Sollten dennoch Probleme auftreten benachrichtige bitte das offizielle xStream-Team.</description>
-		<disclaimer lang="de_DE">Die dargestellten Inhalte des in diesem Verzeichnis enthaltenen Addons werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
