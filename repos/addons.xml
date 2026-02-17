@@ -95,6 +95,7 @@ repository.jsergio
 repository.kodi.yatse.tv
 repository.kodifitzwell
 repository.kodinerds
+repository.kus.allinone
 repository.lekma
 repository.lime
 repository.loop
@@ -1804,6 +1805,36 @@ repository.zero
 			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
+</addon>
+
+<addon id="repository.kus.allinone" name="K.U.S AllInOne Repository" version="3.8" provider-name="K.U.S Team">
+	<extension point="xbmc.addon.repository" name="K.U.S AllInOne Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">K.U.S AllInOne Repository</summary>
+		<summary lang="de_DE">K.U.S AllInOne Repository</summary>
+        <description lang="en_GB">Download and install addons from the KODI Unlimited Support repository.[CR]Contact + support:[CR]https://www.facebook.com/groups/kodiunlimited[CR]Donation:[CR]https://www.paypal.me/KodiUnlimited</description>
+        <description lang="de_DE">Downloade und installiere Addons aus dem KODI Unlimited Support Repository.[CR]Kontakt + Support:[CR]https://www.facebook.com/groups/kodiunlimited[CR]Spenden-Link:[CR]https://www.paypal.me/KodiUnlimited</description>
+        <disclaimer lang="en_GB">This is a third party repository and is unrelated to the official Kodi team.</disclaimer>
+		<disclaimer lang="de_DE">Dies ist ein Drittanbieter-Repository und steht nicht in Zusammenhang mit dem offiziellen Team Kodi.</disclaimer>
+		<language>en</language>
+		<platform>all</platform>
+		<license></license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source></source>
+		<news></news>
+        <assets>
+            <icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="repository.lekma" name="lekma's addon repository" version="4.0.1" provider-name="lekma">

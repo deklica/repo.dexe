@@ -1,3 +1,0 @@
-Version 3.0.0 (Febrero, 2023)
-- Initial releasef for kodi 20
-
