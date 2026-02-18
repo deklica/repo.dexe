@@ -1,9 +1,15 @@
-[COLOR cyan][B]Version 1.1.4[/B][/COLOR]
+[COLOR cyan][B]Version 1.1.9[/B][/COLOR]
+
+• Updated Torz
+• Updated Bitmagnet
+• Added Galaxy
+• Added Quest
+
+[COLOR cyan][B]Version 1.1.8[/B][/COLOR]
 
 📌 Changelog
 🔹
 
-• Added Filemood.
 • Added Apibay.
 • Comet Updated.
 • Media Fusion Updated

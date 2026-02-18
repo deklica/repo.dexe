@@ -1,4 +1,5 @@
 [COLOR red][B]Version 6.02[/B][/COLOR]
+- Added compatibility as external player with configurable AIOStreams source.  See main menu README.
 - Added meteor.
 - Updated bitmagnet.
 

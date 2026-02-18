@@ -12,7 +12,6 @@ plugin.video.free99
 plugin.video.imdb.trailers
 plugin.video.json_iptv
 plugin.video.last_played
-plugin.video.neo_flix
 plugin.video.playlistbee
 plugin.video.premiumizerx
 plugin.video.ptfm
@@ -267,7 +266,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="AnonyMouse" version="2.1.82">
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="AnonyMouse" version="2.1.85">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -444,31 +443,6 @@ service.subtitles.titlovi
 		    <fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
-</addon>
-
-
-<addon id="plugin.video.neo_flix" name="[COLORlime]Neo Flix[/COLOR]" version="3.4.02" provider-name="">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.resolveurl"/>
-		<import addon="script.module.requests" />
-        <import addon="script.module.inputstreamhelper" />
-        <import addon="inputstream.adaptive" version="2.6.0"/>
-    </requires>
-	 <extension point="xbmc.python.pluginsource" library="main.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-	<description lang="en_GB">No Streams Are Stored Locally-All Are Available Freely On The Internet-A Mixture Of Free And Debrid Links</description>
-    <platform>all</platform>
-    <language>en</language>
-    <license>GPL-2.0-or-later</license>
-	<assets>
-		<icon>icon.png</icon>
-		<fanart>fanart.jpg</fanart>
-  </assets>
-  </extension>
 </addon>
 
 
@@ -771,7 +745,7 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.whitelodge" name="Whitelodge" provider-name="one_eyed_jack" version="1.06.02">
+<addon id="plugin.video.whitelodge" name="Whitelodge" provider-name="one_eyed_jack" version="1.06.06">
     <requires>
         <import addon="resource.images.whitelodge.artwork" />
         <import addon="script.module.requests" />
@@ -2007,17 +1981,34 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.fonts.installer" version="1.0.0" name="Extra SubFonts" provider-name="dEXE">
+<addon id="script.fonts.installer" version="1.1.0" name="Extra SubFonts" provider-name="dEXE">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
 	<extension point="xbmc.python.script" library="default.py" />
 	<extension point="xbmc.addon.metadata">
-		<summary>Kodi Extra Subtitle Fonts Installer</summary>
-		<description>Installing and uninstalling custom fonts for subtitles:[CR][CR]Arvo, Calibri, Futura Md BT, Gill Sans MT, GillSans, Helvetica, Helvetica Neue, IBM Plex Mono, IBM Plex Sans, IBM Plex Serif, Lato Medium, Lucida Grande, Montserrat, Noto Serif, Open Sans, Roboto, Source Sans Pro, Tahoma, Verdana</description>
-		<disclaimer>Run the addon to install additional fonts. Running the addon again will uninstall the fonts.</disclaimer>
+		<summary lang="en_GB">Kodi Extra Subtitle Fonts Installer</summary>
+		<description lang="en_GB">Installing and uninstalling custom fonts for subtitles (40):[CR][CR]Amazon Ember, Aptos, Arimo, Arvo, Atkinson Hyperlegible, Avenir, Calibri, Fira Sans, Futura, Gill Sans, Gilroy, Helvetica, IBM Plex Mono, IBM Plex Sans, IBM Plex Serif, Inter, Karla, Lato, Lucida Grande, Merriweather, Metropolis, Montserrat, Noto Sans, Noto Serif, Open Sans, Outfit, Overpass, Poppins, PT Sans, PT Serif, Roboto, Rubik, San Francisco Pro, Segoe UI, Source Sans Pro, Tahoma, Tiresias Infofont, Ubuntu, Verdana, Work Sans.</description>
+		<disclaimer lang="en_GB">Simply run the addon to install additional fonts. Run again to uninstall.</disclaimer>
+		<license>GPL-3.0-only</license>
 		<platform>all</platform>
 		<language>en</language>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
+		<news>[B]v1.1.0 (2026-02-18)[/B]
+- Complete code reconstruction
+- New fonts added with updated naming for consistency, now 40 fonts total
+- Improved install/uninstall stability and tracking with user-friendly dialogs
+- Smart fontcache merging preserves existing user fonts
+- NOTE: If upgrading from previous version of addon, uninstall old fonts first to avoid duplicates
+
+[B]v1.0.0 (2024-11-25)[/B]
+- Initial release
+- Simple one-click install/uninstall script
+- 19 professional subtitle fonts included
+- Cross-platform compatibility
+</news>
 	</extension>
 </addon>
 
@@ -2183,7 +2174,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.1.4" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.1.9" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2289,12 +2280,12 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.magneto" version="6.02.01" name="Magneto Module" provider-name="Magneto">
+<addon id="script.module.magneto" version="6.02.05" name="Magneto Module" provider-name="Magneto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="lib/default.py">
+	<extension point="xbmc.python.pluginsource" library="lib/router.py">
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.service" library="lib/service.py" />

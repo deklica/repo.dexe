@@ -1,9 +1,9 @@
-<addon id="script.module.magneto" version="6.02.01" name="Magneto Module" provider-name="Magneto">
+<addon id="script.module.magneto" version="6.02.05" name="Magneto Module" provider-name="Magneto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="lib/default.py">
+	<extension point="xbmc.python.pluginsource" library="lib/router.py">
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.service" library="lib/service.py" />
