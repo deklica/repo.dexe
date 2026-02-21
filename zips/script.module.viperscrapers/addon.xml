@@ -1,6 +1,6 @@
 <addon id="script.module.viperscrapers" 
 		name="Viper Scrapers" 
-		version="1.5.0" 
+		version="1.5.1" 
 		provider-name="Jax">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
@@ -14,7 +14,7 @@
 	<extension point="xbmc.addon.metadata">
 		<reuselanguageinvoker>false</reuselanguageinvoker>
 		<summary lang="en">External Scrapers Module</summary>
-		<description>This module is a fork of CoCoScrapers with new scrapers from Kodifitzwell installed[CR]Credits to the develpers involved from former Fenom and CoCoScraper coders to current coders of CocoScrapers and of course, Kodifitzwell.[CR]Compatible with Fen, Fen Light, Umbrella and any other add-ons currently using the CoCoScrapers option.</description>
+		<description>This module is a fork of CoCoScrapers with new scrapers from Kodifitzwell installed[CR]Credits to the develpers involved from former Fenom and CoCoScraper coders to current coders of CocoScrapers and of course, Kodifitzwell.[CR]Compatible with any add-ons currently using the CoCoScrapers scrapers.</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<disclaimer lang="en">This module simply scans for internet sources that matches common metadata.</disclaimer>
@@ -22,6 +22,6 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>- 1.5.0 Fixed broken providers</news>
+		<news>- 1.5.1 Added new scrapers</news>
 	</extension>
 </addon>

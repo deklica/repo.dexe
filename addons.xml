@@ -2174,7 +2174,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.1.9" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.2.0" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2280,7 +2280,7 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.magneto" version="6.02.05" name="Magneto Module" provider-name="Magneto">
+<addon id="script.module.magneto" version="6.02.06" name="Magneto Module" provider-name="Magneto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2331,7 +2331,7 @@ v0.5.9 (2022-03-22)
 
 <addon id="script.module.viperscrapers" 
 		name="Viper Scrapers" 
-		version="1.5.0" 
+		version="1.5.1" 
 		provider-name="Jax">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />

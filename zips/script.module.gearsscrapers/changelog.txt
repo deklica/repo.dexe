@@ -1,3 +1,11 @@
+[COLOR cyan][B]Version 1.2.0[/B][/COLOR]
+
+• Added Scraper Test In Settings.
+• Recomended Setup Added To Settings
+• Added DMM.
+• Bug Fixes.
+• Expanded overall scraper coverage and improves result availability.
+
 [COLOR cyan][B]Version 1.1.9[/B][/COLOR]
 
 • Updated Torz
@@ -21,7 +29,6 @@
 • Updated Torz
 • Fixed And Updated Comet.
 • Updated Settings For Best Defaults.
-• Expanded overall scraper coverage and improves result availability.
 • Seperated Providers In Setting.
 
 
