@@ -745,7 +745,7 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.whitelodge" name="Whitelodge" provider-name="one_eyed_jack" version="1.06.06">
+<addon id="plugin.video.whitelodge" name="Whitelodge" provider-name="one_eyed_jack" version="1.06.10">
     <requires>
         <import addon="resource.images.whitelodge.artwork" />
         <import addon="script.module.requests" />
@@ -2174,7 +2174,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.2.0" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.2.1" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -3035,7 +3035,7 @@ strptime Python bugfix
 </addon>
 
 
-<addon id="resource.images.whitelodge.artwork" name="Whitelodge Artwork" version="0.0.7" provider-name="bleak-lodge">
+<addon id="resource.images.whitelodge.artwork" name="Whitelodge Artwork" version="1.1.0" provider-name="bleak-lodge">
     <extension point="kodi.resource.images" compile="false" type="Whitelodge" />
     <requires>
         <import addon="kodi.resource" version="1.0.0"/>

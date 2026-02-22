@@ -1,3 +1,16 @@
+[B][COLOR gold]v1.06.10[/COLOR][/B]
+- Trailers fallback fix
+
+[B][COLOR gold]v1.06.09[/COLOR][/B]
+- Settings file fix
+
+[B][COLOR gold]v1.06.08[/COLOR][/B]
+- Added new Awards & Festivals category for movies and TV shows
+  (thanks a lot for the icons J.E.!)
+- Removed the fixed Keywords category
+- Related Videos selection moved from the Trailer action in info window to a
+  new context menu action. Cache clearance might be needed after this change
+
 [B][COLOR gold]v1.06.06[/COLOR][/B]
 - Added pagination on Trakt personal lists and Watchlist
 - Find Similar source is now tied to the Primary Lists Provider setting

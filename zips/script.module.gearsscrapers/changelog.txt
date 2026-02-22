@@ -1,23 +1,13 @@
-[COLOR cyan][B]Version 1.2.0[/B][/COLOR]
+[COLOR cyan][B]Version 1.2.1[/B][/COLOR]
 
 • Added Scraper Test In Settings.
 • Recomended Setup Added To Settings
 • Added DMM.
 • Bug Fixes.
 • Expanded overall scraper coverage and improves result availability.
-
-[COLOR cyan][B]Version 1.1.9[/B][/COLOR]
-
-• Updated Torz
 • Updated Bitmagnet
 • Added Galaxy
 • Added Quest
-
-[COLOR cyan][B]Version 1.1.8[/B][/COLOR]
-
-📌 Changelog
-🔹
-
 • Added Apibay.
 • Comet Updated.
 • Media Fusion Updated
