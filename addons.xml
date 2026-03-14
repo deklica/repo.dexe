@@ -194,7 +194,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.112" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.113" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementumorg" optional="true" />
@@ -1793,7 +1793,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.97" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.98" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="plugin.video.elementum" optional="true"/>
