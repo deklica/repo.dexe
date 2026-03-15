@@ -1,4 +1,23 @@
-[COLOR cyan][B]Version 1.2.1[/B][/COLOR]
+[COLOR cyan][B]Version 1.2.7[/B][/COLOR]
+
+• Animeto Scraper Added.
+• Updated Torz. 
+
+[COLOR cyan][B]Version 1.2.6[/B][/COLOR]
+
+• Optimized Setup Added To Settings.
+• Comet Updated.
+• Zilean Updated.
+• Improved speed, reliability, and consistency of results.
+• Clean Thumbnails After Update.
+
+[COLOR cyan][B]Version 1.2.4[/B][/COLOR]
+
+• Internal Bugs Fixed.
+• Updated Recomended Setup For Best Defaults.
+• Updated Torz. 
+
+[COLOR cyan][B]Version 1.2.3[/B][/COLOR]
 
 • Added Scraper Test In Settings.
 • Recomended Setup Added To Settings
@@ -16,7 +35,6 @@
 • Added Torznab (Setup Needed)
 • Added Prowlarr (Setup Needed) 
 • Added Metoer
-• Updated Torz
 • Fixed And Updated Comet.
 • Updated Settings For Best Defaults.
 • Seperated Providers In Setting.
@@ -33,7 +51,6 @@
 
 • Direct Options Only
 • The addon has been streamlined to focus exclusively on direct options.
-• Improves speed, reliability, and consistency of results.
 • Removes unnecessary layers and complexity while keeping functionality clean and efficient.
 
 • Updated Zilean

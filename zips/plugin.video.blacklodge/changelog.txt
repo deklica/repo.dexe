@@ -1,0 +1,309 @@
+[B][COLOR gold]v1.06.24[/COLOR][/B]
+- Added Trakt Favorites list support on personal lists & Trakt Manager
+- Reworked & rearranged personal lists
+
+[B][COLOR gold]v1.06.23[/COLOR][/B]
+- Creating new list through Trakt Manager fix
+- Code cleanup
+
+[B][COLOR gold]v1.06.22[/COLOR][/B]
+- Adjustments to some Trakt API changes
+
+[B][COLOR gold]v1.06.21[/COLOR][/B]
+- Fixed Trakt personal lists
+
+[B][COLOR gold]v1.06.20[/COLOR][/B]
+- Cosmetic updates
+
+[B][COLOR gold]v1.06.19[/COLOR][/B]
+- Added new Sub-Genres category, based on IMDb's Interests
+  (see: imdb.com/interest/all/)
+- Added the Keywords category for TV Shows as well
+- Awards, Keywords & Sub-Genres categories are now available only
+  if Primary Lists Provider is set to IMDb
+
+[B][COLOR gold]v1.06.18[/COLOR][/B]
+- Minor fixes/tweaks
+
+[B][COLOR gold]v1.06.17[/COLOR][/B]
+- Revert TMDb custom pagination - needs more work
+
+[B][COLOR gold]v1.06.16[/COLOR][/B]
+- Fixed People content loading (again)
+- Added TMDb custom pagination, but API only supports up to 20 items per page
+
+[B][COLOR gold]v1.06.15[/COLOR][/B]
+- Fixed People content loading
+
+[B][COLOR gold]v1.06.14[/COLOR][/B]
+- Fixed hanging on dialog exit on People menu
+- Fixed Netflix episode id parsing
+- Added Discovery+ official provider
+  (played through slyguy.discovery.plus from the slyguy repository - WIP)
+
+[B][COLOR gold]v1.06.13[/COLOR][/B]
+- Fixed Search on My Services
+- Busydialog small fix
+
+[B][COLOR gold]v1.06.12[/COLOR][/B]
+- People menu and Search are now tied to the Primary Lists Provider setting
+- Added User-Agent header to Trakt API calls
+  NOTE: if using your own Trakt API keys, you now also need to input your
+  User-Agent in settings
+
+[B][COLOR gold]v1.06.11[/COLOR][/B]
+- Added some TV shows events
+
+[B][COLOR gold]v1.06.10[/COLOR][/B]
+- Trailers fallback fix
+
+[B][COLOR gold]v1.06.09[/COLOR][/B]
+- Settings file fix
+
+[B][COLOR gold]v1.06.08[/COLOR][/B]
+- Added new Awards & Festivals category for movies and TV shows
+  (thanks a lot for the icons J.E.!)
+- Removed the fixed Keywords category
+- Related Videos selection moved from the Trailer action in info window to a
+  new context menu action. Cache clearance might be needed after this change
+
+[B][COLOR gold]v1.06.07[/COLOR][/B]
+- Updated premium hosts list
+
+[B][COLOR gold]v1.06.06[/COLOR][/B]
+- Added pagination on Trakt personal lists and Watchlist
+- Find Similar source is now tied to the Primary Lists Provider setting
+- Tweaked Certifications lists
+
+[B][COLOR gold]v1.06.05[/COLOR][/B]
+- Updated Popular IMDb user lists
+- Fixed New Movies main menu shortcut
+- Changed Find Similar source from TMDb to IMDb
+- Code alterations
+
+[B][COLOR gold]v1.06.03[/COLOR][/B]
+- Fixed subtitles downloading
+- Added more sorting options for personal IMDb lists and migrated them to API
+
+[B][COLOR gold]v1.06.02[/COLOR][/B]
+- Finalised lists migration
+- Code cleanup
+
+[B][COLOR gold]v1.06.01[/COLOR][/B]
+- More IMDb lists migrated to the API
+
+[B][COLOR gold]v1.06.00[/COLOR][/B]
+- Fixed IMDb trailer playback (using the API this time)
+- Started migrating some IMDb lists to the graphql API,
+  as scraping the site has become unreliable
+- Changed People category indexing from IMDb to TMDb
+
+[B][COLOR gold]v1.05.24[/COLOR][/B]
+- Fixed IMDb trailer playback
+
+[B][COLOR gold]v1.05.23[/COLOR][/B]
+- Fixed Trakt (re)authorisation
+
+[B][COLOR gold]v1.05.22[/COLOR][/B]
+- Compatibility fixes for Python 3.12
+
+[B][COLOR gold]v1.05.21[/COLOR][/B]
+- Metadata and cosmetic updates
+
+[B][COLOR gold]v1.05.20[/COLOR][/B]
+- Minor fixes
+
+[B][COLOR gold]v1.05.19[/COLOR][/B]
+- Metadata cache adjustments
+
+[B][COLOR gold]v1.05.17[/COLOR][/B]
+- Added TorBox magnets cached status check
+- Disabled AllDebrid and Debrid-Link magnets cached status check
+    (relevant endpoint has been removed from their APIs)
+
+[B][COLOR gold]v1.05.16[/COLOR][/B]
+- Added TorBox to supported torrent resolve services (cached status check is WiP)
+- Fixed Debrid-Link.fr support
+
+[B][COLOR gold]v1.05.15[/COLOR][/B]
+- Disabled Real-Debrid cache check, as the relevant API endpoint has been removed
+- Fixed some issues with reuse language invoker
+
+[B][COLOR gold]v1.05.14[/COLOR][/B]
+- Fixed Netflix official episode ids parsing
+- Added MAX official provider
+    played through slyguy.max add-on from the slyguy repository
+    WIP - playback probably doesn't work yet
+
+[B][COLOR gold]v1.05.13[/COLOR][/B]
+- Minor fixes
+
+[B][COLOR gold]v1.05.12[/COLOR][/B]
+- Watched indicators for local and Trakt fixes
+- Applied rate limiting on some Trakt API interactions
+- Clearing providers cache now clears debrid cache checks as well
+
+[B][COLOR gold]v1.05.11[/COLOR][/B]
+- Fixed Official scraper
+- IMDb trailers tweaks
+
+[B][COLOR gold]v1.05.10[/COLOR][/B]
+- Added Custom Scrape context menu option:
+    Allows altering some scraping parameters:
+    title, year, imdb id, season, episode numbers
+- Fixed IMDb user lists sort order
+
+[B][COLOR gold]v1.05.09[/COLOR][/B]
+- Added pagination and cacheing on IMDb user lists and Watchlist
+- Some cleanup
+
+[B][COLOR gold]v1.05.08[/COLOR][/B]
+- Fixed IMDb user lists and Watchlist
+- Fixed trailers from IMDb
+- Fixed More Keywords category
+
+[B][COLOR gold]v1.05.06[/COLOR][/B]
+- Fixed IMDb lists (again)
+
+[B][COLOR gold]v1.05.05[/COLOR][/B]
+- Minor fixes
+
+[B][COLOR gold]v1.05.04[/COLOR][/B]
+- Optimised official sources fetching functionality
+
+[B][COLOR gold]v1.05.03[/COLOR][/B]
+- Fixed Official scraper by utilising JustWatch's GraphQL API
+
+[B][COLOR gold]v1.05.02[/COLOR][/B]
+- Added certification info on TMDb movie lists
+- Pass cast info on player
+
+[B][COLOR gold]v1.05.01[/COLOR][/B]
+- Automatic subtitles download now uses the new Opensubtitles.com API
+    For more than 5 subtitle downloads per 24h, enter your
+    Opensubtitles.com credentials on Settings/Accounts
+
+[B][COLOR gold]v1.05.00[/COLOR][/B]
+- Added TMDb as main lists provider - optional, enable in settings
+    Note: TMDb lists are hardcoded to 20 items per page
+- Added page counter on Next Page items
+- Various other lists tweaks and additions
+
+[B][COLOR gold]v1.04.00[/COLOR][/B]
+- Fixed IMDb Movies/TV shows/People lists after IMDb search page changes
+
+[B][COLOR gold]v1.03.05[/COLOR][/B]
+- Fixed official scraper for episodes
+- Small fixes to the TMDbHelper player - reinstall the player if you have problems
+
+[B][COLOR gold]v1.03.04[/COLOR][/B]
+- Fixed biography on People menu
+- Other People and Cast context menu fixes and improvements
+- Added option on Tools menu to install proper TMDb Helper player file
+
+[B][COLOR gold]v1.03.03[/COLOR][/B]
+- Fixed issue for devices with old SSL versions
+
+[B][COLOR gold]v1.03.02[/COLOR][/B]
+- Rearranged personal menus items (My Movies/My TV Shows)
+- Made 2 separate Trakt Progress lists (Recently Watched/Recently Aired)
+  instead of having one or the other via setting
+- Added context menu option to remove saved search terms
+- Updated 3rd party libs
+
+[B][COLOR gold]v1.03.01[/COLOR][/B]
+- Fixed Netflix official episode ids parsing
+- Fixed dev menu
+
+[B][COLOR gold]v1.03.00[/COLOR][/B]
+- Enabled reuse language invoker Kodi feature
+    Thanks to Tikipeter for finding a workaround for a related Kodi bug
+- Fixed ITV hub add-on url
+
+[B][COLOR gold]v1.02.09[/COLOR][/B]
+- Undo obfuscation in file as some antivirus programs falsely claim it as trojan
+
+[B][COLOR gold]v1.02.08[/COLOR][/B]
+- Reverted IMDb fix - it's been sorted their side
+
+[B][COLOR gold]v1.02.07[/COLOR][/B]
+- IMDb watchlist/personal lists fix
+
+[B][COLOR gold]v1.02.06[/COLOR][/B]
+- Added ITV Hub on supported official providers
+  *add-on for playback is plugin.video.itvhub by dimkroon
+- Some more subtitles matching tweaks
+
+[B][COLOR gold]v1.02.05[/COLOR][/B]
+- Small fix for premium hoster appearing on free sources list
+
+[B][COLOR gold]v1.02.04[/COLOR][/B]
+- Added support for plugin.video.tubitv by Lunatixz on Official providers
+- Reworked auto-subtitles functionality for hopefully better subtitles matching
+
+[B][COLOR gold]v1.02.03[/COLOR][/B]
+- Moved Networks icons from online to the Artwork module
+- Replaced some of them with better looking ones - thanks again J.E.
+- Added a few more TV networks
+- Sources resolution identification adjustment
+
+[B][COLOR gold]v1.02.02[/COLOR][/B]
+- Added some more TV networks
+- Minor fixes
+
+[B][COLOR gold]v1.02.01[/COLOR][/B]
+- Compatibility adjustments for Kodi 20's new (faster) list building methods
+
+[B][COLOR gold]v1.02.00[/COLOR][/B]
+- New add-on artwork - thanks a lot J.E.!
+- Expanded Scrape Filterless function to also include all providers
+- Added custom keywords sources filter
+
+[B][COLOR gold]v1.01.11[/COLOR][/B]
+- CAM qualification/filter update
+
+[B][COLOR gold]v1.01.10[/COLOR][/B]
+- Fixed some issues with Play Random function
+
+[B][COLOR gold]v1.01.09[/COLOR][/B]
+- Minor code cleanup
+
+[B][COLOR gold]v1.01.08[/COLOR][/B]
+- Re-worked search functions
+- Fixed issue with cacheing
+
+[B][COLOR gold]v1.01.06-07[/COLOR][/B]
+- Added new Search My Services menu items under My Services and Search menus.
+    Searching through those paths will filter results based on user's enabled services
+
+[B][COLOR gold]v1.01.05[/COLOR][/B]
+- Fixed resuming from local resume points
+- Fixed Trakt authorisation reset
+
+[B][COLOR gold]v1.01.04[/COLOR][/B]
+- Optimisations to the scraping system
+- Fixed support of free streams on some services
+
+[B][COLOR gold]v1.01.03[/COLOR][/B]
+- Library and Official scrapers fixes/tweaks
+
+[B][COLOR gold]v1.01.02[/COLOR][/B]
+- Added some more official services:
+    Pluto TV - played through plugin.video.plutotv from official Kodi repository
+    UKTV Play - played through plugin.video.catchuptvandmore from official Kodi repository
+- Added info text for Official providers on settings
+
+[B][COLOR gold]v1.01.01[/COLOR][/B]
+- Fix settings file cleanup
+
+[B][COLOR gold]v1.01.00[/COLOR][/B]
+- Enhanced My Services menus
+
+[B][COLOR gold]v1.00.03[/COLOR][/B]
+- Menus/settings rearrangement
+
+[B][COLOR gold]v1.00.01-02[/COLOR][/B]
+- Minor changes/cleanup
+
+[B][COLOR gold]v1.00.00[/COLOR][/B]
+- Initial release

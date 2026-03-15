@@ -48,6 +48,7 @@ repository.aenemapy
 repository.aeonmq5_mod
 repository.aliunde
 repository.animaniac
+repository.arkane14
 repository.arrownegra
 repository.arxtic-ape
 repository.autowidget
@@ -850,7 +851,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.aeonmq5_mod" name="Aeon MQ5 Mod Skin Repository" version="11.2.0" provider-name="scott967">
+<addon id="repository.aeonmq5_mod" name="Aeon MQ5 Mod Skin Repository" version="11.3.1" provider-name="scott967">
 	<extension point="xbmc.addon.repository" name="Aeon MQ5 Mod Skin Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -871,7 +872,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.7.5" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.7.6" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -906,6 +907,24 @@ repository.zero
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.arkane14" name="Arkane14 Repository" version="1.0.0" provider-name="Arkane14">
+	<extension point="xbmc.addon.repository" name="Arkane14 Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Arkane14 Repository</summary>
+		<description lang="en">Arkane14 Kodi addon repository</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>
@@ -1039,7 +1058,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.bugatsinho" name="Bugatsinho repository" version="2.7" provider-name="Bugatsinho">
+<addon id="repository.bugatsinho" name="Bugatsinho repository" version="2.8" provider-name="Bugatsinho">
 	<extension point="xbmc.addon.repository" name="Bugatsinho repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1207,6 +1226,25 @@ repository.zero
 		<platform>all</platform>
 		<summary>CocoScrapers Repository</summary>
 		<description>Unofficial add-ons repository</description>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.comet" version="1.0.0" name="Comet Repository" provider-name="Goldy">
+	<extension point="xbmc.addon.repository" name="Comet Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Comet Repository</summary>
+		<description>Repository for the Comet Kodi add-on</description>
+		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.png</fanart>
@@ -2138,7 +2176,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.oldsalt" name="Old Salt Repository" version="1.1" provider-name="Jax">
+<addon id="repository.oldsalt" name="Old Salt Repository" version="1.2" provider-name="Jax">
 	<extension point="xbmc.addon.repository" name="Old Salt Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2498,6 +2536,26 @@ repository.zero
 	</extension>
 </addon>
 
+<addon id="repository.siku2" name="siku2's Repository" version="1.0.0" provider-name="siku2">
+	<extension point="xbmc.addon.repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">siku2's Kodi add-on repository</summary>
+		<description lang="en_GB">Contains all add-ons created by siku2.</description>
+		<platform>all</platform>
+		<license>MIT</license>
+		<website>https://siku2.io/kodi-repository</website>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.skinbase.nexus" name="GUIDOS SKINBASE Only Skins for Kodi NEXUS" version="4.0.03" provider-name="TEAM-SKINBASE">
 	<extension point="xbmc.addon.repository" name="GUIDOS SKINBASE REPO">
 		<dir>
@@ -2584,7 +2642,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.StreamArmy" name="Stream Army Addons" version="16.0.000" provider-name="@Nemzzy668 / @_Manc_ // LordJD">
+<addon id="repository.StreamArmy" name="Stream Army Addons" version="17.0.000" provider-name="@Nemzzy668 / @_Manc_ // LordJD">
 	<extension point="xbmc.addon.repository" name="Stream Army">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

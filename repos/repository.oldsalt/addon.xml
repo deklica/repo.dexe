@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.oldsalt" name="Old Salt Repository" version="1.1" provider-name="Jax">
+<addon id="repository.oldsalt" name="Old Salt Repository" version="1.2" provider-name="Jax">
 <extension point="xbmc.addon.repository" name="Old Salt Repository">
     <dir>
         <info compressed="false">https://github.com/OldManJax/repository.oldsalt/raw/master/addons.xml</info>
@@ -11,12 +11,6 @@
         <info compressed="true">https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml</info>
         <checksum>https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/zach-morris/repository.zachmorris/master/</datadir>
-    </dir>
-    <!--CoCoScrapers--> 
-    <dir minversion="19.0">
-        <info compressed="false">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/</datadir>
     </dir>
     <!--YouTube-->
     <dir minversion="19.0.0">

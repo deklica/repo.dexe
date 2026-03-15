@@ -2,7 +2,7 @@
 <addon
     id="plugin.video.dreammachine"
     name="[COLOR blue]D[COLOR salmon]r[COLOR violet]e[COLOR yellow]a[COLOR orange]m[COLOR lime]M[COLOR red]a[COLOR blue]c[COLOR salmon]h[COLOR violet]i[COLOR yellow]n[COLOR orange]e[/COLOR]"
-    version="25.12.24"
+    version="26.3.8"
     provider-name="[COLOR springgreen]G[/COLOR] [COLOR magenta]I[/COLOR][COLOR violet]n[/COLOR][COLOR mediumorchid]c[/COLOR][COLOR orchid].[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -13,6 +13,10 @@
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
+    </extension>
+	<!-- Service for auto-start -->
+    <extension point="xbmc.service" library="service.py">
+        <provides>executable</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>

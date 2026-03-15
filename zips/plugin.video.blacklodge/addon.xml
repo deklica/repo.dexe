@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.24">
+    <requires>
+        <import addon="resource.images.blacklodge.artwork" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.blackscrapers" />
+        <import addon="script.module.resolveurl" />
+    </requires>
+    <extension library="blacklodge.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <summary lang="en_GB">Blacklodge</summary>
+        <description lang="en_GB">Fetches official stream urls/ids from various streaming services, and sends them to their equivalent Kodi add-on for playback.[CR]NOTE: This add-on uses free and legal resources for it's purposes. User has to have installed and configured (with linked active account where required) the supported services' equivalent add-ons in order to achieve playback.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum />
+        <website />
+        <source />
+        <disclaimer lang="en_GB">This project uses the TMDb, JustWatch, Trakt, Fanart.tv APIs, but is not affiliated nor endorsed by any of their respective ogranisations.[CR]Please support these ogranisations however you can.</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news>
+- See Changelog on Tools menu
+        </news>
+    </extension>
+</addon>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.arkane14" name="Arkane14 Repository" version="1.0.0" provider-name="Arkane14">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Arkane14 Repository">
+        <dir>
+            <info compressed="false">https://arkane14.github.io/addons.xml</info>
+            <checksum>https://arkane14.github.io/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Arkane14/arkane14.github.io/main/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Arkane14 Repository</summary>
+        <description lang="en">Arkane14 Kodi addon repository</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
