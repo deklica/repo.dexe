@@ -7,6 +7,12 @@ CHANGE HISTORY 	Kodi-Addon-TuneIn2017 (previosly plugin for Plexmediaserver)
 			Plex-Forum:
 			https://forums.plex.tv/discussion/288260/rel-tunein2017
 
+19.03.2026 1.8.0 	Container lists: Added a skip_list to prevent duplicate elements; 
+			removed the “-” suffix from preset_id; replaced the block attribute "token" 
+			with "itemToken".
+			Station lists: Removed the “-” suffix from preset_id.
+			Language lists: Updated the link filter to reflect changes in TuneIn.		 
+		
 09.12.2025 1.7.9	Adaptation to changed structure of embedded json data.
 			“News & Talk” menu reactivated (TuneIn menu changed).
 			blockextract (Modul util_tunein2017): extended with block endmark.

@@ -1,3 +1,6 @@
+[COLOR red][B]Version 6.04[/B][/COLOR]
+- Fix for mediafusion format change causing no results.
+
 [COLOR red][B]Version 6.02[/B][/COLOR]
 - Fix for incorrect mediatype param in Magneto player json.  Thanks to github.  Requires manual re-install Player Json.
 - Added compatibility as external player with configurable AIOStreams source.  See main menu README.

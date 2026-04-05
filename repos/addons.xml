@@ -21,6 +21,8 @@ repository.elementumorg
  skin.fentastic 20 21
   script.fentastic.helper
   resource.uisounds.fentastic
+ skin.fentasticplus 21
+  script.fentasticplus.helper
  skin.nimbus 21
   script.nimbus.helper
  skin.altus 21
@@ -428,7 +430,66 @@ repository.zero
 </addon>
 
 
+<addon id="skin.fentasticplus" version="100.0.28" name="FENtastic Plus"
+	provider-name="Ivar Brandt, Zaxxon709">
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0" />
+		<import addon="script.fentasticplus.helper" version="100.6.23" />
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<forum>http://forum.kodi.tv/</forum>
+		<source>https://github.com/xbmc/skin.estuary/</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>customizable_widgets.jpg</screenshot>
+			<screenshot>infopanel.jpg</screenshot>
+			<screenshot>viewtypes1.jpg</screenshot>
+		</assets>
+		<summary lang="en_GB">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
+		<summary lang="en_NZ">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
+		<summary lang="en_US">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
+		<description lang="en_GB">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+		<description lang="en_NZ">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+		<description lang="en_US">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+	</extension>
+</addon>
 
+
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.23" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+    </requires>
+    <extension point="xbmc.python.library" library="resources/lib/default.py"/>
+    <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <news />
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum />
+        <source />
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <description lang="en_GB">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
+        <description lang="en_NZ">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
+        <description lang="en_US">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
+    </extension>
+</addon>
 
 
 <addon
@@ -817,7 +878,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.7.6" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.7.9" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1404,7 +1465,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.enigmawiz" name="Enigma Repo" version="2.0.7" provider-name="Enigma Repo">
+<addon id="repository.enigmawiz" name="Enigma Repo" version="2.0.8" provider-name="Enigma Repo">
 	<extension point="xbmc.addon.repository" name="Enigma Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1442,8 +1503,8 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.fanfilm" name="FanFilm repo" version="0.9" provider-name="fanfilm">
-	<extension point="xbmc.addon.repository" name="FanFilm repo">
+<addon id="repository.fanfilm" name="FanFilm Repository" version="1.0" provider-name="FF Team">
+	<extension point="xbmc.addon.repository" name="FanFilm Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
@@ -1451,11 +1512,14 @@ repository.zero
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Repozytorium wtyczki FanFilm</summary>
-		<description>MrKnow tribute...</description>
+		<summary>FanFilm Repository</summary>
+		<summary lang="pl_PL">Repozytorium FanFilm</summary>
+		<description>Repository with stable versions</description>
+		<description lang="pl_PL">Repozytorium z wersjami stabilnymi</description>
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
@@ -2121,7 +2185,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.oldsalt" name="Old Salt Repository" version="1.2" provider-name="Jax">
+<addon id="repository.oldsalt" name="Old Salt Repository" version="1.3" provider-name="Jax">
 	<extension point="xbmc.addon.repository" name="Old Salt Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2366,7 +2430,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.redwizard" name="The Red Repo" version="1.1.9" provider-name="The Red Wizard">
+<addon id="repository.redwizard" name="The Red Repo" version="1.2.2" provider-name="The Red Wizard">
 	<extension point="xbmc.addon.repository" name="The Red Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2376,7 +2440,7 @@ repository.zero
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">The Red Wizard Builds and Add-ons</summary>
-		<description lang="en_GB">The Red Wizard repo for The Red Wizard builds and add-ons</description>
+		<description lang="en_GB">The Red Repo for The Red Wizard builds and add-ons</description>
 		<disclaimer lang="en_GB">The author of this add-on does not host any content and has no affiliation with the content providers</disclaimer>
 		<news></news>
 		<platform>all</platform>

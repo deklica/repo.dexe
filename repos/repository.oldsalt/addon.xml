@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.oldsalt" name="Old Salt Repository" version="1.2" provider-name="Jax">
+<addon id="repository.oldsalt" name="Old Salt Repository" version="1.3" provider-name="Jax">
 <extension point="xbmc.addon.repository" name="Old Salt Repository">
     <dir>
         <info compressed="false">https://github.com/OldManJax/repository.oldsalt/raw/master/addons.xml</info>
@@ -64,6 +64,12 @@
         <info compressed="false">https://raw.githubusercontent.com/Slamious/swzips/main/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/Slamious/swzips/main/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/Slamious/swzips/main/zips/</datadir>
+    </dir>
+    <!--RD Player-->
+    <dir>
+        <info compressed="false">https://uck.st/rdprepo/addons.xml</info>
+        <checksum>https://uck.st/rdprepo/addons.xml.md5</checksum>
+        <datadir zip="true">https://uck.st/rdprepo/zips/</datadir>
     </dir>
     <!--ResolveURL-->
     <dir>

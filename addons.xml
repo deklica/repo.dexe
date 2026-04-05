@@ -5,7 +5,7 @@
 --- Video ---
 plugin.video.archive.org
 plugin.video.blacklodge
-plugin.video.daddylive
+plugin.video.dltv
 plugin.video.dreammachine
 plugin.video.elementum
 plugin.video.fen
@@ -73,6 +73,7 @@ service.subloader
 service.vpn.manager
 
 --- Audio ---
+script.audio.motherearth
 plugin.audio.dashradio
 plugin.audio.datpiff
 plugin.audio.mp3streams
@@ -165,7 +166,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.24">
+<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.30">
     <requires>
         <import addon="resource.images.blacklodge.artwork" />
         <import addon="script.module.requests" />
@@ -200,7 +201,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.daddylive" name="DaddyLive" version="1.0.9" provider-name="Arkane14">
+<addon id="plugin.video.dltv" name="DaddyLive" version="1.0.19" provider-name="Arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -333,7 +334,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="AnonyMouse" version="2.1.89">
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="AnonyMouse" version="2.1.95">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -2205,7 +2206,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.37" provider-name="janedoe">
+<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.38" provider-name="janedoe">
     <requires>
         <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.requests" />
@@ -2233,7 +2234,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.2.6" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.2.8" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2339,7 +2340,7 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.magneto" version="6.02.07" name="Magneto Module" provider-name="Magneto">
+<addon id="script.module.magneto" version="6.04.01" name="Magneto Module" provider-name="Magneto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2856,6 +2857,33 @@ strptime Python bugfix
 <!-- ---------------------------------------------------------------------- -->
 
 
+<addon id="script.audio.motherearth" name="Mother Earth Radio" version="2.4" provider-name="Florian Reiterer">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="script.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Mother Earth Radio - 192kHz/24bit streaming</summary>
+        <description lang="en_GB">Hi Res Audio and Vinyl- Mother Earth is a free HD music station without advertising. Best audio quality, selected tracks, audiophile only. Stream now!</description>
+        <website>https://motherearthradio.de/</website>
+        <source>https://github.com/FlorianReiterer/repo-scripts/tree/script.audio.motherearth</source>
+        <license>GPL-3.0-or-later</license>
+        <platform>all</platform>
+        <news>
+         2.4 migrated to new server
+        </news>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
 <addon id="plugin.audio.dashradio" name="Litt Live Radio" version="421.4" provider-name="Diggz">
 <requires>
   <import addon="xbmc.python" version="3.0.0"/>
@@ -2931,7 +2959,7 @@ strptime Python bugfix
 </addon>
 
 
-<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.7.9+nexus" provider-name="rols1 (rols1@gmx.de)">
+<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.8.0" provider-name="rols1 (rols1@gmx.de)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1"/>
     		<import addon="script.module.kodi-six" />
@@ -3415,7 +3443,7 @@ All trademarks belong to them
 </addon>
 
 
-<addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="6.6.9" provider-name="Taxigps, ronie">
+<addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="6.7.1" provider-name="Taxigps, ronie">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.beautifulsoup4" version="4.8.2+matrix.1"/>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.audio.motherearth" name="Mother Earth Radio" version="2.4" provider-name="Florian Reiterer">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="script.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Mother Earth Radio - 192kHz/24bit streaming</summary>
+        <description lang="en_GB">Hi Res Audio and Vinyl- Mother Earth is a free HD music station without advertising. Best audio quality, selected tracks, audiophile only. Stream now!</description>
+        <website>https://motherearthradio.de/</website>
+        <source>https://github.com/FlorianReiterer/repo-scripts/tree/script.audio.motherearth</source>
+        <license>GPL-3.0-or-later</license>
+        <platform>all</platform>
+        <news>
+         2.4 migrated to new server
+        </news>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

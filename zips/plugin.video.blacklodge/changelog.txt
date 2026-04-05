@@ -1,3 +1,33 @@
+[B][COLOR gold]v1.06.30[/COLOR][/B]
+- Minor fixes
+
+[B][COLOR gold]v1.06.29[/COLOR][/B]
+- Added an option under My Lists to insert a new IMDb user list
+  [I]INFO:[/I] A valid list id must be entered (the [I]lsXXXXXXX[/I] part of the list url).
+  One can add their own user lists/watchlist ids - that way eliminates the need
+  to populate the lists via IMDb username setting, which involves site scraping
+  and is unreliable.
+
+[B][COLOR gold]v1.06.28[/COLOR][/B]
+- Fixed special seasons not populating
+- Set some fallback values so items still appear on list
+  even if some info is missing
+
+[B][COLOR gold]v1.06.27[/COLOR][/B]
+- Reworked playback through library
+- Code reduction
+
+[B][COLOR gold]v1.06.26[/COLOR][/B]
+- Updated some Trakt lists limits
+- Code alterations
+
+[B][COLOR gold]v1.06.25[/COLOR][/B]
+- Added local history/progress tracking and customised lists - available
+  only if a Trakt account isn't linked to the add-on.
+- Fixed various issues with local indicators
+  NOTE: Due to the amount of changes on the bookmarks database, all
+  existing local watched statuses had to be reset.
+
 [B][COLOR gold]v1.06.24[/COLOR][/B]
 - Added Trakt Favorites list support on personal lists & Trakt Manager
 - Reworked & rearranged personal lists

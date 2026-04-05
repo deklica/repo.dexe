@@ -1,3 +1,15 @@
+[COLOR cyan][B]Version 1.2.8[/B][/COLOR]
+
+• Optimized Setup for Mediafusion Scraper
+Reworked and streamlined the configuration process for the Mediafusion scraper.
+Improvements include faster initialization, better source handling, and more reliable scraping performance across supported content. This should result in quicker link retrieval and a smoother overall user experience.
+
+• Mediafusion Not Showing Links — FIXED
+Resolved an issue where Mediafusion would fail to return any links.
+Root cause related to scraper parsing and source detection has been addressed. Links should now populate correctly across all supported sections.
+
+• Overall: Improved stability, faster performance, and restored full functionality for Mediafusion.
+ 
 [COLOR cyan][B]Version 1.2.7[/B][/COLOR]
 
 • Animeto Scraper Added.
