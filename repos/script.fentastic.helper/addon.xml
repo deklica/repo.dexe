@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.fentastic.helper" name="FENtastic Helper" version="0.6.20a" provider-name="Tikipeter, Ivar Brandt">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.23" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -16,8 +16,8 @@
             <icon>resources/media/icon.png</icon>
             <fanart>resources/media/fanart.jpg</fanart>
         </assets>
-        <description lang="en_GB">FENtastic Helper for the FENtastic Skin.</description>
-        <description lang="en_NZ">FENtastic Helper for the FENtastic Skin.</description>
-        <description lang="en_US">FENtastic Helper for the FENtastic Skin.</description>
+        <description lang="en_GB">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
+        <description lang="en_NZ">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
+        <description lang="en_US">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
     </extension>
 </addon>

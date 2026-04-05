@@ -19,10 +19,9 @@ repository.elementumorg
  skin.fenstruary 20
   script.fenstruary.helper
  skin.fentastic 20 21
+ skin.fentasticplus 21
   script.fentastic.helper
   resource.uisounds.fentastic
- skin.fentasticplus 21
-  script.fentasticplus.helper
  skin.nimbus 21
   script.nimbus.helper
  skin.altus 21
@@ -359,7 +358,7 @@ repository.zero
 	provider-name="Ivar Brandt">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" />
+		<import addon="script.fentastic.helper" version="0.6.20a"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -434,7 +433,7 @@ repository.zero
 	provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentasticplus.helper" version="100.6.23" />
+		<import addon="script.fentastic.helper" version="100.6.23" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -468,7 +467,7 @@ repository.zero
 </addon>
 
 
-<addon id="script.fentasticplus.helper" name="FENtastic Plus Helper" version="100.6.23" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.23" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
