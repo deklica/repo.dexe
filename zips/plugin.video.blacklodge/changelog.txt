@@ -1,3 +1,18 @@
+[B][COLOR gold]v1.06.34[/COLOR][/B]
+- Fixed some issues with TMDb Helper playback
+
+[B][COLOR gold]v1.06.33[/COLOR][/B]
+- Removed HEVC streams filter and added AV1 filter
+- Various fixes
+
+[B][COLOR gold]v1.06.32[/COLOR][/B]
+- Added keyword input search on Keywords categories
+- Trakt API interaction module refactoring
+
+[B][COLOR gold]v1.06.31[/COLOR][/B]
+- Fixed some issues with cache
+- Adjusted cache durations
+
 [B][COLOR gold]v1.06.30[/COLOR][/B]
 - Minor fixes
 

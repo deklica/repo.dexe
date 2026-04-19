@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.13" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.14" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -23,6 +23,13 @@ Random updates by lolage.
         <language>en</language>
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.14.14:[/B]
+- Update Thumbnail Hashes
+- Update User Agent
+- wcostream: fix latest thumbnails
+- Change thumbnail url
+- revert resolve order for m3u8 files
+
 [B]0.14.13:[/B]
 - fix recent thumbnails
 - change resolve order due to issues with the m3u8 files

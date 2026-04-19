@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<addon id="plugin.video.dltv" name="DaddyLive" version="1.0.19" provider-name="Arkane14">
+<addon id="plugin.video.dltv" name="DaddyLive" version="1.0.20" provider-name="Arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -16,9 +16,9 @@
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
         </assets>
-        <news>v1.0.19: Detect cdn.gptimage15.com placeholder CDN via URL (AES-encrypted segments undetectable by byte probe)</news>
+        <news>v1.0.20: Fix ch.773 — route via lovecdn player; fix CHEVY AES+header scan false positives; fix stall recovery for non-premium channels</news>
     </extension>
 </addon>

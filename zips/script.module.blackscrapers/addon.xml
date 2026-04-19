@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.37" provider-name="janedoe">
+<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.39" provider-name="janedoe">
     <requires>
         <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.requests" />

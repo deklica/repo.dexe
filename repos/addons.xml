@@ -44,6 +44,7 @@ repository.709
 repository.a4kstreaming
 repository.a4ksubtitles
 repository.abratchik
+repository.addonniss
 repository.addons4kodi
 repository.aenemapy
 repository.aeonmq5_mod
@@ -144,6 +145,7 @@ repository.thecrew
 repository.thelab
 repository.thewarehouse
 repository.tidal2
+repository.tidb.repo
 repository.titan.bingie.mod
 repository.torrest
 repository.tvone
@@ -429,11 +431,11 @@ repository.zero
 </addon>
 
 
-<addon id="skin.fentasticplus" version="100.0.28" name="FENtastic Plus"
+<addon id="skin.fentastic" version="100.0.30" name="FENtastic Plus"
 	provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" version="100.6.23" />
+		<import addon="script.fentastic.helper" version="100.6.25" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -467,7 +469,7 @@ repository.zero
 </addon>
 
 
-<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.23" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.25" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -815,6 +817,21 @@ repository.zero
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.addonniss" name="Addonniss Repository" version="1.0.1" provider-name="Addonniss">
+	<extension point="xbmc.addon.repository" name="Addonniss Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Official Repository for Addonniss AI Tools</summary>
+		<description>Get the latest updates for Translatarr and other AI-powered Kodi services.</description>
+		<platform>all</platform>
 	</extension>
 </addon>
 
@@ -1464,7 +1481,7 @@ repository.zero
 	</extension>
 </addon>
 
-<addon id="repository.enigmawiz" name="Enigma Repo" version="2.0.8" provider-name="Enigma Repo">
+<addon id="repository.enigmawiz" name="Enigma Repo" version="2.0.9" provider-name="Enigma Repo">
 	<extension point="xbmc.addon.repository" name="Enigma Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2808,6 +2825,24 @@ repository.zero
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.tidb.repo" name="TheIntroDB Kodi Addon Repo" version="2.0.0" provider-name="TheIntroDB">
+	<extension point="xbmc.addon.repository" name="TheIntroDB Kodi Addon Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Source for TheIntroDB Kodi Addon (GitHub)</summary>
+		<description lang="en_GB">Adds the TheIntroDB service addon from github.com/TheIntroDB</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>

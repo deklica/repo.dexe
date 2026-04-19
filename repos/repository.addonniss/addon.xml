@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.addonniss"
+       name="Addonniss Repository"
+       version="1.0.1"
+       provider-name="Addonniss">
+
+    <extension point="xbmc.addon.repository"
+               name="Addonniss Repository">
+        <dir>
+            <info compressed="false">https://addonniss.github.io/repository.addonniss/zips/addons.xml</info>
+            <checksum>https://addonniss.github.io/repository.addonniss/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://addonniss.github.io/repository.addonniss/zips/</datadir>
+        </dir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>Official Repository for Addonniss AI Tools</summary>
+        <description>Get the latest updates for Translatarr and other AI-powered Kodi services.</description>
+        <platform>all</platform>
+    </extension>
+
+</addon>

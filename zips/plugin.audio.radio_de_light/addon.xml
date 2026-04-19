@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.radio_de_light" name="Radio light" provider-name="fivebanger, Publish3r" version="1.0.2">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" version="2.18.4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Online radio and podcasts</summary>
+    <description lang="en_GB">Add-on to access broadcast streams provided by Radio.de.</description>
+    <disclaimer lang="en_GB">This add-on is not endorsed, certified or otherwise approved in any way by Radio.de. Use at your own risk.</disclaimer>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>

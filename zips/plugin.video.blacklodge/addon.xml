@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.30">
+<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.34">
     <requires>
         <import addon="resource.images.blacklodge.artwork" />
         <import addon="script.module.requests" />
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="script.module.simplejson" />
-        <import addon="script.module.blackscrapers" />
-        <import addon="script.module.resolveurl" />
+        <import addon="script.module.blackscrapers" optional="true" />
+        <import addon="script.module.resolveurl" optional="true" />
     </requires>
     <extension library="blacklodge.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
     </extension>
     <extension library="service.py" point="xbmc.service" start="startup" />
     <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
         <summary lang="en_GB">Blacklodge</summary>
         <description lang="en_GB">Fetches official stream urls/ids from various streaming services, and sends them to their equivalent Kodi add-on for playback.[CR]NOTE: This add-on uses free and legal resources for it's purposes. User has to have installed and configured (with linked active account where required) the supported services' equivalent add-ons in order to achieve playback.</description>
         <platform>all</platform>

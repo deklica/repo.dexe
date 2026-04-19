@@ -1,3 +1,7 @@
+1.0.4 - Minor bug fixes. 
+
+1.0.3 - Minor update to settings menu.
+
 1.0.2 - Fix Torbox authorization
 
 1.0.1 - Minor bug fixes.

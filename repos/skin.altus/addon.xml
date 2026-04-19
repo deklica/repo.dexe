@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.altus" version="0.6.6" name="Altus"
+<addon id="skin.altus" version="0.6.9" name="Altus"
 	provider-name="Ivar Brandt">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.images.weathericons.white" version="0.0.1" />
-		<import addon="script.altus.helper" version="0.3.4"/>
+		<import addon="script.altus.helper" version="0.3.6"/>
 	</requires>
 	<extension effectslowdown="1" point="xbmc.gui.skin" debugging="false">
 		<!-- <res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />

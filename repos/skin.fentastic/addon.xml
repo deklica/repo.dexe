@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.fentastic" version="1.0.25" name="FENtastic"
-	provider-name="Ivar Brandt">
+<addon id="skin.fentastic" version="100.0.30" name="FENtastic Plus"
+	provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" version="0.6.20a"/>
+		<import addon="script.fentastic.helper" version="100.6.25" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -27,11 +27,11 @@
 			<screenshot>resources/images/infopanel.jpg</screenshot>
 			<screenshot>resources/images/viewtypes1.jpg</screenshot>
 		</assets>
-		<summary lang="en_GB">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
-		<summary lang="en_NZ">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
-		<summary lang="en_US">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
-		<description lang="en_GB">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
-		<description lang="en_NZ">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
-		<description lang="en_US">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+		<summary lang="en_GB">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
+		<summary lang="en_NZ">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
+		<summary lang="en_US">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
+		<description lang="en_GB">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+		<description lang="en_NZ">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+		<description lang="en_US">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
 	</extension>
 </addon>

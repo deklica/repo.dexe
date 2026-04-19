@@ -1,3 +1,17 @@
+[COLOR cyan][B]Version 1.3.0[/B][/COLOR]
+
+• Removed Dead Or Slow Performing Scrapers.
+• Optimized Setup For Best Performance.
+• Removed Duplicate Scrapers.
+• Overall: Improved stability, faster performance.
+• Improved speed, reliability, and consistency of results.
+• Clean Thumbnails After Update.
+
+[COLOR cyan][B]Version 1.2.9[/B][/COLOR]
+
+• Zilean Updated.
+• Metoer Updated.
+
 [COLOR cyan][B]Version 1.2.8[/B][/COLOR]
 
 • Optimized Setup for Mediafusion Scraper
