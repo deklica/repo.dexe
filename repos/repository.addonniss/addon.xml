@@ -17,6 +17,9 @@
         <summary>Official Repository for Addonniss AI Tools</summary>
         <description>Get the latest updates for Translatarr and other AI-powered Kodi services.</description>
         <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
     </extension>
 
 </addon>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.zeus768" name="Zeus768 Repository" version="1.2.0" provider-name="zeus768">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Zeus768 Repository">
+        <dir><!--Zeus768 Repository-->
+            <info compressed="false">https://raw.githubusercontent.com/Zeus768/zeus768/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Zeus768/zeus768/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Zeus768/zeus768/main/zips/</datadir>
+        </dir>
+        <dir><!--ResolveURL Repository-->
+            <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+        </dir>
+    </extension>
+    <!--<extension point="xbmc.service" library="service.py" start="login"/>-->
+    <extension point="xbmc.addon.metadata">
+        <summary>Zeus768 Repository - Kodi Addons</summary>
+        <description>Zeus768 Kodi Addon Repository with auto-update detection.
+
+Available Addons:
+- Genesis - Stream Movies and TV Shows with Debrid and Trakt
+- Genesis Skins - Theme packs for Genesis
+- SALTS (Stream All The Sources) - 120+ scrapers, Debrid, Trakt
+- Trakt Player - Click and Play, Debrid-powered
+- Orion - Media Explorer with Netflix-style UI
+- Poseidon Player - Premium IPTV Player with EPG
+- Poseidon Guide - EPG Grid for Poseidon Player
+- The Accountant - Auth Manager, Account Cards, Maintenance Suite
+- ResolveURL - URL Resolver Module
+
+Auto-Update: Checks GitHub every 30 minutes for new commits and forces Kodi to refresh addon updates instantly.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

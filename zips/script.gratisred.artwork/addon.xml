@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.gratisred.artwork" version="1.0.1" name="[COLOR red]Gratis Red Artwork[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR red]Gratis Red Artwork[/COLOR]</summary>
+        <description lang="en">[COLOR red]Forked and updated from[/COLOR] [COLOR orange]Scrubs v2 Artwork by JewBMX[/COLOR]</description>
+		<language>en</language>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
+		<website>https://redwizard.xyz/</website> 
+		<email>info@redwizard.xyz</email>
+		<source>https://github.com/jewbmx</source>
+        <news>[COLOR red]2026-01-23
+- Forked from[/COLOR] [COLOR orange]Scrubs v2 Artwork v1.6[/COLOR][COLOR red]
+- Transparent, Exodus and Venom artwork added to Scrubs v2 and Grey[/COLOR]</news>
+        <assets>
+            <icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

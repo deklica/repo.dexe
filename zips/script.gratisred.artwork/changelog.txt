@@ -1,0 +1,6 @@
+v1.0.1 (2026-04-23)
+ - Scrubs v2 theme compatibility fixed
+
+v1.0.0 (2026-04-23)
+ - Forked from Scrubs v2 Artwork v1.6
+ - Transparent, Exodus and Venom artwork added to Scrubs v2 and Grey

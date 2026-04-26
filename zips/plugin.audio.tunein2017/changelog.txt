@@ -7,6 +7,12 @@ CHANGE HISTORY 	Kodi-Addon-TuneIn2017 (previosly plugin for Plexmediaserver)
 			Plex-Forum:
 			https://forums.plex.tv/discussion/288260/rel-tunein2017
 
+25.04.2026 1.8.1	refurbished to be easier to maintain. Changes for users:
+			Premium menu only visible when this setting is enabled (only adverts in the free version)
+			The ‘Start plugin only with favourites’ setting has been removed
+			The ‘Start plugin only with My Radio Stations’ setting has been removed
+			
+
 19.03.2026 1.8.0 	Container lists: Added a skip_list to prevent duplicate elements; 
 			removed the “-” suffix from preset_id; replaced the block attribute "token" 
 			with "itemToken".

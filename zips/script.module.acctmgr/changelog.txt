@@ -1,3 +1,6 @@
+
+1.0.5 - Removed Offcloud. Added MDBList. Added set Source Select/Autoplay to tools menu. Added the SALTS add-on by zeus768. Minor bug fixes. Updated artwork.
+
 1.0.4 - Minor bug fixes. 
 
 1.0.3 - Minor update to settings menu.
@@ -8,6 +11,6 @@
 
 1.0.0 - Initial Release. 
 
- *** Account Manager completely restructured and slimmed down to my liking ***
+ *** Account Manager completely restructured ***
 
 Cheers to any Kodi enthusiasts who have helped me along the way, supporters, positive thinkers and anyone who has dedicated some of their spare time to this community!

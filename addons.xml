@@ -11,6 +11,7 @@ plugin.video.elementum
 plugin.video.fen
 plugin.video.fenlight (FenLightAM / Fen Light+ / Fen Light)
 plugin.video.free99
+plugin.video.gratisred
 plugin.video.imdb.trailers
 plugin.video.json_iptv
 plugin.video.last_played
@@ -18,7 +19,6 @@ plugin.video.playlistbee
 plugin.video.premiumizerx
 plugin.video.ptfm
 plugin.video.realizerx
-plugin.video.scrubsv2
 plugin.video.seren
 plugin.video.watchnixtoons2
 plugin.video.xstream-player
@@ -89,7 +89,7 @@ plugin.image.flickrexplorer
 --- Dependencies ---
 script.module.youtube_channels
 script.free99.artwork
-script.scrubsv2.artwork
+script.gratisred.artwork
 resource.images.blacklodge.artwork
 resource.images.whitelodge.artwork
 
@@ -416,6 +416,41 @@ service.subtitles.titlovi
 </addon>
 
 
+<addon id="plugin.video.gratisred" version="1.0.0" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+    <requires>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.resolveurl" />
+        <import addon="script.gratisred.artwork" />
+        <import addon="script.trakt" optional="true" />
+        <import addon="plugin.video.youtube" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR red]Free and non-Debrid Movies, TV Shows and Anime[/COLOR]</summary>
+        <description lang="en">[COLOR red]Free and non-Debrid Movies, TV Shows and Anime. Additional sources in Tools > Settings > Provider Settings (returning false positives, but they might work depending on your IP address)[CR][CR]Forked and updated from[/COLOR] [COLOR orange]Scrubs v2 by JewBMX[/COLOR][CR][CR][COLOR blue]Many thanks to The Alpha![/COLOR]</description>
+        <disclaimer lang="en">[COLOR red]The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works[/COLOR]</disclaimer>
+		<language>en</language>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
+		<website>https://redwizard.xyz/</website> 
+		<email>info@redwizard.xyz</email>
+		<source>https://github.com/jewbmx</source>
+        <news></news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
 <addon id="plugin.video.imdb.trailers" name="IMDb Trailers" version="2.1.22" provider-name="gujal">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -685,37 +720,6 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.scrubsv2" version="5.1.43" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
-    <requires>
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.simplejson" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.resolveurl" />
-        <import addon="script.scrubsv2.artwork" optional="true" />
-        <import addon="script.trakt" optional="true" />
-        <import addon="plugin.video.json_iptv" optional="true" />
-        <import addon="plugin.video.youtube" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-    <extension library="service.py" point="xbmc.service" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">A Clean Source To Dirty Things...</summary>
-        <description lang="en">Movies, Tv Shows, Anime, and What Not. [CR] See Changelog For Changes. [CR] You enable/disable the ones you dont like and let me handle the broken providers. [CR] How it should be :)</description>
-        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        <license>Free the People!, Free the World!!</license>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <news></news>
-    </extension>
-</addon>
-
-
 <addon id="plugin.video.seren" version="4.0.1" name="Seren" provider-name="Nixgates">
     <requires>
         <import addon="xbmc.addon" version="17.9.910" />
@@ -815,7 +819,7 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.xstream-player" name="XStream Player" version="2.1.1" provider-name="XStream Player">
+<addon id="plugin.video.xstream-player" name="XStream Player" version="2.1.4" provider-name="XStream Player">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.requests" version="2.22.0"/>
@@ -838,7 +842,7 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.youtube" name="YouTube" version="7.4.1.1+unofficial.1" provider-name="anxdpanic, bromix, MoojMidge">
+<addon id="plugin.video.youtube" name="YouTube" version="7.4.2+unofficial.1" provider-name="anxdpanic, bromix, MoojMidge">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.27.1"/>
@@ -1661,7 +1665,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.1.0">
+<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.3.0">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -1673,13 +1677,12 @@ In order to get the API Key:
         <platform>all</platform>
         <license>MIT</license>
         <source>https://gitlab.com/personal4143605/optiklean</source>
-        <license>https://opensource.org/licenses/MIT</license>
         <summary lang="en_GB">Clean and optimize Kodi utility.</summary>
         <summary lang="it_IT">Utilità di pulizia e ottimizzazione Kodi.</summary>
         <description lang="en_GB">Advanced tool to perform various types of Kodi cleaning and optimization.</description>
         <description lang="it_IT">Strumento avanzato che permette di eseguire vari tipi di pulizie e ottimizzazione Kodi.</description>
         <assets>
-            <icon>icon.jpg</icon>
+            <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
             <screenshot>screenshot-1.png</screenshot>
             <screenshot>screenshot-2.png</screenshot>
@@ -2188,11 +2191,11 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctmgr" version="1.0.4" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
+<addon id="script.module.acctmgr" version="1.0.5" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-		<import addon="script.module.acctvwr" version="1.0.2" />
+		<import addon="script.module.acctvwr" version="1.0.4" />
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">
@@ -2214,7 +2217,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctvwr" name="[COLOR FF32D3FE][B]Account[/B][/COLOR][COLOR gold] [B]Viewer[/B][/COLOR]" version="1.0.2" provider-name="Zaxxon709">
+<addon id="script.module.acctvwr" name="[COLOR FF32D3FE][B]Account[/B][/COLOR][COLOR gold] [B]Viewer[/B][/COLOR]" version="1.0.4" provider-name="Zaxxon709">
     <extension point="xbmc.python.pluginsource" library="default.py" />
     <extension point="xbmc.python.module" library="resources" />
     <extension point="xbmc.addon.metadata">
@@ -3005,7 +3008,7 @@ strptime Python bugfix
 </addon>
 
 
-<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.8.0" provider-name="rols1 (rols1@gmx.de)">
+<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.8.1" provider-name="rols1 (rols1@gmx.de)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1"/>
     		<import addon="script.module.kodi-six" />
@@ -3154,16 +3157,25 @@ strptime Python bugfix
 </addon>
 
 
-<addon id="script.scrubsv2.artwork" version="1.6" name="Scrubs v2 Artwork" provider-name="JewBMX">
+<addon id="script.gratisred.artwork" version="1.0.1" name="[COLOR red]Gratis Red Artwork[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
-        <summary>Scrubs v2 Artwork</summary>
-        <description>Scrubs v2 Artwork</description>
-        <platform>all</platform>
+        <summary lang="en">[COLOR red]Gratis Red Artwork[/COLOR]</summary>
+        <description lang="en">[COLOR red]Forked and updated from[/COLOR] [COLOR orange]Scrubs v2 Artwork by JewBMX[/COLOR]</description>
+		<language>en</language>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
+		<website>https://redwizard.xyz/</website> 
+		<email>info@redwizard.xyz</email>
+		<source>https://github.com/jewbmx</source>
+        <news>[COLOR red]2026-01-23
+- Forked from[/COLOR] [COLOR orange]Scrubs v2 Artwork v1.6[/COLOR][COLOR red]
+- Transparent, Exodus and Venom artwork added to Scrubs v2 and Grey[/COLOR]</news>
         <assets>
             <icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
         </assets>
-        <news>Changed the fanart to be a simple small image that has a matching color tone to the theme chosen.</news>
     </extension>
 </addon>
 

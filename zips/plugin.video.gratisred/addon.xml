@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.gratisred" version="1.0.0" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+    <requires>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.resolveurl" />
+        <import addon="script.gratisred.artwork" />
+        <import addon="script.trakt" optional="true" />
+        <import addon="plugin.video.youtube" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR red]Free and non-Debrid Movies, TV Shows and Anime[/COLOR]</summary>
+        <description lang="en">[COLOR red]Free and non-Debrid Movies, TV Shows and Anime. Additional sources in Tools > Settings > Provider Settings (returning false positives, but they might work depending on your IP address)[CR][CR]Forked and updated from[/COLOR] [COLOR orange]Scrubs v2 by JewBMX[/COLOR][CR][CR][COLOR blue]Many thanks to The Alpha![/COLOR]</description>
+        <disclaimer lang="en">[COLOR red]The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works[/COLOR]</disclaimer>
+		<language>en</language>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
+		<website>https://redwizard.xyz/</website> 
+		<email>info@redwizard.xyz</email>
+		<source>https://github.com/jewbmx</source>
+        <news>[COLOR red]2026-01-23
+- Forked from[/COLOR] [COLOR orange]Scrubs v2 v5.1.55 (most recent JewBMX version 5.1.42)[/COLOR][COLOR red]
+- New Transparent theme set to default[/COLOR]</news>
+        <assets>
+            <icon>resources/images/icon.png</icon>
+            <fanart>resources/images/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
