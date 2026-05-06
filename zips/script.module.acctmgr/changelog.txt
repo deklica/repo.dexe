@@ -1,3 +1,6 @@
+1.0.7 - Minor bug fixes. Updates to settings menu.
+
+1.0.6 - Added support for Trakt. Added Gratis Red, a Scrubs V2 fork by RedWizard.
 
 1.0.5 - Removed Offcloud. Added MDBList. Added set Source Select/Autoplay to tools menu. Added the SALTS add-on by zeus768. Minor bug fixes. Updated artwork.
 

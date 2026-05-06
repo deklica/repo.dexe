@@ -168,7 +168,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.34">
+<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.35">
     <requires>
         <import addon="resource.images.blacklodge.artwork" />
         <import addon="script.module.requests" />
@@ -336,7 +336,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="AnonyMouse" version="2.1.98">
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="AnonyMouse" version="2.2.04">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -416,25 +416,25 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.gratisred" version="1.0.0" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" version="1.1.0" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.simplejson" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.resolveurl" />
-        <import addon="script.gratisred.artwork" />
-        <import addon="script.trakt" optional="true" />
-        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.six"/>
+        <import addon="script.module.kodi-six"/>
+        <import addon="script.module.simplejson"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.resolveurl"/>
+        <import addon="script.gratisred.artwork" version="1.0.2"/>
+        <import addon="script.trakt" optional="true"/>
+        <import addon="plugin.video.youtube" optional="true"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
     </extension>
-    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension library="service.py" point="xbmc.service" start="startup"/>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">[COLOR red]Free and non-Debrid Movies, TV Shows and Anime[/COLOR]</summary>
-        <description lang="en">[COLOR red]Free and non-Debrid Movies, TV Shows and Anime. Additional sources in Tools > Settings > Provider Settings (returning false positives, but they might work depending on your IP address)[CR][CR]Forked and updated from[/COLOR] [COLOR orange]Scrubs v2 by JewBMX[/COLOR][CR][CR][COLOR blue]Many thanks to The Alpha![/COLOR]</description>
-        <disclaimer lang="en">[COLOR red]The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works[/COLOR]</disclaimer>
+        <description lang="en">[COLOR red]Additional providers in[/COLOR] [COLOR gold]Tools > Settings > Provider Settings[/COLOR] [COLOR red](returning false positives, but they might work depending on your IP address)[CR][CR]Providers bstsrs.one and srstop.link are largely returning duplicates of each other. To see more links, go to[/COLOR] [COLOR gold]Tools > Settings > Playback Settings and disable "Remove Duplicate Sources".[/COLOR][CR][CR][COLOR red]Forked and updated from[/COLOR] [COLOR orange]Scrubs v2 by JewBMX.[/COLOR][CR][CR][COLOR blue]Many thanks to The Alpha![/COLOR]</description>
+        <disclaimer lang="en">[COLOR red]The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.[/COLOR]</disclaimer>
 		<language>en</language>
 		<platform>all</platform>
 		<license>GPL-2.0-or-later</license>
@@ -442,10 +442,18 @@ service.subtitles.titlovi
 		<website>https://redwizard.xyz/</website> 
 		<email>info@redwizard.xyz</email>
 		<source>https://github.com/jewbmx</source>
-        <news></news>
+        <news>[COLOR red]2026-04-29
+- Summary of v1.0.1 - v1.1.0 (see Tools > Changelog for the detail):
+ * srstop.link and FlareSolverr implemented (flaresolverr default value http://127.0.0.1:8191/v1)
+ * TVmaze sections overhauled and expanded
+ * TV Passport Channels overhauled
+ * Changelogs moved from online to traditional locally hosted
+ * Themes renamed and reorganised (requires script.gratisred.artwork v1.0.2)
+ * Old entries cleaned/removed[/COLOR][COLOR blue]
+- Thank you to The Alpha for his work on TVmaze, providers and FlareSolverr[/COLOR]</news>
         <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
+            <icon>resources/images/icon.png</icon>
+            <fanart>resources/images/fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
@@ -788,7 +796,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.14" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.15" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -2191,11 +2199,11 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctmgr" version="1.0.5" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
+<addon id="script.module.acctmgr" version="1.0.7" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-		<import addon="script.module.acctvwr" version="1.0.4" />
+		<import addon="script.module.acctvwr" version="1.0.6" />
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">
@@ -2217,7 +2225,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctvwr" name="[COLOR FF32D3FE][B]Account[/B][/COLOR][COLOR gold] [B]Viewer[/B][/COLOR]" version="1.0.4" provider-name="Zaxxon709">
+<addon id="script.module.acctvwr" name="[COLOR FF32D3FE][B]Account[/B][/COLOR][COLOR gold] [B]Viewer[/B][/COLOR]" version="1.0.6" provider-name="Zaxxon709">
     <extension point="xbmc.python.pluginsource" library="default.py" />
     <extension point="xbmc.python.module" library="resources" />
     <extension point="xbmc.addon.metadata">
@@ -2262,7 +2270,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.3.0" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.3.1" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -3008,7 +3016,7 @@ strptime Python bugfix
 </addon>
 
 
-<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.8.1" provider-name="rols1 (rols1@gmx.de)">
+<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.8.2" provider-name="rols1 (rols1@gmx.de)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1"/>
     		<import addon="script.module.kodi-six" />
@@ -3157,7 +3165,7 @@ strptime Python bugfix
 </addon>
 
 
-<addon id="script.gratisred.artwork" version="1.0.1" name="[COLOR red]Gratis Red Artwork[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="script.gratisred.artwork" version="1.0.2" name="[COLOR red]Gratis Red Artwork[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">[COLOR red]Gratis Red Artwork[/COLOR]</summary>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.8.1" provider-name="rols1 (rols1@gmx.de)">
+<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.8.2" provider-name="rols1 (rols1@gmx.de)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1"/>
     		<import addon="script.module.kodi-six" />
@@ -17,7 +17,7 @@
 		<source>https://github.com/rols1/Kodi-Addon-TuneIn2017</source>
 		<forum>https://www.kodinerds.net/index.php/Thread/66559-RELEASE-Kodi-Addon-TuneIn2017</forum>
 		<license>The MIT License (MIT)</license>
-		<language>"en_GB"</language>
+		<language>"de_DE"</language>
  		<email>rols1@gmx.de</email>
 		<assets>
 			<icon>icon.png</icon>

@@ -1,4 +1,4 @@
-<addon id="repository.enigmawiz" name="[COLOR cyan]Enigma[/COLOR] Repo" version="2.1.3" provider-name="Enigma Repo">
+<addon id="repository.enigmawiz" name="[COLOR cyan]Enigma[/COLOR] Repo" version="2.1.6" provider-name="Enigma Repo">
 <extension point="xbmc.addon.repository" name="Enigma Repo">
 <dir>
 <info compressed="false">https://team-enigma.xyz/repo/zips/addons.xml</info>

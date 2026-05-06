@@ -1,3 +1,6 @@
+v1.0.2 (2026-04-28)
+ - Supports reorganised Themes in plugin.video.gratisred v1.0.1 and later
+
 v1.0.1 (2026-04-23)
  - Scrubs v2 theme compatibility fixed
 

@@ -1,3 +1,8 @@
+[B][COLOR gold]v1.06.35[/COLOR][/B]
+- Added option to filter-out sources from user defined hosts
+- Prevent unaired episodes from appearing in Trakt progress lists
+- Code reduction
+
 [B][COLOR gold]v1.06.34[/COLOR][/B]
 - Fixed some issues with TMDb Helper playback
 
