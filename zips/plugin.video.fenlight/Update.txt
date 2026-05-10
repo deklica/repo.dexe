@@ -5,6 +5,7 @@ FenlightAnonyMouse
 FenlightAnonyMouse.github.io
 https://FenlightAnonyMouse.github.io/packages
 https://glorifiedsourcefinder.github.io/packages/
+https://github.com/Tikipeter/fenlight.github.io/tree/main/packages
 
 Fen Light+
 thejason40

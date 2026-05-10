@@ -39,6 +39,7 @@ service.subtitles.opensubtitles_by_opensubtitles
 service.subtitles.opensubtitles_plus
 
 --- Program & Services ---
+plugin.video.tidb
 plugin.program.autoenabler
 plugin.program.openwizard
 plugin.program.optiklean
@@ -336,7 +337,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="AnonyMouse" version="2.2.04">
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="AnonyMouse" version="2.2.05">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -728,7 +729,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.seren" version="4.0.1" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="4.0.3" name="Seren" provider-name="Nixgates">
     <requires>
         <import addon="xbmc.addon" version="17.9.910" />
         <import addon="xbmc.python" version="3.0.0" />
@@ -827,7 +828,7 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.xstream-player" name="XStream Player" version="2.1.4" provider-name="XStream Player">
+<addon id="plugin.video.xstream-player" name="XStream Player" version="2.1.5" provider-name="XStream Player">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.requests" version="2.22.0"/>
@@ -850,7 +851,7 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.youtube" name="YouTube" version="7.4.2+unofficial.1" provider-name="anxdpanic, bromix, MoojMidge">
+<addon id="plugin.video.youtube" name="YouTube" version="7.4.3+unofficial.1" provider-name="anxdpanic, bromix, MoojMidge">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.27.1"/>
@@ -882,7 +883,7 @@ Random updates by lolage.
         <summary lang="cs_CZ">Plugin pro YouTube</summary>
         <summary lang="da_DK">Plugin til YouTube</summary>
         <summary lang="de_DE">Plugin für YouTube</summary>
-        <summary lang="el_GR">Πρόσθετο YouTube</summary>
+        <summary lang="el_GR">Πρόσθετο για το YouTube</summary>
         <summary lang="en_GB">Plugin for YouTube</summary>
         <summary lang="eo">Aldonaĵo por YouTube</summary>
         <summary lang="es_ES">Complemento para YouTube</summary>
@@ -1498,6 +1499,28 @@ In order to get the API Key:
 
 
 <!-- ---------------------------------------------------------------------- -->
+
+
+<addon id="plugin.video.tidb"
+       name="TheIntroDB Kodi Addon"
+       version="1.3.0"
+       provider-name="TheIntroDB">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <path>plugin.video.tidb-1.3.0.zip</path>
+        <summary lang="en_GB">Skip intro, recap, credits, and preview segments in movies and TV shows using TheIntroDB</summary>
+        <description lang="en_GB">Looks up segment timings from TheIntroDB while you watch. Uses TMDB ids when present; otherwise IMDb ids (tt…) with season/episode.</description>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <news lang="en_GB">v1.3.0 - Add submission overlay and fix buttons disappearing before playback.</news>
+    </extension>
+</addon>
 
 
 <addon id="plugin.program.autoenabler" name="Auto Enabler" version="1.0.1" provider-name="slam">

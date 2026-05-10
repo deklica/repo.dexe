@@ -1,0 +1,6 @@
+[COLOR red][B]Version 2.2.05[/B][/COLOR]
+- New keys for TMDb and Trakt after "Tikipeter" & "AnonyMouse" revoked those used by official FEN Light AM.
+  You will need to reauthorise Trakt and TMDb, reset the Trakt and TMDb keys to defaults (or use your own) and you may need to clear the metacache.
+- Icons restored.
+- Updater disabled. 
+- TMDb Helper patched.
