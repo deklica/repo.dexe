@@ -455,8 +455,8 @@ service.subtitles.titlovi
  * Old entries cleaned/removed[/COLOR][COLOR blue]
 - Thank you to The Alpha for his work on TVmaze, providers and FlareSolverr[/COLOR]</news>
         <assets>
-            <icon>resources/images/icon.png</icon>
-            <fanart>resources/images/fanart.jpg</fanart>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
