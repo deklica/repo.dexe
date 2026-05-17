@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.G00380316" name="Gflix" version="3.0.3" provider-name="G00380316">
+    <extension point="xbmc.addon.repository" name="Gflix Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/G00380316/gflix/main/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/G00380316/gflix/main/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/G00380316/gflix/main/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Home Entertainment Repository</summary>
+        <description>This repository contains add-ons for the ultimate entertainment system.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+    </extension>
+</addon>

@@ -1,6 +1,10 @@
+1.0.9 - Added Red Light, a FLAM fork by Red Wizard. Added QR Code for easy Torbox authorization.
+
+1.0.8 - Small fix for Umbrella Trakt indicators. Added a fix to sort Trakt issues arising from recent changes made to Fen Light.
+
 1.0.7 - Minor bug fixes. Updates to settings menu.
 
-1.0.6 - Added support for Trakt. Added Gratis Red, a Scrubs V2 fork by RedWizard.
+1.0.6 - Added support for Trakt. Added Gratis Red, a Scrubs V2 fork by Red Wizard.
 
 1.0.5 - Removed Offcloud. Added MDBList. Added set Source Select/Autoplay to tools menu. Added the SALTS add-on by zeus768. Minor bug fixes. Updated artwork.
 

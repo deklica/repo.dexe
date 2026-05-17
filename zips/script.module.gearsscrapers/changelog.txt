@@ -1,0 +1,36 @@
+[COLOR cyan][B]Version 1.3.4[/B][/COLOR]
+
+[COLORcyan][B]Latest update changelog[/B][/COLOR]
+
+[COLOR green][B]Scraper Updates And Changes[/B][/COLOR]
+
+• Removed mediafusion due to ongoing issues failing to return links.  
+• Added torlock scraper support.  
+• Added rutor scraper support.  
+• Added knaben scraper support.  
+• Removed duplicate and unnecessary scrapers to improve efficiency and reduce clutter.  
+
+[COLOR green][B]Performance & Stability Improvements[/B][/COLOR]
+
+• Optimized addon setup for better overall performance.  
+• Improved speed, reliability and consistency when scraping sources.  
+• Improved source handling for smoother and faster link retrieval.  
+• Reworked several backend processes to improve stability across supported content.  
+• Cleaned and streamlined configuration settings for a more reliable experience.  
+• Improved initialization speed for scrapers and providers.  
+• Optimized memory and background processing to reduce slowdowns and improve responsiveness.  
+• Overall improvements to addon stability and day to day performance.  
+
+[COLOR green][B]Comet & Meteor Optimizations[/B][/COLOR]
+
+• Optimized setup and configuration for comet scraper.  
+• Optimized setup and configuration for meteor scraper.  
+• Improved compatibility and reliability for supported content.  
+• Faster scraping performance and more consistent source results.  
+• Improved handling of provider responses and failed requests.  
+
+[COLOR green][B]Maintenance[/B][/COLOR]
+
+• Minor bug fixes and general cleanup. 
+• Automatic thumbnail cleanup after update to prevent outdated artwork and reduce cache issues.  
+• These changes should provide faster results, improved reliability and a smoother overall user experience.

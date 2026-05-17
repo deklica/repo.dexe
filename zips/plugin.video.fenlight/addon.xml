@@ -1,4 +1,4 @@
-<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="AnonyMouse" version="2.2.04">
+<addon id="plugin.video.fenlight" name="Fen Light" provider-name="AnonyMouse, Tikipeter" version="2.2.05">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -20,6 +20,8 @@
             <icon>resources/media/addon_icons/fenlight_icon_01.png</icon>
             <fanart>resources/media/fenlight_fanart_01.jpg</fanart>
         </assets>
-        <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
+        <news>INFO: For latest changes see Changelog within Tools of add-on.
+[B]*** This will probably be the last update to Fen Light ***[/B]
+        </news>
     </extension>
 </addon>
