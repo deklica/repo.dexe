@@ -1,3 +1,5 @@
+1.1.0 - Removed Dradis. Fix Torbox QR dialog. Minor bug fixes.
+
 1.0.9 - Added Red Light, a FLAM fork by Red Wizard. Added QR Code for easy Torbox authorization.
 
 1.0.8 - Small fix for Umbrella Trakt indicators. Added a fix to sort Trakt issues arising from recent changes made to Fen Light.

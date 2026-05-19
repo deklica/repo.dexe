@@ -1505,14 +1505,13 @@ In order to get the API Key:
 
 <addon id="plugin.video.tidb"
        name="TheIntroDB Kodi Addon"
-       version="1.3.0"
+       version="1.4.1"
        provider-name="TheIntroDB">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
     </requires>
     <extension point="xbmc.service" library="service.py" start="startup"/>
     <extension point="xbmc.addon.metadata">
-        <path>plugin.video.tidb-1.3.0.zip</path>
         <summary lang="en_GB">Skip intro, recap, credits, and preview segments in movies and TV shows using TheIntroDB</summary>
         <description lang="en_GB">Looks up segment timings from TheIntroDB while you watch. Uses TMDB ids when present; otherwise IMDb ids (tt…) with season/episode.</description>
         <platform>all</platform>
@@ -1520,7 +1519,7 @@ In order to get the API Key:
         <assets>
             <icon>icon.png</icon>
         </assets>
-        <news lang="en_GB">v1.3.0 - Add submission overlay and fix buttons disappearing before playback.</news>
+        <news lang="en_GB"></news>
     </extension>
 </addon>
 
@@ -2224,11 +2223,11 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctmgr" version="1.0.9a" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
+<addon id="script.module.acctmgr" version="1.1.0" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-		<import addon="script.module.acctvwr" version="1.0.8" />
+            	<import addon="script.module.acctvwr" version="1.0.9" />
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">
@@ -2238,7 +2237,7 @@ In order to get the API Key:
 	<extension point="xbmc.addon.metadata">
 		<reuselanguageinvoker>false</reuselanguageinvoker>
 		<summary lang="en">AM Lite</summary>
-		<description>Manage your logins</description>
+		<description>A utility designed to centralize the authorization of various third-party streaming services across multiple Kodi add-ons.</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<disclaimer lang="en">The author is not responsible for the use of this addon. [CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
@@ -2250,7 +2249,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctvwr" name="[COLOR FF32D3FE][B]Account[/B][/COLOR][COLOR gold] [B]Viewer[/B][/COLOR]" version="1.0.8" provider-name="Zaxxon709">
+<addon id="script.module.acctvwr" name="[COLOR FF32D3FE][B]Account[/B][/COLOR][COLOR gold] [B]Viewer[/B][/COLOR]" version="1.0.9" provider-name="Zaxxon709">
     <extension point="xbmc.python.pluginsource" library="default.py" />
     <extension point="xbmc.python.module" library="resources" />
     <extension point="xbmc.addon.metadata">
@@ -2295,7 +2294,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.3.4" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.3.5" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2401,7 +2400,7 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.magneto" version="6.04.03" name="Magneto Module" provider-name="Magneto">
+<addon id="script.module.magneto" version="6.05.01" name="Magneto Module" provider-name="Magneto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />

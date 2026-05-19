@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.acctmgr" version="1.0.9a" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
+<addon id="script.module.acctmgr" version="1.1.0" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-            	<import addon="script.module.acctvwr" version="1.0.8" />
+            	<import addon="script.module.acctvwr" version="1.0.9" />
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">
@@ -13,7 +13,7 @@
 	<extension point="xbmc.addon.metadata">
 		<reuselanguageinvoker>false</reuselanguageinvoker>
 		<summary lang="en">AM Lite</summary>
-		<description>Manage your logins</description>
+		<description>A utility designed to centralize the authorization of various third-party streaming services across multiple Kodi add-ons.</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<disclaimer lang="en">The author is not responsible for the use of this addon. [CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>

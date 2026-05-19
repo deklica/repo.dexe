@@ -1,10 +1,22 @@
-[COLOR cyan][B]Version 1.3.4[/B][/COLOR]
+[COLOR cyan][B]Version 1.3.5[/B][/COLOR]
 
-[COLORcyan][B]Latest update changelog[/B][/COLOR]
+[COLORcyan][B]GEARS SCRAPERS UPDATE[/B][/COLOR]
 
-[COLOR green][B]Scraper Updates And Changes[/B][/COLOR]
 
-• Removed mediafusion due to ongoing issues failing to return links.  
+[COLORcyan][B]COMET SCRAPER REWRITE[/B][/COLOR]
+
+• The Comet scraper has now been fully rewritten to support Comet’s completely new API and response format.
+• Recent changes on Comet’s side caused the old scraper structure to become obsolete and incompatible with the service.
+• Although some users may have still seen occasional results earlier, the old implementation should technically no longer have been functioning correctly and would often return:
+  [I]error: setup OBSOLETE[/I]
+• The scraper has now been rebuilt to properly communicate with the updated Comet backend and handle the new response structure correctly.
+• Result parsing, source extraction and compatibility handling have all been updated for improved reliability and stability.
+• This should restore proper scraping functionality and improve consistency when pulling results from Comet. (cm/c)
+• Additional internal cleanup and handling improvements were made during these scraper updates.
+• These changes are aimed at improving long-term scraper stability as more providers continue changing their formats and backend structures.
+• More maintenance and compatibility improvements will continue rolling out where needed.
+
+• Added galaxy scraper support.
 • Added torlock scraper support.  
 • Added rutor scraper support.  
 • Added knaben scraper support.  
@@ -21,7 +33,6 @@
 • Optimized memory and background processing to reduce slowdowns and improve responsiveness.  
 • Overall improvements to addon stability and day to day performance.  
 
-[COLOR green][B]Comet & Meteor Optimizations[/B][/COLOR]
 
 • Optimized setup and configuration for comet scraper.  
 • Optimized setup and configuration for meteor scraper.  
