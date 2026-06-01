@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="repository.collabsvito" name="Collabsvito that's my AiO REPO" version="3.6.6" provider-name="Collabsvito">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Collabsvito Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/REPOSITORIES/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/REPOSITORIES/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/REPOSITORIES/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="18.9.9">
+			<info compressed="false">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/</datadir>
+			<hashes>false</hashes>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Some nice py3-ADDONS created by @Collabsvito</summary>
+		<description lang="en_GB">Download And Install Addons Developed By Collabsvito.[CR]These Addons Should Not Missed And New Fans Are Welcome...</description>
+		<disclaimer lang="en_GB">The owner and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 3.6.6  (20.02.2023)[/COLOR][/B]
+- removed: Leia-Addons and Folder
+		</news>
+	</extension>
+</addon>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.9" provider-name="realvito (inspired by L0RE)">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Chartplayer für Musikvideos</summary>
+		<summary lang="en_GB">Chartplayer for Musicvideos</summary>
+		<description lang="de_DE">Musiktitel aus verschiedenen Quellen und Charts z.B. Beatport, Billboard, Officialcharts, Shazam etc. auswählen und das entsprechende Video automatisch auf YouTube suchen und über das YouTube-Addon abspielen.[CR][CR]     TEST IT AND LIKE IT</description>
+		<description lang="en_GB">Select music titles from various sources and charts e.g. Beatport, Billboard, Officialcharts, Shazam etc. and automatically search for the corresponding video on YouTube and play it via the YouTube-Addon.[CR][CR]     TEST IT AND LIKE IT</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
+		<website></website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.spotitube</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 3.0.9+matrix.1  (14.09.2025)[/COLOR][/B]
+- fixed: 'Apple Music' Auth-Token not found and subfolders cannot be opened (Error: APPLEMUSIC - COULD NOT FIND TOKEN)
+- fixed: Billboard-Videolists, artists are not displayed correctly
+- fixed: „Title Case“-Formatting for 'German umlauts' (ÄÖÜäöüß)
+- removed: Billboard archive sorted by year, now only last year is displayed (years no longer accessible)
+		</news>
+	</extension>
+</addon>

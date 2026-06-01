@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.diggz" name="Diggz Repository" version="25" provider-name="Diggz">
+<addon id="repository.diggz" name="Diggz Repository" version="28" provider-name="Diggz">
     <extension point="xbmc.addon.repository" name="Diggz Repository">
-        <dir minversion="20.90.0" maxversion="22.9.9">
+        <dir minversion="21.90.0">
+            <info compressed="false">https://raw.githubusercontent.com/nebulous42069/22/master/22/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/nebulous42069/22/master/22/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/nebulous42069/22/master/22/zips/</datadir>
+			<hashes>false</hashes>
+        </dir>
+        <dir minversion="21.0.0" maxversion="21.89.0">
             <info compressed="false">https://raw.githubusercontent.com/nebulous42069/Omega/main/omega/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/nebulous42069/Omega/main/omega/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/nebulous42069/Omega/main/omega/zips/</datadir>
-        </dir>
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/Zaxxon709/zaxxon/main/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/Zaxxon709/zaxxon/main/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/Zaxxon709/zaxxon/main/zips/</datadir>
-        </dir>
-        <dir minversion="20.9.1">
-            <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/</datadir>
-        </dir>		
+			<hashes>false</hashes>
+        </dir>	
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Diggz Repository</summary>

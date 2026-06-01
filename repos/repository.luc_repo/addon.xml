@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.luc_repo" name="[B][COLOR ff00fa9a]luc_[/COLOR][/B]repo" version="1.0.10" provider-name="[COLOR ffffae00]apoyotech[/COLOR]">
+   <extension point="xbmc.addon.repository" name="luc_repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/apoyotech/luc_repo/main/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/apoyotech/luc_repo/main/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/apoyotech/luc_repo/main/zips/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+    <summary lang="en_GB"> Welcome to the luc_repo</summary>
+    <description lang="en_GB">[COLOR fffa9900]luc_repo for  Kodi[/COLOR]</description>
+    <platform>all</platform>
+  <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>  
+  <disclaimer lang="en">The author of this repository do not host any of the content which is found and have no affiliation with any of the content providers. Use at your own risk!</disclaimer>  
+  <assets>	
+	 <icon>icon.png</icon>
+     <fanart>fanart.jpg</fanart>	
+	</assets>  
+  </extension>
+</addon>

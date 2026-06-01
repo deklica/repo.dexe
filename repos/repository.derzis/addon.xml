@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.derzis"
+       name="Derzis Repo"
+       version="1.0.0"
+       provider-name="derzis">
+    <extension point="xbmc.addon.repository"
+               name="Derzis Repo">
+        <dir>
+            <repopath>https://derzis.xyz/repo/</repopath>
+            <info compressed="false">https://derzis.xyz/repo/addons.xml</info>
+            <checksum>https://derzis.xyz/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://derzis.xyz/repo/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Derzis Kodi Repository</summary>
+        <description lang="en">A collection of Kodi video addons by derzis</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

@@ -48,15 +48,18 @@ repository.a4ksubtitles
 repository.abratchik
 repository.addonniss
 repository.addons4kodi
+repository.adi
 repository.aenemapy
 repository.aeonmq5_mod
 repository.aliunde
+repository.angelitto
 repository.animaniac
 repository.arkane14
 repository.arrownegra
 repository.arxtic-ape
 repository.autowidget
 repository.axbmcuser
+repository.Bee-Queen
 repository.bingie
 repository.blackprogram
 repository.bleak-lodge
@@ -69,10 +72,13 @@ repository.centry
 repository.chainsrepo
 repository.cMaNWizard
 repository.cocoscrapers
+repository.collabsvito
+repository.comet
 repository.cywteow
 repository.dab
 repository.daedalusbln
 repository.denimnani
+repository.derzis
 repository.diggz
 repository.dis90
 repository.djaythemes
@@ -80,6 +86,7 @@ repository.dobbelina
 repository.doomzday
 repository.dregs
 repository.dutchgreen
+repository.easynewsx
 repository.enigmawiz
 repository.EzzerMacsWizard
 repository.fanfilm
@@ -93,8 +100,10 @@ repository.gaia.full
 repository.grindhousekodi
 repository.gujal
 repository.hooty
+repository.hub
 repository.ivueguide
 repository.jacktook
+repository.jamal2362
 repository.jellyfin.kodi
 repository.jewrepo
 repository.jsergio
@@ -103,8 +112,10 @@ repository.kodifitzwell
 repository.kodinerds
 repository.kus.allinone
 repository.lekma
+repository.liberator
 repository.lime
 repository.loop
+repository.luc_repo
 repository.madforit
 repository.Magnetic
 repository.marcelveldt
@@ -136,6 +147,7 @@ repository.resolveurl
 repository.Rising.Tides
 repository.Rockcrusher
 repository.sandmann79.plugins
+repository.sarsaila
 repository.skinbase.nexus
 repository.skins.pkscout
 repository.slyguy
@@ -429,68 +441,6 @@ repository.zeus768
 </addon>
 
 
-<addon id="skin.fentastic" version="1.0.25" name="FENtastic"
-	provider-name="Ivar Brandt">
-	<requires>
-		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" version="0.6.20a"/>
-	</requires>
-	<extension point="xbmc.gui.skin" debugging="false">
-		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
-		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
-		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
-		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
-		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
-		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
-		<forum>http://forum.kodi.tv/</forum>
-		<source>https://github.com/xbmc/skin.estuary/</source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			<screenshot>customizable_widgets.jpg</screenshot>
-			<screenshot>infopanel.jpg</screenshot>
-			<screenshot>viewtypes1.jpg</screenshot>
-		</assets>
-		<summary lang="en_GB">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
-		<summary lang="en_NZ">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
-		<summary lang="en_US">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
-		<description lang="en_GB">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
-		<description lang="en_NZ">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
-		<description lang="en_US">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
-	</extension>
-</addon>
-
-
-<addon id="script.fentastic.helper" name="FENtastic Helper" version="0.6.20a" provider-name="Tikipeter, Ivar Brandt">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.19.1"/>
-	</requires>
-	<extension point="xbmc.python.library" library="resources/lib/default.py"/>
-	<extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<news />
-		<platform>all</platform>
-		<license>GPL-2.0-only</license>
-		<forum />
-		<source />
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<description lang="en_GB">FENtastic Helper for the FENtastic Skin.</description>
-		<description lang="en_NZ">FENtastic Helper for the FENtastic Skin.</description>
-		<description lang="en_US">FENtastic Helper for the FENtastic Skin.</description>
-	</extension>
-</addon>
-
-
 <addon id="resource.uisounds.fentastic" version="1.0.0" name="FENtastic UI Audio Suite" provider-name="Ivar Brandt">
 	<requires>
 	<import addon="kodi.resource" version="1.0.0"/>
@@ -504,11 +454,11 @@ repository.zeus768
 </addon>
 
 
-<addon id="skin.fentastic" version="100.0.30" name="FENtastic Plus"
+<addon id="skin.fentastic" version="100.0.30c" name="FENtastic Plus"
 	provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" version="100.6.25" />
+		<import addon="script.fentastic.helper" version="100.6.25a" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -542,7 +492,7 @@ repository.zeus768
 </addon>
 
 
-<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.25" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.25a" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -931,6 +881,25 @@ repository.zeus768
 	</extension>
 </addon>
 
+<addon id="repository.adi" name="Adi Repository" version="1.0" provider-name="Adi">
+	<extension point="xbmc.addon.repository" name="Adi Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Adi Repository</summary>
+		<description>Personal Kodi repository by Adi. Contine TotalPlay, POV, MRSP si altele.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.aenemapy" name="Aenemapy Addons Repository" version="2021.04.23" provider-name="aenemapy">
 	<extension point="xbmc.addon.repository" name="Aenemapy Addons Repository">
 		<dir>
@@ -986,6 +955,24 @@ repository.zeus768
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>	
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.angelitto" name="Angelitto Repository" version="1.0.2" provider-name="angelitto">
+	<extension point="xbmc.addon.repository" name="Angelitto Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Welcome to Angelitto's Repo</summary>
+		<description>Angelitto's Kodi Repository</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>
@@ -1097,6 +1084,25 @@ repository.zeus768
 		<source>https://github.com/axbmcuser/_repo</source>
 		<assets>
 			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.Bee-Queen" name="Bee Queen" version="1.0.4" provider-name="ASistem">
+	<extension point="xbmc.addon.repository" name="Bee Queen Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Bee Queen Repository</summary>
+		<description>4install build Al8inA</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
@@ -1331,6 +1337,26 @@ repository.zeus768
 	</extension>
 </addon>
 
+<addon id="repository.collabsvito" name="Collabsvito that's my AiO REPO" version="3.6.6" provider-name="Collabsvito">
+	<extension point="xbmc.addon.repository" name="Collabsvito Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Some nice py3-ADDONS created by @Collabsvito</summary>
+		<description lang="en_GB">Download And Install Addons Developed By Collabsvito.[CR]These Addons Should Not Missed And New Fans Are Welcome...</description>
+		<disclaimer lang="en_GB">The owner and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.comet" version="1.0.0" name="Comet Repository" provider-name="Goldy">
 	<extension point="xbmc.addon.repository" name="Comet Repository">
 		<dir>
@@ -1421,7 +1447,26 @@ repository.zeus768
 	</extension>
 </addon>
 
-<addon id="repository.diggz" name="Diggz Repository" version="25" provider-name="Diggz">
+<addon id="repository.derzis" name="Derzis Repo" version="1.0.0" provider-name="derzis">
+	<extension point="xbmc.addon.repository" name="Derzis Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Derzis Kodi Repository</summary>
+		<description lang="en">A collection of Kodi video addons by derzis</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.diggz" name="Diggz Repository" version="28" provider-name="Diggz">
 	<extension point="xbmc.addon.repository" name="Diggz Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1553,6 +1598,24 @@ repository.zeus768
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.png</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.easynewsx" name="EasyNews Repository" version="1.0.0" provider-name="Tetsuo">
+	<extension point="xbmc.addon.repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>EasyNews Kodi Repository</summary>
+		<description>Repository for EasyNews addon</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>
@@ -1811,6 +1874,25 @@ repository.zeus768
 	</extension>
 </addon>
 
+<addon id="repository.hub" name="Hub Repo" version="1.2.4" provider-name="1x">
+	<extension point="xbmc.addon.repository" name="Hub Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Hub Repository</summary>
+		<description lang="en_GB">Repo for Hub.</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.ivueguide" name="iVue2 TV Guide Repo" version="0.0.2" provider-name="iVue">
 	<extension point="xbmc.addon.repository" name="iVue2 TV Guide Add-ons Repository">
 		<dir>
@@ -1847,6 +1929,25 @@ repository.zeus768
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.jamal2362" name="Jamal2362 Repository" version="4.0" provider-name="jamal2362">
+	<extension point="xbmc.addon.repository" name="Jamal2362 Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Jamal2362 Repository</summary>
+		<description>Official repository from jamal2362</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>
@@ -2013,6 +2114,21 @@ repository.zeus768
 	</extension>
 </addon>
 
+<addon id="repository.liberator" name="Liberator Repository" version="1.0.0" provider-name="Karhu">
+	<extension point="xbmc.addon.repository" name="Liberator Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Liberator Repository</summary>
+		<description>Direct updates for the Liberator addon.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.lime" name="Lime Add-ons" version="1.0.4" provider-name="groggyegg">
 	<extension point="xbmc.addon.repository" name="Lime Add-ons">
 		<dir>
@@ -2046,6 +2162,27 @@ repository.zeus768
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.luc_repo" name="luc_repo" version="1.0.10" provider-name="apoyotech">
+	<extension point="xbmc.addon.repository" name="luc_repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB"> Welcome to the luc_repo</summary>
+		<description lang="en_GB">luc_repo for  Kodi</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>  
+		<disclaimer lang="en">The author of this repository do not host any of the content which is found and have no affiliation with any of the content providers. Use at your own risk!</disclaimer>  
+		<assets>	
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>	
+		</assets>  
 	</extension>
 </addon>
 
@@ -2257,7 +2394,7 @@ repository.zeus768
 	</extension>
 </addon>
 
-<addon id="repository.octopus" name="Octopus Repository" version="0.5.3" provider-name="Twiglet">
+<addon id="repository.octopus" name="Octopus Repository" version="0.5.6" provider-name="Twiglet">
 	<extension point="xbmc.addon.repository" name="Octopus Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2653,6 +2790,25 @@ repository.zeus768
 	<extension point="xbmc.addon.metadata">
 		<summary>Various Addons for Kodi</summary>
 		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.sarsaila" name="Sarsailă's Addons" version="1.1.1" provider-name="Sarsailă">
+	<extension point="xbmc.addon.repository" name="Sarsailă's Addons">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install Addons from Sarsa repo</summary>
+		<description>Download and install addons for Kodi.</description>
+		<disclaimer>Sarsailă</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
 	</extension>
 </addon>
 

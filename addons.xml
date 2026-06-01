@@ -9,7 +9,7 @@ plugin.video.dltv
 plugin.video.dreammachine
 plugin.video.elementum
 plugin.video.fen
-plugin.video.fenlight (FenLightAM / Fen Light+ / Fen Light)
+plugin.video.fenlight (FenLightAM / Fen Light+ / Fen Light) - Deprecated
 plugin.video.free99
 plugin.video.gratisred
 plugin.video.imdb.trailers
@@ -19,6 +19,8 @@ plugin.video.playlistbee
 plugin.video.premiumizerx
 plugin.video.ptfm
 plugin.video.realizerx
+plugin.video.redlight
+plugin.video.spotitube
 plugin.video.seren
 plugin.video.watchnixtoons2
 plugin.video.xstream-player
@@ -78,8 +80,9 @@ service.vpn.manager
 script.audio.motherearth
 plugin.audio.dashradio
 plugin.audio.datpiff
-plugin.audio.mp3streams
+plugin.audio.m3sr2019
 plugin.audio.radio_de_light
+plugin.audio.radiogarden
 plugin.audio.tunein2017
 plugin.audio.tuneinradio
 plugin.audio.ytmusic.exp
@@ -169,7 +172,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.35">
+<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.36">
     <requires>
         <import addon="resource.images.blacklodge.artwork" />
         <import addon="script.module.requests" />
@@ -391,7 +394,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.free99" version="2.0" name="[COLOR goldenrod]Free99[/COLOR]" provider-name="JewBMX, DIGGZ">
+<addon id="plugin.video.free99" version="2.0.1" name="[COLOR goldenrod]Free99[/COLOR]" provider-name="JewBMX, DIGGZ">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -727,6 +730,77 @@ service.subtitles.titlovi
 2019.01.20 - Fixed Scraping Bugs and fallback for Torrent Packs
 2019.x.x - Initial Release
         </news>
+	</extension>
+</addon>
+
+
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="1.2.5">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="script.module.pil" version="1.1.7"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/redlight.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="resources/lib/service.py"/>
+    <extension point="xbmc.python.module" library="resources/lib/"/>
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en">[COLOR red]The Red Light[/COLOR]</summary>
+        <description lang="en">[COLOR red]* We will not revoke our Trakt or TMDb keys
+* We will not block any third party apps or skins
+* No politics
+* NO DRAMA!
+
+I am grateful to Tikipeter and his various pseudonyms and aliases for creating and maintaining Fen and FenLight/FenLightAM[/COLOR]</description>
+        <platform>all</platform>
+		<disclaimer lang="en">[COLOR red]The author of this add-on does not host any content and has no affiliation with the content providers[/COLOR]</disclaimer>
+        <license/>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news>[COLOR red]Check the Changelog in Tools > Changelog &amp; Log Utils[/COLOR]</news>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.9" provider-name="realvito (inspired by L0RE)">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Chartplayer für Musikvideos</summary>
+		<summary lang="en_GB">Chartplayer for Musicvideos</summary>
+		<description lang="de_DE">Musiktitel aus verschiedenen Quellen und Charts z.B. Beatport, Billboard, Officialcharts, Shazam etc. auswählen und das entsprechende Video automatisch auf YouTube suchen und über das YouTube-Addon abspielen.[CR][CR]     TEST IT AND LIKE IT</description>
+		<description lang="en_GB">Select music titles from various sources and charts e.g. Beatport, Billboard, Officialcharts, Shazam etc. and automatically search for the corresponding video on YouTube and play it via the YouTube-Addon.[CR][CR]     TEST IT AND LIKE IT</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
+		<website></website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.spotitube</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 3.0.9+matrix.1  (14.09.2025)[/COLOR][/B]
+- fixed: 'Apple Music' Auth-Token not found and subfolders cannot be opened (Error: APPLEMUSIC - COULD NOT FIND TOKEN)
+- fixed: Billboard-Videolists, artists are not displayed correctly
+- fixed: „Title Case“-Formatting for 'German umlauts' (ÄÖÜäöüß)
+- removed: Billboard archive sorted by year, now only last year is displayed (years no longer accessible)
+		</news>
 	</extension>
 </addon>
 
@@ -1505,7 +1579,7 @@ In order to get the API Key:
 
 <addon id="plugin.video.tidb"
        name="TheIntroDB Kodi Addon"
-       version="1.4.1"
+       version="1.6.0"
        provider-name="TheIntroDB">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
@@ -2223,11 +2297,11 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctmgr" version="1.1.0a" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
+<addon id="script.module.acctmgr" version="1.1.2" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-            	<import addon="script.module.acctvwr" version="1.0.9a" />
+            	<import addon="script.module.acctvwr" version="1.1.1" />
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">
@@ -2236,7 +2310,7 @@ In order to get the API Key:
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
 		<reuselanguageinvoker>false</reuselanguageinvoker>
-		<summary lang="en">AM Lite</summary>
+		<summary lang="en">Account Manager Lite</summary>
 		<description>A utility designed to centralize the authorization of various third-party streaming services across multiple Kodi add-ons.</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
@@ -2249,12 +2323,13 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctvwr" name="[COLOR FF32D3FE][B]Account[/B][/COLOR][COLOR gold] [B]Viewer[/B][/COLOR]" version="1.0.9a" provider-name="Zaxxon709">
-    <extension point="xbmc.python.pluginsource" library="default.py" />
+<addon id="script.module.acctvwr" name="[COLOR FF32D3FE][B]Account[/B][/COLOR][COLOR gold] [B]Viewer[/B][/COLOR]" version="1.1.1" provider-name="Zaxxon709">
+    <extension point="xbmc.python.pluginsource" library="default.py">
+    </extension>
     <extension point="xbmc.python.module" library="resources" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">View Authorized Accounts</summary>
-        <description lang="en">AM Lite Dependency</description>
+        <summary lang="en">Account Viewer - AM Lite Dependency</summary>
+        <description lang="en">A centralized viewer for your authorized accounts. Easily check debrid, Trakt and other connected services across supported add-ons.</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <source>https://</source>
@@ -2266,7 +2341,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.39" provider-name="janedoe">
+<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.41" provider-name="janedoe">
     <requires>
         <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.requests" />
@@ -2294,7 +2369,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.3.5" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.3.8" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2994,23 +3069,22 @@ strptime Python bugfix
 </addon>
 
 
-<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2025.0.1" provider-name="Jon Bovi">
+<addon id="plugin.audio.m3sr2019" name="MP3 Streams Echoed" version="2026.1.0" provider-name="Echostorm / Claude">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.future"/>
-        <import addon="script.module.mutagen"/>
-        <import addon="script.module.requests"/>
         <import addon="script.module.beautifulsoup4"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.routing"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>audio</provides>
     </extension>
-    <extension point="xbmc.service" library="playerMP3.py" start="startup" />
     <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
         <platform>all</platform>
-        <summary>A music streaming Collection.</summary>
-        <description>MP3 Streams Kodi 19+</description>
-        <news>2025.0.1 - Fix Billboard Charts, 2022.0.2 - Fix errors loading pages. 2022.0.1 - Small fix, Kodi 20 ready. 2021.0.6 - Fixed issue with hanging  when skipping tracks. 2021.0.4 - Fixed Settings, 2021.0.3 - Bugfixes. Enjoy!</news>
+        <license>GPL-3.0</license>
+        <summary>MP3 Streams Echoed — music streaming for Kodi</summary>
+        <description>Browse and stream songs and albums. Browse by genre, search artists, albums or songs, save favourites, play or shuffle full albums, and stream tracks directly in Kodi.</description>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
@@ -3037,6 +3111,50 @@ strptime Python bugfix
       <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
+</addon>
+
+
+<addon id="plugin.audio.radiogarden" 
+       name="Radio Garden" 
+       version="2.0" 
+       provider-name="@TrainAgain2">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Listen to radio stations from around the world</summary>
+        <summary lang="pt_BR">Ouça estações de rádio de todo o mundo</summary>
+        <summary lang="ro_RO">Ascultați posturi de radio din întreaga lume</summary>
+        <description lang="en_GB">Radio Garden allows you to explore and listen to live radio stations from around the world. Created by @TrainAgain2.</description>
+        <description lang="pt_BR">O Radio Garden permite explorar e ouvir estações de rádio ao vivo de todo o mundo. Criado por @TrainAgain2.</description>
+        <description lang="ro_RO">Radio Garden vă permite să explorați și să ascultați posturi de radio în direct din întreaga lume. Creat de @TrainAgain2.</description>
+        <disclaimer lang="en_GB">This addon uses the unofficial Radio Garden API. The author is not affiliated with Radio Garden BV.</disclaimer>
+        <disclaimer lang="pt_BR">Este addon usa a API não oficial do Radio Garden. O autor não é afiliado à Radio Garden BV.</disclaimer>
+        <disclaimer lang="ro_RO">Acest supliment folosește API-ul neoficial Radio Garden. Autorul nu este afiliat cu Radio Garden BV.</disclaimer>
+        <platform>all</platform>
+        <license>GPL-3.0-only</license>
+        <website>https://radio.garden/</website>
+        <source>https://github.com/yourusername/plugin.audio.radiogarden</source>
+        <news>v1.4.1 (2026-01-28)
+- Fixed Icon and Fanart display issues: simplified file names for better Kodi compatibility
+- Updated provider and description: Created by @TrainAgain2
+- New modern artwork: updated icon and fanart with a clean white background and brush-stroke style
+- Colors updated to match the original Radio Garden green and blue palette
+- Removed "Popular Stations" menu as requested
+- Enhanced search logic: improved accuracy and global coverage for countries and cities
+- Optimized search for Portuguese speakers with expanded country name translations
+- Maintained consistent use of plugin icon for all stations
+- Simplified main menu for a cleaner experience
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 

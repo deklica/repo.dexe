@@ -1,3 +1,7 @@
+[B][COLOR gold]v1.06.36[/COLOR][/B]
+- Removed non-working IMDb Watchlist menu for now
+- RLI fixes
+
 [B][COLOR gold]v1.06.35[/COLOR][/B]
 - Added option to filter-out sources from user defined hosts
 - Prevent unaired episodes from appearing in Trakt progress lists

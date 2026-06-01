@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.angelitto" name="[B][COLOR FFC45AEC]Angelitto Repository[/COLOR][/B]" version="1.0.2" provider-name="[B][COLOR FF6AFB92]angelitto[/COLOR][/B]">
+    <extension point="xbmc.addon.repository" name="Angelitto Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/angelitto2005/repository.angelitto/main/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/angelitto2005/repository.angelitto/main/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/angelitto2005/repository.angelitto/main/repo/zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/angelitto2005/repository.angelitto/main/all/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/angelitto2005/repository.angelitto/main/all/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/angelitto2005/repository.angelitto/main/all/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Welcome to Angelitto's Repo</summary>
+        <description>[B][COLOR FFEB5406]Angelitto's Kodi Repository[/COLOR][/B]</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart></fanart>
+        </assets>
+    </extension>
+</addon>

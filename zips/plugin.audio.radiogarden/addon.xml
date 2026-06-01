@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.radiogarden" 
+       name="Radio Garden" 
+       version="2.0" 
+       provider-name="@TrainAgain2">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Listen to radio stations from around the world</summary>
+        <summary lang="pt_BR">Ouça estações de rádio de todo o mundo</summary>
+        <summary lang="ro_RO">Ascultați posturi de radio din întreaga lume</summary>
+        <description lang="en_GB">Radio Garden allows you to explore and listen to live radio stations from around the world. Created by @TrainAgain2.</description>
+        <description lang="pt_BR">O Radio Garden permite explorar e ouvir estações de rádio ao vivo de todo o mundo. Criado por @TrainAgain2.</description>
+        <description lang="ro_RO">Radio Garden vă permite să explorați și să ascultați posturi de radio în direct din întreaga lume. Creat de @TrainAgain2.</description>
+        <disclaimer lang="en_GB">This addon uses the unofficial Radio Garden API. The author is not affiliated with Radio Garden BV.</disclaimer>
+        <disclaimer lang="pt_BR">Este addon usa a API não oficial do Radio Garden. O autor não é afiliado à Radio Garden BV.</disclaimer>
+        <disclaimer lang="ro_RO">Acest supliment folosește API-ul neoficial Radio Garden. Autorul nu este afiliat cu Radio Garden BV.</disclaimer>
+        <platform>all</platform>
+        <license>GPL-3.0-only</license>
+        <website>https://radio.garden/</website>
+        <source>https://github.com/yourusername/plugin.audio.radiogarden</source>
+        <news>v1.4.1 (2026-01-28)
+- Fixed Icon and Fanart display issues: simplified file names for better Kodi compatibility
+- Updated provider and description: Created by @TrainAgain2
+- New modern artwork: updated icon and fanart with a clean white background and brush-stroke style
+- Colors updated to match the original Radio Garden green and blue palette
+- Removed "Popular Stations" menu as requested
+- Enhanced search logic: improved accuracy and global coverage for countries and cities
+- Optimized search for Portuguese speakers with expanded country name translations
+- Maintained consistent use of plugin icon for all stations
+- Simplified main menu for a cleaner experience
+        </news>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
