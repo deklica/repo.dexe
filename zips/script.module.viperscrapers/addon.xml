@@ -1,6 +1,6 @@
 <addon id="script.module.viperscrapers" 
 		name="Viper Scrapers" 
-		version="1.5.1" 
+		version="1.5.3" 
 		provider-name="Jax">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
@@ -22,6 +22,6 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>- 1.5.1 Added new scrapers</news>
+		<news>- 1.5.3 Patched Mediafusion</news>
 	</extension>
 </addon>

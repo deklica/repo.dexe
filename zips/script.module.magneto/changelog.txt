@@ -1,4 +1,8 @@
 [COLOR red][B]Version 6.05[/B][/COLOR]
+- Fix for format change in meteor results.
+- Removed TorBox Torznab due to api change.
+
+[COLOR red][B]Version 6.05[/B][/COLOR]
 - Fix for format change in mediafusion results, next time will just remove it.
 
 [COLOR red][B]Version 6.04[/B][/COLOR]

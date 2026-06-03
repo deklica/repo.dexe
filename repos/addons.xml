@@ -454,11 +454,11 @@ repository.zeus768
 </addon>
 
 
-<addon id="skin.fentastic" version="100.0.30c" name="FENtastic Plus"
+<addon id="skin.fentastic" version="100.0.30d" name="FENtastic Plus"
 	provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" version="100.6.25a" />
+		<import addon="script.fentastic.helper" version="100.6.25b" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -492,7 +492,7 @@ repository.zeus768
 </addon>
 
 
-<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.25a" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.25b" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -2433,7 +2433,7 @@ repository.zeus768
 	</extension>
 </addon>
 
-<addon id="repository.oldsalt" name="Old Salt Repository" version="1.3" provider-name="Jax">
+<addon id="repository.oldsalt" name="Old Salt Repository" version="1.5" provider-name="Jax">
 	<extension point="xbmc.addon.repository" name="Old Salt Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

@@ -1,47 +1,110 @@
-[COLOR cyan][B]Version 1.3.5[/B][/COLOR]
+[COLORcyan] VERSION 1.4.2[/COLOR]
+
+[COLOR=cyan][B]SCRAPER FIXES & ENHANCEMENTS[/B][/COLOR]
+
+[COLOR=gold]Torz Scraper[/COLOR]
+• Complete scraper maintenance and code review completed.
+• Fixed provider-side changes that were causing source retrieval failures.
+• Improved parsing routines for greater compatibility with recent website updates.
+• Enhanced source validation and filtering for improved link quality.
+• Reduced timeout occurrences and improved overall scraping reliability.
+• Optimized request handling to improve response speed during searches.
+• Additional fallback handling implemented to improve resilience against future provider changes.
+
+[COLOR=gold]Aiostreams Scraper[/COLOR]
+• Fixed multiple issues affecting source detection and extraction.
+• Updated scraping logic to support recent site structure changes.
+• Improved playback source accuracy and link verification.
+• Enhanced error handling to reduce failed scrape attempts.
+• Optimized performance during large source searches.
+• Improved compatibility with backend resolver systems.
+• Added additional stability measures to improve long-term reliability.
+
+━━━━━━━━━━━━━━━━━━━
+
+[COLOR=green][B]MAJOR PERFORMANCE, STABILITY & BACKEND IMPROVEMENTS[/B][/COLOR]
+
+This release includes extensive backend optimization work focused on improving responsiveness, reducing unnecessary overhead, and increasing overall platform reliability across all supported scraping operations.
+
+[B]Core Framework Improvements[/B]
+
+• Significant internal code cleanup and restructuring completed.
+• Reduced redundant processing throughout scraper execution pipelines.
+• Improved memory management to lower resource usage during intensive scraping sessions.
+• Optimized thread handling and background task execution.
+• Reduced bottlenecks affecting large multi-provider searches.
+• Improved handling of provider initialization and shutdown procedures.
+
+[B]Performance Optimizations[/B]
+
+• Faster source aggregation across multiple providers.
+• Improved caching efficiency to reduce duplicate requests.
+• Reduced scraper startup times.
+• Improved response times when processing large result sets.
+• Enhanced handling of concurrent provider requests.
+• Lower CPU utilization during extended scraping sessions.
+
+[B]Stability Improvements[/B]
+
+• Multiple crash prevention safeguards added throughout the framework.
+• Improved exception handling across all scraping modules.
+• Enhanced recovery mechanisms when providers become unavailable.
+• Better handling of malformed or incomplete provider responses.
+• Reduced likelihood of scraper lockups and stalled searches.
+• Additional logging improvements to aid future troubleshooting and maintenance.
+
+[B]Provider Infrastructure Updates[/B]
+
+• General provider maintenance completed across the scraping framework.
+• Improved compatibility with evolving website structures.
+• Enhanced provider validation routines.
+• Updated internal handling of source quality assessment.
+• Better detection and filtering of invalid, duplicate, and dead sources.
+
+[B]Long-Term Reliability Improvements[/B]
+
+• Backend preparations implemented for future scraper expansions.
+• Improved framework scalability for upcoming provider additions.
+• Modernized portions of the scraping architecture.
+• Enhanced maintainability to simplify future updates and bug fixes.
+• Additional backend safeguards added to improve resilience against provider-side changes.
+
+━━━━━━━━━━━━━━━━━━━
+
+[COLOR=yellow][B]OVERALL RESULT[/B][/COLOR]
+
+Version 1.4.2 delivers substantial improvements to scraper reliability, backend efficiency, provider compatibility, and overall addon responsiveness. Users should experience faster searches, improved source retrieval, greater stability during heavy scraping operations, and enhanced long-term reliability across the entire GEARS scraping framework.
+
+Thank you for your continued support and feedback.
+More improvements and provider enhancements are already in development.
 
 [COLORcyan][B]GEARS SCRAPERS UPDATE[/B][/COLOR]
 
+This update delivers one of the largest scraper maintenance and backend optimization releases to date, focusing on improved provider compatibility, scraper reliability, performance enhancements, and long-term stability across the entire scraping framework.
 
-[COLORcyan][B]COMET SCRAPER REWRITE[/B][/COLOR]
+Significant internal restructuring has been completed to modernize scraper handling, improve response processing, reduce failed requests, and ensure continued compatibility with evolving provider-side changes. The result is a faster, more stable, and more reliable scraping experience throughout the addon.
 
-• The Comet scraper has now been fully rewritten to support Comet’s completely new API and response format.
-• Recent changes on Comet’s side caused the old scraper structure to become obsolete and incompatible with the service.
-• Although some users may have still seen occasional results earlier, the old implementation should technically no longer have been functioning correctly and would often return:
-  [I]error: setup OBSOLETE[/I]
-• The scraper has now been rebuilt to properly communicate with the updated Comet backend and handle the new response structure correctly.
-• Result parsing, source extraction and compatibility handling have all been updated for improved reliability and stability.
-• This should restore proper scraping functionality and improve consistency when pulling results from Comet. (cm/c)
-• Additional internal cleanup and handling improvements were made during these scraper updates.
-• These changes are aimed at improving long-term scraper stability as more providers continue changing their formats and backend structures.
-• More maintenance and compatibility improvements will continue rolling out where needed.
+━━━━━━━━━━━━━━━━━━━━
 
-• Added galaxy scraper support.
-• Added torlock scraper support.  
-• Added rutor scraper support.  
-• Added knaben scraper support.  
-• Removed duplicate and unnecessary scrapers to improve efficiency and reduce clutter.  
+[COLORgreen][B]Major Performance, Stability & Backend Improvements[/B][/COLOR]
 
-[COLOR green][B]Performance & Stability Improvements[/B][/COLOR]
+This release includes extensive backend optimization work designed to improve overall addon responsiveness, reduce overhead, and increase long-term reliability.
 
-• Optimized addon setup for better overall performance.  
-• Improved speed, reliability and consistency when scraping sources.  
-• Improved source handling for smoother and faster link retrieval.  
-• Reworked several backend processes to improve stability across supported content.  
-• Cleaned and streamlined configuration settings for a more reliable experience.  
-• Improved initialization speed for scrapers and providers.  
-• Optimized memory and background processing to reduce slowdowns and improve responsiveness.  
-• Overall improvements to addon stability and day to day performance.  
+[B]General Improvements[/B]
 
+• Optimized addon startup and initialization routines for improved performance.
+• Improved overall addon responsiveness during navigation and content loading.
+• Enhanced backend stability across all supported providers and scraping systems.
+• Reworked multiple internal processes to improve reliability and reduce unexpected failures.
+• Improved source retrieval efficiency for faster scraping and result gathering.
+• Enhanced provider communication and response validation.
+• Improved handling of incomplete, malformed, or failed provider responses.
+• Reduced unnecessary background processing and memory usage.
+• Improved scraper initialization speed throughout the addon.
+• Streamlined configuration management and provider setup handling.
+• Enhanced error recovery systems to improve stability during heavy usage.
+• Improved request processing and timeout handling.
+• General code cleanup and modernization across multiple addon components.
+• Numerous backend optimizations to improve long-term maintainability.
 
-• Optimized setup and configuration for comet scraper.  
-• Optimized setup and configuration for meteor scraper.  
-• Improved compatibility and reliability for supported content.  
-• Faster scraping performance and more consistent source results.  
-• Improved handling of provider responses and failed requests.  
-
-[COLOR green][B]Maintenance[/B][/COLOR]
-
-• Minor bug fixes and general cleanup. 
-• Automatic thumbnail cleanup after update to prevent outdated artwork and reduce cache issues.  
-• These changes should provide faster results, improved reliability and a smoother overall user experience.
+━━━━━━━━━━━━━━━━━━━━

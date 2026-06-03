@@ -1,8 +1,14 @@
+[COLOR lime][B]Version 1.5.3[/B][/COLOR]
+- Fixed MEDIAFUSION again
+
+[COLOR lime][B]Version 1.5.2[/B][/COLOR]
+- Fixed MEDIAFUSION
+
 [COLOR lime][B]Version 1.5.1[/B][/COLOR]
 - Added BITMAGNET, DMM, LIMETORRENTS and METEOR 
 
 [COLOR lime][B]Version 1.5.0[/B][/COLOR]
-- Fixed Comet and Zilean
+- Fixed COMET and ZILEAN
 
 [COLOR lime][B]Version 1.4.5[/B][/COLOR]
 - Added TORRENTGALAXY
