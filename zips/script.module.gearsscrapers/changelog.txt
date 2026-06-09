@@ -1,4 +1,30 @@
-[COLORcyan] VERSION 1.4.3[/COLOR]
+[COLORcyan] VERSION 1.4.4[/COLOR]
+
+[COLOR cyan][B]New Feature Added[/B][/COLOR]
+
+DDM Setup Integration Added to Gears Scraper
+Added full DDM setup support within Gears Scraper.
+Improved compatibility with DDM-powered source providers.
+Streamlined configuration process for easier setup and management.
+Enhanced source detection and retrieval performance when using DDM configurations.
+Optimized communication between Gears Scraper and DDM modules for greater reliability.
+Reduced setup complexity, allowing users to get up and running faster.
+
+[COLORcyan][B]Improvements[/B][/COLOR]
+
+Better scraper stability during source aggregation.
+Improved handling of provider responses and timeouts.
+Enhanced source parsing for increased accuracy.
+General performance optimizations throughout the scraper engine.
+
+[COLORcyan][B]Benefits[/B][/COLOR]
+
+Faster source discovery.
+Improved reliability across supported providers.
+Easier setup and maintenance.
+More consistent scraping performance.
+Better overall user experience.
+
 
 [COLOR cyan][B]SCRAPER ENGINE IMPROVEMENTS & ENHANCEMENTS[/B][/COLOR]
 
@@ -93,7 +119,7 @@ This release includes extensive backend optimization work focused on improving r
 
 [COLOR=yellow][B]OVERALL RESULT[/B][/COLOR]
 
-Version 1.4.3 delivers substantial improvements to scraper reliability, backend efficiency, provider compatibility, and overall addon responsiveness. Users should experience faster searches, improved source retrieval, greater stability during heavy scraping operations, and enhanced long-term reliability across the entire GEARS scraping framework.
+Version 1.4.4 delivers substantial improvements to scraper reliability, backend efficiency, provider compatibility, and overall addon responsiveness. Users should experience faster searches, improved source retrieval, greater stability during heavy scraping operations, and enhanced long-term reliability across the entire GEARS scraping framework.
 
 Thank you for your continued support and feedback.
 More improvements and provider enhancements are already in development.
