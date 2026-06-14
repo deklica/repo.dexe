@@ -1,4 +1,47 @@
-[COLORcyan] VERSION 1.4.5[/COLOR]
+[COLORcyan] VERSION 1.4.6[/COLOR]
+
+[COLOR cyan][B]SETTINGS OVERHAUL[/B][/COLOR]
+
+• Complete settings menu reworked for improved navigation and usability.
+
+• Providers have been reorganized into dedicated sections, making it easier to manage recommended and secondary torrent providers.
+
+• Added a dedicated Pack Providers section highlighting providers capable of returning season and series packs.
+
+• Added a dedicated Debrid Services section for supported services:
+
+Premiumize
+AllDebrid
+TorBox
+EasyNews
+Real-Debrid
+
+• Added Prowlarr integration section with dedicated URL and API key configuration options.
+
+• Added DMM Setup section with recommended provider configuration guidance for optimal DMM performance.
+
+• Added Minimum Seeders setting to allow better control over torrent quality and reliability.
+
+• Improved Maintenance section with easier access to:
+
+Provider Health Testing
+Settings Cleanup
+Changelog Viewing
+
+• Improved Advanced section with streamlined debugging and logging controls.
+
+• Removed duplicate provider entries throughout the settings menu for a cleaner and more intuitive experience.
+
+• Updated category layout to better separate:
+
+Providers
+Pack Providers
+Debrid Services
+Filters
+Maintenance
+Advanced Settings
+
+• General improvements to readability, organization, and overall user experience.
 
 
 [COLOR cyan][B]New Feature: Pack Capable Torrent Providers[/B][/COLOR]
