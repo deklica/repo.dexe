@@ -3,7 +3,6 @@
 <!--  Addons  -----------------------------------------
 
 --- Video ---
-plugin.video.archive.org
 plugin.video.blacklodge
 plugin.video.dltv
 plugin.video.dreammachine
@@ -12,6 +11,7 @@ plugin.video.fen
 plugin.video.fenlight (FenLightAM / Fen Light+ / Fen Light) - Deprecated
 plugin.video.free99
 plugin.video.gratisred
+plugin.video.iatheater
 plugin.video.imdb.trailers
 plugin.video.json_iptv
 plugin.video.last_played
@@ -62,6 +62,7 @@ script.light.imdb.ratings.update
 script.module.acctmgr
 script.module.acctvwr
 script.module.blackscrapers
+script.module.cocoscrapers
 script.module.gearsscrapers
 script.module.inputstreamhelper
 script.module.magneto
@@ -115,18 +116,13 @@ resource.images.studios.white
 script.yatse.kodi
 script.module.orion
 
-plugin.video.a4kstreaming
 service.subtitles.a4ksubtitles
 plugin.video.cumination
 plugin.video.seren
 context.seren
 plugin.video.umbrella
 plugin.video.pov (dradis, affenity, infinity)
-plugin.video.jacktook
-script.otaku.mappings
-script.jacktook.burst
 plugin.video.youtube
-script.module.cocoscrapers
 script.module.magneto
 
 --- Roooar ---
@@ -136,41 +132,13 @@ context.themoviedb.helper
 script.module.infotagger
 
 --- GF ---
-plugin.video.BauBauVavoo
+plugin.video.BauBauVavoo - Broken
 plugin.video.GreenKlikPremium
 service.subtitles.titlovi
 
 -->
 
 <addons>
-
-
-<addon id="plugin.video.archive.org" name="Internet Archive" version="1.0.0" provider-name="gujal">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>audio video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Internet Archive add-on</summary>
-    <description lang="en_GB">Watch and listen to media archived by Internet Archive</description>
-    <disclaimer lang="en_GB">This third party addon is not in any way commissioned or endorsed by Internet Archive</disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license>GPL-2.0</license>
-    <forum>https://forum.kodi.tv/showthread.php?tid=180623</forum>
-    <website>https://archive.org/</website>
-    <email>gujal at protonmail dot com</email>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-      <screenshot>screenshot-01.jpg</screenshot>
-      <screenshot>screenshot-02.jpg</screenshot>
-      <screenshot>screenshot-03.jpg</screenshot>
-    </assets>
-  </extension>
-</addon>
 
 
 <addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.36">
@@ -220,6 +188,7 @@ service.subtitles.titlovi
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
+        <lifecyclestate type="broken">Reason: The addon cannot resolve links and playback is not possible.</lifecyclestate>
         <summary lang="en">Live TV and Sports</summary>
         <description lang="en">Live TV and Sports</description>
         <platform>all</platform>
@@ -326,6 +295,7 @@ service.subtitles.titlovi
     <extension library="resources/lib/service.py" point="xbmc.service"/>
     <extension library="resources/lib/" point="xbmc.python.module"/>
     <extension point="xbmc.addon.metadata">
+        <lifecyclestate type="deprecated">Reason: No longer actively maintained or developed.</lifecyclestate>
         <reuselanguageinvoker>true</reuselanguageinvoker>
         <summary lang="en">Access your content from Furk, Easynews and Debrid Clouds.</summary>
         <description lang="en">This add-on is intended for advanced Kodi users only. You must own the content of any media you play through this addon.</description>
@@ -353,6 +323,7 @@ service.subtitles.titlovi
     <extension point="xbmc.service" library="resources/lib/service.py"/>
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
+        <lifecyclestate type="deprecated">Reason: No longer actively maintained. Use the Red Light fork version instead.</lifecyclestate>
         <reuselanguageinvoker>true</reuselanguageinvoker>
         <summary lang="en">Access your content from Easynews and Debrid Clouds.</summary>
         <description lang="en">This add-on is intended for advanced Kodi users only. You must own the content of any media you play through this addon. This is an English language only add-on.</description>
@@ -381,6 +352,7 @@ service.subtitles.titlovi
     <extension point="xbmc.service" library="resources/lib/service.py"/>
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
+        <lifecyclestate type="deprecated">Reason: No longer actively maintained. Use the Red Light fork version instead.</lifecyclestate>
         <reuselanguageinvoker>true</reuselanguageinvoker>
         <summary lang="en">Access your content from Easynews and Debrid Clouds.</summary>
         <description lang="en">This add-on is intended for advanced Kodi users only. You must own the content of any media you play through this addon. This is an English language only add-on.</description>
@@ -463,6 +435,31 @@ service.subtitles.titlovi
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
+</addon>
+
+
+<addon id="plugin.video.iatheater" name="Internet Archive Theater" version="0.3.3" provider-name="PythonTrousers">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>audio video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Internet Archive Theater add-on</summary>
+    <description lang="en_GB">Heavily restructured, advanced version of the original Internet Archive addon to  watch and listen to media archived by Internet Archive</description>
+    <disclaimer lang="en_GB">This third party addon is not in any way commissioned or endorsed by Internet Archive</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GPL-3.0</license>
+    <forum></forum>
+    <website>https://archive.org/</website>
+    <email></email>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
 </addon>
 
 
@@ -735,7 +732,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="1.2.9l">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="1.4.3">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -752,9 +749,7 @@ service.subtitles.titlovi
         <description lang="en">[COLOR red]* We will not revoke our Trakt or TMDb keys
 * We will not block any third party apps or skins
 * No politics
-* NO DRAMA!
-
-I am grateful to Tikipeter and his various pseudonyms and aliases for creating and maintaining Fen and FenLight/FenLightAM[/COLOR]</description>
+* NO DRAMA![/COLOR]</description>
         <platform>all</platform>
 		<disclaimer lang="en">[COLOR red]The author of this add-on does not host any content and has no affiliation with the content providers[/COLOR]</disclaimer>
         <license/>
@@ -2397,6 +2392,36 @@ In order to get the API Key:
     </assets>
     <news></news>
     </extension>
+</addon>
+
+
+<addon id="script.module.cocoscrapers" name="CocoScrapers Module" version="1.0.39" provider-name="CocoJoe">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="lib/default.py">
+		<provides>executable</provides>
+	</extension> 
+	<extension point="xbmc.service" library="lib/service.py" start="startup" />
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<summary lang="en">CocoScrapers Module</summary>
+		<description>A module that can be used to provide site scrapers.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+			<screenshot></screenshot>
+		</assets>
+		<news></news>
+	</extension>
 </addon>
 
 

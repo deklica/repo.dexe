@@ -1,0 +1,136 @@
+[COLOR red][B]Version 1.0.39[/B][/COLOR]
+- Removed Bitlord, isohunt, torrentquest, torrentfunk, and yourbitorrent.
+- Corrected limetorrents scraper.
+- Corrected error in code for eztv.
+- Change torrentgalaxy to use a clone and json instead of html parsing.
+- Added Prowlarr scraper from Magneto Scrapers. All credit to kodifitzwell.
+
+[COLOR red][B]Version 1.0.38[/B][/COLOR]
+- ThreadPool code changed to avoid hang on exit.
+
+[COLOR red][B]Version 1.0.37[/B][/COLOR]
+- ThreadPool code reversion.
+
+[COLOR red][B]Version 1.0.36[/B][/COLOR]
+- Modified Torrentio, Mediafusion, and Comet to use queue module.
+
+[COLOR red][B]Version 1.0.35[/B][/COLOR]
+- Updated cfscrape module.
+
+[COLOR red][B]Version 1.0.34[/B][/COLOR]
+- Added stats and threading to limetorrents.
+
+[COLOR red][B]Version 1.0.33[/B][/COLOR]
+- Added limetorrents support.
+
+[COLOR red][B]Version 1.0.32[/B][/COLOR]
+- Changed mediafusion to allow for custom url, custom strings, and kodi code authorization.
+
+[COLOR red][B]Version 1.0.31[/B][/COLOR]
+- Added mediafusion changes to send encrypted user token as header instead of url.
+
+[COLOR red][B]Version 1.0.30[/B][/COLOR]
+- Some updates to threading
+
+[COLOR red][B]Version 1.0.29[/B][/COLOR]
+- Fix for Python 3.12 breaking module detection.
+- Fix for some regular expressions in source_utils and cleantitle.
+
+[COLOR red][B]Version 1.0.28[/B][/COLOR]
+- Fix for change in comet result format.
+
+[COLOR red][B]Version 1.0.27[/B][/COLOR]
+- Changed Mediafusion encrypted key.
+- Changed Comet to provide no indexers.
+
+[COLOR red][B]Version 1.0.26[/B][/COLOR]
+- Quick cleanup.
+
+[COLOR red][B]Version 1.0.25[/B][/COLOR]
+- Added Mediafusion
+
+[COLOR red][B]Version 1.0.24[/B][/COLOR]
+- Changed MagnetDL to Torrentquest.
+- Changed ElfHosted name to Knightcrawler
+- Removed Self-Hosted option
+- Added Comet
+
+[COLOR red][B]Version 1.0.23[/B][/COLOR]
+- Switched magnetDL to torrentquest.
+
+[COLOR red][B]Version 1.0.22[/B][/COLOR]
+- Removed magnetDL.
+
+[COLOR red][B]Version 1.0.21[/B][/COLOR]
+- Added setting to bypass title filter for torrentio results.
+- Added setting to bypass title filter for elfhosted results.
+
+[COLOR red][B]Version 1.0.20[/B][/COLOR]
+- Changed ElfHosted file title parsing.
+
+[COLOR red][B]Version 1.0.19[/B][/COLOR]
+- Self-Hosted Torrentio/ Knightcrawler Instances added.
+
+[COLOR red][B]Version 1.0.18[/B][/COLOR]
+- Changes made to Rutor.
+- GLODLS removed.
+- Elfhosted added.
+- Torrentz2 added back.
+
+[COLOR red][B]Version 1.0.15[/B][/COLOR]
+- Added Rutor
+
+[COLOR red][B]Version 1.0.13[/B][/COLOR]
+- Removed Hosters
+- Changed default scrapers enabled.
+
+[COLOR red][B]Version 1.0.12[/B][/COLOR]
+- Removed TorrentAPI
+- Corrected RSLBB address
+- Added Knaben
+
+[COLOR red][B]Version 1.0.11[/B][/COLOR]
+- Changed timeout for Plex Shares
+- Changed Plex Server detection logic.
+- Corrected Error in logging code for using Kodi log.
+- Changed Plex media detection logic to use multiple files from same server if available.
+
+[COLOR red][B]Version 1.0.10[/B][/COLOR]
+- Added timeout for Plex Shares (10 Seconds)
+
+[COLOR red][B]Version 1.0.9[/B][/COLOR]
+- added line in plex module to create database if not found.
+
+[COLOR red][B]Version 1.0.8[/B][/COLOR]
+- Changed to allow for multiple PlexShares to be used..
+
+[COLOR red][B]Version 1.0.7[/B][/COLOR]
+- Changed all instances of ElementTree to use MiniDom.
+
+[COLOR red][B]Version 1.0.6[/B][/COLOR]
+- Updated torrentio
+
+[COLOR red][B]Version 1.0.5[/B][/COLOR]
+- Changes made to cleantitle to allow country codes in parenthesis.
+- Updated bitcq
+- Updated glodls
+- Updated kickass
+- Updated magnetdl
+- Updated torrentgalaxy
+- Updated torrentz
+
+[COLOR red][B]Version 1.0.4[/B][/COLOR]
+- Kodi 19 settings format.
+
+[COLOR red][B]Version 1.0.3[/B][/COLOR]
+- Google Drive Re-Added.
+
+[COLOR red][B]Version 1.0.2[/B][/COLOR]
+- Plexshares Added.
+
+[COLOR red][B]Version 1.0.1[/B][/COLOR]
+- Some fixes to scenerls scraper.
+- Re-added FilePursuit scraper.
+
+[COLOR red][B]Version 1.0.0[/B][/COLOR]
+- Initial release.
