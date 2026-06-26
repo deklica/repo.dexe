@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.pythontrousers" name="PythonTrousers Repository" version="0.2.0" provider-name="PythonTrousers">
+    <extension point="xbmc.addon.repository" name="PythonTrousers Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/PythonTrousers/kodi/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/PythonTrousers/kodi/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/PythonTrousers/kodi/main/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>PythonTrousers Kodi Repository</summary>
+        <description>Official repository for Internet Archive Theater and future PythonTrousers Kodi projects.</description>
+        <platform>all</platform>
+		<assets>
+			<icon>icon.jpg</icon>
+		</assets>
+    </extension>
+</addon>

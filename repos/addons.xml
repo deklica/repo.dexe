@@ -107,6 +107,8 @@ repository.jamal2362
 repository.jellyfin.kodi
 repository.jewrepo
 repository.jsergio
+repository.kodi.expanded
+repository.kodi.media
 repository.kodi.yatse.tv
 repository.kodifitzwell
 repository.kodinerds
@@ -140,6 +142,7 @@ repository.peno64
 repository.pikdum
 repository.prototype
 repository.publish3r
+repository.pythontrousers
 repository.rector.stuff
 repository.redwizard
 repository.repoil.club
@@ -454,11 +457,11 @@ repository.zeus768
 </addon>
 
 
-<addon id="skin.fentastic" version="100.0.30g" name="FENtastic Plus"
+<addon id="skin.fentastic" version="100.0.30i" name="FENtastic Plus"
 	provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" version="100.6.25e" />
+		<import addon="script.fentastic.helper" version="100.6.25f" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -492,7 +495,7 @@ repository.zeus768
 </addon>
 
 
-<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.25e" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.25f" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -939,7 +942,7 @@ repository.zeus768
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.8.2" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.8.3" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2008,6 +2011,46 @@ repository.zeus768
 	</extension>
 </addon>
 
+<addon id="repository.kodi.expanded" name="Kodi Expanded Repository" version="1.0.0" provider-name="mr-evil1">
+	<extension point="xbmc.addon.repository" name="Kodi Expanded Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">Kodi Expanded Repository</summary>
+		<summary lang="en">Kodi Expanded Repository</summary>
+		<description lang="de">Repository von Kodi Expanded Addons.</description>
+		<description lang="en">Repository of Kodi Expanded Addons.</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.kodi.media" name="Kodi Media Repository" version="1.0.0" provider-name="mr-evil1">
+	<extension point="xbmc.addon.repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Kodi Media Repository</summary>
+		<description>Repository von Kodi Media Addons und Abhängigkeiten.</description>
+		<platform>all</platform>
+		<assets>
+			<icon>kodi-media.jpg</icon>
+			<fanart>kodi-media.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.kodi.yatse.tv" name="Yatse Kodi Add-on repository" version="1.1.0" provider-name="Yatse">
 	<extension point="xbmc.addon.repository" name="Yatse Kodi Add-on repository">
 		<dir>
@@ -2165,7 +2208,7 @@ repository.zeus768
 	</extension>
 </addon>
 
-<addon id="repository.luc_repo" name="luc_repo" version="1.0.10" provider-name="apoyotech">
+<addon id="repository.luc_repo" name="luc_repo" version="1.0.12" provider-name="apoyotech">
 	<extension point="xbmc.addon.repository" name="luc_repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2656,6 +2699,24 @@ repository.zeus768
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.pythontrousers" name="PythonTrousers Repository" version="0.2.0" provider-name="PythonTrousers">
+	<extension point="xbmc.addon.repository" name="PythonTrousers Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>PythonTrousers Kodi Repository</summary>
+		<description>Official repository for Internet Archive Theater and future PythonTrousers Kodi projects.</description>
+        <platform>all</platform>
+		<assets>
+			<icon>icon.jpg</icon>
 		</assets>
 	</extension>
 </addon>
