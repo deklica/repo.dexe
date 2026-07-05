@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.seren" version="4.0.3" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="4.3.173" name="Seren" provider-name="Nixgates">
     <requires>
         <import addon="xbmc.addon" version="17.9.910" />
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.27.0" />
-        <import addon="script.module.beautifulsoup4" version="4.9.3" />
-        <import addon="context.seren" version="2.2.0" />
-        <import addon="script.module.inputstreamhelper" version="0.5.10" optional="true" />
-        <import addon="script.module.unidecode" version="1.1.1" />
-        <import addon="script.module.myconnpy" version="8.0.18" />
+        <import addon="script.module.beautifulsoup4" version="4.9.3"/>
+        <import addon="context.seren" version="2.2.0"/>
+        <import addon="script.module.inputstreamhelper" version="0.5.10" optional="true"/>
+        <import addon="script.module.unidecode" version="1.1.1"/>
+        <import addon="script.module.myconnpy" version="8.0.18"/>
+        <import addon="script.module.curl_cffi" version="0.15.0" optional="true"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="seren.py">
         <provides>video</provides>
@@ -25,9 +26,8 @@
         <website>https://github.com/nixgates/plugin.video.seren</website>
         <source>https://github.com/nixgates/plugin.video.seren</source>
         <disclaimer lang="en">
-            Last updated: December 6, 2024.
-            The information contained within the Seren software (the "Service") is for general information purposes
-            only.
+            Last updated: November 29, 2024.
+            The information contained within the Seren software (the "Service") is for general information purposes only.
             The author assumes no responsibility for errors, omissions in the contents on the Service, nor does it
             assume responsibility for any material provided by any external services.
             The use of the Service does not author the user to engage in any kind of illegal, criminal or tortious
@@ -63,31 +63,71 @@
             <screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
         </assets>
         <news>
-            Changelog 4.0.x
-            - Fixed Trakt Sections, Next Up, etc.
-            - Added support for Kodi 22
-        
-            Changelog 3.0.67
-            [BUG] Reverted Changes from last release due to more bugs that were created.
-        
-            Changelog 3.0.66
-            [BUG] Resolved Kodi Omega deprecation warnings by migrating cast metadata to InfoTagVideo APIs
-            [BUG] Fixed cast normalization to build xbmc.Actor objects and stop setCast runtime exceptions
-            [BUG] Normalized unique IDs and resume data to prevent type errors and deprecated property usage
-            [BUG] Ensured widget refresh runtime flag resets correctly after triggering refresh
-            [BUG] Stopped duplicate episode rows during Trakt sync by keying upserts on show/season/number
-        
-            Changelog 3.0.65
-            [BUG] Improved SQLite database lock handling
-            [BUG] If you skip back to the start and stop playback seren will now stop trakt scrobble and remove playback history
-            [BUG] Will no longer use stretched icon for fanart on menu items
-            [PERFORMANCE] Will no longer remove trakt bookmark when starting playback
-            [PERFORMANCE] Resuming playback will now seek faster
-            [PERFORMANCE] Removed unnecessary error when RD magnet doesn't resolve
-            [FEATURE] Can limit next up episodes by item limit
-            [FEATURE] Added sorting options for watchlist
-            [FEATURE] Can now use chapter info to trigger smartplay window
-            [FEATURE] Added progress indicators
+            Changelog 3.3.141
+            [NEW] Add script.module.curl_cffi as optional dependency in addon.xml — enables Kodi native C-extension loader to mount the lib/ path, allowing curl_cffi Chrome120 TLS impersonation to initialise correctly in Kodi 22. Falls back gracefully to cloudscraper on platforms where the module is absent.
+
+            Changelog 3.3.133
+            [FIX] OpenInfo-aware watchdog stop: when user presses backspace/stop during playback and Seren was launched from an OpenInfo session (detected via openinfo.watchdog.gen window property), the PlaybackWatchdog now exits its retry loop immediately instead of auto-cycling to the next source up to maxRetries times. Non-OpenInfo sessions and genuine stream errors/stalls are unaffected.
+
+            Changelog 3.3.94
+            [NEW] OpenInfo integration — last-resolved quality memory: on every successful, content-verified resolution, write a tiny per-title record (imdb_id keyed) with quality / debrid_provider / release_title / season+episode / timestamp to addon_data/plugin.video.seren/openinfo_last_resolutions.json. OpenInfo's info dialog (7.0.19+) reads this file and surfaces "Last played: 4K HDR · Real-Debrid" before the user hits play. Self-contained: Seren writes its own data dir, OpenInfo reads cross-addon, Seren has no awareness of OpenInfo. Atomic write (tmp + os.replace), 200-row cap with oldest-first eviction, fully wrapped in try so a cache failure can never affect playback.
+
+            Changelog 3.1.29
+            [BUG] Fix Monitor memory leak: singleton xbmc.Monitor now released in deinit() — prevents "left several classes in memory" warning and object accumulation
+            [BUG] Fix ProviderPerformance _row_to_dict crash: row_factory returns dicts not tuples — unpacking dict keys instead of values caused "invalid literal for int()" on column names
+            [BUG] Fix thumbnail loading storm on version change: clean stale entries from Kodi's Textures13.db where cached files are missing — prevents hundreds of CImageLoader failures that freeze the UI
+
+            Changelog 3.1.28
+            [BUG] Fix EasyDebrid module-level requests.Session: moved to @cached_property instance session matching all other debrid modules — eliminates thread-unsafe shared header mutation
+            [BUG] Fix resolver_window close_callback never invoked: missing parentheses on line 159 — callback was referenced but never called on window close
+            Full codebase audit: 127 files syntax-verified, 101 route targets verified, all cache invalidation paths confirmed
+
+            Changelog 3.1.27
+            [BUG] Fix L1 cache key crash in get_movie_list when trakt_list contains items with no trakt_id — sorted() on None values caused TypeError
+
+            Changelog 3.1.26
+            [BUG] Fix version change detection after zip install: cached service state from previous version was preventing do_version_change() from running — cache clearing, __pycache__ cleanup, and reuselanguageinvoker restoration were skipped until Kodi restart
+
+            Changelog 3.1.25
+            [PERF] L1 metadata cache: module-level dict caches formatted movie/show list results; persists across plugin calls with reuselanguageinvoker; cleared on settings change, trakt sync, and mark-watched
+            [PERF] Prefetch next page: after rendering page N, fires background RunPlugin to pre-load page N+1 metadata into SQLite and L1 cache — next page navigation becomes near-instant
+            [FIX] Reuselanguageinvoker audit: all cached_property and L1 cache values properly invalidated on settings change
+
+            Changelog 3.1.24
+            [PERF] Direct cached_property reads for hot settings: debrid checks (10 reads→1), menu caching, set views, notification sound — eliminates 6-deep method chain per read
+            [PERF] Batch-optimize add_directory_item: skip date conversions when timezone is UTC; class-level ID keys dict and media type frozenset instead of per-item creation
+
+            Changelog 3.1.23
+            [PERF] Hierarchical router dispatch: ~95 simple routes handled via O(1) dict lookup; complex routes (getSources, preScrape, etc.) fall through to elif chain
+
+            Changelog 3.1.22
+            [PERF] Singleton Kodi Monitor: abort_requested() and wait_for_abort() share one xbmc.Monitor() instead of creating/destroying per call — eliminates hundreds of object cycles during scraping
+            [PERF] Reduce set_view_type sleep from 200ms to 50ms — saves 150ms per menu navigation
+            [PERF] Pre-warm studio_icons at service boot via window property — first list render no longer blocks on two xbmcvfs.listdir() calls
+
+            Changelog 3.1.21
+            [PERF] MetadataHandler singleton: genre dict (34 language lookups), artwork preferences (20 settings reads), and language codes (2 JSON-RPC calls) computed once per session instead of per list build
+
+            Changelog 3.1.20
+            [PERF] Lazy-import pytz, unidecode, ElementTree — deferred from module-level to first use; eliminates ~50 timezone data file imports on cold start
+            [BUG] Fix ProviderPerformance type error: SQLite returning strings for integer columns caused '>' comparison crash
+
+            Changelog 3.1.19
+            [PERF] Zero-init entry point: compute all immutable state (paths, platform, Kodi version, timezone, assets) once in service.py at boot and store as JSON window property — plugin calls read back in one getProperty + json.loads instead of ~40 API calls
+
+            Changelog 3.1.18
+            [PERF] Bulk settings pre-warm: parse settings.xml at boot, cache all 314 settings in window properties — eliminates lock contention on first navigation
+            [PERF] Re-warm settings cache after GUI settings change (no stale reads)
+            [FIX] Preserve user reuselanguageinvoker preference across version upgrades (was force-disabled every update)
+
+            Changelog 3.0.97
+            [BUG] Fix season pack torrent playback — prevent premature RD torrent deletion before link unrestriction
+            [BUG] Fix missing rd.autodelete in resolver post-processing (torrents accumulating in RD cloud)
+            [BUG] Fix torrent_select_all fallback to 'all' causing link-to-file index mismatches
+            [BUG] Fix episode regex requiring trailing space — now matches filenames ending at episode number
+            [BUG] Fix _get_selected_files crash on RD link/file count mismatch
+            [BUG] Fix _fetch_source_files KeyError crash on uncached torrents
+            [BUG] Fix _do_post_processing crash when torrent_id is None
 
             Changelog 3.0.62
             [BUG] Optimised RD fix implementation
@@ -113,8 +153,6 @@
 
             Changelog 3.0.1
             [FEATURE] Handle Kodi database version for Omega 21
-            [PERFORMANCE] Compressed icons from 3.53 MB to 1.34 (Removed)
-            [FEATURE] Update background color to Black for 3.0.1 (Removed)
 
             Changelog 3.0.0
             [PERFORMANCE] Drop support for Python 2.x (Kodi Leia and below)
@@ -161,8 +199,8 @@
             [BUG] Fix typo in German localizations
             [BUG] Remove rogue \ in translations
 
-            Changelog 2.2.4
-            [BUG] Fix bugs related to foreign key constraints
+		    Changelog 2.2.4
+			[BUG] Fix bugs related to foreign key constraints
 
             Changelog 2.2.3
             [BUG] Fix Trakt Scrobbling and Playing Next
