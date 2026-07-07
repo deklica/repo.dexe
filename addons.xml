@@ -563,7 +563,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.playlistbee" name="[COLORorangered]Bee[/COLOR]" version="3.1" provider-name="Nux007, Publish3r, Silhouette2022,Bee,1X and Romy">
+<addon id="plugin.video.playlistbee" name="[COLORorangered]Bee[/COLOR]" version="3.2" provider-name="Nux007, Publish3r, Silhouette2022,Bee,1X and Romy">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.22.0"/>
@@ -732,7 +732,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="1.7.4">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="1.7.5">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -762,7 +762,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.seren" version="4.3.173" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="4.3.207" name="Seren" provider-name="Nixgates">
     <requires>
         <import addon="xbmc.addon" version="17.9.910" />
         <import addon="xbmc.python" version="3.0.0" />
