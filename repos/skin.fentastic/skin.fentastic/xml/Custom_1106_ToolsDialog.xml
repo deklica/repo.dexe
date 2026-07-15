@@ -26,7 +26,7 @@
 					</item>
 					<item>
 						<label>Authorize Services</label>
-						<visible>!System.HasAddon(script.module.acctmgr) + [System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl) | System.HasAddon(plugin.video.youtube)]</visible>
+						<visible>System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl) | System.HasAddon(plugin.video.youtube)</visible>
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick>ActivateWindow(1111)</onclick>
 					</item>
