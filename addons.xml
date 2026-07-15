@@ -42,7 +42,6 @@ service.subtitles.opensubtitles_by_opensubtitles
 service.subtitles.opensubtitles_plus
 
 --- Program & Services ---
-plugin.video.tidb
 plugin.program.autoenabler
 plugin.program.openwizard
 plugin.program.optiklean
@@ -75,6 +74,7 @@ script.tubecast
 script.unlock.advancedsettings
 script.xbmcbackup
 service.lt2http
+service.nextonlibrary
 service.subloader
 service.vpn.manager
 
@@ -395,16 +395,16 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.gratisred" version="1.1.0" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" version="1.1.1" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
-        <import addon="script.module.six"/>
+        <import addon="script.gratisred.artwork" version="1.0.2"/>
         <import addon="script.module.kodi-six"/>
-        <import addon="script.module.simplejson"/>
         <import addon="script.module.requests"/>
         <import addon="script.module.resolveurl"/>
-        <import addon="script.gratisred.artwork" version="1.0.2"/>
-        <import addon="script.trakt" optional="true"/>
+        <import addon="script.module.simplejson"/>
+        <import addon="script.module.six"/>
         <import addon="plugin.video.youtube" optional="true"/>
+        <import addon="script.trakt" optional="true"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -412,7 +412,7 @@ service.subtitles.titlovi
     <extension library="service.py" point="xbmc.service" start="startup"/>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">[COLOR red]Free and non-Debrid Movies, TV Shows and Anime[/COLOR]</summary>
-        <description lang="en">[COLOR red]Additional providers in[/COLOR] [COLOR gold]Tools > Settings > Provider Settings[/COLOR] [COLOR red](returning false positives, but they might work depending on your IP address)[CR][CR]Providers bstsrs.one and srstop.link are largely returning duplicates of each other. To see more links, go to[/COLOR] [COLOR gold]Tools > Settings > Playback Settings and disable "Remove Duplicate Sources".[/COLOR][CR][CR][COLOR red]Forked and updated from[/COLOR] [COLOR orange]Scrubs v2 by JewBMX.[/COLOR][CR][CR][COLOR blue]Many thanks to The Alpha![/COLOR]</description>
+        <description lang="en">[COLOR red]Providers bstsrs.one and srstop.link are returning duplicates. To see more links, go to[/COLOR] [COLOR gold]Tools > Settings > Playback Settings and disable "Remove Duplicate Sources".[/COLOR]</description>
         <disclaimer lang="en">[COLOR red]The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.[/COLOR]</disclaimer>
 		<language>en</language>
 		<platform>all</platform>
@@ -420,19 +420,18 @@ service.subtitles.titlovi
 		<forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
 		<website>https://redwizard.xyz/</website> 
 		<email>info@redwizard.xyz</email>
-		<source>https://github.com/jewbmx</source>
-        <news>[COLOR red]2026-04-29
-- Summary of v1.0.1 - v1.1.0 (see Tools > Changelog for the detail):
- * srstop.link and FlareSolverr implemented (flaresolverr default value http://127.0.0.1:8191/v1)
- * TVmaze sections overhauled and expanded
- * TV Passport Channels overhauled
- * Changelogs moved from online to traditional locally hosted
- * Themes renamed and reorganised (requires script.gratisred.artwork v1.0.2)
- * Old entries cleaned/removed[/COLOR][COLOR blue]
-- Thank you to The Alpha for his work on TVmaze, providers and FlareSolverr[/COLOR]</news>
+		<source>https://github.com/The-Red-Wizard</source>
+        <news>[COLOR red]2026-07-11
+- Summary of v1.1.1 (see Tools > Changelog for the detail):
+ * fmovie_core_sites and hdhub_stremio implemented
+ * projectfreetv_cyou, tvmovieflix_com and tvmovieflix_com fixed
+ * Trakt and TMDb QR authorisations
+ * Trakt and TMDb fixes
+ * OpenSubtitles.com replaces legacy OpenSubtitles.org
+ * Set Views detects layout on more Kodi builds[/COLOR]</news>
         <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
+            <icon>resources/images/icon.png</icon>
+            <fanart>resources/images/fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
@@ -731,7 +730,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="1.7.5">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="1.8.9">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -761,7 +760,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.seren" version="4.3.207" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="4.3.214" name="Seren" provider-name="Nixgates">
     <requires>
         <import addon="xbmc.addon" version="17.9.910" />
         <import addon="xbmc.python" version="3.0.0" />
@@ -1599,29 +1598,6 @@ In order to get the API Key:
 <!-- ---------------------------------------------------------------------- -->
 
 
-<addon id="plugin.video.tidb"
-       name="TheIntroDB Kodi Addon"
-       version="1.8.0"
-       provider-name="TheIntroDB">
-    <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-    </requires>
-    <extension point="xbmc.service" library="service.py" start="startup"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Skip intro, recap, credits, and preview segments in movies and TV shows using TheIntroDB</summary>
-        <summary lang="zh_CN">基于 TheIntroDB 数据库，自动跳过电影和电视剧的片头、前情回顾、片尾和预告片段</summary>
-        <description lang="en_GB">Looks up segment timings from TheIntroDB while you watch. Uses TMDB ids when present; otherwise IMDb ids (tt…) with season/episode.</description>
-        <description lang="zh_CN">观看时自动从 TheIntroDB 数据库查询片段时间信息。优先使用 TMDB ID 进行匹配；无 TMDB ID 时则使用 IMDb ID（tt 开头）配合季/集号查询。</description>
-        <platform>all</platform>
-        <license>GPL-2.0-or-later</license>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-        <news lang="en_GB"></news>
-    </extension>
-</addon>
-
-
 <addon id="plugin.program.autoenabler" name="Auto Enabler" version="1.0.1" provider-name="slam">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -2321,7 +2297,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctmgr" version="1.1.5" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
+<addon id="script.module.acctmgr" version="1.1.5a" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -2423,7 +2399,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.4.6" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.4.7" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2529,7 +2505,7 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.magneto" version="6.06.01" name="Magneto Module" provider-name="Magneto">
+<addon id="script.module.magneto" version="6.07.03" name="Magneto Module" provider-name="Magneto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2580,7 +2556,7 @@ v0.5.9 (2022-03-22)
 
 <addon id="script.module.viperscrapers" 
 		name="Viper Scrapers" 
-		version="1.5.3" 
+		version="1.5.4" 
 		provider-name="Jax">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
@@ -2966,6 +2942,27 @@ strptime Python bugfix
         <license>Non commercial. See https://github.com/ElementumOrg/service/blob/master/LICENSE</license>
         <assets>
             <fanart>fanart.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="service.nextonlibrary" name="Skip.Intro.Next" version="1.1.4" provider-name="Addonniss">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+    <extension point="xbmc.python.script" library="launcher.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="kodi.addon.metadata">
+        <summary lang="en_GB">Skip intros, show the next-episode prompt, and get Stinger alerts for movie post-credits scenes.</summary>
+        <description lang="en_GB">Adds three lightweight playback helpers to Kodi: Skip Intro, Next On, and Stinger. The add-on can use online metadata from TheIntroDB, IntroDB.app, TMDB, AfterCredits.com, and Wikipedia, fall back to local chapter markers when needed, and optionally use manual timing settings for intro skipping. It keeps the on-screen experience minimal with simple overlay buttons.</description>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>

@@ -1,6 +1,6 @@
 <addon id="script.module.viperscrapers" 
 		name="Viper Scrapers" 
-		version="1.5.3" 
+		version="1.5.4" 
 		provider-name="Jax">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
