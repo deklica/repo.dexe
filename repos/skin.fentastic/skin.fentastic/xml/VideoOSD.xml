@@ -348,21 +348,21 @@
 			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 			<left>40</left>
-			<top>400</top>
+			<top>340</top>
 			<width>1840</width>
-			<height>435</height>
+			<height>490</height>
 			<!-- Background -->
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
 				<width>1840</width>
-				<height>435</height>
+				<height>490</height>
 				<texture colordiffuse="DD000000">colors/white.png</texture>
 			</control>
 			<!-- Movie Poster -->
 			<control type="image">
 				<left>30</left>
-				<top>20</top>
+				<top>38</top>
 				<width>220</width>
 				<height>330</height>
 				<aspectratio align="center">keep</aspectratio>
@@ -372,7 +372,7 @@
 			<!-- TV Show Poster -->
 			<control type="image">
 				<left>30</left>
-				<top>20</top>
+				<top>38</top>
 				<width>220</width>
 				<height>330</height>
 				<aspectratio align="center">keep</aspectratio>
@@ -382,9 +382,9 @@
 			<!-- Title -->
 			<control type="label">
 				<left>290</left>
-				<top>30</top>
+				<top>20</top>
 				<width>1500</width>
-				<height>60</height>
+				<height>55</height>
 				<font>font45</font>
 				<label>$INFO[VideoPlayer.Title]</label>
 				<textcolor>button_focus</textcolor>
@@ -404,9 +404,9 @@
 			<!-- Plot -->
 			<control type="textbox">
 				<left>290</left>
-				<top>145</top>
+				<top>155</top>
 				<width>1500</width>
-				<height>180</height>
+				<height>225</height>
 				<font>font14</font>
 				<label>$INFO[VideoPlayer.Tagline,[B],[/B][CR]]$INFO[VideoPlayer.Plot]</label>
 				<textcolor>white</textcolor>
@@ -416,8 +416,8 @@
 			<!-- Season-Episode / Studio / Country - Video Resolution / Codec-->
 			<control type="label">
 				<left>290</left>
-				<top>355</top>
-				<width>1450</width>
+				<top>410</top>
+				<width>1500</width>
 				<height>40</height>
 				<font>font14</font>
 				<label>$VAR[VideoInfoSeasonStudioCountryLabel]$VAR[VideoInfoSeparator]$VAR[MediaCodecLabel]</label>

@@ -420,9 +420,9 @@
 	</include>
 	<include name="ButtonMenuList_dialog">
 		<left>0</left>
-		<top>100</top>
+		<top>80</top>
 		<width>600</width>
-		<height>420</height>
+		<height>530</height>
 		<onleft>9000</onleft>
 		<onright>9000</onright>
 		<onup>9000</onup>
@@ -431,7 +431,8 @@
 		<itemlayout height="70" width="600">
 			<control type="label">
 				<left>0</left>
-				<top>0</top>
+				<textoffsetx>20</textoffsetx>
+				<top>25</top>
 				<width>600</width>
 				<height>70</height>
 				<align>center</align>
@@ -443,14 +444,15 @@
 		<focusedlayout height="70" width="600">
 			<control type="image">
 				<left>25</left>
-				<top>0</top>
+				<top>25</top>
 				<width>550</width>
 				<height>70</height>
 				<texture colordiffuse="button_focus">masks/focus.png</texture>
 			</control>
 			<control type="label">
 				<left>0</left>
-				<top>0</top>
+				<textoffsetx>20</textoffsetx>
+				<top>25</top>
 				<width>600</width>
 				<height>70</height>
 				<align>center</align>
