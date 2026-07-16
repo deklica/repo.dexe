@@ -20,39 +20,43 @@
 				<content>
 					<item>
 						<label>Account Manager</label>
-						<visible>System.HasAddon(script.module.acctmgr) + [System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight)]</visible>
+						<visible>System.HasAddon(script.module.acctmgr) + [System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight)] + !Skin.HasSetting(ToolsNoAccountManager)</visible>
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick>RunAddon(script.module.acctmgr)</onclick>
 					</item>
 					<item>
 						<label>Authorize Services</label>
-						<visible>System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl) | System.HasAddon(plugin.video.youtube)</visible>
+						<visible>[System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl) | System.HasAddon(plugin.video.youtube)] + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick>ActivateWindow(1111)</onclick>
 					</item>
 					<item>
 						<label>Maintenance</label>
+						<visible>!Skin.HasSetting(ToolsNoMaintenance)</visible>
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick>ActivateWindow(1120)</onclick>
 					</item>
 					<item>
 						<label>Custom Configs</label>
+						<visible>!Skin.HasSetting(ToolsNoCustomConfigs)</visible>
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick>ActivateWindow(1126)</onclick>
 					</item>
 					<item>
     						<label>Pre-Made Configs</label>
-    						<visible>[System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(plugin.video.scrubsv2)] + !Skin.HasSetting(Enable.PreMadeConfigs)</visible>
+    						<visible>[System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight)] + !Skin.HasSetting(Enable.PreMadeConfigs)</visible>
     						<onclick>Dialog.Close(all)</onclick>
     						<onclick>RunScript(script.fentastic.helper,mode=pre_config)</onclick>
 					</item>
 					<item>
 						<label>Backup & Restore</label>
+						<visible>!Skin.HasSetting(ToolsNoBackupRestore)</visible>
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick>ActivateWindow(1123)</onclick>
 					</item>
 					<item>
 						<label>Video Cache Config</label>
+						<visible>!Skin.HasSetting(ToolsNoVideoCacheConfig)</visible>
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick>RunScript(script.fentastic.helper,mode=advanced_set)</onclick>
 					</item>

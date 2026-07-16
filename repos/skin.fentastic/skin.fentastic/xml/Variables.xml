@@ -1350,9 +1350,11 @@
 	<variable name="VideoResolutionLabel">
 		<value condition="String.Contains(VideoPlayer.VideoResolution,4K)">4K</value>
 		<value condition="String.Contains(VideoPlayer.VideoResolution,2160)">4K</value>
+		<value condition="String.Contains(VideoPlayer.VideoResolution,1440)">1440p</value>
 		<value condition="String.Contains(VideoPlayer.VideoResolution,1080)">1080p</value>
 		<value condition="String.Contains(VideoPlayer.VideoResolution,720)">720p</value>
 		<value condition="String.Contains(VideoPlayer.VideoResolution,576)">576p</value>
+		<value condition="String.Contains(VideoPlayer.VideoResolution,540)">540p</value>
 		<value condition="String.Contains(VideoPlayer.VideoResolution,480)">480p</value>
 		<value>$INFO[VideoPlayer.VideoResolution]</value>
 	</variable>
