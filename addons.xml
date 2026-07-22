@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<!--  Addons  -----------------------------------------
+<!--  Addons  =========================================
 
---- Video ---
+=== Video ===
 plugin.video.blacklodge
 plugin.video.dltv
 plugin.video.dreammachine
@@ -29,19 +29,19 @@ plugin.video.youtube
 plugin.video.ytchannels
 script.realdebrid
 
---- Context menus ---
+=== Context menus ===
 context.elementum
 context.embuary.info
 context.seren
 context.trailer.play
 script.playrandomvideos
 
---- Subtitles ---
+=== Subtitles ===
 service.subtitles.localsubtitle
 service.subtitles.opensubtitles_by_opensubtitles
 service.subtitles.opensubtitles_plus
 
---- Program & Services ---
+=== Program &amp; Services ===
 plugin.program.autoenabler
 plugin.program.openwizard
 plugin.program.optiklean
@@ -78,7 +78,7 @@ service.nextonlibrary
 service.subloader
 service.vpn.manager
 
---- Audio ---
+=== Audio ===
 script.audio.motherearth
 plugin.audio.dashradio
 plugin.audio.datpiff
@@ -89,26 +89,26 @@ plugin.audio.tunein2017
 plugin.audio.tuneinradio
 plugin.audio.ytmusic.exp
 
---- Image ---
+=== Image ===
 plugin.image.flickrexplorer
 
---- Dependencies ---
+=== Dependencies ===
 script.module.youtube_channels
 script.free99.artwork
 script.gratisred.artwork
 resource.images.blacklodge.artwork
 resource.images.whitelodge.artwork
 
---- Other ---
+=== Other ===
 plugin.program.moonlight-qt (linux)
 pvr.eon (linux, android)
 script.cu.lrclyrics
 weather.gismeteo
 weather.openmeteo
 
----
+===
 
---- External ---
+=== External ===
 plugin.video.smr_link_tester
 script.module.resolveurl
 script.module.resolveurl.xxx
@@ -125,13 +125,13 @@ plugin.video.pov (dradis, affenity, infinity)
 plugin.video.youtube
 script.module.magneto
 
---- Roooar ---
+=== Roooar ===
 plugin.video.themoviedb.helper
 script.module.jurialmunkey
 context.themoviedb.helper
 script.module.infotagger
 
---- GF ---
+=== GF ===
 plugin.video.BauBauVavoo - Broken
 plugin.video.GreenKlikPremium
 service.subtitles.titlovi
@@ -1123,7 +1123,7 @@ Random updates by lolage.
 </addon>
 
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ====================================================================== -->
 
 
 <addon id="context.elementum" name="Elementum Context Helper" version="0.0.15" provider-name="elgatito">
@@ -1417,7 +1417,7 @@ v2.0.0 (2021-01-29)
 </addon>
 
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ====================================================================== -->
 
 
 <addon id="service.subtitles.localsubtitle"
@@ -1571,7 +1571,7 @@ v5.3.2 (2020-09-30)
     <extension point="xbmc.addon.metadata">
         <summary>OpenSubtitles by OpenSubtitles.com[CR][CR]Improved add-on by Burekas for OpenSubtitles.com.</summary>
         <description lang="en">[CR]Search and download subtitles for movies and TV-Series from OpenSubtitles.com. Search in 75 languages, 6.000.000+ subtitles, daily updates. [CR][CR]Made by Burekas[CR]Thanks to: amet, opensubtitles.[CR][CR]For news, updates and more info - Visit: https://bit.ly/3DaU7JT[CR][CR]Burekas Repo: https://bit.ly/49mJge3</description>
-        <disclaimer>Register/Import your account & API on OpenSubtitles.com before use.</disclaimer>                                               
+        <disclaimer>Register/Import your account &amp; API on OpenSubtitles.com before use.</disclaimer>                                               
         <news>
 In order to get the API Key:
 
@@ -1595,7 +1595,7 @@ In order to get the API Key:
 </addon>
 
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ====================================================================== -->
 
 
 <addon id="plugin.program.autoenabler" name="Auto Enabler" version="1.0.1" provider-name="slam">
@@ -2612,7 +2612,6 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.service.sponsorblock" version="0.6.0" name="SponsorBlock" provider-name="siku2">
     <requires>
         <import addon="script.module.requests" version="2.15.1"/>
@@ -2814,7 +2813,6 @@ v1.0.1 (2019-08-06)
 </addon>
 
 
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.xbmcbackup"
     name="Backup" version="1.7.2" provider-name="robweber">
   <requires>
@@ -3040,7 +3038,7 @@ strptime Python bugfix
 </addon>
 
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ====================================================================== -->
 
 
 <addon id="script.audio.motherearth" name="Mother Earth Radio" version="2.4" provider-name="Florian Reiterer">
@@ -3291,7 +3289,7 @@ strptime Python bugfix
 </addon>
 
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ====================================================================== -->
 
 
 <addon id="plugin.image.flickrexplorer" name="FlickrExplorer" version="0.7.8+nexus" provider-name="rols1 (rols1@gmx.de)">
@@ -3321,7 +3319,7 @@ strptime Python bugfix
 </addon>
 
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ====================================================================== -->
 
 
 <addon id="script.module.youtube_channels" name="YouTube Channels" version="0.2.0" provider-name="Alexander Seiler">
@@ -3417,7 +3415,7 @@ strptime Python bugfix
 </addon>
 
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ====================================================================== -->
 
 
 <addon id="plugin.program.moonlight-qt" name="Moonlight" version="0.5.2" provider-name="veldenb">
@@ -3831,7 +3829,6 @@ All trademarks belong to them
 </addon>
 
 
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="weather.openmeteo" name="Open-Meteo" version="1.0.29" provider-name="OpenHT">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>

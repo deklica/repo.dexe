@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<!--  Kodi Repositories Included  ---------------------
+<!--  Kodi Repositories Included  =====================
 
 repository.roooar
 repository.dexe
@@ -749,7 +749,7 @@ repository.zeus768
 </addon>
 
 
-<!--  Repositories  ----------------------------------- -->
+<!--  Repositories  =================================== -->
 
 <addon id="repository.5star" name="5Star Kodi addons" version="6.4.0" provider-name="Luis Rodrigues">
 	<extension point="xbmc.addon.repository" name="5Star Kodi addons">
@@ -1240,8 +1240,8 @@ repository.zeus768
 	</extension>
 </addon>
 
-<addon id="repository.catchuptvandmore" name="Catch-up TV & More's Release repository" version="0.0.6" provider-name="SylvainCecchetto, wwark">
-	<extension point="xbmc.addon.repository" name="Catch-up TV & More's Release repository">
+<addon id="repository.catchuptvandmore" name="Catch-up TV &amp; More's Release repository" version="0.0.6" provider-name="SylvainCecchetto, wwark">
+	<extension point="xbmc.addon.repository" name="Catch-up TV &amp; More's Release repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
