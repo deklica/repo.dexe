@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.gratisred" version="1.1.1" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" version="1.1.4" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
-        <import addon="script.gratisred.artwork" version="1.0.2"/>
+        <import addon="script.gratisred.artwork" version="1.0.3"/>
         <import addon="script.module.kodi-six"/>
         <import addon="script.module.requests"/>
         <import addon="script.module.resolveurl"/>
         <import addon="script.module.simplejson"/>
         <import addon="script.module.six"/>
         <import addon="plugin.video.youtube" optional="true"/>
+        <import addon="script.simkl" optional="true"/>
         <import addon="script.trakt" optional="true"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
@@ -25,14 +26,11 @@
 		<website>https://redwizard.xyz/</website> 
 		<email>info@redwizard.xyz</email>
 		<source>https://github.com/The-Red-Wizard</source>
-        <news>[COLOR red]2026-07-11
-- Summary of v1.1.1 (see Tools > Changelog for the detail):
- * fmovie_core_sites and hdhub_stremio implemented
- * projectfreetv_cyou, tvmovieflix_com and tvmovieflix_com fixed
- * Trakt and TMDb QR authorisations
- * Trakt and TMDb fixes
- * OpenSubtitles.com replaces legacy OpenSubtitles.org
- * Set Views detects layout on more Kodi builds[/COLOR]</news>
+        <news>[COLOR red]2026-07-22
+- Summary of v1.1.4 (see Tools > Changelog for the detail):
+ * Clearer Change Watched Indicators… action
+ * Resume Point Source follows Watched Indicators
+ * Resume Point Source also uses authorised-only picker[/COLOR]</news>
         <assets>
             <icon>resources/images/icon.png</icon>
             <fanart>resources/images/fanart.jpg</fanart>
