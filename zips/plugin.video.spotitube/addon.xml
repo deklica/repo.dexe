@@ -24,8 +24,8 @@
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.spotitube</source>
 		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
 [B][COLOR orangered]Version 3.0.9+matrix.1  (14.09.2025)[/COLOR][/B]

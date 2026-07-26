@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="Changelog">
+		<label>[B]Fixes &amp; Improvements by dEXE[/B]
+Reworked and restyled several dialogs and overlays across the skin - including the context menu, power/tools menus, video OSD, top bar, and video info screen.
+Introduced a brand-new focused list-item style with nine appearance options throughout the List and WideList views (Skin Settings/Options).
+Various other small tweaks and refinements throughout.
+
+[B][COLOR accent_color]Version $INFO[System.AddonVersion(skin.fentastic)] by Zaxxon709[/COLOR][/B]
+- Fix Maintenance &amp; Tools menu item enable/disable settings not applying correctly
+- Included a fallback rating to the infoPanel when no MDBList API key is configured
+- Added Offcloud authorization shortcuts
+
+[B][COLOR accent_color]Version 100.0.31[/COLOR][/B]
+- Improved top bar button alignment based on the number of enabled buttons
+- Added an optional InfoPanel for add-on and add-on category widgets
+- Added an option to hide the main menu while browsing widgets, allowing widgets to use the full screen width
+- Additional minor bug fixes and improvements
+
+[B][COLOR accent_color]Version 100.0.30k[/COLOR][/B]
+- Included 11 new colour themes and adjusted existing colours to provide better contrast between similar themes
+- Added color previews to the skin color preset selection dialog
+- Added separate fanart controls for widgets, category widgets, and add-on widgets
+- Added an option to enable or disable the Home Search button
+
+[B][COLOR accent_color]Version 100.0.30j[/COLOR][/B]
+- Added some Video OSD customizations:
+  1. Option to use the default Estuary Video OSD experience
+  2. Configurable audio and subtitle button behavior
+  3. Top or bottom seek bar selection
+  4. Optional subtitle offset button
+  5. Additional media information displayed during paused playback
+- Minor bug fixes and improvements
+
+[B][COLOR accent_color]Version 100.0.30i[/COLOR][/B]
+- Fix minor bug causing  context menu to be positioned incorrectly.
+- Remove color formatting from status tag in full screen info window
+
+[B][COLOR accent_color]Version 100.0.30h[/COLOR][/B]
+- Fixed addon information formatting to prevent tags (e.g. [/B]) from appearing when add-on names, summaries, or descriptions already contained formatting
+- Added new Audio Language and Subtitle Language controls to the Video OSD, allowing quick cycling of available streams
+- Added a skin setting to display the video seek bar at the top or bottom of the screen when using left/right seek commands
+- Updated Logo and Background image selection to allow browsing outside the skin directory
+- Fixed a minor text formatting issue affecting the series status in the Video Information window
+- Increased the size of the Context Menu to display more items on screen
+- Added a dedicated Tools Menu configuration section to skin settings
+
+[B][COLOR accent_color]Version 100.0.30g[/COLOR][/B]
+- Fixed an issue where custom main menu icons could revert to default icons after applying a pre-configuration
+- Minor bug fix related to add-on install prompts during widgets refreshing
+
+[B][COLOR accent_color]Version 100.0.30f[/COLOR][/B]
+- Fixed Kodi prompting to install missing add-ons when disabled menu sections contained paths to uninstalled add-ons
+- Added a setting to enable or disable a top bar shortcut for the Add-on Browser
+- Included Torbox authorization shortcuts in the tools menu
+
+[B][COLOR accent_color]Version 100.0.30e[/COLOR][/B]
+- Menu builder now supports selecting from multiple paths instead of only Video Add-ons
+- Added an option to enable or disable widgets for stock main menu items
+- Empty sections in the Add-on Browser are now hidden by default
+- Added a large collection of playlists (credits to the Bingie skin developer for many of these)
+- Fixed an issue affecting main menu focus (thanks to Funsterbe for the report)
+- Improved custom background and logo path handling using Kodi special paths
+- Added Restore Default options for custom backgrounds and logos
+- Added more home screen background images
+- Cleaned up the Skin Settings menu
+
+[B][COLOR accent_color]Version 100.0.30d[/COLOR][/B]
+- Fix rebuilding menus after a skin update
+- Fix the 'No backups directory found' error during back/restore and import/export activities
+- Added another fanart brightness setting (Lowest)
+- Included a setting to disable fanart for category widgets
+- Changed how user configs are backed up. These are now zipped for easier handling. If you have created any backups you should either zip or re-create them so they can be restored if needed
+
+[B][COLOR accent_color]Version 100.0.30c[/COLOR][/B]
+- Fixed an issue preventing fanart brightness adjustments from applying correctly
+- Added TorBox authentication support to the Authorize Services menu
+- Fixed Trakt authorization shortcuts for Fen Light and compatible forks
+- Added an Account Manager shortcut to the tools menu.
+- Added configurable widget limits (Keep in mind, TMDb-powered widgets are capped at 20 items due to TMDb API limitations)
+- Miscellaneous fixes and improvements
+
+[B][COLOR accent_color]Version 100.0.30b[/COLOR][/B]
+- Fixed a focus issue causing category selection to be lost when returning to the home screen
+
+[B][COLOR accent_color]Version 100.0.30a[/COLOR][/B]
+- Added Red Light (FLAM fork by Red Wizard) to the list of search providers 
+- Added a first-run setup wizard to choose your preferred FENtastic experience:
+  1. Classic FENtastic
+  2. FENtastic Plus
+- Don’t worry, if you’re unhappy with your selection, you can change it at any time under Skin Settings → Options → Look and Feel
+- Improved the search window Switch Provider option. When changing providers, the previously searched title is now automatically re-run using the newly selected provider.
+- Fixed search history re-search functionality
+- Fix Fen Light and Red Light Anime search results widget
+- Other Additions:
+  - You can now set or change the backup directory via Skin Settings → General
+  - Added an option to restore Default Skin Settings. This feature is located in Tools → Backup and Restore
+  - A selection of colour presets has been added. These are available under Skin Settings → Colours
+  - Added the option to disable main menu highlights 
+  - A few changes and additions to the Tools menu
+- Various minor fixes and improvements
+
+[B][COLOR accent_color]Version 100.0.30[/COLOR][/B]
+- Fix pre-config menu
+
+[B][COLOR accent_color]Version 100.0.29[/COLOR][/B]
+- Add Backup/Restore Favourites to tools menu
+- Added a few more pre-configs
+
+[B][COLOR accent_color]Version 100.0.28[/COLOR][/B]
+- Minor viewtype fixes
+
+[B][COLOR accent_color]Version 100.0.27[/COLOR][/B]
+- Fix open search window not being displayed
+- Fix search window busy spinner
+- Fix broken shortcuts in search dialog
+- Added a setting to enable/disable help text in search window
+- Added user config import/export functions to tools menu. Users can now export and easy share their configs with other users.
+- Added a setting to limit the search history list to 5, 10, 15, or 20 items
+- Updated search results window artwork
+- Added The Gears add-on to the list of supported add-ons. This is a Fen Light fork with no external player block and an updated set of external scrapers.
+- Added a Pre-Config for The Gears add-on
+- Fixed Fen Light/The Gears Anime widget
+- Other minor changes/fixes
+
+[B][COLOR accent_color]Version 100.0.26[/COLOR][/B]
+- Updated how Backup/Restore of user configs functions. Now skin settings is included in user config backups
+- Added a favourites shortcut to home top bar menu (Enable/Disable in Skin Settings/General)
+- Updated tools menu. Removed skin settings backup/restore shortcuts
+
+[B][COLOR accent_color]Version 100.0.25[/COLOR][/B]
+- A new tools menu is located on the home screen top bar (Enable/Disable in Skin Settings/General)
+      Includes:
+      • Trakt and Debrid authorization for supported add-ons
+      • Apply MDbList API Key to skin
+      • Apply MDbList API Key to TMDbH
+      • Youtube Sign-In shortcut
+      • Clean packages
+      • Clean Thumbnails
+      • Clear cache for supported video add-ons
+      • Pre-Configured Video Cache Configs
+      • Pre-Made Configurations for supported add-ons
+      • Backup/Restore GUI and Skin Settings
+      • Back/Restore Menu/Widgets
+- Fen Light Anime widget added to search results
+- Removed the actors/actresses widget from search results
+- Fix included to prevent home screen widgets from refreshing after exiting search results window
+- A help section was added to the search results left panel
+- Added the options to enable/disable
+      • Main menu icons (Enable/Disable in Skin Settings/Main Menu Items)
+      • Category icons (Skin settings/Category Widgets)
+      • Category labels (Skin settings/Category Widgets)
+      • Kodi splash (Enable/Disable in Skin Settings/General)
+- Updated search providers
+   Removed:
+      • Fen
+      • Seren
+   Added:
+      • TMDb Helper
+- Search shortcuts added to the search results window top bar
+      • Search Studios (TMDbH)
+      • Search actors (TMDbH, Fen Light, Umbrella, POV)
+      • Delete search history
+- Increased the number of custom main menu items from 3 to 6
+- Choose custom main menu icons (A large selection of icons are now included with the skin)
+- Choose custom home screen logos (Choose your logo in Skin Settings/Artwork)
+- Included an option to allow the user to adjust the rain drop animation brightness. Changed how raindrops are enabled/disabled. Now, when raindrops are enabled   fanart is auto disabled, and vice versa. 
+- Updated the main menu look/functionality and added new home screen artwork
+- Added a new view type (Poster Large)
+- Updated the default skin colors
+- Default power button behaviour now has 3 options (Force Close, Quit Kodi, Show Shutdown Menu)
+- Included some new backgrounds, set a default directory for backgrounds and a last viewed start point so the user is taken either directly to the backgrounds home directory or the last previously viewed directory.
+- When creating main menus there is now has an additional 'No Path' option listed in the dialog. This allows the creation of main menus that have no action when selected. The user can still label the menu as per normal.
+- Fixed bug that caused Landscape/Landscape Big view type icons to be covered/diffused when focused
+- Added pre-configured menu/widget setups for supported addons
+- Changed the name of the skin to FENtastic Plus. Kept the same plugin name 'skin.fentastic'
+- Enjoy! Credit to ivarbrandt for this skin!
+
+[B][COLOR accent_color]Version 1.0.25[/COLOR][/B]
+- Quick fix for landscape artwork
+
+[B][COLOR accent_color]Version 1.0.24[/COLOR][/B]
+- Updated skin for Kodi Omega
+- Added Search support for POV and Seren
+- Other small fixes
+
+[B][COLOR accent_color]Version 1.0.23[/COLOR][/B]
+- Fixed a few bugs related to one-click trailers
+- Added search window (SW) functionality for FEN Light and Umbrella
+  • Set the default add on to use in Skin settings » Search
+  • Choose between FEN, FEN Light, and Umbrella
+  • Functionality extends to TRAKT button and default search dialog
+  • Included SW hot swap button to change search providers on the fly
+- Moved 'Clear Search History' to Search tab in Skin settings
+- Other small bug fixes
+
+[B][COLOR accent_color]Version 1.0.22[/COLOR][/B]
+- Fixed ratings not showing on some items
+- Readded Embuary Helper/Info functionality to Video Info window
+
+[B]Please make sure to clear the ratings cache and restart Kodi before trying to fetch ratings again.[/B]
+
+[B][COLOR accent_color]Version 1.0.21[/COLOR][/B]
+- Switched ratings source to MDbList for better tvshow support (enter MDbList API Key in Skin settings to activate)
+- Created Ratings section in Skin settings
+- Added on/off toggles for individual ratings
+- Added high quality icons for ratings
+- Added optional one-click trailers (requires MDbList API Key)
+- Added IMDb popular ratings. These are from IMDb's most popular movies and tvshows. The rating for these is out of 100. The color coding of the new flame icon is as follows:
+
+  • [COLOR blueviolet][B]PURPLE[/B][/COLOR] flame = Top 10
+  • [COLOR deeppink][B]PINK[/B][/COLOR] flame = Top third (10 - 33)
+  • [COLOR darkorange][B]ORANGE[/B][/COLOR] flame = Middle third (33 - 66)
+  • [COLOR dodgerblue][B]BLUE[/B][/COLOR] flame = Bottom third (66 - 100)
+
+[B]IMPORTANT: After you have entered in your MDbList API key, I HIGHLY recommend clicking the "Clear ratings cache" button in Skin settings and then restarting Kodi before trying to fetch new ratings again. If you do not do this you may run into errors. This is a one time thing that will minimize the possibility of running into issues related to the switch to MDbList.[/B]
+
+- Added optional one-click close of Kodi via the homescreen power button. If you decide to use this you can still access the shutdown menu by holding the back key/backspace on your remote/keyboard.
+- Other changes/fixes
+
+[B][COLOR accent_color]Version 1.0.20[/COLOR][/B]
+- Fixed crashing bug. You can now enable ReuseLanguageInvoker in FEN.
+- Added overlay for background media playback
+- Added network sources for choosing of custom background
+- Removed [B]Tip: Crashes[/B] window
+
+[B][COLOR accent_color]Version 1.0.19[/COLOR][/B]
+- Updated UI for a more artwork centric experience
+- Updated widgets to handle menu items better
+- Added 3 NEW custom main menu sections
+- Added ratings (enter MDbList API Key in Skin settings to activate)
+- Added switch for Landscape/Clearlogo on WideList view
+- Added custom default background selection
+- Added optional color studio logos
+- Added custom background and fanart brightness
+- Added custom version of AutoCompletion for virtual keyboard to repo (only try if you are having issues with your version)
+- Added optional FENtastic Audio Suite to repo
+- Reorganized skin settings
+- Fixed WideWall view
+- Removed color themes
+- Other changes/fixes
+
+[B][COLOR accent_color]Version 1.0.18[/COLOR][/B]
+- Small bug fix
+
+[B][COLOR accent_color]Version 1.0.17[/COLOR][/B]
+- Brought back optional alternate InfoPanel
+- Brought back %, progress is now shown as '33% watched' instead of '33'
+- Added air date to InfoPanel for episodes
+- Made icon silhouettes for category widgets optional
+- Other small changes/fixes
+
+[B][COLOR accent_color]Version 1.0.16[/COLOR][/B]
+- Added BigPoster, BigLandscape, and BigLandscapeInfo widget display types
+- Updated Wall views to use bigger artwork
+- Increased visibility of raindrop background
+- Added icon silhouettes to category widgets
+- Added titles for movies/tvshows/episodes to widget labels
+- Added MPAA ratings to InfoPanel for movies/tvshows/episodes
+- Added studios to InfoPanel for tvshows/episodes
+- Added runtime to InfoPanel for movies/episodes
+- Added total seasons to InfoPanel for tvshows
+- Added Ends at: to InfoPanel for episodes
+- Added percent progress to Landscape widgets for episodes
+- Added optional focus animations for main menu, widgets, and views
+- Removed %, progress is now shown as '33' instead of '33%'
+- Removed alternate InfoPanel
+- Fixed profile change bug
+
+[B][COLOR accent_color]Version 1.0.15[/COLOR][/B]
+- Small bug fix for TRAKT search widget
+
+[B][COLOR accent_color]Version 1.0.14[/COLOR][/B]
+- Extensive overhaul of UI. There are some parts of the skin that I don't use so if something looks off, please let me know by opening an issue in my Github repo
+- Fixed blank Search window on new Kodi installs
+- Fixed stacked widget renaming
+- Updated widget list to circular ordering; topmost widget will now cycle to the bottom when moved up and vice versa
+- Added colored frame highlight for focused widget items
+- Moved progress back to focused items for widgets, removed progress from InfoPanel
+- Added tvshow progress to LandscapeInfo widgets
+- Changed TRAKT search widget to stacked type
+- Updated Github documentation to reflect new UI changes
+- Other fixes/changes
+
+[B][COLOR accent_color]Version 1.0.13[/COLOR][/B]
+- Added functionality for:
+  • Rearranging and renaming widgets
+  • Renaming main menu labels
+  • Changing widget display types
+  • Click a current widget/menu path for options
+- Dynamic labels for movies/TV shows in Skin settings
+- Simplified widget/menu dialog headers
+- Optional Search results window with custom search history. 
+  • Search multiple categories simultaneously
+  • Added opening options for Search results window
+    - Choose between Open keyboard and Open search window
+    - Activate in Skin settings » Options
+  • Quick access to TRAKT lists via button
+- Reactivated Shift view
+- Other changes/fixes
+
+[B][COLOR accent_color]Version 1.0.12[/COLOR][/B]
+- Added customizable load delay for stacked widgets. You can find this new setting in Skin settings » Options
+- Added optional display of countdown timer for use with the stacked widget load delay
+- Added toggle for auto-scrolling labels on LandscapeInfo widgets
+- Cleaned up LandscapeInfo widget for episodes
+
+[B][COLOR accent_color]Version 1.0.11[/COLOR][/B]
+- Quick fix for stacked widgets not loading on startup
+
+[B][COLOR accent_color]Version 1.0.10[/COLOR][/B]
+- Resized all Poster, Landscape, and LandscapeInfo widgets
+- Resized PVR, Addon, and Favorites widgets
+- Resized artwork for InfoWall, WideInfoWall, Wall, WideWall, and Poster views
+- Moved progress for List view to top of poster
+- Removed Shift view from movie/tvshow content
+- Refactored progress bars across all views
+- Added thumbnails to Path selection in Helper
+- Fixed label still showing when empty widget was collapsed
+- Fixed longer titles not scrolling in LandscapeInfo widgets
+- Fixed widget sorting behavior
+- Added new detailed documentation for skin setup to Github repo
+
+[B][COLOR accent_color]Version 1.0.9[/COLOR][/B]
+- Small fixes
+
+[B][COLOR accent_color]Version 1.0.8[/COLOR][/B]
+- Added custom category widgets. You are no longer limited to top and bottom category widgets
+- Added optional stacked category widgets
+- Added Clear Path option for Main Menu paths and category widgets
+- Updated Setup Guide
+- Moved ratings to upper right corner of artwork
+- Cleaned up season views
+- Adjusted background transparency skin-wide. I don't use all parts of the skin so if some colors look off in a particular area of the skin please let me know by opening an issue on my Github
+- Small text alignment changes to PVR guide
+- Removed widget limits (Set limits for addon and widgets in FEN settings)
+- Removed startup video (Total skin size is now under 7 MB)
+- Other small fixes/changes
+
+[B][COLOR accent_color]Version 1.0.7[/COLOR][/B]
+- Re-added changelog viewing for other addons
+- Reverted focus and scrolling behavior for widgets that don't use the InfoPanel
+- Added details to Available updates category widget. You can now see how many addon updates are pending directly from the Addon section on the home screen
+- Added tip to Extra info to help with Kodi crashes
+
+[B][COLOR accent_color]Version 1.0.6[/COLOR][/B]
+- Added optional Raindrop Animated Background. You can turn this off in Skin settings » Options » Raindrop background. Note: Only works when you have Show media background toggled to 'off' in Skin settings » Artwork
+- Moved percent progress for widgets to InfoPanel
+- Changed widget scrolling behavior
+- Fixed Landscape widget for episodes
+- Fixed Episode widget for movies and tvshows
+- Renamed Episode widget to LandscapeInfo
+- Other small fixes/changes
+
+[B][COLOR accent_color]Version 1.0.5[/COLOR][/B]
+- Fixed scrolling in changelog and setup guide windows
+
+[B][COLOR accent_color]Version 1.0.4[/COLOR][/B]
+
+[B]IMPORTANT NOTICE: IF YOUR WIDGETS WERE DELETED AFTER THIS UPDATE PLEASE READ INFO BELOW
+
+In this version the default widgets that you may have seen on first install have been removed. In order to avoid possible future conflicts and/or errors, please go to Skin settings » Main menu items » click Remake Menus and Widgets. This will remove the default widgets if any and remake the ones you have already set up. If you didn't set up any widgets on first install, and all of your widgets were deleted, go back into Skin settings » Main menu items in order to set up your widgets. See Setup Guide for help setting up your widgets. This is a one-time thing and will not be necessary for future updates.[/B]
+
+- Added release year to InfoPanel
+- Changed default format of InfoPanel. You can switch back to the previous format by going into Skin settings » Options » Alternate Format (InfoPanel)
+- Renamed Changelog tab in Skin settings to Extra info
+- Added Setup Guide to Extra info
+
+[B][COLOR accent_color]Version 1.0.3[/COLOR][/B]
+- Added new InfoPanel for movie, show, and episode widgets
+- Moved startup video and widget limit settings to new Options tab in Skin settings
+- Small adjustments to most views
+- Cleaned up collections info panel
+- Small fixes/changes
+
+[B][COLOR accent_color]Version 1.0.2[/COLOR][/B]
+- Added changelog to Skin settings menu
+
+[B][COLOR accent_color]Version 1.0.1[/COLOR][/B]
+- Re-added startup video (Recommended to test with lower volume)
+- Made startup video optional
+- Added screenshots
+
+[B][COLOR accent_color]Version 1.0.0[/COLOR][/B]
+- Added adjustable widget limits for movies/shows and episodes
+
+[B][COLOR accent_color]Version 0.0.9[/COLOR][/B]
+- Small fixes/changes
+
+[B][COLOR accent_color]Version 0.0.8[/COLOR][/B]
+- Removed startup video
+
+[B][COLOR accent_color]Version 0.0.7 (Initial release)[/COLOR][/B]
+Main changes from default Estuary include:
+- 2 NEW viewtypes ("WideWall" and "WideInfoWall")
+- Plenty of adjustments to pre-existing views
+- New default Colors theme
+- New Color theme 'purple'
+- Skin-wide adjustments to dialog and menu colors for every Color theme
+- Progress displayed for movies, shows, seasons and episodes
+- Customizable movie and show main menu items
+- Customizable widgets and category widgets for movies, shows, and episodes
+- Custom Search options from Home window
+- PVR guide adjustments
+- Nexus themed startup video
+    </label>
+	</include>
+	<include name="SetupGuide">
+		<label>[B][COLOR accent_color]Welcome to the FENtastic Setup Guide[/COLOR][/B]
+
+FENtastic Plus is a skin specifically designed for TMDbH, Fen Light, Umbrella and POV users. It can display movie, tvshow, and episode widgets as well as submenu widgets. It can also set paths for main menu items (more on this later). Here in this guide I will show you how these work and how to set them up.
+
+On first install the home screen should be empty. This means that the Movie and Show sections should be missing from the main menu on the left.
+
+Now lets go set up the widgets.
+From this dialog screen click Back on your remote or Backspace if you are using a keyboard. Here you'll see a group of menu items on the left. Navigate up to Main menu items. Here is where we will set up the widgets. 
+
+Click a menu item to toggle the display of a section on and off. This will show or hide the section on the home screen. Now toggle the Movie/Show section to 'on'. You'll see a couple of menu items drop down. They are set main menu path and set widgets.
+
+[B][COLOR deeppink]- Set main menu path[/COLOR][/B] is for setting up the path when clicking on the Movie/Show section in the main menu on the left side of the home screen. You can set this to whatever you path you like within FEN. I like to set mine to my Trakt movie/tvshow collection.
+
+[B][COLOR deeppink]- Set widgets[/COLOR][/B] is for setting up the movie/tvshow widgets. These are the main widgets that you'll set up. You can configure up to 10 movie and 10 TV show widgets. After choosing a path you'll have the option to set the label and display type (Poster, Landscape, LandscapeInfo, and Category) for each widget. If you choose the Category display type, you'll have the option to set it up as a stacked widget. After that you can choose the display type for the stacked widget as well.
+
+[B][COLOR deeppink]- Set main menu icons[/COLOR][/B] is for setting custom main menu icons. Main menu icons are disabled by default but can be enabled in Skin Settings/Options. Once enabled you can either use the default provided icons or browse and choose your own custom icon.
+
+[B][COLOR accent_color]Stacked widgets[/COLOR][/B] contain a category widget and a normal widget beneath. The category widget "communicates" with the normal widget in order to load the new widget list according to the focused item in the category widget. If the stacked widget that you set up has 20 items in it, then that means you'll be able to have all 20 widgets available from just one widget on the home screen.
+
+That's it! You're all set to go. Enjoy the skin!
+
+If you would like to see a more detailed version of this Setup Guide, please visit my Github repo at https://github.com/ivarbrandt/skin.fentastic
+    </label>
+	</include>
+</includes>

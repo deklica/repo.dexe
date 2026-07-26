@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.gratisred" version="1.1.4" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" version="1.2.0" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
-        <import addon="script.gratisred.artwork" version="1.0.3"/>
+        <import addon="script.gratisred.artwork" version="1.0.5"/>
         <import addon="script.module.kodi-six"/>
         <import addon="script.module.requests"/>
         <import addon="script.module.resolveurl"/>
@@ -21,16 +21,14 @@
         <disclaimer lang="en">[COLOR red]The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.[/COLOR]</disclaimer>
 		<language>en</language>
 		<platform>all</platform>
-		<license>GPL-2.0-or-later</license>
+		<license>GPL-3.0</license>
 		<forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
 		<website>https://redwizard.xyz/</website> 
 		<email>info@redwizard.xyz</email>
 		<source>https://github.com/The-Red-Wizard</source>
-        <news>[COLOR red]2026-07-22
-- Summary of v1.1.4 (see Tools > Changelog for the detail):
- * Clearer Change Watched Indicators… action
- * Resume Point Source follows Watched Indicators
- * Resume Point Source also uses authorised-only picker[/COLOR]</news>
+        <news>[COLOR red]2026-07-26
+- Summary of v1.2.0 (see Tools > Changelog for the detail):
+ * Dedicated OpenSubtitles.com API consumer[/COLOR]</news>
         <assets>
             <icon>resources/images/icon.png</icon>
             <fanart>resources/images/fanart.jpg</fanart>
