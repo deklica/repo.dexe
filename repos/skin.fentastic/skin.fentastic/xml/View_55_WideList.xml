@@ -1809,7 +1809,7 @@
 				<right>40</right>
 				<aligny>center</aligny>
 				<scroll>true</scroll>
-				<font>font40_title</font>
+				<font>font36_title</font>
 				<label>$VAR[ListLabelVar]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>

@@ -491,6 +491,10 @@ repository.zeus768
 		<description lang="en_GB">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Red Light, The Gears, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
 		<description lang="en_NZ">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Red Light, The Gears, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
 		<description lang="en_US">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Red Light, The Gears, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+		<news>[B]Fixes &amp; Improvements by dEXE[/B]
+Reworked and restyled several dialogs and overlays across the skin - including the context menu, power/tools menus, video OSD, top bar, and video info screen.
+Introduced a brand-new focused list-item style with nine appearance options throughout the List and WideList views (Skin Settings/Options).
+Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
