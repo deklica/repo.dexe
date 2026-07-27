@@ -1792,18 +1792,14 @@
 	<include name="SongsListLayout">
 		<!-- SONGS (Container.Content=songs): Default -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Default) | String.IsEmpty(Skin.String(ListFocusStyle))] + [Container.Content(songs)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="button_focus">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="button_focus">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="label">
 				<left>35</left>
 				<right>40</right>
@@ -1824,18 +1820,18 @@
 		</focusedlayout>
 		<!-- SONGS (Container.Content=songs): Background Solid -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Background Solid)] + [Container.Content(songs)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="button_focus">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="button_focus">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="label">
 				<left>35</left>
 				<right>40</right>
@@ -1856,18 +1852,18 @@
 		</focusedlayout>
 		<!-- SONGS (Container.Content=songs): Background Dark -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Background Dark)] + [Container.Content(songs)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="dialog_bg">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="dialog_bg">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="label">
 				<left>35</left>
 				<right>40</right>
@@ -1888,18 +1884,18 @@
 		</focusedlayout>
 		<!-- SONGS (Container.Content=songs): Background Light -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Background Light)] + [Container.Content(songs)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="button_focus2">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="button_focus2">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="label">
 				<left>35</left>
 				<right>40</right>
@@ -1920,18 +1916,18 @@
 		</focusedlayout>
 		<!-- SONGS (Container.Content=songs): Background Transparent -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Background Transparent)] + [Container.Content(songs)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="66000000">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="66000000">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="label">
 				<left>35</left>
 				<right>40</right>
@@ -1952,31 +1948,31 @@
 		</focusedlayout>
 		<!-- SONGS (Container.Content=songs): Border Solid -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Border Solid)] + [Container.Content(songs)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="white">masks/focus-long.png</texture>
-			<include>Animation_FocusTextureFade</include>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>3</left>
-			<right>3</right>
-			<top>5</top>
-			<bottom>8</bottom>
-			<texture colordiffuse="button_focus">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="white">masks/focus-long.png</texture>
+				<include>Animation_FocusTextureFade</include>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>3</left>
+				<right>3</right>
+				<top>5</top>
+				<bottom>8</bottom>
+				<texture colordiffuse="button_focus">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="label">
 				<left>35</left>
 				<right>40</right>
@@ -1997,31 +1993,31 @@
 		</focusedlayout>
 		<!-- SONGS (Container.Content=songs): Border Dark -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Border Dark)] + [Container.Content(songs)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="button_focus">masks/focus-long.png</texture>
-			<include>Animation_FocusTextureFade</include>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>3</left>
-			<right>3</right>
-			<top>5</top>
-			<bottom>8</bottom>
-			<texture colordiffuse="dialog_bg">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="button_focus">masks/focus-long.png</texture>
+				<include>Animation_FocusTextureFade</include>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>3</left>
+				<right>3</right>
+				<top>5</top>
+				<bottom>8</bottom>
+				<texture colordiffuse="dialog_bg">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="label">
 				<left>35</left>
 				<right>40</right>
@@ -2042,55 +2038,55 @@
 		</focusedlayout>
 		<!-- SONGS (Container.Content=songs): Border Light -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Border Light)] + [Container.Content(songs)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="button_focus">masks/focus-long.png</texture>
-			<include>Animation_FocusTextureFade</include>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>3</left>
-			<right>3</right>
-			<top>5</top>
-			<bottom>8</bottom>
-			<texture colordiffuse="black">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>3</left>
-			<right>3</right>
-			<top>5</top>
-			<bottom>8</bottom>
-			<texture colordiffuse="button_focus2">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>3</left>
-			<right>3</right>
-			<top>5</top>
-			<bottom>8</bottom>
-			<texture colordiffuse="33000000">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="button_focus">masks/focus-long.png</texture>
+				<include>Animation_FocusTextureFade</include>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>3</left>
+				<right>3</right>
+				<top>5</top>
+				<bottom>8</bottom>
+				<texture colordiffuse="black">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>3</left>
+				<right>3</right>
+				<top>5</top>
+				<bottom>8</bottom>
+				<texture colordiffuse="button_focus2">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>3</left>
+				<right>3</right>
+				<top>5</top>
+				<bottom>8</bottom>
+				<texture colordiffuse="33000000">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="label">
 				<left>35</left>
 				<right>40</right>
@@ -2111,31 +2107,31 @@
 		</focusedlayout>
 		<!-- SONGS (Container.Content=songs): Border Transparent -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Border Transparent)] + [Container.Content(songs)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="button_focus2">masks/focus-long.png</texture>
-			<include>Animation_FocusTextureFade</include>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>3</left>
-			<right>3</right>
-			<top>5</top>
-			<bottom>8</bottom>
-			<texture colordiffuse="99000000">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="button_focus2">masks/focus-long.png</texture>
+				<include>Animation_FocusTextureFade</include>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>3</left>
+				<right>3</right>
+				<top>5</top>
+				<bottom>8</bottom>
+				<texture colordiffuse="99000000">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="label">
 				<left>35</left>
 				<right>40</right>
@@ -2212,18 +2208,18 @@
 		</focusedlayout>
 		<!-- ADDONS (Container.Content=addons): Background Solid -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Background Solid)] + [Container.Content(addons)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="button_focus">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="button_focus">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="image">
 				<left>20</left>
 				<width>37</width>
@@ -2259,18 +2255,18 @@
 		</focusedlayout>
 		<!-- ADDONS (Container.Content=addons): Background Dark -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Background Dark)] + [Container.Content(addons)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="dialog_bg">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="dialog_bg">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="image">
 				<left>20</left>
 				<width>37</width>
@@ -2306,18 +2302,18 @@
 		</focusedlayout>
 		<!-- ADDONS (Container.Content=addons): Background Light -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Background Light)] + [Container.Content(addons)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="button_focus2">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="button_focus2">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="image">
 				<left>20</left>
 				<width>37</width>
@@ -2353,18 +2349,18 @@
 		</focusedlayout>
 		<!-- ADDONS (Container.Content=addons): Background Transparent -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Background Transparent)] + [Container.Content(addons)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="66000000">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="66000000">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="image">
 				<left>20</left>
 				<width>37</width>
@@ -2400,31 +2396,31 @@
 		</focusedlayout>
 		<!-- ADDONS (Container.Content=addons): Border Solid -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Border Solid)] + [Container.Content(addons)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="white">masks/focus-long.png</texture>
-			<include>Animation_FocusTextureFade</include>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>3</left>
-			<right>3</right>
-			<top>5</top>
-			<bottom>8</bottom>
-			<texture colordiffuse="button_focus">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="white">masks/focus-long.png</texture>
+				<include>Animation_FocusTextureFade</include>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>3</left>
+				<right>3</right>
+				<top>5</top>
+				<bottom>8</bottom>
+				<texture colordiffuse="button_focus">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="image">
 				<left>20</left>
 				<width>37</width>
@@ -2460,31 +2456,31 @@
 		</focusedlayout>
 		<!-- ADDONS (Container.Content=addons): Border Dark -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Border Dark)] + [Container.Content(addons)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="button_focus">masks/focus-long.png</texture>
-			<include>Animation_FocusTextureFade</include>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>3</left>
-			<right>3</right>
-			<top>5</top>
-			<bottom>8</bottom>
-			<texture colordiffuse="dialog_bg">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="button_focus">masks/focus-long.png</texture>
+				<include>Animation_FocusTextureFade</include>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>3</left>
+				<right>3</right>
+				<top>5</top>
+				<bottom>8</bottom>
+				<texture colordiffuse="dialog_bg">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="image">
 				<left>20</left>
 				<width>37</width>
@@ -2520,55 +2516,55 @@
 		</focusedlayout>
 		<!-- ADDONS (Container.Content=addons): Border Light -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Border Light)] + [Container.Content(addons)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="button_focus">masks/focus-long.png</texture>
-			<include>Animation_FocusTextureFade</include>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>3</left>
-			<right>3</right>
-			<top>5</top>
-			<bottom>8</bottom>
-			<texture colordiffuse="black">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>3</left>
-			<right>3</right>
-			<top>5</top>
-			<bottom>8</bottom>
-			<texture colordiffuse="button_focus2">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>3</left>
-			<right>3</right>
-			<top>5</top>
-			<bottom>8</bottom>
-			<texture colordiffuse="33000000">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="button_focus">masks/focus-long.png</texture>
+				<include>Animation_FocusTextureFade</include>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>3</left>
+				<right>3</right>
+				<top>5</top>
+				<bottom>8</bottom>
+				<texture colordiffuse="black">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>3</left>
+				<right>3</right>
+				<top>5</top>
+				<bottom>8</bottom>
+				<texture colordiffuse="button_focus2">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>3</left>
+				<right>3</right>
+				<top>5</top>
+				<bottom>8</bottom>
+				<texture colordiffuse="33000000">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="image">
 				<left>20</left>
 				<width>37</width>
@@ -2604,31 +2600,31 @@
 		</focusedlayout>
 		<!-- ADDONS (Container.Content=addons): Border Transparent -->
 		<focusedlayout height="85" condition="[String.IsEqual(Skin.String(ListFocusStyle),Border Transparent)] + [Container.Content(addons)]">
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>0</left>
-			<right>0</right>
-			<top>2</top>
-			<bottom>5</bottom>
-			<texture colordiffuse="button_focus2">masks/focus-long.png</texture>
-			<include>Animation_FocusTextureFade</include>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
-		<control type="image">
-			<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-				<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-				<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
-			</animation>
-			<left>3</left>
-			<right>3</right>
-			<top>5</top>
-			<bottom>8</bottom>
-			<texture colordiffuse="99000000">masks/focus-long.png</texture>
-			<visible>Control.hasFocus(55)</visible>
-		</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>0</left>
+				<right>0</right>
+				<top>2</top>
+				<bottom>5</bottom>
+				<texture colordiffuse="button_focus2">masks/focus-long.png</texture>
+				<include>Animation_FocusTextureFade</include>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
+			<control type="image">
+				<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
+					<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
+				<left>3</left>
+				<right>3</right>
+				<top>5</top>
+				<bottom>8</bottom>
+				<texture colordiffuse="99000000">masks/focus-long.png</texture>
+				<visible>Control.hasFocus(55)</visible>
+			</control>
 			<control type="image">
 				<left>20</left>
 				<width>37</width>
