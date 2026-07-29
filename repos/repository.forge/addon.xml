@@ -1,0 +1,18 @@
+<addon id="repository.forge" name="Forge Repository" version="0.1.0" provider-name="Forge Project">
+    <extension point="xbmc.addon.repository" name="Forge Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/silencebob2/forge-releases/main/repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/silencebob2/forge-releases/main/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/silencebob2/forge-releases/main/repo/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Install and bootstrap the Forge video addon.</summary>
+        <description lang="en">Source repository for Forge. Install Forge from here; updates are then handled by Forge's built-in updater.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>

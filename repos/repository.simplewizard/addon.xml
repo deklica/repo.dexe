@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.simplewizard" name="Simple Wizard Repository" provider-name="Slam" version="1.0.1">
+  <extension point="xbmc.addon.repository" name="Simple Wizard Repository">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/Slamious/swzips/main/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Slamious/swzips/main/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/Slamious/swzips/main/zips/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <description lang="en_GB">Simple Wizard</description>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets> 
+  </extension>
+</addon>

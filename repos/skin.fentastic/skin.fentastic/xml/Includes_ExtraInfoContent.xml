@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="Changelog">
-		<label>[B]Fixes &amp; Improvements by dEXE[/B]
+		<label>[B]Fixes &amp; improvements by dEXE[/B]
 Reworked and restyled several dialogs and overlays across the skin - including the context menu, power/tools menus, video OSD, top bar, and video info screen.
 Introduced a brand-new focused list-item style with nine appearance options throughout the List and WideList views (Skin Settings/Options).
 Various other small tweaks and refinements throughout.

@@ -90,6 +90,7 @@ repository.easynewsx
 repository.enigmawiz
 repository.EzzerMacsWizard
 repository.fanfilm
+repository.forge
 repository.foxystreams
 repository.fr33p0rt
 repository.frenchdj
@@ -151,6 +152,8 @@ repository.Rising.Tides
 repository.Rockcrusher
 repository.sandmann79.plugins
 repository.sarsaila
+repository.siku2
+repository.simplewizard
 repository.skinbase.nexus
 repository.skins.pkscout
 repository.slyguy
@@ -479,15 +482,15 @@ repository.zeus768
 		<forum>http://forum.kodi.tv/</forum>
 		<source>https://github.com/xbmc/skin.estuary/</source>
 		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/images/customizable_widgets.jpg</screenshot>
-			<screenshot>resources/images/infopanel.jpg</screenshot>
-			<screenshot>resources/images/viewtypes1.jpg</screenshot>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>customizable_widgets.jpg</screenshot>
+			<screenshot>infopanel.jpg</screenshot>
+			<screenshot>viewtypes1.jpg</screenshot>
 		</assets>
-		<summary lang="en_GB">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
-		<summary lang="en_NZ">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
-		<summary lang="en_US">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
+		<summary lang="en_GB">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25. Fixes &amp; improvements by dEXE.</summary>
+		<summary lang="en_NZ">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25. Fixes &amp; improvements by dEXE.</summary>
+		<summary lang="en_US">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25. Fixes &amp; improvements by dEXE.</summary>
 		<description lang="en_GB">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Red Light, The Gears, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
 		<description lang="en_NZ">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Red Light, The Gears, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
 		<description lang="en_US">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Red Light, The Gears, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
@@ -1686,6 +1689,25 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
+<addon id="repository.forge" name="Forge Repository" version="0.1.0" provider-name="Forge Project">
+	<extension point="xbmc.addon.repository" name="Forge Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Install and bootstrap the Forge video addon.</summary>
+		<description lang="en">Source repository for Forge. Install Forge from here; updates are then handled by Forge's built-in updater.</description>
+		<platform>all</platform>
+		<license>GPL-3.0-or-later</license>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.foxystreams" name="FoxyStreams Repo" version="0.0.2" provider-name="ruinernin">
 	<extension point="xbmc.addon.repository" name="FoxyStreams">
 		<dir>
@@ -2480,7 +2502,7 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
-<addon id="repository.oldsalt" name="Old Salt Repository" version="1.5" provider-name="Jax">
+<addon id="repository.oldsalt" name="Old Salt Repository" version="1.6" provider-name="Jax">
 	<extension point="xbmc.addon.repository" name="Old Salt Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2894,6 +2916,28 @@ Various other small tweaks and refinements throughout.</news>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.simplewizard" name="Simple Wizard Repository" provider-name="Slam" version="1.0.1">
+	<extension point="xbmc.addon.repository" name="Simple Wizard Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<description lang="en_GB">Simple Wizard</description>
+		<license></license>
+		<language></language>
+		<website></website>
+		<news></news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets> 
 	</extension>
 </addon>
 

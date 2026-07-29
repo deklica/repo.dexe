@@ -1,40 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="pvr.eon" version="20.7.9+linux-armv7" name="EON PVR Client" provider-name="Nirvana">
-	<requires>
-		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
-		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-		<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
-		<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
-		<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
-		<import addon="inputstream.ffmpegdirect" minversion="20.0.0"/>
-		<import addon="inputstream.adaptive" minversion="20.0.0"/>
-		<import addon="script.module.inputstreamhelper" version="0.7.0"/>
-	</requires>
-	<extension point="kodi.pvrclient" library_linux="pvr.eon.so"/>
-	<extension point="xbmc.addon.metadata">
-		<platform>linux</platform>
-		<license>GPL-2.0-or-later</license>
-		<source>https://github.com/nirvana-7777/pvr.eon</source>
-		<forum>https://www.kodinerds.net/thread/77069-release-pvr-eon-tv</forum>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<summary lang="en_GB">EON PVR Client</summary>
-		<summary lang="en_US">EON PVR Client</summary>
-		<summary lang="de_DE">EON PVR Client</summary>
-		<summary lang="bg_BG">EON PVR Клиент</summary>
-		<description lang="en_GB">PVR-Client for Eon. Supports TV, TV-Guide (EPG) and 7 day replay</description>
-		<description lang="en_US">PVR-Client for Eon. Supports TV, TV-Guide (EPG) and 7 day replay</description>
-		<description lang="de_DE">PVR-Client für Eon. Unterstützt TV, TV-Guide (EPG) und 7-Tage Replay</description>
-		<description lang="bg_BG">PVR клиент за EON, който ви позволява да гледате на живо телевизионни канали, да слушате радиостанции и да превъртате до 7 дни назад</description>
-		<disclaimer lang="en_GB">No official version. All trademarks belong to Eon. Use at own risk.</disclaimer>
-		<disclaimer lang="en_US">No official version. All trademarks belong to Eon. Use at own risk.</disclaimer>
-		<disclaimer lang="de_DE">Keine offizielle Version. Alle Warenzeichen verbleiben bei Eon. Benutzung auf eigene Gefahr.</disclaimer>
-		<disclaimer lang="bg_BG">Неофициална версия. Всички запазени марки принадлежат на EON. Използвайте на собствен риск.</disclaimer>
-		<news>[COLOR yellow][B]EON PVR Client for LibreELEC (RPi - armv7a)[/B][/COLOR]
+<addon id="pvr.eon" version="21.7.12+linux-aarch64" name="EON PVR Client" provider-name="Nirvana">
+  <requires>
+    <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
+    <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
+    <import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
+    <import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.9"/>
+    <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
+    <import addon="inputstream.ffmpegdirect" minversion="21.0.0" optional="true"/>
+    <import addon="inputstream.adaptive" minversion="21.0.0"/>
+    <import addon="script.module.inputstreamhelper" version="0.8.5"/>
+  </requires>
+  <extension point="kodi.pvrclient" library_linux="pvr.eon.so"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">PVR Client for EON</summary>
+    <summary lang="en_US">PVR Client for EON</summary>
+    <summary lang="de_DE">PVR-Client für EON</summary>
+    <summary lang="bg_BG">PVR клиент за EON</summary>
+    <summary lang="sr_RS@latin">PVR klijent za EON</summary>
+    <summary lang="sr_RS">PVR клијент за EON</summary>
+    <description lang="en_GB">PVR Client for EON which allows you to watch live TV channels and listen to radio stations. Supports TV-Guide (EPG) and 7-day rewind.</description>
+    <description lang="en_US">PVR Client for EON which allows you to watch live TV channels and listen to radio stations. Supports TV-Guide (EPG) and 7-day rewind.</description>
+    <description lang="de_DE">PVR-Client für EON, mit dem Sie TV-Sender live ansehen und Radiosender hören können. Unterstützt TV-Guide (EPG) und 7-Tage-Rücklauf.</description>
+    <description lang="bg_BG">PVR клиент за EON, който ви позволява да гледате на живо телевизионни канали и да слушате радиостанции. Поддържа електронен програмен справочник (EPG) и 7-дневно връщане назад.</description>
+    <description lang="sr_RS@latin">PVR klijent za EON koji vam omogućava da gledate TV kanale uživo i slušate radio stanice. Podržava EPG (TV vodič) i 7-dnevno vraćanje unazad.</description>
+    <description lang="sr_RS">PVR клијент за EON који вам омогућава да гледате TV канале уживо и слушате радио станице. Подржава EPG (TV водич) и 7-дневно враћање уназад.</description>
+    <disclaimer lang="en_GB">No official version. All trademarks belong to EON. Use at your own risk.</disclaimer>
+    <disclaimer lang="en_US">No official version. All trademarks belong to EON. Use at your own risk.</disclaimer>
+    <disclaimer lang="de_DE">Keine offizielle Version. Alle Warenzeichen verbleiben bei EON. Benutzung auf eigene Gefahr.</disclaimer>
+    <disclaimer lang="bg_BG">Неофициална версия. Всички запазени марки принадлежат на EON. Използвайте на собствен риск.</disclaimer>
+    <disclaimer lang="sr_RS@latin">Nezvanična verzija. Svi zaštitni znaci pripadaju EON-u. Koristite na sopstveni rizik.</disclaimer>
+    <disclaimer lang="sr_RS">Незванична верзија. Сви заштитни знаци припадају EON-у. Користите на сопствени ризик.</disclaimer>
+    <platform>linux</platform>
+    <license>GPL-2.0-or-later</license>
+    <source>https://github.com/nirvana-7777/pvr.eon</source>
+    <forum>https://www.kodinerds.net/thread/77069-release-pvr-eon-tv</forum>
+    <news>[COLOR yellow][B]EON PVR Client for LibreELEC (RPi - aarch64)[/B][/COLOR]
 
-This is the EON.tv PVR client addon for Kodi. It provides Kodi integration for the streaming provider EON.tv. A user account / paid subscription is required to use this addon. Please create the user account outside of this addon. Please enter the username/password to the configuration of this addon. Some content is geo-blocked.
+This is the EON.tv PVR client addon for Kodi. It provides Kodi integration for the streaming provider [B]EON.tv[/B]. A user account / paid subscription is required to use this addon. Please create the user account outside of this addon. Please enter the username/password to the configuration of this addon. Some content is geo-blocked.
 
 [B]Supported service providers[/B]
 SBB
@@ -50,14 +52,18 @@ EPG
 Replay (including restart of current event)
 
 [B]Notes[/B]
-Tested building it for Linux and Android / x86, aarch64 and armv7a
-Only tested Telemach.ba, but other should work as well or should be easy to fix
+Tested building it for Linux x86_64, Linux armv7, Linux aarch64, Android armv7, and Android aarch64
 Depends on inputstream addon
-Fast forward and rewind won't work in Replay TV because that is handled via specific servers which inputstream does not support
+Standard inputstream-based Replay TV still behaves like a short rolling live HLS window on EON/Vivacom, so full seek/rewind is limited there
+Experimental native archive streaming adds working archive seek support for finished replay programmes and for EPG -> Play programme on already-started events
+Direct live channel Switch still uses the standard live playback path and does not yet expose the native archive/timeshift behavior
 
 [B]Disclaimer[/B]
 This addon is inofficial and not linked in any form to eon.tv
-All trademarks belong to them
-</news>
-	</extension>
+All trademarks belong to them</news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
 </addon>
