@@ -2091,7 +2091,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.ezmaintenanceplus" name="EZ Maintenance+" version="2023.01.09.0" provider-name="aenema, peno">
+<addon id="script.ezmaintenanceplus" name="EZ Maintenance+" version="2026.04.05.0" provider-name="aenema, peno">
   <requires>
     <import addon="script.module.requests" version="1.0.0" />
   </requires>
@@ -2112,6 +2112,9 @@ In order to get the API Key:
 	    <fanart>fanart.jpg</fanart>
     </assets>
     <news>
+2026.04.05.0
+ - Updated for Kodi 22
+ 
 2023.01.09.0
  - Added AutoClean Cache functionality every x days at a given hour.
  - Backup always replaced the home folder reference in xml files with special://home
@@ -3084,8 +3087,8 @@ strptime Python bugfix
          2.4 migrated to new server
         </news>
         <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
