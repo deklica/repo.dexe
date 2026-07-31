@@ -461,7 +461,7 @@ repository.zeus768
 </addon>
 
 
-<addon id="skin.fentastic" version="100.0.32" name="FENtastic Plus"
+<addon id="skin.fentastic" version="100.0.32d" name="FENtastic Plus"
 	provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
