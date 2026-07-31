@@ -712,6 +712,10 @@
 		<value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
+	<variable name="HomeBackgroundDiffuseVar">
+		<value condition="Skin.HasSetting(EstuaryLookFeel)">primary_background</value>
+		<value>$VAR[BackgroundBrightnessVar]</value>
+	</variable>
 	<variable name="BackgroundBrightnessVar">
 		<value condition="String.IsEqual(Skin.String(DefaultBackgroundBrightness),Highest)">E6FFFFFF</value>
 		<value condition="String.IsEqual(Skin.String(DefaultBackgroundBrightness),High)">CCFFFFFF</value>
@@ -1289,9 +1293,11 @@
 		<value condition="!Skin.HasSetting(HideTMDBHTraktResults) + !Skin.HasSetting(HideTraktResults) + String.IsEqual(Skin.String(current_search_provider),0)">true</value>
 		<value>false</value>
 	</variable>
-	<!-- Classic FENtastic & FENtastic Plus Look & Feel Experience -->
+	<!-- FENtastic Look & Feel Experience -->
 	<variable name="LookFeelLabel">
+		<value condition="Skin.HasSetting(EstuaryLookFeel)">Estuary</value>
 		<value condition="Skin.HasSetting(ClassicFENtastic)">Classic FENtastic</value>
+		<value condition="Skin.HasSetting(FENtasticHybrid)">FENtastic Hybrid</value>
 		<value>FENtastic Plus</value>
 	</variable>
 	<!-- OSD Audio Button Behaviour -->
@@ -1389,5 +1395,66 @@
 		<value condition="[!Skin.HasSetting(HomeNoSearchButton) + Skin.HasSetting(Enable.Favourites) + Skin.HasSetting(Enable.AddonBrowser) + !Skin.HasSetting(Enable.MaintenanceTools)] | [!Skin.HasSetting(HomeNoSearchButton) + Skin.HasSetting(Enable.Favourites) + !Skin.HasSetting(Enable.AddonBrowser) + Skin.HasSetting(Enable.MaintenanceTools)] | [!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(Enable.Favourites) + Skin.HasSetting(Enable.AddonBrowser) + Skin.HasSetting(Enable.MaintenanceTools)] | [Skin.HasSetting(HomeNoSearchButton) + Skin.HasSetting(Enable.Favourites) + Skin.HasSetting(Enable.AddonBrowser) + !Skin.HasSetting(Enable.MaintenanceTools)] | [Skin.HasSetting(HomeNoSearchButton) + Skin.HasSetting(Enable.Favourites) + !Skin.HasSetting(Enable.AddonBrowser) + Skin.HasSetting(Enable.MaintenanceTools)] | [Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(Enable.Favourites) + Skin.HasSetting(Enable.AddonBrowser) + Skin.HasSetting(Enable.MaintenanceTools)]">20</value>
 		<!-- 5-6 buttons -->
 		<value>-30</value>
+	</variable>
+	<!-- Profile Identification -->
+	<variable name="ProfileIdentificationPlusLabel2Var">
+		<value condition="Skin.HasSetting(show_profileboth)">Name and avatar</value>
+		<value condition="Skin.HasSetting(show_profilename)">$LOCALIZE[31165]</value>
+		<value condition="Skin.HasSetting(show_profileavatar)">$LOCALIZE[31166]</value>
+		<value>$LOCALIZE[16018]</value>
+	</variable>
+	<!-- Pre-Config Add-ons -->
+	<variable name="SelectedPreConfigAddonLabelVar">
+		<value condition="String.IsEqual(Skin.String(SelectedPreConfigAddon),fenlight)">Fen Light</value>
+		<value condition="String.IsEqual(Skin.String(SelectedPreConfigAddon),redlight)">Red Light</value>
+		<value condition="String.IsEqual(Skin.String(SelectedPreConfigAddon),pov)">POV</value>
+		<value condition="String.IsEqual(Skin.String(SelectedPreConfigAddon),umbrella)">Umbrella</value>
+		<value condition="String.IsEqual(Skin.String(SelectedPreConfigAddon),gears)">The Gears</value>
+		<value condition="String.IsEqual(Skin.String(SelectedPreConfigAddon),tmdbh)">TMDb Helper</value>
+		<value>Pre-Made Configuration</value>
+	</variable>
+	<!-- Dialog Heights 1-8 items -->
+	<variable name="DialogHeight1-2">
+		<value>280</value>
+	</variable>
+	<variable name="DialogHeight3">
+		<value>350</value>
+	</variable>
+	<variable name="DialogHeight4">
+		<value>420</value>
+	</variable>
+	<variable name="DialogHeight5">
+		<value>490</value>
+	</variable>
+	<variable name="DialogHeight6">
+		<value>560</value>
+	</variable>
+	<variable name="DialogHeight7">
+		<value>630</value>
+	</variable>
+	<variable name="DialogHeight8">
+		<value>700</value>
+	</variable>
+	<!-- Top Bar Custom Menu Size Label -->
+	<variable name="TopBarCustomMenuSizeLabel">
+		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),2)">1-2 items</value>
+		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),3)">3 items</value>
+		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),4)">4 items</value>
+		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),5)">5 items</value>
+		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),6)">6 items</value>
+		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),7)">7 items</value>
+		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),8)">8 items</value>
+		<value>3 items</value>
+	</variable>
+	<!-- Top Bar Custom Menu Size Toggle -->
+	<variable name="TopBarCustomMenuSizeToggleVar">
+		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),2)">Skin.SetString(TopBarCustomMenuSize,3)</value>
+		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),3)">Skin.SetString(TopBarCustomMenuSize,4)</value>
+		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),4)">Skin.SetString(TopBarCustomMenuSize,5)</value>
+		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),5)">Skin.SetString(TopBarCustomMenuSize,6)</value>
+		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),6)">Skin.SetString(TopBarCustomMenuSize,7)</value>
+		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),7)">Skin.SetString(TopBarCustomMenuSize,8)</value>
+		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),8)">Skin.SetString(TopBarCustomMenuSize,2)</value>
+		<value>Skin.SetString(TopBarCustomMenuSize,3)</value>
 	</variable>
 </includes>

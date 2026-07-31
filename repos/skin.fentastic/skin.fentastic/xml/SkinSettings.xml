@@ -4,6 +4,7 @@
 	<onload condition="String.IsEqual(Skin.String(current_search_provider),0) + String.IsEqual(Skin.String(SearchBehavior),2)">Skin.SetString(SearchBehavior,1)</onload>
 	<onload>ClearProperty(fentastic.results)</onload>
 	<onload>SetFocus(9000)</onload>
+	<onload>ClearProperty(fentastic.results)</onload>
 	<onunload>ClearProperty(fentastic.results)</onunload>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
@@ -40,17 +41,25 @@
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(NoIconMainMenu)</selected>
 					<onclick>Skin.ToggleSetting(NoIconMainMenu)</onclick>
-					<visible>!Skin.HasSetting(ClassicFENtastic)</visible>
+					<visible>!Skin.HasSetting(ClassicFENtastic) + !Skin.HasSetting(FENtasticHybrid)</visible>
 				</control>
+				<!-- MAIN MENU HIGHLIGHTS -->
 				<control type="radiobutton" id="61002">
 					<label>Enable Main Menu Highlights</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(NoHighlightMainMenu)</selected>
 					<onclick>Skin.ToggleSetting(NoHighlightMainMenu)</onclick>
-					<visible>!Skin.HasSetting(ClassicFENtastic) + Skin.HasSetting(NoIconMainMenu)</visible>
+					<visible>!Skin.HasSetting(ClassicFENtastic) + !Skin.HasSetting(FENtasticPlus)</visible>
+				</control>
+				<!-- MAIN MENU DIVIDER -->
+				<control type="radiobutton" id="61003">
+					<label>Show main menu divider</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(HideMainMenuDivider)</selected>
+					<onclick>Skin.ToggleSetting(HideMainMenuDivider)</onclick>
 				</control>
 				<!-- SEPARATOR -->
-				<control type="button" id="61003">
+				<control type="button" id="61004">
 					<height>6</height>
 					<left>25</left>
 					<right>25</right>
@@ -59,7 +68,6 @@
 					<texturefocus>dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
-					<visible>!Skin.HasSetting(ClassicFENtastic)</visible>
 					<enable>false</enable>
 				</control>
 				<!-- REMAKE MENUS & WIDGETS -->
@@ -68,8 +76,23 @@
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=remake_all_cpaths)</onclick>
 				</control>
+				<control type="button" id="6241">
+					<label>Manage main menu order</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_order)</onclick>
+				</control>
+				<control type="button" id="6242">
+					<label>Manage widgets</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_widget_menus)</onclick>
+				</control>
+				<control type="button" id="6243">
+					<label>Manage submenus</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_submenus)</onclick>
+				</control>
 				<!-- SEPARATOR -->
-				<control type="button" id="6240">
+				<control type="button" id="6244">
 					<height>6</height>
 					<left>25</left>
 					<right>25</right>
@@ -86,13 +109,18 @@
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoMoviesButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoMoviesButton)</onclick>
-					<onclick>RunScript(script.fentastic.helper,mode=remake_all_cpaths&amp;silent=true)</onclick>
 				</control>
-				<control type="button" id="6251">
+				<control type="button" id="6250">
 					<label>   - Set main menu name / path</label>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_path&amp;cpath_setting=movie.main_menu)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoMoviesButton)</visible>
+				</control>
+				<control type="button" id="6251">
+					<label>   - Set main menu icon</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=movie.main_menu_icon)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoMoviesButton) + Skin.HasSetting(NoIconMainMenu)</visible>
 				</control>
 				<control type="button" id="6252">
 					<label>   - Set widgets</label>
@@ -101,10 +129,10 @@
 					<visible>!Skin.HasSetting(HomeMenuNoMoviesButton)</visible>
 				</control>
 				<control type="button" id="6253">
-					<label>   - Manage main menu icon</label>
+					<label>   - Set submenus</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=movie.main_menu_icon)</onclick>
-					<visible>!Skin.HasSetting(HomeMenuNoMoviesButton) + Skin.HasSetting(NoIconMainMenu)</visible>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_submenu&amp;cpath_setting=movie.submenu)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoMoviesButton)</visible>
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6254">
@@ -124,7 +152,6 @@
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoTVShowsButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoTVShowsButton)</onclick>
-					<onclick>RunScript(script.fentastic.helper,mode=remake_all_cpaths&amp;silent=true)</onclick>
 				</control>
 				<control type="button" id="6260">
 					<label>   - Set main menu name / path</label>
@@ -133,16 +160,22 @@
 					<visible>!Skin.HasSetting(HomeMenuNoTVShowsButton)</visible>
 				</control>
 				<control type="button" id="6261">
+					<label>   - Set main menu icon</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=tvshow.main_menu_icon)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoTVShowsButton) + Skin.HasSetting(NoIconMainMenu)</visible>
+				</control>
+				<control type="button" id="6262">
 					<label>   - Set widgets</label>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=manage_widgets&amp;cpath_setting=tvshow.widget)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoTVShowsButton)</visible>
 				</control>
 				<control type="button" id="6263">
-					<label>   - Manage main menu icon</label>
+					<label>   - Set submenus</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=tvshow.main_menu_icon)</onclick>
-					<visible>!Skin.HasSetting(HomeMenuNoTVShowsButton) + Skin.HasSetting(NoIconMainMenu)</visible>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_submenu&amp;cpath_setting=tvshow.submenu)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoTVShowsButton)</visible>
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6264">
@@ -162,7 +195,6 @@
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoCustom1Button)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoCustom1Button)</onclick>
-					<onclick>RunScript(script.fentastic.helper,mode=remake_all_cpaths&amp;silent=true)</onclick>
 				</control>
 				<control type="button" id="6270">
 					<label>   - Set main menu name / path</label>
@@ -171,16 +203,22 @@
 					<visible>!Skin.HasSetting(HomeMenuNoCustom1Button)</visible>
 				</control>
 				<control type="button" id="6271">
+					<label>   - Set main menu icon</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=custom1.main_menu_icon)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoCustom1Button) + Skin.HasSetting(NoIconMainMenu)</visible>
+				</control>
+				<control type="button" id="6272">
 					<label>   - Set widgets</label>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=manage_widgets&amp;cpath_setting=custom1.widget)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoCustom1Button)</visible>
 				</control>
 				<control type="button" id="6273">
-					<label>   - Manage main menu icon</label>
+					<label>   - Set submenus</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=custom1.main_menu_icon)</onclick>
-					<visible>!Skin.HasSetting(HomeMenuNoCustom1Button) + Skin.HasSetting(NoIconMainMenu)</visible>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_submenu&amp;cpath_setting=custom1.submenu)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoCustom1Button)</visible>
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6274">
@@ -200,7 +238,6 @@
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoCustom2Button)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoCustom2Button)</onclick>
-					<onclick>RunScript(script.fentastic.helper,mode=remake_all_cpaths&amp;silent=true)</onclick>
 				</control>
 				<control type="button" id="6280">
 					<label>   - Set main menu name / path</label>
@@ -209,16 +246,22 @@
 					<visible>!Skin.HasSetting(HomeMenuNoCustom2Button)</visible>
 				</control>
 				<control type="button" id="6281">
+					<label>   - Set main menu icon</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=custom2.main_menu_icon)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoCustom2Button) + Skin.HasSetting(NoIconMainMenu)</visible>
+				</control>
+				<control type="button" id="6282">
 					<label>   - Set widgets</label>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=manage_widgets&amp;cpath_setting=custom2.widget)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoCustom2Button)</visible>
 				</control>
 				<control type="button" id="6283">
-					<label>   - Manage main menu icon</label>
+					<label>   - Set submenus</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=custom2.main_menu_icon)</onclick>
-					<visible>!Skin.HasSetting(HomeMenuNoCustom2Button) + Skin.HasSetting(NoIconMainMenu)</visible>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_submenu&amp;cpath_setting=custom2.submenu)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoCustom2Button)</visible>
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6284">
@@ -238,7 +281,6 @@
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoCustom3Button)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoCustom3Button)</onclick>
-					<onclick>RunScript(script.fentastic.helper,mode=remake_all_cpaths&amp;silent=true)</onclick>
 				</control>
 				<control type="button" id="6290">
 					<label>   - Set main menu name / path</label>
@@ -247,16 +289,22 @@
 					<visible>!Skin.HasSetting(HomeMenuNoCustom3Button)</visible>
 				</control>
 				<control type="button" id="6291">
+					<label>   - Set main menu icon</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=custom3.main_menu_icon)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoCustom3Button) + Skin.HasSetting(NoIconMainMenu)</visible>
+				</control>
+				<control type="button" id="6292">
 					<label>   - Set widgets</label>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=manage_widgets&amp;cpath_setting=custom3.widget)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoCustom3Button)</visible>
 				</control>
 				<control type="button" id="6293">
-					<label>   - Manage main menu icon</label>
+					<label>   - Set submenus</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=custom3.main_menu_icon)</onclick>
-					<visible>!Skin.HasSetting(HomeMenuNoCustom3Button) + Skin.HasSetting(NoIconMainMenu)</visible>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_submenu&amp;cpath_setting=custom3.submenu)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoCustom3Button)</visible>
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6294">
@@ -276,13 +324,18 @@
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoCustom4Button)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoCustom4Button)</onclick>
-					<onclick>RunScript(script.fentastic.helper,mode=remake_all_cpaths&amp;silent=true)</onclick>
 				</control>
-				<control type="button" id="6301">
+				<control type="button" id="6300">
 					<label>   - Set main menu name / path</label>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_path&amp;cpath_setting=custom4.main_menu)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoCustom4Button)</visible>
+				</control>
+				<control type="button" id="6301">
+					<label>   - Set main menu icon</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=custom4.main_menu_icon)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoCustom4Button) + Skin.HasSetting(NoIconMainMenu)</visible>
 				</control>
 				<control type="button" id="6302">
 					<label>   - Set widgets</label>
@@ -291,10 +344,10 @@
 					<visible>!Skin.HasSetting(HomeMenuNoCustom4Button)</visible>
 				</control>
 				<control type="button" id="6303">
-					<label>   - Manage main menu icon</label>
+					<label>   - Set submenus</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=custom4.main_menu_icon)</onclick>
-					<visible>!Skin.HasSetting(HomeMenuNoCustom4Button) + Skin.HasSetting(NoIconMainMenu)</visible>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_submenu&amp;cpath_setting=custom4.submenu)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoCustom4Button)</visible>
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6304">
@@ -314,7 +367,6 @@
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoCustom5Button)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoCustom5Button)</onclick>
-					<onclick>RunScript(script.fentastic.helper,mode=remake_all_cpaths&amp;silent=true)</onclick>
 				</control>
 				<control type="button" id="6310">
 					<label>   - Set main menu name / path</label>
@@ -323,16 +375,22 @@
 					<visible>!Skin.HasSetting(HomeMenuNoCustom5Button)</visible>
 				</control>
 				<control type="button" id="6311">
+					<label>   - Set main menu icon</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=custom5.main_menu_icon)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoCustom5Button) + Skin.HasSetting(NoIconMainMenu)</visible>
+				</control>
+				<control type="button" id="6312">
 					<label>   - Set widgets</label>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=manage_widgets&amp;cpath_setting=custom5.widget)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoCustom5Button)</visible>
 				</control>
 				<control type="button" id="6313">
-					<label>   - Manage main menu icon</label>
+					<label>   - Set submenus</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=custom5.main_menu_icon)</onclick>
-					<visible>!Skin.HasSetting(HomeMenuNoCustom5Button) + Skin.HasSetting(NoIconMainMenu)</visible>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_submenu&amp;cpath_setting=custom5.submenu)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoCustom5Button)</visible>
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6314">
@@ -352,7 +410,6 @@
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoCustom6Button)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoCustom6Button)</onclick>
-					<onclick>RunScript(script.fentastic.helper,mode=remake_all_cpaths&amp;silent=true)</onclick>
 				</control>
 				<control type="button" id="6320">
 					<label>   - Set main menu name / path</label>
@@ -361,19 +418,25 @@
 					<visible>!Skin.HasSetting(HomeMenuNoCustom6Button)</visible>
 				</control>
 				<control type="button" id="6321">
+					<label>   - Set main menu icon</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=custom6.main_menu_icon)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoCustom6Button) + Skin.HasSetting(NoIconMainMenu)</visible>
+				</control>
+				<control type="button" id="6322">
 					<label>   - Set widgets</label>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=manage_widgets&amp;cpath_setting=custom6.widget)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoCustom6Button)</visible>
 				</control>
-				<control type="button" id="6322">
-					<label>   - Manage main menu icon</label>
+				<control type="button" id="6323">
+					<label>   - Set submenus</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.helper,mode=manage_main_menu_icon&amp;cpath_setting=custom6.main_menu_icon)</onclick>
-					<visible>!Skin.HasSetting(HomeMenuNoCustom6Button) + Skin.HasSetting(NoIconMainMenu)</visible>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_submenu&amp;cpath_setting=custom6.submenu)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoCustom6Button)</visible>
 				</control>
 				<!-- SEPARATOR -->
-				<control type="button" id="6323">
+				<control type="button" id="6324">
 					<height>6</height>
 					<left>25</left>
 					<right>25</right>
@@ -385,7 +448,7 @@
 					<enable>false</enable>
 				</control>
 				<!-- MUSIC -->
-				<control type="radiobutton" id="6272">
+				<control type="radiobutton" id="633">
 					<label>$LOCALIZE[2]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoMusicButton)</selected>
@@ -483,7 +546,7 @@
 					<visible>!Skin.HasSetting(HomeMenuNoMusicVideoButton)</visible>
 				</control>
 				<!-- PVR -->
-				<control type="radiobutton" id="6282">
+				<control type="radiobutton" id="634">
 					<label>$LOCALIZE[19020]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoTVButton)</selected>
@@ -719,98 +782,146 @@
 				<pagecontrol>60</pagecontrol>
 				<ondown>638</ondown>
 				<visible>Container(9000).HasFocus(2)</visible>
-				<!-- MAINTENANCE & TOOLS -->
+				<!-- TOP BAR CUSTOM MENU -->
 				<control type="radiobutton" id="63800">
-					<label>Enable maintenance &amp; tools menu</label>
+					<label>Enable Custom Menu</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(Enable.TopBarCustomMenu)</selected>
+					<onclick>Skin.ToggleSetting(Enable.TopBarCustomMenu)</onclick>
+				</control>
+				<control type="button" id="63801">
+					<label>   - Set heading</label>
+					<label2>$INFO[Skin.String(TopBarCustomMenuLabel)]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=set_topbar_custom_menu_heading)</onclick>
+					<visible>Skin.HasSetting(Enable.TopBarCustomMenu)</visible>
+				</control>
+				<control type="button" id="63802">
+					<label>   - Set icon</label>
+					<label2>$INFO[Skin.String(TopBarCustomMenuIcon)]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_topbar_custom_menu_icon)</onclick>
+					<visible>Skin.HasSetting(Enable.TopBarCustomMenu)</visible>
+				</control>
+				<control type="button" id="63803">
+					<label>   - Set menu size</label>
+					<label2>$VAR[TopBarCustomMenuSizeLabel]</label2>
+					<include>DefaultSettingButton</include>
+					<onfocus condition="String.IsEmpty(Skin.String(TopBarCustomMenuSize))">Skin.SetString(TopBarCustomMenuSize,3)</onfocus>
+					<onclick>$VAR[TopBarCustomMenuSizeToggleVar]</onclick>
+					<visible>Skin.HasSetting(Enable.TopBarCustomMenu)</visible>
+				</control>
+				<control type="button" id="63804">
+					<label>   - Manage menu</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=manage_topbar_custom_menu)</onclick>
+					<visible>Skin.HasSetting(Enable.TopBarCustomMenu)</visible>
+				</control>
+				<!-- SEPARATOR -->
+				<control type="button" id="63805">
+					<height>6</height>
+					<left>25</left>
+					<right>25</right>
+					<label/>
+					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
+					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<aligny>center</aligny>
+					<onclick>noop</onclick>
+					<enable>false</enable>
+					<visible>Skin.HasSetting(Enable.TopBarCustomMenu)</visible>
+				</control>
+				<!-- MAINTENANCE & TOOLS -->
+				<control type="radiobutton" id="63806">
+					<label>Enable Maintenance &amp; Tools Menu</label>
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(Enable.MaintenanceTools)</selected>
 					<onclick>Skin.ToggleSetting(Enable.MaintenanceTools)</onclick>
 				</control>
-				<control type="radiobutton" id="63801">
+				<control type="radiobutton" id="63807">
 					<label>   - Account Manager</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(ToolsNoAccountManager)</selected>
 					<onclick>Skin.ToggleSetting(ToolsNoAccountManager)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + System.HasAddon(script.module.acctmgr)</visible>
 				</control>
-				<control type="radiobutton" id="63802">
+				<control type="radiobutton" id="63808">
 					<label>   - Authorize Services</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(ToolsNoAuthorizeServices)</selected>
 					<onclick>Skin.ToggleSetting(ToolsNoAuthorizeServices)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl) | System.HasAddon(plugin.video.youtube)]</visible>
 				</control>
-				<control type="radiobutton" id="63803">
+				<control type="radiobutton" id="63809">
 					<label>      - Trakt</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoTrakt)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoTrakt)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight)] + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 				</control>
-				<control type="radiobutton" id="63804">
+				<control type="radiobutton" id="63810">
 					<label>      - Real-Debrid</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoRealDebrid)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoRealDebrid)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl)] + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 				</control>
-				<control type="radiobutton" id="63805">
+				<control type="radiobutton" id="63811">
 					<label>      - Premiumize</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoPremiumize)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoPremiumize)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl)] + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 				</control>
-				<control type="radiobutton" id="63806">
+				<control type="radiobutton" id="63812">
 					<label>      - All-Debrid</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoAllDebrid)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoAllDebrid)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl)] + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 				</control>
-				<control type="radiobutton" id="63807">
+				<control type="radiobutton" id="63813">
 					<label>      - Torbox</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoTorbox)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoTorbox)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl)] + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 				</control>
-				<control type="radiobutton" id="63808">
+				<control type="radiobutton" id="63814">
 					<label>      - Offcloud</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoOffcloud)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoOffcloud)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl)] + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 				</control>
-				<control type="radiobutton" id="63809">
+				<control type="radiobutton" id="63815">
 					<label>      - Skin MDbList API Key</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoSkinMDBList)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoSkinMDBList)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 				</control>
-				<control type="radiobutton" id="63810">
+				<control type="radiobutton" id="63816">
 					<label>      - TMDbH MDbList API Key</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoTMDBHMDBList)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoTMDBHMDBList)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + !Skin.HasSetting(ToolsNoAuthorizeServices) + System.HasAddon(plugin.video.themoviedb.helper)</visible>
 				</control>
-				<control type="radiobutton" id="63811">
+				<control type="radiobutton" id="63817">
 					<label>      - YouTube Sign-In</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoYouTube)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoYouTube)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + !Skin.HasSetting(ToolsNoAuthorizeServices) + System.HasAddon(plugin.video.youtube)</visible>
 				</control>
-				<control type="radiobutton" id="63812">
+				<control type="radiobutton" id="63818">
 					<label>   - Maintenance</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(ToolsNoMaintenance)</selected>
 					<onclick>Skin.ToggleSetting(ToolsNoMaintenance)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools)</visible>
 				</control>
-				<control type="radiobutton" id="63813">
+				<control type="radiobutton" id="63819">
 					<label>   - Custom Configs</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(ToolsNoCustomConfigs)</selected>
@@ -818,26 +929,67 @@
 					<visible>Skin.HasSetting(Enable.MaintenanceTools)</visible>
 				</control>
 				<!-- PRE-MADE CONFIGS -->
-				<control type="radiobutton" id="63814">
+				<control type="radiobutton" id="63820">
 					<label>   - Pre-made Configs</label>
 					<include>DefaultSettingButton</include>
-					<selected>Skin.HasSetting(Enable.PreMadeConfigs)</selected>
+					<selected>!Skin.HasSetting(Enable.PreMadeConfigs)</selected>
 					<onclick>Skin.ToggleSetting(Enable.PreMadeConfigs)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight)]</visible>
 				</control>
-				<control type="radiobutton" id="63815">
+				<control type="radiobutton" id="63821">
 					<label>   - Backup &amp; Restore</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(ToolsNoBackupRestore)</selected>
 					<onclick>Skin.ToggleSetting(ToolsNoBackupRestore)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools)</visible>
 				</control>
-				<control type="radiobutton" id="63816">
+				<control type="radiobutton" id="63822">
 					<label>   - Video Cache Config</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(ToolsNoVideoCacheConfig)</selected>
 					<onclick>Skin.ToggleSetting(ToolsNoVideoCacheConfig)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools)</visible>
+				</control>
+				<!-- SEPARATOR -->
+				<control type="button" id="63823">
+					<height>6</height>
+					<left>25</left>
+					<right>25</right>
+					<label/>
+					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
+					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<aligny>center</aligny>
+					<onclick>noop</onclick>
+					<enable>false</enable>
+				</control>
+				<!-- SHOW FAVOURITES TOP BAR -->
+				<control type="radiobutton" id="63824">
+					<label>Show favourites in top bar</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(Enable.Favourites)</selected>
+					<onclick>Skin.ToggleSetting(Enable.Favourites)</onclick>
+				</control>
+				<!-- SHOW ADDON BROWSER TOP BAR -->
+				<control type="radiobutton" id="63825">
+					<label>Show add-on browser in top bar</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(Enable.AddonBrowser)</selected>
+					<onclick>Skin.ToggleSetting(Enable.AddonBrowser)</onclick>
+				</control>
+				<!-- SHOW WEATHER TOP BAR -->
+				<control type="radiobutton" id="63826">
+					<label>$LOCALIZE[31093]</label>
+					<include>DefaultSettingButton</include>
+					<onclick condition="!String.IsEmpty(Weather.Plugin)">Skin.ToggleSetting(show_weatherinfo)</onclick>
+					<onclick condition="String.IsEmpty(Weather.Plugin)">ActivateWindow(servicesettings,weather)</onclick>
+					<selected>Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)</selected>
+				</control>
+				<!-- SHOW PROFILE IDENTIFICATION TOP BAR -->
+				<control type="button" id="63827">
+					<label>$LOCALIZE[31164]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SelectBool(31164, 31165|show_profilename, 31166|show_profileavatar, 31624|show_profileboth, 16018|show_none)</onclick>
+					<label2>$VAR[ProfileIdentificationPlusLabel2Var]</label2>
 				</control>
 			</control>
 			<control type="grouplist" id="636">
@@ -948,22 +1100,108 @@
 					<!-- Open select dialog via script (reliable method) -->
 					<onclick>RunScript(script.fentastic.helper,mode=power_mode_select)</onclick>
 				</control>
-				<!-- FAVOURITES -->
-				<control type="radiobutton" id="63704">
-					<label>Show favourites button in top bar</label>
+				<!-- RELOAD SKIN -->
+				<control type="radiobutton" id="63720">
+					<label>   - Reload skin</label>
 					<include>DefaultSettingButton</include>
-					<selected>Skin.HasSetting(Enable.Favourites)</selected>
-					<onclick>Skin.ToggleSetting(Enable.Favourites)</onclick>
+					<selected>!Skin.HasSetting(PowerMenuNoReloadSkin)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuNoReloadSkin)</onclick>
+					<visible>String.IsEqual(Skin.String(PowerButtonMode),Show Shutdown Menu)</visible>
 				</control>
-				<!-- ADDON BROWSER -->
-				<control type="radiobutton" id="63705">
-					<label>Show add-on browser button in top bar</label>
+				<!-- SKIN SETTINGS -->
+				<control type="radiobutton" id="63721">
+					<label>   - Skin settings</label>
 					<include>DefaultSettingButton</include>
-					<selected>Skin.HasSetting(Enable.AddonBrowser)</selected>
-					<onclick>Skin.ToggleSetting(Enable.AddonBrowser)</onclick>
+					<selected>!Skin.HasSetting(PowerMenuNoSettings)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuNoSettings)</onclick>
+					<visible>String.IsEqual(Skin.String(PowerButtonMode),Show Shutdown Menu)</visible>
+				</control>
+				<!-- TOGGLE DEBUGGING -->
+				<control type="radiobutton" id="63722">
+					<label>   - Toggle debugging</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuNoDebugging)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuNoDebugging)</onclick>
+					<visible>String.IsEqual(Skin.String(PowerButtonMode),Show Shutdown Menu)</visible>
+				</control>
+				<!-- SYSTEM INFORMATION -->
+				<control type="radiobutton" id="63723">
+					<label>   - System information</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuNoSystemInfo)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuNoSystemInfo)</onclick>
+					<visible>String.IsEqual(Skin.String(PowerButtonMode),Show Shutdown Menu)</visible>
+				</control>
+				<!-- QUIT -->
+				<control type="radiobutton" id="63724">
+					<label>   - Exit</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuNoQuit)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuNoQuit)</onclick>
+					<visible>String.IsEqual(Skin.String(PowerButtonMode),Show Shutdown Menu) + System.ShowExitButton</visible>
+				</control>
+				<!-- POWER OFF SYSTEM -->
+				<control type="radiobutton" id="63725">
+					<label>   - Power off system</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuNoPowerOff)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuNoPowerOff)</onclick>
+					<visible>String.IsEqual(Skin.String(PowerButtonMode),Show Shutdown Menu) + System.CanPowerDown</visible>
+				</control>
+				<!-- CUSTOM SHUTDOWN TIMER -->
+				<control type="radiobutton" id="63726">
+					<label>   - Custom shutdown timer</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuNoShutdownTimer)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuNoShutdownTimer)</onclick>
+					<visible>String.IsEqual(Skin.String(PowerButtonMode),Show Shutdown Menu) + [System.CanPowerDown | System.CanSuspend | System.CanHibernate]</visible>
+				</control>
+				<!-- SUSPEND -->
+				<control type="radiobutton" id="63727">
+					<label>   - Suspend</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuNoSuspend)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuNoSuspend)</onclick>
+					<visible>String.IsEqual(Skin.String(PowerButtonMode),Show Shutdown Menu) + System.CanSuspend</visible>
+				</control>
+				<!-- HIBERNATE -->
+				<control type="radiobutton" id="63728">
+					<label>   - Hibernate</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuNoHibernate)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuNoHibernate)</onclick>
+					<visible>String.IsEqual(Skin.String(PowerButtonMode),Show Shutdown Menu) + System.CanHibernate</visible>
+				</control>
+				<!-- REBOOT -->
+				<control type="radiobutton" id="63729">
+					<label>   - Reboot</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuNoReboot)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuNoReboot)</onclick>
+					<visible>String.IsEqual(Skin.String(PowerButtonMode),Show Shutdown Menu) + System.CanReboot</visible>
+				</control>
+				<!-- LOG OFF -->
+				<control type="radiobutton" id="63730">
+					<label>   - Log off</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuNoLogoff)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuNoLogoff)</onclick>
+					<visible>String.IsEqual(Skin.String(PowerButtonMode),Show Shutdown Menu) + [System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.Loggedon</visible>
+				</control>
+				<!-- SEPARATOR -->
+				<control type="button" id="63732">
+					<height>6</height>
+					<left>25</left>
+					<right>25</right>
+					<label/>
+					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
+					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<aligny>center</aligny>
+					<onclick>noop</onclick>
+					<enable>false</enable>
 				</control>
 				<!-- ENABLE/DISABLE KODI SPLASH -->
-				<control type="radiobutton" id="63706">
+				<control type="radiobutton" id="63733">
 					<label>Disable kodi splash</label>
 					<include>DefaultSettingButton</include>
 					<!-- Selected = Splash Disabled -->
@@ -975,28 +1213,16 @@
 					<!-- Run splash_on when disabled -->
 					<onclick condition="Skin.HasSetting(NoSplash)">RunScript(script.fentastic.helper,mode=splash_on)</onclick>
 				</control>
-				<!-- SEPARATOR -->
-				<control type="button" id="63707">
-					<height>6</height>
-					<left>25</left>
-					<right>25</right>
-					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
-					<aligny>center</aligny>
-					<onclick>noop</onclick>
-					<enable>false</enable>
-				</control>
 				<!-- SET BACKUP DIRECTORY -->
-				<control type="button" id="63708">
-					<label>Set Backup Directory</label>
+				<control type="button" id="63734">
+					<label>Set backup directory</label>
 					<label2>$INFO[Skin.String(backup_directory)]</label2>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=set_backup_directory)</onclick>
 				</control>
 				<!-- RESET BACKUP DIRECTORY -->
-				<control type="button" id="63709">
-					<label>Reset Backup Directory</label>
+				<control type="button" id="63735">
+					<label>Reset backup directory</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SetString(backup_directory,special://home/backups/FENtastic_Plus/)</onclick>
 					<onclick>Notification(FENtastic Plus,Backup directory reset to default,3000)</onclick>
@@ -1015,14 +1241,14 @@
 				<visible>Container(9000).HasFocus(4)</visible>
 				<!-- ENABLE/DISABLE SEARCH -->
 				<control type="radiobutton" id="64700">
-					<label>Enable Search button</label>
+					<label>Enable Search Button</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeNoSearchButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeNoSearchButton)</onclick>
 				</control>
 				<!-- SEARCH OPTIONS -->
 				<control type="button" id="64701">
-					<label>Set Search Provider</label>
+					<label>Set search provider</label>
 					<label2>$VAR[CurrentSearchProviderVar]</label2>
 					<include>DefaultSettingButton</include>
 					<onclick>$VAR[CurrentSearchProviderToggleVar]</onclick>
@@ -1048,7 +1274,7 @@
 					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow)</visible>
 				</control>
 				<control type="button" id="64705">
-					<label>Home search button behaviour</label>
+					<label>Home search button behavior</label>
 					<label2>$VAR[SearchBehaviorLabelVar]</label2>
 					<include>DefaultSettingButton</include>
 					<onclick>$VAR[SearchBehaviorToggleVar]</onclick>
@@ -1238,7 +1464,7 @@
 				<visible>Container(9000).HasFocus(6)</visible>
 				<!-- Classic FENtastic & FENtastic PLus Experience-->
 				<control type="button" id="701">
-					<label>Look &amp; Feel</label>
+					<label>Choose Look &amp; Feel Preset</label>
 					<label2>$VAR[LookFeelLabel]</label2>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=choose_lookfeel)</onclick>
@@ -1319,20 +1545,21 @@
 					<onclick>Skin.ToggleSetting(Enable.AddonCategorySideblade)</onclick>
 					<visible>!Skin.HasSetting(Enable.FullscreenWidgets)</visible>
 				</control>
-				<!-- ALTERNATE INFOPANEL -->
+				<!-- ALTERNATE WIDGET INFOPANEL -->
 				<control type="radiobutton" id="710">
-					<label>Enable alternate infoPanel</label>
+					<label>Enable alternate widget infoPanel</label>
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(Enable.AlternateInfo)</selected>
 					<onclick>Skin.ToggleSetting(Enable.AlternateInfo)</onclick>
 					<visible>!Skin.HasSetting(Enable.FullscreenWidgets)</visible>
 				</control>
-				<control type="radiobutton" id="711">
-					<label>$LOCALIZE[31093]</label>
+				<!-- ALTERNATE ADD-ON INFOPANEL -->
+				<control type="radiobutton" id="7101">
+					<label>Enable alternate add-on infoPanel</label>
 					<include>DefaultSettingButton</include>
-					<onclick condition="!String.IsEmpty(Weather.Plugin)">Skin.ToggleSetting(show_weatherinfo)</onclick>
-					<onclick condition="String.IsEmpty(Weather.Plugin)">ActivateWindow(servicesettings,weather)</onclick>
-					<selected>Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)</selected>
+					<selected>Skin.HasSetting(Enable.AlternateAddonInfo)</selected>
+					<onclick>Skin.ToggleSetting(Enable.AlternateAddonInfo)</onclick>
+					<visible>!Skin.HasSetting(Enable.FullscreenWidgets)</visible>
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="712">
@@ -1366,13 +1593,6 @@
 					<onclick>Skin.SelectBool(31024, 38018|circle_userrating, 563|circle_rating, 16018|circle_none)</onclick>
 					<label2>$VAR[RatingSettingLabel2Var]</label2>
 				</control>
-				<!-- PROFILE AVATAR -->
-				<!-- <control type="button" id="716">
-					<label>$LOCALIZE[31164]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(31164, 31165|show_profilename, 31166|show_profileavatar, 16018|show_none)</onclick>
-					<label2>$VAR[ProfileIdentificationLabel2Var]</label2>
-				</control> -->
 			</control>
 			<control type="grouplist" id="600">
 				<top>133</top>
@@ -1560,7 +1780,7 @@
 					<label>Configure Skin Colour</label>
 					<label2>$INFO[Skin.String(CurrentSkinColor)]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.helper, mode=set_color)</onclick>
+					<onclick>RunScript(script.fentastic.helper,mode=choose_color)</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="622">
@@ -1593,35 +1813,54 @@
 					<onclick>Skin.SetNumeric(OSDAutoCloseTime)</onclick>
 					<enable>Skin.HasSetting(OSDAutoClose)</enable>
 				</control>
-				<control type="radiobutton" id="6222">
+				<!-- SEPARATOR -->
+				<control type="button" id="6222">
+					<height>6</height>
+					<left>25</left>
+					<right>25</right>
+					<label/>
+					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
+					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<aligny>center</aligny>
+					<onclick>noop</onclick>
+					<enable>false</enable>
+				</control>
+				<control type="radiobutton" id="6223">
 					<label>$LOCALIZE[31506]</label>
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(SeekBarBottom)</selected>
 					<onclick>Skin.ToggleSetting(SeekBarBottom)</onclick>
 					<enable>!Skin.HasSetting(StockEstuaryVideoOSD)</enable>
 				</control>
-				<control type="radiobutton" id="6223">
+				<control type="radiobutton" id="6224">
 					<label>Display video info during pause</label>
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(ShowVideoInfoOnPause)</selected>
 					<onclick>Skin.ToggleSetting(ShowVideoInfoOnPause)</onclick>
 					<enable>!Skin.HasSetting(StockEstuaryVideoOSD)</enable>
 				</control>
-				<control type="radiobutton" id="6224">
+				<control type="radiobutton" id="6225">
+					<label>Display stream filename during pause</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(ShowStreamFilenameOnPause)</selected>
+					<onclick>Skin.ToggleSetting(ShowStreamFilenameOnPause)</onclick>
+					<enable>!Skin.HasSetting(StockEstuaryVideoOSD)</enable>
+				</control>
+				<control type="radiobutton" id="6226">
 					<label>Display subtitle offset button</label>
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(ShowSubtitleOffsetButton)</selected>
 					<onclick>Skin.ToggleSetting(ShowSubtitleOffsetButton)</onclick>
 					<enable>!Skin.HasSetting(StockEstuaryVideoOSD)</enable>
 				</control>
-				<control type="button" id="6225">
+				<control type="button" id="6227">
 					<label>Audio button behavior</label>
 					<label2>$VAR[OSDAudioButtonModeVar]</label2>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=osd_audio_button_select)</onclick>
 					<enable>!Skin.HasSetting(StockEstuaryVideoOSD)</enable>
 				</control>
-				<control type="button" id="6226">
+				<control type="button" id="6228">
 					<label>Subtitle button behavior</label>
 					<label2>$VAR[OSDSubtitleButtonModeVar]</label2>
 					<include>DefaultSettingButton</include>
@@ -1727,7 +1966,7 @@
 						<onclick>noop</onclick>
 					</item>
 					<item id="2">
-						<label>Tools Menu</label>
+						<label>Top Bar</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="3">
@@ -1743,7 +1982,7 @@
 						<onclick>noop</onclick>
 					</item>
 					<item id="6">
-						<label>Options</label>
+						<label>Look &amp; Feel</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="7">
@@ -1755,7 +1994,7 @@
 						<onclick>noop</onclick>
 					</item>
 					<item id="9">
-						<label>On Screen Display</label>
+						<label>Video OSD</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="10">

@@ -20,7 +20,7 @@ repository.elementumorg
   script.fenstruary.helper
  skin.umbrestuary 21
   script.umbrestuary.helper
- skin.fentastic 20 21
+ skin.fentastic 20
  skin.fentasticplus 21
   script.fentastic.helper
   resource.uisounds.fentastic
@@ -134,6 +134,7 @@ repository.octopus
 repository.officerkd637
 repository.oldsalt
 repository.One
+repository.ontv
 repository.openscrapers
 repository.openwizard
 repository.orion
@@ -460,11 +461,11 @@ repository.zeus768
 </addon>
 
 
-<addon id="skin.fentastic" version="100.0.31ad" name="FENtastic Plus"
+<addon id="skin.fentastic" version="100.0.32" name="FENtastic Plus"
 	provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" version="100.6.26" />
+		<import addon="script.fentastic.helper" version="100.6.27" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -502,7 +503,7 @@ Various other small tweaks and refinements throughout.</news>
 </addon>
 
 
-<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.26" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.27" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -2548,6 +2549,25 @@ Various other small tweaks and refinements throughout.</news>
 			<screenshot>screenshot-1.jpg</screenshot>
 			<screenshot>screenshot-2.jpg</screenshot>
 			<screenshot>screenshot-3.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.ontv" name="OnTV Repository" version="1.0.2" provider-name="OnTV">
+	<extension point="xbmc.addon.repository" name="OnTV Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">OnTV Repository</summary>
+		<description lang="en">Official OnTV Repository</description>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
 		</assets>
 	</extension>
 </addon>

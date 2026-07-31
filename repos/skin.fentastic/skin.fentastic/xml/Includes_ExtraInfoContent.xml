@@ -5,8 +5,22 @@
 Reworked and restyled several dialogs and overlays across the skin - including the context menu, power/tools menus, video OSD, top bar, and video info screen.
 Introduced a brand-new focused list-item style with nine appearance options throughout the List and WideList views (Skin Settings/Options).
 Various other small tweaks and refinements throughout.
-
+		
 [B][COLOR accent_color]Version $INFO[System.AddonVersion(skin.fentastic)] by Zaxxon709[/COLOR][/B]
+- Added the ability to reorder main menu items
+- Added support for creating and managing main menu submenus
+- Introduced a customizable top bar menu
+- Added FENtastic Helper action shortcuts and manual Kodi path entry to the Choose Path dialog
+- Added two new Look &amp; Feel options: FENtastic Hybrid and Default Estuary
+- Fixed background video playback when returning to the Home screen during playback
+- Restored the Profile Identification setting and added a new option to display both the profile name and avatar
+- Added a Video OSD setting to display the stream filename when playback is paused
+- Fixed the Favourites and GUI Settings backup and restore functions
+- Added the ability to show or hide individual Power Shutdown Menu items
+- Cleaned up the Settings menu
+- Minor bug fixes and improvements
+
+[B][COLOR accent_color]Version 100.0.31a[/COLOR][/B]
 - Fix Maintenance &amp; Tools menu item enable/disable settings not applying correctly
 - Included a fallback rating to the infoPanel when no MDBList API key is configured
 - Added Offcloud authorization shortcuts

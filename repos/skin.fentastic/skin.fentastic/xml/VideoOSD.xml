@@ -276,6 +276,21 @@
 					<effect type="fade" start="100" end="0" time="300"/>
 				</animation>
 				<visible>Player.SeekEnabled</visible>
+				<!-- Display stream filename when paused -->
+				<control type="label">
+					<left>20</left>
+					<top>-45</top>
+					<width>1880</width>
+					<height>35</height>
+					<font>font14</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[Player.Filename]</label>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>true</scroll>
+					<visible>Player.Paused + Skin.HasSetting(ShowStreamFilenameOnPause) + !String.IsEmpty(Player.Filename)</visible>
+				</control>
 				<control type="button" id="87">
 					<include>HiddenObject</include>
 					<onup>200</onup>
@@ -342,7 +357,7 @@
 				</control>
 			</control>
 		</control>
-		<!-- Information when video paused -->
+		<!-- Display information when video paused -->
 		<control type="group" id="90000">
 			<visible>Player.Paused + Skin.HasSetting(ShowVideoInfoOnPause) + !Skin.HasSetting(StockEstuaryVideoOSD) + !Window.IsVisible(fullscreeninfo) + Window.IsActive(videoosd)</visible>
 			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
@@ -357,7 +372,7 @@
 				<top>0</top>
 				<width>1840</width>
 				<height>490</height>
-				<texture colordiffuse="DD000000">colors/white.png</texture>
+				<texture colordiffuse="CC000000">colors/white.png</texture>
 			</control>
 			<!-- Movie Poster -->
 			<control type="image">

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.ontv" name="OnTV Repository" version="1.0.2" provider-name="OnTV">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository" name="OnTV Repository">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/nnllv0id/ontv-repo/main/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/nnllv0id/ontv-repo/main/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/nnllv0id/ontv-repo/main</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">OnTV Repository</summary>
+    <description lang="en">Official OnTV Repository</description>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.png</fanart>
+    </assets>
+  </extension>
+</addon>
