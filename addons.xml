@@ -3480,7 +3480,6 @@ strptime Python bugfix
 </addon>
 
 
-<?xml version="1.0" encoding="UTF-8"?>
 <addon id="pvr.eon" version="21.7.12+linux-aarch64" name="EON PVR Client" provider-name="Nirvana">
   <requires>
     <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
