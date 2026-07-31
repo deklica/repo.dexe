@@ -29,7 +29,7 @@
 			<control type="grouplist" id="996">
 				<description>grouplist for context buttons</description>
 				<left>0</left>
-				<top>100</top>
+				<top>105</top>
 				<width>450</width>
 				<height>455</height>
 				<usecontrolcoords>true</usecontrolcoords>
@@ -43,7 +43,7 @@
 			<control type="button" id="1000">
 				<description>button template</description>
 				<left>25</left>
-				<top></top>
+				<top>0</top>
 				<width>400</width>
 				<height>65</height>
 				<align>center</align>
