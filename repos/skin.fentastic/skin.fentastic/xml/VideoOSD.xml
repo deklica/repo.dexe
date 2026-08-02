@@ -279,7 +279,7 @@
 				<!-- Display stream filename when paused -->
 				<control type="label">
 					<left>20</left>
-					<top>-45</top>
+					<top>-50</top>
 					<width>1880</width>
 					<height>35</height>
 					<font>font14</font>

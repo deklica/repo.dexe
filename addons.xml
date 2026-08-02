@@ -396,7 +396,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.gratisred" version="1.2.2" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" version="1.2.3" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="script.gratisred.artwork" version="1.0.5"/>
         <import addon="script.module.kodi-six"/>
@@ -432,7 +432,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.iatheater" name="Internet Archive Theater" version="0.3.3" provider-name="PythonTrousers">
+<addon id="plugin.video.iatheater" name="Internet Archive Theater" version="1.0.0" provider-name="PythonTrousers">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -725,7 +725,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="2.1.5">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="2.1.7">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -889,7 +889,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.20" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.21" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
