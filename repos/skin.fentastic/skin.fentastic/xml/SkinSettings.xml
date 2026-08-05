@@ -837,91 +837,91 @@
 					<selected>Skin.HasSetting(Enable.MaintenanceTools)</selected>
 					<onclick>Skin.ToggleSetting(Enable.MaintenanceTools)</onclick>
 				</control>
-				<control type="radiobutton" id="63807">
+				<control type="radiobutton" id="63808">
 					<label>   - Account Manager</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(ToolsNoAccountManager)</selected>
 					<onclick>Skin.ToggleSetting(ToolsNoAccountManager)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + System.HasAddon(script.module.acctmgr)</visible>
 				</control>
-				<control type="radiobutton" id="63808">
+				<control type="radiobutton" id="63809">
 					<label>   - Authorize Services</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(ToolsNoAuthorizeServices)</selected>
 					<onclick>Skin.ToggleSetting(ToolsNoAuthorizeServices)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl) | System.HasAddon(plugin.video.youtube)]</visible>
 				</control>
-				<control type="radiobutton" id="63809">
+				<control type="radiobutton" id="63810">
 					<label>      - Trakt</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoTrakt)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoTrakt)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight)] + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 				</control>
-				<control type="radiobutton" id="63810">
+				<control type="radiobutton" id="63811">
 					<label>      - Real-Debrid</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoRealDebrid)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoRealDebrid)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl)] + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 				</control>
-				<control type="radiobutton" id="63811">
+				<control type="radiobutton" id="63812">
 					<label>      - Premiumize</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoPremiumize)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoPremiumize)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl)] + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 				</control>
-				<control type="radiobutton" id="63812">
+				<control type="radiobutton" id="63813">
 					<label>      - All-Debrid</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoAllDebrid)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoAllDebrid)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl)] + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 				</control>
-				<control type="radiobutton" id="63813">
+				<control type="radiobutton" id="63814">
 					<label>      - Torbox</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoTorbox)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoTorbox)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl)] + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 				</control>
-				<control type="radiobutton" id="63814">
+				<control type="radiobutton" id="63815">
 					<label>      - Offcloud</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoOffcloud)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoOffcloud)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl)] + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 				</control>
-				<control type="radiobutton" id="63815">
+				<control type="radiobutton" id="63816">
 					<label>      - Skin MDbList API Key</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoSkinMDBList)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoSkinMDBList)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
 				</control>
-				<control type="radiobutton" id="63816">
+				<control type="radiobutton" id="63817">
 					<label>      - TMDbH MDbList API Key</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoTMDBHMDBList)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoTMDBHMDBList)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + !Skin.HasSetting(ToolsNoAuthorizeServices) + System.HasAddon(plugin.video.themoviedb.helper)</visible>
 				</control>
-				<control type="radiobutton" id="63817">
+				<control type="radiobutton" id="63818">
 					<label>      - YouTube Sign-In</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(AuthNoYouTube)</selected>
 					<onclick>Skin.ToggleSetting(AuthNoYouTube)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + !Skin.HasSetting(ToolsNoAuthorizeServices) + System.HasAddon(plugin.video.youtube)</visible>
 				</control>
-				<control type="radiobutton" id="63818">
+				<control type="radiobutton" id="63819">
 					<label>   - Maintenance</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(ToolsNoMaintenance)</selected>
 					<onclick>Skin.ToggleSetting(ToolsNoMaintenance)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools)</visible>
 				</control>
-				<control type="radiobutton" id="63819">
+				<control type="radiobutton" id="63820">
 					<label>   - Custom Configs</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(ToolsNoCustomConfigs)</selected>
@@ -929,21 +929,21 @@
 					<visible>Skin.HasSetting(Enable.MaintenanceTools)</visible>
 				</control>
 				<!-- PRE-MADE CONFIGS -->
-				<control type="radiobutton" id="63820">
+				<control type="radiobutton" id="63821">
 					<label>   - Pre-made Configs</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(Enable.PreMadeConfigs)</selected>
 					<onclick>Skin.ToggleSetting(Enable.PreMadeConfigs)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight)]</visible>
 				</control>
-				<control type="radiobutton" id="63821">
+				<control type="radiobutton" id="63822">
 					<label>   - Backup &amp; Restore</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(ToolsNoBackupRestore)</selected>
 					<onclick>Skin.ToggleSetting(ToolsNoBackupRestore)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools)</visible>
 				</control>
-				<control type="radiobutton" id="63822">
+				<control type="radiobutton" id="63823">
 					<label>   - Video Cache Config</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(ToolsNoVideoCacheConfig)</selected>
@@ -951,7 +951,7 @@
 					<visible>Skin.HasSetting(Enable.MaintenanceTools)</visible>
 				</control>
 				<!-- SEPARATOR -->
-				<control type="button" id="63823">
+				<control type="button" id="63824">
 					<height>6</height>
 					<left>25</left>
 					<right>25</right>
@@ -963,21 +963,21 @@
 					<enable>false</enable>
 				</control>
 				<!-- SHOW FAVOURITES TOP BAR -->
-				<control type="radiobutton" id="63824">
+				<control type="radiobutton" id="63825">
 					<label>Show favourites in top bar</label>
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(Enable.Favourites)</selected>
 					<onclick>Skin.ToggleSetting(Enable.Favourites)</onclick>
 				</control>
 				<!-- SHOW ADDON BROWSER TOP BAR -->
-				<control type="radiobutton" id="63825">
+				<control type="radiobutton" id="63826">
 					<label>Show add-on browser in top bar</label>
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(Enable.AddonBrowser)</selected>
 					<onclick>Skin.ToggleSetting(Enable.AddonBrowser)</onclick>
 				</control>
 				<!-- SHOW WEATHER TOP BAR -->
-				<control type="radiobutton" id="63826">
+				<control type="radiobutton" id="63827">
 					<label>$LOCALIZE[31093]</label>
 					<include>DefaultSettingButton</include>
 					<onclick condition="!String.IsEmpty(Weather.Plugin)">Skin.ToggleSetting(show_weatherinfo)</onclick>
@@ -985,7 +985,7 @@
 					<selected>Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)</selected>
 				</control>
 				<!-- SHOW PROFILE IDENTIFICATION TOP BAR -->
-				<control type="button" id="63827">
+				<control type="button" id="63828">
 					<label>$LOCALIZE[31164]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(31164, 31165|show_profilename, 31166|show_profileavatar, 31624|show_profileboth, 16018|show_none)</onclick>
@@ -1618,7 +1618,7 @@
 					<visible>!String.IsEmpty(Skin.String(CustomLogo))</visible>
 				</control>
 				<control type="button" id="6054">
-					<label>Choose default background</label>
+					<label>Choose skin background</label>
 					<label2>$INFO[Skin.String(CustomBackground)]</label2>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper, mode=set_image)</onclick>

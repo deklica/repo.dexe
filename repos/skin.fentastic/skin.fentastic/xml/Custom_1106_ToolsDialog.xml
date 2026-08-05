@@ -11,53 +11,57 @@
 			<include content="DialogBackgroundCommons">
 				<param name="width" value="600" />
 				<param name="height" value="620" />
-				<param name="header_label" value="Maintenance & Tools" />
+				<param name="header_label" value="Maintenance &amp; Tools" />
 				<param name="header_id" value="" />
 				<param name="diffusetexture" value="masks/addons.png" />
 			</include>
 			<control type="panel" id="9000">
 				<include>ButtonMenuList_dialog</include>
+				<onback condition="String.IsEqual(Window(Home).Property(FENtastic.DirectDialog1106),true)">Dialog.Close(1106)</onback>
+				<onback condition="String.IsEqual(Window(Home).Property(FENtastic.DirectDialog1106),true)">ActivateWindow(1170)</onback>
+				<onback condition="String.IsEqual(Window(Home).Property(FENtastic.DirectDialog1106),true)">ClearProperty(FENtastic.DirectDialog1106,home)</onback>
+				<onback condition="!String.IsEqual(Window(Home).Property(FENtastic.DirectDialog1106),true)">Dialog.Close(1106)</onback>
 				<content>
 					<item>
 						<label>Account Manager</label>
 						<visible>System.HasAddon(script.module.acctmgr) + [System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight)] + !Skin.HasSetting(ToolsNoAccountManager)</visible>
-						<onclick>Dialog.Close(all)</onclick>
+						<onclick>Dialog.Close(1106)</onclick>
 						<onclick>RunAddon(script.module.acctmgr)</onclick>
 					</item>
 					<item>
 						<label>Authorize Services</label>
 						<visible>[System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight) | System.HasAddon(script.module.resolveurl) | System.HasAddon(plugin.video.youtube)] + !Skin.HasSetting(ToolsNoAuthorizeServices)</visible>
-						<onclick>Dialog.Close(all)</onclick>
+						<onclick>Dialog.Close(1106)</onclick>
 						<onclick>ActivateWindow(1111)</onclick>
 					</item>
 					<item>
 						<label>Maintenance</label>
 						<visible>!Skin.HasSetting(ToolsNoMaintenance)</visible>
-						<onclick>Dialog.Close(all)</onclick>
+						<onclick>Dialog.Close(1106)</onclick>
 						<onclick>ActivateWindow(1120)</onclick>
 					</item>
 					<item>
 						<label>Custom Configs</label>
 						<visible>!Skin.HasSetting(ToolsNoCustomConfigs)</visible>
-						<onclick>Dialog.Close(all)</onclick>
+						<onclick>Dialog.Close(1106)</onclick>
 						<onclick>ActivateWindow(1126)</onclick>
 					</item>
 					<item>
     						<label>Pre-Made Configs</label>
     						<visible>[System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight)] + !Skin.HasSetting(Enable.PreMadeConfigs)</visible>
-    						<onclick>Dialog.Close(all)</onclick>
+    						<onclick>Dialog.Close(1106)</onclick>
     						<onclick>RunScript(script.fentastic.helper,mode=pre_config)</onclick>
 					</item>
 					<item>
-						<label>Backup & Restore</label>
+						<label>Backup &amp; Restore</label>
 						<visible>!Skin.HasSetting(ToolsNoBackupRestore)</visible>
-						<onclick>Dialog.Close(all)</onclick>
+						<onclick>Dialog.Close(1106)</onclick>
 						<onclick>ActivateWindow(1123)</onclick>
 					</item>
 					<item>
 						<label>Video Cache Config</label>
 						<visible>!Skin.HasSetting(ToolsNoVideoCacheConfig)</visible>
-						<onclick>Dialog.Close(all)</onclick>
+						<onclick>Dialog.Close(1106)</onclick>
 						<onclick>RunScript(script.fentastic.helper,mode=advanced_set)</onclick>
 					</item>
 				</content>

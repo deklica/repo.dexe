@@ -1085,9 +1085,21 @@
 		<value condition="!String.IsEmpty(ListItem.Premiered) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Premiered,[B]Aired: [/B]][CR]</value>
 	</variable>
 	<!-- MPAA Rating -->
+	<variable name="RI_Year_Season">
+		<value condition="!String.IsEmpty(ListItem.Year) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Year]</value>
+		<value condition="!String.IsEmpty(ListItem.Premiered) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Premiered]</value>
+		<value condition="!String.IsEmpty(ListItem.Year) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Year,[B]Released: [/B]][CR]</value>
+		<value condition="!String.IsEmpty(ListItem.Premiered) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Premiered,[B]Aired: [/B]][CR]</value>
+	</variable>
 	<variable name="RI_Mpaa_Season">
+		<value condition="!String.IsEmpty(ListItem.Mpaa) + [!String.IsEmpty(ListItem.Year) | !String.IsEmpty(ListItem.Premiered)] + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Mpaa,[B] • [/B]]</value>
 		<value condition="!String.IsEmpty(ListItem.Mpaa) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Mpaa]</value>
 		<value condition="!String.IsEmpty(ListItem.Mpaa) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Mpaa,[B]Rated: [/B]][CR]</value>
+	</variable>
+	<variable name="RI_Network_Season">
+		<value condition="!String.IsEmpty(ListItem.Studio) + [!String.IsEmpty(ListItem.Year) | !String.IsEmpty(ListItem.Premiered) | !String.IsEmpty(ListItem.Mpaa)] + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Studio,[B] • [/B]]</value>
+		<value condition="!String.IsEmpty(ListItem.Studio) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Studio]</value>
+		<value condition="!String.IsEmpty(ListItem.Studio) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Studio,[B]Network: [/B]][CR]</value>
 	</variable>
 	<variable name="RI_Mpaa">
 		<value condition="!String.IsEmpty(ListItem.Mpaa) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Mpaa,[B] • [/B]]</value>
@@ -1149,9 +1161,21 @@
 		<value condition="!String.IsEmpty(ListItem.Premiered) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Premiered,[B]Aired: [/B]][CR]</value>
 	</variable>
 	<!-- MPAA Rating -->
+	<variable name="_Year_Season">
+		<value condition="!String.IsEmpty(ListItem.Year) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Year]</value>
+		<value condition="!String.IsEmpty(ListItem.Premiered) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Premiered]</value>
+		<value condition="!String.IsEmpty(ListItem.Year) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Year,[B]Released: [/B]][CR]</value>
+		<value condition="!String.IsEmpty(ListItem.Premiered) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Premiered,[B]Aired: [/B]][CR]</value>
+	</variable>
 	<variable name="_Mpaa_Season">
+		<value condition="!String.IsEmpty(ListItem.Mpaa) + [!String.IsEmpty(ListItem.Year) | !String.IsEmpty(ListItem.Premiered)] + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Mpaa,[B] • [/B]]</value>
 		<value condition="!String.IsEmpty(ListItem.Mpaa) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Mpaa]</value>
 		<value condition="!String.IsEmpty(ListItem.Mpaa) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Mpaa,[B]Rated: [/B]][CR]</value>
+	</variable>
+	<variable name="_Network_Season">
+		<value condition="!String.IsEmpty(ListItem.Studio) + [!String.IsEmpty(ListItem.Year) | !String.IsEmpty(ListItem.Premiered) | !String.IsEmpty(ListItem.Mpaa)] + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Studio,[B] • [/B]]</value>
+		<value condition="!String.IsEmpty(ListItem.Studio) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Studio]</value>
+		<value condition="!String.IsEmpty(ListItem.Studio) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Studio,[B]Network: [/B]][CR]</value>
 	</variable>
 	<variable name="_Mpaa">
 		<value condition="!String.IsEmpty(ListItem.Mpaa) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Mpaa,[B] • [/B]]</value>
@@ -1209,8 +1233,7 @@
 		<!-- SHOWS -->
 		<value condition="!ListItem.IsCollection + String.IsEqual(ListItem.DBtype,tvshow)">$VAR[RI_Year]$VAR[RI_Mpaa]$VAR[RI_Network]$VAR[RI_Genre]$VAR[RI_RuntimeEpisodes]$VAR[RI_TotalSeasons]$VAR[RI_Status]$VAR[RI_Endsat]</value>
 		<!-- SEASONS -->
-		<!-- TODO Fix seasons not showing release year -->
-		<value condition="!ListItem.IsCollection + String.IsEqual(ListItem.DBtype,season)">$VAR[RI_Mpaa_Season]$VAR[RI_Network]$VAR[RI_Genre]$VAR[RI_RuntimeEpisodes]$VAR[RI_Endsat]</value>
+		<value condition="!ListItem.IsCollection + String.IsEqual(ListItem.DBtype,season)">$VAR[RI_Year_Season]$VAR[RI_Mpaa_Season]$VAR[RI_Network_Season]$VAR[RI_Genre]$VAR[RI_RuntimeEpisodes]$VAR[RI_Endsat]</value>
 		<!-- EPISODES -->
 		<value condition="!ListItem.IsCollection + String.IsEqual(ListItem.DBtype,episode)">$VAR[RI_Aired]$VAR[RI_Mpaa]$VAR[RI_Network]$VAR[RI_RuntimeEpisodes]$VAR[RI_Endsat]</value>
 	</variable>
@@ -1227,7 +1250,7 @@
 		<!-- SHOWS -->
 		<value condition="!ListItem.IsCollection + String.IsEqual(ListItem.DBtype,tvshow)">$VAR[_Year]$VAR[_Mpaa]$VAR[_Network]$VAR[_Genre]$VAR[_RuntimeEpisodes]$VAR[_TotalSeasons]$VAR[_Status]$VAR[_Endsat][CR]$VAR[_Plot][CR]</value>
 		<!-- SEASONS -->
-		<value condition="!ListItem.IsCollection + String.IsEqual(ListItem.DBtype,season)">$VAR[_Mpaa_Season]$VAR[_Network]$VAR[_Genre]$VAR[_RuntimeEpisodes]$VAR[_Endsat][CR]$VAR[_Plot][CR]</value>
+		<value condition="!ListItem.IsCollection + String.IsEqual(ListItem.DBtype,season)">$VAR[_Year_Season]$VAR[_Mpaa_Season]$VAR[_Network_Season]$VAR[_Genre]$VAR[_RuntimeEpisodes]$VAR[_Endsat][CR]$VAR[_Plot][CR]</value>
 	</variable>
 	<!-- EPISODES -->
 	<variable name="InfoPanelEpisode">

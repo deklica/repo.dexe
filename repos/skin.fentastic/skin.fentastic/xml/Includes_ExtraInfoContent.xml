@@ -7,6 +7,12 @@ Introduced a brand-new focused list-item style with nine appearance options thro
 Various other small tweaks and refinements throughout.
 		
 [B][COLOR accent_color]Version $INFO[System.AddonVersion(skin.fentastic)] by Zaxxon709[/COLOR][/B]
+- Updated the Choose Path dialogs to support browsing network shares
+- Added a new FENtastic Dialogs option to the Choose Path dialogs
+- Added support for adding FENtastic dialogs to the Custom Top Bar Menu
+- Minor bug fixes and improvements
+
+[B][COLOR accent_color]Version 100.0.32[/COLOR][/B]
 - Added the ability to reorder main menu items
 - Added support for creating and managing main menu submenus
 - Introduced a customizable top bar menu

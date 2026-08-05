@@ -142,7 +142,7 @@ service.subtitles.titlovi
 <addons>
 
 
-<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.36">
+<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.38">
     <requires>
         <import addon="resource.images.blacklodge.artwork" />
         <import addon="script.module.requests" />
@@ -725,7 +725,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="2.1.7">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="2.1.8">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -2425,7 +2425,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.5.0" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.5.1" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2437,7 +2437,7 @@ In order to get the API Key:
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<summary>gearsscrapers</summary>
+		<summary>Gears Scrapers Is Part Of The Chains Repository</summary>
 		<description>A module to query magnet providers.[CR][CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</description>
 		<disclaimer>The author does not host or own any content found within this addon. The author is not responsible for the content found using this addon. The author is not responsible for the use of this addon.</disclaimer>
 		<assets><icon>icon.png</icon></assets>
