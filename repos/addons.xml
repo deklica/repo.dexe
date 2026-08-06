@@ -118,6 +118,7 @@ repository.kus.allinone
 repository.lekma
 repository.liberator
 repository.lime
+repository.livetvSerbia
 repository.loop
 repository.luc_repo
 repository.madforit
@@ -2238,6 +2239,24 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 		<description lang="en_GB">Download and install add-ons from Lime Repository.</description>
 		<platform>all</platform>
 		<license>MIT License</license>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.livetvSerbia" name="Live TV Serbia Repository" version="2.0" provider-name="livetvSerbia">
+	<extension point="xbmc.addon.repository" name="Live TV Serbia Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Watch IPTV channels from Balkan</summary>
+		<description>Watch IPTV channels from Balkan. For more info visit livetvkodiserbia.com</description>
+		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>

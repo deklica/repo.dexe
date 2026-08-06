@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.livetvSerbia" name="Live TV Serbia Repository" version="2.0" provider-name="livetvSerbia">
+    <extension point="xbmc.addon.repository" name="Live TV Serbia Repository">
+        <dir minversion="21.0.0">
+            <info compressed="false">https://livetvkodiserbia.com/live/addon/21/addons.xml</info>
+            <checksum>https://livetvkodiserbia.com/live/addon/21/addons.xml.md5</checksum>
+            <datadir zip="true">https://livetvkodiserbia.com/kodi/21/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Watch IPTV channels from Balkan</summary>
+        <description>Watch IPTV channels from Balkan. For more info visit livetvkodiserbia.com</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
