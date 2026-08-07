@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.eonvod" version="1.0.0" name="EON On Demand" provider-name="dEXE">
+<addon id="plugin.video.eonvod" version="1.1.0" name="EON On Demand" provider-name="dEXE">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="pvr.eon" version="20.0.0"/>
@@ -16,7 +16,7 @@
     <language>en sr bg</language>
     <platform>all</platform>
     <license>GPL-3.0-or-later</license>
-    <news>[B]v1.0.0 - first stable release[/B][CR][CR]- Browses EON On Demand content from the API.[CR]- Uses the same account, session and device data as pvr.eon.[CR]- Movies, series, kids, documentaries, TV shows.[CR]- Caches the catalogue locally for faster browsing.[CR]- Manual and scheduled sync, with progress shown in the corner when scheduled.[CR]- Filters unsubscribed content when configured to do so.[CR]- Age rating filter, with children's titles exempt.[CR]- Displays categories, TV networks, posters, years, genres, cast, studios and age ratings where available.[CR]- Resume playback where you stopped, across films and episodes.[CR]- Marks watched titles, seasons and series.[CR]- Favourites and search history, kept between sessions.[CR]- Search across the whole cached catalogue.[CR]- Sort by date added, title or year.[CR]- Seasons and episodes always in ascending order.[CR]- Plays films and episodes through inputstream.adaptive, with Widevine where required.[CR]- English, Serbian and Bulgarian metadata.</news>
+    <news>[B]Features[/B][CR][CR]- Browses EON On Demand content from the API.[CR]- Uses the same account, session and device data as pvr.eon.[CR]- Movies, series, kids, documentaries, TV shows.[CR]- Caches the catalogue locally for faster browsing.[CR]- Manual and scheduled sync, with progress shown in the corner when scheduled.[CR]- Filters unsubscribed content when configured to do so.[CR]- Age rating filter, with children's titles exempt.[CR]- Resume playback, watched marks, favourites and search history.[CR]- Plays through inputstream.adaptive, with Widevine where required.</news>
     <assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
