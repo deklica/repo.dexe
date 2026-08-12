@@ -300,7 +300,7 @@ service.subtitles.titlovi
     <summary lang="en_GB">Browse and play EON On Demand</summary>
     <description lang="en_GB">Browses the EON On Demand catalogue and plays films and series in Kodi.[CR][CR]Uses the account, device and stream credentials already held by [B]pvr.eon[/B]. The VOD plugin does not store independent EON credentials and does not create a second EON device or session.[CR][CR]Install and configure [B]pvr.eon[/B] first, then open Live TV once so it can log in and save the session.</description>
     <disclaimer lang="en_GB">Unofficial add-on. Not affiliated with, endorsed by or supported by United Group, SBB, Telemach, Vivacom, Nova or any related company. A valid EON subscription is required. No content is provided or hosted by this add-on.</disclaimer>
-    <platform>all</platform>
+    <platform>linux android-armv7 android-aarch64</platform>
     <license>GPL-3.0-or-later</license>
     <language>en sr bg</language>
     <news>[B]Features[/B][CR][CR]- Browses EON On Demand content from the API.[CR]- Uses the same account, session and device data as pvr.eon.[CR]- Movies, series, kids, documentaries, TV shows.[CR]- Caches the catalogue locally for faster browsing.[CR]- Manual and scheduled sync, with progress shown in the corner when scheduled.[CR]- Filters unsubscribed content when configured to do so.[CR]- Age rating filter, with children's titles exempt.[CR]- Resume playback, watched marks, favourites and search history.[CR]- Plays through inputstream.adaptive, with Widevine where required.</news>
