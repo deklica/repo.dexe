@@ -1925,7 +1925,7 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
-<addon id="repository.iptvbalkan" name="IPTV Balkan repozitorijum" version="1.0.0" provider-name="IPTV Balkan">
+<addon id="repository.iptvbalkan" name="IPTV Balkan repozitorijum" version="1.0.1" provider-name="IPTV Balkan">
 	<extension point="xbmc.addon.repository" name="IPTV Balkan">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1943,7 +1943,7 @@ Every later version then arrives on its own.</description>
 Dodatak se instalira ovako: Dodaci → Instaliraj iz repozitorijuma → IPTV Balkan repozitorijum → Video dodaci → IPTV Balkan → Instaliraj.
 Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 		<platform>all</platform>
-		<license>GPL-3.0-or-later</license>
+		<license>Proprietary</license>
 		<assets>
 			<icon>icon.png</icon>
 			</assets>

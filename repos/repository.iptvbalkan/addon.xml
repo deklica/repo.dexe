@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.iptvbalkan" name="IPTV Balkan repozitorijum" version="1.0.0" provider-name="IPTV Balkan">
+<!--
+  The repository addon. Installed ONCE from a zip; after that Kodi checks it on its own and offers every
+  new version of IPTV Balkan without anyone copying a file anywhere.
+
+  The three URLs below are the whole contract, and they must be plain, stable, direct-download links —
+  which is exactly why this is not hosted on Google Drive. A Drive share link redirects, hands back an
+  HTML confirmation page for anything sizeable, and changes its file id on every re-upload; Kodi asks for
+  `addons.xml` and expects `addons.xml`, so all three of those break it. The files are served from a plain
+  static host; if it ever changes, the three URLs above change with it and every existing install has
+  to install the repository zip again — which is the one thing worth getting right the first time.
+
+  If the folder on the server ever moves, the three URLs above have to be changed HERE, by hand, and
+  `BASE_URL` in C:\Projects\kodi-iptvbox\pack.py has to be changed to match. This file is not generated:
+  pack.py reads it (for the version) and zips it, and it builds `addons.xml` — the index — from it and
+  from the addon's own manifest. The comment that used to sit here said the opposite, which would have
+  cost somebody an afternoon of wondering why their edit "kept being undone".
+
+  1.0.1 — THE VERSION WAS RAISED TO MIGRATE THE PEOPLE WHO WERE LEFT BEHIND.
+
+  Until now two different files shipped under the SAME version 1.0.0. One sent Kodi to
+  `raw.githubusercontent.com/darktvaddon/repo` (right); the other, still live on
+  `iptvbox-player.com/kodi/`, sent it back to that server — which has been stuck on the add-on's
+  1.23.0 since the move to GitHub. Anyone who installed the repository from the server has therefore
+  received NO update at all, quietly: everything "works" on their box, it simply never changes.
+
+  Kodi could not repair that by itself, and this is the part worth remembering: an add-on is only
+  offered an update when the version NUMBER rises. Both files said 1.0.0, so there was nothing to
+  offer — the wrong pointer was frozen in place by the very mechanism meant to fix it.
+
+  Hence 1.0.1. Published to BOTH trees, the stale boxes see a newer repository, update it, and from
+  that moment read GitHub. Once they have, the old channel can be retired.
+-->
+<addon id="repository.iptvbalkan"
+       name="IPTV Balkan repozitorijum"
+       version="1.0.1"
+       provider-name="IPTV Balkan">
   <extension point="xbmc.addon.repository" name="IPTV Balkan">
     <dir>
       <info compressed="false">https://raw.githubusercontent.com/darktvaddon/repo/main/addons.xml</info>
@@ -17,7 +52,7 @@ Every later version then arrives on its own.</description>
 Dodatak se instalira ovako: Dodaci → Instaliraj iz repozitorijuma → IPTV Balkan repozitorijum → Video dodaci → IPTV Balkan → Instaliraj.
 Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
     <platform>all</platform>
-    <license>GPL-3.0-or-later</license>
+    <license>Proprietary</license>
     <assets>
       <icon>icon.png</icon>
     </assets>
