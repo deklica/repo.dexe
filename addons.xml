@@ -240,7 +240,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.113" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.114" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementumorg" optional="true" />
@@ -752,7 +752,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="2.2.7">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="2.2.9">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -1981,7 +1981,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.98" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.99" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="plugin.video.elementum" optional="true"/>
@@ -2322,7 +2322,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctmgr" version="1.1.5a" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
+<addon id="script.module.acctmgr" version="1.1.6" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -2452,7 +2452,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.5.1" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.5.7" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2665,10 +2665,10 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.service.sponsorblock" version="0.6.0" name="SponsorBlock" provider-name="siku2">
+<addon id="script.service.sponsorblock" version="0.7.0" name="SponsorBlock" provider-name="siku2">
     <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.15.1"/>
-        <import addon="script.module.six" version="1.13.0"/>
         <import addon="plugin.video.youtube" version="6.7.0" optional="true"/>
         <import addon="plugin.video.invidious" version="2.1.1" optional="true"/>
     </requires>
@@ -2692,8 +2692,11 @@ SponsorBlock browser extension ported to Kodi's YouTube and Invidious plugins.
 SponsorBlock is a crowdsourced project to skip sponsor segments in YouTube videos.
 Users submit when a sponsor happens and the add-on automatically skips sponsors it knows about.
         </description>
-        <disclaimer lang="en_GB">This is an unoffical port of the SponsorBlock browser extension</disclaimer>
+        <disclaimer lang="en_GB">This is an unofficial port of the SponsorBlock browser extension</disclaimer>
         <news>
+- Support Kodi 19 through Kodi 21 and current YouTube add-on releases
+- Improve YouTube video detection after Kodi resolves a plugin URL to a stream
+- Improve player listener shutdown and playback transition handling
 - Get current player's time after a delay instead of relying on seek target (#28)
 - Add option to reduce all skips by some time (#30)
 - Ignore segments that do not fit into reduce skips setting (#31)

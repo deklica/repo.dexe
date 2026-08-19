@@ -463,11 +463,11 @@ repository.zeus768
 </addon>
 
 
-<addon id="skin.fentastic" version="100.0.32ad" name="FENtastic Plus"
+<addon id="skin.fentastic" version="100.0.33ad" name="FENtastic Plus"
 	provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" version="100.6.27a" />
+		<import addon="script.fentastic.helper" version="100.6.28a" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -505,7 +505,7 @@ Various other small tweaks and refinements throughout.</news>
 </addon>
 
 
-<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.27a" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.28a" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -2397,7 +2397,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.michaz" name="Michaz Repository" provider-name="Michaz" version="5.0">
+<addon id="repository.michaz" name="Michaz Repository" provider-name="Michaz" version="5.1">
 	<extension point="xbmc.addon.repository" name="Michaz Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2509,7 +2509,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.octopus" name="Octopus Repository" version="0.6.3" provider-name="Twiglet">
+<addon id="repository.octopus" name="Octopus Repository" version="0.6.4" provider-name="Twiglet">
 	<extension point="xbmc.addon.repository" name="Octopus Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -3669,7 +3669,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.zeus768" name="Zeus768 Repository" version="1.2.1" provider-name="zeus768">
+<addon id="repository.zeus768" name="Zeus768 Repository" version="1.2.2" provider-name="zeus768">
 	<extension point="xbmc.addon.repository" name="Zeus768 Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -3677,7 +3677,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
 	</extension>
-	<extension point="xbmc.addon.metadata">
+    <extension point="xbmc.addon.metadata">
 		<summary>Zeus768 Repository - Kodi Addons</summary>
 		<description>Zeus768 Kodi Addon Repository.
 

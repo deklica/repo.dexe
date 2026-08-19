@@ -1,143 +1,151 @@
 <settings>
-    <setting id="no_slide_animations" type="bool">false</setting>
     <setting id="osdautoclose" type="bool">false</setting>
-    <setting id="touchmode" type="bool">false</setting>
     <setting id="trailerplaying" type="bool">false</setting>
+    <setting id="no_slide_animations" type="bool">false</setting>
     <setting id="seekbarbottom" type="bool">false</setting>
-    <setting id="homeradionorecordings" type="bool">false</setting>
-    <setting id="hometvnorecordings" type="bool">false</setting>
-    <setting id="hometvnosearch" type="bool">false</setting>
-    <setting id="hometvnoguide" type="bool">false</setting>
-    <setting id="hometvnotimers" type="bool">false</setting>
-    <setting id="homeweathernodaily" type="bool">false</setting>
-    <setting id="homeradionosearch" type="bool">false</setting>
-    <setting id="homeradionocategories" type="bool">false</setting>
-    <setting id="homeweathernohourly" type="bool">false</setting>
-    <setting id="homeradionotimers" type="bool">false</setting>
-    <setting id="hometvnolastplayedchannels" type="bool">false</setting>
-    <setting id="homeradionoguide" type="bool">false</setting>
-    <setting id="homemusicvideosnocategories" type="bool">false</setting>
-    <setting id="hometvnocategories" type="bool">false</setting>
-    <setting id="homeradionolastplayedchannels" type="bool">false</setting>
+    <setting id="touchmode" type="bool">false</setting>
     <setting id="showvideoinfoonpause" type="bool">false</setting>
-    <setting id="homemenunotvshowsbutton" type="bool">false</setting>
     <setting id="stockestuaryvideoosd" type="bool">false</setting>
+    <setting id="enable.fullscreenwidgets" type="bool">false</setting>
+    <setting id="cinemalookfeel" type="bool">false</setting>
+    <setting id="homeaddonsnovideoaddons" type="bool">false</setting>
+    <setting id="homeaddonsnoprogramaddons" type="bool">false</setting>
+    <setting id="circle_rating" type="bool">false</setting>
+    <setting id="circle_userrating" type="bool">false</setting>
+    <setting id="homemenunomoviesbutton" type="bool">false</setting>
+    <setting id="homemenunotvshowsbutton" type="bool">false</setting>
     <setting id="homemenunocustom1button" type="bool">false</setting>
     <setting id="homemenunocustom2button" type="bool">false</setting>
-    <setting id="homemenunomoviesbutton" type="bool">false</setting>
+    <setting id="homemenunocustom3button" type="bool">false</setting>
     <setting id="homemenunocustom4button" type="bool">false</setting>
-    <setting id="enable.fullscreenwidgets" type="bool">false</setting>
-    <setting id="homeaddonsnoprogramaddons" type="bool">false</setting>
     <setting id="homemenunocustom5button" type="bool">false</setting>
     <setting id="homemenunocustom6button" type="bool">false</setting>
-    <setting id="homemenunocustom3button" type="bool">false</setting>
-    <setting id="circle_rating" type="bool">false</setting>
-    <setting id="homeaddonsnovideoaddons" type="bool">false</setting>
-    <setting id="circle_userrating" type="bool">false</setting>
-    <setting id="disable.widgetlabelratings" type="bool">false</setting>
-    <setting id="disable.imdbpopularrating" type="bool">false</setting>
-    <setting id="nofocusanimations" type="bool">false</setting>
-    <setting id="disable.rtarating" type="bool">false</setting>
-    <setting id="disable.imdbrating" type="bool">false</setting>
-    <setting id="enablewidgetfanart" type="bool">false</setting>
-    <setting id="show_weatherinfo" type="bool">false</setting>
-    <setting id="home_no_categories_label" type="bool">false</setting>
-    <setting id="show_profileboth" type="bool">false</setting>
-    <setting id="disable.rtcrating" type="bool">false</setting>
-    <setting id="disable.tmdbrating" type="bool">false</setting>
-    <setting id="show_profilename" type="bool">false</setting>
-    <setting id="noiconsilhouettes" type="bool">false</setting>
-    <setting id="show_profileavatar" type="bool">false</setting>
-    <setting id="disable.metacriticrating" type="bool">false</setting>
+    <setting id="homemusicnocategories" type="bool">false</setting>
+    <setting id="homemusicnorecentlyplayedalbums" type="bool">false</setting>
+    <setting id="homemusicnorecentlyaddedalbums" type="bool">false</setting>
+    <setting id="homemusicnorandomalbums" type="bool">false</setting>
+    <setting id="homemusicnorandomartists" type="bool">false</setting>
+    <setting id="homemusicnounplayedalbums" type="bool">false</setting>
+    <setting id="homemusicnomostplayedalbums" type="bool">false</setting>
+    <setting id="homeaddonsnocategories" type="bool">false</setting>
+    <setting id="homeaddonsnomusicaddons" type="bool">false</setting>
+    <setting id="homeaddonsnogameaddons" type="bool">false</setting>
+    <setting id="homeaddonsnoandroidapps" type="bool">false</setting>
+    <setting id="homeaddonsnopictureaddons" type="bool">false</setting>
     <setting id="homevideosnolibrary" type="bool">false</setting>
     <setting id="homevideosnosources" type="bool">false</setting>
     <setting id="homevideosnoplaylists" type="bool">false</setting>
-    <setting id="homemusicnocategories" type="bool">false</setting>
-    <setting id="homemusicnorecentlyaddedalbums" type="bool">false</setting>
-    <setting id="homemusicnorandomalbums" type="bool">false</setting>
-    <setting id="homemusicnorecentlyplayedalbums" type="bool">false</setting>
-    <setting id="homeaddonsnogameaddons" type="bool">false</setting>
-    <setting id="homeaddonsnoandroidapps" type="bool">false</setting>
-    <setting id="homemusicnorandomartists" type="bool">false</setting>
-    <setting id="homeaddonsnomusicaddons" type="bool">false</setting>
-    <setting id="homemusicnomostplayedalbums" type="bool">false</setting>
-    <setting id="homemusicnounplayedalbums" type="bool">false</setting>
-    <setting id="homeaddonsnopictureaddons" type="bool">false</setting>
-    <setting id="homeaddonsnocategories" type="bool">false</setting>
+    <setting id="hometvnocategories" type="bool">false</setting>
+    <setting id="hometvnolastplayedchannels" type="bool">false</setting>
+    <setting id="hometvnorecordings" type="bool">false</setting>
+    <setting id="hometvnotimers" type="bool">false</setting>
+    <setting id="hometvnoguide" type="bool">false</setting>
+    <setting id="hometvnosearch" type="bool">false</setting>
+    <setting id="homeradionocategories" type="bool">false</setting>
+    <setting id="homeradionolastplayedchannels" type="bool">false</setting>
+    <setting id="homeradionorecordings" type="bool">false</setting>
+    <setting id="homeradionotimers" type="bool">false</setting>
+    <setting id="homeradionoguide" type="bool">false</setting>
+    <setting id="homeradionosearch" type="bool">false</setting>
+    <setting id="homeweathernodaily" type="bool">false</setting>
+    <setting id="homeweathernohourly" type="bool">false</setting>
+    <setting id="homemusicvideosnocategories" type="bool">false</setting>
     <setting id="show_musicvideoposter" type="bool">false</setting>
     <setting id="homemusicvideosnorecentlyadded" type="bool">false</setting>
-    <setting id="disable.colorstudio" type="bool">false</setting>
-    <setting id="estuarylookfeel" type="bool">false</setting>
-    <setting id="hide_mediaflags" type="bool">false</setting>
-    <setting id="homemusicvideosnostudios" type="bool">false</setting>
-    <setting id="homemenunopicturesbutton" type="bool">false</setting>
-    <setting id="enablecategorywidgetfanart" type="bool">false</setting>
-    <setting id="disable.ratingsinf" type="bool">false</setting>
     <setting id="homemusicvideosnorandomartists" type="bool">false</setting>
     <setting id="homemusicvideosnorandomvideos" type="bool">false</setting>
-    <setting id="showraindrops" type="bool">false</setting>
-    <setting id="no_fanart" type="bool">false</setting>
+    <setting id="homemusicvideosnostudios" type="bool">false</setting>
+    <setting id="homemenunopicturesbutton" type="bool">false</setting>
     <setting id="fentastichybrid" type="bool">false</setting>
+    <setting id="disable.ratingsinf" type="bool">false</setting>
+    <setting id="hide_mediaflags" type="bool">false</setting>
+    <setting id="disable.colorstudio" type="bool">false</setting>
+    <setting id="no_fanart" type="bool">false</setting>
+    <setting id="estuarylookfeel" type="bool">false</setting>
+    <setting id="showraindrops" type="bool">false</setting>
     <setting id="enableaddonwidgetfanart" type="bool">false</setting>
-    <setting id="firsttimerun" type="bool">false</setting>
-    <setting id="enable.alternateaddoninfo" type="bool">false</setting>
-    <setting id="enable.alternateinfo" type="bool">false</setting>
-    <setting id="autoscroll" type="bool">false</setting>
-    <setting id="defaults.initialized" type="bool">true</setting>
+    <setting id="enablecategorywidgetfanart" type="bool">false</setting>
+    <setting id="enablewidgetfanart" type="bool">false</setting>
+    <setting id="disable.widgetlabelratings" type="bool">false</setting>
+    <setting id="disable.metacriticrating" type="bool">false</setting>
+    <setting id="disable.rtcrating" type="bool">false</setting>
+    <setting id="disable.rtarating" type="bool">false</setting>
+    <setting id="disable.imdbrating" type="bool">false</setting>
+    <setting id="disable.imdbpopularrating" type="bool">false</setting>
+    <setting id="disable.tmdbrating" type="bool">false</setting>
+    <setting id="nofocusanimations" type="bool">false</setting>
+    <setting id="noiconsilhouettes" type="bool">false</setting>
+    <setting id="home_no_categories_label" type="bool">false</setting>
+    <setting id="show_profilename" type="bool">false</setting>
+    <setting id="show_profileboth" type="bool">false</setting>
+    <setting id="show_profileavatar" type="bool">false</setting>
+    <setting id="show_weatherinfo" type="bool">false</setting>
     <setting id="homenosearchbutton" type="bool">false</setting>
-    <setting id="enable.topbarcustommenu" type="bool">false</setting>
     <setting id="enable.favourites" type="bool">false</setting>
-    <setting id="enable.maintenancetools" type="bool">true</setting>
     <setting id="enable.addonbrowser" type="bool">false</setting>
+    <setting id="enable.maintenancetools" type="bool">true</setting>
+    <setting id="enable.addoninfopanel" type="bool">false</setting>
+    <setting id="enable.addoncategorysideblade" type="bool">false</setting>
+    <setting id="hidemainmenudivider" type="bool">false</setting>
+    <setting id="classicfentastic" type="bool">false</setting>
+    <setting id="noiconmainmenu" type="bool">true</setting>
+    <setting id="nohighlightmainmenu" type="bool">false</setting>
+    <setting id="homemenunomusicbutton" type="bool">false</setting>
     <setting id="homemenunomusicvideobutton" type="bool">false</setting>
     <setting id="homemenunotvbutton" type="bool">false</setting>
     <setting id="homemenunoradiobutton" type="bool">false</setting>
-    <setting id="nohighlightmainmenu" type="bool">false</setting>
-    <setting id="homemenunovideosbutton" type="bool">false</setting>
-    <setting id="enable.addoncategorysideblade" type="bool">false</setting>
-    <setting id="enable.addoninfopanel" type="bool">false</setting>
-    <setting id="hidemainmenudivider" type="bool">false</setting>
-    <setting id="homemenunofavbutton" type="bool">false</setting>
-    <setting id="homemenunoweatherbutton" type="bool">false</setting>
-    <setting id="noiconmainmenu" type="bool">true</setting>
     <setting id="homemenunogamesbutton" type="bool">false</setting>
     <setting id="homemenunoprogramsbutton" type="bool">false</setting>
-    <setting id="homemenunomusicbutton" type="bool">false</setting>
-    <setting id="classicfentastic" type="bool">false</setting>
+    <setting id="homemenunovideosbutton" type="bool">false</setting>
+    <setting id="homemenunofavbutton" type="bool">false</setting>
+    <setting id="homemenunoweatherbutton" type="bool">false</setting>
+    <setting id="enable.topbarcustommenu" type="bool">false</setting>
+    <setting id="enable.alternateinfo" type="bool">false</setting>
+    <setting id="autoscroll" type="bool">false</setting>
+    <setting id="enable.alternateaddoninfo" type="bool">false</setting>
+    <setting id="defaults.initialized" type="bool">true</setting>
+    <setting id="firsttimerun" type="bool">false</setting>
     <setting id="enable.oneclicktrailers" type="bool">false</setting>
-    <setting id="MenuCustom3LabelDB" type="string">Custom 3</setting>
-    <setting id="powerbuttonmode" type="string">Show Shutdown Menu</setting>
-    <setting id="topbarcustommenuicon" type="string">icons/system.png</setting>
-    <setting id="MenuCustom2LabelDB" type="string">Custom 2</setting>
-    <setting id="MenuCustom1LabelDB" type="string">Custom 1</setting>
-    <setting id="currentskincolor" type="string"></setting>
-    <setting id="MenuCustom4LabelDB" type="string">Custom 4</setting>
-    <setting id="homefanart.path" type="string"></setting>
-    <setting id="MenuTVShowLabelDB" type="string">TV shows</setting>
-    <setting id="WeatherFanart.ext" type="string"></setting>
-    <setting id="MenuMovieLabelDB" type="string">Movies</setting>
-    <setting id="searchbehavior" type="string">1</setting>
-    <setting id="MenuCustom5LabelDB" type="string">Custom 5</setting>
-    <setting id="MovieGenreFanart.ext" type="string"></setting>
-    <setting id="WeatherFanart.path" type="string"></setting>
-    <setting id="customlogo" type="string"></setting>
-    <setting id="MenuCustom6LabelDB" type="string">Custom 6</setting>
-    <setting id="HomeFanart.ext" type="string"></setting>
-    <setting id="installed_version" type="string">100.0.32</setting>
-    <setting id="stackedwidgetitemlimit" type="string">20</setting>
+    <setting id="osdautoclosetime" type="string"></setting>
+    <setting id="current_search_provider" type="string">0</setting>
+    <setting id="searchhistory.limit" type="string">5</setting>
     <setting id="widgetitemlimit" type="string">20</setting>
     <setting id="categorywidgetitemlimit" type="string">20</setting>
+    <setting id="stackedwidgetitemlimit" type="string">20</setting>
     <setting id="defaultbackgroundbrightness" type="string">Medium</setting>
+    <setting id="defaultfanartbrightness" type="string">Medium</setting>
     <setting id="defaultraindropbrightness" type="string">Medium</setting>
+    <setting id="backup_directory" type="string">special://home/backups/FENtastic_Plus/</setting>
     <setting id="osdaudiobuttonmode" type="string">Next audio stream</setting>
     <setting id="osdsubtitlebuttonmode" type="string">Subtitle settings</setting>
     <setting id="mdblist_api_key" type="string"></setting>
     <setting id="custombackground" type="string"></setting>
-    <setting id="current_search_provider" type="string">0</setting>
-    <setting id="searchhistory.limit" type="string">5</setting>
-    <setting id="defaultfanartbrightness" type="string">Medium</setting>
-    <setting id="backup_directory" type="string">special://home/backups/FENtastic_Plus/</setting>
+    <setting id="defaultbackgrounddiffusebrightness" type="string"></setting>
     <setting id="MovieGenreFanart.path" type="string"></setting>
-    <setting id="osdautoclosetime" type="string"></setting>
+    <setting id="MovieGenreFanart.ext" type="string"></setting>
+    <setting id="defaulthomebackgroundbrightness" type="string"></setting>
+    <setting id="homecustombackground" type="string"></setting>
+    <setting id="defaulthomebackgrounddiffusebrightness" type="string"></setting>
+    <setting id="WeatherFanart.path" type="string"></setting>
+    <setting id="WeatherFanart.ext" type="string"></setting>
+    <setting id="homefanart.path" type="string"></setting>
+    <setting id="HomeFanart.ext" type="string"></setting>
+    <setting id="searchbehavior" type="string">1</setting>
+    <setting id="powerbuttonmode" type="string">Show Shutdown Menu</setting>
+    <setting id="TopBarCustomMenuLabel" type="string"></setting>
+    <setting id="customlogo" type="string"></setting>
+    <setting id="currentskincolor" type="string"></setting>
+    <setting id="topbarcustommenuicon" type="string">icons/system.png</setting>
+    <setting id="installed_version" type="string">100.0.32b</setting>
+    <setting id="MenuMovieLabelDB" type="string">Movies</setting>
+    <setting id="MenuTVShowLabelDB" type="string">TV Shows</setting>
+    <setting id="MenuCustom1LabelDB" type="string">Custom 1</setting>
+    <setting id="MenuCustom2LabelDB" type="string">Custom 2</setting>
+    <setting id="MenuCustom3LabelDB" type="string">Custom 3</setting>
+    <setting id="MenuCustom4LabelDB" type="string">Custom 4</setting>
+    <setting id="MenuCustom5LabelDB" type="string">Custom 5</setting>
+    <setting id="MenuCustom6LabelDB" type="string">Custom 6</setting>
+    <setting id="movie.main_menu_icon" type="string"></setting>
+    <setting id="tvshow.main_menu_icon" type="string"></setting>
     <setting id="listfocusstyle" type="string">Default</setting>
 </settings>

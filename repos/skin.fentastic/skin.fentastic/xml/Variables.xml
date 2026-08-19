@@ -372,9 +372,9 @@
 		<value condition="Container(9000).HasFocus(3)">$LOCALIZE[31612]</value>
 		<value condition="Container(9000).HasFocus(4)">$LOCALIZE[31613]</value>
 		<value condition="Container(9000).HasFocus(5)">$LOCALIZE[31129]</value>
-		<value condition="Container(9000).HasFocus(6)">$LOCALIZE[31614]</value>
-		<value condition="Container(9000).HasFocus(7)">$LOCALIZE[31169]</value>
-		<value condition="Container(9000).HasFocus(8)">$LOCALIZE[31615]</value>
+		<value condition="Container(9000).HasFocus(6)">$LOCALIZE[31169]</value>
+		<value condition="Container(9000).HasFocus(7)">$LOCALIZE[31615]</value>
+		<value condition="Container(9000).HasFocus(8)">$LOCALIZE[31614]</value>
 		<value condition="Container(9000).HasFocus(9)">$LOCALIZE[31171]</value>
 		<value condition="Container(9000).HasFocus(10)">$LOCALIZE[31616]</value>
 		<value condition="Container(9000).HasFocus(11)">$LOCALIZE[31617]</value>
@@ -458,9 +458,9 @@
 		<value condition="!String.IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Container(9000).ListItem.Property(id)]$INFO[Skin.String(HomeFanart.ext)]</value>
 	</variable>
 	<variable name="HomeCategoryFanartVar">
-		<value condition="!Skin.HasSetting(no_fanart) + !Skin.HasSetting(EnableCategoryWidgetFanart) + [Control.HasFocus(19011) | Control.HasFocus(19014) | Control.HasFocus(22011) | Control.HasFocus(22014)]">$VAR[CustomBackgroundImage]</value>
+		<value condition="!Skin.HasSetting(no_fanart) + !Skin.HasSetting(EnableCategoryWidgetFanart) + [Control.HasFocus(19011) | Control.HasFocus(19014) | Control.HasFocus(22011) | Control.HasFocus(22014)]">$VAR[HomeCustomBackgroundImage]</value>
 		<value condition="!Skin.HasSetting(no_fanart)">$VAR[HomeFanartVar]</value>
-		<value>$VAR[CustomBackgroundImage]</value>
+		<value>$VAR[HomeCustomBackgroundImage]</value>
 	</variable>
 	<variable name="HomeFanartVar">
 		<value condition="Window.IsActive(musicinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo)">$INFO[Window(home).Property(infobackground)]</value>
@@ -700,6 +700,10 @@
 		<value>[B]$LOCALIZE[1223][/B]</value>
 	</variable>
 	<!-- MY VARIABLES -->
+	<variable name="HomeCustomBackgroundImage">
+		<value condition="!String.IsEmpty(Skin.String(HomeCustomBackground))">$INFO[Skin.String(HomeCustomBackground)]</value>
+		<value>special://skin/extras/backgrounds/redblur.jpg</value>
+	</variable>
 	<variable name="CustomBackgroundImage">
 		<value condition="!String.IsEmpty(Skin.String(CustomBackground))">$INFO[Skin.String(CustomBackground)]</value>
 		<value>special://skin/extras/backgrounds/redblur.jpg</value>
@@ -712,15 +716,34 @@
 		<value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
-	<variable name="HomeBackgroundDiffuseVar">
-		<value condition="Skin.HasSetting(EstuaryLookFeel)">primary_background</value>
+	<variable name="BackgroundDiffuseVar">
+		<value condition="!String.IsEmpty(Skin.String(DefaultBackgroundDiffuseBrightness)) + !String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),Off)">primary_background</value>
 		<value>$VAR[BackgroundBrightnessVar]</value>
+	</variable>
+	<variable name="HomeBackgroundDiffuseVar">
+		<value condition="!String.IsEmpty(Skin.String(DefaultHomeBackgroundDiffuseBrightness)) + !String.IsEqual(Skin.String(DefaultHomeBackgroundDiffuseBrightness),Off)">primary_background</value>
+		<value>$VAR[HomeBackgroundBrightnessVar]</value>
+	</variable>
+	<variable name="BackgroundDiffuseBrightnessLabelVar">
+		<value condition="!String.IsEmpty(Skin.String(DefaultBackgroundDiffuseBrightness))">$INFO[Skin.String(DefaultBackgroundDiffuseBrightness)]</value>
+		<value>Off</value>
+	</variable>
+	<variable name="HomeBackgroundDiffuseBrightnessLabelVar">
+		<value condition="!String.IsEmpty(Skin.String(DefaultHomeBackgroundDiffuseBrightness))">$INFO[Skin.String(DefaultHomeBackgroundDiffuseBrightness)]</value>
+		<value>Off</value>
 	</variable>
 	<variable name="BackgroundBrightnessVar">
 		<value condition="String.IsEqual(Skin.String(DefaultBackgroundBrightness),Highest)">E6FFFFFF</value>
 		<value condition="String.IsEqual(Skin.String(DefaultBackgroundBrightness),High)">CCFFFFFF</value>
 		<value condition="String.IsEqual(Skin.String(DefaultBackgroundBrightness),Medium)">99FFFFFF</value>
 		<value condition="String.IsEqual(Skin.String(DefaultBackgroundBrightness),Low)">4DFFFFFF</value>
+		<value>99FFFFFF</value>
+	</variable>
+	<variable name="HomeBackgroundBrightnessVar">
+		<value condition="String.IsEqual(Skin.String(DefaultHomeBackgroundBrightness),Highest)">E6FFFFFF</value>
+		<value condition="String.IsEqual(Skin.String(DefaultHomeBackgroundBrightness),High)">CCFFFFFF</value>
+		<value condition="String.IsEqual(Skin.String(DefaultHomeBackgroundBrightness),Medium)">99FFFFFF</value>
+		<value condition="String.IsEqual(Skin.String(DefaultHomeBackgroundBrightness),Low)">4DFFFFFF</value>
 		<value>99FFFFFF</value>
 	</variable>
 	<variable name="FanartBrightnessVar">
@@ -1161,21 +1184,9 @@
 		<value condition="!String.IsEmpty(ListItem.Premiered) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Premiered,[B]Aired: [/B]][CR]</value>
 	</variable>
 	<!-- MPAA Rating -->
-	<variable name="_Year_Season">
-		<value condition="!String.IsEmpty(ListItem.Year) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Year]</value>
-		<value condition="!String.IsEmpty(ListItem.Premiered) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Premiered]</value>
-		<value condition="!String.IsEmpty(ListItem.Year) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Year,[B]Released: [/B]][CR]</value>
-		<value condition="!String.IsEmpty(ListItem.Premiered) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Premiered,[B]Aired: [/B]][CR]</value>
-	</variable>
 	<variable name="_Mpaa_Season">
-		<value condition="!String.IsEmpty(ListItem.Mpaa) + [!String.IsEmpty(ListItem.Year) | !String.IsEmpty(ListItem.Premiered)] + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Mpaa,[B] • [/B]]</value>
 		<value condition="!String.IsEmpty(ListItem.Mpaa) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Mpaa]</value>
 		<value condition="!String.IsEmpty(ListItem.Mpaa) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Mpaa,[B]Rated: [/B]][CR]</value>
-	</variable>
-	<variable name="_Network_Season">
-		<value condition="!String.IsEmpty(ListItem.Studio) + [!String.IsEmpty(ListItem.Year) | !String.IsEmpty(ListItem.Premiered) | !String.IsEmpty(ListItem.Mpaa)] + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Studio,[B] • [/B]]</value>
-		<value condition="!String.IsEmpty(ListItem.Studio) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Studio]</value>
-		<value condition="!String.IsEmpty(ListItem.Studio) + !Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Studio,[B]Network: [/B]][CR]</value>
 	</variable>
 	<variable name="_Mpaa">
 		<value condition="!String.IsEmpty(ListItem.Mpaa) + Skin.HasSetting(Enable.AlternateInfo)">$INFO[ListItem.Mpaa,[B] • [/B]]</value>
@@ -1318,9 +1329,10 @@
 	</variable>
 	<!-- FENtastic Look & Feel Experience -->
 	<variable name="LookFeelLabel">
-		<value condition="Skin.HasSetting(EstuaryLookFeel)">Estuary</value>
-		<value condition="Skin.HasSetting(ClassicFENtastic)">Classic FENtastic</value>
 		<value condition="Skin.HasSetting(FENtasticHybrid)">FENtastic Hybrid</value>
+		<value condition="Skin.HasSetting(ClassicFENtastic)">Classic FENtastic</value>
+		<value condition="Skin.HasSetting(CinemaLookFeel)">Cinema</value>
+		<value condition="Skin.HasSetting(EstuaryLookFeel)">Estuary</value>
 		<value>FENtastic Plus</value>
 	</variable>
 	<!-- OSD Audio Button Behaviour -->

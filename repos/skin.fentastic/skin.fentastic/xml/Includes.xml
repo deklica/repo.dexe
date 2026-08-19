@@ -1217,13 +1217,34 @@
 		<height>100</height>
 		<width>auto</width>
 	</include>
+	<include name="BackgroundDiffuseBrightness">
+		<animation effect="fade" start="100" end="5" time="0" condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),10%)">Conditional</animation>
+		<animation effect="fade" start="100" end="15" time="0" condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),20%)">Conditional</animation>
+		<animation effect="fade" start="100" end="25" time="0" condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),30%)">Conditional</animation>
+		<animation effect="fade" start="100" end="35" time="0" condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),40%)">Conditional</animation>
+		<animation effect="fade" start="100" end="45" time="0" condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),50%)">Conditional</animation>
+		<animation effect="fade" start="100" end="55" time="0" condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),60%)">Conditional</animation>
+		<animation effect="fade" start="100" end="65" time="0" condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),70%)">Conditional</animation>
+		<animation effect="fade" start="100" end="75" time="0" condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),80%)">Conditional</animation>
+		<animation effect="fade" start="100" end="85" time="0" condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),90%)">Conditional</animation>
+		<animation effect="fade" start="100" end="95" time="0" condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),100%)">Conditional</animation>
+	</include>
 	<include name="ColoredBackgroundImages">
 		<control type="image">
 			<visible>![Window.IsActive(home) | Window.IsActive(1121)] + [Skin.HasSetting(no_fanart) | String.IsEmpty(Listitem.Art(fanart))] + !Player.HasMedia + !Skin.HasSetting(TrailerPlaying) + Skin.HasSetting(EstuaryLookFeel)</visible>
 			<depth>-0.99</depth>
 			<include>FullScreenDimensions</include>
 			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="$VAR[HomeBackgroundDiffuseVar]" fallback="special://skin/extras/backgrounds/estuary.jpg">$VAR[CustomBackgroundImage]</texture>
+			<texture colordiffuse="$VAR[BackgroundBrightnessVar]" fallback="special://skin/extras/backgrounds/estuary.jpg">$VAR[CustomBackgroundImage]</texture>
+		</control>
+		<control type="image">
+			<visible>![Window.IsActive(home) | Window.IsActive(1121)] + [Skin.HasSetting(no_fanart) | String.IsEmpty(Listitem.Art(fanart))] + !Player.HasMedia + !Skin.HasSetting(TrailerPlaying) + Skin.HasSetting(EstuaryLookFeel)</visible>
+			<visible>!String.IsEmpty(Skin.String(DefaultBackgroundDiffuseBrightness)) + !String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),Off)</visible>
+			<depth>-0.99</depth>
+			<include>FullScreenDimensions</include>
+			<include>BackgroundDiffuseBrightness</include>
+			<aspectratio>scale</aspectratio>
+			<texture colordiffuse="primary_background" fallback="special://skin/extras/backgrounds/estuary.jpg">$VAR[CustomBackgroundImage]</texture>
 		</control>
 		<control type="image">
 			<visible>![Window.IsActive(home) | Window.IsActive(1121)] + [Skin.HasSetting(no_fanart) | String.IsEmpty(Listitem.Art(fanart))] + !Player.HasMedia + !Skin.HasSetting(TrailerPlaying) + !Skin.HasSetting(EstuaryLookFeel)</visible>
@@ -1233,11 +1254,29 @@
 			<texture colordiffuse="$VAR[BackgroundBrightnessVar]" fallback="special://skin/extras/backgrounds/redblur.png">$VAR[CustomBackgroundImage]</texture>
 		</control>
 		<control type="image">
+			<visible>![Window.IsActive(home) | Window.IsActive(1121)] + [Skin.HasSetting(no_fanart) | String.IsEmpty(Listitem.Art(fanart))] + !Player.HasMedia + !Skin.HasSetting(TrailerPlaying) + !Skin.HasSetting(EstuaryLookFeel)</visible>
+			<visible>!String.IsEmpty(Skin.String(DefaultBackgroundDiffuseBrightness)) + !String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),Off)</visible>
+			<depth>DepthBackground</depth>
+			<include>FullScreenDimensions</include>
+			<include>BackgroundDiffuseBrightness</include>
+			<aspectratio>scale</aspectratio>
+			<texture colordiffuse="primary_background" fallback="special://skin/extras/backgrounds/redblur.png">$VAR[CustomBackgroundImage]</texture>
+		</control>
+		<control type="image">
 			<visible>![Window.IsActive(home) | Window.IsActive(1121)] + Player.HasMedia + !Skin.HasSetting(TrailerPlaying) + Skin.HasSetting(EstuaryLookFeel)</visible>
 			<depth>-0.99</depth>
 			<include>FullScreenDimensions</include>
 			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="$VAR[HomeBackgroundDiffuseVar]" fallback="special://skin/extras/backgrounds/estuary.jpg">$VAR[CustomBackgroundImage]</texture>
+			<texture colordiffuse="$VAR[BackgroundBrightnessVar]" fallback="special://skin/extras/backgrounds/estuary.jpg">$VAR[CustomBackgroundImage]</texture>
+		</control>
+		<control type="image">
+			<visible>![Window.IsActive(home) | Window.IsActive(1121)] + Player.HasMedia + !Skin.HasSetting(TrailerPlaying) + Skin.HasSetting(EstuaryLookFeel)</visible>
+			<visible>!String.IsEmpty(Skin.String(DefaultBackgroundDiffuseBrightness)) + !String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),Off)</visible>
+			<depth>-0.99</depth>
+			<include>FullScreenDimensions</include>
+			<include>BackgroundDiffuseBrightness</include>
+			<aspectratio>scale</aspectratio>
+			<texture colordiffuse="primary_background" fallback="special://skin/extras/backgrounds/estuary.jpg">$VAR[CustomBackgroundImage]</texture>
 		</control>
 		<control type="image">
 			<visible>![Window.IsActive(home) | Window.IsActive(1121)] + Player.HasMedia + !Skin.HasSetting(TrailerPlaying) + !Skin.HasSetting(EstuaryLookFeel)</visible>
@@ -1245,6 +1284,15 @@
 			<include>FullScreenDimensions</include>
 			<aspectratio>scale</aspectratio>
 			<texture colordiffuse="$VAR[BackgroundBrightnessVar]" fallback="special://skin/extras/backgrounds/redblur.png">$VAR[CustomBackgroundImage]</texture>
+		</control>
+		<control type="image">
+			<visible>![Window.IsActive(home) | Window.IsActive(1121)] + Player.HasMedia + !Skin.HasSetting(TrailerPlaying) + !Skin.HasSetting(EstuaryLookFeel)</visible>
+			<visible>!String.IsEmpty(Skin.String(DefaultBackgroundDiffuseBrightness)) + !String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),Off)</visible>
+			<depth>DepthBackground</depth>
+			<include>FullScreenDimensions</include>
+			<include>BackgroundDiffuseBrightness</include>
+			<aspectratio>scale</aspectratio>
+			<texture colordiffuse="primary_background" fallback="special://skin/extras/backgrounds/redblur.png">$VAR[CustomBackgroundImage]</texture>
 		</control>
 	</include>
 	<include name="DefaultBackground">
@@ -1474,6 +1522,28 @@
 				<info>Player.Progress</info>
 				<action>seek</action>
 				<visible>Control.HasFocus(87) + Player.SeekEnabled</visible>
+			</control>
+		</definition>
+	</include>
+	<!-- Estuary Panel -->
+	<include name="EstuaryContentPanel">
+		<param name="width">535</param>
+		<param name="left">-40</param>
+		<param name="right"></param>
+		<param name="top">-10%</param>
+		<param name="height">120%</param>
+		<param name="flipx">false</param>
+		<definition>
+			<control type="image">
+				<texture flipx="$PARAM[flipx]" colordiffuse="EDFFFFFF">lists/panel.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<width>$PARAM[width]</width>
+				<left>$PARAM[left]</left>
+				<right>$PARAM[right]</right>
+				<top>$PARAM[top]</top>
+				<height>$PARAM[height]</height>
+				<visible>!Skin.HasSetting(FENtasticHybrid) + Skin.HasSetting(EstuaryLookFeel)</visible>
 			</control>
 		</definition>
 	</include>

@@ -60,12 +60,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="61004">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -93,12 +93,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6244">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -136,12 +136,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6254">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -179,12 +179,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6264">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -222,12 +222,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6274">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -265,12 +265,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6284">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -308,12 +308,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6294">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -351,12 +351,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6304">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -394,12 +394,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6314">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -437,12 +437,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6324">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -819,12 +819,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="63805">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -952,12 +952,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="63824">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -1026,12 +1026,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="63713">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -1056,12 +1056,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="63717">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -1190,18 +1190,44 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="63732">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
+					<aligny>center</aligny>
+					<onclick>noop</onclick>
+					<enable>false</enable>
+				</control>
+				<!-- SET BACKUP DIRECTORY -->
+				<control type="button" id="63733">
+					<label>Set backup directory</label>
+					<label2>$INFO[Skin.String(backup_directory)]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=set_backup_directory)</onclick>
+				</control>
+				<!-- RESET BACKUP DIRECTORY -->
+				<control type="button" id="63734">
+					<label>Reset backup directory</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetString(backup_directory,special://home/backups/FENtastic_Plus/)</onclick>
+					<onclick>Notification(FENtastic Plus,Backup directory reset to default,3000)</onclick>
+				</control>
+				<!-- SEPARATOR -->
+				<control type="button" id="63735">
+					<height>3</height>
+					<left>25</left>
+					<right>25</right>
+					<label/>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
 				</control>
 				<!-- ENABLE/DISABLE KODI SPLASH -->
-				<control type="radiobutton" id="63733">
+				<control type="radiobutton" id="63736">
 					<label>Disable kodi splash</label>
 					<include>DefaultSettingButton</include>
 					<!-- Selected = Splash Disabled -->
@@ -1212,20 +1238,6 @@
 					<onclick condition="!Skin.HasSetting(NoSplash)">RunScript(script.fentastic.helper,mode=splash_off)</onclick>
 					<!-- Run splash_on when disabled -->
 					<onclick condition="Skin.HasSetting(NoSplash)">RunScript(script.fentastic.helper,mode=splash_on)</onclick>
-				</control>
-				<!-- SET BACKUP DIRECTORY -->
-				<control type="button" id="63734">
-					<label>Set backup directory</label>
-					<label2>$INFO[Skin.String(backup_directory)]</label2>
-					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.helper,mode=set_backup_directory)</onclick>
-				</control>
-				<!-- RESET BACKUP DIRECTORY -->
-				<control type="button" id="63735">
-					<label>Reset backup directory</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.SetString(backup_directory,special://home/backups/FENtastic_Plus/)</onclick>
-					<onclick>Notification(FENtastic Plus,Backup directory reset to default,3000)</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="647">
@@ -1254,15 +1266,92 @@
 					<onclick>$VAR[CurrentSearchProviderToggleVar]</onclick>
 					<visible>!Skin.HasSetting(HomeNoSearchButton)</visible>
 				</control>
-				<control type="radiobutton" id="64703">
-					<label>Show search window help text</label>
+				<control type="button" id="64702">
+					<label>Home search button behavior</label>
+					<label2>$VAR[SearchBehaviorLabelVar]</label2>
 					<include>DefaultSettingButton</include>
-					<selected>Skin.HasSetting(show_search_help)</selected>
-					<onclick>Skin.ToggleSetting(show_search_help)</onclick>
-					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow) + !Skin.HasSetting(DefaultSearchWindowBehavior)</visible>
+					<onclick>$VAR[SearchBehaviorToggleVar]</onclick>
+					<visible>!Skin.HasSetting(HomeNoSearchButton)</visible>
+				</control>
+				<control type="radiobutton" id="64703">
+					<label>   - Movies</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(HideMovieResults)</onclick>
+					<selected>!Skin.HasSetting(HideMovieResults)</selected>
+					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="64704">
+					<label>   - TV Shows</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(HideTVShowResults)</onclick>
+					<selected>!Skin.HasSetting(HideTVShowResults)</selected>
+					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="64705">
+					<label>   - Anime</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(HideAnimeResults)</onclick>
+					<selected>!Skin.HasSetting(HideAnimeResults)</selected>
+					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow) + [String.IsEqual(Skin.String(current_search_provider),1) | String.IsEqual(Skin.String(current_search_provider),4) | String.IsEqual(Skin.String(current_search_provider),5)]</visible>
+				</control>
+				<control type="radiobutton" id="64706">
+					<label>   - Collections</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(HideCollectionsResults)</onclick>
+					<selected>!Skin.HasSetting(HideCollectionsResults)</selected>
+					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow) + [String.IsEqual(Skin.String(current_search_provider),0) | String.IsEqual(Skin.String(current_search_provider),3)]</visible>
+				</control>
+				<control type="radiobutton" id="64707">
+					<label>   - Keywords</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(HideKeywordResults)</onclick>
+					<selected>!Skin.HasSetting(HideKeywordResults)</selected>
+					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow) + String.IsEqual(Skin.String(current_search_provider),0)</visible>
+				</control>
+				<control type="radiobutton" id="64708">
+					<label>   - Trakt Lists</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(HideTraktResults)</onclick>
+					<selected>!Skin.HasSetting(HideTraktResults)</selected>
+					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow) + [String.IsEqual(Skin.String(current_search_provider),1) | String.IsEqual(Skin.String(current_search_provider),3) | String.IsEqual(Skin.String(current_search_provider),4) | String.IsEqual(Skin.String(current_search_provider),5)]</visible>
+				</control>
+				<!-- TRAKT LISTS - TMDBH ONLY -->
+				<control type="radiobutton" id="64709">
+					<label>   - Trakt Lists    (Authorize Trakt to use the feature)</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(HideTMDBHTraktResults)</onclick>
+					<selected>!Skin.HasSetting(HideTMDBHTraktResults)</selected>
+					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow) + String.IsEqual(Skin.String(current_search_provider),0)</visible>
+				</control>
+				<control type="radiobutton" id="64710">
+					<label>   - TRAKT Lists (Movies)</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(HideUmbrellaTraktMovieResults)</onclick>
+					<selected>!Skin.HasSetting(HideUmbrellaTraktMovieResults)</selected>
+					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow) + String.IsEqual(Skin.String(current_search_provider),2)</visible>
+				</control>
+				<control type="radiobutton" id="64711">
+					<label>   - TRAKT Lists (TV Shows)</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(HideUmbrellaTraktTVResults)</onclick>
+					<selected>!Skin.HasSetting(HideUmbrellaTraktTVResults)</selected>
+					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow) + String.IsEqual(Skin.String(current_search_provider),2)</visible>
+				</control>
+				<!-- SEPARATOR -->
+				<control type="button" id="64712">
+					<height>3</height>
+					<left>25</left>
+					<right>25</right>
+					<label/>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
+					<aligny>center</aligny>
+					<onclick>noop</onclick>
+					<enable>false</enable>
+					<visible>!Skin.HasSetting(HomeNoSearchButton)</visible>
 				</control>
 				<!-- SEARCH HISTORY LIMIT -->
-				<control type="button" id="64704">
+				<control type="button" id="64713">
 					<label>Number of search history items to display</label>
 					<label2>$INFO[Skin.String(searchhistory.limit)]</label2>
 					<include>DefaultSettingButton</include>
@@ -1273,89 +1362,31 @@
 					<onclick condition="Integer.IsEqual(Skin.String(searchhistory.limit),20)">Skin.SetString(searchhistory.limit,5)</onclick>
 					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow)</visible>
 				</control>
-				<control type="button" id="64705">
-					<label>Home search button behavior</label>
-					<label2>$VAR[SearchBehaviorLabelVar]</label2>
-					<include>DefaultSettingButton</include>
-					<onclick>$VAR[SearchBehaviorToggleVar]</onclick>
-					<visible>!Skin.HasSetting(HomeNoSearchButton)</visible>
-				</control>
-				<control type="radiobutton" id="64706">
-					<label>   - $LOCALIZE[342]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(HideMovieResults)</onclick>
-					<selected>!Skin.HasSetting(HideMovieResults)</selected>
-					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow)</visible>
-				</control>
-				<control type="radiobutton" id="64707">
-					<label>   - TV Shows</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(HideTVShowResults)</onclick>
-					<selected>!Skin.HasSetting(HideTVShowResults)</selected>
-					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow)</visible>
-				</control>
-				<control type="radiobutton" id="64708">
-					<label>   - Anime</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(HideAnimeResults)</onclick>
-					<selected>!Skin.HasSetting(HideAnimeResults)</selected>
-					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow)</visible>
-					<enable>String.IsEqual(Skin.String(current_search_provider),1) | String.IsEqual(Skin.String(current_search_provider),4) | String.IsEqual(Skin.String(current_search_provider),5)</enable>
-				</control>
-				<control type="radiobutton" id="64709">
-					<label>   - Collections</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(HideCollectionsResults)</onclick>
-					<selected>!Skin.HasSetting(HideCollectionsResults)</selected>
-					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow)</visible>
-					<enable>String.IsEqual(Skin.String(current_search_provider),0) | String.IsEqual(Skin.String(current_search_provider),3)</enable>
-				</control>
-				<control type="radiobutton" id="64713">
-					<label>   - Keywords</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(HideKeywordResults)</onclick>
-					<selected>!Skin.HasSetting(HideKeywordResults)</selected>
-					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow)</visible>
-					<enable>String.IsEqual(Skin.String(current_search_provider),0)</enable>
-				</control>
-				<control type="radiobutton" id="64716">
-					<label>   - Trakt Lists</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(HideTraktResults)</onclick>
-					<selected>!Skin.HasSetting(HideTraktResults)</selected>
-					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow)</visible>
-					<enable>String.IsEqual(Skin.String(current_search_provider),1) | String.IsEqual(Skin.String(current_search_provider),3) | String.IsEqual(Skin.String(current_search_provider),4) | String.IsEqual(Skin.String(current_search_provider),5)</enable>
-				</control>
-				<!-- TRAKT LISTS - TMDBH ONLY -->
-				<control type="radiobutton" id="64717">
-					<label>   - Trakt Lists    (Authorize Trakt to use the feature)</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(HideTMDBHTraktResults)</onclick>
-					<selected>Skin.HasSetting(HideTMDBHTraktResults)</selected>
-					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow)</visible>
-					<enable>String.IsEqual(Skin.String(current_search_provider),0)</enable>
-				</control>
-				<control type="radiobutton" id="64718">
-					<label>   - TRAKT Lists (Movies)</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(HideUmbrellaTraktMovieResults)</onclick>
-					<selected>!Skin.HasSetting(HideUmbrellaTraktMovieResults)</selected>
-					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow)</visible>
-					<enable>String.IsEqual(Skin.String(current_search_provider),2)</enable>
-				</control>
-				<control type="radiobutton" id="64719">
-					<label>   - TRAKT Lists (TV Shows)</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(HideUmbrellaTraktTVResults)</onclick>
-					<selected>!Skin.HasSetting(HideUmbrellaTraktTVResults)</selected>
-					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow)</visible>
-					<enable>String.IsEqual(Skin.String(current_search_provider),2)</enable>
-				</control>
-				<control type="button" id="64720">
+				<control type="button" id="64714">
 					<label>Clear search history</label>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=remove_all_spaths)</onclick>
 					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<!-- SEPARATOR -->
+				<control type="button" id="64715">
+					<height>3</height>
+					<left>25</left>
+					<right>25</right>
+					<label/>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
+					<aligny>center</aligny>
+					<onclick>noop</onclick>
+					<enable>false</enable>
+					<visible>!Skin.HasSetting(HomeNoSearchButton)</visible>
+				</control>
+				<control type="radiobutton" id="64716">
+					<label>Show search window help text</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(show_search_help)</selected>
+					<onclick>Skin.ToggleSetting(show_search_help)</onclick>
+					<visible>!Skin.HasSetting(HomeNoSearchButton) + !Skin.HasSetting(NoSearchResultsWindow) + !Skin.HasSetting(DefaultSearchWindowBehavior)</visible>
 				</control>
 			</control>
 			<control type="grouplist" id="648">
@@ -1461,7 +1492,7 @@
 				<onright>60</onright>
 				<onup>700</onup>
 				<ondown>700</ondown>
-				<visible>Container(9000).HasFocus(6)</visible>
+				<visible>Container(9000).HasFocus(8)</visible>
 				<!-- Classic FENtastic & FENtastic PLus Experience-->
 				<control type="button" id="701">
 					<label>Choose Look &amp; Feel Preset</label>
@@ -1512,12 +1543,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="706">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -1528,50 +1559,52 @@
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(Enable.FullscreenWidgets)</selected>
 					<onclick>Skin.ToggleSetting(Enable.FullscreenWidgets)</onclick>
-				</control>
-				<!-- ADD-ON INFOPANEL -->
-				<control type="radiobutton" id="708">
-					<label>Enable add-on infoPanel</label>
-					<include>DefaultSettingButton</include>
-					<selected>Skin.HasSetting(Enable.AddonInfoPanel)</selected>
-					<onclick>Skin.ToggleSetting(Enable.AddonInfoPanel)</onclick>
-					<visible>!Skin.HasSetting(Enable.FullscreenWidgets)</visible>
-				</control>
-				<!-- ADD-ON CATEGORY INFOPANEL -->
-				<control type="radiobutton" id="709">
-					<label>Enable add-on category infoPanel</label>
-					<include>DefaultSettingButton</include>
-					<selected>Skin.HasSetting(Enable.AddonCategorySideblade)</selected>
-					<onclick>Skin.ToggleSetting(Enable.AddonCategorySideblade)</onclick>
-					<visible>!Skin.HasSetting(Enable.FullscreenWidgets)</visible>
+					<visible>!Skin.HasSetting(CinemaLookFeel)</visible>
 				</control>
 				<!-- ALTERNATE WIDGET INFOPANEL -->
-				<control type="radiobutton" id="710">
+				<control type="radiobutton" id="708">
 					<label>Enable alternate widget infoPanel</label>
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(Enable.AlternateInfo)</selected>
 					<onclick>Skin.ToggleSetting(Enable.AlternateInfo)</onclick>
-					<visible>!Skin.HasSetting(Enable.FullscreenWidgets)</visible>
+					<visible>!Skin.HasSetting(CinemaLookFeel) + !Skin.HasSetting(Enable.FullscreenWidgets)</visible>
+				</control>
+				<!-- ADD-ON INFOPANEL -->
+				<control type="radiobutton" id="709">
+					<label>Enable add-on infoPanel</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(Enable.AddonInfoPanel)</selected>
+					<onclick>Skin.ToggleSetting(Enable.AddonInfoPanel)</onclick>
+					<visible>!Skin.HasSetting(CinemaLookFeel) + !Skin.HasSetting(Enable.FullscreenWidgets)</visible>
 				</control>
 				<!-- ALTERNATE ADD-ON INFOPANEL -->
-				<control type="radiobutton" id="7101">
+				<control type="radiobutton" id="710">
 					<label>Enable alternate add-on infoPanel</label>
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(Enable.AlternateAddonInfo)</selected>
 					<onclick>Skin.ToggleSetting(Enable.AlternateAddonInfo)</onclick>
-					<visible>!Skin.HasSetting(Enable.FullscreenWidgets)</visible>
+					<visible>Skin.HasSetting(Enable.AddonInfoPanel) + !Skin.HasSetting(CinemaLookFeel) + !Skin.HasSetting(Enable.FullscreenWidgets)</visible>
+				</control>
+				<!-- ADD-ON CATEGORY INFOPANEL -->
+				<control type="radiobutton" id="711">
+					<label>Enable add-on category infoPanel</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(Enable.AddonCategorySideblade)</selected>
+					<onclick>Skin.ToggleSetting(Enable.AddonCategorySideblade)</onclick>
+					<visible>!Skin.HasSetting(CinemaLookFeel) + !Skin.HasSetting(Enable.FullscreenWidgets)</visible>
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="712">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
+					<visible>!Skin.HasSetting(CinemaLookFeel)</visible>
 				</control>
 				<!-- STUDIO LOGOS -->
 				<control type="radiobutton" id="713">
@@ -1603,77 +1636,140 @@
 				<onright>60</onright>
 				<onup>600</onup>
 				<ondown>600</ondown>
-				<visible>Container(9000).HasFocus(7)</visible>
+				<visible>Container(9000).HasFocus(6)</visible>
 				<control type="button" id="6052">
 					<label>Choose home screen logo</label>
 					<label2>$INFO[Skin.String(CustomLogo)]</label2>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper, mode=set_image_logo)</onclick>
+					<visible>!Skin.HasSetting(CinemaLookFeel)</visible>
 				</control>
 				<control type="button" id="6053">
 					<label>   - Restore default logo</label>
 					<include>DefaultSettingButton</include>
 					<onclick condition="!Skin.HasSetting(ClassicFENtastic)">Skin.SetString(CustomLogo,special://skin/extras/logos/fentastic.png)</onclick>
 					<onclick condition="Skin.HasSetting(ClassicFENtastic)">Skin.SetString(CustomLogo,special://skin/extras/logos/kodi_logo.png)</onclick>
-					<visible>!String.IsEmpty(Skin.String(CustomLogo))</visible>
+					<visible>!Skin.HasSetting(CinemaLookFeel) + !String.IsEmpty(Skin.String(CustomLogo))</visible>
 				</control>
+				<!-- SEPARATOR -->
 				<control type="button" id="6054">
+					<height>3</height>
+					<left>25</left>
+					<right>25</right>
+					<label/>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
+					<aligny>center</aligny>
+					<onclick>noop</onclick>
+					<enable>false</enable>
+					<visible>!Skin.HasSetting(CinemaLookFeel)</visible>
+				</control>
+				<control type="button" id="6055">
+					<label>Choose home screen background</label>
+					<label2>$INFO[Skin.String(HomeCustomBackground)]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper, mode=set_image&amp;target=home)</onclick>
+				</control>
+				<control type="button" id="6056">
+					<label>   - Restore default background</label>
+					<include>DefaultSettingButton</include>
+					<onclick condition="Skin.HasSetting(EstuaryLookFeel)">Skin.SetString(HomeCustomBackground,special://skin/extras/backgrounds/estuary.jpg)</onclick>
+					<onclick condition="Skin.HasSetting(FENtasticHybrid)">Skin.SetString(HomeCustomBackground,special://skin/extras/backgrounds/pattern3.png)</onclick>
+					<onclick condition="Skin.HasSetting(ClassicFENtastic)">Skin.SetString(HomeCustomBackground,special://skin/extras/backgrounds/redblur.jpg)</onclick>
+					<onclick condition="!Skin.HasSetting(EstuaryLookFeel) + !Skin.HasSetting(FENtasticHybrid) + !Skin.HasSetting(ClassicFENtastic)">Skin.SetString(HomeCustomBackground,special://skin/extras/backgrounds/redblur.jpg)</onclick>
+					<visible>!String.IsEmpty(Skin.String(HomeCustomBackground))</visible>
+				</control>
+				<control type="button" id="6057">
+					<label>   - Choose background brightness</label>
+					<label2>$INFO[Skin.String(DefaultHomeBackgroundBrightness)]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="String.IsEmpty(Skin.String(DefaultHomeBackgroundBrightness)) | String.IsEqual(Skin.String(DefaultHomeBackgroundBrightness),Low)">Skin.SetString(DefaultHomeBackgroundBrightness,Medium)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultHomeBackgroundBrightness),Medium)">Skin.SetString(DefaultHomeBackgroundBrightness,High)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultHomeBackgroundBrightness),High)">Skin.SetString(DefaultHomeBackgroundBrightness,Highest)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultHomeBackgroundBrightness),Highest)">Skin.SetString(DefaultHomeBackgroundBrightness,Low)</onclick>
+				</control>
+				<control type="button" id="6058">
+					<label>   - Choose background color opacity</label>
+					<label2>$VAR[HomeBackgroundDiffuseBrightnessLabelVar]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="String.IsEmpty(Skin.String(DefaultHomeBackgroundDiffuseBrightness)) | String.IsEqual(Skin.String(DefaultHomeBackgroundDiffuseBrightness),Off)">Skin.SetString(DefaultHomeBackgroundDiffuseBrightness,10%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultHomeBackgroundDiffuseBrightness),10%)">Skin.SetString(DefaultHomeBackgroundDiffuseBrightness,20%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultHomeBackgroundDiffuseBrightness),20%)">Skin.SetString(DefaultHomeBackgroundDiffuseBrightness,30%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultHomeBackgroundDiffuseBrightness),30%)">Skin.SetString(DefaultHomeBackgroundDiffuseBrightness,40%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultHomeBackgroundDiffuseBrightness),40%)">Skin.SetString(DefaultHomeBackgroundDiffuseBrightness,50%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultHomeBackgroundDiffuseBrightness),50%)">Skin.SetString(DefaultHomeBackgroundDiffuseBrightness,60%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultHomeBackgroundDiffuseBrightness),60%)">Skin.SetString(DefaultHomeBackgroundDiffuseBrightness,70%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultHomeBackgroundDiffuseBrightness),70%)">Skin.SetString(DefaultHomeBackgroundDiffuseBrightness,80%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultHomeBackgroundDiffuseBrightness),80%)">Skin.SetString(DefaultHomeBackgroundDiffuseBrightness,90%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultHomeBackgroundDiffuseBrightness),90%)">Skin.SetString(DefaultHomeBackgroundDiffuseBrightness,100%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultHomeBackgroundDiffuseBrightness),100%)">Skin.SetString(DefaultHomeBackgroundDiffuseBrightness,Off)</onclick>
+				</control>
+				<!-- SEPARATOR -->
+				<control type="button" id="6059">
+					<height>3</height>
+					<left>25</left>
+					<right>25</right>
+					<label/>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
+					<aligny>center</aligny>
+					<onclick>noop</onclick>
+					<enable>false</enable>
+				</control>
+				<control type="button" id="6060">
 					<label>Choose skin background</label>
 					<label2>$INFO[Skin.String(CustomBackground)]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.helper, mode=set_image)</onclick>
+					<onclick>RunScript(script.fentastic.helper, mode=set_image&amp;target=other)</onclick>
 				</control>
-				<control type="button" id="6055">
+				<control type="button" id="6061">
 					<label>   - Restore default background</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SetString(CustomBackground,special://skin/extras/backgrounds/redblur.jpg)</onclick>
+					<onclick condition="Skin.HasSetting(EstuaryLookFeel)">Skin.SetString(CustomBackground,special://skin/extras/backgrounds/estuary.jpg)</onclick>
+					<onclick condition="Skin.HasSetting(FENtasticHybrid)">Skin.SetString(CustomBackground,special://skin/extras/backgrounds/pattern3.png)</onclick>
+					<onclick condition="Skin.HasSetting(ClassicFENtastic)">Skin.SetString(CustomBackground,special://skin/extras/backgrounds/redblur.jpg)</onclick>
+					<onclick condition="!Skin.HasSetting(EstuaryLookFeel) + !Skin.HasSetting(FENtasticHybrid) + !Skin.HasSetting(ClassicFENtastic)">Skin.SetString(CustomBackground,special://skin/extras/backgrounds/redblur.jpg)</onclick>
 					<visible>!String.IsEmpty(Skin.String(CustomBackground))</visible>
 				</control>
-				<control type="button" id="6056">
+				<control type="button" id="6062">
 					<label>   - Choose background brightness</label>
 					<label2>$INFO[Skin.String(DefaultBackgroundBrightness)]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick condition="String.IsEqual(Skin.String(DefaultBackgroundBrightness),Low)">Skin.SetString(DefaultBackgroundBrightness,Medium)</onclick>
+					<onclick condition="String.IsEmpty(Skin.String(DefaultBackgroundBrightness)) | String.IsEqual(Skin.String(DefaultBackgroundBrightness),Low)">Skin.SetString(DefaultBackgroundBrightness,Medium)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(DefaultBackgroundBrightness),Medium)">Skin.SetString(DefaultBackgroundBrightness,High)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(DefaultBackgroundBrightness),High)">Skin.SetString(DefaultBackgroundBrightness,Highest)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(DefaultBackgroundBrightness),Highest)">Skin.SetString(DefaultBackgroundBrightness,Low)</onclick>
 				</control>
-				<!-- RAIN DROPS -->
-				<control type="radiobutton" id="6057">
-					<label>Show raindrop background</label>
+				<control type="button" id="6063">
+					<label>   - Choose background color opacity</label>
+					<label2>$VAR[BackgroundDiffuseBrightnessLabelVar]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick condition="Skin.HasSetting(ShowRainDrops)">Skin.Reset(no_fanart)</onclick>
-					<onclick condition="Skin.HasSetting(ShowRainDrops)">Skin.Reset(ShowRainDrops)</onclick>
-					<onclick condition="!Skin.HasSetting(ShowRainDrops)">Skin.SetBool(no_fanart)</onclick>
-					<onclick condition="!Skin.HasSetting(ShowRainDrops)">Skin.Reset(EnableWidgetFanart)</onclick>
-					<onclick condition="!Skin.HasSetting(ShowRainDrops)">Skin.Reset(EnableCategoryWidgetFanart)</onclick>
-					<onclick condition="!Skin.HasSetting(ShowRainDrops)">Skin.Reset(EnableAddonWidgetFanart)</onclick>
-					<onclick condition="!Skin.HasSetting(ShowRainDrops)">Skin.SetBool(ShowRainDrops)</onclick>
-					<selected>Skin.HasSetting(ShowRainDrops)</selected>
-				</control>
-				<control type="button" id="6058">
-					<label>   - Choose raindrop brightness</label>
-					<label2>$INFO[Skin.String(DefaultRainDropBrightness)]</label2>
-					<include>DefaultSettingButton</include>
-					<onclick condition="String.IsEqual(Skin.String(DefaultRainDropBrightness),Low)">Skin.SetString(DefaultRainDropBrightness,Medium)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(DefaultRainDropBrightness),Medium)">Skin.SetString(DefaultRainDropBrightness,High)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(DefaultRainDropBrightness),High)">Skin.SetString(DefaultRainDropBrightness,Highest)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(DefaultRainDropBrightness),Highest)">Skin.SetString(DefaultRainDropBrightness,Low)</onclick>
+					<onclick condition="String.IsEmpty(Skin.String(DefaultBackgroundDiffuseBrightness)) | String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),Off)">Skin.SetString(DefaultBackgroundDiffuseBrightness,10%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),10%)">Skin.SetString(DefaultBackgroundDiffuseBrightness,20%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),20%)">Skin.SetString(DefaultBackgroundDiffuseBrightness,30%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),30%)">Skin.SetString(DefaultBackgroundDiffuseBrightness,40%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),40%)">Skin.SetString(DefaultBackgroundDiffuseBrightness,50%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),50%)">Skin.SetString(DefaultBackgroundDiffuseBrightness,60%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),60%)">Skin.SetString(DefaultBackgroundDiffuseBrightness,70%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),70%)">Skin.SetString(DefaultBackgroundDiffuseBrightness,80%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),80%)">Skin.SetString(DefaultBackgroundDiffuseBrightness,90%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),90%)">Skin.SetString(DefaultBackgroundDiffuseBrightness,100%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultBackgroundDiffuseBrightness),100%)">Skin.SetString(DefaultBackgroundDiffuseBrightness,Off)</onclick>
 				</control>
 				<!-- SEPARATOR -->
-				<control type="button" id="6059">
-					<height>6</height>
+				<control type="button" id="6064">
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
 				</control>
 				<!-- HOME FANART -->
-				<control type="radiobutton" id="6060">
+				<control type="radiobutton" id="6065">
 					<label>$LOCALIZE[31002]</label>
 					<include>DefaultSettingButton</include>
 					<onclick condition="!Skin.HasSetting(no_fanart)">Skin.Reset(EnableWidgetFanart)</onclick>
@@ -1684,7 +1780,7 @@
 					<onclick condition="Skin.HasSetting(no_fanart)">Skin.Reset(no_fanart)</onclick>
 					<selected>!Skin.HasSetting(no_fanart)</selected>
 				</control>
-				<control type="button" id="6061">
+				<control type="button" id="6066">
 					<label>   - Choose fanart brightness</label>
 					<label2>$INFO[Skin.String(DefaultFanartBrightness)]</label2>
 					<include>DefaultSettingButton</include>
@@ -1696,7 +1792,7 @@
 					<visible>!Skin.HasSetting(no_fanart)</visible>
 				</control>
 				<!-- WIDGET FANART -->
-				<control type="radiobutton" id="6062">
+				<control type="radiobutton" id="6067">
 					<label>Enable widget fanart</label>
 					<include>DefaultSettingButton</include>
 					<visible>!Skin.HasSetting(no_fanart)</visible>
@@ -1705,7 +1801,7 @@
 					<selected>!Skin.HasSetting(no_fanart) + Skin.HasSetting(EnableWidgetFanart)</selected>
 				</control>
 				<!-- CATEGORY WIDGET FANART -->
-				<control type="radiobutton" id="6063">
+				<control type="radiobutton" id="6068">
 					<label>Enable category widget fanart</label>
 					<include>DefaultSettingButton</include>
 					<visible>!Skin.HasSetting(no_fanart)</visible>
@@ -1714,7 +1810,7 @@
 					<selected>!Skin.HasSetting(no_fanart) + Skin.HasSetting(EnableCategoryWidgetFanart)</selected>
 				</control>
 				<!-- ADD-ON WIDGET FANART -->
-				<control type="radiobutton" id="6064">
+				<control type="radiobutton" id="6069">
 					<label>Enable add-on widget fanart</label>
 					<include>DefaultSettingButton</include>
 					<visible>!Skin.HasSetting(no_fanart)</visible>
@@ -1722,7 +1818,7 @@
 					<onclick condition="!Skin.HasSetting(no_fanart)">Skin.ToggleSetting(EnableAddonWidgetFanart)</onclick>
 					<selected>!Skin.HasSetting(no_fanart) + Skin.HasSetting(EnableAddonWidgetFanart)</selected>
 				</control>
-				<control type="button" id="6065">
+				<control type="button" id="6070">
 					<label>$LOCALIZE[31131]</label>
 					<label2>$INFO[Skin.String(HomeFanart.name)]</label2>
 					<include>DefaultSettingButton</include>
@@ -1730,7 +1826,7 @@
 					<onclick condition="System.HasAddon(script.image.resource.select) + !System.AddonIsEnabled(script.image.resource.select)">EnableAddon(script.image.resource.select)</onclick>
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 				</control>
-				<control type="button" id="6066">
+				<control type="button" id="6071">
 					<label>$LOCALIZE[31062]</label>
 					<label2>$INFO[Skin.String(WeatherFanart.name)]</label2>
 					<include>DefaultSettingButton</include>
@@ -1738,7 +1834,7 @@
 					<onclick condition="System.HasAddon(script.image.resource.select) + !System.AddonIsEnabled(script.image.resource.select)">EnableAddon(script.image.resource.select)</onclick>
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 				</control>
-				<control type="button" id="6067">
+				<control type="button" id="6072">
 					<label>$LOCALIZE[31149]</label>
 					<label2>$INFO[Skin.String(MovieGenreFanart.Name)]</label2>
 					<include>DefaultSettingButton</include>
@@ -1747,18 +1843,52 @@
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 				</control>
 				<!-- SEPARATOR -->
-				<control type="button" id="6068">
-					<height>6</height>
+				<control type="button" id="6073">
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
 				</control>
-				<control type="radiobutton" id="6069">
+				<!-- RAIN DROPS -->
+				<control type="radiobutton" id="6074">
+					<label>Show raindrop background</label>
+					<include>DefaultSettingButton</include>
+					<onclick condition="Skin.HasSetting(ShowRainDrops)">Skin.Reset(no_fanart)</onclick>
+					<onclick condition="Skin.HasSetting(ShowRainDrops)">Skin.Reset(ShowRainDrops)</onclick>
+					<onclick condition="!Skin.HasSetting(ShowRainDrops)">Skin.SetBool(no_fanart)</onclick>
+					<onclick condition="!Skin.HasSetting(ShowRainDrops)">Skin.Reset(EnableWidgetFanart)</onclick>
+					<onclick condition="!Skin.HasSetting(ShowRainDrops)">Skin.Reset(EnableCategoryWidgetFanart)</onclick>
+					<onclick condition="!Skin.HasSetting(ShowRainDrops)">Skin.Reset(EnableAddonWidgetFanart)</onclick>
+					<onclick condition="!Skin.HasSetting(ShowRainDrops)">Skin.SetBool(ShowRainDrops)</onclick>
+					<selected>Skin.HasSetting(ShowRainDrops)</selected>
+				</control>
+				<control type="button" id="6075">
+					<label>   - Choose raindrop brightness</label>
+					<label2>$INFO[Skin.String(DefaultRainDropBrightness)]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="String.IsEqual(Skin.String(DefaultRainDropBrightness),Low)">Skin.SetString(DefaultRainDropBrightness,Medium)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultRainDropBrightness),Medium)">Skin.SetString(DefaultRainDropBrightness,High)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultRainDropBrightness),High)">Skin.SetString(DefaultRainDropBrightness,Highest)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(DefaultRainDropBrightness),Highest)">Skin.SetString(DefaultRainDropBrightness,Low)</onclick>
+				</control>
+				<!-- SEPARATOR -->
+				<control type="button" id="6076">
+					<height>3</height>
+					<left>25</left>
+					<right>25</right>
+					<label/>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
+					<aligny>center</aligny>
+					<onclick>noop</onclick>
+					<enable>false</enable>
+				</control>
+				<control type="radiobutton" id="6077">
 					<label>$LOCALIZE[31168]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(show_musicvideoposter)</onclick>
@@ -1775,9 +1905,9 @@
 				<onup>621</onup>
 				<pagecontrol>60</pagecontrol>
 				<ondown>621</ondown>
-				<visible>Container(9000).HasFocus(8)</visible>
+				<visible>Container(9000).HasFocus(7)</visible>
 				<control type="button" id="6210">
-					<label>Configure Skin Colour</label>
+					<label>Configure Skin Color</label>
 					<label2>$INFO[Skin.String(CurrentSkinColor)]</label2>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=choose_color)</onclick>
@@ -1815,12 +1945,12 @@
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="6222">
-					<height>6</height>
+					<height>3</height>
 					<left>25</left>
 					<right>25</right>
 					<label/>
-					<texturenofocus>dialogs/separator-grey.png</texturenofocus>
-					<texturefocus>dialogs/separator-grey.png</texturefocus>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
@@ -1982,15 +2112,15 @@
 						<onclick>noop</onclick>
 					</item>
 					<item id="6">
-						<label>Look &amp; Feel</label>
-						<onclick>noop</onclick>
-					</item>
-					<item id="7">
 						<label>Artwork</label>
 						<onclick>noop</onclick>
 					</item>
+					<item id="7">
+						<label>Colors</label>
+						<onclick>noop</onclick>
+					</item>
 					<item id="8">
-						<label>Colours</label>
+						<label>Look &amp; Feel</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="9">
