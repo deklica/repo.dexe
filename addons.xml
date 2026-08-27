@@ -178,7 +178,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.dltv" name="DaddyLive" version="1.1.0" provider-name="Arkane14">
+<addon id="plugin.video.dltv" name="DLTV" version="1.2.0" provider-name="arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -190,7 +190,7 @@ service.subtitles.titlovi
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Live TV and Sports</summary>
+        <summary lang="en">DaddyLive</summary>
         <description lang="en">Live TV and Sports</description>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
@@ -284,7 +284,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.eonvod" version="1.1.0" name="EON On Demand" provider-name="dEXE">
+<addon id="plugin.video.eonvod" version="1.2.0" name="EON On Demand" provider-name="dEXE">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="pvr.eon" version="20.0.0"/>
@@ -299,9 +299,9 @@ service.subtitles.titlovi
     <description lang="en_GB">Browses the EON On Demand catalogue and plays films and series in Kodi.[CR][CR]Uses the account, device and stream credentials already held by [B]pvr.eon[/B]. The VOD plugin does not store independent EON credentials and does not create a second EON device or session.[CR][CR]Install and configure [B]pvr.eon[/B] first, then open Live TV once so it can log in and save the session.</description>
     <disclaimer lang="en_GB">Unofficial add-on. Not affiliated with, endorsed by or supported by United Group, SBB, Telemach, Vivacom, Nova or any related company. A valid EON subscription is required. No content is provided or hosted by this add-on.</disclaimer>
     <platform>linux android-armv7 android-aarch64</platform>
+    <language>en sr bs hr sl mk bg el</language>
     <license>GPL-3.0-or-later</license>
-    <language>en sr bg</language>
-    <news>[B]Features[/B][CR][CR]- Browses EON On Demand content from the API.[CR]- Uses the same account, session and device data as pvr.eon.[CR]- Movies, series, kids, documentaries, TV shows.[CR]- Caches the catalogue locally for faster browsing.[CR]- Manual and scheduled sync, with progress shown in the corner when scheduled.[CR]- Filters unsubscribed content when configured to do so.[CR]- Age rating filter, with children's titles exempt.[CR]- Resume playback, watched marks, favourites and search history.[CR]- Plays through inputstream.adaptive, with Widevine where required.</news>
+    <news>[B]Features[/B][CR][CR]- Browses EON On Demand content from the API.[CR]- Uses the same account, session and device data as pvr.eon.[CR]- Movies, Series, Kids, Documentaries, TV shows.[CR]- Caches the catalogue locally for faster browsing.[CR]- Manual and scheduled sync, with progress shown in the corner when scheduled.[CR]- Filters unsubscribed content when configured to do so.[CR]- Age rating filter, with children's titles exempt.[CR]- Resume playback, watched marks, favourites and search history.[CR]- Plays through inputstream.adaptive, with Widevine where required.</news>
     <assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
@@ -3509,134 +3509,179 @@ strptime Python bugfix
 </addon>
 
 
-<addon id="pvr.eon" version="21.7.12+linux-aarch64" name="EON PVR Client" provider-name="Nirvana">
-  <requires>
-    <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
-    <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-    <import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
-    <import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.9"/>
-    <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
-    <import addon="inputstream.ffmpegdirect" minversion="21.0.0" optional="true"/>
-    <import addon="inputstream.adaptive" minversion="21.0.0"/>
-    <import addon="script.module.inputstreamhelper" version="0.8.5"/>
-  </requires>
-  <extension point="kodi.pvrclient" library_linux="pvr.eon.so"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">PVR Client for EON</summary>
-    <summary lang="en_US">PVR Client for EON</summary>
-    <summary lang="de_DE">PVR-Client für EON</summary>
-    <summary lang="bg_BG">PVR клиент за EON</summary>
-    <summary lang="sr_RS@latin">PVR klijent za EON</summary>
-    <summary lang="sr_RS">PVR клијент за EON</summary>
-    <description lang="en_GB">[B]Note[/B] - other Linux architectures: The repository only auto-updates the Linux aarch64 (ARM 64-bit, e.g. Raspberry Pi 4/5) build. Because Kodi reports every Linux system under a single generic linux platform identifier, it cannot tell architectures apart and would otherwise offer the wrong build as an "update". Users on other Linux architectures - armv7 (ARM 32-bit) and amd64/x86_64 (desktop) - should download the matching .zip and install it manually via Add-ons → Install from zip file. Builds are available here: https://github.com/deklica/repo.dexe/tree/master/zips/pvr.eon[CR]
+<addon id="pvr.eon" version="21.8.5.1+linux-aarch64" name="EON PVR Client" provider-name="Nirvana">
+	<requires>
+		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
+		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
+		<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
+		<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.9"/>
+		<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
+		<import addon="inputstream.ffmpegdirect" minversion="21.0.0"/>
+		<import addon="inputstream.adaptive" minversion="21.0.0"/>
+		<import addon="script.module.inputstreamhelper" version="0.8.5"/>
+	</requires>
+	<extension point="kodi.pvrclient" library_linux="pvr.eon.so"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">PVR Client for EON</summary>
+		<summary lang="en_US">PVR Client for EON</summary>
+		<summary lang="de_DE">PVR-Client für EON</summary>
+		<summary lang="sr_RS@latin">PVR klijent za EON</summary>
+		<summary lang="sr_RS">PVR клијент за EON</summary>
+		<summary lang="hr_HR">PVR klijent za EON</summary>
+		<summary lang="bs_BA">PVR klijent za EON</summary>
+		<summary lang="sl_SI">Odjemalec PVR za EON</summary>
+		<summary lang="mk_MK">PVR клиент за EON</summary>
+		<summary lang="bg_BG">PVR клиент за EON</summary>
+		<summary lang="el_GR">Πελάτης PVR για το EON</summary>
+		<description lang="en_GB">[B]Note[/B] - other Linux architectures: The repository only auto-updates the Linux aarch64 (ARM 64-bit, e.g. Raspberry Pi 4/5) build. Because Kodi reports every Linux system under a single generic linux platform identifier, it cannot tell architectures apart and would otherwise offer the wrong build as an "update". Users on other Linux architectures - armv7 (ARM 32-bit) and amd64/x86_64 (desktop) - should download the matching .zip and install it manually via Add-ons → Install from zip file. Builds are available here: https://github.com/deklica/repo.dexe/tree/master/zips/pvr.eon[CR]
 PVR Client for EON which allows you to watch live TV channels and listen to radio stations. Supports TV-Guide (EPG) and 7-day rewind.</description>
-    <description lang="en_US">PVR Client for EON which allows you to watch live TV channels and listen to radio stations. Supports TV-Guide (EPG) and 7-day rewind.</description>
-    <description lang="de_DE">PVR-Client für EON, mit dem Sie TV-Sender live ansehen und Radiosender hören können. Unterstützt TV-Guide (EPG) und 7-Tage-Rücklauf.</description>
-    <description lang="bg_BG">PVR клиент за EON, който ви позволява да гледате на живо телевизионни канали и да слушате радиостанции. Поддържа електронен програмен справочник (EPG) и 7-дневно връщане назад.</description>
-    <description lang="sr_RS@latin">PVR klijent za EON koji vam omogućava da gledate TV kanale uživo i slušate radio stanice. Podržava EPG (TV vodič) i 7-dnevno vraćanje unazad.</description>
-    <description lang="sr_RS">PVR клијент за EON који вам омогућава да гледате TV канале уживо и слушате радио станице. Подржава EPG (TV водич) и 7-дневно враћање уназад.</description>
-    <disclaimer lang="en_GB">No official version. All trademarks belong to EON. Use at your own risk.</disclaimer>
-    <disclaimer lang="en_US">No official version. All trademarks belong to EON. Use at your own risk.</disclaimer>
-    <disclaimer lang="de_DE">Keine offizielle Version. Alle Warenzeichen verbleiben bei EON. Benutzung auf eigene Gefahr.</disclaimer>
-    <disclaimer lang="bg_BG">Неофициална версия. Всички запазени марки принадлежат на EON. Използвайте на собствен риск.</disclaimer>
-    <disclaimer lang="sr_RS@latin">Nezvanična verzija. Svi zaštitni znaci pripadaju EON-u. Koristite na sopstveni rizik.</disclaimer>
-    <disclaimer lang="sr_RS">Незванична верзија. Сви заштитни знаци припадају EON-у. Користите на сопствени ризик.</disclaimer>
-    <platform>linux</platform>
-    <license>GPL-2.0-or-later</license>
-    <source>https://github.com/nirvana-7777/pvr.eon</source>
-    <forum>https://www.kodinerds.net/thread/77069-release-pvr-eon-tv</forum>
-    <news>[B]Note[/B] - other Linux architectures: The repository only auto-updates the Linux aarch64 (ARM 64-bit, e.g. Raspberry Pi 4/5) build. Because Kodi reports every Linux system under a single generic linux platform identifier, it cannot tell architectures apart and would otherwise offer the wrong build as an "update". Users on other Linux architectures - armv7 (ARM 32-bit) and amd64/x86_64 (desktop) - should download the matching .zip and install it manually via Add-ons → Install from zip file. Builds are available here: https://github.com/deklica/repo.dexe/tree/master/zips/pvr.eon</news>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
+		<description lang="en_US">PVR Client for EON which allows you to watch live TV channels and listen to radio stations. Supports TV-Guide (EPG) and 7-day rewind.</description>
+		<description lang="de_DE">PVR-Client für EON, mit dem Sie TV-Sender live ansehen und Radiosender hören können. Unterstützt TV-Guide (EPG) und 7-Tage-Rücklauf.</description>
+		<description lang="sr_RS@latin">PVR klijent za EON koji vam omogućava da gledate TV kanale uživo i slušate radio stanice. Podržava EPG (TV vodič) i 7-dnevno vraćanje unazad.</description>
+		<description lang="sr_RS">PVR клијент за EON који вам омогућава да гледате TV канале уживо и слушате радио станице. Подржава EPG (TV водич) и 7-дневно враћање уназад.</description>
+		<description lang="hr_HR">PVR klijent za EON koji vam omogućuje gledanje TV programa uživo i slušanje radijskih postaja. Podržava EPG (TV vodič) i 7-dnevno vraćanje unazad.</description>
+		<description lang="bs_BA">PVR klijent za EON koji vam omogućava da gledate TV kanale uživo i slušate radio stanice. Podržava EPG (TV vodič) i 7-dnevno vraćanje unazad.</description>
+		<description lang="sl_SI">Odjemalec PVR za EON, ki omogoča gledanje televizijskih programov v živo in poslušanje radijskih postaj. Podpira EPG (TV spored) in 7-dnevno previjanje nazaj.</description>
+		<description lang="mk_MK">PVR клиент за EON кој ви овозможува да гледате ТВ канали во живо и да слушате радио станици. Поддржува EPG (ТВ водич) и 7-дневно враќање назад.</description>
+		<description lang="bg_BG">PVR клиент за EON, който ви позволява да гледате на живо телевизионни канали и да слушате радиостанции. Поддържа електронен програмен справочник (EPG) и 7-дневно връщане назад.</description>
+		<description lang="el_GR">Πελάτης PVR για το EON που σας επιτρέπει να παρακολουθείτε τηλεοπτικά κανάλια ζωντανά και να ακούτε ραδιοφωνικούς σταθμούς. Υποστηρίζει EPG (οδηγό προγράμματος) και επαναφορά 7 ημερών.</description>
+		<disclaimer lang="en_GB">No official version. All trademarks belong to EON. Use at your own risk.</disclaimer>
+		<disclaimer lang="en_US">No official version. All trademarks belong to EON. Use at your own risk.</disclaimer>
+		<disclaimer lang="de_DE">Keine offizielle Version. Alle Warenzeichen verbleiben bei EON. Benutzung auf eigene Gefahr.</disclaimer>
+		<disclaimer lang="sr_RS@latin">Nezvanična verzija. Svi zaštitni znaci pripadaju EON-u. Koristite na sopstveni rizik.</disclaimer>
+		<disclaimer lang="sr_RS">Незванична верзија. Сви заштитни знаци припадају EON-у. Користите на сопствени ризик.</disclaimer>
+		<disclaimer lang="hr_HR">Nije službena verzija. Svi zaštitni znakovi pripadaju EON-u. Koristite na vlastitu odgovornost.</disclaimer>
+		<disclaimer lang="bs_BA">Nezvanična verzija. Svi zaštitni znaci pripadaju EON-u. Koristite na vlastitu odgovornost.</disclaimer>
+		<disclaimer lang="sl_SI">Ni uradna različica. Vse blagovne znamke pripadajo EON. Uporaba na lastno odgovornost.</disclaimer>
+		<disclaimer lang="mk_MK">Неофицијална верзија. Сите заштитни знаци припаѓаат на EON. Користете на сопствен ризик.</disclaimer>
+		<disclaimer lang="bg_BG">Неофициална версия. Всички запазени марки принадлежат на EON. Използвайте на собствен риск.</disclaimer>
+		<disclaimer lang="el_GR">Μη επίσημη έκδοση. Όλα τα εμπορικά σήματα ανήκουν στην EON. Η χρήση γίνεται με δική σας ευθύνη.</disclaimer>
+		<platform>linux</platform>
+		<license>GPL-2.0-or-later</license>
+		<source>https://github.com/nirvana-7777/pvr.eon</source>
+		<forum>https://www.kodinerds.net/thread/77069-release-pvr-eon-tv</forum>
+		<news>[B]Note[/B] - other Linux architectures: The repository only auto-updates the Linux aarch64 (ARM 64-bit, e.g. Raspberry Pi 4/5) build. Because Kodi reports every Linux system under a single generic linux platform identifier, it cannot tell architectures apart and would otherwise offer the wrong build as an "update". Users on other Linux architectures - armv7 (ARM 32-bit) and amd64/x86_64 (desktop) - should download the matching .zip and install it manually via Add-ons → Install from zip file. Builds are available here: https://github.com/deklica/repo.dexe/tree/master/zips/pvr.eon</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 
-<addon id="pvr.eon" version="21.7.12+android-armv7" name="EON PVR Client" provider-name="Nirvana">
-  <requires>
-    <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
-    <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-    <import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
-    <import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.9"/>
-    <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
-    <import addon="inputstream.ffmpegdirect" minversion="21.0.0" optional="true"/>
-    <import addon="inputstream.adaptive" minversion="21.0.0"/>
-    <import addon="script.module.inputstreamhelper" version="0.8.5"/>
-  </requires>
-  <extension point="kodi.pvrclient" library_android="libpvr.eon.so"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">PVR Client for EON</summary>
-    <summary lang="en_US">PVR Client for EON</summary>
-    <summary lang="de_DE">PVR-Client für EON</summary>
-    <summary lang="bg_BG">PVR клиент за EON</summary>
-    <summary lang="sr_RS@latin">PVR klijent za EON</summary>
-    <summary lang="sr_RS">PVR клијент за EON</summary>
-    <description lang="en_GB">PVR Client for EON which allows you to watch live TV channels and listen to radio stations. Supports TV-Guide (EPG) and 7-day rewind.</description>
-    <description lang="en_US">PVR Client for EON which allows you to watch live TV channels and listen to radio stations. Supports TV-Guide (EPG) and 7-day rewind.</description>
-    <description lang="de_DE">PVR-Client für EON, mit dem Sie TV-Sender live ansehen und Radiosender hören können. Unterstützt TV-Guide (EPG) und 7-Tage-Rücklauf.</description>
-    <description lang="bg_BG">PVR клиент за EON, който ви позволява да гледате на живо телевизионни канали и да слушате радиостанции. Поддържа електронен програмен справочник (EPG) и 7-дневно връщане назад.</description>
-    <description lang="sr_RS@latin">PVR klijent za EON koji vam omogućava da gledate TV kanale uživo i slušate radio stanice. Podržava EPG (TV vodič) i 7-dnevno vraćanje unazad.</description>
-    <description lang="sr_RS">PVR клијент за EON који вам омогућава да гледате TV канале уживо и слушате радио станице. Подржава EPG (TV водич) и 7-дневно враћање уназад.</description>
-    <disclaimer lang="en_GB">No official version. All trademarks belong to EON. Use at your own risk.</disclaimer>
-    <disclaimer lang="en_US">No official version. All trademarks belong to EON. Use at your own risk.</disclaimer>
-    <disclaimer lang="de_DE">Keine offizielle Version. Alle Warenzeichen verbleiben bei EON. Benutzung auf eigene Gefahr.</disclaimer>
-    <disclaimer lang="bg_BG">Неофициална версия. Всички запазени марки принадлежат на EON. Използвайте на собствен риск.</disclaimer>
-    <disclaimer lang="sr_RS@latin">Nezvanična verzija. Svi zaštitni znaci pripadaju EON-u. Koristite na sopstveni rizik.</disclaimer>
-    <disclaimer lang="sr_RS">Незванична верзија. Сви заштитни знаци припадају EON-у. Користите на сопствени ризик.</disclaimer>
-    <platform>android-armv7</platform>
-    <license>GPL-2.0-or-later</license>
-    <source>https://github.com/nirvana-7777/pvr.eon</source>
-    <forum>https://www.kodinerds.net/thread/77069-release-pvr-eon-tv</forum>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
+<addon id="pvr.eon" version="21.8.5.1+android-armv7" name="EON PVR Client" provider-name="Nirvana">
+	<requires>
+		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
+		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
+		<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
+		<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.9"/>
+		<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
+		<import addon="inputstream.ffmpegdirect" minversion="21.0.0"/>
+		<import addon="inputstream.adaptive" minversion="21.0.0"/>
+		<import addon="script.module.inputstreamhelper" version="0.8.5"/>
+	</requires>
+	<extension point="kodi.pvrclient" library_android="libpvr.eon.so"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">PVR Client for EON</summary>
+		<summary lang="en_US">PVR Client for EON</summary>
+		<summary lang="de_DE">PVR-Client für EON</summary>
+		<summary lang="sr_RS@latin">PVR klijent za EON</summary>
+		<summary lang="sr_RS">PVR клијент за EON</summary>
+		<summary lang="hr_HR">PVR klijent za EON</summary>
+		<summary lang="bs_BA">PVR klijent za EON</summary>
+		<summary lang="sl_SI">Odjemalec PVR za EON</summary>
+		<summary lang="mk_MK">PVR клиент за EON</summary>
+		<summary lang="bg_BG">PVR клиент за EON</summary>
+		<summary lang="el_GR">Πελάτης PVR για το EON</summary>
+		<description lang="en_GB">PVR Client for EON which allows you to watch live TV channels and listen to radio stations. Supports TV-Guide (EPG) and 7-day rewind.</description>
+		<description lang="en_US">PVR Client for EON which allows you to watch live TV channels and listen to radio stations. Supports TV-Guide (EPG) and 7-day rewind.</description>
+		<description lang="de_DE">PVR-Client für EON, mit dem Sie TV-Sender live ansehen und Radiosender hören können. Unterstützt TV-Guide (EPG) und 7-Tage-Rücklauf.</description>
+		<description lang="sr_RS@latin">PVR klijent za EON koji vam omogućava da gledate TV kanale uživo i slušate radio stanice. Podržava EPG (TV vodič) i 7-dnevno vraćanje unazad.</description>
+		<description lang="sr_RS">PVR клијент за EON који вам омогућава да гледате TV канале уживо и слушате радио станице. Подржава EPG (TV водич) и 7-дневно враћање уназад.</description>
+		<description lang="hr_HR">PVR klijent za EON koji vam omogućuje gledanje TV programa uživo i slušanje radijskih postaja. Podržava EPG (TV vodič) i 7-dnevno vraćanje unazad.</description>
+		<description lang="bs_BA">PVR klijent za EON koji vam omogućava da gledate TV kanale uživo i slušate radio stanice. Podržava EPG (TV vodič) i 7-dnevno vraćanje unazad.</description>
+		<description lang="sl_SI">Odjemalec PVR za EON, ki omogoča gledanje televizijskih programov v živo in poslušanje radijskih postaj. Podpira EPG (TV spored) in 7-dnevno previjanje nazaj.</description>
+		<description lang="mk_MK">PVR клиент за EON кој ви овозможува да гледате ТВ канали во живо и да слушате радио станици. Поддржува EPG (ТВ водич) и 7-дневно враќање назад.</description>
+		<description lang="bg_BG">PVR клиент за EON, който ви позволява да гледате на живо телевизионни канали и да слушате радиостанции. Поддържа електронен програмен справочник (EPG) и 7-дневно връщане назад.</description>
+		<description lang="el_GR">Πελάτης PVR για το EON που σας επιτρέπει να παρακολουθείτε τηλεοπτικά κανάλια ζωντανά και να ακούτε ραδιοφωνικούς σταθμούς. Υποστηρίζει EPG (οδηγό προγράμματος) και επαναφορά 7 ημερών.</description>
+		<disclaimer lang="en_GB">No official version. All trademarks belong to EON. Use at your own risk.</disclaimer>
+		<disclaimer lang="en_US">No official version. All trademarks belong to EON. Use at your own risk.</disclaimer>
+		<disclaimer lang="de_DE">Keine offizielle Version. Alle Warenzeichen verbleiben bei EON. Benutzung auf eigene Gefahr.</disclaimer>
+		<disclaimer lang="sr_RS@latin">Nezvanična verzija. Svi zaštitni znaci pripadaju EON-u. Koristite na sopstveni rizik.</disclaimer>
+		<disclaimer lang="sr_RS">Незванична верзија. Сви заштитни знаци припадају EON-у. Користите на сопствени ризик.</disclaimer>
+		<disclaimer lang="hr_HR">Nije službena verzija. Svi zaštitni znakovi pripadaju EON-u. Koristite na vlastitu odgovornost.</disclaimer>
+		<disclaimer lang="bs_BA">Nezvanična verzija. Svi zaštitni znaci pripadaju EON-u. Koristite na vlastitu odgovornost.</disclaimer>
+		<disclaimer lang="sl_SI">Ni uradna različica. Vse blagovne znamke pripadajo EON. Uporaba na lastno odgovornost.</disclaimer>
+		<disclaimer lang="mk_MK">Неофицијална верзија. Сите заштитни знаци припаѓаат на EON. Користете на сопствен ризик.</disclaimer>
+		<disclaimer lang="bg_BG">Неофициална версия. Всички запазени марки принадлежат на EON. Използвайте на собствен риск.</disclaimer>
+		<disclaimer lang="el_GR">Μη επίσημη έκδοση. Όλα τα εμπορικά σήματα ανήκουν στην EON. Η χρήση γίνεται με δική σας ευθύνη.</disclaimer>
+		<platform>android-armv7</platform>
+		<license>GPL-2.0-or-later</license>
+		<source>https://github.com/nirvana-7777/pvr.eon</source>
+		<forum>https://www.kodinerds.net/thread/77069-release-pvr-eon-tv</forum>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 
-<addon id="pvr.eon" version="21.7.12+android-aarch64" name="EON PVR Client" provider-name="Nirvana">
-  <requires>
-    <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
-    <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-    <import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
-    <import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.9"/>
-    <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
-    <import addon="inputstream.ffmpegdirect" minversion="21.0.0" optional="true"/>
-    <import addon="inputstream.adaptive" minversion="21.0.0"/>
-    <import addon="script.module.inputstreamhelper" version="0.8.5"/>
-  </requires>
-  <extension point="kodi.pvrclient" library_android="libpvr.eon.so"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">PVR Client for EON</summary>
-    <summary lang="en_US">PVR Client for EON</summary>
-    <summary lang="de_DE">PVR-Client für EON</summary>
-    <summary lang="bg_BG">PVR клиент за EON</summary>
-    <summary lang="sr_RS@latin">PVR klijent za EON</summary>
-    <summary lang="sr_RS">PVR клијент за EON</summary>
-    <description lang="en_GB">PVR Client for EON which allows you to watch live TV channels and listen to radio stations. Supports TV-Guide (EPG) and 7-day rewind.</description>
-    <description lang="en_US">PVR Client for EON which allows you to watch live TV channels and listen to radio stations. Supports TV-Guide (EPG) and 7-day rewind.</description>
-    <description lang="de_DE">PVR-Client für EON, mit dem Sie TV-Sender live ansehen und Radiosender hören können. Unterstützt TV-Guide (EPG) und 7-Tage-Rücklauf.</description>
-    <description lang="bg_BG">PVR клиент за EON, който ви позволява да гледате на живо телевизионни канали и да слушате радиостанции. Поддържа електронен програмен справочник (EPG) и 7-дневно връщане назад.</description>
-    <description lang="sr_RS@latin">PVR klijent za EON koji vam omogućava da gledate TV kanale uživo i slušate radio stanice. Podržava EPG (TV vodič) i 7-dnevno vraćanje unazad.</description>
-    <description lang="sr_RS">PVR клијент за EON који вам омогућава да гледате TV канале уживо и слушате радио станице. Подржава EPG (TV водич) и 7-дневно враћање уназад.</description>
-    <disclaimer lang="en_GB">No official version. All trademarks belong to EON. Use at your own risk.</disclaimer>
-    <disclaimer lang="en_US">No official version. All trademarks belong to EON. Use at your own risk.</disclaimer>
-    <disclaimer lang="de_DE">Keine offizielle Version. Alle Warenzeichen verbleiben bei EON. Benutzung auf eigene Gefahr.</disclaimer>
-    <disclaimer lang="bg_BG">Неофициална версия. Всички запазени марки принадлежат на EON. Използвайте на собствен риск.</disclaimer>
-    <disclaimer lang="sr_RS@latin">Nezvanična verzija. Svi zaštitni znaci pripadaju EON-u. Koristite na sopstveni rizik.</disclaimer>
-    <disclaimer lang="sr_RS">Незванична верзија. Сви заштитни знаци припадају EON-у. Користите на сопствени ризик.</disclaimer>
-    <platform>android-aarch64</platform>
-    <license>GPL-2.0-or-later</license>
-    <source>https://github.com/nirvana-7777/pvr.eon</source>
-    <forum>https://www.kodinerds.net/thread/77069-release-pvr-eon-tv</forum>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
+<addon id="pvr.eon" version="21.8.5.1+android-aarch64" name="EON PVR Client" provider-name="Nirvana">
+	<requires>
+		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
+		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
+		<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
+		<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.9"/>
+		<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
+		<import addon="inputstream.ffmpegdirect" minversion="21.0.0"/>
+		<import addon="inputstream.adaptive" minversion="21.0.0"/>
+		<import addon="script.module.inputstreamhelper" version="0.8.5"/>
+	</requires>
+	<extension point="kodi.pvrclient" library_android="libpvr.eon.so"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">PVR Client for EON</summary>
+		<summary lang="en_US">PVR Client for EON</summary>
+		<summary lang="de_DE">PVR-Client für EON</summary>
+		<summary lang="sr_RS@latin">PVR klijent za EON</summary>
+		<summary lang="sr_RS">PVR клијент за EON</summary>
+		<summary lang="hr_HR">PVR klijent za EON</summary>
+		<summary lang="bs_BA">PVR klijent za EON</summary>
+		<summary lang="sl_SI">Odjemalec PVR za EON</summary>
+		<summary lang="mk_MK">PVR клиент за EON</summary>
+		<summary lang="bg_BG">PVR клиент за EON</summary>
+		<summary lang="el_GR">Πελάτης PVR για το EON</summary>
+		<description lang="en_GB">PVR Client for EON which allows you to watch live TV channels and listen to radio stations. Supports TV-Guide (EPG) and 7-day rewind.</description>
+		<description lang="en_US">PVR Client for EON which allows you to watch live TV channels and listen to radio stations. Supports TV-Guide (EPG) and 7-day rewind.</description>
+		<description lang="de_DE">PVR-Client für EON, mit dem Sie TV-Sender live ansehen und Radiosender hören können. Unterstützt TV-Guide (EPG) und 7-Tage-Rücklauf.</description>
+		<description lang="sr_RS@latin">PVR klijent za EON koji vam omogućava da gledate TV kanale uživo i slušate radio stanice. Podržava EPG (TV vodič) i 7-dnevno vraćanje unazad.</description>
+		<description lang="sr_RS">PVR клијент за EON који вам омогућава да гледате TV канале уживо и слушате радио станице. Подржава EPG (TV водич) и 7-дневно враћање уназад.</description>
+		<description lang="hr_HR">PVR klijent za EON koji vam omogućuje gledanje TV programa uživo i slušanje radijskih postaja. Podržava EPG (TV vodič) i 7-dnevno vraćanje unazad.</description>
+		<description lang="bs_BA">PVR klijent za EON koji vam omogućava da gledate TV kanale uživo i slušate radio stanice. Podržava EPG (TV vodič) i 7-dnevno vraćanje unazad.</description>
+		<description lang="sl_SI">Odjemalec PVR za EON, ki omogoča gledanje televizijskih programov v živo in poslušanje radijskih postaj. Podpira EPG (TV spored) in 7-dnevno previjanje nazaj.</description>
+		<description lang="mk_MK">PVR клиент за EON кој ви овозможува да гледате ТВ канали во живо и да слушате радио станици. Поддржува EPG (ТВ водич) и 7-дневно враќање назад.</description>
+		<description lang="bg_BG">PVR клиент за EON, който ви позволява да гледате на живо телевизионни канали и да слушате радиостанции. Поддържа електронен програмен справочник (EPG) и 7-дневно връщане назад.</description>
+		<description lang="el_GR">Πελάτης PVR για το EON που σας επιτρέπει να παρακολουθείτε τηλεοπτικά κανάλια ζωντανά και να ακούτε ραδιοφωνικούς σταθμούς. Υποστηρίζει EPG (οδηγό προγράμματος) και επαναφορά 7 ημερών.</description>
+		<disclaimer lang="en_GB">No official version. All trademarks belong to EON. Use at your own risk.</disclaimer>
+		<disclaimer lang="en_US">No official version. All trademarks belong to EON. Use at your own risk.</disclaimer>
+		<disclaimer lang="de_DE">Keine offizielle Version. Alle Warenzeichen verbleiben bei EON. Benutzung auf eigene Gefahr.</disclaimer>
+		<disclaimer lang="sr_RS@latin">Nezvanična verzija. Svi zaštitni znaci pripadaju EON-u. Koristite na sopstveni rizik.</disclaimer>
+		<disclaimer lang="sr_RS">Незванична верзија. Сви заштитни знаци припадају EON-у. Користите на сопствени ризик.</disclaimer>
+		<disclaimer lang="hr_HR">Nije službena verzija. Svi zaštitni znakovi pripadaju EON-u. Koristite na vlastitu odgovornost.</disclaimer>
+		<disclaimer lang="bs_BA">Nezvanična verzija. Svi zaštitni znaci pripadaju EON-u. Koristite na vlastitu odgovornost.</disclaimer>
+		<disclaimer lang="sl_SI">Ni uradna različica. Vse blagovne znamke pripadajo EON. Uporaba na lastno odgovornost.</disclaimer>
+		<disclaimer lang="mk_MK">Неофицијална верзија. Сите заштитни знаци припаѓаат на EON. Користете на сопствен ризик.</disclaimer>
+		<disclaimer lang="bg_BG">Неофициална версия. Всички запазени марки принадлежат на EON. Използвайте на собствен риск.</disclaimer>
+		<disclaimer lang="el_GR">Μη επίσημη έκδοση. Όλα τα εμπορικά σήματα ανήκουν στην EON. Η χρήση γίνεται με δική σας ευθύνη.</disclaimer>
+		<platform>android-aarch64</platform>
+		<license>GPL-2.0-or-later</license>
+		<source>https://github.com/nirvana-7777/pvr.eon</source>
+		<forum>https://www.kodinerds.net/thread/77069-release-pvr-eon-tv</forum>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 

@@ -144,6 +144,7 @@ repository.otaku
 repository.paco8
 repository.peno64
 repository.pikdum
+repository.prism
 repository.prototype
 repository.publish3r
 repository.pythontrousers
@@ -952,7 +953,7 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.8.3" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.8.8" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2750,6 +2751,26 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 		<summary>pikdum's repo</summary>
 		<description>probably mainly haru</description>
 		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.prism" name="Prism's Repository" version="1.0" provider-name="Goldenfreddy0703">
+	<extension point="xbmc.addon.repository" name="Prism's Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Prism's Repository</summary>
+		<description>A repository for Prism</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
 	</extension>
 </addon>
 
