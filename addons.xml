@@ -3509,7 +3509,7 @@ strptime Python bugfix
 </addon>
 
 
-<addon id="pvr.eon" version="21.8.5.1+linux-aarch64" name="EON PVR Client" provider-name="Nirvana">
+<addon id="pvr.eon" version="21.8.6+linux-aarch64" name="EON PVR Client" provider-name="Nirvana">
 	<requires>
 		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
@@ -3569,7 +3569,7 @@ PVR Client for EON which allows you to watch live TV channels and listen to radi
 </addon>
 
 
-<addon id="pvr.eon" version="21.8.5.1+android-armv7" name="EON PVR Client" provider-name="Nirvana">
+<addon id="pvr.eon" version="21.8.6+android-armv7" name="EON PVR Client" provider-name="Nirvana">
 	<requires>
 		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
@@ -3627,7 +3627,7 @@ PVR Client for EON which allows you to watch live TV channels and listen to radi
 </addon>
 
 
-<addon id="pvr.eon" version="21.8.5.1+android-aarch64" name="EON PVR Client" provider-name="Nirvana">
+<addon id="pvr.eon" version="21.8.6+android-aarch64" name="EON PVR Client" provider-name="Nirvana">
 	<requires>
 		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
