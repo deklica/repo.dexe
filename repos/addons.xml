@@ -59,6 +59,7 @@ repository.arrownegra
 repository.arxtic-ape
 repository.autowidget
 repository.axbmcuser
+repository.balkandzo
 repository.Bee-Queen
 repository.bingie
 repository.blackprogram
@@ -464,7 +465,7 @@ repository.zeus768
 </addon>
 
 
-<addon id="skin.fentastic" version="100.0.33ad" name="FENtastic Plus"
+<addon id="skin.fentastic" version="100.0.33a+mod" name="FENtastic Plus"
 	provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
@@ -953,7 +954,7 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.8.8" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.9.1" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1098,6 +1099,25 @@ Various other small tweaks and refinements throughout.</news>
 		<source>https://github.com/axbmcuser/_repo</source>
 		<assets>
 			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.balkandzo" name="Balkandzo Repo" version="1.0.2" provider="Balkandzo Team">
+	<extension point="xbmc.addon.repository" name="Balkandzo Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Zvanični repozitorijum za Balkandzo Kodi dodatke.</summary>
+		<description>Ovaj repozitorijum sadrži Balkandzo Wizard i druge dodatke.</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
@@ -2510,7 +2530,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.octopus" name="Octopus Repository" version="0.6.4" provider-name="Twiglet">
+<addon id="repository.octopus" name="Octopus Repository" version="0.6.8" provider-name="Twiglet">
 	<extension point="xbmc.addon.repository" name="Octopus Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

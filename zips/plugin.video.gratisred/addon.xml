@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.gratisred" version="1.3.0" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" version="1.3.3" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="script.gratisred.artwork" version="1.0.5"/>
         <import addon="script.module.kodi-six"/>
@@ -27,10 +27,9 @@
 		<website>https://redwizard.xyz/</website> 
 		<email>info@redwizard.xyz</email>
 		<source>https://github.com/The-Red-Wizard</source>
-        <news>2026-08-24
-- Summary of v1.3.0 (see Tools > Changelog for the detail):
- * My Stuff Trakt movie lists render again
- * MDBList In Progress refreshes after pause; Continue Watching shows titles</news>
+        <news>2026-09-05
+- Summary of v1.3.3 (see Tools > Changelog for the detail):
+ * Trakt paged fetches keep going after a full 250-item page</news>
         <assets>
             <icon>resources/images/icon.png</icon>
             <fanart>resources/images/fanart.jpg</fanart>

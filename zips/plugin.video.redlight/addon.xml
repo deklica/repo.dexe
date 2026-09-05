@@ -1,4 +1,4 @@
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="2.3.5">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="2.5.3">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -23,6 +23,6 @@
             <icon>resources/media/addon_icons/icon.png</icon>
             <fanart>resources/media/fanart.jpg</fanart>
         </assets>
-        <news>Check the Changelog in Tools &gt; Changelog &amp; Log Utils[/COLOR]</news>
+        <news>Check the Changelog in Tools &gt; Changelog &amp; Log Utils</news>
     </extension>
 </addon>
