@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.gratisred" version="1.3.3" name="[COLOR red]Gratis Red[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="1.3.8" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="script.gratisred.artwork" version="1.0.5"/>
         <import addon="script.module.kodi-six"/>
@@ -23,13 +23,21 @@
 		<language>en</language>
 		<platform>all</platform>
 		<license>GPL-3.0</license>
-		<forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
+		<forum>https://t.me/+X-lt1ZDii3I3YjA0</forum>
 		<website>https://redwizard.xyz/</website> 
-		<email>info@redwizard.xyz</email>
-		<source>https://github.com/The-Red-Wizard</source>
-        <news>2026-09-05
-- Summary of v1.3.3 (see Tools > Changelog for the detail):
- * Trakt paged fetches keep going after a full 250-item page</news>
+		<source>https://github.com/The-Red-Wizard/TheRedWizard</source>
+        <news>2026-09-21
+- Summary of v1.3.8 (see Tools > Changelog for the detail):
+ * Simkl Authorise is AUTH V2 (device PIN). Existing V1 sign-ins keep working until you revoke and Authorise again
+ * Simkl first sync stores activities so later list opens and mark watched do not full-pull the library again
+ * My Simkl Lists when signed in with V2 (read-only; PRO/VIP for list contents; a free account gets a toast). Lists are movies, shows, or anime — anime opens as TV Shows, one page at a time
+ * Track Rewatches (default off, Simkl PRO/VIP; a free account gets a toast and it turns back off)
+ * Change Watched Indicators sits at the top of Account Settings
+ * In Progress / resume can record on streams that report no duration (Trakt, Simkl, MDBList, and local bookmarks). Simkl / MDBList pause and stop wait until after CloseFile so they still land
+ * Explore no longer ticks Simkl Plan to Watch; Watched / Up to Date parent ticks stay. A season ticks only when its episodes are watched, not after episode 1
+ * Simkl Trending, TVmaze, and TV Passport use Items Per Page
+ * Changing Theme and pressing OK refreshes Tools so the new artwork shows immediately
+ * My Simkl and My MDBList shelves use Items Per Page, same as My Trakt</news>
         <assets>
             <icon>resources/images/icon.png</icon>
             <fanart>resources/images/fanart.jpg</fanart>
