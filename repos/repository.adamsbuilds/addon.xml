@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.adamsbuilds" name="adamsbuilds" version="1.0" provider-name="adamsbuilds">
+    <extension point="xbmc.addon.repository" name="adamsbuilds repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/adamsbuilds/repo/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/adamsbuilds/repo/master/zips/addons.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/adamsbuilds/repo/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>adamsbuilds</summary>
+        <description>adamsbuilds repository</description>
+        <disclaimer></disclaimer>
+		<source>https://adamsbuilds.github.io/repo/</source>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

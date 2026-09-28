@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.splitflap"
+       name="Split-Flap Repository"
+       version="1.0.0"
+       provider-name="asm0dey">
+  <extension point="xbmc.addon.repository">
+    <dir>
+      <info compressed="false">https://asm0dey.github.io/kodi-splitflap/repo/addons.xml</info>
+      <checksum>https://asm0dey.github.io/kodi-splitflap/repo/addons.xml.md5</checksum>
+      <datadir zip="true">https://asm0dey.github.io/kodi-splitflap/repo</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Install and update the Split-Flap Board screensaver and its glyph packs</summary>
+    <description lang="en_GB">Adds the Split-Flap Board screensaver and its glyph packs to your add-on browser, so they install and update the same way any other add-on does -- no zip files, and no typing a URL with a remote.</description>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <source>https://github.com/asm0dey/kodi-splitflap</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>

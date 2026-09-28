@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.opensubtitles-com"
+       name="OpenSubtitles.com Official Repository"
+       version="1.2.1"
+       provider-name="OpenSubtitles">
+	<extension point="xbmc.addon.repository" name="OpenSubtitles.com Official Repository">
+		<dir>
+			<info compressed="false">https://kodi.opensubtitles.com/addons.xml</info>
+			<checksum>https://kodi.opensubtitles.com/addons.xml.md5</checksum>
+			<datadir zip="true">https://kodi.opensubtitles.com/zips/</datadir>
+			<hashes>false</hashes>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Official repository for OpenSubtitles.com Kodi add-ons</summary>
+		<description lang="en_GB">Download and automatically receive instant updates for OpenSubtitles.com subtitle add-ons directly from the official developer source.</description>
+		<disclaimer lang="en_GB">Maintained by OpenSubtitles.com</disclaimer>
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+		<website>https://www.opensubtitles.com</website>
+		<source>https://github.com/opensubtitles/service.subtitles.opensubtitles-com</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="1.3.8" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.0.3" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="script.gratisred.artwork" version="1.0.5"/>
         <import addon="script.module.kodi-six"/>
@@ -18,26 +18,21 @@
     <extension library="service.py" point="xbmc.service" start="startup"/>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Free and non-Debrid Movies, TV Shows and Anime</summary>
-        <description lang="en">Providers bstsrs.one and srstop.link are returning duplicates. To see more links, go to:[CR][CR]Tools > Settings > Playback Settings and disable "Remove Duplicate Sources".</description>
-        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <description lang="en">For more links, go to:[CR][CR]* Tools > Settings > Provider Settings > Enable ALL Providers > OK[CR][CR]* Tools > Settings > Playback Settings > disable Remove Duplicate Sources > OK</description>
+        <disclaimer lang="en">The author of this add-on does not host any content and has no affiliation with the content providers</disclaimer>
 		<language>en</language>
 		<platform>all</platform>
 		<license>GPL-3.0</license>
 		<forum>https://t.me/+X-lt1ZDii3I3YjA0</forum>
 		<website>https://redwizard.xyz/</website> 
 		<source>https://github.com/The-Red-Wizard/TheRedWizard</source>
-        <news>2026-09-21
-- Summary of v1.3.8 (see Tools > Changelog for the detail):
- * Simkl Authorise is AUTH V2 (device PIN). Existing V1 sign-ins keep working until you revoke and Authorise again
- * Simkl first sync stores activities so later list opens and mark watched do not full-pull the library again
- * My Simkl Lists when signed in with V2 (read-only; PRO/VIP for list contents; a free account gets a toast). Lists are movies, shows, or anime — anime opens as TV Shows, one page at a time
- * Track Rewatches (default off, Simkl PRO/VIP; a free account gets a toast and it turns back off)
- * Change Watched Indicators sits at the top of Account Settings
- * In Progress / resume can record on streams that report no duration (Trakt, Simkl, MDBList, and local bookmarks). Simkl / MDBList pause and stop wait until after CloseFile so they still land
- * Explore no longer ticks Simkl Plan to Watch; Watched / Up to Date parent ticks stay. A season ticks only when its episodes are watched, not after episode 1
- * Simkl Trending, TVmaze, and TV Passport use Items Per Page
- * Changing Theme and pressing OK refreshes Tools so the new artwork shows immediately
- * My Simkl and My MDBList shelves use Items Per Page, same as My Trakt</news>
+        <news>2026-09-28
+- Summary of v2.0.3 (see Tools > Changelog for the detail):
+ * During playback, Back stops the film, arrows seek like the player, pause pauses, and the on-screen controls use those arrows while open
+ * In Progress seeks to the pause on that row
+ * Results sit in whole rows under the clear logo
+ * A long file name on the resolving dialog keeps its start and its end
+ * Tools lists Authorise MDBList, Simkl, TMDb, and Trakt in that order</news>
         <assets>
             <icon>resources/images/icon.png</icon>
             <fanart>resources/images/fanart.jpg</fanart>

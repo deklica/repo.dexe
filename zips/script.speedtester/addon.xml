@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.speedtester" name="Speed Tester" version="1.1.5+omega.1" provider-name="Dr0idGuy, dagwieers, [COLOR red]The Red Wizard[/COLOR]">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.python.script" library="resources/lib/addon_entry.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en_GB">Test your Internet bandwidth</summary>
-    <description lang="en_GB">This add-on tests your Internet bandwidth and reports download and upload speeds and latency from within Kodi.
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="resources/lib/addon_entry.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Test your Internet bandwidth</summary>
+        <description lang="en_GB">This add-on tests your Internet bandwidth and reports download and upload speeds and latency from within Kodi.
 
 Servers are selected automatically based on your location, or you can pick a city, country or specific server. Use this if you are experiencing streaming issues and suspect your network to be the cause.</description>
-    <disclaimer lang="en_GB">Speed Tester is powered by speedtest.net</disclaimer>
-    <language>en de es fr hu it nl pl pt ru zh</language>
-    <license>Apache-2.0</license>
-    <email>info@redwizard.xyz</email>
-    <website>https://kodi.wiki/view/Add-on:Speed_Tester</website>
-    <source>https://github.com/The-Red-Wizard/TheRedWizard</source>
-    <news>
+        <disclaimer lang="en_GB">Speed Tester is powered by speedtest.net</disclaimer>
+        <language>en de es fr hu it nl pl pt ru zh</language>
+        <platform>all</platform>
+        <license>Apache-2.0</license>
+        <forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
+        <website>https://redwizard.xyz/</website>
+        <source>https://github.com/The-Red-Wizard/TheRedWizard</source>
+        <news>
 v1.1.5 (2026-08-30)
 - Unofficial update by [COLOR red]The Red Wizard[/COLOR]
 - Keeps local results if there is no speedtest.net image
@@ -51,12 +51,12 @@ v1.1.0 (2020-09-26)
 
 v1.0.1 (2019-08-06)
 - Initial release
-    </news>
-    <assets>
-      <icon>resources/media/icon.png</icon>
-      <screenshot>resources/media/screenshot01.jpg</screenshot>
-      <screenshot>resources/media/screenshot02.jpg</screenshot>
-      <screenshot>resources/media/screenshot03.jpg</screenshot>
-    </assets>
-  </extension>
+        </news>
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <screenshot>resources/media/screenshot01.jpg</screenshot>
+            <screenshot>resources/media/screenshot02.jpg</screenshot>
+            <screenshot>resources/media/screenshot03.jpg</screenshot>
+        </assets>
+    </extension>
 </addon>

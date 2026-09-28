@@ -46,6 +46,7 @@ repository.709
 repository.a4kstreaming
 repository.a4ksubtitles
 repository.abratchik
+repository.adamsbuilds
 repository.addonniss
 repository.addons4kodi
 repository.adi
@@ -92,6 +93,7 @@ repository.enigmawiz
 repository.EzzerMacsWizard
 repository.eon
 repository.fanfilm
+repository.fivebanger
 repository.forge
 repository.foxystreams
 repository.fr33p0rt
@@ -139,7 +141,9 @@ repository.officerkd637
 repository.oldsalt
 repository.One
 repository.ontv
+repository.opendevtools
 repository.openscrapers
+repository.opensubtitles-com
 repository.openwizard
 repository.orion
 repository.otaku
@@ -165,7 +169,9 @@ repository.skinbase.nexus
 repository.skins.pkscout
 repository.slyguy
 repository.southpaw
+repository.splitflap
 repository.StreamArmy
+repository.stremioforkodi
 repository.subskip
 repository.TechNEWSology
 repository.theblackghost
@@ -176,6 +182,7 @@ repository.tidal2
 repository.tidb.repo
 repository.titan.bingie.mod
 repository.torrest
+repository.torus
 repository.tvone
 repository.twilight0
 repository.twilight0.libs
@@ -860,6 +867,27 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
+<addon id="repository.adamsbuilds" name="adamsbuilds" version="1.0" provider-name="adamsbuilds">
+	<extension point="xbmc.addon.repository" name="adamsbuilds repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>adamsbuilds</summary>
+		<description>adamsbuilds repository</description>
+		<disclaimer></disclaimer>
+		<source>https://adamsbuilds.github.io/repo/</source>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.addonniss" name="Addonniss Repository" version="1.0.1" provider-name="Addonniss">
 	<extension point="xbmc.addon.repository" name="Addonniss Repository">
 		<dir>
@@ -956,7 +984,7 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
-<addon id="repository.aliunde" name="Aliunde Repository" version="1.9.1" provider-name="Aliunde">
+<addon id="repository.aliunde" name="Aliunde Repository" version="1.9.4" provider-name="Aliunde">
 	<extension point="xbmc.addon.repository" name="Aliunde Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -1737,6 +1765,21 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
+<addon id="repository.fivebanger" name="fivebanger's KODI Add-ons" version="1.1.0" provider-name="fivebanger">
+	<extension point="xbmc.addon.repository" name="fivebanger's Kodi Add-on Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install fivebanger's Add-ons</summary>
+		<description>Download and install addons by fivebanger</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.forge" name="Forge Repository" version="0.1.0" provider-name="Forge Project">
 	<extension point="xbmc.addon.repository" name="Forge Repository">
 		<dir>
@@ -2423,7 +2466,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension> 
 </addon>
 
-<addon id="repository.melies" name="Melies Addon repository" version="0.1.10" provider-name="luizoti">
+<addon id="repository.melies" name="Melies Addon repository" version="0.1.13" provider-name="luizoti">
 	<extension point="xbmc.addon.repository" name="Example Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2554,7 +2597,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.octopus" name="Octopus Repository" version="0.6.8" provider-name="Twiglet">
+<addon id="repository.octopus" name="Octopus Repository" version="0.6.9" provider-name="Twiglet">
 	<extension point="xbmc.addon.repository" name="Octopus Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2662,6 +2705,26 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
+<addon id="repository.opendevtools" name="OpenDevTools Repository" version="1.0" provider-name="drinfernoo">
+	<extension point="xbmc.addon.repository" name="OpenDevTools Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>The official home of OpenDevTools</summary>
+		<description></description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.openscrapers" name="OpenScrapers Repository" version="1.0" provider-name="A4K">
 	<extension point="xbmc.addon.repository" name="OpenScrapers Repository">
 		<dir>
@@ -2674,6 +2737,29 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 		<summary>OpenScrapers Repository</summary>
 		<description>The official repo for OpenScrapers!</description>
 		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.opensubtitles-com" name="OpenSubtitles.com Official Repository" version="1.2.1" provider-name="OpenSubtitles">
+	<extension point="xbmc.addon.repository" name="OpenSubtitles.com Official Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Official repository for OpenSubtitles.com Kodi add-ons</summary>
+		<description lang="en_GB">Download and automatically receive instant updates for OpenSubtitles.com subtitle add-ons directly from the official developer source.</description>
+		<disclaimer lang="en_GB">Maintained by OpenSubtitles.com</disclaimer>
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+		<website>https://www.opensubtitles.com</website>
+		<source>https://github.com/opensubtitles/service.subtitles.opensubtitles-com</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -3175,7 +3261,27 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.StreamArmy" name="Stream Army Addons" version="17.0.000" provider-name="@Nemzzy668 / @_Manc_ // LordJD">
+<addon id="repository.splitflap" name="Split-Flap Repository" version="1.0.0" provider-name="asm0dey">
+	<extension point="xbmc.addon.repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Install and update the Split-Flap Board screensaver and its glyph packs</summary>
+		<description lang="en_GB">Adds the Split-Flap Board screensaver and its glyph packs to your add-on browser, so they install and update the same way any other add-on does -- no zip files, and no typing a URL with a remote.</description>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<source>https://github.com/asm0dey/kodi-splitflap</source>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.StreamArmy" name="Stream Army Addons" version="20.0.000" provider-name="@Nemzzy668 / @_Manc_ // LordJD">
 	<extension point="xbmc.addon.repository" name="Stream Army">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -3188,6 +3294,26 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 		<description>Repo For Stream Army, Bought to you by @Nemzzy668 / @_MANC_</description>
 		<disclaimer>Educational use only, not for public release.</disclaimer>
 		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.stremioforkodi" name="Stremio for Kodi Repository" version="1.0.0" provider-name="0eroiQ">
+	<extension point="xbmc.addon.repository" name="Stremio for Kodi Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+		<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Install and update Stremio for Kodi</summary>
+		<description lang="en_GB">Stable releases of the Stremio for Kodi program addon.</description>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<source>https://github.com/0eroiQ/Stremio-for-Kodi</source>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
@@ -3397,6 +3523,21 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.torus" name="Torus Repository" version="1.0.3" provider-name="Prateek Banga">
+	<extension point="xbmc.addon.repository" name="Torus Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Install and auto-update Torus</summary>
+		<description lang="en_GB">Repository for the Torus addon.</description>
+		<platform>all</platform>
 	</extension>
 </addon>
 

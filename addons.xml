@@ -4,12 +4,16 @@
 
 === Video ===
 plugin.video.blacklodge
+ resource.images.blacklodge.artwork
+ resource.images.whitelodge.artwork
 plugin.video.dltv
 plugin.video.dreammachine
 plugin.video.elementum
 plugin.video.eonvod
 plugin.video.free99
+ script.free99.artwork
 plugin.video.gratisred
+ script.gratisred.artwork
 plugin.video.iatheater
 plugin.video.imdb.trailers
 plugin.video.json_iptv
@@ -23,6 +27,7 @@ plugin.video.vidscr
 plugin.video.watchnixtoons2
 plugin.video.youtube
 plugin.video.ytchannels
+ script.module.youtube_channels
 
 === Context menus ===
 context.elementum
@@ -38,7 +43,22 @@ service.subtitles.opensubtitles_by_opensubtitles
 service.subtitles.opensubtitles_plus
 service.subtitles.titlovi
 
-=== Program &amp; Services ===
+=== Audio ===
+script.audio.motherearth
+plugin.audio.dashradio
+plugin.audio.datpiff
+plugin.audio.m3sr2019
+plugin.audio.radio_de_light
+plugin.audio.radiogarden
+plugin.audio.radiouk
+plugin.audio.tunein2017
+plugin.audio.tuneinradio
+plugin.audio.ytmusic.exp
+
+=== Image ===
+plugin.image.flickrexplorer
+
+=== Program and Services ===
 plugin.program.autoenabler
 plugin.program.openwizard
 plugin.program.optiklean
@@ -76,27 +96,10 @@ service.nextonlibrary
 service.subloader
 service.vpn.manager
 
-=== Audio ===
-script.audio.motherearth
-plugin.audio.dashradio
-plugin.audio.datpiff
-plugin.audio.m3sr2019
-plugin.audio.radio_de_light
-plugin.audio.radiogarden
-plugin.audio.radiouk
-plugin.audio.tunein2017
-plugin.audio.tuneinradio
-plugin.audio.ytmusic.exp
-
-=== Image ===
-plugin.image.flickrexplorer
-
-=== Dependencies ===
-script.module.youtube_channels
-script.free99.artwork
-script.gratisred.artwork
-resource.images.blacklodge.artwork
-resource.images.whitelodge.artwork
+=== Skin ===
+skin.fentastic
+ script.fentastic.helper
+skin.estuary.pkscout.mod (external)
 
 === Other ===
 plugin.program.moonlight-qt (linux)
@@ -117,12 +120,9 @@ script.module.orion
 
 service.subtitles.a4ksubtitles
 plugin.video.cumination
-plugin.video.seren
-context.seren
 plugin.video.umbrella
 plugin.video.pov (dradis, affenity, infinity)
 plugin.video.youtube
-script.module.magneto
 
 === Roooar ===
 plugin.video.themoviedb.helper
@@ -170,6 +170,42 @@ plugin.video.GreenKlikPremium
         <news>
 - See Changelog on Tools menu
         </news>
+    </extension>
+</addon>
+
+
+<addon id="resource.images.blacklodge.artwork" name="BlackLodge Artwork" version="1.1.1" provider-name="bleak-lodge">
+    <extension point="kodi.resource.images" compile="false" type="BlackLodge" />
+    <requires>
+        <import addon="kodi.resource" version="1.0.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Themes for BlackLodge add-on</summary>
+        <description lang="en_GB">Provided separately to allow easier distribution and consume less bandwidth</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="resource.images.whitelodge.artwork" name="Whitelodge Artwork" version="1.1.1" provider-name="bleak-lodge">
+    <extension point="kodi.resource.images" compile="false" type="Whitelodge" />
+    <requires>
+        <import addon="kodi.resource" version="1.0.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Themes for Whitelodge add-on</summary>
+        <description lang="en_GB">Provided separately to allow easier distribution and consume less bandwidth</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
     </extension>
 </addon>
 
@@ -334,7 +370,20 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="1.3.8" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="script.free99.artwork" version="1.0" name="[COLOR orange]Free99 Artwork[/COLOR]" provider-name="JewBMX">
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>Free99 Artwork</summary>
+        <description>Free99 Artwork</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.0.3" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="script.gratisred.artwork" version="1.0.5"/>
         <import addon="script.module.kodi-six"/>
@@ -353,8 +402,8 @@ plugin.video.GreenKlikPremium
     <extension library="service.py" point="xbmc.service" start="startup"/>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Free and non-Debrid Movies, TV Shows and Anime</summary>
-        <description lang="en">Providers bstsrs.one and srstop.link are returning duplicates. To see more links, go to:[CR][CR]Tools > Settings > Playback Settings and disable "Remove Duplicate Sources".</description>
-        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <description lang="en">For more links, go to:[CR][CR]* Tools > Settings > Provider Settings > Enable ALL Providers > OK[CR][CR]* Tools > Settings > Playback Settings > disable Remove Duplicate Sources > OK</description>
+        <disclaimer lang="en">The author of this add-on does not host any content and has no affiliation with the content providers</disclaimer>
 		<language>en</language>
 		<platform>all</platform>
 		<license>GPL-3.0</license>
@@ -365,6 +414,27 @@ plugin.video.GreenKlikPremium
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="script.gratisred.artwork" version="1.0.5" name="[COLOR red]Gratis Red Artwork[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR red]Gratis Red Artwork[/COLOR]</summary>
+        <description lang="en">[COLOR red]Gratis Red Artwork[/COLOR]</description>
+		<language>en</language>
+		<platform>all</platform>
+		<license>GPL-3.0</license>
+		<forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
+		<website>https://redwizard.xyz/</website> 
+		<email>info@redwizard.xyz</email>
+		<source>https://github.com/The-Red-Wizard</source>
+        <news></news>
+        <assets>
+            <icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
@@ -555,7 +625,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" version="2.6.9" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" version="2.7.2" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -896,6 +966,27 @@ Random updates by lolage.
 			<icon>icon.png</icon>
 		</assets>
 	</extension>
+</addon>
+
+
+<addon id="script.module.youtube_channels" name="YouTube Channels" version="0.2.0" provider-name="Alexander Seiler">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="plugin.video.youtube" version="6.8.18+matrix.1"/>
+    <import addon="script.module.simplecache" version="2.0.2"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Helps you to include YouTube channels in a Kodi plugin.</summary>
+    <description lang="en_GB">YouTube Channels offers helper function to include a list of different YouTube channels into your Kodi plugin.</description>
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+    <email>seileralex@gmail.com</email>
+    <source>https://github.com/goggle/script.module.youtube_channels</source>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
 </addon>
 
 
@@ -1392,6 +1483,359 @@ In order to get the API Key:
             <icon>icon.png</icon>
         </assets>
     </extension>
+</addon>
+
+
+<addon id="service.subtitles.titlovi" name="Titlovi.com" version="2.0.1" provider-name="dEXE">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+	</requires>
+	<extension point="xbmc.subtitle.module" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Titlovi.com Official Subtitles Addon</summary>
+		<summary lang="sr_RS">Titlovi.com званични додатак за титлове</summary>
+		<summary lang="sr_RS@latin">Titlovi.com zvanični dodatak za titlove</summary>
+		<summary lang="hr_HR">Titlovi.com službeni dodatak za titlove</summary>
+		<summary lang="bs_BA">Titlovi.com službeni dodatak za titlove</summary>
+		<summary lang="mk_MK">Titlovi.com официјален додаток за преводи</summary>
+		<summary lang="sl_SI">Titlovi.com uradni dodatek za podnapise</summary>
+		<description lang="en_GB">[CR]Search and download subtitles for Movies, Documentaries and TV Series from [B]Titlovi.com[/B].[CR][CR]Supported languages: English, Serbian, Croatian, Bosnian, Macedonian and Slovenian.</description>
+		<description lang="sr_RS">[CR]Претражите и преузмите титлове за филмове, документарце и ТВ серије са [B]Titlovi.com[/B].[CR][CR]Подржани језици: енглески, српски, хрватски, босански, македонски и словеначки.</description>
+		<description lang="sr_RS@latin">[CR]Pretražite i preuzmite titlove za filmove, dokumentarce i TV serije sa [B]Titlovi.com[/B].[CR][CR]Podržani jezici: engleski, srpski, hrvatski, bosanski, makedonski i slovenački.</description>
+		<description lang="hr_HR">[CR]Pretražite i preuzmite titlove za filmove, dokumentarce i TV serije s [B]Titlovi.com[/B].[CR][CR]Podržani jezici: engleski, srpski, hrvatski, bosanski, makedonski i slovenski.</description>
+		<description lang="bs_BA">[CR]Pretražite i preuzmite titlove za filmove, dokumentarce i TV serije sa [B]Titlovi.com[/B].[CR][CR]Podržani jezici: engleski, srpski, hrvatski, bosanski, makedonski i slovenski.</description>
+		<description lang="mk_MK">[CR]Пребарувајте и преземајте преводи за филмови, документарни филмови и ТВ серии од [B]Titlovi.com[/B].[CR][CR]Поддржани јазици: англиски, српски, хрватски, босански, македонски и словенечки.</description>
+		<description lang="sl_SI">[CR]Iščite in prenesite podnapise za filme, dokumentarne filme in TV serije s [B]Titlovi.com[/B].[CR][CR]Podprti jeziki: angleščina, srbščina, hrvaščina, bosanščina, makedonščina in slovenščina.</description>
+		<disclaimer lang="en_GB">Users need to provide [B]Titlovi.com[/B] username and password in add-on configuration,[CR]and ensure that API access is enabled for their account on the server.</disclaimer>
+		<disclaimer lang="sr_RS">Корисници морају да унесу [B]Titlovi.com[/B] корисничко име и лозинку у подешавањима додатка,[CR]и да провере да ли је API приступ омогућен за њихов налог од стране сервера.</disclaimer>
+		<disclaimer lang="sr_RS@latin">Korisnici moraju da unesu [B]Titlovi.com[/B] korisničko ime i lozinku u podešavanjima dodatka,[CR]i da provere da li je API pristup omogućen za njihov nalog od strane servera.</disclaimer>
+		<disclaimer lang="hr_HR">Korisnici moraju upisati [B]Titlovi.com[/B] korisničko ime i lozinku u postavke dodatka,[CR]te osigurati da je API pristup omogućen za njihov račun na poslužitelju.</disclaimer>
+		<disclaimer lang="bs_BA">Korisnici moraju unijeti [B]Titlovi.com[/B] korisničko ime i lozinku u postavkama dodatka,[CR]i osigurati da je API pristup omogućen za njihov račun od strane servera.</disclaimer>
+		<disclaimer lang="mk_MK">Корисниците треба да внесат корисничко име и лозинка за [B]Titlovi.com[/B] во конфигурацијата на додатокот,[CR]и да се осигураат дека АПИ пристапот е овозможен за нивната сметка од страна на серверот.</disclaimer>
+		<disclaimer lang="sl_SI">Uporabniki morajo vnesti uporabniško ime in geslo za [B]Titlovi.com[/B] v nastavitvah dodatka ter zagotoviti,[CR]da je dostop do API-ja omogočen za njihov račun na strežniku.</disclaimer>
+		<language>en sr hr bs mk sl</language>
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+		<forum>https://kodi.titlovi.com</forum>
+		<website>https://titlovi.com</website>
+		<email>info [at] titlovi {dot} com</email>
+		<source>https://github.com/deklica/service.subtitles.titlovi</source>
+		<news>[COLOR darkgoldenrod]All changes on GitHub:[/COLOR] [COLOR dodgerblue]github.com/deklica/service.subtitles.titlovi[/COLOR]</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>screenshot-1.jpg</screenshot>
+			<screenshot>screenshot-2.jpg</screenshot>
+			<screenshot>screenshot-3.jpg</screenshot>
+			<screenshot>screenshot-4.jpg</screenshot>
+			<screenshot>screenshot-5.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+
+<!-- ====================================================================== -->
+
+
+<addon id="script.audio.motherearth" name="Mother Earth Radio" version="2.4" provider-name="Florian Reiterer">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="script.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Mother Earth Radio - 192kHz/24bit streaming</summary>
+        <description lang="en_GB">Hi Res Audio and Vinyl- Mother Earth is a free HD music station without advertising. Best audio quality, selected tracks, audiophile only. Stream now!</description>
+        <website>https://motherearthradio.de/</website>
+        <source>https://github.com/FlorianReiterer/repo-scripts/tree/script.audio.motherearth</source>
+        <license>GPL-3.0-or-later</license>
+        <platform>all</platform>
+        <news>
+         2.4 migrated to new server
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.audio.dashradio" name="Litt Live Radio" version="421.4" provider-name="Diggz">
+<requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>audio</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+    <summary lang="en">LITT Live Radio</summary>
+    <description lang="en">Litt Live (stylized as LITT Live, formerly Dash Radio) is a digital radio broadcasting platform with over 80 radio stations. These stations are curated by DJs, radio personalities, musicians, etc. The platform includes partner stations curated by Snoop Dogg, Kylie Jenner, Lil Wayne, Tech N9ne, Borgore, B-Real of Cypress Hill, and others. Dash Radio has no subscription fees and is commercial-free.
+
+</description>
+    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Free</license>
+    <platform>all</platform>
+  <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+     </assets>	
+    </extension>
+</addon>
+
+
+<addon id="plugin.audio.datpiff" name="datPiff" version="2.0.0" provider-name="mfd">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.beautifulsoup4" version="4.9.3"/>
+		<import addon="script.module.requests" version="2.22.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="datpiff.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">datpiff Mixtapes</summary>
+		<description lang="en">Streams mixtapes from datpiff.com</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<language/>
+		<website>www.datpiff.com</website>
+		<forum/>
+		<source>https://github.com/michaelfdeberry/plugin.audio.datpiff</source>
+		<email>mdeberry at vitreousoft dot com</email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    	</assets>
+	</extension>
+</addon>
+
+
+<addon id="plugin.audio.m3sr2019" name="MP3 Streams Echoed" version="2026.1.0" provider-name="Echostorm / Claude">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.beautifulsoup4"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.routing"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <platform>all</platform>
+        <license>GPL-3.0</license>
+        <summary>MP3 Streams Echoed — music streaming for Kodi</summary>
+        <description>Browse and stream songs and albums. Browse by genre, search artists, albums or songs, save favourites, play or shuffle full albums, and stream tracks directly in Kodi.</description>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.audio.radio_de_light" name="Radio light" provider-name="fivebanger, Publish3r" version="1.0.2">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" version="2.18.4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Online radio and podcasts</summary>
+    <description lang="en_GB">Add-on to access broadcast streams provided by Radio.de.</description>
+    <disclaimer lang="en_GB">This add-on is not endorsed, certified or otherwise approved in any way by Radio.de. Use at your own risk.</disclaimer>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+
+<addon id="plugin.audio.radiogarden" 
+       name="Radio Garden" 
+       version="2.0" 
+       provider-name="@TrainAgain2">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Listen to radio stations from around the world</summary>
+        <summary lang="pt_BR">Ouça estações de rádio de todo o mundo</summary>
+        <summary lang="ro_RO">Ascultați posturi de radio din întreaga lume</summary>
+        <description lang="en_GB">Radio Garden allows you to explore and listen to live radio stations from around the world. Created by @TrainAgain2.</description>
+        <description lang="pt_BR">O Radio Garden permite explorar e ouvir estações de rádio ao vivo de todo o mundo. Criado por @TrainAgain2.</description>
+        <description lang="ro_RO">Radio Garden vă permite să explorați și să ascultați posturi de radio în direct din întreaga lume. Creat de @TrainAgain2.</description>
+        <disclaimer lang="en_GB">This addon uses the unofficial Radio Garden API. The author is not affiliated with Radio Garden BV.</disclaimer>
+        <disclaimer lang="pt_BR">Este addon usa a API não oficial do Radio Garden. O autor não é afiliado à Radio Garden BV.</disclaimer>
+        <disclaimer lang="ro_RO">Acest supliment folosește API-ul neoficial Radio Garden. Autorul nu este afiliat cu Radio Garden BV.</disclaimer>
+        <platform>all</platform>
+        <license>GPL-3.0-only</license>
+        <website>https://radio.garden/</website>
+        <source>https://github.com/yourusername/plugin.audio.radiogarden</source>
+        <news>v1.4.1 (2026-01-28)
+- Fixed Icon and Fanart display issues: simplified file names for better Kodi compatibility
+- Updated provider and description: Created by @TrainAgain2
+- New modern artwork: updated icon and fanart with a clean white background and brush-stroke style
+- Colors updated to match the original Radio Garden green and blue palette
+- Removed "Popular Stations" menu as requested
+- Enhanced search logic: improved accuracy and global coverage for countries and cities
+- Optimized search for Portuguese speakers with expanded country name translations
+- Maintained consistent use of plugin icon for all stations
+- Simplified main menu for a cleaner experience
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.audio.radiouk" name="Radio UK" version="1.3.4" provider-name="Enigma">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+			<screenshot>submenu-tunein.png</screenshot>
+		</assets>
+		<summary>Live UK radio stations</summary>
+		<description>Listen to a curated selection of live UK stations and browse TuneIn Radio with search, categories, favourites, recent stations, programme metadata, artwork, refresh controls, and direct playback.</description>
+		<news></news>
+		<platform>all</platform>
+		<source>https://www.radio-uk.co.uk/</source>
+		<language>en_GB</language>
+	</extension>
+</addon>
+
+
+<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.8.3" provider-name="rols1 (rols1@gmx.de)">
+	<requires>
+		<import addon="xbmc.python" version="3.0.1"/>
+    		<import addon="script.module.kodi-six" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="tunein2017.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">tunein.com-Addon für Kodi</summary>
+		<summary lang="en">tunein.com-addon for Kodi</summary>
+		<summary lang="es">Complemento de tunein.com para Kodi</summary>
+		<description lang="de">Favoriten und Ordner (Tunein-Account erforderlich), Download-Option mit Streamripper, Standalone-Option StartWithMyRadioStations (Beispieldatei enthalten)</description>
+		<description lang="es">Favoritos y carpetas de favoritos (se requiere cuenta en TuneIn). Opción de descarga con el programa Streamripper. Opción independiente para iniciar con Mis Emisoras de Radio (incluye archivo de muestra).</description>	
+		<platform>all</platform>
+		<source>https://github.com/rols1/Kodi-Addon-TuneIn2017</source>
+		<forum>https://www.kodinerds.net/index.php/Thread/66559-RELEASE-Kodi-Addon-TuneIn2017</forum>
+		<license>The MIT License (MIT)</license>
+		<language>"en_GB"</language>
+ 		<email>rols1@gmx.de</email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>           
+		</assets>
+   </extension>
+</addon>
+
+
+<addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="4.0.2" provider-name="joaconigro">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.simplejson" version="3.17.0"/>
+		<!-- <import addon="script.module.web-pdb" /> -->
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <language>en es</language>
+        <platform>all</platform>
+        <forum></forum>
+        <website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
+        <email>joaquinnigro@gmail.com</email>
+		<summary lang="en_GB">TuneIn Radio</summary>
+		<summary lang="es_ES">TuneIn Radio</summary>
+		<description lang="en_GB">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
+		<description lang="es_ES">TuneIn Radio es un servicio gratuito que te permite escuchar cualquier cosa del mundo desde donde te encuentres. Si deseas escuchar música, deportes, noticias o eventos actuales. TuneIn Radio ofrece más de 50,000 estaciones radiales para escoger, desde estaciones locales hasta descubrir nuevas estaciones alrededor del mundo, TuneIn Radio te lleva a donde tu quieras estar.</description>
+		<license>MIT</license>
+		<website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
+		<source>https://github.com/joaconigro/plugin.audio.tuneinradio</source>
+		<assets>
+        	<icon>icon.png</icon>
+        	<fanart>fanart.jpg</fanart>
+    	</assets>
+	</extension>	
+</addon>
+
+
+<addon id="plugin.audio.ytmusic.exp"
+       name="YT [COLOR red]Music[/COLOR] EXP"
+       version="1.0~beta39"
+       provider-name="ForeverGuest">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="1.1.0"/>
+    <!--<import addon="script.module.web-pdb" version="1.5.6+matrix.1"/>-->
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="resources/lib/addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Experimental Youtube [COLOR red]Music[/COLOR] plugin</summary>
+    <description lang="en">EXPerimental plugin that lets you play music from Youtube Music.</description>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+
+<!-- ====================================================================== -->
+
+
+<addon id="plugin.image.flickrexplorer" name="FlickrExplorer" version="0.7.8+nexus" provider-name="rols1 (rols1@gmx.de)">
+  <requires>
+   <import addon="xbmc.python" version="3.0.1"/>
+    <import addon="script.module.kodi-six" />
+ </requires>
+  <extension point="xbmc.python.pluginsource" library="flickrexplorer.py">
+        <provides>image</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="de">flickr-Addon für Kodi</summary>
+	<summary lang="en">flickr-addon for Kodi</summary>
+	<description lang="de">Blättern und Suchen in öffentlichen Flickr-Beständen (Photostream, Gallerien, Alben, Favoriten)</description>
+	<description lang="en">Browse and search public content on Flickr (Photostream, Galleries, Albums, Faves, People)</description>
+	<platform>all</platform>
+         <source>https://github.com/rols1/Kodi-Addon-FlickrExplorer</source>
+        <forum>will be added</forum>
+	<license>The MIT License (MIT)</license>
+	<language>"en_GB"</language>
+ 	<email>rols1@gmx.de</email>
+        <assets>
+             <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>           
+     </assets>
+   </extension>
 </addon>
 
 
@@ -2230,7 +2674,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.6.1" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.6.2" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2503,25 +2947,25 @@ Benutzer melden diverse Segmente die dann automatisch übersprungen werden.
 
 
 <addon id="script.speedtester" name="Speed Tester" version="1.1.5+omega.1" provider-name="Dr0idGuy, dagwieers, [COLOR red]The Red Wizard[/COLOR]">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.python.script" library="resources/lib/addon_entry.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en_GB">Test your Internet bandwidth</summary>
-    <description lang="en_GB">This add-on tests your Internet bandwidth and reports download and upload speeds and latency from within Kodi.
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="resources/lib/addon_entry.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Test your Internet bandwidth</summary>
+        <description lang="en_GB">This add-on tests your Internet bandwidth and reports download and upload speeds and latency from within Kodi.
 
 Servers are selected automatically based on your location, or you can pick a city, country or specific server. Use this if you are experiencing streaming issues and suspect your network to be the cause.</description>
-    <disclaimer lang="en_GB">Speed Tester is powered by speedtest.net</disclaimer>
-    <language>en de es fr hu it nl pl pt ru zh</language>
-    <license>Apache-2.0</license>
-    <email>info@redwizard.xyz</email>
-    <website>https://kodi.wiki/view/Add-on:Speed_Tester</website>
-    <source>https://github.com/The-Red-Wizard/TheRedWizard</source>
-    <news>
+        <disclaimer lang="en_GB">Speed Tester is powered by speedtest.net</disclaimer>
+        <language>en de es fr hu it nl pl pt ru zh</language>
+        <platform>all</platform>
+        <license>Apache-2.0</license>
+        <forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
+        <website>https://redwizard.xyz/</website>
+        <source>https://github.com/The-Red-Wizard/TheRedWizard</source>
+        <news>
 v1.1.5 (2026-08-30)
 - Unofficial update by [COLOR red]The Red Wizard[/COLOR]
 - Keeps local results if there is no speedtest.net image
@@ -2554,14 +2998,14 @@ v1.1.0 (2020-09-26)
 
 v1.0.1 (2019-08-06)
 - Initial release
-    </news>
-    <assets>
-      <icon>icon.png</icon>
-      <screenshot>screenshot01.jpg</screenshot>
-      <screenshot>screenshot02.jpg</screenshot>
-      <screenshot>screenshot03.jpg</screenshot>
-    </assets>
-  </extension>
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <screenshot>screenshot01.jpg</screenshot>
+            <screenshot>screenshot02.jpg</screenshot>
+            <screenshot>screenshot03.jpg</screenshot>
+        </assets>
+    </extension>
 </addon>
 
 
@@ -2890,399 +3334,63 @@ additional strptime modifications to fix scheduler behavior
 <!-- ====================================================================== -->
 
 
-<addon id="script.audio.motherearth" name="Mother Earth Radio" version="2.4" provider-name="Florian Reiterer">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.0.0"/>
-    </requires>
-    <extension point="xbmc.python.script" library="script.py">
-        <provides>audio</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Mother Earth Radio - 192kHz/24bit streaming</summary>
-        <description lang="en_GB">Hi Res Audio and Vinyl- Mother Earth is a free HD music station without advertising. Best audio quality, selected tracks, audiophile only. Stream now!</description>
-        <website>https://motherearthradio.de/</website>
-        <source>https://github.com/FlorianReiterer/repo-scripts/tree/script.audio.motherearth</source>
-        <license>GPL-3.0-or-later</license>
-        <platform>all</platform>
-        <news>
-         2.4 migrated to new server
-        </news>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-
-<addon id="plugin.audio.dashradio" name="Litt Live Radio" version="421.4" provider-name="Diggz">
-<requires>
-  <import addon="xbmc.python" version="3.0.0"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="main.py">
-  <provides>audio</provides>
-</extension>
-<extension point="xbmc.addon.metadata">
-    <summary lang="en">LITT Live Radio</summary>
-    <description lang="en">Litt Live (stylized as LITT Live, formerly Dash Radio) is a digital radio broadcasting platform with over 80 radio stations. These stations are curated by DJs, radio personalities, musicians, etc. The platform includes partner stations curated by Snoop Dogg, Kylie Jenner, Lil Wayne, Tech N9ne, Borgore, B-Real of Cypress Hill, and others. Dash Radio has no subscription fees and is commercial-free.
-
-</description>
-    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        <license>Free</license>
-    <platform>all</platform>
-  <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-     </assets>	
-    </extension>
-</addon>
-
-
-<addon id="plugin.audio.datpiff" name="datPiff" version="2.0.0" provider-name="mfd">
+<addon id="skin.fentastic" version="100.0.33a+mod" name="FENtastic Plus" provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.beautifulsoup4" version="4.9.3"/>
-		<import addon="script.module.requests" version="2.22.0"/>
+		<import addon="xbmc.gui" version="5.17.0" />
+		<import addon="script.fentastic.helper" version="100.6.28a" />
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="datpiff.py">
-		<provides>audio</provides>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary lang="en">datpiff Mixtapes</summary>
-		<description lang="en">Streams mixtapes from datpiff.com</description>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<language/>
-		<website>www.datpiff.com</website>
-		<forum/>
-		<source>https://github.com/michaelfdeberry/plugin.audio.datpiff</source>
-		<email>mdeberry at vitreousoft dot com</email>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<forum>http://forum.kodi.tv/</forum>
+		<source>https://github.com/xbmc/skin.estuary/</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-    	</assets>
+			<screenshot>customizable_widgets.jpg</screenshot>
+			<screenshot>infopanel.jpg</screenshot>
+			<screenshot>viewtypes1.jpg</screenshot>
+		</assets>
+		<summary lang="en_GB">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
+		<summary lang="en_NZ">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
+		<summary lang="en_US">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
+		<description lang="en_GB">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Red Light, The Gears, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+		<description lang="en_NZ">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Red Light, The Gears, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+		<description lang="en_US">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Red Light, The Gears, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
 	</extension>
 </addon>
 
 
-<addon id="plugin.audio.m3sr2019" name="MP3 Streams Echoed" version="2026.1.0" provider-name="Echostorm / Claude">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.28a" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.beautifulsoup4"/>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.routing"/>
+        <import addon="script.module.requests" version="2.19.1"/>
     </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio</provides>
-    </extension>
+    <extension point="xbmc.python.library" library="resources/lib/default.py"/>
+    <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
     <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <news />
         <platform>all</platform>
-        <license>GPL-3.0</license>
-        <summary>MP3 Streams Echoed — music streaming for Kodi</summary>
-        <description>Browse and stream songs and albums. Browse by genre, search artists, albums or songs, save favourites, play or shuffle full albums, and stream tracks directly in Kodi.</description>
+        <license>GPL-2.0-only</license>
+        <forum />
+        <source />
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
-    </extension>
-</addon>
-
-
-<addon id="plugin.audio.radio_de_light" name="Radio light" provider-name="fivebanger, Publish3r" version="1.0.2">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0" />
-    <import addon="script.module.requests" version="2.18.4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>audio</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Online radio and podcasts</summary>
-    <description lang="en_GB">Add-on to access broadcast streams provided by Radio.de.</description>
-    <disclaimer lang="en_GB">This add-on is not endorsed, certified or otherwise approved in any way by Radio.de. Use at your own risk.</disclaimer>
-    <platform>all</platform>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-
-<addon id="plugin.audio.radiogarden" 
-       name="Radio Garden" 
-       version="2.0" 
-       provider-name="@TrainAgain2">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.0.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>audio</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Listen to radio stations from around the world</summary>
-        <summary lang="pt_BR">Ouça estações de rádio de todo o mundo</summary>
-        <summary lang="ro_RO">Ascultați posturi de radio din întreaga lume</summary>
-        <description lang="en_GB">Radio Garden allows you to explore and listen to live radio stations from around the world. Created by @TrainAgain2.</description>
-        <description lang="pt_BR">O Radio Garden permite explorar e ouvir estações de rádio ao vivo de todo o mundo. Criado por @TrainAgain2.</description>
-        <description lang="ro_RO">Radio Garden vă permite să explorați și să ascultați posturi de radio în direct din întreaga lume. Creat de @TrainAgain2.</description>
-        <disclaimer lang="en_GB">This addon uses the unofficial Radio Garden API. The author is not affiliated with Radio Garden BV.</disclaimer>
-        <disclaimer lang="pt_BR">Este addon usa a API não oficial do Radio Garden. O autor não é afiliado à Radio Garden BV.</disclaimer>
-        <disclaimer lang="ro_RO">Acest supliment folosește API-ul neoficial Radio Garden. Autorul nu este afiliat cu Radio Garden BV.</disclaimer>
-        <platform>all</platform>
-        <license>GPL-3.0-only</license>
-        <website>https://radio.garden/</website>
-        <source>https://github.com/yourusername/plugin.audio.radiogarden</source>
-        <news>v1.4.1 (2026-01-28)
-- Fixed Icon and Fanart display issues: simplified file names for better Kodi compatibility
-- Updated provider and description: Created by @TrainAgain2
-- New modern artwork: updated icon and fanart with a clean white background and brush-stroke style
-- Colors updated to match the original Radio Garden green and blue palette
-- Removed "Popular Stations" menu as requested
-- Enhanced search logic: improved accuracy and global coverage for countries and cities
-- Optimized search for Portuguese speakers with expanded country name translations
-- Maintained consistent use of plugin icon for all stations
-- Simplified main menu for a cleaner experience
-        </news>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-
-<addon id="plugin.audio.radiouk" name="Radio UK" version="1.3.4" provider-name="Enigma">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>audio</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" />
-	<extension point="xbmc.addon.metadata">
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.png</fanart>
-			<screenshot>submenu-tunein.png</screenshot>
-		</assets>
-		<summary>Live UK radio stations</summary>
-		<description>Listen to a curated selection of live UK stations and browse TuneIn Radio with search, categories, favourites, recent stations, programme metadata, artwork, refresh controls, and direct playback.</description>
-		<news></news>
-		<platform>all</platform>
-		<source>https://www.radio-uk.co.uk/</source>
-		<language>en_GB</language>
-	</extension>
-</addon>
-
-
-<addon id="plugin.audio.tunein2017" name="TuneIn2017" version="1.8.3" provider-name="rols1 (rols1@gmx.de)">
-	<requires>
-		<import addon="xbmc.python" version="3.0.1"/>
-    		<import addon="script.module.kodi-six" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="tunein2017.py">
-		<provides>audio</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de">tunein.com-Addon für Kodi</summary>
-		<summary lang="en">tunein.com-addon for Kodi</summary>
-		<summary lang="es">Complemento de tunein.com para Kodi</summary>
-		<description lang="de">Favoriten und Ordner (Tunein-Account erforderlich), Download-Option mit Streamripper, Standalone-Option StartWithMyRadioStations (Beispieldatei enthalten)</description>
-		<description lang="es">Favoritos y carpetas de favoritos (se requiere cuenta en TuneIn). Opción de descarga con el programa Streamripper. Opción independiente para iniciar con Mis Emisoras de Radio (incluye archivo de muestra).</description>	
-		<platform>all</platform>
-		<source>https://github.com/rols1/Kodi-Addon-TuneIn2017</source>
-		<forum>https://www.kodinerds.net/index.php/Thread/66559-RELEASE-Kodi-Addon-TuneIn2017</forum>
-		<license>The MIT License (MIT)</license>
-		<language>"en_GB"</language>
- 		<email>rols1@gmx.de</email>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>           
-		</assets>
-   </extension>
-</addon>
-
-
-<addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="4.0.2" provider-name="joaconigro">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.simplejson" version="3.17.0"/>
-		<!-- <import addon="script.module.web-pdb" /> -->
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>audio</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-        <language>en es</language>
-        <platform>all</platform>
-        <forum></forum>
-        <website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
-        <email>joaquinnigro@gmail.com</email>
-		<summary lang="en_GB">TuneIn Radio</summary>
-		<summary lang="es_ES">TuneIn Radio</summary>
-		<description lang="en_GB">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
-		<description lang="es_ES">TuneIn Radio es un servicio gratuito que te permite escuchar cualquier cosa del mundo desde donde te encuentres. Si deseas escuchar música, deportes, noticias o eventos actuales. TuneIn Radio ofrece más de 50,000 estaciones radiales para escoger, desde estaciones locales hasta descubrir nuevas estaciones alrededor del mundo, TuneIn Radio te lleva a donde tu quieras estar.</description>
-		<license>MIT</license>
-		<website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
-		<source>https://github.com/joaconigro/plugin.audio.tuneinradio</source>
-		<assets>
-        	<icon>icon.png</icon>
-        	<fanart>fanart.jpg</fanart>
-    	</assets>
-	</extension>	
-</addon>
-
-
-<addon id="plugin.audio.ytmusic.exp"
-       name="YT [COLOR red]Music[/COLOR] EXP"
-       version="1.0~beta39"
-       provider-name="ForeverGuest">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.requests" version="1.1.0"/>
-    <!--<import addon="script.module.web-pdb" version="1.5.6+matrix.1"/>-->
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="resources/lib/addon.py">
-    <provides>audio</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Experimental Youtube [COLOR red]Music[/COLOR] plugin</summary>
-    <description lang="en">EXPerimental plugin that lets you play music from Youtube Music.</description>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-
-<!-- ====================================================================== -->
-
-
-<addon id="plugin.image.flickrexplorer" name="FlickrExplorer" version="0.7.8+nexus" provider-name="rols1 (rols1@gmx.de)">
-  <requires>
-   <import addon="xbmc.python" version="3.0.1"/>
-    <import addon="script.module.kodi-six" />
- </requires>
-  <extension point="xbmc.python.pluginsource" library="flickrexplorer.py">
-        <provides>image</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<summary lang="de">flickr-Addon für Kodi</summary>
-	<summary lang="en">flickr-addon for Kodi</summary>
-	<description lang="de">Blättern und Suchen in öffentlichen Flickr-Beständen (Photostream, Gallerien, Alben, Favoriten)</description>
-	<description lang="en">Browse and search public content on Flickr (Photostream, Galleries, Albums, Faves, People)</description>
-	<platform>all</platform>
-         <source>https://github.com/rols1/Kodi-Addon-FlickrExplorer</source>
-        <forum>will be added</forum>
-	<license>The MIT License (MIT)</license>
-	<language>"en_GB"</language>
- 	<email>rols1@gmx.de</email>
-        <assets>
-             <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>           
-     </assets>
-   </extension>
-</addon>
-
-
-<!-- ====================================================================== -->
-
-
-<addon id="script.module.youtube_channels" name="YouTube Channels" version="0.2.0" provider-name="Alexander Seiler">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="plugin.video.youtube" version="6.8.18+matrix.1"/>
-    <import addon="script.module.simplecache" version="2.0.2"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Helps you to include YouTube channels in a Kodi plugin.</summary>
-    <description lang="en_GB">YouTube Channels offers helper function to include a list of different YouTube channels into your Kodi plugin.</description>
-    <platform>all</platform>
-    <license>GPL-3.0-or-later</license>
-    <email>seileralex@gmail.com</email>
-    <source>https://github.com/goggle/script.module.youtube_channels</source>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-
-<addon id="script.free99.artwork" version="1.0" name="[COLOR orange]Free99 Artwork[/COLOR]" provider-name="JewBMX">
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-        <summary>Free99 Artwork</summary>
-        <description>Free99 Artwork</description>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
-</addon>
-
-
-<addon id="script.gratisred.artwork" version="1.0.5" name="[COLOR red]Gratis Red Artwork[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
-    <extension point="xbmc.python.module" library="lib"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR red]Gratis Red Artwork[/COLOR]</summary>
-        <description lang="en">[COLOR red]Gratis Red Artwork[/COLOR]</description>
-		<language>en</language>
-		<platform>all</platform>
-		<license>GPL-3.0</license>
-		<forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
-		<website>https://redwizard.xyz/</website> 
-		<email>info@redwizard.xyz</email>
-		<source>https://github.com/The-Red-Wizard</source>
-        <news></news>
-        <assets>
-            <icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-
-
-<addon id="resource.images.blacklodge.artwork" name="BlackLodge Artwork" version="1.1.1" provider-name="bleak-lodge">
-    <extension point="kodi.resource.images" compile="false" type="BlackLodge" />
-    <requires>
-        <import addon="kodi.resource" version="1.0.0"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Themes for BlackLodge add-on</summary>
-        <description lang="en_GB">Provided separately to allow easier distribution and consume less bandwidth</description>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-
-<addon id="resource.images.whitelodge.artwork" name="Whitelodge Artwork" version="1.1.1" provider-name="bleak-lodge">
-    <extension point="kodi.resource.images" compile="false" type="Whitelodge" />
-    <requires>
-        <import addon="kodi.resource" version="1.0.0"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Themes for Whitelodge add-on</summary>
-        <description lang="en_GB">Provided separately to allow easier distribution and consume less bandwidth</description>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
+        <description lang="en_GB">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
+        <description lang="en_NZ">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
+        <description lang="en_US">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
     </extension>
 </addon>
 

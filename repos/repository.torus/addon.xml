@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.torus" name="Torus Repository" version="1.0.3" provider-name="Prateek Banga">
+    <extension point="xbmc.addon.repository" name="Torus Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/fanatic75/Torus/main/docs/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/fanatic75/Torus/main/docs/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/fanatic75/Torus/main/docs/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Install and auto-update Torus</summary>
+        <description lang="en_GB">Repository for the Torus addon.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
