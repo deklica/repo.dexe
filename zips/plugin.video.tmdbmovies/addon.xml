@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<addon id="plugin.video.tmdbmovies" version="1.1.308" name="[B][COLOR FF00CED1]TMDb [COLOR FFCCCCFF]Movies[/COLOR][/B]" provider-name="[B][COLOR FF6AFB92]Angelitto[/COLOR][/B]">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" version="2.22.0" />
+        <import addon="script.module.resolveurl" version="5.0.0" />
+        <import addon="inputstream.adaptive" version="19.0.0" />
+    </requires>
+    
+    <extension point="xbmc.python.pluginsource" library="resources/lib/router.py">
+        <provides>video</provides>
+    </extension>
+    
+    <extension point="xbmc.service" library="resources/lib/service.py" />
+
+    
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+ 
+        
+            <item library="resources/lib/context/context_library.py">
+                <label>[B][COLOR yellow]Add to Library[/COLOR][/B]</label>
+                <visible>
+                    String.IsEqual(Window(10000).Property(TMDbMovies.LibraryContext),true) + 
+                    !String.IsEmpty(ListItem.Title) +
+                    [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode) | !String.IsEmpty(ListItem.Property(mediatype))] +
+                    !String.IsEmpty(Container.PluginName)
+                </visible>
+            </item>
+             
+            
+            <item library="resources/lib/context/context.py">
+                <label>[B][COLOR FF6AFB92]TMDb INFO[/COLOR][/B]</label>
+                <visible>
+                    String.IsEqual(Window(10000).Property(TMDbMovies.ContextMenu),true) + 
+                    !String.IsEmpty(ListItem.Title) +
+                    [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode) | !String.IsEmpty(ListItem.Property(mediatype))]
+                </visible>
+            </item>
+
+            
+            <item library="resources/lib/context/context_extended.py">
+                <label>[B][COLOR FF33CCFF]TMDb Extended INFO[/COLOR][/B]</label>
+                <visible>
+                    String.IsEqual(Window(10000).Property(TMDbMovies.ExtendedContext),true) + 
+                    !String.IsEmpty(ListItem.Title) +
+                    [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode) | !String.IsEmpty(ListItem.Property(mediatype))]
+                </visible>
+            </item>
+
+            
+            <item library="resources/lib/context/context_trailer.py">
+                <label>[B][COLOR FF00CED1]TMDbM [COLOR FFF70D1A]Trailers[/COLOR][/B]</label>
+                <visible>
+                    String.IsEqual(Window(10000).Property(TMDbMovies.TrailerContext),true) + 
+                    !String.IsEmpty(ListItem.Title) +
+                    [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode) | !String.IsEmpty(ListItem.Property(mediatype))]
+                </visible>
+            </item>
+            
+        </menu>
+    </extension>
+    
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en">Your source for movies and TV shows</summary>
+        <description lang="en">[B][COLOR FF009900]Popular Movies and TV Shows using the TMDB API.[/COLOR][/B]</description>
+        <disclaimer lang="en">This addon is a video search engine. We do not host content.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>icon.png</fanart>
+        </assets>
+    </extension>
+</addon>

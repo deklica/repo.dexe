@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.fentastic" version="100.0.33a+mod" name="FENtastic Plus" provider-name="Ivar Brandt, Zaxxon709">
+<addon id="skin.fentastic" version="100.0.34+mod" name="FENtastic Plus" provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="script.fentastic.helper" version="100.6.28a" />

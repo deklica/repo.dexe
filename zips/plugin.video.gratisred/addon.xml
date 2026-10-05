@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.0.3" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.0.4" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="script.gratisred.artwork" version="1.0.5"/>
         <import addon="script.module.kodi-six"/>
@@ -26,13 +26,13 @@
 		<forum>https://t.me/+X-lt1ZDii3I3YjA0</forum>
 		<website>https://redwizard.xyz/</website> 
 		<source>https://github.com/The-Red-Wizard/TheRedWizard</source>
-        <news>2026-09-28
-- Summary of v2.0.3 (see Tools > Changelog for the detail):
- * During playback, Back stops the film, arrows seek like the player, pause pauses, and the on-screen controls use those arrows while open
- * In Progress seeks to the pause on that row
- * Results sit in whole rows under the clear logo
- * A long file name on the resolving dialog keeps its start and its end
- * Tools lists Authorise MDBList, Simkl, TMDb, and Trakt in that order</news>
+        <news>2026-10-03
+- Summary of v2.0.4 (see Tools > Changelog for the detail):
+ * A long press on a result opens the context menu
+ * Playing a Kodi favourite shows the resolving dialog until the picture starts
+ * A dead favourite is dropped from the player
+ * One failed source says Source not Playable
+ * Autoplay keeps the resolving dialog up and skips a source that does not play</news>
         <assets>
             <icon>resources/images/icon.png</icon>
             <fanart>resources/images/fanart.jpg</fanart>

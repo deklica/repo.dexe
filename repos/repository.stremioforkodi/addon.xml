@@ -1,21 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<addon id="repository.stremioforkodi" name="Stremio for Kodi Repository" version="1.0.0" provider-name="0eroiQ">
-  <extension point="xbmc.addon.repository" name="Stremio for Kodi Repository">
+<?xml version='1.0' encoding='utf-8'?>
+<addon id="repository.stremioforkodi" name="MKGA Repository" version="1.1.0" provider-name="0eroiQ">
+  <extension point="xbmc.addon.repository" name="MKGA Repository">
     <dir minversion="19.0.0">
-      <info>https://raw.githubusercontent.com/0eroiQ/Stremio-for-Kodi/kodi-repository/addons.xml</info>
+      <info compressed="false">https://raw.githubusercontent.com/0eroiQ/Stremio-for-Kodi/kodi-repository/addons.xml</info>
       <checksum>https://raw.githubusercontent.com/0eroiQ/Stremio-for-Kodi/kodi-repository/addons.xml.sha256</checksum>
-      <datadir>https://raw.githubusercontent.com/0eroiQ/Stremio-for-Kodi/kodi-repository/</datadir>
+      <datadir zip="true">https://raw.githubusercontent.com/0eroiQ/Stremio-for-Kodi/kodi-repository/</datadir>
       <hashes>false</hashes>
     </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Install and update Stremio for Kodi</summary>
-    <description lang="en_GB">Stable releases of the Stremio for Kodi program addon.</description>
+    <summary lang="en_GB">Install and update MKGA Kodi add-ons</summary>
+    <description lang="en_GB">Official MKGA.TV Kodi repository for Stremio for Kodi, MKGA Connector and future MKGA add-ons.</description>
     <platform>all</platform>
     <license>GPL-2.0-or-later</license>
     <source>https://github.com/0eroiQ/Stremio-for-Kodi</source>
-      <assets>
-        <icon>icon.png</icon>
-      </assets>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.png</fanart>
+      <screenshot>resources/previews/home.jpg</screenshot>
+      <screenshot>resources/previews/episodes.jpg</screenshot>
+      <screenshot>resources/previews/streams.jpg</screenshot>
+      <screenshot>resources/previews/addons.jpg</screenshot>
+    </assets>
+    <news>1.1.0: Renamed to MKGA Repository and added MKGA Connector alongside Stremio for Kodi.
+
+1.0.2: Make repository transport flags explicit for Kodi clients and refresh the stable feed installer.
+
+1.0.1: Dark Cinematic icon, background and in-Kodi previews. Repository feed now serves every declared artwork asset.</news>
   </extension>
 </addon>

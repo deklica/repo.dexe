@@ -23,6 +23,7 @@ plugin.video.ptfm
 plugin.video.redlight
 plugin.video.seren
 plugin.video.spotitube
+plugin.video.tmdbmovies
 plugin.video.vidscr
 plugin.video.watchnixtoons2
 plugin.video.youtube
@@ -237,7 +238,7 @@ plugin.video.GreenKlikPremium
 <addon
     id="plugin.video.dreammachine"
     name="[COLOR blue]D[COLOR salmon]r[COLOR violet]e[COLOR yellow]a[COLOR orange]m[COLOR lime]M[COLOR red]a[COLOR blue]c[COLOR salmon]h[COLOR violet]i[COLOR yellow]n[COLOR orange]e[/COLOR]"
-    version="26.3.8"
+    version="26.10.5"
     provider-name="[COLOR springgreen]G[/COLOR] [COLOR magenta]I[/COLOR][COLOR violet]n[/COLOR][COLOR mediumorchid]c[/COLOR][COLOR orchid].[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -383,7 +384,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.0.3" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.0.4" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="script.gratisred.artwork" version="1.0.5"/>
         <import addon="script.module.kodi-six"/>
@@ -625,7 +626,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" version="2.7.2" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" version="2.7.9" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -763,6 +764,83 @@ plugin.video.GreenKlikPremium
 - removed: Billboard archive sorted by year, now only last year is displayed (years no longer accessible)
 		</news>
 	</extension>
+</addon>
+
+
+<addon id="plugin.video.tmdbmovies" version="1.1.308" name="[B][COLOR FF00CED1]TMDb [COLOR FFCCCCFF]Movies[/COLOR][/B]" provider-name="[B][COLOR FF6AFB92]Angelitto[/COLOR][/B]">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" version="2.22.0" />
+        <import addon="script.module.resolveurl" version="5.0.0" />
+        <import addon="inputstream.adaptive" version="19.0.0" />
+    </requires>
+    
+    <extension point="xbmc.python.pluginsource" library="resources/lib/router.py">
+        <provides>video</provides>
+    </extension>
+    
+    <extension point="xbmc.service" library="resources/lib/service.py" />
+
+    
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+ 
+        
+            <item library="resources/lib/context/context_library.py">
+                <label>[B][COLOR yellow]Add to Library[/COLOR][/B]</label>
+                <visible>
+                    String.IsEqual(Window(10000).Property(TMDbMovies.LibraryContext),true) + 
+                    !String.IsEmpty(ListItem.Title) +
+                    [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode) | !String.IsEmpty(ListItem.Property(mediatype))] +
+                    !String.IsEmpty(Container.PluginName)
+                </visible>
+            </item>
+             
+            
+            <item library="resources/lib/context/context.py">
+                <label>[B][COLOR FF6AFB92]TMDb INFO[/COLOR][/B]</label>
+                <visible>
+                    String.IsEqual(Window(10000).Property(TMDbMovies.ContextMenu),true) + 
+                    !String.IsEmpty(ListItem.Title) +
+                    [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode) | !String.IsEmpty(ListItem.Property(mediatype))]
+                </visible>
+            </item>
+
+            
+            <item library="resources/lib/context/context_extended.py">
+                <label>[B][COLOR FF33CCFF]TMDb Extended INFO[/COLOR][/B]</label>
+                <visible>
+                    String.IsEqual(Window(10000).Property(TMDbMovies.ExtendedContext),true) + 
+                    !String.IsEmpty(ListItem.Title) +
+                    [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode) | !String.IsEmpty(ListItem.Property(mediatype))]
+                </visible>
+            </item>
+
+            
+            <item library="resources/lib/context/context_trailer.py">
+                <label>[B][COLOR FF00CED1]TMDbM [COLOR FFF70D1A]Trailers[/COLOR][/B]</label>
+                <visible>
+                    String.IsEqual(Window(10000).Property(TMDbMovies.TrailerContext),true) + 
+                    !String.IsEmpty(ListItem.Title) +
+                    [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode) | !String.IsEmpty(ListItem.Property(mediatype))]
+                </visible>
+            </item>
+            
+        </menu>
+    </extension>
+    
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en">Your source for movies and TV shows</summary>
+        <description lang="en">[B][COLOR FF009900]Popular Movies and TV Shows using the TMDB API.[/COLOR][/B]</description>
+        <disclaimer lang="en">This addon is a video search engine. We do not host content.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>icon.png</fanart>
+        </assets>
+    </extension>
 </addon>
 
 
@@ -1287,7 +1365,7 @@ v2.0.0 (2021-01-29)
 <!-- ====================================================================== -->
 
 
-<addon id="service.subtitles.exyusubs" name="ExYuSubtitles" version="1.0.0" provider-name="dEXE">
+<addon id="service.subtitles.exyusubs" name="ExYuSubtitles" version="2.0.0" provider-name="dEXE">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.31.0"/>
@@ -1304,8 +1382,164 @@ v2.0.0 (2021-01-29)
 		<license>GPL-3.0-or-later</license>
 		<website>https://www.opensubtitles.org</website>
 		<source>https://github.com/dexe-kodi-addons/service.subtitles.exyusubs</source>
+		<news>[COLOR blue][B]FEATURES (Serbian)[/B][/COLOR]
+Ex-yu titlovi sa OpenSubtitles-a, bez naloga i podešavanja. Prepoznaje koji titlovi odgovaraju videu i izbacuje listu ili najbolji učitava automatski.
+ 
+[B]JEZICI[/B]
+- Srpski, hrvatski, bosanski, crnogorski, slovenački, makedonski
+- Preferirani jezik iz Kodija ide na vrh liste i ima prednost pri automatskom izboru
+- Kao preferirani rade i Original (jezik zvuka) i Default (jezik interfejsa), kada odgovaraju nekom od jezika pretrage
+- "Serbo-Croatian" pokriva srpski, hrvatski, bosanski i crnogorski
+- Uz internu listu i preferirani ex-yu jezik ispod njega su i ostale jezičke grupe (srpsko-hrvatska, slovenačka, makedonska); podesivo: samo grupa preferiranog jezika
+- Engleski kao rezerva kada za izabrane jezike nema ničega, a uz internu listu i preferirani ex-yu jezik i kada su nađene samo ostale grupe (podesivo); sam se učitava jedino kada je među izabranim Kodi jezicima
+- Po izboru: jezici iz Kodi podešavanja, bilo koji, i "Samo forsirani"
+ 
+[B]PRETRAGA[/B]
+- Filmovi, epizode, cele sezone, specijali (sezona 0), dvostruke epizode
+- Iz plejera, iz liste pre puštanja ili ručnom pretragom
+- Ručna pretraga: naslov, "Serija S01E02" ili IMDB broj (tt1234567); nikad ne učitava sama
+- Prepoznavanje naslova iz plejera, Kodi biblioteke, TMDB-a i Cinemete, uključujući antologije
+- Pretraga po nazivu kada IMDB ID nije dostupan
+- Dodatni način rezervne pretrage ukoliko glavna ne da rezultate
+- Spor ili pokvaren servis ne blokira listu
+ 
+[B]LISTA[/B]
+- Grupisano po jeziku: zastavica, ocena, sync ikona, ikona za oštećen sluh
+- Oznake: [AI] automatski prevod, [Forced] samo strani dijalozi, [Featured], [Trusted] ili rang uploadera, broj preuzimanja
+- [Local]: titl već na disku, učitava se bez preuzimanja
+- Automatski učitan titl je uvek prvi pri ponovnom otvaranju
+- Najviše 100 titlova
+ 
+[B]SYNC IKONA[/B]
+- Titl vezan baš za tvoj fajl (hash)
+- Ista release grupa kao video
+- Isto web izdanje istog provajdera (npr. AMZN.WEB-DL)
+- Nikad za procenu: drugi izvor (WEB, Blu-ray, TV, CAM), drugi provajder ili druga verzija filma
+- Poredi se naziv izdanja, naziv fajla i komentar uploadera
+- Bez ikone: nema dokaza, titl može biti sinhronizovan
+ 
+[B]AUTOMATSKO UČITAVANJE[/B]
+- Radi uz Kodi opciju za automatsko preuzimanje prvog titla, kada je addon podrazumevani servis
+- Titl bira i učitava sam addon, i kada video ima ugrađene titl trake (gde Kodi ugrađeno preuzimanje ne radi)
+- Jednom po puštanju, posle čega se prozor sa listom zatvara; sledeći put biraš sam
+- Redosled: dokazana sinhronizacija, preferirani jezik i njegova grupa, ocena i oznake
+- Slovenački i makedonski se ne mešaju sa srpsko-hrvatskom grupom
+- Forsirani titlovi se preskaču; automatski prevod samo ako ljudskog nema
+- Titl za drugi izvor (CAM za Blu-ray) ide ispod titla bez podatka o izvoru
+- Ne menja titl koji je već uključen (osim forsiranog), ni ugrađeni koji je Kodi sam izabrao
+- Kada ništa ne učita, lista ostaje tebi; Kodi ne skida sam prvu stavku
+ 
+[B]ĆIRILICA[/B]
+- Preferirani jezik nije srpski ni makedonski: srpski i bosanski ćirilični titlovi se pretvaraju u latinicu, i iz liste
+- Preferirani srpski, Serbo-Croatian ili bez preferiranog: ćirilični titl se pretvara u latinicu pri automatskom učitavanju, iz liste ostaje ćirilica (podesivo: i iz liste, ili nikad)
+- Makedonski ostaje ćiriličan
+ 
+[B]LOKALNI FAJLOVI I STREAMOVI[/B]
+- Lokalni fajlovi i mrežni folderi: hash se proverava pri svakom otvaranju liste
+- HTTP streamovi (debrid, hosting): hash i pravi naziv fajla sa servera, i kada se prikazuje samo lista
+- Titlovi vezani za tvoj fajl ulaze u listu i kada ih pretraga ne vrati
+- HLS/DASH i IPTV VOD streamovi se ne diraju
+ 
+[B]FAJLOVI I PREUZIMANJE[/B]
+- Konverzija svakog titla u UTF-8 (cp1250, cp1251, ISO-8859-2, UTF-16 i druge)
+- ZIP i GZIP arhive; SRT, ASS/SSA i WebVTT zadržavaju format
+- Preuzeti titlovi se čuvaju 24 sata i ponovo koriste bez preuzimanja (u listi oznaka [Local])
+- Na disk se ne piše ništa osim titlova
+ 
+[B]ZA DRUGE ADDONE (SubLoader)[/B]
+- Pozadinska pretraga bez dijaloga: plugin://service.subtitles.exyusubs/?action=background
+- Opciono: languages, preferredlanguage, kodilangs=0|1|2 (0 = interna lista, 1 = Kodi jezici, 2 = jezici iz languages parametra), english=1|0 (engleska rezerva se učitava)
+- Rezultat u svojstvu Home prozora exyusubs.bg_status
+ 
+[B]INTERNA PODEŠAVANJA[/B]
+- Jezici: interna ex-yu lista ili jezici titlova iz Kodija
+- Režim automatskog učitavanja
+- Ćirilica u latinicu
+- Rezerva na engleskom
+- Ostale jezičke grupe i engleski uz njih
+- Pretraga po nazivu, sinhronizacija, hash streama, pozadinska pretraga, UTF-8 konverzija, broj rezultata, rok pretrage, trajanje keša...
+ 
+ 
+[COLOR blue][B]FEATURES (English)[/B][/COLOR]
+Ex-yu subtitles from OpenSubtitles, no account or setup. Detects which ones match the video and shows a list or loads the best one automatically.
+ 
+[B]LANGUAGES[/B]
+- Serbian, Croatian, Bosnian, Montenegrin, Slovenian, Macedonian
+- Kodi's preferred subtitle language goes to the top of the list and has priority in the automatic choice
+- Original (audio language) and Default (interface language) also work as the preferred language, when they map to one of the search languages
+- "Serbo-Croatian" covers Serbian, Croatian, Bosnian and Montenegrin
+- With the internal list and a preferred ex-yu language, the other language groups (Serbo-Croatian, Slovenian, Macedonian) are listed below it; configurable: only the preferred language's group
+- English as a fallback when nothing exists for the selected languages, and with the internal list and a preferred ex-yu language also when only the other groups are found (configurable); loaded automatically only when it is among the selected Kodi languages
+- Optional: the languages from Kodi settings, any of them, and "Forced only"
+ 
+[B]SEARCH[/B]
+- Movies, episodes, whole seasons, specials (season 0), double episodes
+- From the player, from a list before playback or by manual search
+- Manual search: title, "Show S01E02" or an IMDB id (tt1234567); never loads by itself
+- Title recognition from the player, the Kodi library, TMDB and Cinemeta, including anthology series
+- Title search when no IMDB ID is available
+- An additional fallback search when the main one returns nothing
+- A slow or broken service never blocks the list
+ 
+[B]LIST[/B]
+- Grouped by language: flag, rating, sync icon, hearing-impaired icon
+- Tags: [AI] machine translation, [Forced] foreign parts only, [Featured], [Trusted] or uploader rank, download count
+- [Local]: subtitle already on disk, loads without downloading
+- The auto loaded subtitle is always first when the dialog is reopened
+- Up to 100 subtitles
+ 
+[B]SYNC ICON[/B]
+- Subtitle tied to your exact file (hash)
+- Same release group as the video
+- Same web release from the same provider (e.g. AMZN.WEB-DL)
+- Never for an estimate: another source (WEB, Blu-ray, TV, CAM), provider or edition
+- Compared: release name, file name and the uploader's comment
+- No icon: no evidence, the subtitle may still be in sync
+ 
+[B]AUTOMATIC LOADING[/B]
+- Works with Kodi's auto-download of the first subtitle, when the addon is the default service
+- The addon picks and loads the subtitle itself, even when the video has embedded subtitle tracks (where Kodi's built-in download does not run)
+- Once per playback, after which the subtitle dialog closes; next time the choice is yours
+- Order: proven sync, preferred language and its group, rating and tags
+- Slovenian and Macedonian never mix with the Serbo-Croatian group
+- Forced subtitles skipped; machine translation only when no human one exists
+- A subtitle for another source (CAM for a Blu-ray) ranks below one without source information
+- Never replaces a subtitle already enabled (except a forced one), including an embedded one Kodi selected itself
+- When nothing is loaded, the list stays with you; Kodi does not download its first item
+ 
+[B]CYRILLIC[/B]
+- Preferred language other than Serbian or Macedonian: Serbian and Bosnian Cyrillic subtitles converted to Latin, also from the list
+- Preferred Serbian, Serbo-Croatian or no preferred language: a Cyrillic subtitle is converted to Latin when loaded automatically, from the list it stays Cyrillic (configurable: also from the list, or never)
+- Macedonian stays Cyrillic
+ 
+[B]LOCAL FILES AND STREAMS[/B]
+- Local files and network shares: the hash is checked every time the list opens
+- HTTP streams (debrid, hosting): hash and the real file name from the server, also when only the list is shown
+- Subtitles tied to your file enter the list even when the search does not return them
+- HLS/DASH and IPTV VOD streams are left alone
+ 
+[B]FILES AND DOWNLOADS[/B]
+- Every subtitle converted to UTF-8 (cp1250, cp1251, ISO-8859-2, UTF-16 and more)
+- ZIP and GZIP archives; SRT, ASS/SSA and WebVTT keep their format
+- Downloaded subtitles kept for 24 hours and reused without downloading ([Local] in the list)
+- Nothing written to disk except subtitles
+ 
+[B]FOR OTHER ADDONS (SubLoader)[/B]
+- Background search without a dialog: plugin://service.subtitles.exyusubs/?action=background
+- Optional: languages, preferredlanguage, kodilangs=0|1|2 (0 = internal list, 1 = Kodi languages, 2 = languages from the languages parameter), english=1|0 (English fallback is loaded)
+- Result in the Home window property exyusubs.bg_status
+ 
+[B]INTERNAL SETTINGS (Code)[/B]
+- Languages: internal ex-yu list or Kodi subtitle languages
+- Automatic loading mode
+- Cyrillic to Latin
+- English fallback
+- Other language groups, and English with them
+- Title search, sync detection, stream hash, background search, UTF-8 conversion, result limit, search time limit, cache duration...
+		</news>
 		<assets>
-			<icon>icon.png</icon>	
+			<icon>icon.png</icon>
+			<screenshot>screenshot-01.jpg</screenshot>
 		</assets>
 	</extension>
 </addon>
@@ -3334,7 +3568,7 @@ additional strptime modifications to fix scheduler behavior
 <!-- ====================================================================== -->
 
 
-<addon id="skin.fentastic" version="100.0.33a+mod" name="FENtastic Plus" provider-name="Ivar Brandt, Zaxxon709">
+<addon id="skin.fentastic" version="100.0.34+mod" name="FENtastic Plus (mod)" provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="script.fentastic.helper" version="100.6.28a" />
@@ -3361,12 +3595,16 @@ additional strptime modifications to fix scheduler behavior
 			<screenshot>infopanel.jpg</screenshot>
 			<screenshot>viewtypes1.jpg</screenshot>
 		</assets>
-		<summary lang="en_GB">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
-		<summary lang="en_NZ">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
-		<summary lang="en_US">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25</summary>
+		<summary lang="en_GB">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25. Fixes &amp; improvements by dEXE.</summary>
+		<summary lang="en_NZ">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25. Fixes &amp; improvements by dEXE.</summary>
+		<summary lang="en_US">FENtastic Plus skin by Ivar Brandt, Zaxxon709 (Estuary MOD). Based on FENtastic v1.0.25. Fixes &amp; improvements by dEXE.</summary>
 		<description lang="en_GB">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Red Light, The Gears, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
 		<description lang="en_NZ">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Red Light, The Gears, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
 		<description lang="en_US">FENtastic Plus is a modified version of the default Estuary skin for Kodi. It is intended for use with Fen Light, Red Light, The Gears, Umbrella, POV, TMDbH.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+		<news>[B]Fixes &amp; Improvements by dEXE[/B]
+Reworked and restyled several dialogs and overlays across the skin - including the context menu, power/tools menus, video OSD, top bar, and video info screen.
+Introduced a brand-new focused list-item style with nine appearance options throughout the List and WideList views (Skin Settings/Options).
+Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
