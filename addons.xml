@@ -72,10 +72,7 @@ script.embuary.info
 script.extendedinfo
 script.ezmaintenanceplus
 script.fonts.installer
-script.hideosd
 script.kcleaner
-script.keymapedit
-script.light.imdb.ratings.update
 script.module.acctmgr
 script.module.acctvwr
 script.module.blackscrapers
@@ -211,7 +208,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.dltv" name="DLTV" version="1.2.6" provider-name="arkane14">
+<addon id="plugin.video.dltv" name="DLTV" version="1.2.34" provider-name="arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -626,7 +623,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" version="2.7.9" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" version="2.8.0" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -767,7 +764,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.tmdbmovies" version="1.1.308" name="[B][COLOR FF00CED1]TMDb [COLOR FFCCCCFF]Movies[/COLOR][/B]" provider-name="[B][COLOR FF6AFB92]Angelitto[/COLOR][/B]">
+<addon id="plugin.video.tmdbmovies" version="1.1.309" name="[B][COLOR FF00CED1]TMDb [COLOR FFCCCCFF]Movies[/COLOR][/B]" provider-name="[B][COLOR FF6AFB92]Angelitto[/COLOR][/B]">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.22.0" />
@@ -2660,30 +2657,6 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.hideosd" version="2023.01.25" name="Hide Video OSD" provider-name="aenema">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="main.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-        <description>A Simple script to autohide video osd for inactivity. Timeout can be set in the addon settings</description>
-		<summary lang="en">Autohide Video OSD</summary>
-		<platform>all</platform>
-		<website>-</website>
-		<email>-</email>
-		<forum>-</forum>
-		<source>-</source>
-		<news></news>
-        <assets>
-            <icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-
 <addon id="script.kcleaner" name="KCleaner" provider-name="Dalibor Lanik" version="4.02.1"> 
   <requires>
     <import addon="xbmc.python" version="3.0.0" /> 
@@ -2713,68 +2686,6 @@ In order to get the API Key:
         <logo>logo.png</logo>
     </assets>
   </extension>
-</addon>
-
-
-<addon id="script.keymapedit" name="Keymap Edit" provider-name="takoi, host505" version="0.1.7">
-    <requires>
-        <import addon="xbmc.addon" version="17.0.0" />
-    </requires>
-    <extension library="main.py" point="xbmc.python.script" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">An editor for keymap files</summary>
-        <description lang="en_GB">Keymap Edit is a GUI for configuring mappings for remotes, keyboard and other inputs supported by xbmc. Note: existing user defined key mappings will be removed.[CR][I]This is a Keymap Editor fork. Credit goes to original creator (takoi)[/I]</description>
-        <platform>all</platform>
-        <language />
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum />
-        <source>https://github.com/bleak-lodge/script.keymapedit</source>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-        <news>[I]Changes on this fork include:[/I]
-- Forked - Rebranded to Keymap Edit
-- Added some missing actions, categories, windows introduced in Kodi v17 and v18
-- Re-organised windows and actions
-- Generated .xml is now properly indented, instead of 1 line
-- Fixed keymap reloading after save
-- Converted to current language formatting
-- Added Greek language
-- Pyhton 3/Kodi 19+ support
-- Added longpress support
-        </news>
-    </extension>
-</addon>
-
-
-<addon id="script.light.imdb.ratings.update" name="Light IMDb Ratings Update" version="5.2.0" provider-name="axlt2002">
-    <requires>
-        <import addon="script.module.simplejson" version="3.3.0" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.six" />
-        <import addon="script.module.web-pdb" optional="true" />
-    </requires>
-    <extension point="xbmc.service" library="service.py" />
-    <extension point="xbmc.python.script" library="main.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="kodi.context.item" library="context.py">
-        <item>
-            <label>32000</label>
-            <visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,episode)</visible>
-        </item>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-        <platform>all</platform>
-        <forum>https://forum.kodi.tv/showthread.php?tid=316342</forum>
-        <summary lang="en">Light IMDb Ratings Update is a Kodi add-on that keeps updated the IMDb ratings for your movies and TV shows.</summary>
-        <summary lang="it">Light IMDb Ratings Update è un add-on di Kodi che mantiene aggiornate le valutazioni IMDb dei tuoi film e serie TV.</summary>
-        <description lang="en">Light IMDb Ratings Update runs as a Kodi service to update the ratings, votes and Top 250 for movies as well as the ratings and votes for TV shows (including episodes) by scraping the data from the IMDb site. The update can be run manually or scheduled once a week and it will run as soon as possible after a scheduled start is missed. Please check the add-on thread in the Kodi forum for more details.</description>
-        <description lang="it">Light IMDb Ratings Update viene eseguito come un servizio di Kodi per aggiornare le valutazioni, i voti e la Top 250 per i film così come le valutazioni ed i voti per le serie TV (inclusi gli episodi) ottenendo i dati dal sito IMDb. L'aggiornamento può essere eseguito manualmente o pianificato una volta alla settimana e sarà avviato appena possibile se un avvio pianificato non viene eseguito. Per ulteriori dettagli si veda il thread dell'add-on nel forum di Kodi.</description>
-    </extension>
 </addon>
 
 
@@ -3014,7 +2925,7 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.magneto" version="6.09.04" name="Magneto Module" provider-name="Magneto">
+<addon id="script.module.magneto" version="6.10.01" name="Magneto Module" provider-name="Magneto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />

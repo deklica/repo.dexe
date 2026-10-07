@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.skins.pkscout" name="pkscout's Skin Modifications" version="2.1.2" provider-name="pkscout">
+<addon id="repository.skins.pkscout" name="pkscout's Skin Modifications" version="2.2.1" provider-name="pkscout">
 	<requires>
 	<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -18,11 +18,18 @@
 			<artdir>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/nexus/download</artdir>
 			<hashes>false</hashes>
 		</dir>
-		<dir minversion="20.9.0">
+		<dir maxversion="21.8.900">
 			<info>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/omega/addons.xml</info>
 			<checksum>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/omega/addons.xml.md5</checksum>
 			<datadir zip="true">https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/omega/download</datadir>
 			<artdir>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/omega/download</artdir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="21.9.0">
+			<info>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/piers/addons.xml</info>
+			<checksum>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/piers/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/piers/download</datadir>
+			<artdir>https://github.com/pkscout/repository.skins.pkscout/raw/refs/heads/piers/download</artdir>
 			<hashes>false</hashes>
 		</dir>
 	</extension>
