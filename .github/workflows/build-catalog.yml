@@ -1,5 +1,5 @@
 # Rebuilds catalog.json and addons.xml.md5 whenever a local addons.xml (or a repository add-on) changes.
-# Place this file at .github/workflows/build-catalog.yml in the repo.dexe repository.
+# Layout: .github/workflows/build-catalog.yml (this file), .github/scripts/build_catalog.py, catalog.json in the repository root.
 name: Build catalog
 
 on:
@@ -11,11 +11,11 @@ on:
       - "repo/addons.xml"
       - "repos/addons.xml"
       - "repo/repository.*/**"
-      - "build_catalog.py"
+      - ".github/scripts/build_catalog.py"
+      - ".github/workflows/build-catalog.yml"
   workflow_dispatch:
-  # Optional: refresh versions and dates of external add-ons once a day.
-  # schedule:
-  #   - cron: "17 4 * * *"
+  schedule:
+    - cron: "17 4 * * *"      # daily at 04:17 UTC: refresh versions and dates of external add-ons
 
 permissions:
   contents: write
@@ -41,7 +41,7 @@ jobs:
       - name: Build catalog
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 build_catalog.py
+        run: python3 .github/scripts/build_catalog.py
 
       - name: Commit results
         run: |
