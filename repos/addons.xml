@@ -11,10 +11,25 @@ repository.elementumorg
  repository.ivarbrandt
  repository.realcopacetic
 
- skin.estuary.pkscout.mod 19 20 21 22
 
+ skin.estuary.pkscout.mod 19 20 21 22
+ skin.arctic.zephyr.2.pkscout.mod 19
+ 
+ skin.arctic.fuse.2 21
+ skin.arctic.fuse.3 21
+ skin.arctic.horizon.2 21 22
+ 
+ skin.altus 21
+  script.altus.helper
+ skin.nimbus 21
+  script.nimbus.helper
+ 
+ skin.copacetic 20 21
+ 
+ 
  skin.arctic.fuse 21
  skin.arctic.zephyr.mod 21
+ skin.estouchy 21
 
  skin.fenstruary 20
   script.fenstruary.helper
@@ -23,11 +38,7 @@ repository.elementumorg
  skin.fentastic (plus) 20 21
   resource.uisounds.fentastic
   script.fentastic.helper 2x
- skin.nimbus 21
-  script.nimbus.helper
- skin.altus 21
-  script.altus.helper
-  
+
  skin.xonfluence 19 20 21
   resource.images.moviegenrefanart.xonfluence
   resource.images.skinbackgrounds.xonfluence
@@ -132,6 +143,7 @@ repository.melies
 repository.michaz
 repository.misfitmods
 repository.NarcacistWizard
+repository.nearlybob
 repository.newdiamond
 repository.nixgates
 repository.ocean
@@ -293,6 +305,139 @@ repository.zeus768
 		<description lang="en_AU">Arctic: Zephyr - Reloaded is based on original Arctic: Zephyr skin, created by jurialmunkey. Arctic focuses on being simple, clean and minimalistic with a light spin.</description>
 		<description lang="en_US">Arctic: Zephyr - Reloaded is based on original Arctic: Zephyr skin, created by jurialmunkey. Arctic focuses on being simple, clean and minimalistic with a light spin.</description>
 		<description lang="fr">Arctic: Zephyr - Reloaded est basé sur le skin original Arctic: Zephyr, créé par jurialmunkey. Arctic se focalise sur le fait d&apos;être simple, claire et minimaliste.</description>
+	</extension>
+</addon>
+
+
+<addon id="skin.estouchy" version="4.0.1" name="Estouchy" provider-name="Team Kodi, [COLOR red]The Red Wizard[/COLOR]">
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1280" height="960" aspect="4:3" folder="xml"/>
+		<res width="1706" height="960" aspect="16:9" default="true" folder="xml"/>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>Creative Commons Attribution-Share Alike 3.0 United States</license>
+        <forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
+        <website>https://redwizard.xyz/</website> 
+        <source>https://github.com/The-Red-Wizard/TheRedWizard</source>
+        <news>Unofficial update by [COLOR red]The Red Wizard[/COLOR]</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>screenshot-01.jpg</screenshot>
+			<screenshot>screenshot-02.jpg</screenshot>
+			<screenshot>screenshot-03.jpg</screenshot>
+			<screenshot>screenshot-04.jpg</screenshot>
+			<screenshot>screenshot-05.jpg</screenshot>
+			<screenshot>screenshot-06.jpg</screenshot>
+			<screenshot>screenshot-07.jpg</screenshot>
+			<screenshot>screenshot-08.jpg</screenshot>
+			<screenshot>screenshot-09.jpg</screenshot>
+			<screenshot>screenshot-10.jpg</screenshot>
+			<screenshot>screenshot-11.jpg</screenshot>
+			<screenshot>screenshot-12.jpg</screenshot>
+		</assets>
+		<summary lang="af_ZA">Oortreksel vir raakskerm toestelle</summary>
+		<summary lang="am_ET">ለ ተችስክሪን አካሎች ቆዳ</summary>
+		<summary lang="ar_SA">مظهر للواجهة مخصص للأجهزة التي تعمل باللمس</summary>
+		<summary lang="be_BY">Абалонка для сэнсарных прылад</summary>
+		<summary lang="bg_BG">Облик за устройства със сензорен екран</summary>
+		<summary lang="ca_ES">Aparença per als dispositius amb pantalla tàctil</summary>
+		<summary lang="cs_CZ">Vzhled pro zařízení s dotykovou obrazovkou</summary>
+		<summary lang="da_DK">Skin for berøringsfølsomme enheder</summary>
+		<summary lang="de_DE">Skin für Touchscreen-Geräte</summary>
+		<summary lang="el_GR">Κέλυφος για συσκευές με οθόνη αφής</summary>
+		<summary lang="en_GB">Skin for touchscreen devices</summary>
+		<summary lang="en_NZ">Skin for touchscreen devices</summary>
+		<summary lang="en_US">Skin for touchscreen devices</summary>
+		<summary lang="es_ES">Skin para dispositivos táctiles</summary>
+		<summary lang="es_MX">Máscara para dispositivos con pantalla táctil</summary>
+		<summary lang="et_EE">Puutetundlike seadmete rüü</summary>
+		<summary lang="eu_ES">Ukipen-pantaila duten gailuentzako azala</summary>
+		<summary lang="fi_FI">Ulkoasu kosketusnäytöllisille laitteille</summary>
+		<summary lang="fr_CA">Habillage pour appareils à écran tactile</summary>
+		<summary lang="fr_FR">Habillage pour les appareils à écran tactile</summary>
+		<summary lang="gl_ES">Pel para dispositivos táctiles</summary>
+		<summary lang="he_IL">מעטפת עבור התקני מסך מגע</summary>
+		<summary lang="hr_HR">Presvlaka za uređaje s dodirom na zaslon</summary>
+		<summary lang="hu_HU">Felület érintőképernyős eszközöknek</summary>
+		<summary lang="id_ID">Skin untuk perangkat layar sentuh</summary>
+		<summary lang="is_IS">Skinn fyrir tæki með snertiskjá</summary>
+		<summary lang="it_IT">Skin per dispositivi touchscreen</summary>
+		<summary lang="ja_JP">スキンはタッチスクリーンデバイス向けです</summary>
+		<summary lang="ko_KR">터치 스크린 기기를 위한 스킨</summary>
+		<summary lang="lt_LT">Teminė išvaizda liečiamiesiems įrenginiams</summary>
+		<summary lang="lv_LV">Apvalks skārienekrāna ierīcēm</summary>
+		<summary lang="ms_MY">Kulit untuk peranti skrin sentuh</summary>
+		<summary lang="nb_NO">Drakt for enheter med berøringsskjerm</summary>
+		<summary lang="nl_NL">Skin voor aanraakschermapparaten</summary>
+		<summary lang="pl_PL">Skóra dla urządzeń z ekranem dotykowym</summary>
+		<summary lang="pt_BR">Skin para dispositivos com telas de toque</summary>
+		<summary lang="pt_PT">Tema para dispositivos touchscreen</summary>
+		<summary lang="ro_RO">Costum pentru dispozitive cu ecran tactil</summary>
+		<summary lang="ru_RU">Обложка для устройств с сенсорным экраном</summary>
+		<summary lang="sk_SK">Grafický vzhľad pre zariadenia s dotykovým displejom</summary>
+		<summary lang="sr_RS">Маска за уређаје са екраном осетљивим на додир</summary>
+		<summary lang="sr_RS@latin">Maska za uređaje sa ekranom osetljivim na dodir</summary>
+		<summary lang="sv_SE">Skal för enheter med pekskärm</summary>
+		<summary lang="szl">Skōra dlŏ maszin z tykowym ekranym</summary>
+		<summary lang="th_TH">หน้าตาสำหรับอุปกรณ์สัมผัส</summary>
+		<summary lang="tr_TR">Dokunmatik ekranlı aygıtlar için dış görünüm</summary>
+		<summary lang="uk_UA">Скін для сенсорних пристроїв</summary>
+		<summary lang="vi_VN">Giao diện cho thiết bị màn hình cảm ứng</summary>
+		<summary lang="zh_CN">针对触屏设备的皮肤</summary>
+		<summary lang="zh_TW">為具有觸控螢幕的裝置所製作的佈景主題</summary>
+		<description lang="af_ZA">Oortreksel ontwerp om op raakskerm toestelle soos tablette en slimfone te gebruik</description>
+		<description lang="ar_SA">مظهر للواجهة مصمم للأجهزة التي تعمل باللمس مثل الجوالات الذكية والأجهزة اللوحية</description>
+		<description lang="be_BY">Абалонка распрацаваная для выкарыстання на сэнсарных прыладах, такіх як планшэты і смартфоны</description>
+		<description lang="bg_BG">Обликът е разработен за ползване на устройства със сензорен екран, като таблети и телефони.</description>
+		<description lang="ca_ES">Aparença dissenyada perquè s&apos;utilitzi en dispositius amb pantalla tàctil com taules i telèfons intel·ligents</description>
+		<description lang="cs_CZ">Vzhled navržený pro použití na zařízeních s dotykovou obrazovkou, jako jsou tablety a chytré telefony</description>
+		<description lang="da_DK">Skin der er designet til brug på berøringsfølsomme enheder som f.eks. tablets og smartphones</description>
+		<description lang="de_DE">Dieser Skin wurde für die Verwendung mit Touchscreen-Geräten, wie Tablets und Handys, entworfen</description>
+		<description lang="el_GR">Κέλυφος σχεδιασμένο για να χρησιμοποιηθεί σε συσκευές με οθόνη αφής όπως ταμπλέτες και έξυπνα κινητά.</description>
+		<description lang="en_GB">Skin designed to be used on touchscreen devices like tablets and smartphones</description>
+		<description lang="en_NZ">Skin designed to be used on touchscreen devices like tablets and smartphones</description>
+		<description lang="en_US">Skin designed to be used on touchscreen devices like tablets and smartphones</description>
+		<description lang="es_ES">Esta skin está diseñada para usarla en dispositivos táctiles como tabletas y smartphones</description>
+		<description lang="es_MX">Máscara diseñada para ser usada en dispositivos de pantalla táctil como tabletas y teléfonos inteligentes</description>
+		<description lang="et_EE">Rüü on mõeldud kasutamiseks puutetundlike seadmetega nagu tahvelarvutid ja nutitelefonid.</description>
+		<description lang="eu_ES">Ukipen-pantaila duten gailuetan erabiltzeko diseinatutako azala</description>
+		<description lang="fi_FI">Ulkoasu, joka on suunniteltu käytettäväksi kosketusnäytöllisillä laitteilla, kuten tableteilla ja älypuhelimilla</description>
+		<description lang="fr_CA">Habillage conçu pour être utilisé sur les appareils à écran tactile comme les tablettes et les téléphones intelligents</description>
+		<description lang="fr_FR">[CR]Habillage conçu pour les appareils à écran tactile comme les tablettes et [CR]les téléphonesHabillage conçu pour les appareils à écran tactile comme les tablettes et les téléphones</description>
+		<description lang="gl_ES">Pel deseñada para se empregar en dispositivos táctiles como tabletas e móbiles</description>
+		<description lang="he_IL">מעטפת מיועדת לשימוש בהתקני מסך מגע כגון טאבלט וסמארטפון</description>
+		<description lang="hr_HR">Presvlaka dizajnirana za korištenje na uređajima s dodirom na zaslon poput tableta i pametnih telefona</description>
+		<description lang="hu_HU">Egy érintőképernyős eszközökre, például táblagépekre és okostelefonokra tervezett felület</description>
+		<description lang="id_ID">Skin dirancang untuk digunakan pada perangkat layar sentuh seperti tablet dan smartphone</description>
+		<description lang="is_IS">Skinn sem er hannað til notkunar á tækjum með snertiskjá, eins og til dæmis spjaldtölvum og snjallsímum</description>
+		<description lang="it_IT">Skin progettata per essere usata su dispositivi touchscreen come tablet e smartphone</description>
+		<description lang="ja_JP">スキンのデザインは、タッチスクリーンデバイスであるタブレットやスマホなどでの使用を想定されています</description>
+		<description lang="ko_KR">태블릿이나 스마트폰과 같은 터치 스크린 기기에서 사용할 수 있게 디자인한 스킨</description>
+		<description lang="lt_LT">Teminė išvaizda pritaikyta naudojimui įrenginiuose su liečiamaisiais ekranais, tokiuose kaip planšetiniai kompiuteriai ar išmanieji telefonai</description>
+		<description lang="ms_MY">Kulit direka untuk digunakan pada peranti berskrin sentuh seperti tablet dan telefon pintar</description>
+		<description lang="nb_NO">Drakt designet for å bli brukt på enheter med berørningsskjerm, som smarttelefoner og lesebrett</description>
+		<description lang="nl_NL">Skin ontworpen voor het gebruik van aanraakschermapparaten zoals tablets en smartphones</description>
+		<description lang="pl_PL">Skóra przeznaczona do użytku na urządzeniach z ekranem dotykowym, takich jak tablety i smartfony</description>
+		<description lang="pt_BR">Skin concebida para ser usada em dispositivos com telas de toque como tablets e smartphones</description>
+		<description lang="pt_PT">Tema criado com o intuito de ser utilizado em tablets e smartphones</description>
+		<description lang="ro_RO">Costum proiectat pentru a fi utilizat pe dispozitivele cu ecran tactil cum sunt tabletele și telefoanele deștepte</description>
+		<description lang="ru_RU">Обложка предназначена для использования на устройствах с сенсорным экраном, таких как планшеты и смартфоны</description>
+		<description lang="sk_SK">Grafický vzhľad určený pre použitie na dotykových zariadeniach ako sú tablety alebo mobilné telefóny</description>
+		<description lang="sr_RS">Маска дизајнирана да би била коришћена на уређајима са екранима осетљивим на додир као што су таблети и паметни телефони</description>
+		<description lang="sr_RS@latin">Maska dizajnirana da bi bila korišćena na uređajima sa ekranima osetljivim na dodir kao što su tableti i pametni telefoni</description>
+		<description lang="sv_SE">Skal avsedd att användas på enheter med pekskärm som surfplattor och smarttelefoner</description>
+		<description lang="szl">Skōra dlŏ maszin ze tykowym ekranym, jak tablety i smartfōny.</description>
+		<description lang="th_TH">หน้าตาที่ออกแบบมาเพื่อใช้งานบนอุปกรณ์หน้าจอสัมผัส เช่น แท็บเล็ตและสมาร์ทโฟน</description>
+		<description lang="tr_TR">Bu dış görünüm tabletler ve akıllı telefonlar gibi dokunmatik ekranlı aygıtlarda kullanılmak üzere tasarlandı</description>
+		<description lang="uk_UA">Ця обкладинка призначена для пристроїв із сенсорним екраном, наприклад планшетів чи смартфонів</description>
+		<description lang="vi_VN">Giao diện được thiết kế để sử dụng trên thiết bị màn hình cảm ứng như máy tính bảng và điện thoại thông minh</description>
+		<description lang="zh_CN">为触屏设备如平板电脑和智能手机而设计的皮肤</description>
+		<description lang="zh_TW">本佈景主題專為平板及手機等具有觸控螢幕的裝置而設計</description>
 	</extension>
 </addon>
 
@@ -2608,6 +2753,26 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
+<addon id="repository.nearlybob" name="Bobs Repo" version="1.0.2" provider-name="Bob">
+	<extension point="xbmc.addon.repository" name="Bobs Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Bobs Repo</summary>
+		<description>Bobs Stuff and Other Things</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.newdiamond" name="New DiamondInfo_Mod Repo" version="2.2" provider-name="fryhenryj">
 	<extension point="xbmc.addon.repository" name="newdiamondinfo_mod">
 		<dir>
@@ -2664,7 +2829,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.octopus" name="Octopus Repository" version="0.7.1" provider-name="Twiglet">
+<addon id="repository.octopus" name="Octopus Repository" version="0.7.2" provider-name="Twiglet">
 	<extension point="xbmc.addon.repository" name="Octopus Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -3367,8 +3532,8 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.stremioforkodi" name="MKGA Repository" version="1.1.0" provider-name="0eroiQ">
-	<extension point="xbmc.addon.repository" name="MKGA Repository">
+<addon id="repository.stremioforkodi" name="Noiro Repository" version="1.1.2" provider-name="0eroiQ">
+	<extension point="xbmc.addon.repository" name="Noiro Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
@@ -3376,8 +3541,8 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Install and update MKGA Kodi add-ons</summary>
-		<description lang="en_GB">Official MKGA.TV Kodi repository for Stremio for Kodi, MKGA Connector and future MKGA add-ons.</description>
+		<summary lang="en_GB">Install and update Noiro Kodi add-ons</summary>
+		<description lang="en_GB">Official Noiro.tv Kodi repository for Stremio for Kodi, Noiro Connector and future Noiro add-ons.</description>
 		<platform>all</platform>
 		<license>GPL-2.0-or-later</license>
 		<source>https://github.com/0eroiQ/Stremio-for-Kodi</source>

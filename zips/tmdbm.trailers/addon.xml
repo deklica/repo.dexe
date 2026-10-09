@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<addon id="tmdbm.trailers" version="1.0.17" name="[B][COLOR FF00CED1]TMDbM [COLOR FFF70D1A]Trailers[/COLOR][/B]" provider-name="[B][COLOR FF6AFB92]Angelitto[/COLOR][/B]">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" version="2.22.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="resources/lib/default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/default.py" />
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">[B][COLOR FF009900]Player for YouTube trailers[/COLOR][/B]
+[COLOR FFFFFFFF]Pure-Python playback - no third-party binaries, no runtime installed. Original audio, up to 4K.[/COLOR]</description>
+        <summary lang="en">Standalone YouTube trailer player. Direct Python extraction - nothing is installed on your system.</summary>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <language />
+        <license>MIT</license>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>

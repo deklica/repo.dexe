@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-	<addon id="plugin.audio.radiouk" name="Radio UK" version="1.3.4" provider-name="Enigma">
+	<addon id="plugin.audio.radiouk" name="Radio UK" version="1.3.5" provider-name="Enigma">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 	</requires>
@@ -15,7 +15,7 @@
 		</assets>
 		<summary>Live UK radio stations</summary>
 		<description>Listen to a curated selection of live UK stations and browse TuneIn Radio with search, categories, favourites, recent stations, programme metadata, artwork, refresh controls, and direct playback.</description>
-		<news>v1.3.4: Fixed TuneIn background refresh handling and removed the repeated undefined-body service error.</news>
+		<news>v1.3.5: Updated the Radio UK icon, fanart, and all seven submenu icons with matching artwork.</news>
 		<platform>all</platform>
 		<source>https://www.radio-uk.co.uk/</source>
 		<language>en_GB</language>

@@ -24,6 +24,7 @@ plugin.video.redlight
 plugin.video.seren
 plugin.video.spotitube
 plugin.video.tmdbmovies
+ tmdbm.trailers
 plugin.video.vidscr
 plugin.video.watchnixtoons2
 plugin.video.youtube
@@ -208,7 +209,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.dltv" name="DLTV" version="1.2.34" provider-name="arkane14">
+<addon id="plugin.video.dltv" name="DLTV" version="1.2.41" provider-name="arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -417,18 +418,17 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="script.gratisred.artwork" version="1.0.5" name="[COLOR red]Gratis Red Artwork[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="script.gratisred.artwork" name="[COLOR red]Gratis Red Artwork[/COLOR]" version="1.0.6" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <extension point="xbmc.python.module" library="lib"/>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR red]Gratis Red Artwork[/COLOR]</summary>
-        <description lang="en">[COLOR red]Gratis Red Artwork[/COLOR]</description>
+        <summary lang="en">Gratis Red Artwork</summary>
+        <description lang="en">Gratis Red Artwork</description>
 		<language>en</language>
 		<platform>all</platform>
 		<license>GPL-3.0</license>
-		<forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
+		<forum>https://t.me/+X-lt1ZDii3I3YjA0</forum>
 		<website>https://redwizard.xyz/</website> 
-		<email>info@redwizard.xyz</email>
-		<source>https://github.com/The-Red-Wizard</source>
+		<source>https://github.com/The-Red-Wizard/TheRedWizard</source>
         <news></news>
         <assets>
             <icon>icon.png</icon>
@@ -623,7 +623,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" version="2.8.0" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" version="2.8.3" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -764,7 +764,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.tmdbmovies" version="1.1.309" name="[B][COLOR FF00CED1]TMDb [COLOR FFCCCCFF]Movies[/COLOR][/B]" provider-name="[B][COLOR FF6AFB92]Angelitto[/COLOR][/B]">
+<addon id="plugin.video.tmdbmovies" version="1.1.310" name="[B][COLOR FF00CED1]TMDb [COLOR FFCCCCFF]Movies[/COLOR][/B]" provider-name="[B][COLOR FF6AFB92]Angelitto[/COLOR][/B]">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.22.0" />
@@ -841,6 +841,30 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
+<addon id="tmdbm.trailers" version="1.0.17" name="[B][COLOR FF00CED1]TMDbM [COLOR FFF70D1A]Trailers[/COLOR][/B]" provider-name="[B][COLOR FF6AFB92]Angelitto[/COLOR][/B]">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" version="2.22.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="resources/lib/default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/default.py" />
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">[B][COLOR FF009900]Player for YouTube trailers[/COLOR][/B]
+[COLOR FFFFFFFF]Pure-Python playback - no third-party binaries, no runtime installed. Original audio, up to 4K.[/COLOR]</description>
+        <summary lang="en">Standalone YouTube trailer player. Direct Python extraction - nothing is installed on your system.</summary>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <language />
+        <license>MIT</license>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+
 <addon id="plugin.video.vidscr"
        name="Vidscr"
        version="1.4.27"
@@ -899,7 +923,7 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.youtube" name="YouTube" version="7.4.4+unofficial.1" provider-name="anxdpanic, bromix, MoojMidge">
+<addon id="plugin.video.youtube" name="YouTube" version="7.4.4+unofficial.2" provider-name="anxdpanic, bromix, MoojMidge">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.27.1"/>
@@ -1934,7 +1958,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.audio.radiouk" name="Radio UK" version="1.3.4" provider-name="Enigma">
+<addon id="plugin.audio.radiouk" name="Radio UK" version="1.3.5" provider-name="Enigma">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 	</requires>
@@ -2689,11 +2713,12 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctmgr" version="1.1.6" name="[COLOR FF32D3FE][B]Account Manager[/B][/COLOR] [COLOR gold][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
+<addon id="script.module.acctmgr" version="1.2.0" name="[COLOR dodgerblue][B]Account Manager[/B][/COLOR] [COLOR white][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-            	<import addon="script.module.acctvwr" version="1.1.4" />
+		<import addon="script.module.acctvwr" version="1.1.5" />
+		<import addon="script.module.qrcode"/>
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
 	<extension point="xbmc.python.script" library="lib/default.py">
@@ -2715,7 +2740,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctvwr" name="[COLOR FF32D3FE][B]Account[/B][/COLOR][COLOR gold] [B]Viewer[/B][/COLOR]" version="1.1.4" provider-name="Zaxxon709">
+<addon id="script.module.acctvwr" name="[COLOR dodgerblue][B]Account[/B][/COLOR] [COLOR white][B]Viewer[/B][/COLOR]" version="1.1.5" provider-name="Zaxxon709">
     <extension point="xbmc.python.pluginsource" library="default.py">
     </extension>
     <extension point="xbmc.python.module" library="resources" />
@@ -3091,7 +3116,8 @@ Benutzer melden diverse Segmente die dann automatisch übersprungen werden.
 </addon>
 
 
-<addon id="script.speedtester" name="Speed Tester" version="1.1.5+omega.1" provider-name="Dr0idGuy, dagwieers, [COLOR red]The Red Wizard[/COLOR]">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.speedtester" name="Speed Tester" version="2.0.1+omega.1" provider-name="Dr0idGuy, dagwieers, TomSzo_HUN, [COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -3111,6 +3137,10 @@ Servers are selected automatically based on your location, or you can pick a cit
         <website>https://redwizard.xyz/</website>
         <source>https://github.com/The-Red-Wizard/TheRedWizard</source>
         <news>
+v2.0.1 (2026-09-28)
+- Unofficial update by [COLOR red]The Red Wizard[/COLOR]
+- Numbered above the official Kodi repository 2.0.0, so that update does not replace this newer code
+
 v1.1.5 (2026-08-30)
 - Unofficial update by [COLOR red]The Red Wizard[/COLOR]
 - Keeps local results if there is no speedtest.net image

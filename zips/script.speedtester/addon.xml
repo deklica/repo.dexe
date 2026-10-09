@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.speedtester" name="Speed Tester" version="1.1.5+omega.1" provider-name="Dr0idGuy, dagwieers, [COLOR red]The Red Wizard[/COLOR]">
+<addon id="script.speedtester" name="Speed Tester" version="2.0.1+omega.1" provider-name="Dr0idGuy, dagwieers, TomSzo_HUN, [COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -19,6 +19,10 @@ Servers are selected automatically based on your location, or you can pick a cit
         <website>https://redwizard.xyz/</website>
         <source>https://github.com/The-Red-Wizard/TheRedWizard</source>
         <news>
+v2.0.1 (2026-09-28)
+- Unofficial update by [COLOR red]The Red Wizard[/COLOR]
+- Numbered above the official Kodi repository 2.0.0, so that update does not replace this newer code
+
 v1.1.5 (2026-08-30)
 - Unofficial update by [COLOR red]The Red Wizard[/COLOR]
 - Keeps local results if there is no speedtest.net image
