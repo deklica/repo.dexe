@@ -65,6 +65,7 @@ repository.aeonmq5_mod
 repository.aliunde
 repository.angelitto
 repository.animaniac
+repository.anxdpanic
 repository.arkane14
 repository.arrownegra
 repository.arxtic-ape
@@ -91,6 +92,7 @@ repository.dab
 repository.daedalusbln
 repository.denimnani
 repository.derzis
+repository.dexworld
 repository.diggz
 repository.dis90
 repository.djaythemes
@@ -184,6 +186,7 @@ repository.splitflap
 repository.StreamArmy
 repository.stremioforkodi
 repository.subskip
+repository.taiseer
 repository.TechNEWSology
 repository.theblackghost
 repository.thecrew
@@ -318,12 +321,12 @@ repository.zeus768
 		<res width="1706" height="960" aspect="16:9" default="true" folder="xml"/>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <license>Creative Commons Attribution-Share Alike 3.0 United States</license>
-        <forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
-        <website>https://redwizard.xyz/</website> 
-        <source>https://github.com/The-Red-Wizard/TheRedWizard</source>
-        <news>Unofficial update by [COLOR red]The Red Wizard[/COLOR]</news>
+		<platform>all</platform>
+		<license>Creative Commons Attribution-Share Alike 3.0 United States</license>
+		<forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
+		<website>https://redwizard.xyz/</website> 
+		<source>https://github.com/The-Red-Wizard/TheRedWizard</source>
+		<news>Unofficial update by [COLOR red]The Red Wizard[/COLOR]</news>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -590,26 +593,26 @@ repository.zeus768
 
 
 <addon id="script.umbrestuary.helper" name="Umbrestuary Helper" version="0.6.16" provider-name="Tikipeter, Ivar Brandt">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-    </requires>
-    <extension point="xbmc.python.library" library="resources/lib/default.py"/>
-    <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <news />
-        <platform>all</platform>
-        <license>GPL-2.0-only</license>
-        <forum />
-        <source />
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <description lang="en_GB">Umbrestuary Helper for the Umbrestuary Skin.</description>
-        <description lang="en_NZ">Umbrestuary Helper for the Umbrestuary Skin.</description>
-        <description lang="en_US">Umbrestuary Helper for the Umbrestuary Skin.</description>
-    </extension>
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.19.1"/>
+	</requires>
+	<extension point="xbmc.python.library" library="resources/lib/default.py"/>
+	<extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<news />
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+		<forum />
+		<source />
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<description lang="en_GB">Umbrestuary Helper for the Umbrestuary Skin.</description>
+		<description lang="en_NZ">Umbrestuary Helper for the Umbrestuary Skin.</description>
+		<description lang="en_US">Umbrestuary Helper for the Umbrestuary Skin.</description>
+	</extension>
 </addon>
 
 
@@ -705,50 +708,50 @@ Various other small tweaks and refinements throughout.</news>
 
 
 <addon id="script.fentastic.helper" name="FENtastic Helper" version="0.6.20a" provider-name="Tikipeter, Ivar Brandt">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-    </requires>
-    <extension point="xbmc.python.library" library="resources/lib/default.py"/>
-    <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <news />
-        <platform>all</platform>
-        <license>GPL-2.0-only</license>
-        <forum />
-        <source />
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <description lang="en_GB">FENtastic Helper for the FENtastic Skin.</description>
-        <description lang="en_NZ">FENtastic Helper for the FENtastic Skin.</description>
-        <description lang="en_US">FENtastic Helper for the FENtastic Skin.</description>
-    </extension>
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.19.1"/>
+	</requires>
+	<extension point="xbmc.python.library" library="resources/lib/default.py"/>
+	<extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<news />
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+		<forum />
+		<source />
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<description lang="en_GB">FENtastic Helper for the FENtastic Skin.</description>
+		<description lang="en_NZ">FENtastic Helper for the FENtastic Skin.</description>
+		<description lang="en_US">FENtastic Helper for the FENtastic Skin.</description>
+	</extension>
 </addon>
 
 
 <addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.28a" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-    </requires>
-    <extension point="xbmc.python.library" library="resources/lib/default.py"/>
-    <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <news />
-        <platform>all</platform>
-        <license>GPL-2.0-only</license>
-        <forum />
-        <source />
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <description lang="en_GB">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
-        <description lang="en_NZ">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
-        <description lang="en_US">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
-    </extension>
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.19.1"/>
+	</requires>
+	<extension point="xbmc.python.library" library="resources/lib/default.py"/>
+	<extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<news />
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+		<forum />
+		<source />
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<description lang="en_GB">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
+		<description lang="en_NZ">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
+		<description lang="en_US">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
+	</extension>
 </addon>
 
 
@@ -927,34 +930,34 @@ Various other small tweaks and refinements throughout.</news>
 
 
 <addon id="resource.uisounds.kodi-12" version="1.0.1" name="Kodi UI Sounds -12dB" provider-name="Team Kodi">
-  <requires>
-	<import addon="kodi.resource" version="1.0.0"/>
-  </requires>
-  <extension point="kodi.resource.uisounds"/>
-  <extension point="kodi.addon.metadata">
-	<summary lang="en">Kodi GUI sounds</summary>
-	<description lang="en">Kodi GUI sounds reduced by 12 dB from default</description>
-	<platform>all</platform>
-	<assets>
-	  <icon>icon.png</icon>
-	</assets>
-  </extension>
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="kodi.resource.uisounds"/>
+	<extension point="kodi.addon.metadata">
+		<summary lang="en">Kodi GUI sounds</summary>
+		<description lang="en">Kodi GUI sounds reduced by 12 dB from default</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
 </addon>
 
 
 <addon id="resource.uisounds.kodi-24" version="1.0.1" name="Kodi UI Sounds -24dB" provider-name="Team Kodi">
-  <requires>
-	<import addon="kodi.resource" version="1.0.0"/>
-  </requires>
-  <extension point="kodi.resource.uisounds"/>
-  <extension point="kodi.addon.metadata">
-	<summary lang="en">Kodi GUI sounds</summary>
-	<description lang="en">Kodi GUI sounds reduced by 24 dB from default</description>
-	<platform>all</platform>
-	<assets>
-	  <icon>icon.png</icon>
-	</assets>
-  </extension>
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="kodi.resource.uisounds"/>
+	<extension point="kodi.addon.metadata">
+		<summary lang="en">Kodi GUI sounds</summary>
+		<description lang="en">Kodi GUI sounds reduced by 24 dB from default</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
 </addon>
 
 
@@ -1249,6 +1252,24 @@ Various other small tweaks and refinements throughout.</news>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.anxdpanic" name="anxdpanic Add-on Repository" version="2.0.4" provider-name="anxdpanic">
+	<extension point="xbmc.addon.repository" name="anxdpanic Add-on Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install add-ons from anxdpanic's repository.</summary>
+		<description>Install add-ons from anxdpanic's repository.</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>
@@ -1738,6 +1759,24 @@ Various other small tweaks and refinements throughout.</news>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.dexworld" name="DexWorld Repository" version="1.0.1" provider-name="DexWorld">
+	<extension point="xbmc.addon.repository" name="DexWorld Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">DexWorld Repository</summary>
+		<description lang="en">DexWorld private Kodi repository</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>
@@ -2590,14 +2629,14 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB"> Welcome to the luc_repo</summary>
-		<description lang="en_GB">luc_repo for  Kodi</description>
+		<description lang="en_GB">luc_repo for Kodi</description>
 		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>  
-		<disclaimer lang="en">The author of this repository do not host any of the content which is found and have no affiliation with any of the content providers. Use at your own risk!</disclaimer>  
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<disclaimer lang="en">The author of this repository do not host any of the content which is found and have no affiliation with any of the content providers. Use at your own risk!</disclaimer>
 		<assets>	
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>	
-		</assets>  
+		</assets>
 	</extension>
 </addon>
 
@@ -2896,10 +2935,10 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-	  <summary lang="pt_BR">••• Repositorio Oficial •••</summary>
-	  <description lang="pt_BR">ONEREPO é um agregador de addons. Assim como o Google.com, o OnePlay atua exclusivamente como um indexador e organizador de links de conteúdos disponibilizados publicamente na internet.</description>
-	  <disclaimer lang="pt_BR">O plugin atua unicamente como um agregador de links. Não hospedamos, transmitimos ou reproduzimos qualquer conteúdo de mídia. A responsabilidade pelo conteúdo acessado é exclusiva do respectivo provedor ou fonte original.</disclaimer>
-	<news>
+		<summary lang="pt_BR">••• Repositorio Oficial •••</summary>
+		<description lang="pt_BR">ONEREPO é um agregador de addons. Assim como o Google.com, o OnePlay atua exclusivamente como um indexador e organizador de links de conteúdos disponibilizados publicamente na internet.</description>
+		<disclaimer lang="pt_BR">O plugin atua unicamente como um agregador de links. Não hospedamos, transmitimos ou reproduzimos qualquer conteúdo de mídia. A responsabilidade pelo conteúdo acessado é exclusiva do respectivo provedor ou fonte original.</disclaimer>
+		<news>
 • Adaptação das informações de acordo com a versão atual do Kodi.
 • Adição de capturas de tela em "resources" para visualização prévia.
 • Atualização dos links de apontamento para o GitHub.
@@ -3188,7 +3227,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	<extension point="xbmc.addon.metadata">
 		<summary>PythonTrousers Kodi Repository</summary>
 		<description>Official repository for Internet Archive Theater and future PythonTrousers Kodi projects.</description>
-        <platform>all</platform>
+		<platform>all</platform>
 		<assets>
 			<icon>icon.jpg</icon>
 		</assets>
@@ -3573,6 +3612,26 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.taiseer" name="ABUKARIM repository" version="1.0.4" provider-name="taiseer999">
+	<extension point="xbmc.addon.repository" name="Example Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>ABUKARIM repository</summary>
+		<description>Arabic Kodi</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
@@ -4139,7 +4198,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
 		</dir>
 	</extension>
-    <extension point="xbmc.addon.metadata">
+	<extension point="xbmc.addon.metadata">
 		<summary>Zeus768 Repository - Kodi Addons</summary>
 		<description>Zeus768 Kodi Addon Repository.
 

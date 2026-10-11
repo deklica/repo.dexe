@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.dexworld"
+       name="DexWorld Repository"
+       version="1.0.1"
+       provider-name="DexWorld">
+  <extension point="xbmc.addon.repository" name="DexWorld Repository">
+    <dir>
+      <info compressed="false">https://dexworld.cc/kodi/addons.xml</info>
+      <checksum>https://dexworld.cc/kodi/addons.xml.md5</checksum>
+      <datadir zip="true">https://dexworld.cc/kodi/</datadir>
+      <hashes>false</hashes>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">DexWorld Repository</summary>
+    <description lang="en">DexWorld private Kodi repository</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>

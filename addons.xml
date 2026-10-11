@@ -209,7 +209,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.dltv" name="DLTV" version="1.2.41" provider-name="arkane14">
+<addon id="plugin.video.dltv" name="DLTV" version="1.2.52" provider-name="arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -2713,7 +2713,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctmgr" version="1.2.0" name="[COLOR dodgerblue][B]Account Manager[/B][/COLOR] [COLOR white][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
+<addon id="script.module.acctmgr" version="1.2.0a" name="[COLOR dodgerblue][B]Account Manager[/B][/COLOR] [COLOR white][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
