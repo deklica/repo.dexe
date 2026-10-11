@@ -209,7 +209,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.dltv" name="DLTV" version="1.2.52" provider-name="arkane14">
+<addon id="plugin.video.dltv" name="DLTV" version="1.2.54" provider-name="arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -725,11 +725,11 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.9" provider-name="realvito (inspired by L0RE)">
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.1.0" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
+		<import addon="plugin.video.youtube" version="7.0.3+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -753,13 +753,7 @@ plugin.video.GreenKlikPremium
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>
-[B][COLOR orangered]Version 3.0.9+matrix.1  (14.09.2025)[/COLOR][/B]
-- fixed: 'Apple Music' Auth-Token not found and subfolders cannot be opened (Error: APPLEMUSIC - COULD NOT FIND TOKEN)
-- fixed: Billboard-Videolists, artists are not displayed correctly
-- fixed: „Title Case“-Formatting for 'German umlauts' (ÄÖÜäöüß)
-- removed: Billboard archive sorted by year, now only last year is displayed (years no longer accessible)
-		</news>
+		<news></news>
 	</extension>
 </addon>
 
