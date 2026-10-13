@@ -1109,7 +1109,7 @@ def contents_comparable(doc):
     return json.dumps(d, sort_keys=True, ensure_ascii=False)
 
 
-def build_contents(catalog, root, allow_remote, only=None, out_root=None, prev_entries=None):
+def build_contents(catalog, root, allow_remote, only=None, out_root=None, prev_entries=None, fill_missing=False):
     """Reads every third-party repository listed in the catalogs and writes catalog/<id>.json for each.
     Adds "contents" to the repository entries and "newer" to the other add-ons. Returns the report rows."""
     run_time = now_iso()
@@ -1155,6 +1155,8 @@ def build_contents(catalog, root, allow_remote, only=None, out_root=None, prev_e
         if prev is None:                                            # repository that was removed and is back
             prev = load_contents_file(os.path.join(dead_dir, j["id"] + ".json"), False)
         j["prev"] = prev
+        # a repository never described before is read from the network even in a --no-remote run (push), once
+        j["remote"] = allow_remote or (fill_missing and prev is None)
         rel, exact = find_repository_zip(root, j["id"], j["version"])
         local = None
         if rel:
@@ -1169,7 +1171,7 @@ def build_contents(catalog, root, allow_remote, only=None, out_root=None, prev_e
         if prev and prev.get("version") == j["version"] and prev.get("dirs"):
             j["dirs"], j["zip"] = prev["dirs"], prev.get("zip")
             return
-        if allow_remote and j["datadir"]:
+        if j["remote"] and j["datadir"]:
             url = f"{j['datadir']}{j['id']}/{j['id']}-{j['version']}.zip"
             data, code, ms, err = fetch_status(url, CONTENTS_MAX_ZIP)
             if data is not None:
@@ -1184,19 +1186,21 @@ def build_contents(catalog, root, allow_remote, only=None, out_root=None, prev_e
         j["dirs"] = prev.get("dirs") if prev else None
         j["zip"] = prev.get("zip") if prev else None
         if not j.get("zip_error"):
-            j["zip_error"] = "skipped (--no-remote)" if not allow_remote else "no local zip and no datadir"
+            j["zip_error"] = "skipped (--no-remote)" if not j["remote"] else "no local zip and no datadir"
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=CONTENTS_WORKERS) as pool:
         list(pool.map(read_dirs, jobs.values()))
-    if not allow_remote:                       # without network a repository not seen before cannot be described yet
-        for rid in [k for k, j in jobs.items() if not j.get("prev")]:
-            del jobs[rid]
-        if not jobs:
-            return report
+    for rid in [k for k, j in jobs.items() if not j.get("prev") and not j["remote"]]:   # without network a repository
+        del jobs[rid]                                                                    # not seen before cannot be described yet
+    if not jobs:
+        return report
 
-    # 2. every distinct source URL once (info files parsed, checksum files only checked)
+    # 2. every distinct source URL once (info files parsed, checksum files only checked); a --no-remote run reads
+    #    only the sources of repositories it has to describe anew, the others keep their previous result
     urls = {}
     for j in jobs.values():
+        if not j["remote"]:
+            continue
         for d in j.get("dirs") or []:
             if DEVICE_HOST_RE.match(d["info"]):
                 continue
@@ -1204,7 +1208,7 @@ def build_contents(catalog, root, allow_remote, only=None, out_root=None, prev_e
             if d.get("checksum"):
                 urls.setdefault(d["checksum"], "checksum")
     results = {}
-    if allow_remote and urls:
+    if urls:
         def grab(item):
             url, kind = item
             data, code, ms, err = fetch_status(url, CONTENTS_MAX_XML if kind == "info" else 64 * 1024)
@@ -1547,7 +1551,7 @@ def main():
                         a.pop(k, None)
     else:
         contents_report = build_contents(catalog, root, allow_remote=not args.no_remote, only=set(args.only or []) or None,
-                                         out_root=out_root, prev_entries=prev_entries)
+                                         out_root=out_root, prev_entries=prev_entries, fill_missing=args.no_remote)
     with open(out_path, "w", encoding="utf-8") as f:
         if args.pretty:
             json.dump(catalog, f, ensure_ascii=False, indent=2)
