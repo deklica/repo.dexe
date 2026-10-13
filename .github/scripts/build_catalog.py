@@ -3,14 +3,24 @@
 build_catalog.py - generates catalog.json for the add-on catalog on deklica.github.io.
 
 Usage (the repository root is detected automatically, so the script can be run from anywhere):
-    python3 .github/scripts/build_catalog.py              # update catalog.json and addons.xml.md5 files
+    python3 .github/scripts/build_catalog.py              # update catalog.json (and addons.xml.md5 in GitHub Actions)
+    python3 .github/scripts/build_catalog.py --md5        # also write the addons.xml.md5 files locally
     python3 .github/scripts/build_catalog.py --pretty     # indented JSON
     python3 .github/scripts/build_catalog.py --no-remote  # local sources only
     python3 .github/scripts/build_catalog.py --strict     # exit with status 1 if any source failed
+    python3 .github/scripts/build_catalog.py --no-contents            # skip the third-party repository contents
+    python3 .github/scripts/build_catalog.py --only repository.umbrella  # check one third-party repository
+    python3 .github/scripts/build_catalog.py --out-dir ../deklica.github.io  # write the results into a site copy
 
 Sources are read from the <dir> entries of the repository add-ons listed in REPOS (addon.xml inside
 the newest repository zip, or the plain addon.xml next to it). Entries pointing at this repository
 are read from the working tree; everything else is downloaded and marked as external.
+
+Third-party repositories (every repository add-on in the catalogs except the own ones): their real
+sources are read from addon.xml inside their zip (local folder, else downloaded from their datadir),
+each source is fetched and the add-ons are written to catalog/<repository id>.json. The entry in
+catalog.json gets a "contents" summary (count, status of the sources) and own add-ons get "newer"
+when a third-party repository carries a higher version of the same add-on.
 
 Dates: for local add-ons the date comes from git history (first commit of the current zip), so a
 full clone is required - in GitHub Actions use actions/checkout with fetch-depth: 0. For remote
@@ -21,15 +31,19 @@ Requires Python 3.8+ and the standard library only.
 """
 
 import argparse
+import concurrent.futures
 import datetime as dt
 import email.utils
 import gzip
 import hashlib
+import io
 import json
 import os
 import re
 import subprocess
 import sys
+import threading
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -78,6 +92,23 @@ FALLBACK_SOURCES = {
 
 HTTP_TIMEOUT = 30
 USER_AGENT = "Kodi/21.0 (build_catalog)"
+# Some servers serve a repository only to Kodi (any other User-Agent gets a redirect or an error page). Such sources
+# are probed once more with a browser's User-Agent, so the site knows that their zips cannot be downloaded from a browser.
+BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+BROWSER_OK_HOSTS = re.compile(r"^https?://(raw\.githubusercontent\.com|github\.com|[^/]+\.github\.io)/", re.I)   # never gated
+
+# Third-party repository contents
+CONTENTS_DIR = "catalog"                                   # catalog/<repository id>.json, relative to the root
+CONTENTS_DEAD = "dead"                                     # catalog/dead/: files of repositories removed from the catalogs
+CONTENTS_SKIP = {"repository.dexe", "repository.roooar"}   # own catalogs, already on the site
+CONTENTS_WORKERS = 8                                       # parallel downloads
+CONTENTS_TIMEOUT = 20                                      # seconds per request
+CONTENTS_MAX_ZIP = 12 * 1024 * 1024                        # largest repository zip downloaded from a datadir
+CONTENTS_MAX_XML = 40 * 1024 * 1024                        # largest addons.xml accepted
+ZIP_FOLDERS = ["repo", "repos", "zips", "misc"]            # local folders that hold repository zips
+NEWER_LIMIT = 3                                            # at most N "newer version in ..." hints per add-on
+NEWER_MAX_MAJOR_JUMP = 3                                   # ignore "newer" versions like 421.1.0 for 1.0.2 (build repos)
+DEVICE_HOST_RE = re.compile(r"^https?://(?:127\.0\.0\.1|localhost)(?::\d+)?/", re.I)   # served by an add-on on the device
 NEW_VERSION_AS_UPDATE = True   # remote add-ons: if the zip date is unknown, a new version is dated with the run time
 REMOTE_DATES = True            # remote add-ons: look up the publish date of the current zip
 
@@ -146,7 +177,14 @@ def now_iso():
 
 
 def version_key(v):
-    return [(0, int(p), "") if p.isdigit() else (1, 0, p) for p in re.split(r"[.\-~+]", v or "0")]
+    """Sortable key: each part is compared by its number first, letters after it only break ties
+    (1.2.0a > 1.2.0, but 1.5 > 1.2c and 100.0.34 > 100.0.30i)."""
+    key = []
+    for p in re.split(r"[.\-~+]", v or "0"):
+        m = re.match(r"(\d*)(.*)", p)
+        num, rest = m.group(1), m.group(2)
+        key.append((0, int(num), rest) if num else (1, 0, rest))
+    return key
 
 
 # ---------------------------------------------------------------------------
@@ -274,6 +312,11 @@ def github_commit_date(owner, repo, branch, path):
         _gh_state["calls"] += 1
         with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as r:
             data = json.loads(r.read().decode("utf-8"))
+            remaining = r.headers.get("X-RateLimit-Remaining")
+        if remaining is not None and remaining.isdigit() and int(remaining) < 3:
+            _gh_state["limited"] = True        # stop before the limit; the remaining dates fall back to version changes
+            log("  warning: GitHub API quota almost used up; remaining dates fall back to version changes"
+                + ("" if token else " (set GITHUB_TOKEN for a higher limit)"))
         if data:
             return data[0]["commit"]["committer"]["date"]
     except urllib.error.HTTPError as e:
@@ -360,6 +403,7 @@ def parse_block(block):
         provides = re.findall(r"<provides>([^<]*)</provides>", block)
         icon = re.search(r"<icon>([^<]*)</icon>", block)
         plat = re.search(r"<platform>([^<]*)</platform>", block)
+        zpath = re.search(r"<path>([^<]*)</path>", block)
         reqs = [(m.group(1), 'optional="true"' in m.group(0),
                  (re.search(r'version="([^"]+)"', m.group(0)) or [None, None])[1])
                 for m in re.finditer(r'<import\b[^>]*addon="([^"]+)"[^>]*>', block)]
@@ -367,8 +411,8 @@ def parse_block(block):
                 "author": attr("provider-name"), "points": [(p, " ".join(provides)) for p in points],
                 "icon": icon.group(1).strip() if icon else "icon.png",
                 "platform": plat.group(1).strip() if plat else None, "broken": "<broken" in block,
-                "requires": reqs}
-    points, icon, platform, broken = [], None, None, False
+                "path": zpath.group(1).strip() if zpath else None, "requires": reqs}
+    points, icon, platform, broken, zpath = [], None, None, False, None
     for ext in el.findall("extension"):
         point = ext.get("point", "")
         provides = " ".join((p.text or "").strip() for p in ext.findall("provides"))
@@ -380,6 +424,9 @@ def parse_block(block):
             pl = ext.find("platform")
             if pl is not None and (pl.text or "").strip():
                 platform = pl.text.strip()
+            zp = ext.find("path")                      # Kodi 19+: zip location relative to the datadir (per-platform builds)
+            if zp is not None and (zp.text or "").strip():
+                zpath = zp.text.strip()
             if ext.find("broken") is not None:
                 broken = True
     reqs = [(imp.get("addon"), (imp.get("optional") or "").lower() == "true", imp.get("version"))
@@ -387,7 +434,7 @@ def parse_block(block):
     return {"id": el.get("id"), "name": el.get("name"), "version": el.get("version"),
             "author": el.get("provider-name"), "points": points,
             "icon": icon or "icon.png",
-            "platform": platform, "broken": broken, "requires": reqs}
+            "platform": platform, "broken": broken, "path": zpath, "requires": reqs}
 
 
 def kodi_types(points, addon_id=""):
@@ -602,18 +649,30 @@ def local_date(root, folder, aid, versions, added, touched):
 # ---------------------------------------------------------------------------
 # Build
 # ---------------------------------------------------------------------------
-def load_previous(path):
-    """Returns (per add-on summary, full entries per catalog) from the previous catalog.json."""
+def load_previous(path, allow_remote=True):
+    """Returns (per add-on summary, full entries per catalog, where it came from) from the previous catalog.json.
+    Without a local file (sparse checkout, fresh clone) the published one is taken from GitHub, so that
+    dates of external add-ons are not looked up again and nothing is reported as new."""
+    data, where = None, None
     try:
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
+        where = path
+    except (OSError, ValueError):
+        if allow_remote:
+            try:
+                data = json.loads(fetch(RAW + "catalog.json"))
+                where = RAW + "catalog.json"
+            except Exception as e:
+                log(f"  warning: no previous catalog ({e})")
+    try:
         summary = {(rk, a["id"]): {"version": a.get("version"), "updated": a.get("updated"),
                                    "added": a.get("added"), "has_added": "added" in a}
-                   for rk, r in data.get("repos", {}).items() for a in r.get("addons", [])}
-        entries = {rk: list(r.get("addons", [])) for rk, r in data.get("repos", {}).items()}
-        return summary, entries
-    except (OSError, ValueError, KeyError, TypeError):
-        return {}, {}
+                   for rk, r in (data or {}).get("repos", {}).items() for a in r.get("addons", [])}
+        entries = {rk: list(r.get("addons", [])) for rk, r in (data or {}).get("repos", {}).items()}
+        return summary, entries, where
+    except (KeyError, TypeError, AttributeError):
+        return {}, {}, None
 
 
 def build(root, allow_remote, previous, prev_entries):
@@ -774,6 +833,7 @@ def build(root, allow_remote, previous, prev_entries):
                 "kodi": (kodi_label_multi([(rows, {})]) if aid.startswith("repository.") else
                          kodi_label_multi([(x[2], x[1]["src"]) for x in same_version])),
                 "_requires": sorted({d for r in rows for d, opt, _ in r.get("requires", []) if not opt}),
+                "_datadir": src["datadir"],
             })
 
         ids = {x["id"] for x in out}
@@ -825,6 +885,548 @@ def build(root, allow_remote, previous, prev_entries):
         log(f"Remote zip dates resolved: {remote_dates[0]} (GitHub API calls: {_gh_state['calls']}"
             f"{', rate limited' if _gh_state['limited'] else ''})")
     return catalog, (report, report_dups, new_addons, report_kept)
+
+
+# ---------------------------------------------------------------------------
+# Contents of the third-party repositories listed in the catalogs
+# ---------------------------------------------------------------------------
+def repository_dirs(text):
+    """<dir> entries of a repository add-on (legacy single-dir layout included): info, checksum, datadir, Kodi range."""
+    ext = re.search(r'<extension\b[^>]*point="xbmc\.addon\.repository"[^>]*>(.*?)</extension>', text, re.S)
+    body = ext.group(1) if ext else text
+    blocks = [(re.match(r"<dir\b[^>]*>", m.group(0)).group(0), m.group(1))
+              for m in re.finditer(r"<dir\b[^>]*>(.*?)</dir>", body, re.S)]
+    if not blocks:
+        blocks = [("<dir>", body)]
+    dirs = []
+    for head, b in blocks:
+        info = re.search(r"<info\b[^>]*>(.*?)</info>", b, re.S)
+        if not info or not info.group(1).strip():
+            continue
+        url = info.group(1).strip()
+        chk = re.search(r"<checksum\b[^>]*>(.*?)</checksum>", b, re.S)
+        dd = re.search(r"<datadir\b[^>]*>(.*?)</datadir>", b, re.S)
+        datadir = (dd.group(1).strip() if dd and dd.group(1).strip() else url.rsplit("/", 1)[0]).rstrip("/") + "/"
+        kmin = re.search(r'minversion="([^"]+)"', head)
+        kmax = re.search(r'maxversion="([^"]+)"', head)
+        dirs.append({"info": url, "checksum": (chk.group(1).strip() or None) if chk else None, "datadir": datadir,
+                     "kodi_min": kmin.group(1) if kmin else None, "kodi_max": kmax.group(1) if kmax else None})
+    return dirs
+
+
+def fetch_status(url, limit=None, timeout=CONTENTS_TIMEOUT, ua=USER_AGENT):
+    """GET with timing. Returns (bytes or None, http status, milliseconds, error text)."""
+    t0 = time.monotonic()
+    req = urllib.request.Request(url, headers={"User-Agent": ua})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            data = r.read(limit + 1) if limit else r.read()
+            code = r.status
+        ms = int((time.monotonic() - t0) * 1000)
+        if limit and len(data) > limit:
+            return None, code, ms, "file too large"
+        if data[:2] == b"\x1f\x8b":
+            try:
+                data = gzip.decompress(data)
+            except OSError:
+                return None, code, ms, "invalid gzip"
+        return data, code, ms, None
+    except urllib.error.HTTPError as e:
+        return None, e.code, int((time.monotonic() - t0) * 1000), f"HTTP {e.code}"
+    except Exception as e:
+        msg = str(getattr(e, "reason", e)) or e.__class__.__name__
+        return None, None, int((time.monotonic() - t0) * 1000), re.sub(r"\s+", " ", msg)[:100]
+
+
+def find_repository_zip(root, aid, version):
+    """Local zip of a repository add-on: the wanted version, else the newest one. Returns a path relative to root."""
+    found = []
+    for folder in ZIP_FOLDERS:
+        for sub in (os.path.join(folder, aid), folder):
+            full = os.path.join(root, sub)
+            if not os.path.isdir(full):
+                continue
+            for fn in os.listdir(full):
+                m = re.match(re.escape(aid) + r"-(.+)\.zip$", fn)
+                if m:
+                    found.append((m.group(1) == version, version_key(m.group(1)), f"{sub}/{fn}"))
+    if not found:
+        return None, False
+    found.sort(reverse=True)
+    return found[0][2], found[0][0]
+
+
+def addon_xml_from_zip(data_or_path, aid):
+    try:
+        with zipfile.ZipFile(data_or_path) as z:
+            name = next((n for n in z.namelist() if n.lower() == f"{aid}/addon.xml".lower()), None)
+            if not name:
+                name = next((n for n in z.namelist() if n.lower().endswith("/addon.xml") and n.count("/") == 1), None)
+            if name:
+                return z.read(name).decode("utf-8", "replace"), None
+            return None, "addon.xml not in zip"
+    except (zipfile.BadZipFile, OSError) as e:
+        return None, f"bad zip: {e}"
+
+
+def is_newer(candidate, ours):
+    """Kodi-style comparison, ignoring build suffixes of the same base (1.0~omega vs 1.0~nexus) and the inflated
+    versions that build repositories use (421.1.0 for 1.0.2)."""
+    base = lambda v: re.split(r"[~+]", v or "0", maxsplit=1)[0]
+    if version_key(base(candidate)) <= version_key(base(ours)):
+        return False
+    major = lambda v: (_major_minor(v)[0] or 0)
+    return major(candidate) <= major(ours) + NEWER_MAX_MAJOR_JUMP
+
+
+def contents_kodi(dir_):
+    lo, hi = kodi_from_dir(dir_.get("kodi_min"), dir_.get("kodi_max"))
+    return None if lo is None and hi is None else {"min": lo, "max": hi}
+
+
+def dir_is_current(dir_):
+    """A <dir> that a current Kodi (19+) would use; a broken source only for old versions does not break the repo today."""
+    _, hi = kodi_from_dir(dir_.get("kodi_min"), dir_.get("kodi_max"))
+    return hi is None or hi >= 19
+
+
+def contents_entries(text, dir_, dir_index):
+    rows = []
+    for block in ADDON_BLOCK_RE.findall(COMMENT_RE.sub("", text)):
+        a = parse_block(block)
+        if a.get("id"):
+            rows.append(a)
+    out = []
+    for r in rows:
+        aid = r["id"]
+        types = kodi_types(r["points"], aid)
+        if aid in TYPE_OVERRIDES:
+            types = [TYPE_OVERRIDES[aid]] + [t for t in types if t != TYPE_OVERRIDES[aid]]
+        lo, hi = kodi_range([kodi_from_addon(aid, r["version"], r.get("requires", [])),
+                             kodi_from_dir(dir_.get("kodi_min"), dir_.get("kodi_max"))])
+        platforms = [p for p in (r["platform"] or "").split() if p != "all"]
+        out.append({
+            "id": aid,
+            "name": clean_name(r["name"]) or aid,
+            "version": r["version"] or "0",
+            "author": clean_name(r["author"]) or None,
+            "type": types[0],
+            "types": types,
+            "dependency": types[0] in DEPENDENCY_TYPES,
+            "platforms": platforms,
+            "broken": r["broken"],
+            "icon": (dir_["datadir"] + aid + "/" + r["icon"]) if r["icon"] else None,
+            "kodi": None if lo is None and hi is None else {"min": lo, "max": hi},
+            "src": dir_index,
+            "zip": dir_["datadir"] + (r.get("path").lstrip("/") if r.get("path") else f"{aid}/{aid}-{r['version'] or '0'}.zip"),   # as Kodi fetches it
+            "_requires": sorted({d for d, opt, _ in r.get("requires", []) if not opt}),
+        })
+    return out
+
+
+def merge_contents(entries):
+    """One entry per id and Kodi range: the same version in several dirs is one entry, a lower version whose
+    Kodi range overlaps a higher one is dropped, versions for different Kodi releases stay separate."""
+    by_id = {}
+    for e in entries:
+        by_id.setdefault(e["id"], []).append(e)
+    out = []
+    for aid, items in by_id.items():
+        items.sort(key=lambda e: version_key(e["version"]), reverse=True)
+        kept = []
+        for e in items:
+            rng = (e["kodi"]["min"], e["kodi"]["max"]) if e["kodi"] else (None, None)
+            for k in kept:
+                krng = (k["kodi"]["min"], k["kodi"]["max"]) if k["kodi"] else (None, None)
+                if k["version"] == e["version"] and set(k.get("platforms") or []) != set(e.get("platforms") or []):
+                    continue                           # same version built per platform (own zip each): separate entries
+                if k["version"] == e["version"]:
+                    u = range_union(krng, rng)
+                    k["kodi"] = None if u == (None, None) else {"min": u[0], "max": u[1]}
+                    if not k["icon"]:
+                        k["icon"] = e["icon"]
+                    k["_requires"] = sorted(set(k.get("_requires", [])) | set(e.get("_requires", [])))
+                    break
+                if ranges_overlap(krng, rng):
+                    break                                  # superseded by the higher version
+            else:
+                kept.append(dict(e))
+        out.extend(kept)
+    # a module/helper required by exactly one add-on of the repository is shown as its part (same rule as own catalogs)
+    ids = {e["id"] for e in out}
+    types_by_id = {e["id"]: e["type"] for e in out}
+    importers = {}
+    carried = set()                            # entries kept from the previous file: their parent is kept as it was
+    for e in out:
+        if "_requires" not in e:
+            carried.add(e["id"])
+        for dep in e.pop("_requires", []):
+            if dep in ids and dep != e["id"]:
+                importers.setdefault(dep, set()).add(e["id"])
+    for e in out:
+        if e["id"] in carried:
+            e["parent"] = e.get("parent") if e.get("parent") in ids else None
+            e["dependency"] = e["type"] in DEPENDENCY_TYPES or bool(e["parent"])
+            continue
+        users = importers.get(e["id"], set())
+        parent = None
+        helper = e["id"].startswith("script.module.") or (e["id"].startswith("script.") and ".helper" in e["id"])
+        if len(users) == 1 and helper and e["type"] not in ("video", "audio", "image", "skin", "repository"):
+            user = next(iter(users))
+            if types_by_id.get(user) not in DEPENDENCY_TYPES:
+                parent = user
+        e["parent"] = parent
+        e["dependency"] = e["type"] in DEPENDENCY_TYPES or bool(parent)
+    out.sort(key=lambda e: e["name"].lower())
+    children = {}
+    for e in out:
+        if e["parent"]:
+            children.setdefault(e["parent"], []).append(e["id"])
+    for e in out:
+        e["children"] = sorted(set(children.get(e["id"], [])))
+    return out
+
+
+def load_contents_file(path, allow_remote=False):
+    """Previous catalog/<id>.json: local file, else (when allowed) the published one from GitHub."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, ValueError):
+        if not allow_remote:
+            return None
+        try:
+            data = json.loads(fetch(RAW + CONTENTS_DIR + "/" + os.path.basename(path)))
+        except Exception:
+            return None
+    return data if isinstance(data, dict) and "addons" in data else None
+
+
+def contents_comparable(doc):
+    d = dict(doc)
+    d.pop("generated", None)
+    d["sources"] = [{k: v for k, v in s.items() if k not in ("ms", "http")} for s in doc.get("sources", [])]
+    return json.dumps(d, sort_keys=True, ensure_ascii=False)
+
+
+def build_contents(catalog, root, allow_remote, only=None, out_root=None, prev_entries=None):
+    """Reads every third-party repository listed in the catalogs and writes catalog/<id>.json for each.
+    Adds "contents" to the repository entries and "newer" to the other add-ons. Returns the report rows."""
+    run_time = now_iso()
+    out_dir = os.path.join(out_root or root, CONTENTS_DIR)
+    os.makedirs(out_dir, exist_ok=True)
+
+    # repository add-ons across the catalogs, one job per id (highest version wins)
+    jobs = {}
+    for rk, repo in catalog["repos"].items():
+        for a in repo["addons"]:
+            datadir = a.pop("_datadir", None)
+            if a["type"] != "repository" or a["id"] in CONTENTS_SKIP:
+                continue
+            if only and a["id"] not in only:
+                continue
+            j = jobs.get(a["id"])
+            if j is None or version_key(a["version"]) > version_key(j["version"]):
+                jobs[a["id"]] = {"id": a["id"], "name": a["name"], "version": a["version"], "datadir": datadir,
+                                 "icon": a.get("icon")}
+    for a in (x for r in catalog["repos"].values() for x in r["addons"]):
+        a.pop("_datadir", None)
+
+    # a repository removed from the catalogs: its file moves to catalog/dead/ (index.json is rebuilt below anyway);
+    # if the repository comes back, that copy is its previous state again (dates, last_ok)
+    dead_dir = os.path.join(out_dir, CONTENTS_DEAD)
+    if not only:
+        listed = {a["id"] for r in catalog["repos"].values() for a in r["addons"] if a["type"] == "repository"}
+        for fn in os.listdir(out_dir):
+            stem = fn[:-5] if fn.endswith(".json") else None
+            if stem and stem != "index" and stem not in listed:
+                os.makedirs(dead_dir, exist_ok=True)
+                os.replace(os.path.join(out_dir, fn), os.path.join(dead_dir, fn))
+                log(f"Moved {CONTENTS_DIR}/{fn} to {CONTENTS_DIR}/{CONTENTS_DEAD}/: repository no longer in the catalogs")
+
+    report = []
+    if not jobs:
+        return report
+
+    # 1. addon.xml of each repository, in this order: local zip of the catalog version, previous file of the same
+    #    version, zip downloaded from the datadir, any local zip (older version), previous file
+    def read_dirs(j):
+        prev = load_contents_file(os.path.join(out_dir, j["id"] + ".json"), allow_remote)
+        if prev is None:                                            # repository that was removed and is back
+            prev = load_contents_file(os.path.join(dead_dir, j["id"] + ".json"), False)
+        j["prev"] = prev
+        rel, exact = find_repository_zip(root, j["id"], j["version"])
+        local = None
+        if rel:
+            text, err = addon_xml_from_zip(os.path.join(root, rel), j["id"])
+            if text:
+                local = (repository_dirs(text), rel)
+            else:
+                j["zip_error"] = err
+        if local and exact:
+            j["dirs"], j["zip"] = local
+            return
+        if prev and prev.get("version") == j["version"] and prev.get("dirs"):
+            j["dirs"], j["zip"] = prev["dirs"], prev.get("zip")
+            return
+        if allow_remote and j["datadir"]:
+            url = f"{j['datadir']}{j['id']}/{j['id']}-{j['version']}.zip"
+            data, code, ms, err = fetch_status(url, CONTENTS_MAX_ZIP)
+            if data is not None:
+                text, err = addon_xml_from_zip(io.BytesIO(data), j["id"])
+                if text:
+                    j["dirs"], j["zip"] = repository_dirs(text), url
+                    return
+            j["zip_error"] = f"{err}: {url}"
+        if local:
+            j["dirs"], j["zip"] = local
+            return
+        j["dirs"] = prev.get("dirs") if prev else None
+        j["zip"] = prev.get("zip") if prev else None
+        if not j.get("zip_error"):
+            j["zip_error"] = "skipped (--no-remote)" if not allow_remote else "no local zip and no datadir"
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=CONTENTS_WORKERS) as pool:
+        list(pool.map(read_dirs, jobs.values()))
+    if not allow_remote:                       # without network a repository not seen before cannot be described yet
+        for rid in [k for k, j in jobs.items() if not j.get("prev")]:
+            del jobs[rid]
+        if not jobs:
+            return report
+
+    # 2. every distinct source URL once (info files parsed, checksum files only checked)
+    urls = {}
+    for j in jobs.values():
+        for d in j.get("dirs") or []:
+            if DEVICE_HOST_RE.match(d["info"]):
+                continue
+            urls.setdefault(d["info"], "info")
+            if d.get("checksum"):
+                urls.setdefault(d["checksum"], "checksum")
+    results = {}
+    if allow_remote and urls:
+        def grab(item):
+            url, kind = item
+            data, code, ms, err = fetch_status(url, CONTENTS_MAX_XML if kind == "info" else 64 * 1024)
+            text = None
+            if data is not None and kind == "info":
+                text = data.decode("utf-8", "replace")
+                if "<addon" not in text:
+                    err, data = "not an addons.xml", None
+            results[url] = {"http": code, "ms": ms, "error": err, "text": text, "ok": data is not None}
+            if kind == "info" and data is not None and not BROWSER_OK_HOSTS.match(url):
+                # the same file as a browser would ask for it: a redirect/error page means the server serves Kodi only
+                bdata = fetch_status(url, CONTENTS_MAX_XML, ua=BROWSER_UA)[0]
+                results[url]["browser"] = bdata is not None and b"<addon" in bdata
+        with concurrent.futures.ThreadPoolExecutor(max_workers=CONTENTS_WORKERS) as pool:
+            list(pool.map(grab, urls.items()))
+
+    # 3. per repository: entries, status, file
+    by_addon = {}                                   # id -> [(repo id, repo name, version, kodi range)]
+    for j in jobs.values():
+        prev = j.get("prev")
+        dirs = j.get("dirs")
+        doc = {"id": j["id"], "name": j["name"], "version": j["version"], "generated": run_time,
+               "zip": j.get("zip"), "dirs": dirs or [], "status": "ok", "sources": [], "count": 0, "addons": []}
+        if not dirs:
+            doc["status"] = "error"
+            doc["error"] = j.get("zip_error") or "no sources in addon.xml"
+            if prev:
+                doc["addons"], doc["count"] = prev.get("addons", []), prev.get("count", 0)
+                doc["sources"], doc["kept"] = prev.get("sources", []), True
+        else:
+            entries = []
+            carried_ids = set()
+            prev_by_url = {}
+            if prev:                                    # previous entries per source URL (a URL may serve several dirs)
+                for i, s in enumerate(prev.get("sources", [])):
+                    prev_by_url.setdefault(s.get("info"), []).extend(a for a in prev.get("addons", []) if a.get("src") == i)
+            broken_now = False
+            j["checked_now"] = any(results.get(d["info"]) is not None for d in dirs)   # False in --no-remote runs
+            for i, d in enumerate(dirs):
+                s = {"info": d["info"], "checksum": d.get("checksum"), "datadir": d["datadir"],
+                     "kodi": contents_kodi(d), "status": "ok", "http": None, "ms": None, "count": 0, "error": None}
+                r = results.get(d["info"])
+                if DEVICE_HOST_RE.match(d["info"]):
+                    s["status"], s["error"] = "device", "served by the add-on itself on the device, cannot be checked"
+                elif r is None:                         # --no-remote: previous result of this source, if any
+                    kept = prev_by_url.pop(d["info"], None)
+                    ps = next((x for x in (prev or {}).get("sources", []) if x.get("info") == d["info"]), None)
+                    if ps:
+                        s.update({k: ps.get(k) for k in ("status", "http", "ms", "error", "checksum_error", "count", "kept", "browser") if k in ps})
+                    else:
+                        s["status"], s["error"] = "skipped", "not checked"
+                    for a in kept or []:
+                        a = dict(a); a["src"] = i; entries.append(a); carried_ids.add(a["id"])
+                    if not ps:
+                        s["count"] = len(kept or [])
+                else:
+                    s["http"], s["ms"] = r["http"], r["ms"]
+                    if r["ok"]:
+                        got = contents_entries(r["text"], d, i)
+                        entries.extend(got)
+                        s["count"] = len(got)
+                        if r.get("browser") is False:
+                            s["browser"] = False        # served to Kodi only: zips cannot be downloaded from a browser
+                    else:
+                        s["status"], s["error"] = "error", r["error"]
+                        kept = prev_by_url.pop(d["info"], None)
+                        if kept:
+                            for a in kept:
+                                a = dict(a); a["src"] = i; entries.append(a); carried_ids.add(a["id"])
+                            s["count"], s["kept"] = len(kept), True
+                    if d.get("checksum"):
+                        c = results.get(d["checksum"])
+                        if c and not c["ok"]:
+                            s["checksum_error"] = c["error"]
+                            if s["status"] == "ok":
+                                s["status"] = "error"
+                                s["error"] = f"checksum: {c['error']}"
+                if s["status"] == "error" and dir_is_current(d):
+                    broken_now = True
+                doc["sources"].append(s)
+            doc["addons"] = merge_contents(entries)
+            # Dates: third-party repositories give none, so they are tracked from run to run - a version first seen
+            # today is dated today ("updated"), an id first seen today is also "added" today. Entries present at the
+            # first run of a repository stay undated.
+            if prev:
+                prev_dates = {}
+                prev_ids = set()
+                for x in prev.get("addons", []):
+                    prev_ids.add(x["id"])
+                    prev_dates[f"{x['id']}@{x['version']}"] = (x.get("updated"), x.get("added"))
+                for e in doc["addons"]:
+                    if "updated" in e and e["id"] in carried_ids:
+                        continue
+                    key = f"{e['id']}@{e['version']}"
+                    if key in prev_dates:
+                        e["updated"], e["added"] = prev_dates[key]
+                    elif e["id"] in prev_ids:
+                        e["updated"] = run_time
+                        e["added"] = next((d for u, d in (prev_dates[k] for k in prev_dates if k.startswith(e["id"] + "@")) if d), None)
+                    else:
+                        e["updated"] = e["added"] = run_time
+            doc["addons"].sort(key=lambda e: e["name"].lower())
+            doc["addons"].sort(key=lambda e: e.get("updated") or "", reverse=True)
+            doc["count"] = len(doc["addons"])
+            failed = [s for s in doc["sources"] if s["status"] == "error"]
+            skipped = [s for s in doc["sources"] if s["status"] == "skipped"]
+            if all(s["status"] == "device" for s in doc["sources"]):
+                doc["status"] = "device"
+            elif skipped and len(skipped) + sum(1 for s in doc["sources"] if s["status"] == "device") == len(doc["sources"]):
+                doc["status"] = prev.get("status", "unknown") if prev else "unknown"
+            elif broken_now:
+                doc["status"] = "error"
+            elif failed:
+                doc["status"] = "warn"                  # only sources for old Kodi versions fail
+        # write only when something other than the timestamps changed
+        path = os.path.join(out_dir, j["id"] + ".json")
+        changed = prev is None or not os.path.exists(path) or contents_comparable(prev) != contents_comparable(doc)
+        if changed:
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(doc, f, ensure_ascii=False, separators=(",", ":"))
+                f.write("\n")
+            dead = os.path.join(dead_dir, j["id"] + ".json")
+            if os.path.exists(dead):                        # the repository is back: its old copy is no longer needed
+                os.remove(dead)
+        j["doc"] = doc
+        for a in doc["addons"]:
+            by_addon.setdefault(a["id"], []).append((j["id"], j["name"], a["version"], a.get("kodi")))
+        report.append((j["id"], doc["status"], doc["count"], len(doc["sources"]),
+                       [(s["info"], s["error"]) for s in doc["sources"] if s["status"] == "error"],
+                       doc.get("error"), changed, j))
+
+    # 3b. catalog/index.json: every add-on of every third-party repository in one compact list (site-wide search)
+    index = {"generated": run_time, "addons": []}
+    for j in sorted(jobs.values(), key=lambda x: x["id"].lower()):
+        for a in j["doc"]["addons"]:
+            index["addons"].append({**{k: a.get(k) for k in ("id", "name", "version", "author", "type", "dependency", "platforms",
+                                                             "broken", "icon", "kodi", "updated", "added")},
+                                    "repo": j["id"], "rname": j["name"]})
+    idx_path = os.path.join(out_dir, "index.json")
+    prev_idx = None
+    try:
+        with open(idx_path, encoding="utf-8") as f:
+            prev_idx = json.load(f)
+    except (OSError, ValueError):
+        pass
+    strip = lambda d: json.dumps({k: v for k, v in (d or {}).items() if k != "generated"}, sort_keys=True, ensure_ascii=False)
+    if prev_idx is None or strip(prev_idx) != strip(index):
+        with open(idx_path, "w", encoding="utf-8") as f:
+            json.dump(index, f, ensure_ascii=False, separators=(",", ":"))
+            f.write("\n")
+    catalog["index_count"] = len(index["addons"])          # the site reserves room for the counts of the "all repos" view
+    log(f"Index: {len(index['addons'])} add-ons from {len(jobs)} repositories -> {CONTENTS_DIR}/index.json")
+
+    # 4. summaries into catalog.json
+    own_versions = {}                               # (catalog, id) -> versions we carry for any Kodi release
+    for rk, repo in catalog["repos"].items():
+        for a in repo["addons"]:
+            own_versions.setdefault((rk, a["id"]), []).append(a["version"] or "0")
+    prev_summary = {(rk, e["id"]): e.get("contents") or {} for rk, es in (prev_entries or {}).items() for e in es}
+    for rk, repo in catalog["repos"].items():
+        for a in repo["addons"]:
+            a.pop("contents", None); a.pop("newer", None)       # stale values of carried-over entries
+            j = jobs.get(a["id"]) if a["type"] == "repository" else None
+            if j:
+                doc = j["doc"]
+                failed = [s for s in doc["sources"] if s["status"] == "error"]
+                a["contents"] = {"count": doc["count"], "status": doc["status"], "sources": len(doc["sources"]),
+                                 "failed": len(failed), "checked": run_time,
+                                 "file": f"{CONTENTS_DIR}/{j['id']}.json"}
+                # When the repository worked for the last time (on current Kodi releases): set by a real check,
+                # carried over from the previous catalog otherwise - so a broken repo shows how long it has been down.
+                if doc["status"] in ("ok", "warn") and j.get("checked_now"):
+                    last_ok = run_time
+                else:
+                    last_ok = prev_summary.get((rk, a["id"]), {}).get("last_ok")
+                if last_ok:
+                    a["contents"]["last_ok"] = last_ok
+                j["last_ok"] = last_ok
+                if doc.get("error"):
+                    a["contents"]["error"] = doc["error"]
+            elif a["type"] != "repository":
+                best = {}
+                own_rng = ((a.get("kodi") or {}).get("min"), (a.get("kodi") or {}).get("max"))
+                for rid, rname, ver, kodi in by_addon.get(a["id"], []):
+                    # Counts only when the Kodi releases overlap (a skin's 2.1 for Kodi 20 is not an update of 1.4 for
+                    # Kodi 19) and when we do not already carry that version for another Kodi release (Orion 5.1.7 for
+                    # Kodi 19+ is not an update of our 4.4.1 kept for Kodi 18, whatever Orion's own metadata claims).
+                    if not is_newer(ver, a["version"]):
+                        continue
+                    if not ranges_overlap(own_rng, ((kodi or {}).get("min"), (kodi or {}).get("max"))):
+                        continue
+                    if any(version_key(v) >= version_key(ver) for v in own_versions.get((rk, a["id"]), [])):
+                        continue
+                    if rid not in best or version_key(ver) > version_key(best[rid]["version"]):
+                        best[rid] = {"repo": rid, "name": rname, "version": ver}
+                newer = sorted(best.values(), key=lambda x: version_key(x["version"]), reverse=True)[:NEWER_LIMIT]
+                if newer:
+                    a["newer"] = newer
+    return report
+
+
+def print_contents_report(report):
+    if not report:
+        return
+    log("Third-party repositories")
+    log("=" * 78)
+    ok = sum(1 for r in report if r[1] == "ok")
+    for rid, status, count, nsrc, failed, error, changed, j in sorted(report, key=lambda r: r[0]):
+        mark = {"ok": " ", "warn": "~", "error": "!"}.get(status, "?")
+        log(f"  {mark} {rid:<36} {count:>4} add-ons  {nsrc} source(s)  {status}{'  (updated)' if changed else ''}")
+        if error:
+            log(f"        {error}")
+        for url, err in failed:
+            log(f"        ERROR {err}: {url}")
+        for s in j.get("doc", {}).get("sources", []):
+            if s.get("browser") is False:
+                log(f"        KODI ONLY (a browser gets no file from it): {s['info']}")
+        if status == "error":
+            log(f"        last worked: {(j.get('last_ok') or 'never (since tracking began)')[:10]}")
+    log(f"  -> {len(report)} repositories, {ok} ok, {sum(1 for r in report if r[1] == 'warn')} with old sources failing, "
+        f"{sum(1 for r in report if r[1] == 'error')} broken")
+    log("-" * 78)
 
 
 def print_report(catalog, reports):
@@ -913,17 +1515,39 @@ def find_root():
 def main():
     ap = argparse.ArgumentParser(description="Generate catalog.json from the addons.xml sources of repo.dexe.")
     ap.add_argument("--root", default=None, help="repository root (default: auto-detected)")
-    ap.add_argument("--out", default="catalog.json", help="output file, relative to --root (default: catalog.json)")
+    ap.add_argument("--out", default="catalog.json", help="output file, relative to --out-dir (default: catalog.json)")
+    ap.add_argument("--out-dir", default=None, metavar="DIR",
+                    help="where catalog.json and the catalog/ folder are written (default: the repository root); e.g. a local copy of the website for testing")
     ap.add_argument("--no-remote", action="store_true", help="do not download remote sources")
     ap.add_argument("--pretty", action="store_true", help="indented JSON output")
-    ap.add_argument("--no-md5", action="store_true", help="do not update addons.xml.md5 files")
+    ap.add_argument("--md5", action="store_true",
+                    help="also update the addons.xml.md5 files (default only in GitHub Actions; local clones leave them to the Action)")
     ap.add_argument("--strict", action="store_true", help="exit with status 1 if any source could not be read")
+    ap.add_argument("--no-contents", action="store_true", help="do not read the third-party repositories")
+    ap.add_argument("--only", action="append", metavar="ID", help="read only this third-party repository (repeatable)")
     args = ap.parse_args()
 
     root = os.path.abspath(args.root or find_root())
-    out_path = os.path.join(root, args.out)
-    previous, prev_entries = load_previous(out_path)
+    out_root = os.path.abspath(args.out_dir) if args.out_dir else root
+    out_path = os.path.join(out_root, args.out)
+    previous, prev_entries, prev_where = load_previous(out_path, allow_remote=not args.no_remote)
+    log(f"Previous catalog: {prev_where or 'none'}")
     catalog, reports = build(root, allow_remote=not args.no_remote, previous=previous, prev_entries=prev_entries)
+    contents_report = []
+    if args.no_contents:                 # keep the repository contents and "newer" hints from the previous catalog
+        prev_extra = {(rk, e["id"]): e for rk, es in prev_entries.items() for e in es}
+        for rk, r in catalog["repos"].items():
+            for a in r["addons"]:
+                a.pop("_datadir", None)
+                p = prev_extra.get((rk, a["id"]))
+                for k in ("contents", "newer"):
+                    if p and k in p:
+                        a[k] = p[k]
+                    else:
+                        a.pop(k, None)
+    else:
+        contents_report = build_contents(catalog, root, allow_remote=not args.no_remote, only=set(args.only or []) or None,
+                                         out_root=out_root, prev_entries=prev_entries)
     with open(out_path, "w", encoding="utf-8") as f:
         if args.pretty:
             json.dump(catalog, f, ensure_ascii=False, indent=2)
@@ -931,7 +1555,8 @@ def main():
             json.dump(catalog, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")
     print_report(catalog, reports)
-    if not args.no_md5:
+    print_contents_report(contents_report)
+    if args.md5 or os.environ.get("GITHUB_ACTIONS") == "true":
         log("addons.xml.md5")
         for rel, digest, changed in update_md5(root):
             log(f"  {'updated  ' if changed else 'unchanged'} {rel}  {digest}")
