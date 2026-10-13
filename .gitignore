@@ -7,7 +7,7 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
-# virtualna okru�enja (lokalno, nikad u repo)
+# virtualna okruženja (lokalno, nikad u repo)
 .venv/
 venv/
 env/
@@ -30,6 +30,11 @@ $RECYCLE.BIN/
 ._*
 *.directory
 
-# ---------- Lokalni pomocni fajlovi ----------
+# ---------- Lokalni pomoćni fajlovi ----------
 exclude-generated.bat
 *.local.*
+
+# ---------- Generiše GitHub Action (lokalno pokretanje skripte ne sme da ih prijavi kao nove) ----------
+/catalog.json
+/catalog/
+*.md5
