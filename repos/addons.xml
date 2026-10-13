@@ -4019,7 +4019,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.World" name="World Repository" version="0.1.3" provider-name="World">
+<addon id="repository.World" name="World Repository" version="2.0.0" provider-name="World">
 	<extension point="xbmc.addon.repository" name="World Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -4076,7 +4076,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.WorldOmega" name="World Omega Repository" version="1.1.4" provider-name="World">
+<addon id="repository.WorldOmega" name="World Omega Repository" version="1.1.5" provider-name="World">
 	<extension point="xbmc.addon.repository" name="World Omega Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
