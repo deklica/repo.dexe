@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.nimbus.helper" name="Nimbus Helper" version="0.0.52" provider-name="Ivar Brandt">
+<addon id="script.nimbus.helper" name="Nimbus Plus Helper" version="0.0.98" provider-name="Ivar Brandt, adamsbuilds">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -7,6 +7,14 @@
     </requires>
     <extension point="xbmc.python.library" library="resources/lib/default.py"/>
     <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="resources/lib/context_refresh_widget.py">
+                <label>Refresh widget</label>
+                <visible>Window.IsVisible(home) + [ControlGroup(19001).HasFocus() | ControlGroup(22001).HasFocus() | ControlGroup(23001).HasFocus() | ControlGroup(24001).HasFocus() | ControlGroup(25001).HasFocus() | ControlGroup(26001).HasFocus() | ControlGroup(27001).HasFocus() | ControlGroup(28001).HasFocus() | ControlGroup(29001).HasFocus() | ControlGroup(30001).HasFocus() | ControlGroup(31001).HasFocus() | ControlGroup(32001).HasFocus()]</visible>
+            </item>
+        </menu>
+    </extension>
     <extension point="xbmc.addon.metadata">
         <news />
         <platform>all</platform>
@@ -17,8 +25,8 @@
             <icon>resources/media/icon.png</icon>
             <fanart>resources/media/fanart.jpg</fanart>
         </assets>
-        <description lang="en_GB">Nimbus Helper for the Nimbus Skin.</description>
-        <description lang="en_NZ">Nimbus Helper for the Nimbus Skin.</description>
-        <description lang="en_US">Nimbus Helper for the Nimbus Skin.</description>
+        <description lang="en_GB">Nimbus Plus Helper for the Nimbus Plus Skin.</description>
+        <description lang="en_NZ">Nimbus Plus Helper for the Nimbus Plus Skin.</description>
+        <description lang="en_US">Nimbus Plus Helper for the Nimbus Plus Skin.</description>
     </extension>
 </addon>

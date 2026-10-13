@@ -38,7 +38,9 @@ repository.elementumorg
  skin.fentastic (plus) 20 21
   resource.uisounds.fentastic
   script.fentastic.helper 2x
-
+ skin.nimbus (plus) 21
+  script.nimbus.helper
+ 
  skin.xonfluence 19 20 21
   resource.images.moviegenrefanart.xonfluence
   resource.images.skinbackgrounds.xonfluence
@@ -752,6 +754,72 @@ Various other small tweaks and refinements throughout.</news>
 		<description lang="en_NZ">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
 		<description lang="en_US">Helper for the FENtastic Plus Skin. Based on Fentastic Helper v0.6.20a.</description>
 	</extension>
+</addon>
+
+
+<addon id="skin.nimbus" version="0.2.07" name="Nimbus Plus"
+	provider-name="adamsbuilds, Ivar Brandt">
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0" />
+		<import addon="script.nimbus.helper" version="0.0.98"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+		<summary lang="en_GB">Nimbus Plus skin by adamsbuilds</summary>
+		<summary lang="en_NZ">Nimbus Plus skin by adamsbuilds</summary>
+		<summary lang="en_US">Nimbus Plus skin by adamsbuilds</summary>
+		<description lang="en_GB">Nimbus Plus Skin</description>
+		<description lang="en_NZ">Nimbus Plus Skin</description>
+		<description lang="en_US">Nimbus Plus Skin</description>
+	</extension>
+</addon>
+
+
+<addon id="script.nimbus.helper" name="Nimbus Plus Helper" version="0.0.98" provider-name="Ivar Brandt, adamsbuilds">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+        <import addon="script.module.pil" version="1.1.7"/>
+    </requires>
+    <extension point="xbmc.python.library" library="resources/lib/default.py"/>
+    <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="resources/lib/context_refresh_widget.py">
+                <label>Refresh widget</label>
+                <visible>Window.IsVisible(home) + [ControlGroup(19001).HasFocus() | ControlGroup(22001).HasFocus() | ControlGroup(23001).HasFocus() | ControlGroup(24001).HasFocus() | ControlGroup(25001).HasFocus() | ControlGroup(26001).HasFocus() | ControlGroup(27001).HasFocus() | ControlGroup(28001).HasFocus() | ControlGroup(29001).HasFocus() | ControlGroup(30001).HasFocus() | ControlGroup(31001).HasFocus() | ControlGroup(32001).HasFocus()]</visible>
+            </item>
+        </menu>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <news />
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum />
+        <source />
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <description lang="en_GB">Nimbus Plus Helper for the Nimbus Plus Skin.</description>
+        <description lang="en_NZ">Nimbus Plus Helper for the Nimbus Plus Skin.</description>
+        <description lang="en_US">Nimbus Plus Helper for the Nimbus Plus Skin.</description>
+    </extension>
 </addon>
 
 
