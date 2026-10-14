@@ -209,7 +209,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.dltv" name="DLTV" version="1.2.54" provider-name="arkane14">
+<addon id="plugin.video.dltv" name="DLTV" version="1.2.55" provider-name="arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />

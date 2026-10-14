@@ -36,10 +36,12 @@ import datetime as dt
 import email.utils
 import gzip
 import hashlib
+import http.client
 import io
 import json
 import os
 import re
+import socket
 import subprocess
 import sys
 import threading
@@ -833,7 +835,9 @@ def build(root, allow_remote, previous, prev_entries):
                 "kodi": (kodi_label_multi([(rows, {})]) if aid.startswith("repository.") else
                          kodi_label_multi([(x[2], x[1]["src"]) for x in same_version])),
                 "_requires": sorted({d for r in rows for d, opt, _ in r.get("requires", []) if not opt}),
-                "_datadir": src["datadir"],
+                # repository add-ons keep their datadir: build_contents() needs it to find their zip, also in a run
+                # that does not read this source again (--no-remote, source down) and takes the entry from before
+                **({"datadir": src["datadir"]} if types[0] == "repository" else {}),
             })
 
         ids = {x["id"] for x in out}
@@ -919,7 +923,12 @@ def fetch_status(url, limit=None, timeout=CONTENTS_TIMEOUT, ua=USER_AGENT):
     t0 = time.monotonic()
     req = urllib.request.Request(url, headers={"User-Agent": ua})
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
+        try:
+            r = urllib.request.urlopen(req, timeout=timeout)
+        except (TimeoutError, socket.timeout, ConnectionResetError, http.client.RemoteDisconnected):
+            time.sleep(2)                                       # one retry: a slow host is not a dead host
+            r = urllib.request.urlopen(req, timeout=timeout)
+        with r:
             data = r.read(limit + 1) if limit else r.read()
             code = r.status
         ms = int((time.monotonic() - t0) * 1000)
@@ -1120,17 +1129,14 @@ def build_contents(catalog, root, allow_remote, only=None, out_root=None, prev_e
     jobs = {}
     for rk, repo in catalog["repos"].items():
         for a in repo["addons"]:
-            datadir = a.pop("_datadir", None)
             if a["type"] != "repository" or a["id"] in CONTENTS_SKIP:
                 continue
             if only and a["id"] not in only:
                 continue
             j = jobs.get(a["id"])
             if j is None or version_key(a["version"]) > version_key(j["version"]):
-                jobs[a["id"]] = {"id": a["id"], "name": a["name"], "version": a["version"], "datadir": datadir,
-                                 "icon": a.get("icon")}
-    for a in (x for r in catalog["repos"].values() for x in r["addons"]):
-        a.pop("_datadir", None)
+                jobs[a["id"]] = {"id": a["id"], "name": a["name"], "version": a["version"],
+                                 "datadir": a.get("datadir"), "icon": a.get("icon")}
 
     # a repository removed from the catalogs: its file moves to catalog/dead/ (index.json is rebuilt below anyway);
     # if the repository comes back, that copy is its previous state again (dates, last_ok)
@@ -1171,8 +1177,10 @@ def build_contents(catalog, root, allow_remote, only=None, out_root=None, prev_e
         if prev and prev.get("version") == j["version"] and prev.get("dirs"):
             j["dirs"], j["zip"] = prev["dirs"], prev.get("zip")
             return
-        if j["remote"] and j["datadir"]:
-            url = f"{j['datadir']}{j['id']}/{j['id']}-{j['version']}.zip"
+        url = f"{j['datadir']}{j['id']}/{j['id']}-{j['version']}.zip" if j["datadir"] else None
+        if not url and prev and prev.get("version") == j["version"]:
+            url = prev.get("zip")                               # entry taken from before: its zip URL is in the file
+        if j["remote"] and url:
             data, code, ms, err = fetch_status(url, CONTENTS_MAX_ZIP)
             if data is not None:
                 text, err = addon_xml_from_zip(io.BytesIO(data), j["id"])
@@ -1542,7 +1550,6 @@ def main():
         prev_extra = {(rk, e["id"]): e for rk, es in prev_entries.items() for e in es}
         for rk, r in catalog["repos"].items():
             for a in r["addons"]:
-                a.pop("_datadir", None)
                 p = prev_extra.get((rk, a["id"]))
                 for k in ("contents", "newer"):
                     if p and k in p:

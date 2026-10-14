@@ -16,7 +16,8 @@ on:
       - ".github/workflows/build-catalog.yml"
   workflow_dispatch:
   schedule:
-    - cron: "17 2 * * *"      # daily at 02:17 UTC = 04:17 Belgrade in summer, 03:17 in winter (GitHub cron is UTC only)
+    - cron: "17 4 * * *"      # daily at 04:17 UTC = 06:17 Belgrade in summer, 05:17 in winter (GitHub cron is UTC only;
+                              # runs start late when GitHub is busy, sometimes by hours - the time is a lower bound)
 
 permissions:
   contents: write
@@ -51,16 +52,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f catalog.json catalog 2>/dev/null || true     # -f: listed in .gitignore so that local runs stay invisible to git
+          git add -f '*.md5' 2>/dev/null || true                 # separate add: a glob without a match would fail the whole command
           if git diff --cached --quiet; then
-            echo "Catalog unchanged"
+            echo "Catalog and md5 unchanged"
           else
-            git commit -m "Update catalog [skip ci]"
-          fi
-          git add -f '*.md5' 2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "md5 unchanged"
-          else
-            git commit -m "Update md5 [skip ci]"
+            git commit -m "Update catalog and md5 [skip ci]"      # one commit per run: less to pull after an own push
           fi
           if [ "$(git rev-list --count origin/master..HEAD)" -gt 0 ]; then
             git push
