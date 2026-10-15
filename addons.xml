@@ -3110,7 +3110,6 @@ Benutzer melden diverse Segmente die dann automatisch übersprungen werden.
 </addon>
 
 
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.speedtester" name="Speed Tester" version="2.0.1+omega.1" provider-name="Dr0idGuy, dagwieers, TomSzo_HUN, [COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
