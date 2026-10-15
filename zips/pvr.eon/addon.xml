@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="pvr.eon" version="21.8.6+linux-aarch64" name="EON PVR Client" provider-name="Nirvana">
+<addon id="pvr.eon" version="21.8.7+linux-aarch64" name="EON PVR Client" provider-name="Nirvana">
 	<requires>
 		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
@@ -8,7 +8,7 @@
 		<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
 		<import addon="inputstream.ffmpegdirect" minversion="21.0.0"/>
 		<import addon="inputstream.adaptive" minversion="21.0.0"/>
-		<import addon="script.module.inputstreamhelper" version="0.8.5"/>
+		<import addon="script.module.inputstreamhelper" version="0.8.6"/>
 	</requires>
 	<extension point="kodi.pvrclient" library_linux="pvr.eon.so"/>
 	<extension point="xbmc.addon.metadata">

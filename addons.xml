@@ -209,7 +209,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.dltv" name="DLTV" version="1.2.55" provider-name="arkane14">
+<addon id="plugin.video.dltv" name="DLTV" version="1.2.56" provider-name="arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -315,7 +315,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.eonvod" version="1.2.0" name="EON On Demand" provider-name="dEXE">
+<addon id="plugin.video.eonvod" version="1.2.1" name="EON On Demand" provider-name="dEXE">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="pvr.eon" version="20.0.0"/>
@@ -3608,7 +3608,7 @@ Various other small tweaks and refinements throughout.</news>
 </addon>
 
 
-<addon id="pvr.eon" version="21.8.6+linux-aarch64" name="EON PVR Client" provider-name="Nirvana">
+<addon id="pvr.eon" version="21.8.7+linux-aarch64" name="EON PVR Client" provider-name="Nirvana">
 	<requires>
 		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
@@ -3617,7 +3617,7 @@ Various other small tweaks and refinements throughout.</news>
 		<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
 		<import addon="inputstream.ffmpegdirect" minversion="21.0.0"/>
 		<import addon="inputstream.adaptive" minversion="21.0.0"/>
-		<import addon="script.module.inputstreamhelper" version="0.8.5"/>
+		<import addon="script.module.inputstreamhelper" version="0.8.6"/>
 	</requires>
 	<extension point="kodi.pvrclient" library_linux="pvr.eon.so"/>
 	<extension point="xbmc.addon.metadata">
@@ -3668,7 +3668,7 @@ PVR Client for EON which allows you to watch live TV channels and listen to radi
 </addon>
 
 
-<addon id="pvr.eon" version="21.8.6+android-armv7" name="EON PVR Client" provider-name="Nirvana">
+<addon id="pvr.eon" version="21.8.7+android-armv7" name="EON PVR Client" provider-name="Nirvana">
 	<requires>
 		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
@@ -3677,7 +3677,7 @@ PVR Client for EON which allows you to watch live TV channels and listen to radi
 		<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
 		<import addon="inputstream.ffmpegdirect" minversion="21.0.0"/>
 		<import addon="inputstream.adaptive" minversion="21.0.0"/>
-		<import addon="script.module.inputstreamhelper" version="0.8.5"/>
+		<import addon="script.module.inputstreamhelper" version="0.8.6"/>
 	</requires>
 	<extension point="kodi.pvrclient" library_android="libpvr.eon.so"/>
 	<extension point="xbmc.addon.metadata">
@@ -3726,7 +3726,7 @@ PVR Client for EON which allows you to watch live TV channels and listen to radi
 </addon>
 
 
-<addon id="pvr.eon" version="21.8.6+android-aarch64" name="EON PVR Client" provider-name="Nirvana">
+<addon id="pvr.eon" version="21.8.7+android-aarch64" name="EON PVR Client" provider-name="Nirvana">
 	<requires>
 		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
@@ -3735,7 +3735,7 @@ PVR Client for EON which allows you to watch live TV channels and listen to radi
 		<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
 		<import addon="inputstream.ffmpegdirect" minversion="21.0.0"/>
 		<import addon="inputstream.adaptive" minversion="21.0.0"/>
-		<import addon="script.module.inputstreamhelper" version="0.8.5"/>
+		<import addon="script.module.inputstreamhelper" version="0.8.6"/>
 	</requires>
 	<extension point="kodi.pvrclient" library_android="libpvr.eon.so"/>
 	<extension point="xbmc.addon.metadata">
