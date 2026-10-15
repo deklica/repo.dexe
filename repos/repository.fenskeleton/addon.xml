@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.fenskeleton" name="FenSkeleton Repository" version="1.0.2" provider-name="FenSkeleton">
+    <extension point="xbmc.addon.repository" name="FenSkeleton Repository">
+        <dir>
+            <info compressed="false">https://fenskeleton.github.io/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/FenSkeleton/fenskeleton.github.io/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://fenskeleton.github.io/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>FenSkeleton Kodi Repository</summary>
+        <description>Repository for FenSkeleton and FenMage.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
