@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.0.4" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.0.5" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
-        <import addon="script.gratisred.artwork" version="1.0.5"/>
+        <import addon="script.gratisred.artwork" version="1.0.6"/>
         <import addon="script.module.kodi-six"/>
         <import addon="script.module.requests"/>
         <import addon="script.module.resolveurl"/>
@@ -26,13 +26,12 @@
 		<forum>https://t.me/+X-lt1ZDii3I3YjA0</forum>
 		<website>https://redwizard.xyz/</website> 
 		<source>https://github.com/The-Red-Wizard/TheRedWizard</source>
-        <news>2026-10-03
-- Summary of v2.0.4 (see Tools > Changelog for the detail):
- * A long press on a result opens the context menu
- * Playing a Kodi favourite shows the resolving dialog until the picture starts
- * A dead favourite is dropped from the player
- * One failed source says Source not Playable
- * Autoplay keeps the resolving dialog up and skips a source that does not play</news>
+        <news>2026-10-16
+- Summary of v2.0.5 (see Tools > Changelog for the detail):
+ * New and updated sources
+ * MDBList live Playing Now. The title appears on MDBList while it is playing
+ * Play Trailer added to the Movies and TV Shows context menus
+ * Queue Item removed from the Movies and Episodes context menus</news>
         <assets>
             <icon>resources/images/icon.png</icon>
             <fanart>resources/images/fanart.jpg</fanart>
