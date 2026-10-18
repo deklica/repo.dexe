@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.0.5" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.0.8" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="script.gratisred.artwork" version="1.0.6"/>
         <import addon="script.module.kodi-six"/>
@@ -26,8 +26,18 @@
 		<forum>https://t.me/+X-lt1ZDii3I3YjA0</forum>
 		<website>https://redwizard.xyz/</website> 
 		<source>https://github.com/The-Red-Wizard/TheRedWizard</source>
-        <news>2026-10-16
-- Summary of v2.0.5 (see Tools > Changelog for the detail):
+        <news>2026-10-17
+[B]- Summary of v2.0.8 (see Tools > Changelog for the detail):[/B]
+ * Results that name the title (and episode) are listed first
+ * A source that never shows a picture is skipped after 30 seconds
+ * Unwatched appears when there is progress to clear
+ * MDBList Mark Watched on TV uses TMDb and IMDb, not TVDB
+2026-10-16
+[B]- Summary of v2.0.7[/B]
+ * In Progress / Continue Watching match Red Light (leftover ≤1% playback, Dropped titles)
+[B]- Summary of v2.0.6[/B]
+ * Play Trailer from the Movies and TV Shows context menus now starts playback
+[B]- Summary of v2.0.5[/B]
  * New and updated sources
  * MDBList live Playing Now. The title appears on MDBList while it is playing
  * Play Trailer added to the Movies and TV Shows context menus
