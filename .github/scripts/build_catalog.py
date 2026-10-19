@@ -1201,8 +1201,9 @@ def deprecated_jobs(root, out_dir):
 
 
 def write_deprecated(out_dir, jobs, run_time):
-    """catalog/deprecated.json from the deprecated jobs; "online" = a source lists the repository add-on itself again
-    (other sources are often shared dependency repos that are up while the repository's own server is gone)."""
+    """catalog/deprecated.json from the deprecated jobs; "online" = the same rule as the status of any other repository:
+    every source for current Kodi releases works and serves add-ons (one dead source of its own = still down, even
+    when shared dependency sources such as scrapers or modules are up)."""
     path_out = os.path.join(out_dir, DEPRECATED_FILE)
     prev = {}
     try:
@@ -1216,8 +1217,7 @@ def write_deprecated(out_dir, jobs, run_time):
             continue
         doc = j["doc"]
         srcs = doc["sources"]
-        online = any(a["id"] == j["id"] and 0 <= (a.get("src") if a.get("src") is not None else -1) < len(srcs)
-                     and srcs[a["src"]]["status"] == "ok" and not srcs[a["src"]].get("kept") for a in doc["addons"])
+        online = doc["status"] in ("ok", "warn") and doc["count"] > 0
         p = (prev.get(j["id"]) or {}).get("contents") or {}
         last_ok = run_time if online and j.get("checked_now") else p.get("last_ok")
         contents = {"count": doc["count"], "status": doc["status"], "sources": len(srcs),
@@ -1243,9 +1243,8 @@ def write_deprecated(out_dir, jobs, run_time):
     log(f"Deprecated: {len(items)} repositories in {DEPRECATED_FOLDER}, online: {len(back)}")
     for i in back:
         j = jobs.get(i["id"]) or {}
-        own = sorted({j["doc"]["sources"][a["src"]]["info"] for a in j.get("doc", {}).get("addons", [])
-                      if a["id"] == i["id"] and a.get("src") is not None})
-        log(f"  ONLINE  {i['id']} {i['version']}: " + ", ".join(own))
+        ok = [s["info"] for s in j.get("doc", {}).get("sources", []) if s["status"] == "ok"]
+        log(f"  ONLINE  {i['id']} {i['version']} ({(i.get('contents') or {}).get('count', '?')} add-ons)" + (": " + ", ".join(ok) if ok else ""))
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary and back:
         with open(summary, "a", encoding="utf-8") as f:
