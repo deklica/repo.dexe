@@ -61,7 +61,6 @@ repository.abratchik
 repository.adamsbuilds
 repository.addonniss
 repository.addons4kodi
-repository.adi
 repository.aenemapy
 repository.aeonmq5_mod
 repository.aliunde
@@ -69,7 +68,6 @@ repository.angelitto
 repository.animaniac
 repository.anxdpanic
 repository.arkane14
-repository.arrownegra
 repository.arxtic-ape
 repository.autowidget
 repository.axbmcuser
@@ -99,12 +97,10 @@ repository.diggz
 repository.dis90
 repository.djaythemes
 repository.dobbelina
-repository.doomzday
 repository.dregs
 repository.dutchgreen
 repository.easynewsx
 repository.enigmawiz
-repository.EzzerMacsWizard
 repository.eon
 repository.fanfilm
 repository.fenskeleton
@@ -113,9 +109,7 @@ repository.forge
 repository.foxystreams
 repository.fr33p0rt
 repository.frenchdj
-repository.fubuz
 repository.funstersplace
-repository.G00380316
 repository.gaia.full
 repository.grindhousekodi
 repository.gujal
@@ -140,14 +134,12 @@ repository.lime
 repository.livetvSerbia
 repository.loop
 repository.luc_repo
-repository.madforit
 repository.Magnetic
 repository.marcelveldt
 repository.mbebe
 repository.melies
 repository.michaz
 repository.misfitmods
-repository.NarcacistWizard
 repository.nearlybob
 repository.newdiamond
 repository.nixgates
@@ -184,10 +176,8 @@ repository.simplewizard
 repository.skinbase.nexus
 repository.skins.pkscout
 repository.slyguy
-repository.southpaw
 repository.splitflap
 repository.StreamArmy
-repository.stremioforkodi
 repository.subskip
 repository.taiseer
 repository.TechNEWSology
@@ -200,9 +190,6 @@ repository.tidb.repo
 repository.titan.bingie.mod
 repository.torrest
 repository.torus
-repository.tvone
-repository.twilight0
-repository.twilight0.libs
 repository.ukturk
 repository.umbrella
 repository.universalscrapers
@@ -217,7 +204,6 @@ repository.Worldrepo
 repository.xbmcadult
 repository.xonfluence
 repository.zachmorris
-repository.zero
 repository.zeus768
 -->
 
@@ -1343,25 +1329,6 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
-<addon id="repository.adi" name="Adi Repository" version="1.0" provider-name="Adi">
-	<extension point="xbmc.addon.repository" name="Adi Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Adi Repository</summary>
-		<description>Personal Kodi repository by Adi. Contine TotalPlay, POV, MRSP si altele.</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
 <addon id="repository.aenemapy" name="Aenemapy Addons Repository" version="2021.04.23" provider-name="aenemapy">
 	<extension point="xbmc.addon.repository" name="Aenemapy Addons Repository">
 		<dir>
@@ -1490,26 +1457,6 @@ Various other small tweaks and refinements throughout.</news>
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.arrownegra" name="Arrow Negra Repository" version="2.20" provider-name="Flecha Negra">
-	<extension point="xbmc.addon.repository" name="Arrow Negra Repositorio">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>repositorio Arrow Negra</summary>
-		<description>repositorio oficial Arrow Negra - Proibido reproducao sem autorização prévia</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
@@ -2060,25 +2007,6 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
-<addon id="repository.doomzday" name="Doomzday Repo" version="1.1.0" provider-name="DD Team">
-	<extension point="xbmc.addon.repository" name="Doomzday Repo">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Doomzday Repository</summary>
-		<description lang="en_GB">Repo from the Doomzday Team for you.</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
 <addon id="repository.dregs" name="DreGs Repository" version="2.36" provider-name="@by_black_eagle">
 	<extension point="xbmc.addon.repository" name="Dregs Repositorio">
 		<dir>
@@ -2148,25 +2076,6 @@ Various other small tweaks and refinements throughout.</news>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Enigma Repository</summary>
 		<description lang="en_GB">The Enigma Repo</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.EzzerMacsWizard" name="EzzerMacs Wizard Repository" version="1.1.7" provider-name="EzzerMac">
-	<extension point="xbmc.addon.repository" name="EzzerMacs Wizard Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Install all the latest Builds</summary>
-		<description>Welcome to the New and Improved EZZERMACS WIZARD for all your Community Builds, All the Help and Assistance can be found Here</description>
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
@@ -2323,26 +2232,6 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
-<addon id="repository.fubuz" name="FubuZ Repository" version="1.0" provider-name="FubuZ">
-	<extension point="xbmc.addon.repository" name="FubuZ Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>FubuZ Repository</summary>
-		<description>Provides installation and automatic updates for DaddyLive Kodi addon.</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
 <addon id="repository.funstersplace" name="funstersplace Repository" version="0.3" provider-name="funstersplace">
 	<extension point="xbmc.addon.repository" name="funstersplace">
 		<dir>
@@ -2358,25 +2247,6 @@ Various other small tweaks and refinements throughout.</news>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.G00380316" name="Gflix" version="3.0.3" provider-name="G00380316">
-	<extension point="xbmc.addon.repository" name="Gflix Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Home Entertainment Repository</summary>
-		<description>This repository contains add-ons for the ultimate entertainment system.</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.png</fanart>
 		</assets>
 	</extension>
 </addon>
@@ -2697,7 +2567,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.7" provider-name="Kodinerds">
+<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.8" provider-name="Kodinerds">
 	<extension point="xbmc.addon.repository" name="Kodinerds Addon Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2857,25 +2727,6 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.madforit" name="Mad For It Repo" version="1.6" provider-name="">
-<extension point="xbmc.addon.repository" name="Mad For It Repo">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Mad For It Repo</summary>
-		<description></description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
 <addon id="repository.Magnetic" name="Magnetic Repo" version="1.1.0b" provider-name="1-cool-guy">
 	<extension point="xbmc.addon.repository" name="Magnetic Repo">
 		<dir>
@@ -2986,25 +2837,6 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>			
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.NarcacistWizard" name="Narcacist's Wizard Repository" version="1.2.0" provider-name="Narcacist">
-	<extension point="xbmc.addon.repository" name="Narcacist's Wizard Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Install all the latest Builds</summary>
-		<description>Welcome to the New and Improved Narcacist WIZARD for all your Community Builds.</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>	
 		</assets>
 	</extension>
 </addon>
@@ -3729,26 +3561,6 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.southpaw" name="The South Paw Repository" version="0.8.7" provider-name="Tom">
-	<extension point="xbmc.addon.repository" name="The South Paw Repository"> 
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Please do NOT post this Repository on Youtube, Facebook, Blogs or anywhere on the internet, thank you.</summary>
-		<description>This repository nor the addons within does not form part of the Kodi Media Centre. Please do not seek assistance with this repository or the addons from any of the Official Kodi Support Channels.The authors do not host any of the content in these addons and takes no responsibility for content found</description>
-		<platform>all</platform>
-		<genre>movies,usa</genre>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
 <addon id="repository.splitflap" name="Split-Flap Repository" version="1.0.0" provider-name="asm0dey">
 	<extension point="xbmc.addon.repository">
 		<dir>
@@ -3785,32 +3597,6 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.stremioforkodi" name="Noiro Repository" version="1.1.2" provider-name="0eroiQ">
-	<extension point="xbmc.addon.repository" name="Noiro Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Install and update Noiro Kodi add-ons</summary>
-		<description lang="en_GB">Official Noiro.tv Kodi repository for Stremio for Kodi, Noiro Connector and future Noiro add-ons.</description>
-		<platform>all</platform>
-		<license>GPL-2.0-or-later</license>
-		<source>https://github.com/0eroiQ/Stremio-for-Kodi</source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.png</fanart>
-			<screenshot>home.jpg</screenshot>
-			<screenshot>episodes.jpg</screenshot>
-			<screenshot>streams.jpg</screenshot>
-			<screenshot>addons.jpg</screenshot>
-		</assets>
-		<news></news>
 	</extension>
 </addon>
 
@@ -4052,67 +3838,6 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 		<summary lang="en_GB">Install and auto-update Torus</summary>
 		<description lang="en_GB">Repository for the Torus addon.</description>
 		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.tvone" name="tvOne Repository" version="1.0" provider-name="Jax">
-	<extension point="xbmc.addon.repository" name="tvOne Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary>All the working tvOne add-ons</summary>
-		<description>This is a simple repo for all of RACC's tvOne IPTV add-ons (Kodi 19 and up)[CR]After seeing so many versions and forks out there I wanted to provide a location for the original latest updated versions. These are taken directly from RACC's Japanese Repository and slightly modified with an icon, fanart and a date updated tag in the description. Developers are welcome to import this into their own repos.
-	- tvOne pulls from TV-Tap and was updated Oct 2024
-	- tvOne-111 pulls from Redbox and was updated Oct 2024
-	- tvOne-1112 pulls from LiveNet and was updated Oct 2024
-	- tvOne-112 pulls from RStv and was updated July 2023
-	- tvOne-11 pulled from SwiftStreams but is dead so it's not included here</description>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.twilight0" name="Twilight0 Addon Repository" version="1.7" provider-name="Twilight0">
-	<extension point="xbmc.addon.repository" name="Twilight0 Addon Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Repository for various of my add-ons</summary>
-		<description>Repository for various of my add-ons</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.twilight0.libs" name="Twilight0 Libs Repository" version="1.4" provider-name="Twilight0">
-	<extension point="xbmc.addon.repository" name="Twilight0 Libs Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Repository for library addons</summary>
-		<description>Repository for library addons</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
 	</extension>
 </addon>
 
@@ -4380,25 +4105,6 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Zach Morris Add-ons</summary>
 		<description>Zach Morris Add-ons</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.zero" name="Z3R0 Repository" version="1.0.0" provider-name="Z3R0">
-	<extension point="xbmc.addon.repository" name="Z3R0 Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Repository to install the latest versions of addons from Z3R0.</summary>
-		<description>Repository to install the latest versions of addons from Z3R0.</description>
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
