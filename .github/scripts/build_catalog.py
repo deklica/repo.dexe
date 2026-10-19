@@ -113,6 +113,8 @@ CONTENTS_TIMEOUT = 20                                      # seconds per request
 CONTENTS_MAX_ZIP = 12 * 1024 * 1024                        # largest repository zip downloaded from a datadir
 CONTENTS_MAX_XML = 40 * 1024 * 1024                        # largest addons.xml accepted
 ZIP_FOLDERS = ["repo", "repos", "zips", "misc"]            # local folders that hold repository zips
+ICONS_DIR = "icons"                                        # catalog/icons/<repo>/: icons of sources that serve Kodi only
+ICON_MAX = 1024 * 1024                                     # larger icons are not copied
 NEWER_LIMIT = 3                                            # at most N "newer version in ..." hints per add-on
 NEWER_MAX_MAJOR_JUMP = 3                                   # ignore "newer" versions like 421.1.0 for 1.0.2 (build repos)
 DEVICE_HOST_RE = re.compile(r"^https?://(?:127\.0\.0\.1|localhost)(?::\d+)?/", re.I)   # served by an add-on on the device
@@ -404,6 +406,14 @@ SUMMARY_MAX = 200                                          # longer summaries ar
 SUMMARY_LANGS = ("en_gb", "en", "en_us")                   # <summary lang="...">, in this order; else one without lang; other languages: none
 
 
+SUMMARY_FILLER = {"the", "a", "an", "kodi", "addon", "add", "on", "plugin", "official"}
+
+
+def summary_words(text):
+    """Words of a text without case, punctuation and filler words: "The Red Light" and "Red Light" give the same set."""
+    return {w for w in re.split(r"[^0-9a-z]+", clean_name(text).lower()) if w and w not in SUMMARY_FILLER}
+
+
 def pick_summary(items, name=None):
     """items: [(lang, text)] from <summary> elements -> one short plain-text summary, or None."""
     items = [((lang or "").strip().lower().replace("-", "_"), text) for lang, text in items if text and text.strip()]
@@ -412,8 +422,8 @@ def pick_summary(items, name=None):
     if not best:
         return None
     text = clean_name(html.unescape(re.sub(r"<!\[CDATA\[(.*?)\]\]>", r"\1", best, flags=re.S)))
-    if not text or (name and text.lower() == clean_name(name).lower()):
-        return None
+    if not text or (name and summary_words(text) == summary_words(name)):
+        return None                                     # only repeats the name ("The Red Light" for Red Light)
     if len(text) > SUMMARY_MAX:
         text = text[:SUMMARY_MAX].rsplit(" ", 1)[0].rstrip(" ,.;:-") + "…"
     return text
@@ -1259,6 +1269,48 @@ def write_deprecated(out_dir, jobs, run_time):
             f.write("\n")
 
 
+IMAGE_MAGIC = [(b"\x89PNG", ".png"), (b"\xff\xd8", ".jpg"), (b"GIF8", ".gif"), (b"RIFF", ".webp")]
+
+
+def mirror_icons(doc, out_dir, fetch):
+    """Sources that serve Kodi only (a browser gets an error page) also refuse the icons to the site's visitors.
+    Their icons are downloaded here with Kodi's User-Agent into catalog/icons/<repo>/ and served from this repository;
+    a file is fetched once per add-on version, files no longer used are removed."""
+    gated = {i for i, s in enumerate(doc.get("sources", [])) if s.get("browser") is False}
+    folder = os.path.join(out_dir, ICONS_DIR, doc["id"])
+    base = RAW + f"{CONTENTS_DIR}/{ICONS_DIR}/{doc['id']}/"
+    todo = [a for a in doc["addons"] if a.get("src") in gated and a.get("icon") and not a["icon"].startswith(base)]
+    have = {fn.rsplit(".", 1)[0]: fn for fn in os.listdir(folder)} if os.path.isdir(folder) else {}
+
+    def one(a):
+        stem = re.sub(r"[^A-Za-z0-9._-]", "_", f"{a['id']}-{a['version']}")
+        if stem in have:
+            return a, have[stem]
+        if not fetch:
+            return a, None
+        data, _, _, _ = fetch_status(a["icon"], ICON_MAX)
+        ext = next((e for m, e in IMAGE_MAGIC if data and data.startswith(m)), None)
+        if not ext or (ext == ".webp" and data[8:12] != b"WEBP"):
+            return a, None
+        os.makedirs(folder, exist_ok=True)
+        with open(os.path.join(folder, stem + ext), "wb") as f:
+            f.write(data)
+        return a, stem + ext
+
+    if todo:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=CONTENTS_WORKERS) as pool:
+            for a, fn in pool.map(one, todo):
+                if fn:
+                    a["icon"] = base + fn
+    if os.path.isdir(folder):                       # remove icons of versions that are gone
+        used = {a["icon"][len(base):] for a in doc["addons"] if (a.get("icon") or "").startswith(base)}
+        for fn in os.listdir(folder):
+            if fn not in used:
+                os.remove(os.path.join(folder, fn))
+        if not os.listdir(folder):
+            os.rmdir(folder)
+
+
 def build_contents(catalog, root, allow_remote, only=None, out_root=None, prev_entries=None, fill_missing=False):
     """Reads every third-party repository listed in the catalogs and writes catalog/<id>.json for each.
     Adds "contents" to the repository entries and "newer" to the other add-ons. Returns the report rows."""
@@ -1485,6 +1537,8 @@ def build_contents(catalog, root, allow_remote, only=None, out_root=None, prev_e
                 doc["status"] = "error"
             elif failed:
                 doc["status"] = "warn"                  # only sources for old Kodi versions fail
+        if doc["addons"]:
+            mirror_icons(doc, out_dir, fetch=j["remote"])
         # write only when something other than the timestamps changed
         path = os.path.join(out_dir, j["id"] + ".json")
         changed = prev is None or not os.path.exists(path) or contents_comparable(prev) != contents_comparable(doc)
