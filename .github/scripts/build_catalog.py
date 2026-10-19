@@ -1217,7 +1217,10 @@ def write_deprecated(out_dir, jobs, run_time):
             continue
         doc = j["doc"]
         srcs = doc["sources"]
-        online = doc["status"] in ("ok", "warn") and doc["count"] > 0
+        works = doc["status"] in ("ok", "warn") and doc["count"] > 0
+        # works, but nothing in it is explicitly for Kodi 19+ (Python 3): "outdated" (orange on the site), not "online"
+        modern = any((a.get("kodi") or {}).get("min") is not None and a["kodi"]["min"] >= 19 for a in doc["addons"])
+        online, outdated = works and modern, works and not modern
         p = (prev.get(j["id"]) or {}).get("contents") or {}
         last_ok = run_time if online and j.get("checked_now") else p.get("last_ok")
         contents = {"count": doc["count"], "status": doc["status"], "sources": len(srcs),
@@ -1227,11 +1230,11 @@ def write_deprecated(out_dir, jobs, run_time):
             contents["last_ok"] = last_ok
         if doc.get("error"):
             contents["error"] = doc["error"]
-        j["online"] = online
+        j["online"], j["outdated"] = online, outdated
         items.append({"id": j["id"], "name": j["name"], "version": j["version"], "author": j.get("author"),
                       "summary": j.get("summary"), "type": "repository", "dependency": False, "platforms": [],
                       "broken": False, "icon": j.get("icon"), "kodi": None, "zip": j["zip_rel"],
-                      "online": online, "contents": contents})
+                      "online": online, "outdated": outdated, "contents": contents})
     ids = {i["id"] for i in items}
     items += [a for aid, a in prev.items() if aid not in ids and aid in DEPRECATED_SEEN]   # not described in this run
     items.sort(key=lambda x: x["name"].lower())
@@ -1239,18 +1242,20 @@ def write_deprecated(out_dir, jobs, run_time):
         json.dump({"generated": run_time, "addons": items}, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")
 
-    back = [i for i in items if i.get("online")]
-    log(f"Deprecated: {len(items)} repositories in {DEPRECATED_FOLDER}, online: {len(back)}")
-    for i in back:
+    back = [i for i in items if i.get("online") or i.get("outdated")]
+    log(f"Deprecated: {len(items)} repositories in {DEPRECATED_FOLDER}, online: {sum(1 for i in back if i.get('online'))}, "
+        f"working but only for Kodi 18 and older: {sum(1 for i in back if i.get('outdated'))}")
+    for i in sorted(back, key=lambda x: (not x.get("online"), x["id"].lower())):
         j = jobs.get(i["id"]) or {}
         ok = [s["info"] for s in j.get("doc", {}).get("sources", []) if s["status"] == "ok"]
-        log(f"  ONLINE  {i['id']} {i['version']} ({(i.get('contents') or {}).get('count', '?')} add-ons)" + (": " + ", ".join(ok) if ok else ""))
+        mark = "ONLINE  " if i.get("online") else "OUTDATED"
+        log(f"  {mark} {i['id']} {i['version']} ({(i.get('contents') or {}).get('count', '?')} add-ons)" + (": " + ", ".join(ok) if ok else ""))
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary and back:
         with open(summary, "a", encoding="utf-8") as f:
-            f.write(f"### {DEPRECATED_FOLDER}: online\n\n")
-            for i in back:
-                f.write(f"- ONLINE **{i['id']}** {i['version']}\n")
+            f.write(f"### {DEPRECATED_FOLDER}: working again\n\n")
+            for i in sorted(back, key=lambda x: (not x.get("online"), x["id"].lower())):
+                f.write(f"- {'ONLINE' if i.get('online') else 'OUTDATED (Kodi 18 and older only)'} **{i['id']}** {i['version']}\n")
             f.write("\n")
 
 
