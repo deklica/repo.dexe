@@ -36,6 +36,7 @@ import datetime as dt
 import email.utils
 import gzip
 import hashlib
+import html
 import http.client
 import io
 import json
@@ -103,6 +104,9 @@ BROWSER_OK_HOSTS = re.compile(r"^https?://(raw\.githubusercontent\.com|github\.c
 CONTENTS_DIR = "catalog"                                   # catalog/<repository id>.json, relative to the root
 CONTENTS_DEAD = "dead"                                     # catalog/dead/: files of repositories removed from the catalogs
 CONTENTS_SKIP = {"repository.dexe", "repository.roooar"}   # own catalogs, already on the site
+DEPRECATED_FOLDER = "repos/_Deprecated"                    # zips of repositories that are down (not in any catalog)
+DEPRECATED_ICONS = "deprecated"                            # catalog/deprecated/<id>.png: icons taken from those zips
+DEPRECATED_FILE = "deprecated.json"                        # catalog/deprecated.json: only the site's "Deprecated" button reads it
 CONTENTS_WORKERS = 8                                       # parallel downloads
 CONTENTS_TIMEOUT = 20                                      # seconds per request
 CONTENTS_MAX_ZIP = 12 * 1024 * 1024                        # largest repository zip downloaded from a datadir
@@ -395,6 +399,25 @@ def clean_name(name):
     return re.sub(r"\s+", " ", name).strip()
 
 
+SUMMARY_MAX = 200                                          # longer summaries are cut at a word boundary
+SUMMARY_LANGS = ("en_gb", "en", "en_us")                   # <summary lang="...">, in this order; else one without lang; other languages: none
+
+
+def pick_summary(items, name=None):
+    """items: [(lang, text)] from <summary> elements -> one short plain-text summary, or None."""
+    items = [((lang or "").strip().lower().replace("-", "_"), text) for lang, text in items if text and text.strip()]
+    best = next((t for l in SUMMARY_LANGS for lang, t in items if lang == l), None) \
+        or next((t for lang, t in items if not lang), None)
+    if not best:
+        return None
+    text = clean_name(html.unescape(re.sub(r"<!\[CDATA\[(.*?)\]\]>", r"\1", best, flags=re.S)))
+    if not text or (name and text.lower() == clean_name(name).lower()):
+        return None
+    if len(text) > SUMMARY_MAX:
+        text = text[:SUMMARY_MAX].rsplit(" ", 1)[0].rstrip(" ,.;:-") + "…"
+    return text
+
+
 def parse_block(block):
     try:
         el = ET.fromstring(block)
@@ -409,8 +432,11 @@ def parse_block(block):
         reqs = [(m.group(1), 'optional="true"' in m.group(0),
                  (re.search(r'version="([^"]+)"', m.group(0)) or [None, None])[1])
                 for m in re.finditer(r'<import\b[^>]*addon="([^"]+)"[^>]*>', block)]
+        summ = [((re.search(r'lang="([^"]*)"', m.group(1)) or [None, None])[1], m.group(2))
+                for m in re.finditer(r"<summary\b([^>]*)>(.*?)</summary>", block, re.S)]
         return {"id": attr("id"), "name": attr("name"), "version": attr("version"),
                 "author": attr("provider-name"), "points": [(p, " ".join(provides)) for p in points],
+                "summary": pick_summary(summ, attr("name")),
                 "icon": icon.group(1).strip() if icon else "icon.png",
                 "platform": plat.group(1).strip() if plat else None, "broken": "<broken" in block,
                 "path": zpath.group(1).strip() if zpath else None, "requires": reqs}
@@ -433,8 +459,9 @@ def parse_block(block):
                 broken = True
     reqs = [(imp.get("addon"), (imp.get("optional") or "").lower() == "true", imp.get("version"))
             for imp in el.findall("requires/import") if imp.get("addon")]
+    summ = [(e.get("lang"), "".join(e.itertext())) for e in el.iter("summary")]
     return {"id": el.get("id"), "name": el.get("name"), "version": el.get("version"),
-            "author": el.get("provider-name"), "points": points,
+            "author": el.get("provider-name"), "points": points, "summary": pick_summary(summ, el.get("name")),
             "icon": icon or "icon.png",
             "platform": platform, "broken": broken, "path": zpath, "requires": reqs}
 
@@ -817,6 +844,7 @@ def build(root, allow_remote, previous, prev_entries):
                 "name": clean_name(row["name"]) or aid,
                 "version": shown,
                 "author": clean_name(row["author"]) or None,
+                "summary": row.get("summary"),
                 "type": types[0],
                 "types": types,
                 "dependency": types[0] in DEPENDENCY_TYPES or bool(meta.get("parent")),
@@ -1019,6 +1047,7 @@ def contents_entries(text, dir_, dir_index):
             "name": clean_name(r["name"]) or aid,
             "version": r["version"] or "0",
             "author": clean_name(r["author"]) or None,
+            "summary": r.get("summary"),
             "type": types[0],
             "types": types,
             "dependency": types[0] in DEPENDENCY_TYPES,
@@ -1118,6 +1147,112 @@ def contents_comparable(doc):
     return json.dumps(d, sort_keys=True, ensure_ascii=False)
 
 
+# ---------------------------------------------------------------------------
+# Repositories that are down: zips kept in repos/_Deprecated
+# ---------------------------------------------------------------------------
+def build_deprecated(root, out_dir, allow_remote):
+    """catalog/deprecated.json: one entry per zip in DEPRECATED_FOLDER, read from the addon.xml inside the zip.
+    Not part of catalog/index.json (no search, no counts); the site lists them only under its "Deprecated" button.
+    Their sources are checked on every run, so a repository that is back online shows on the site and in the log."""
+    folder = os.path.join(root, DEPRECATED_FOLDER)
+    path_out = os.path.join(out_dir, DEPRECATED_FILE)
+    prev_doc = None
+    try:
+        with open(path_out, encoding="utf-8") as f:
+            prev_doc = json.load(f)
+    except (OSError, ValueError):
+        pass
+    if not os.path.isdir(folder):
+        return
+    prev = {a["id"]: a for a in (prev_doc or {}).get("addons", [])}
+    icon_dir = os.path.join(out_dir, DEPRECATED_ICONS)
+    items = {}
+    for fn in sorted(os.listdir(folder), key=str.lower):
+        if not fn.lower().endswith(".zip"):
+            continue
+        path = os.path.join(folder, fn)
+        text, err = addon_xml_from_zip(path, fn[:-4].rsplit("-", 1)[0])
+        block = ADDON_BLOCK_RE.search(text or "")
+        a = parse_block(block.group(0)) if block else {}
+        aid = a.get("id")
+        if not aid:
+            log(f"Deprecated: {fn}: {err or 'no add-on id in addon.xml'}")
+            continue
+        if aid in items and version_key(items[aid]["version"]) >= version_key(a.get("version") or "0"):
+            continue
+        icon_url = None
+        try:                                            # the icon from the zip, so the site can show it
+            with zipfile.ZipFile(path) as z:
+                want = "/" + a["icon"].lstrip("/").lower()
+                src = next((n for n in z.namelist() if n.lower().endswith(want) and n.count("/") == want.count("/")), None)
+                if src and z.getinfo(src).file_size <= 1024 * 1024:
+                    data = z.read(src)
+                    ext = os.path.splitext(src)[1].lower() or ".png"
+                    dest = os.path.join(icon_dir, aid + ext)
+                    old = None
+                    if os.path.exists(dest):
+                        with open(dest, "rb") as f:
+                            old = f.read()
+                    if old != data:
+                        os.makedirs(icon_dir, exist_ok=True)
+                        with open(dest, "wb") as f:
+                            f.write(data)
+                    icon_url = RAW + f"{CONTENTS_DIR}/{DEPRECATED_ICONS}/{aid}{ext}"
+        except (zipfile.BadZipFile, OSError, KeyError):
+            pass
+        items[aid] = {"id": aid, "name": clean_name(a.get("name")) or aid, "version": a.get("version") or "0",
+                      "author": clean_name(a.get("author")) or None, "summary": a.get("summary"),
+                      "type": "repository", "dependency": False,
+                      "platforms": [], "broken": False, "icon": icon_url, "kodi": None,
+                      "zip": f"{DEPRECATED_FOLDER}/{fn}", "_dirs": repository_dirs(text)}
+
+    def check(item):
+        dirs = [d for d in item["_dirs"] if dir_is_current(d)] or item["_dirs"]
+        out = []
+        for d in dirs:
+            if DEVICE_HOST_RE.match(d["info"]):
+                out.append({"info": d["info"], "status": "device", "http": None, "error": None})
+                continue
+            data, code, _, err = fetch_status(d["info"], CONTENTS_MAX_XML)
+            text = data.decode("utf-8", "replace") if data else ""
+            ok = bool(ADDON_BLOCK_RE.search(text))      # a parked domain answers 200 with an HTML page
+            own = ok and re.search(r'<addon\b[^>]*\sid="%s"' % re.escape(item["id"]), text) is not None
+            out.append({"info": d["info"], "status": "ok" if ok else "error", "http": code, "own": own,
+                        "error": None if ok else (err or "no add-ons in addons.xml")})
+        return out
+
+    if allow_remote and items:
+        with concurrent.futures.ThreadPoolExecutor(CONTENTS_WORKERS) as ex:
+            for item, sources in zip(items.values(), ex.map(check, items.values())):
+                item["sources"] = sources
+    for item in items.values():
+        item.pop("_dirs")
+        if "sources" not in item:                       # --no-remote: keep the last check
+            item["sources"] = (prev.get(item["id"]) or {}).get("sources", [])
+        # back online = a source lists the repository add-on itself again; other sources are often shared
+        # dependency repos (scrapers, modules) that are up while the repository's own server is gone
+        item["online"] = any(s.get("own") for s in item["sources"])
+
+    back = [i for i in items.values() if i["online"]]
+    log(f"Deprecated: {len(items)} repositories in {DEPRECATED_FOLDER}, online: {len(back)}")
+    for i in back:
+        log(f"  ONLINE  {i['id']} {i['version']}: " + ", ".join(s["info"] for s in i["sources"] if s.get("own")))
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary and back:
+        with open(summary, "a", encoding="utf-8") as f:
+            f.write(f"### {DEPRECATED_FOLDER}: online\n\n")
+            for i in back:
+                f.write(f"- ONLINE **{i['id']}** {i['version']}\n")
+            f.write("\n")
+
+    doc = {"generated": now_iso(), "addons": sorted(items.values(), key=lambda x: x["name"].lower())}
+    strip = lambda d: json.dumps({k: v for k, v in (d or {}).items() if k != "generated"}, sort_keys=True, ensure_ascii=False)
+    if prev_doc is None or strip(prev_doc) != strip(doc):
+        with open(path_out, "w", encoding="utf-8") as f:
+            json.dump(doc, f, ensure_ascii=False, separators=(",", ":"))
+            f.write("\n")
+
+
 def build_contents(catalog, root, allow_remote, only=None, out_root=None, prev_entries=None, fill_missing=False):
     """Reads every third-party repository listed in the catalogs and writes catalog/<id>.json for each.
     Adds "contents" to the repository entries and "newer" to the other add-ons. Returns the report rows."""
@@ -1145,7 +1280,7 @@ def build_contents(catalog, root, allow_remote, only=None, out_root=None, prev_e
         listed = {a["id"] for r in catalog["repos"].values() for a in r["addons"] if a["type"] == "repository"}
         for fn in os.listdir(out_dir):
             stem = fn[:-5] if fn.endswith(".json") else None
-            if stem and stem != "index" and stem not in listed:
+            if stem and stem not in ("index", DEPRECATED_FILE[:-5]) and stem not in listed:
                 os.makedirs(dead_dir, exist_ok=True)
                 os.replace(os.path.join(out_dir, fn), os.path.join(dead_dir, fn))
                 log(f"Moved {CONTENTS_DIR}/{fn} to {CONTENTS_DIR}/{CONTENTS_DEAD}/: repository no longer in the catalogs")
@@ -1354,6 +1489,7 @@ def build_contents(catalog, root, allow_remote, only=None, out_root=None, prev_e
         for a in j["doc"]["addons"]:
             index["addons"].append({**{k: a.get(k) for k in ("id", "name", "version", "author", "type", "dependency", "platforms",
                                                              "broken", "icon", "kodi", "updated", "added")},
+                                    **({"summary": a["summary"]} if a.get("summary") else {}),   # only when there is one: smaller file
                                     "repo": j["id"], "rname": j["name"]})
     idx_path = os.path.join(out_dir, "index.json")
     prev_idx = None
@@ -1559,6 +1695,7 @@ def main():
     else:
         contents_report = build_contents(catalog, root, allow_remote=not args.no_remote, only=set(args.only or []) or None,
                                          out_root=out_root, prev_entries=prev_entries, fill_missing=args.no_remote)
+    build_deprecated(root, os.path.join(out_root, CONTENTS_DIR), allow_remote=not args.no_remote)
     with open(out_path, "w", encoding="utf-8") as f:
         if args.pretty:
             json.dump(catalog, f, ensure_ascii=False, indent=2)
@@ -1582,3 +1719,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
