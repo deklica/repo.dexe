@@ -1,4 +1,5 @@
-# Rebuilds catalog.json, catalog/<repository>.json and addons.xml.md5 whenever a local addons.xml (or a repository add-on) changes.
+# Rebuilds catalog.json, catalog/<repository>.json, catalog/deprecated.json and addons.xml.md5 whenever a local addons.xml
+# (or a repository add-on, or a zip in repos/_Deprecated) changes.
 # Layout: .github/workflows/build-catalog.yml (this file), .github/scripts/build_catalog.py, catalog.json in the repository root.
 name: Build catalog
 
@@ -12,11 +13,12 @@ on:
       - "repos/addons.xml"
       - "repo/repository.*/**"
       - "repos/repository.*/**"
+      - "repos/_Deprecated/**"
       - ".github/scripts/build_catalog.py"
       - ".github/workflows/build-catalog.yml"
   workflow_dispatch:
   schedule:
-    - cron: "17 4 * * *"      # daily at 04:17 UTC = 06:17 Belgrade in summer, 05:17 in winter (GitHub cron is UTC only;
+    - cron: "17 2 * * *"      # daily at 02:17 UTC = 04:17 Belgrade in summer, 03:17 in winter (GitHub cron is UTC only;
                               # runs start late when GitHub is busy, sometimes by hours - the time is a lower bound)
 
 permissions:
@@ -63,3 +65,4 @@ jobs:
           else
             echo "Nothing to push"
           fi
+          

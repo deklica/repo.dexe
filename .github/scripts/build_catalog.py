@@ -414,7 +414,7 @@ def pick_summary(items, name=None):
     if not text or (name and text.lower() == clean_name(name).lower()):
         return None
     if len(text) > SUMMARY_MAX:
-        text = text[:SUMMARY_MAX].rsplit(" ", 1)[0].rstrip(" ,.;:-") + "…"
+        text = text[:SUMMARY_MAX].rsplit(" ", 1)[0].rstrip(" ,.;:-") + "â€¦"
     return text
 
 
