@@ -1255,6 +1255,9 @@ def write_deprecated(out_dir, jobs, run_time):
     back = [i for i in items if i.get("online") or i.get("outdated")]
     log(f"Deprecated: {len(items)} repositories in {DEPRECATED_FOLDER}, online: {sum(1 for i in back if i.get('online'))}, "
         f"working but only for Kodi 18 and older: {sum(1 for i in back if i.get('outdated'))}")
+    # listed only when the state is new (was down or had the other state in the previous run), not on every run
+    state = lambda x: "online" if x.get("online") else "outdated" if x.get("outdated") else "down"
+    back = [i for i in back if state(i) != state(prev.get(i["id"]) or {})]
     for i in sorted(back, key=lambda x: (not x.get("online"), x["id"].lower())):
         j = jobs.get(i["id"]) or {}
         ok = [s["info"] for s in j.get("doc", {}).get("sources", []) if s["status"] == "ok"]
