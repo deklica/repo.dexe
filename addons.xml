@@ -272,7 +272,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.114" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.115" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementumorg" optional="true" />
@@ -2390,13 +2390,11 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.99" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.101" provider-name="elgatito">
     <requires>
-        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="xbmc.python" version="3.0.0" />
         <import addon="plugin.video.elementum" optional="true"/>
-        <import addon="script.module.kodi-six" />
         <import addon="script.module.requests" />
-        <import addon="script.module.future" version="0.16.0.4"/>
         <import addon="script.module.pycryptodome" optional="true" />
     </requires>
     <extension point="xbmc.python.script" library="burst.py">
@@ -3373,7 +3371,7 @@ additional strptime modifications to fix scheduler behavior
 </addon>
 
 
-<addon id="service.nextonlibrary" name="Skip.Intro.Next" version="1.1.5" provider-name="Addonniss">
+<addon id="service.nextonlibrary" name="Skip.Intro.Next" version="1.1.8" provider-name="Addonniss">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>

@@ -903,8 +903,8 @@ Various other small tweaks and refinements throughout.</news>
 		<platform>all</platform>
 		<license>GPL-2.0-only, CC-BY-SA-4.0</license>
 		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.png</fanart>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
 		</assets>
 		<summary lang="en_GB">Nimbus Plus skin by adamsbuilds</summary>
 		<summary lang="en_NZ">Nimbus Plus skin by adamsbuilds</summary>
@@ -943,8 +943,8 @@ Various other small tweaks and refinements throughout.</news>
         <forum />
         <source />
         <assets>
-            <icon>resources/media/icon.png</icon>
-            <fanart>resources/media/fanart.jpg</fanart>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
         <description lang="en_GB">Nimbus Plus Helper for the Nimbus Plus Skin. A fork of the Nimbus helper by Ivar Brandt.</description>
         <description lang="en_NZ">Nimbus Plus Helper for the Nimbus Plus Skin. A fork of the Nimbus helper by Ivar Brandt.</description>

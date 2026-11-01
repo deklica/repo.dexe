@@ -18,7 +18,7 @@ on:
       - ".github/workflows/build-catalog.yml"
   workflow_dispatch:
   schedule:
-    - cron: "17 2 * * *"      # daily at 02:17 UTC = 04:17 Belgrade in summer, 03:17 in winter (GitHub cron is UTC only;
+    - cron: "17 0 * * *"      # daily at 00:17 UTC = 02:17 Belgrade in summer, 01:17 in winter (GitHub cron is UTC only;
                               # runs start late when GitHub is busy, sometimes by hours - the time is a lower bound)
 
 permissions:
