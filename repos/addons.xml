@@ -73,6 +73,7 @@ repository.autowidget
 repository.axbmcuser
 repository.balkandzo
 repository.Bee-Queen
+repository.bg
 repository.bingie
 repository.blackprogram
 repository.bleak-lodge
@@ -97,6 +98,7 @@ repository.diggz
 repository.dis90
 repository.djaythemes
 repository.dobbelina
+repository.doomzday
 repository.dregs
 repository.dutchgreen
 repository.easynewsx
@@ -113,6 +115,7 @@ repository.funstersplace
 repository.gaia.full
 repository.grindhousekodi
 repository.gujal
+repository.hermit
 repository.hooty
 repository.hub
 repository.iptvbalkan
@@ -208,6 +211,9 @@ repository.zeus768
 -->
 
 <addons>
+
+<!--  Skins  =================================== -->
+
 
 <addon id="skin.arctic.fuse" name="Arctic Fuse" provider-name="jurialmunkey" version="0.7.39">
 	<requires>
@@ -775,10 +781,10 @@ repository.zeus768
 </addon>
 
 
-<addon id="skin.fentastic" version="100.0.34+mod" name="FENtastic Plus (mod)" provider-name="Ivar Brandt, Zaxxon709">
+<addon id="skin.fentastic" version="100.0.35+mod" name="FENtastic Plus (mod)" provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" version="100.6.28a" />
+		<import addon="script.fentastic.helper" version="100.6.29" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -853,7 +859,7 @@ Various other small tweaks and refinements throughout.</news>
 </addon>
 
 
-<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.28a" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.29" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.19.1"/>
@@ -877,11 +883,11 @@ Various other small tweaks and refinements throughout.</news>
 </addon>
 
 
-<addon id="skin.nimbus" version="0.2.07" name="Nimbus Plus"
+<addon id="skin.nimbus" version="0.2.08" name="Nimbus Plus"
 	provider-name="adamsbuilds, Ivar Brandt">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.nimbus.helper" version="0.0.98"/>
+		<import addon="script.nimbus.helper" version="0.0.99"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -895,22 +901,22 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<license>GPL-2.0-only, CC-BY-SA-4.0</license>
 		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.png</fanart>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.png</fanart>
 		</assets>
 		<summary lang="en_GB">Nimbus Plus skin by adamsbuilds</summary>
 		<summary lang="en_NZ">Nimbus Plus skin by adamsbuilds</summary>
 		<summary lang="en_US">Nimbus Plus skin by adamsbuilds</summary>
-		<description lang="en_GB">Nimbus Plus Skin</description>
-		<description lang="en_NZ">Nimbus Plus Skin</description>
-		<description lang="en_US">Nimbus Plus Skin</description>
+		<description lang="en_GB">Nimbus Plus Skin by adamsbuilds, a fork of the Nimbus skin by Ivar Brandt.</description>
+		<description lang="en_NZ">Nimbus Plus Skin by adamsbuilds, a fork of the Nimbus skin by Ivar Brandt.</description>
+		<description lang="en_US">Nimbus Plus Skin by adamsbuilds, a fork of the Nimbus skin by Ivar Brandt.</description>
 	</extension>
 </addon>
 
 
-<addon id="script.nimbus.helper" name="Nimbus Plus Helper" version="0.0.98" provider-name="Ivar Brandt, adamsbuilds">
+<addon id="script.nimbus.helper" name="Nimbus Plus Helper" version="0.0.99" provider-name="Ivar Brandt, adamsbuilds">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -918,6 +924,9 @@ Various other small tweaks and refinements throughout.</news>
     </requires>
     <extension point="xbmc.python.library" library="resources/lib/default.py"/>
     <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
+    <extension point="xbmc.python.pluginsource" library="resources/lib/default.py">
+        <provides>video</provides>
+    </extension>
     <extension point="kodi.context.item">
         <menu id="kodi.core.main">
             <item library="resources/lib/context_refresh_widget.py">
@@ -927,18 +936,19 @@ Various other small tweaks and refinements throughout.</news>
         </menu>
     </extension>
     <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>false</reuselanguageinvoker>
         <news />
         <platform>all</platform>
         <license>GPL-2.0-only</license>
         <forum />
         <source />
         <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
         </assets>
-        <description lang="en_GB">Nimbus Plus Helper for the Nimbus Plus Skin.</description>
-        <description lang="en_NZ">Nimbus Plus Helper for the Nimbus Plus Skin.</description>
-        <description lang="en_US">Nimbus Plus Helper for the Nimbus Plus Skin.</description>
+        <description lang="en_GB">Nimbus Plus Helper for the Nimbus Plus Skin. A fork of the Nimbus helper by Ivar Brandt.</description>
+        <description lang="en_NZ">Nimbus Plus Helper for the Nimbus Plus Skin. A fork of the Nimbus helper by Ivar Brandt.</description>
+        <description lang="en_US">Nimbus Plus Helper for the Nimbus Plus Skin. A fork of the Nimbus helper by Ivar Brandt.</description>
     </extension>
 </addon>
 
@@ -1115,6 +1125,10 @@ Various other small tweaks and refinements throughout.</news>
 		<platform>all</platform>
 	</extension>
 </addon>
+
+
+
+<!--  Add-ons  =================================== -->
 
 
 <addon id="resource.uisounds.kodi-12" version="1.0.1" name="Kodi UI Sounds -12dB" provider-name="Team Kodi">
@@ -1553,6 +1567,28 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
+<addon id="repository.bg" version="0.3.1" name="BG-Repository" provider-name="blauesgruen">
+	  <extension point="xbmc.addon.repository" name="BG-Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Install and update add-ons from BG-Repository.</summary>
+		<summary lang="de_DE">Add-ons aus dem BG-Repository installieren und aktualisieren.</summary>
+		<description lang="en_GB">Kodi repository for selected add-ons and platform-specific packages.</description>
+		<description lang="de_DE">Kodi-Repository fuer ausgewaehlte Add-ons und plattformspezifische Pakete.</description>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<source>https://github.com/blauesgruen/BG-Repository</source>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.bingie" name="Bingie Repository" provider-name="matke" version="1.0.0">
 	<extension point="xbmc.addon.repository" name="Bingie Repository">
 		<dir minversion="20.9.1">
@@ -1930,7 +1966,7 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
-<addon id="repository.diggz" name="Diggz Repository" version="28" provider-name="Diggz">
+<addon id="repository.diggz" name="Diggz Repository" version="29" provider-name="Diggz">
 	<extension point="xbmc.addon.repository" name="Diggz Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2007,6 +2043,25 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
+<addon id="repository.doomzday" name="Doomzday Repo" version="1.2.3" provider-name="DD Team">
+	<extension point="xbmc.addon.repository" name="Doomzday Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Doomzday Repository</summary>
+		<description lang="en_GB">Repo from the Doomzday Team for you.</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.dregs" name="DreGs Repository" version="2.36" provider-name="@by_black_eagle">
 	<extension point="xbmc.addon.repository" name="Dregs Repositorio">
 		<dir>
@@ -2065,7 +2120,7 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
-<addon id="repository.enigmawiz" name="Enigma Repo" version="2.1.6" provider-name="Enigma Repo">
+<addon id="repository.enigmawiz" name="Enigma Repo" version="2.1.8" provider-name="Enigma Repo">
 	<extension point="xbmc.addon.repository" name="Enigma Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2310,6 +2365,26 @@ Various other small tweaks and refinements throughout.</news>
 		<assets>
 			<icon>icon.png</icon>
 		</assets> 
+	</extension>
+</addon>
+
+<addon id="repository.hermit" name="The Hermit's Repository" version="1.5.2" provider-name="Hermit Murman">
+	<extension point="xbmc.addon.repository" name="The Hermit">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Just a quiet little repo where I keep a few things.</summary>
+		<description lang="en">A Repo For Community Projects</description>
+		<genre>usa</genre>
+		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
 	</extension>
 </addon>
 
@@ -2567,7 +2642,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.8" provider-name="Kodinerds">
+<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.9" provider-name="Kodinerds">
 	<extension point="xbmc.addon.repository" name="Kodinerds Addon Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2917,7 +2992,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.octopus" name="Octopus Repository" version="0.7.2" provider-name="Twiglet">
+<addon id="repository.octopus" name="Octopus Repository" version="0.7.6" provider-name="Twiglet">
 	<extension point="xbmc.addon.repository" name="Octopus Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

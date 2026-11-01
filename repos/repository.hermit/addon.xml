@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.hermit" name="The Hermit's Repository" version="1.5.2" provider-name="Hermit Murman">
+	<extension point="xbmc.addon.repository" name="The Hermit">
+		<dir>
+			<info compressed="false">https://the-hermit.com/_repo/addons.xml</info>
+			<checksum>https://the-hermit.com/_repo/addonsmd5.txt</checksum>
+			<datadir zip="true">https://the-hermit.com/_repo/</datadir>
+					<hashes>false</hashes>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/</datadir>
+					<hashes>false</hashes>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+					<hashes>false</hashes>
+		</dir>
+		<dir>
+			<info compressed="false">https://doomzdayteam.github.io/doomzday/_zipfiles/addons.xml</info>
+			<checksum>https://doomzdayteam.github.io/doomzday/_zipfiles/addons.xml.md5</checksum>
+			<datadir zip="true">https://doomzdayteam.github.io/doomzday/_zipfiles/</datadir>
+			<hashes>false</hashes>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Just a quiet little repo where I keep a few things.</summary>
+		<description lang="en">A Repo For Community Projects</description>
+		<genre>usa</genre>
+		    <disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>

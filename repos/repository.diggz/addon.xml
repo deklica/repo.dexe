@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.diggz" name="Diggz Repository" version="28" provider-name="Diggz">
+<addon id="repository.diggz" name="Diggz Repository" version="29" provider-name="Diggz">
     <extension point="xbmc.addon.repository" name="Diggz Repository">
-        <dir minversion="21.90.0">
-            <info compressed="false">https://raw.githubusercontent.com/nebulous42069/22/master/22/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/nebulous42069/22/master/22/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/nebulous42069/22/master/22/zips/</datadir>
-			<hashes>false</hashes>
-        </dir>
-        <dir minversion="21.0.0" maxversion="21.89.0">
+        <dir minversion="21.0.0" maxversion="22.89.0">
             <info compressed="false">https://raw.githubusercontent.com/nebulous42069/Omega/main/omega/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/nebulous42069/Omega/main/omega/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/nebulous42069/Omega/main/omega/zips/</datadir>

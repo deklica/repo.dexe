@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<addon id="plugin.video.vidcore" name="Vidcore" version="1.1.10" provider-name="Enigma">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="inputstream.adaptive" version="1.0.0" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py" reuselanguageinvoker="false">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Standalone Vidcore movie and TV catalogue</summary>
+        <description lang="en">Vidcore by Enigma. Browse and search movies, TV shows and popular people with TMDB metadata and saved search history. Explore titles by streaming service using regional TMDB/JustWatch catalogues with automatic country detection. Choose verified playback sources, including Cinejoy and SRStop episode hosts, using blue Vidcore pickers with artwork, synopsis, air date, runtime and rating. Japanese-original titles are filtered from catalogue listings. Clear Vidcore caches from Tools and read the Changelog from the root menu.</description>
+        <news>1.1.10: Fixed VidNest and 2Embed resolution, expanded TV source routing and improved scan progress. Unified SRStop and Vidcore source pickers with better navigation, focus handling and verified format labels. Improved changelog navigation and unlinked Simkl account handling.</news>
+        <disclaimer lang="en">This addon does not host any content.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

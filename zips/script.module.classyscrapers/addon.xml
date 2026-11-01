@@ -1,0 +1,27 @@
+<addon id="script.module.classyscrapers"
+		name="Classy Scrapers"
+		version="1.0.3"
+		provider-name="Classy">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="lib/default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="lib/service.py" start="startup" />
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<summary lang="en">Classy's Scrapers Module</summary>
+		<description>Classy-branded torrent scraper pack for The Crew.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<disclaimer lang="en">This module simply scans for internet sources that match common metadata. The author does not host or own any content.</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>1.0.2 - Quieter logs, Comet/Torrentio guards, TGX/PirateBay noise cut</news>
+	</extension>
+</addon>

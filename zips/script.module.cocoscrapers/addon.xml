@@ -1,4 +1,4 @@
-<addon id="script.module.cocoscrapers" name="CocoScrapers Module" version="1.0.39" provider-name="CocoJoe">
+<addon id="script.module.cocoscrapers" name="CocoScrapers Module" version="1.0.45" provider-name="CocoJoe">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -23,6 +23,6 @@
 			<fanart>fanart.png</fanart>
 			<screenshot></screenshot>
 		</assets>
-		<news></news>
+		<news>Avoid strptime failures during episode air-date validation that can abort provider searches.</news>
 	</extension>
 </addon>

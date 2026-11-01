@@ -25,6 +25,8 @@ plugin.video.seren
 plugin.video.spotitube
 plugin.video.tmdbmovies
  tmdbm.trailers
+plugin.video.torquelite
+plugin.video.vidcore
 plugin.video.vidscr
 plugin.video.watchnixtoons2
 plugin.video.youtube
@@ -78,6 +80,7 @@ script.module.acctmgr
 script.module.acctvwr
 script.module.blackscrapers
 script.module.chainscrapers
+script.module.classyscrapers
 script.module.cocoscrapers
 script.module.gearsscrapers
 script.module.inputstreamhelper
@@ -209,7 +212,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.dltv" name="DLTV" version="1.2.56" provider-name="arkane14">
+<addon id="plugin.video.dltv" name="DLTV" version="1.2.77" provider-name="arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -626,7 +629,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" version="2.8.8" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" version="2.9.6" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -761,7 +764,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.tmdbmovies" version="1.1.317" name="[B][COLOR FF00CED1]TMDb [COLOR FFCCCCFF]Movies[/COLOR][/B]" provider-name="[B][COLOR FF6AFB92]Angelitto[/COLOR][/B]">
+<addon id="plugin.video.tmdbmovies" version="1.1.330" name="[B][COLOR FF00CED1]TMDb [/COLOR][COLOR FFCCCCFF]Movies[/COLOR][/B]" provider-name="[B][COLOR FF6AFB92]Angelitto[/COLOR][/B]">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.22.0" />
@@ -857,6 +860,62 @@ plugin.video.GreenKlikPremium
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.torquelite" name="[COLORlime]Torque Lite[/COLOR]" version="10.4" provider-name="RacesonDemand">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.routing"/>
+    <import addon="script.module.unidecode" />
+    <import addon="script.module.tzlocal" />
+    <import addon="script.module.jetextractors" />
+    <import addon="script.module.inputstreamhelper" />
+    <import addon="script.module.resolveurl"/>
+    <import addon="script.module.pyamf" />
+	<import addon="script.module.pytz"/>
+    <import addon="script.module.pycryptodome" optional="true" />
+    <import addon="script.module.microjenscrapers" optional="true" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Motorsport Replays and Live Races.Start you're engines! Credits to the Jen Team</summary>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GPL-2.0-or-later</license>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+  </assets>
+  </extension>
+</addon>
+
+
+<addon id="plugin.video.vidcore" name="Vidcore" version="1.1.10" provider-name="Enigma">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="inputstream.adaptive" version="1.0.0" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py" reuselanguageinvoker="false">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Standalone Vidcore movie and TV catalogue</summary>
+        <description lang="en">Vidcore by Enigma. Browse and search movies, TV shows and popular people with TMDB metadata and saved search history. Explore titles by streaming service using regional TMDB/JustWatch catalogues with automatic country detection. Choose verified playback sources, including Cinejoy and SRStop episode hosts, using blue Vidcore pickers with artwork, synopsis, air date, runtime and rating. Japanese-original titles are filtered from catalogue listings. Clear Vidcore caches from Tools and read the Changelog from the root menu.</description>
+        <news>1.1.10: Fixed VidNest and 2Embed resolution, expanded TV source routing and improved scan progress. Unified SRStop and Vidcore source pickers with better navigation, focus handling and verified format labels. Improved changelog navigation and unlinked Simkl account handling.</news>
+        <disclaimer lang="en">This addon does not host any content.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
@@ -1694,7 +1753,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.audio.dashradio" name="Litt Live Radio" version="421.4" provider-name="Diggz">
+<addon id="plugin.audio.dashradio" name="Litt Live Radio" version="421.6" provider-name="Diggz">
 <requires>
   <import addon="xbmc.python" version="3.0.0"/>
 </requires>
@@ -1703,9 +1762,7 @@ In order to get the API Key:
 </extension>
 <extension point="xbmc.addon.metadata">
     <summary lang="en">LITT Live Radio</summary>
-    <description lang="en">Litt Live (stylized as LITT Live, formerly Dash Radio) is a digital radio broadcasting platform with over 80 radio stations. These stations are curated by DJs, radio personalities, musicians, etc. The platform includes partner stations curated by Snoop Dogg, Kylie Jenner, Lil Wayne, Tech N9ne, Borgore, B-Real of Cypress Hill, and others. Dash Radio has no subscription fees and is commercial-free.
-
-</description>
+    <description lang="en">Browse the current LITT Live radio stations by genre, with official stream URLs and artwork. Refreshes the public station catalog automatically with a saved offline fallback.</description>
     <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
         <license>Free</license>
     <platform>all</platform>
@@ -2145,7 +2202,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="plugin.program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.3.0">
+<addon id="program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.3.1">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -2588,11 +2645,11 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctmgr" version="1.2.0a" name="[COLOR dodgerblue][B]Account Manager[/B][/COLOR] [COLOR white][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
+<addon id="script.module.acctmgr" version="1.2.1" name="[COLOR dodgerblue][B]Account Manager[/B][/COLOR] [COLOR white][B]Lite[/B][/COLOR]" provider-name="Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
-		<import addon="script.module.acctvwr" version="1.1.5" />
+		<import addon="script.module.acctvwr" version="1.1.6" />
 		<import addon="script.module.qrcode"/>
 	</requires>
 	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
@@ -2615,7 +2672,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.acctvwr" name="[COLOR dodgerblue][B]Account[/B][/COLOR] [COLOR white][B]Viewer[/B][/COLOR]" version="1.1.5" provider-name="Zaxxon709">
+<addon id="script.module.acctvwr" name="[COLOR dodgerblue][B]Account[/B][/COLOR] [COLOR white][B]Viewer[/B][/COLOR]" version="1.1.6" provider-name="Zaxxon709">
     <extension point="xbmc.python.pluginsource" library="default.py">
     </extension>
     <extension point="xbmc.python.module" library="resources" />
@@ -2689,7 +2746,36 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.cocoscrapers" name="CocoScrapers Module" version="1.0.39" provider-name="CocoJoe">
+<addon id="script.module.classyscrapers"
+		name="Classy Scrapers"
+		version="1.0.3"
+		provider-name="Classy">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="lib/default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="lib/service.py" start="startup" />
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<summary lang="en">Classy's Scrapers Module</summary>
+		<description>Classy-branded torrent scraper pack for The Crew.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<disclaimer lang="en">This module simply scans for internet sources that match common metadata. The author does not host or own any content.</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>1.0.2 - Quieter logs, Comet/Torrentio guards, TGX/PirateBay noise cut</news>
+	</extension>
+</addon>
+
+
+<addon id="script.module.cocoscrapers" name="CocoScrapers Module" version="1.0.45" provider-name="CocoJoe">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2714,12 +2800,12 @@ In order to get the API Key:
 			<fanart>fanart.png</fanart>
 			<screenshot></screenshot>
 		</assets>
-		<news></news>
+		<news>Avoid strptime failures during episode air-date validation that can abort provider searches.</news>
 	</extension>
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.6.2" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.6.4" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -3383,10 +3469,10 @@ additional strptime modifications to fix scheduler behavior
 <!-- ====================================================================== -->
 
 
-<addon id="skin.fentastic" version="100.0.34+mod" name="FENtastic Plus (mod)" provider-name="Ivar Brandt, Zaxxon709">
+<addon id="skin.fentastic" version="100.0.35+mod" name="FENtastic Plus (mod)" provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" version="100.6.28a" />
+		<import addon="script.fentastic.helper" version="100.6.29" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -3424,7 +3510,7 @@ Various other small tweaks and refinements throughout.</news>
 </addon>
 
 
-<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.28a" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.29" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -3922,7 +4008,7 @@ All trademarks belong to them</news>
 </addon>
 
 
-<addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="6.7.1" provider-name="Taxigps, ronie">
+<addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="6.7.6" provider-name="Taxigps, ronie">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.beautifulsoup4" version="4.8.2+matrix.1"/>

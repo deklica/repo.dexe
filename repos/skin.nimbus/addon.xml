@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.nimbus" version="0.2.07" name="Nimbus Plus"
+<addon id="skin.nimbus" version="0.2.08" name="Nimbus Plus"
 	provider-name="adamsbuilds, Ivar Brandt">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.nimbus.helper" version="0.0.98"/>
+		<import addon="script.nimbus.helper" version="0.0.99"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -17,7 +17,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<license>GPL-2.0-only, CC-BY-SA-4.0</license>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.png</fanart>
@@ -25,8 +25,8 @@
 		<summary lang="en_GB">Nimbus Plus skin by adamsbuilds</summary>
 		<summary lang="en_NZ">Nimbus Plus skin by adamsbuilds</summary>
 		<summary lang="en_US">Nimbus Plus skin by adamsbuilds</summary>
-		<description lang="en_GB">Nimbus Plus Skin</description>
-		<description lang="en_NZ">Nimbus Plus Skin</description>
-		<description lang="en_US">Nimbus Plus Skin</description>
+		<description lang="en_GB">Nimbus Plus Skin by adamsbuilds, a fork of the Nimbus skin by Ivar Brandt.</description>
+		<description lang="en_NZ">Nimbus Plus Skin by adamsbuilds, a fork of the Nimbus skin by Ivar Brandt.</description>
+		<description lang="en_US">Nimbus Plus Skin by adamsbuilds, a fork of the Nimbus skin by Ivar Brandt.</description>
 	</extension>
 </addon>

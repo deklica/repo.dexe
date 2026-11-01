@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.doomzday" name="Doomzday Repo" version="1.2.3" provider-name="DD Team">
+    <extension point="xbmc.addon.repository" name="Doomzday Repo">
+		<dir>
+			<info compressed="false">https://doomzdayteam.github.io/doomzday/_zipfiles/addons.xml</info>
+			<checksum>https://doomzdayteam.github.io/doomzday/_zipfiles/addons.xml.md5</checksum>
+			<datadir zip="true">https://doomzdayteam.github.io/doomzday/_zipfiles/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir>
+			<info compressed="false">https://the-hermit.com/_repo/addons.xml</info>
+			<checksum>https://the-hermit.com/_repo/addonsmd5.txt</checksum>
+			<datadir zip="true">https://the-hermit.com/_repo/</datadir>
+					<hashes>false</hashes>
+		</dir>
+        <dir>
+           <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+           <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+           <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Doomzday Repository</summary>
+        <description lang="en_GB">Repo from the Doomzday Team for you.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

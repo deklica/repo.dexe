@@ -7,6 +7,11 @@ Introduced a brand-new focused list-item style with nine appearance options thro
 Various other small tweaks and refinements throughout.
 
 [B][COLOR accent_color]Version $INFO[System.AddonVersion(skin.fentastic)] by Zaxxon709[/COLOR][/B]
+- Added new authorization dialogs for Simkl, MDBList, and PunchPlay.
+- Fixed an issue where switching from Cinema Mode to Classic FENtastic would leave the Cinema Mode home layout active.
+- Added a Cinema Mode setting to enable and select the default home section on startup.
+
+[B][COLOR accent_color]Version 100.0.34a[/COLOR][/B]
 - Refined the Estuary Look &amp; Feel main menu
 - Fixed an incorrect Top Bar Overlay timer reference that could cause repeated skin timer errors
 
