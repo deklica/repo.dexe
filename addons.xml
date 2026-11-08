@@ -6,6 +6,7 @@
 plugin.video.blacklodge
  resource.images.blacklodge.artwork
  resource.images.whitelodge.artwork
+plugin.video.daddylive
 plugin.video.dltv
 plugin.video.dreammachine
 plugin.video.elementum
@@ -203,6 +204,32 @@ plugin.video.GreenKlikPremium
         <summary lang="en_GB">Themes for Whitelodge add-on</summary>
         <description lang="en_GB">Provided separately to allow easier distribution and consume less bandwidth</description>
         <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.daddylive" name="Daddylive" version="5.2.2" provider-name="THE CREW">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="inputstream.ffmpegdirect" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Live TV and Sports</summary>
+        <description lang="en">Live TV and Sports via DaddyLive schedule and 24/7 channels.</description>
+        <disclaimer lang="en">For personal use. Streams are provided by third-party sites.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website></website>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
@@ -628,7 +655,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" version="3.0.2" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" version="3.0.3" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
