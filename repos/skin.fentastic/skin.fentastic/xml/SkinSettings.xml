@@ -1527,7 +1527,7 @@
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(CinemaDefaultEnabled)</selected>
 					<onclick>Skin.ToggleSetting(CinemaDefaultEnabled)</onclick>
-					<visible>Skin.HasSetting(CinemaLookFeel)</visible>
+					<enable>Skin.HasSetting(CinemaLookFeel)</enable>
 				</control>
 				<control type="button" id="703">
 					<label>Choose home section</label>
@@ -1804,8 +1804,58 @@
 					<onclick>noop</onclick>
 					<enable>false</enable>
 				</control>
+				<!-- SEARCH RESULTS BACKGROUND -->
+				<control type="button" id="6065">
+					<label>Choose search results background</label>
+					<label2>$INFO[Skin.String(SearchResultsBackground)]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=set_image&amp;target=search)</onclick>
+				</control>
+				<control type="button" id="6066">
+					<label>   - Restore default search background</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.fentastic.helper,mode=reset_search_background)</onclick>
+					
+				</control>
+				<control type="button" id="6067">
+					<label>   - Choose search background brightness</label>
+					<label2>$INFO[Skin.String(SearchBackgroundBrightness)]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundBrightness),Low)">Skin.SetString(SearchBackgroundBrightness,Medium)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundBrightness),Medium)">Skin.SetString(SearchBackgroundBrightness,High)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundBrightness),High)">Skin.SetString(SearchBackgroundBrightness,Highest)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundBrightness),Highest)">Skin.SetString(SearchBackgroundBrightness,Low)</onclick>
+				</control>
+				<control type="button" id="6068">
+					<label>   - Choose search background color opacity</label>
+					<label2>$INFO[Skin.String(SearchBackgroundOpacity)]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundOpacity),Off)">Skin.SetString(SearchBackgroundOpacity,10%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundOpacity),10%)">Skin.SetString(SearchBackgroundOpacity,20%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundOpacity),20%)">Skin.SetString(SearchBackgroundOpacity,30%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundOpacity),30%)">Skin.SetString(SearchBackgroundOpacity,40%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundOpacity),40%)">Skin.SetString(SearchBackgroundOpacity,50%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundOpacity),50%)">Skin.SetString(SearchBackgroundOpacity,60%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundOpacity),60%)">Skin.SetString(SearchBackgroundOpacity,70%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundOpacity),70%)">Skin.SetString(SearchBackgroundOpacity,80%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundOpacity),80%)">Skin.SetString(SearchBackgroundOpacity,90%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundOpacity),90%)">Skin.SetString(SearchBackgroundOpacity,100%)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(SearchBackgroundOpacity),100%)">Skin.SetString(SearchBackgroundOpacity,Off)</onclick>
+				</control>
+				<!-- SEPARATOR -->
+				<control type="button" id="6069">
+					<height>3</height>
+					<left>25</left>
+					<right>25</right>
+					<label/>
+					<texturenofocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturenofocus>
+					<texturefocus colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texturefocus>
+					<aligny>center</aligny>
+					<onclick>noop</onclick>
+					<enable>false</enable>
+				</control>
 				<!-- HOME FANART -->
-				<control type="radiobutton" id="6065">
+				<control type="radiobutton" id="6070">
 					<label>$LOCALIZE[31002]</label>
 					<include>DefaultSettingButton</include>
 					<onclick condition="!Skin.HasSetting(no_fanart)">Skin.Reset(EnableWidgetFanart)</onclick>
@@ -1816,7 +1866,7 @@
 					<onclick condition="Skin.HasSetting(no_fanart)">Skin.Reset(no_fanart)</onclick>
 					<selected>!Skin.HasSetting(no_fanart)</selected>
 				</control>
-				<control type="button" id="6066">
+				<control type="button" id="6071">
 					<label>   - Choose fanart brightness</label>
 					<label2>$INFO[Skin.String(DefaultFanartBrightness)]</label2>
 					<include>DefaultSettingButton</include>
@@ -1828,7 +1878,7 @@
 					<visible>!Skin.HasSetting(no_fanart)</visible>
 				</control>
 				<!-- WIDGET FANART -->
-				<control type="radiobutton" id="6067">
+				<control type="radiobutton" id="6072">
 					<label>Enable widget fanart</label>
 					<include>DefaultSettingButton</include>
 					<visible>!Skin.HasSetting(no_fanart)</visible>
@@ -1837,7 +1887,7 @@
 					<selected>!Skin.HasSetting(no_fanart) + Skin.HasSetting(EnableWidgetFanart)</selected>
 				</control>
 				<!-- CATEGORY WIDGET FANART -->
-				<control type="radiobutton" id="6068">
+				<control type="radiobutton" id="6073">
 					<label>Enable category widget fanart</label>
 					<include>DefaultSettingButton</include>
 					<visible>!Skin.HasSetting(no_fanart)</visible>
@@ -1846,7 +1896,7 @@
 					<selected>!Skin.HasSetting(no_fanart) + Skin.HasSetting(EnableCategoryWidgetFanart)</selected>
 				</control>
 				<!-- ADD-ON WIDGET FANART -->
-				<control type="radiobutton" id="6069">
+				<control type="radiobutton" id="6074">
 					<label>Enable add-on widget fanart</label>
 					<include>DefaultSettingButton</include>
 					<visible>!Skin.HasSetting(no_fanart)</visible>
@@ -1854,7 +1904,7 @@
 					<onclick condition="!Skin.HasSetting(no_fanart)">Skin.ToggleSetting(EnableAddonWidgetFanart)</onclick>
 					<selected>!Skin.HasSetting(no_fanart) + Skin.HasSetting(EnableAddonWidgetFanart)</selected>
 				</control>
-				<control type="button" id="6070">
+				<control type="button" id="6075">
 					<label>$LOCALIZE[31131]</label>
 					<label2>$INFO[Skin.String(HomeFanart.name)]</label2>
 					<include>DefaultSettingButton</include>
@@ -1862,7 +1912,7 @@
 					<onclick condition="System.HasAddon(script.image.resource.select) + !System.AddonIsEnabled(script.image.resource.select)">EnableAddon(script.image.resource.select)</onclick>
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 				</control>
-				<control type="button" id="6071">
+				<control type="button" id="6076">
 					<label>$LOCALIZE[31062]</label>
 					<label2>$INFO[Skin.String(WeatherFanart.name)]</label2>
 					<include>DefaultSettingButton</include>
@@ -1870,7 +1920,7 @@
 					<onclick condition="System.HasAddon(script.image.resource.select) + !System.AddonIsEnabled(script.image.resource.select)">EnableAddon(script.image.resource.select)</onclick>
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 				</control>
-				<control type="button" id="6072">
+				<control type="button" id="6077">
 					<label>$LOCALIZE[31149]</label>
 					<label2>$INFO[Skin.String(MovieGenreFanart.Name)]</label2>
 					<include>DefaultSettingButton</include>
@@ -1879,7 +1929,7 @@
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 				</control>
 				<!-- SEPARATOR -->
-				<control type="button" id="6073">
+				<control type="button" id="6078">
 					<height>3</height>
 					<left>25</left>
 					<right>25</right>
@@ -1891,7 +1941,7 @@
 					<enable>false</enable>
 				</control>
 				<!-- RAIN DROPS -->
-				<control type="radiobutton" id="6074">
+				<control type="radiobutton" id="6079">
 					<label>Show raindrop background</label>
 					<include>DefaultSettingButton</include>
 					<onclick condition="Skin.HasSetting(ShowRainDrops)">Skin.Reset(no_fanart)</onclick>
@@ -1903,7 +1953,7 @@
 					<onclick condition="!Skin.HasSetting(ShowRainDrops)">Skin.SetBool(ShowRainDrops)</onclick>
 					<selected>Skin.HasSetting(ShowRainDrops)</selected>
 				</control>
-				<control type="button" id="6075">
+				<control type="button" id="6080">
 					<label>   - Choose raindrop brightness</label>
 					<label2>$INFO[Skin.String(DefaultRainDropBrightness)]</label2>
 					<include>DefaultSettingButton</include>
@@ -1913,7 +1963,7 @@
 					<onclick condition="String.IsEqual(Skin.String(DefaultRainDropBrightness),Highest)">Skin.SetString(DefaultRainDropBrightness,Low)</onclick>
 				</control>
 				<!-- SEPARATOR -->
-				<control type="button" id="6076">
+				<control type="button" id="6081">
 					<height>3</height>
 					<left>25</left>
 					<right>25</right>
@@ -1924,7 +1974,7 @@
 					<onclick>noop</onclick>
 					<enable>false</enable>
 				</control>
-				<control type="radiobutton" id="6077">
+				<control type="radiobutton" id="6082">
 					<label>$LOCALIZE[31168]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(show_musicvideoposter)</onclick>

@@ -7,6 +7,17 @@ Introduced a brand-new focused list-item style with nine appearance options thro
 Various other small tweaks and refinements throughout.
 
 [B][COLOR accent_color]Version $INFO[System.AddonVersion(skin.fentastic)] by Zaxxon709[/COLOR][/B]
+- Updated search shortcuts for Fen Light+, Red Light, POV, and Umbrella.
+- Updated the Add-on Info Panel to display update availability and the last updated date and time.
+- Added support for custom backgrounds in the Search Results window.
+- Update the FENtastic Plus Setup Guide
+Improved the Open Search Window functionality:
+ - Search Window now automatically loads results for the most recent search when opened.
+ - Fixed an issue where TV Show results would fail to reappear after a previous search returned no results.
+ - Improved search history navigation and widget refreshing when switching between search terms.
+ - Corrected the alignment of the empty search history message and buttons.
+
+[B][COLOR accent_color]Version 100.0.35[/COLOR][/B]
 - Added new authorization dialogs for Simkl, MDBList, and PunchPlay.
 - Fixed an issue where switching from Cinema Mode to Classic FENtastic would leave the Cinema Mode home layout active.
 - Added a Cinema Mode setting to enable and select the default home section on startup.

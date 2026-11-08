@@ -97,6 +97,7 @@ repository.dexworld
 repository.diggz
 repository.dis90
 repository.djaythemes
+repository.dmm
 repository.dobbelina
 repository.doomzday
 repository.dregs
@@ -747,7 +748,7 @@ repository.zeus768
 <addon id="skin.fentastic" version="1.0.23" name="FENtastic" provider-name="Ivar Brandt">
 	<requires>
 		<import addon="xbmc.gui" version="5.16.0" />
-		<import addon="script.fentastic.helper" />
+		<import addon="script.fentastic.helper" version="0.6.20a" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -781,10 +782,10 @@ repository.zeus768
 </addon>
 
 
-<addon id="skin.fentastic" version="100.0.35+mod" name="FENtastic Plus (mod)" provider-name="Ivar Brandt, Zaxxon709">
+<addon id="skin.fentastic" version="100.0.35a+mod" name="FENtastic Plus (mod)" provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" version="100.6.29" />
+		<import addon="script.fentastic.helper" version="100.6.29a" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -859,7 +860,7 @@ Various other small tweaks and refinements throughout.</news>
 </addon>
 
 
-<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.29" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.29a" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.19.1"/>
@@ -883,11 +884,10 @@ Various other small tweaks and refinements throughout.</news>
 </addon>
 
 
-<addon id="skin.nimbus" version="0.2.08" name="Nimbus Plus"
-	provider-name="adamsbuilds, Ivar Brandt">
+<addon id="skin.nimbus" version="0.2.10" name="Nimbus Plus" provider-name="adamsbuilds, Ivar Brandt">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.nimbus.helper" version="0.0.99"/>
+		<import addon="script.nimbus.helper" version="0.1.00"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -916,7 +916,7 @@ Various other small tweaks and refinements throughout.</news>
 </addon>
 
 
-<addon id="script.nimbus.helper" name="Nimbus Plus Helper" version="0.0.99" provider-name="Ivar Brandt, adamsbuilds">
+<addon id="script.nimbus.helper" name="Nimbus Plus Helper" version="0.1.00" provider-name="Ivar Brandt, adamsbuilds">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -926,14 +926,6 @@ Various other small tweaks and refinements throughout.</news>
     <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
     <extension point="xbmc.python.pluginsource" library="resources/lib/default.py">
         <provides>video</provides>
-    </extension>
-    <extension point="kodi.context.item">
-        <menu id="kodi.core.main">
-            <item library="resources/lib/context_refresh_widget.py">
-                <label>Refresh widget</label>
-                <visible>Window.IsVisible(home) + [ControlGroup(19001).HasFocus() | ControlGroup(22001).HasFocus() | ControlGroup(23001).HasFocus() | ControlGroup(24001).HasFocus() | ControlGroup(25001).HasFocus() | ControlGroup(26001).HasFocus() | ControlGroup(27001).HasFocus() | ControlGroup(28001).HasFocus() | ControlGroup(29001).HasFocus() | ControlGroup(30001).HasFocus() | ControlGroup(31001).HasFocus() | ControlGroup(32001).HasFocus()]</visible>
-            </item>
-        </menu>
     </extension>
     <extension point="xbmc.addon.metadata">
         <reuselanguageinvoker>false</reuselanguageinvoker>
@@ -2019,6 +2011,24 @@ Various other small tweaks and refinements throughout.</news>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>			
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.dmm" name="DMM Repository" version="1.0.0" provider-name="Debrid Media Manager">
+	<extension point="xbmc.addon.repository" name="DMM Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Debrid Media Manager's Kodi addons, with updates</summary>
+		<description lang="en_GB">Install Debrid Media Manager from here. Kodi keeps it up to date.</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="FENtasticTopBarCustomMenuButton">
+		<include content="IconButton">
+			<param name="control_id" value="811"/>
+			<param name="onclick" value="ActivateWindow(1170)"/>
+			<param name="icon" value="icons/system.png"/>
+			<param name="label" value="$INFO[Skin.String(TopBarCustomMenuLabel)]"/>
+			<param name="visible" value="Skin.HasSetting(Enable.TopBarCustomMenu)"/>
+		</include>
+	</include>
+	<include name="TopBarCustomMenuItems">
+	</include>
+</includes>
