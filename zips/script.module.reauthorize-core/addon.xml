@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.reauthorize-core" name="ReAuthorize-Core" version="1.4.9" provider-name="Hermit Murman">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.python.module" library="resources" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Helper for ReAuthorize - install ReAuthorize itself</summary>
+        <description lang="en">Helper for ReAuthorize. Install ReAuthorize itself (Video add-ons, Program add-ons or Services); it brings this helper in automatically. Opening this helper offers to install ReAuthorize if it is missing.</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <forum>https://tinyurl.com/ReAuthHelp</forum>
+        <website>https://tinyurl.com/ReAuthHelp</website>
+        <email></email>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

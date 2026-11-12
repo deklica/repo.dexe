@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.reauthorize" name="ReAuthorize" version="1.4.9" provider-name="Hermit Murman">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" version="2.19.1" />
+        <import addon="script.module.reauthorize-core" version="1.4.0" />
+    </requires>
+    <extension point="xbmc.service" library="lib/startup.py" start="startup" />
+    <extension point="xbmc.python.script" library="lib/default.py">
+        <provides>executable video</provides>
+    </extension>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <summary lang="en">ReAuthorize</summary>
+        <description>Authorize once. Never again after a build install. ReAuthorize syncs your Debrid, TorBox, OffCloud, Simkl, Easynews, FilePursuit, Metadata, and Kodi-level Trakt credentials across supported add-ons automatically - and restores them after every build install so you never have to re-authorize. Already signed in to a debrid service inside an add-on? Press "Bring Those In" on the first tab and ReAuthorize adopts it and shares it with the rest. Trakt and Simkl must be signed in here, in ReAuthorize. If an add-on asks you to sign in again, restart Kodi first; if it still asks, sign in again in ReAuthorize, not inside the add-on, and never press Revoke inside an add-on. The add-ons ReAuthorize links to Trakt share one Trakt app, so they count as a single connection on a free Trakt account. Open ReAuthorize and check the Help section for full details. Installing from zip files instead of the repository? Install ReAuthorize-Core first, then ReAuthorize.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. [CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <forum>https://tinyurl.com/ReAuthHelp</forum>
+        <website>https://tinyurl.com/ReAuthHelp</website>
+        <email></email>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

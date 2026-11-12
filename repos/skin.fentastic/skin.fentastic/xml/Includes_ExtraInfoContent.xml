@@ -7,6 +7,11 @@ Introduced a brand-new focused list-item style with nine appearance options thro
 Various other small tweaks and refinements throughout.
 
 [B][COLOR accent_color]Version $INFO[System.AddonVersion(skin.fentastic)] by Zaxxon709[/COLOR][/B]
+- Added optional backup of Kodi's guisettings.xml and favourites.xml when creating a user configuration backup.
+- Fixed an issue where skin colors were not correctly applied when restoring user backups.
+- Updated the Estuary Look &amp; Feel logo to dynamically reflect the selected skin color.
+
+[B][COLOR accent_color]Version 100.0.35a[/COLOR][/B]
 - Updated search shortcuts for Fen Light+, Red Light, POV, and Umbrella.
 - Updated the Add-on Info Panel to display update availability and the last updated date and time.
 - Added support for custom backgrounds in the Search Results window.

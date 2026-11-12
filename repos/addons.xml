@@ -782,10 +782,10 @@ repository.zeus768
 </addon>
 
 
-<addon id="skin.fentastic" version="100.0.35a+mod" name="FENtastic Plus (mod)" provider-name="Ivar Brandt, Zaxxon709">
+<addon id="skin.fentastic" version="100.0.35b+mod" name="FENtastic Plus (mod)" provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" version="100.6.29a" />
+		<import addon="script.fentastic.helper" version="100.6.29b" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -860,7 +860,7 @@ Various other small tweaks and refinements throughout.</news>
 </addon>
 
 
-<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.29a" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.29b" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.19.1"/>
