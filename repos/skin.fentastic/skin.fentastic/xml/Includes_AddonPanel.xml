@@ -1,0 +1,462 @@
+<?xml version='1.0' encoding='utf-8'?>
+<includes>
+	<include name="AddonPanel">
+		<control type="group">
+			<animation effect="slide" time="300" start="-492,0" end="0,0" tween="sine" easing="inout">VisibleChange</animation>
+			<width>550</width>
+			<depth>DepthContentPanel</depth>
+			<visible>String.IsEqual(Container(9000).ListItem.Property(id),addons) + String.IsEqual(Window(Home).Property(fentastic.widget_focus),true) + !Control.HasFocus(9000) + !Skin.HasSetting(TrailerPlaying) + !Skin.HasSetting(Enable.FullscreenWidgets) + Control.HasFocus(8900) + Skin.HasSetting(Enable.AddonCategorySideblade)</visible>
+			<include>OpenClose_Left</include>
+			<control type="image">
+				<left>20</left>
+				<top>35</top>
+				<width>430</width>
+				<height>240</height>
+				<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+				<aspectratio align="center">keep</aspectratio>
+				<visible>Control.HasFocus(8900)</visible>
+			</control>
+			<control type="textbox">
+				<left>30</left>
+				<top>260</top>
+				<width>410</width>
+				<height>70</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<label>$INFO[ListItem.Label]</label>
+				<textcolor>FFFFFFFF</textcolor>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(id),addons) + String.IsEqual(Window(Home).Property(fentastic.widget_focus),true) + !Control.HasFocus(9000)</visible>
+			</control>
+			<control type="image">
+				<left>30</left>
+				<top>345</top>
+				<width>410</width>
+				<height>1</height>
+				<texture colordiffuse="40FFFFFF">colors/white.png</texture>
+			</control>
+			<control type="textbox">
+				<left>30</left>
+				<top>368</top>
+				<width>410</width>
+				<height>400</height>
+				<font>font13</font>
+				<label>Browse your installed add-ons by category. From here you can open, configure, enable, disable, update, or remove installed add-ons.</label>
+				<textcolor>unfocused_text</textcolor>
+				<visible>Control.HasFocus(8900) + String.IsEqual(ListItem.Label,My add-ons)</visible>
+			</control>
+			<control type="textbox">
+				<left>30</left>
+				<top>368</top>
+				<width>410</width>
+				<height>400</height>
+				<font>font13</font>
+				<label>Review add-ons that were recently updated. This helps you quickly see what changed after add-on updates are installed.</label>
+				<textcolor>unfocused_text</textcolor>
+				<visible>Control.HasFocus(8900) + String.IsEqual(ListItem.Label,Recently updated)</visible>
+			</control>
+			<control type="textbox">
+				<left>30</left>
+				<top>368</top>
+				<width>410</width>
+				<height>400</height>
+				<font>font13</font>
+				<label>Browse installed repositories and install add-ons they provide. Repositories let Kodi retrieve add-ons and check them for updates.</label>
+				<textcolor>unfocused_text</textcolor>
+				<visible>Control.HasFocus(8900) + String.IsEqual(ListItem.Label,Install from repository)</visible>
+			</control>
+			<control type="textbox">
+				<left>30</left>
+				<top>368</top>
+				<width>410</width>
+				<height>400</height>
+				<font>font13</font>
+				<label>Install an add-on or repository from a ZIP file stored locally or on a network location. Use this for add-ons that are not installed from a repository.</label>
+				<textcolor>unfocused_text</textcolor>
+				<visible>Control.HasFocus(8900) + String.IsEqual(ListItem.Label,Install from zip file)</visible>
+			</control>
+			<control type="textbox">
+				<left>30</left>
+				<top>368</top>
+				<width>415</width>
+				<height>400</height>
+				<font>font13</font>
+				<label>Search available add-ons and repositories to quickly find add-ons you want to install or manage.</label>
+				<textcolor>unfocused_text</textcolor>
+				<visible>Control.HasFocus(8900) + String.IsEqual(ListItem.Label,Search)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<animation effect="slide" time="300" start="-492,0" end="0,0" tween="sine" easing="inout">VisibleChange</animation>
+			<width>550</width>
+			<depth>DepthContentPanel</depth>
+			<visible>String.IsEqual(Container(9000).ListItem.Property(id),addons) + String.IsEqual(Window(Home).Property(fentastic.widget_focus),true) + !Control.HasFocus(9000) + !Skin.HasSetting(TrailerPlaying) + !Skin.HasSetting(Enable.FullscreenWidgets) + !Control.HasFocus(8900) + Skin.HasSetting(Enable.AddonInfoPanel) + Skin.HasSetting(Enable.AlternateAddonInfo)</visible>
+			<include>OpenClose_Left</include>
+			<control type="image">
+				<left>30</left>
+				<top>50</top>
+				<width>410</width>
+				<height>210</height>
+				<texture background="true" fallback="DefaultAddon.png">$VAR[InfoWallThumbVar]</texture>
+				<aspectratio align="center">keep</aspectratio>
+				<visible>!Control.HasFocus(8900) + String.IsEqual(Container(9000).ListItem.Property(id),addons) + String.IsEqual(Window(Home).Property(fentastic.widget_focus),true) + !Control.HasFocus(9000)</visible>
+			</control>
+			<control type="textbox">
+				<left>30</left>
+				<top>280</top>
+				<width>410</width>
+				<height>70</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<label>$INFO[ListItem.Label]</label>
+				<textcolor>FFFFFFFF</textcolor>
+				<autoscroll delay="1000" time="1000" repeat="1000">Skin.HasSetting(autoscroll)</autoscroll>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(id),addons) + String.IsEqual(Window(Home).Property(fentastic.widget_focus),true) + !Control.HasFocus(9000)</visible>
+			</control>
+			<control type="image">
+				<left>30</left>
+				<top>365</top>
+				<width>410</width>
+				<height>1</height>
+				<texture colordiffuse="40FFFFFF">colors/white.png</texture>
+			</control>
+			<control type="grouplist">
+				<left>30</left>
+				<top>398</top>
+				<width>410</width>
+				<height>199</height>
+				<orientation>vertical</orientation>
+				<itemgap>6</itemgap>
+				<visible>!Control.HasFocus(8900) + [!String.IsEmpty(ListItem.AddonVersion) | !String.IsEmpty(ListItem.AddonCreator) | !String.IsEmpty(ListItem.AddonOrigin) | !String.IsEmpty(ListItem.AddonLastUpdated)]</visible>
+				<control type="group">
+					<height>26</height>
+					<visible>!String.IsEmpty(ListItem.AddonVersion)</visible>
+					<control type="label">
+						<left>0</left>
+						<width>145</width>
+						<height>26</height>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>Version:</label>
+						<textcolor>unfocused_text</textcolor>
+					</control>
+					<control type="label">
+						<left>160</left>
+						<width>225</width>
+						<height>26</height>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>$INFO[ListItem.AddonVersion]</label>
+					</control>
+				</control>
+				<control type="group">
+					<height>26</height>
+					<visible>!String.IsEmpty(ListItem.AddonCreator)</visible>
+					<control type="label">
+						<left>0</left>
+						<width>145</width>
+						<height>26</height>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>Author:</label>
+						<textcolor>unfocused_text</textcolor>
+					</control>
+					<control type="label">
+						<left>160</left>
+						<width>225</width>
+						<height>26</height>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>$INFO[ListItem.AddonCreator]</label>
+						<scroll>true</scroll>
+						<scrollspeed>50</scrollspeed>
+					</control>
+				</control>
+				<control type="group">
+					<height>26</height>
+					<visible>!String.IsEmpty(ListItem.AddonOrigin)</visible>
+					<control type="label">
+						<left>0</left>
+						<width>145</width>
+						<height>26</height>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>Repository:</label>
+						<textcolor>unfocused_text</textcolor>
+					</control>
+					<control type="label">
+						<left>160</left>
+						<width>225</width>
+						<height>26</height>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>$INFO[ListItem.AddonOrigin]</label>
+						<scroll>true</scroll>
+						<scrollspeed>50</scrollspeed>
+					</control>
+				</control>
+				<control type="group">
+					<height>26</height>
+					<visible>!String.IsEmpty(ListItem.AddonVersion)</visible>
+					<control type="label">
+						<left>0</left>
+						<width>145</width>
+						<height>26</height>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>Update:</label>
+						<textcolor>unfocused_text</textcolor>
+					</control>
+					<control type="label">
+						<left>160</left>
+						<width>250</width>
+						<height>26</height>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>$VAR[AddonPanelUpdateStatus]</label>
+						<scroll>true</scroll>
+					</control>
+				</control>
+				<control type="group">
+					<height>26</height>
+					<visible>!String.IsEmpty(ListItem.AddonLastUpdated)</visible>
+					<control type="label">
+						<left>0</left>
+						<width>165</width>
+						<height>26</height>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>Last updated:</label>
+						<textcolor>unfocused_text</textcolor>
+					</control>
+					<control type="label">
+						<left>176</left>
+						<width>234</width>
+						<height>26</height>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>$INFO[ListItem.AddonLastUpdated]</label>
+					</control>
+				</control>
+			</control>
+			<control type="image">
+				<left>30</left>
+				<top>624</top>
+				<width>410</width>
+				<height>1</height>
+				<texture colordiffuse="40FFFFFF">colors/white.png</texture>
+				<visible>!Control.HasFocus(8900) + [!String.IsEmpty(ListItem.AddonSummary) | !String.IsEmpty(ListItem.AddonDescription)]</visible>
+			</control>
+			<control type="textbox">
+				<left>30</left>
+				<top>644</top>
+				<width>410</width>
+				<height>85</height>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.AddonSummary]</label>
+				<textcolor>unfocused_text</textcolor>
+				<visible>!Control.HasFocus(8900) + !String.IsEmpty(ListItem.AddonSummary)</visible>
+			</control>
+			<control type="image">
+				<left>30</left>
+				<top>749</top>
+				<width>415</width>
+				<height>1</height>
+				<texture colordiffuse="30FFFFFF">colors/white.png</texture>
+				<visible>!Control.HasFocus(8900) + !String.IsEmpty(ListItem.AddonSummary) + !String.IsEmpty(ListItem.AddonDescription)</visible>
+			</control>
+			<control type="textbox">
+				<left>30</left>
+				<top>779</top>
+				<width>410</width>
+				<bottom>60</bottom>
+				<label>$INFO[ListItem.AddonDescription]</label>
+				<textcolor>unfocused_text</textcolor>
+				<visible>!Control.HasFocus(8900) + !String.IsEmpty(ListItem.AddonDescription)</visible>
+				<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+			</control>
+		</control>
+		<control type="group">
+			<animation effect="slide" time="300" start="-492,0" end="0,0" tween="sine" easing="inout">VisibleChange</animation>
+			<width>550</width>
+			<depth>DepthContentPanel</depth>
+			<visible>String.IsEqual(Container(9000).ListItem.Property(id),addons) + String.IsEqual(Window(Home).Property(fentastic.widget_focus),true) + !Control.HasFocus(9000) + !Skin.HasSetting(TrailerPlaying) + !Skin.HasSetting(Enable.FullscreenWidgets) + !Control.HasFocus(8900) + Skin.HasSetting(Enable.AddonInfoPanel) + !Skin.HasSetting(Enable.AlternateAddonInfo)</visible>
+			<include>OpenClose_Left</include>
+			<control type="group">
+				<left>30</left>
+				<width>410</width>
+				<control type="textbox">
+					<top>40</top>
+					<width>410</width>
+					<height>135</height>
+					<font>font45_title</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					<textcolor>FFFFFFFF</textcolor>
+				</control>
+				<control type="image">
+					<top>190</top>
+					<width>410</width>
+					<height>1</height>
+					<texture colordiffuse="40FFFFFF">colors/white.png</texture>
+				</control>
+				<control type="grouplist">
+					<top>220</top>
+					<width>410</width>
+					<height>209</height>
+					<orientation>vertical</orientation>
+					<itemgap>6</itemgap>
+					<visible>!String.IsEmpty(ListItem.AddonVersion) | !String.IsEmpty(ListItem.AddonCreator) | !String.IsEmpty(ListItem.AddonOrigin) | !String.IsEmpty(ListItem.AddonLastUpdated)</visible>
+					<control type="group">
+						<height>28</height>
+						<visible>!String.IsEmpty(ListItem.AddonVersion)</visible>
+						<control type="label">
+							<left>0</left>
+							<width>145</width>
+							<height>28</height>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<label>Version:</label>
+							<textcolor>unfocused_text</textcolor>
+						</control>
+						<control type="label">
+							<left>160</left>
+							<width>250</width>
+							<height>28</height>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<label>$INFO[ListItem.AddonVersion]</label>
+						</control>
+					</control>
+					<control type="group">
+						<height>28</height>
+						<visible>!String.IsEmpty(ListItem.AddonCreator)</visible>
+						<control type="label">
+							<left>0</left>
+							<width>145</width>
+							<height>28</height>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<label>Author:</label>
+							<textcolor>unfocused_text</textcolor>
+						</control>
+						<control type="label">
+							<left>160</left>
+							<width>250</width>
+							<height>28</height>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<label>$INFO[ListItem.AddonCreator]</label>
+							<scroll>true</scroll>
+							<scrollspeed>50</scrollspeed>
+						</control>
+					</control>
+					<control type="group">
+						<height>28</height>
+						<visible>!String.IsEmpty(ListItem.AddonOrigin)</visible>
+						<control type="label">
+							<left>0</left>
+							<width>145</width>
+							<height>28</height>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<label>Repository:</label>
+							<textcolor>unfocused_text</textcolor>
+						</control>
+						<control type="label">
+							<left>160</left>
+							<width>250</width>
+							<height>28</height>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<label>$INFO[ListItem.AddonOrigin]</label>
+							<scroll>true</scroll>
+							<scrollspeed>50</scrollspeed>
+						</control>
+					</control>
+					<control type="group">
+						<height>28</height>
+						<visible>!String.IsEmpty(ListItem.AddonVersion)</visible>
+						<control type="label">
+							<left>0</left>
+							<width>145</width>
+							<height>28</height>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<label>Update:</label>
+							<textcolor>unfocused_text</textcolor>
+						</control>
+						<control type="label">
+							<left>160</left>
+							<width>250</width>
+							<height>28</height>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<label>$VAR[AddonPanelUpdateStatus]</label>
+							<scroll>true</scroll>
+						</control>
+					</control>
+					<control type="group">
+						<height>28</height>
+						<visible>!String.IsEmpty(ListItem.AddonLastUpdated)</visible>
+						<control type="label">
+							<left>0</left>
+							<width>165</width>
+							<height>28</height>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<label>Last updated:</label>
+							<textcolor>unfocused_text</textcolor>
+						</control>
+						<control type="label">
+							<left>176</left>
+							<width>234</width>
+							<height>28</height>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<label>$INFO[ListItem.AddonLastUpdated]</label>
+						</control>
+					</control>
+				</control>
+				<control type="image">
+					<top>454</top>
+					<width>410</width>
+					<height>1</height>
+					<texture colordiffuse="40FFFFFF">colors/white.png</texture>
+					<visible>!String.IsEmpty(ListItem.AddonSummary) | !String.IsEmpty(ListItem.AddonDescription)</visible>
+				</control>
+				<control type="textbox">
+					<top>479</top>
+					<width>410</width>
+					<height>115</height>
+					<label>$INFO[ListItem.AddonSummary]</label>
+					<textcolor>unfocused_text</textcolor>
+					<visible>!String.IsEmpty(ListItem.AddonSummary)</visible>
+					<autoscroll delay="3000" time="3000" repeat="3000">Skin.HasSetting(autoscroll)</autoscroll>
+				</control>
+				<control type="image">
+					<top>619</top>
+					<width>410</width>
+					<height>1</height>
+					<texture colordiffuse="30FFFFFF">colors/white.png</texture>
+					<visible>!String.IsEmpty(ListItem.AddonSummary) + !String.IsEmpty(ListItem.AddonDescription)</visible>
+				</control>
+				<control type="textbox">
+					<top>649</top>
+					<width>410</width>
+					<bottom>60</bottom>
+					<label>$INFO[ListItem.AddonDescription]</label>
+					<textcolor>unfocused_text</textcolor>
+					<visible>!String.IsEmpty(ListItem.AddonDescription)</visible>
+					<autoscroll delay="8000" time="3000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
+				</control>
+			</control>
+		</control>
+	</include>
+	<variable name="AddonPanelUpdateStatus">
+		<value condition="ListItem.Property(Addon.HasUpdate)">$LOCALIZE[24068]</value>
+		<value>$LOCALIZE[21341]</value>
+	</variable>
+</includes>
