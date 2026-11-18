@@ -141,6 +141,7 @@ repository.luc_repo
 repository.Magnetic
 repository.marcelveldt
 repository.mbebe
+repository.meganexus
 repository.melies
 repository.michaz
 repository.misfitmods
@@ -176,6 +177,7 @@ repository.sandmann79.plugins
 repository.sarsaila
 repository.siku2
 repository.seizu
+repository.signde
 repository.simplewizard
 repository.skinbase.nexus
 repository.skins.pkscout
@@ -194,6 +196,7 @@ repository.tidb.repo
 repository.titan.bingie.mod
 repository.torrest
 repository.torus
+repository.twilight0
 repository.ukturk
 repository.umbrella
 repository.universalscrapers
@@ -884,10 +887,10 @@ Various other small tweaks and refinements throughout.</news>
 </addon>
 
 
-<addon id="skin.nimbus" version="0.2.10" name="Nimbus Plus" provider-name="adamsbuilds, Ivar Brandt">
+<addon id="skin.nimbus" version="0.2.11" name="Nimbus Plus" provider-name="adamsbuilds, Ivar Brandt">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.nimbus.helper" version="0.1.00"/>
+		<import addon="script.nimbus.helper" version="0.1.01"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -916,7 +919,7 @@ Various other small tweaks and refinements throughout.</news>
 </addon>
 
 
-<addon id="script.nimbus.helper" name="Nimbus Plus Helper" version="0.1.00" provider-name="Ivar Brandt, adamsbuilds">
+<addon id="script.nimbus.helper" name="Nimbus Plus Helper" version="0.1.01" provider-name="Ivar Brandt, adamsbuilds">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -1220,7 +1223,7 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
-<addon id="repository.a4kstreaming" name="a4kStreaming Repository" version="1.0.1" provider-name="Unknown">
+<addon id="repository.a4kstreaming" name="a4kStreaming Repository" version="1.0.3" provider-name="Unknown">
 	<extension point="xbmc.addon.repository" name="a4kStreaming Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2652,7 +2655,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.9" provider-name="Kodinerds">
+<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.10" provider-name="Kodinerds">
 	<extension point="xbmc.addon.repository" name="Kodinerds Addon Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
@@ -2868,6 +2871,26 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 			<fanart>fanart.jpg</fanart>			
 		</assets>
 	</extension> 
+</addon>
+
+<addon id="repository.meganexus" name="MegaNexus Repository" version="2.0.0" provider-name="MegaNexus">
+	<extension point="xbmc.addon.repository" name="MegaNexus Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<license>MegaNexus License (see LICENSE.txt)</license>
+		<summary lang="en_GB">MegaNexus add-ons for Kodi.</summary>
+		<description lang="en_GB">Installs and updates the MegaNexus build (MegaNexus Hub, the MegaNexus interface, MegaNexus Skin and MegaNexus Screensaver) from GitHub Pages. Kodi checks this repository for updates automatically.</description>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="repository.melies" name="Melies Addon repository" version="0.1.13" provider-name="luizoti">
@@ -3546,7 +3569,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
-		</dir>	
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
@@ -3555,6 +3578,25 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 		<assets>
 			<icon>icon.png</icon>
 		</assets> 			
+	</extension>
+</addon>
+
+<addon id="repository.signde" name="signde Repository" version="1.1" provider-name="signde">
+	<extension point="xbmc.addon.repository" name="signde Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>signde Repository</summary>
+		<description>Repository of skins for cpm/avdvplus/p3i based CoreELEC builds formerly maintained by jamal2362.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
 	</extension>
 </addon>
 
@@ -3923,6 +3965,28 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 		<summary lang="en_GB">Install and auto-update Torus</summary>
 		<description lang="en_GB">Repository for the Torus addon.</description>
 		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.twilight0" name="Twilight0 Repository" version="2.0.2" provider-name="Twilight0">
+	<extension point="xbmc.addon.repository" name="Twilight0 Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Twilight0 Repository</summary>
+		<description>Twilight0 Repository</description>
+		<platform>all</platform>
+		<news>2.0
+- Update repository format for Kodi v20+ (Nexus/Omega) compatibility
+		</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
 	</extension>
 </addon>
 

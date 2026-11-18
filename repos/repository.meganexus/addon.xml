@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<addon id="repository.meganexus" name="MegaNexus Repository" version="2.0.0" provider-name="MegaNexus">
+  <extension point="xbmc.addon.repository" name="MegaNexus Repository">
+    <dir minversion="19.0.0">
+      <info compressed="false">https://meganexusmediaplayer.github.io/MegaNexus/repo/addons.xml</info>
+      <checksum>https://meganexusmediaplayer.github.io/MegaNexus/repo/addons.xml.md5</checksum>
+      <datadir zip="true">https://meganexusmediaplayer.github.io/MegaNexus/repo/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <license>MegaNexus License (see LICENSE.txt)</license>
+    <summary lang="en_GB">MegaNexus add-ons for Kodi.</summary>
+    <description lang="en_GB">Installs and updates the MegaNexus build (MegaNexus Hub, the MegaNexus interface, MegaNexus Skin and MegaNexus Screensaver) from GitHub Pages. Kodi checks this repository for updates automatically.</description>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.png</fanart>
+    </assets>
+  </extension>
+</addon>
