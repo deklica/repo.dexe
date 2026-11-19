@@ -1225,7 +1225,7 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
-<addon id="repository.909" name=" The[COLOR blue][B]9o9[/B][/COLOR]Repo" version="1.1" provider-name="Zaxxon709">
+<addon id="repository.909" name="The9o9Repo" version="1.1" provider-name="Zaxxon709">
 	<extension point="xbmc.addon.repository" name="The9o9Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
