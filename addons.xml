@@ -348,7 +348,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.eonvod" version="1.2.2" name="EON On Demand" provider-name="dEXE">
+<addon id="plugin.video.eonvod" version="1.2.3" name="EON On Demand" provider-name="dEXE">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="pvr.eon" version="20.0.0"/>
