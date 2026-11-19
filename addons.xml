@@ -214,7 +214,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="5.2.9" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="Daddylive" version="5.2.10" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
