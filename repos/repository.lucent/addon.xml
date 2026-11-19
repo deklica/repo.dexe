@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.lucent" name="Lucent Repository" version="1.0.4" provider-name="Wilfried van der Voort">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Lucent Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/djdirty60/Lucent/main/repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/djdirty60/Lucent/main/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/djdirty60/Lucent/main/repo/zips/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/djdirty60/Lucent-video/main/repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/djdirty60/Lucent-video/main/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/djdirty60/Lucent-video/main/repo/zips/</datadir>
+            <hashes>false</hashes>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <news>1.0.4: Maker shown as Wilfried van der Voort.
+1.0.3: New, sharper icon (blue, with a download arrow).
+1.0.2: Also reads the separate folder of the video add-on.</news>
+        <summary lang="en_GB">Updates for the Lucent skin and its video add-on</summary>
+        <summary lang="nl_NL">Updates voor de Lucent-skin en de video add-on</summary>
+        <description lang="en_GB">Install this once. Kodi then keeps the Lucent skin and its video add-on up to date by itself.</description>
+        <description lang="nl_NL">Installeer dit één keer. Kodi houdt de Lucent-skin en de video add-on daarna zelf up-to-date.</description>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
