@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="pvr.eon" version="21.8.7+linux-aarch64" name="EON PVR Client" provider-name="Nirvana">
+<addon id="pvr.eon" version="21.8.12+linux-aarch64" name="EON PVR Client" provider-name="Nirvana">
 	<requires>
 		<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 		<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
@@ -49,34 +49,6 @@
 		<license>GPL-2.0-or-later</license>
 		<source>https://github.com/nirvana-7777/pvr.eon</source>
 		<forum>https://www.kodinerds.net/thread/77069-release-pvr-eon-tv</forum>
-    <news>[COLOR yellow][B]EON PVR Client for LibreELEC (RPi - aarch64)[/B][/COLOR]
-
-This is the EON.tv PVR client addon for Kodi. It provides Kodi integration for the streaming provider [B]EON.tv[/B]. A user account / paid subscription is required to use this addon. Please create the user account outside of this addon. Please enter the username/password to the configuration of this addon. Some content is geo-blocked.
-
-[B]Supported service providers[/B]
-- SBB
-- Telemach
-- Telemach HR
-- Telemach SI
-- Vivacom
-- Nova
-
-[B]Features[/B]
-Live TV and Radio
-EPG
-Replay (including restart of current event)
-
-[B]Notes[/B]
-- Tested building it for Linux x86_64, Linux armv7, Linux aarch64, Android armv7, and Android aarch64
-- Depends on inputstream addon
-- [B]For seeking/rewind (live TV and replay/catchup) to work[/B], set the addon's "Select Inputstream" setting to 'inputstream.ffmpegdirect' -- it defaults to 'inputstream.adaptive', which doesn't support seeking with this addon
-- Standard inputstream-based Replay TV still behaves like a short rolling live HLS window on EON/Vivacom, so full seek/rewind is limited there
-- 'Experimental native archive streaming' adds working archive seek support for finished replay programmes and for 'EPG -> Play programme' on already-started events
-- Direct live channel 'Switch' still uses the standard live playback path and does not yet expose the native archive/timeshift behavior
-
-[B]Disclaimer[/B]
-This addon is inofficial and not linked in any form to eon.tv
-All trademarks belong to them</news>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
