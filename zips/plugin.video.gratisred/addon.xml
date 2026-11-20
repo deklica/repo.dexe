@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.1.0" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.1.2" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="script.gratisred.artwork" version="1.0.6"/>
         <import addon="script.module.kodi-six"/>
@@ -26,12 +26,14 @@
 		<forum>https://t.me/+X-lt1ZDii3I3YjA0</forum>
 		<website>https://redwizard.xyz/</website> 
 		<source>https://github.com/The-Red-Wizard/TheRedWizard</source>
-        <news>2026-11-13
-[B]- Summary of v2.1.0 (see Tools > Changelog for the detail):[/B]
- * Trakt Continue Watching, History, and calendars now name this add-on, so they no longer open empty
- * Continue Watching asks Trakt for season progress again, and does not treat a list with no seasons as empty
- * History loads more of your recent watches, in pages Trakt allows
- * If Trakt is busy, the add-on waits the full time it asks for before trying again</news>
+        <news>2026-11-20
+[B]- Summary of v2.1.2 (see Tools > Changelog for the detail):[/B]
+ * Vidnest uses the current player key. Alfa, Beta, Lamda, and Prime follow the paths the player uses now
+ * HydraHD uses hydrahd.gd. The older names still redirect there
+ * VidBolt uses the site resolve API first. HdHub uses the CineWave referer and a TMDb fallback
+ * 2Embed uses vidsrc.buzz for movies and TV. Vidrock keeps Atlas and Astra. Jupiter and MovieUniverse are on
+ * A new series is scraped as the older show of the same name when that episode's air date is still listed
+ * Quality labels use the filename, API field, or hoster button when those already say 4K or 1080p</news>
         <assets>
             <icon>resources/images/icon.png</icon>
             <fanart>resources/images/fanart.jpg</fanart>
