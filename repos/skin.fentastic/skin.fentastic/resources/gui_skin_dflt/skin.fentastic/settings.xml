@@ -57,6 +57,8 @@
     <setting id="homemusicvideosnostudios" type="bool">false</setting>
     <setting id="homemenunopicturesbutton" type="bool">false</setting>
     <setting id="fentastichybrid" type="bool">false</setting>
+    <setting id="nohighlightmainmenu" type="bool">false</setting>
+    <setting id="noiconmainmenu" type="bool">true</setting>
     <setting id="disable.ratingsinf" type="bool">false</setting>
     <setting id="hide_mediaflags" type="bool">false</setting>
     <setting id="disable.colorstudio" type="bool">false</setting>
@@ -84,12 +86,13 @@
     <setting id="enable.favourites" type="bool">false</setting>
     <setting id="enable.addonbrowser" type="bool">false</setting>
     <setting id="enable.maintenancetools" type="bool">true</setting>
+    <setting id="enable.topbarcustommenu" type="bool">false</setting>
+    <setting id="enable.topbarmypresets" type="bool">false</setting>
+    <setting id="fentastic.preset.switchiconon" type="bool">false</setting>
     <setting id="enable.addoninfopanel" type="bool">false</setting>
     <setting id="enable.addoncategorysideblade" type="bool">false</setting>
     <setting id="hidemainmenudivider" type="bool">false</setting>
     <setting id="classicfentastic" type="bool">false</setting>
-    <setting id="noiconmainmenu" type="bool">true</setting>
-    <setting id="nohighlightmainmenu" type="bool">false</setting>
     <setting id="homemenunomusicbutton" type="bool">false</setting>
     <setting id="homemenunomusicvideobutton" type="bool">false</setting>
     <setting id="homemenunotvbutton" type="bool">false</setting>
@@ -99,12 +102,20 @@
     <setting id="homemenunovideosbutton" type="bool">false</setting>
     <setting id="homemenunofavbutton" type="bool">false</setting>
     <setting id="homemenunoweatherbutton" type="bool">false</setting>
-    <setting id="enable.topbarcustommenu" type="bool">false</setting>
     <setting id="enable.alternateinfo" type="bool">false</setting>
     <setting id="autoscroll" type="bool">false</setting>
     <setting id="enable.alternateaddoninfo" type="bool">false</setting>
     <setting id="defaults.initialized" type="bool">true</setting>
     <setting id="firsttimerun" type="bool">false</setting>
+    <setting id="cinemadefaultenabled" type="bool">false</setting>
+    <setting id="cinemamovieshaswidgets" type="bool">false</setting>
+    <setting id="cinematvshowshaswidgets" type="bool">false</setting>
+    <setting id="cinemacustom1haswidgets" type="bool">false</setting>
+    <setting id="cinemacustom2haswidgets" type="bool">false</setting>
+    <setting id="cinemacustom3haswidgets" type="bool">false</setting>
+    <setting id="cinemacustom4haswidgets" type="bool">false</setting>
+    <setting id="cinemacustom5haswidgets" type="bool">false</setting>
+    <setting id="cinemacustom6haswidgets" type="bool">false</setting>
     <setting id="enable.oneclicktrailers" type="bool">false</setting>
     <setting id="osdautoclosetime" type="string"></setting>
     <setting id="current_search_provider" type="string">0</setting>
@@ -113,6 +124,8 @@
     <setting id="categorywidgetitemlimit" type="string">20</setting>
     <setting id="stackedwidgetitemlimit" type="string">20</setting>
     <setting id="defaultbackgroundbrightness" type="string">Medium</setting>
+    <setting id="searchbackgroundbrightness" type="string">Medium</setting>
+    <setting id="searchbackgroundopacity" type="string">Off</setting>
     <setting id="defaultfanartbrightness" type="string">Medium</setting>
     <setting id="defaultraindropbrightness" type="string">Medium</setting>
     <setting id="backup_directory" type="string">special://home/backups/FENtastic_Plus/</setting>
@@ -131,12 +144,13 @@
     <setting id="homefanart.path" type="string"></setting>
     <setting id="HomeFanart.ext" type="string"></setting>
     <setting id="searchbehavior" type="string">1</setting>
-    <setting id="powerbuttonmode" type="string">Show Shutdown Menu</setting>
     <setting id="TopBarCustomMenuLabel" type="string"></setting>
+    <setting id="powerbuttonmode" type="string">Show Shutdown Menu</setting>
     <setting id="customlogo" type="string"></setting>
     <setting id="currentskincolor" type="string"></setting>
     <setting id="topbarcustommenuicon" type="string">icons/system.png</setting>
-    <setting id="installed_version" type="string">100.0.32b</setting>
+    <setting id="cinemadefaultsection" type="string"></setting>
+    <setting id="installed_version" type="string">100.0.36</setting>
     <setting id="MenuMovieLabelDB" type="string">Movies</setting>
     <setting id="MenuTVShowLabelDB" type="string">TV Shows</setting>
     <setting id="MenuCustom1LabelDB" type="string">Custom 1</setting>

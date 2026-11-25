@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.cartoonio"
+       name="Cartoonio"
+       version="1.0.64"
+       provider-name="Cartoonio">
+
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language>en</language>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary lang="en_GB">Watch cartoons from multiple public sources</summary>
+    <description lang="en_GB">Cartoonio lets you browse and watch cartoons from multiple public sources, including MegaCartoons, TopCartoons, SuperCartoons, ToonTales, B98.TV, and FunnierMoments. Explore Latest Cartoons, All Cartoons A-Z, series, and searchable episodes with provider source selection, pagination, TMDB posters, metadata, artwork, and episode screenshots.</description>
+    <disclaimer lang="en_GB">This addon scrapes publicly available content from MegaCartoons.net. Use at your own risk.</disclaimer>
+    <news>
+      v1.0.64 - A smoother Cartoonio
+
+      Browsing and performance
+      - Load listing metadata concurrently while preserving display order.
+      - Reuse merged episode catalogues for 15 minutes between season views; Refresh still fetches fresh listings.
+      - Use scraped artwork before making extra TMDB artwork requests.
+      - Load TMDB seasons concurrently and keep memory caches separate for each metadata language.
+      - Reuse complete TMDB episode-matching catalogues for 15 minutes between views, retry incomplete responses, and index season episodes for faster repeated metadata lookups.
+      - Recognise FunnierMoments series URLs for show-name and season matching.
+      - Fix alternate-provider category routing and pagination, and restore TMDB-assisted search with canonical title matching.
+      - Search additional episode providers concurrently and keep working results when a provider fails.
+      - Overlap primary search, provider catalogues, episode searches and TMDB title discovery; preserve other results if the primary website fails.
+      - Prepare search-result metadata concurrently while keeping display order, and skip redundant search metadata lookups when descriptions are off and artwork is already available.
+
+      Listings preferences
+      - Add Alphabetical and Provider order sorting for Series and A-Z. Website results sort within each loaded page.
+      - Keep Latest newest first, Search ordered by relevance, and season episodes in episode order.
+      - Add Show episode descriptions; disabling it skips extra description requests in Latest and A-Z.
+      - Add optional provider names beside episode titles while preserving the original metadata and playback-matching titles.
+      - Apply configurable page sizes across Latest, A-Z, Search, Series and season episode lists.
+      - Add Refresh this listing to listing context menus.
+
+      Settings and navigation
+      - Add a themed settings panel with Providers, Playback, Metadata and Listings sections.
+      - Stage changes until Apply; Cancel leaves saved values alone, and Reset section affects only the current section.
+      - Add rounded option and category boxes, Enabled/Disabled switches, changed-setting markers, pending-change totals and live provider counts.
+      - Match label size and vertical centring across focus states, and retain a subtle active-section marker while editing options.
+      - Keep unfocused labels readable and dim settings whose metadata dependency is disabled.
+      - Fix startup focus, sidebar/content/footer navigation, choice-list exits and Back navigation; remember the selected settings row.
+      - Disable Apply when there are no changes and skip it during button navigation.
+      - Support individual provider switches, preferred-source playback, metadata language choices and contextual help.
+      - Mask personal API-key input and keep key values out of visible row properties.
+      - Normalise legacy boolean values, detect rejected saves and attempt to restore previous values after a failed save.
+      - Require TMDB metadata to be enabled before fetching episode screenshots.
+
+      Source picker
+      - Correct short-list viewports so visible sources do not scroll out of view unnecessarily.
+      - Use rounded source cards, compact format badges and a unified source-count heading; remove numbered squares.
+      - Preserve episode artwork, the episode title and the gold focus accent.
+      - Adapt format badges for multiple streams, and return to the selected provider with Sources or Back.
+
+      Tools and cache
+      - Organise cache information and cleanup under Tools / Cache, with provider connection checks under Tools / Diagnostics.
+      - Keep the Changelog menu name and support the previous Misc route for compatibility.
+      - Add provider website connection checks and cache file/size information.
+      - Restyle the Clear Cache prompt with a cache-scope label, settings-preservation message and Cancel selected by default.
+      - Clear Cartoonio provider pages, merged listings, TMDB disk caches and relevant memory caches while preserving settings.
+      - Add cleanup progress, removed-file counts, already-empty feedback and accurate failure notifications.
+      - Continue cleanup when individual files cannot be removed, and fix empty-cache directory detection.
+      - Reject invalid or redirected cleanup paths, close cache files reliably and avoid creating cache folders on read misses.
+      - Avoid immediately refreshing and refilling a cleared cache; separate catalogue caches by provider selection and metadata language.
+
+      Changelog and shared design
+      - Redesign the changelog with a persistent release sidebar and notes beside the selected version.
+      - Show complete release rows, soft-gold version numbers, an inline CURRENT badge and per-release change counts.
+      - Keep release titles separate from the notes and make Back return from reading to the release list.
+      - Reformat all older releases with short titles, section headings and bullet points while preserving their history.
+      - Standardise dialog buttons at 180 x 44 pixels, with rounded corners, consistent spacing and matching focus colours.
+      - Add nine matching orange-and-gold icons for Tools and its submenus, each 256 x 256 pixels and under 150 KB.
+
+      Code organisation
+      - Remove unused helper code and imports, stale compiled test files and obsolete development previews while retaining active regression tests and menu artwork.
+      - Centralise provider registration, catalogue/search jobs, playback probes, cache namespaces and series navigation URLs.
+      - Separate catalogue views, playback and routing from the plugin entry point.
+      - Share dialog palette and button definitions, add a theme consistency checker and group regression tests by feature.
+
+      v1.0.63 - FunnierMoments joins Cartoonio
+
+      Sources and browsing
+      - Add FunnierMoments to Latest, A-Z, Series, season episode menus, Search, and playback sources.
+      - Include provider settings, preferred-source selection, and cache tools.
+
+      v1.0.61 - More reliable source selection
+
+      Playback and reliability
+      - Fix source-picker initialisation and cleanup failures.
+      - Handle malformed stream-format data and detect HLS streams correctly.
+      - Continue playback when TMDB enrichment fails.
+
+      v1.0.60 - Cleaner MegaCartoons sources
+
+      Source selection
+      - Remove duplicate streams with different labels or playback headers.
+      - Preserve distinct media URLs and signed queries.
+
+      v1.0.59 - A more compact source picker
+
+      Design
+      - Adapt the panel to the number of available sources.
+      - Add spacious single-line rows and subtle gold focus accents.
+
+      v1.0.58 - Cartoonio's own source picker
+
+      Playback and design
+      - Introduce a branded source picker with provider formats and stream selection.
+      - Support remote navigation and safe cancellation.
+
+      v1.0.57 - Smoother catalogue browsing
+
+      Browsing and design
+      - Add matching Search artwork.
+      - Preserve merged catalogues while paging.
+      - Correct alternate-provider category routing and pagination.
+
+      Reliability
+      - Handle unavailable cache storage safely.
+
+      v1.0.56 - Search returns
+
+      Search and settings
+      - Restore Search and add addon settings.
+      - Fix pagination across merged search results.
+
+      Privacy
+      - Remove API keys from TMDB error logs.
+
+      v1.0.55 - Complete series catalogues
+
+      Series and metadata
+      - Collect all TopCartoons episode pages before grouping seasons.
+      - Retry TMDB metadata after temporary request failures.
+      - Respect the episode-screenshot setting in season listings.
+
+      v1.0.54 - Better series identification
+
+      Browsing and metadata
+      - Stop breadcrumb links from identifying Home as an episode's series.
+      - Preserve alternate-provider routing for search folders.
+      - Skip invalid B98 series-category probes.
+
+      Settings
+      - Avoid typed-boolean errors with legacy string settings.
+
+      v1.0.53 - Clearer playback diagnostics
+
+      Playback diagnostics
+      - Log the episode, available and selected providers, media host, and stream type at normal log level.
+      - Track cancellations and playback handoff with a shared request ID.
+
+      Privacy
+      - Omit stream credentials, paths, query tokens, and headers from these diagnostic events.
+
+      v1.0.52 - More reliable browsing and playback
+
+      Browsing
+      - Fix folder-listing crashes, double-decoded URL parameters, and repeated pagination segments.
+      - Remove unrelated B98 entries from category views.
+      - Add More Items navigation for merged Latest and A-Z results in batches of 20.
+
+      Playback
+      - Complete Kodi playback callbacks when sources are unavailable or selection is cancelled.
+      - Handle streams without quality labels.
+
+      v1.0.51 - Fresh menu artwork and cache tools
+
+      Design
+      - Add matching cartoon artwork for Latest, A-Z, Series, and Tools, with each icon under 200 KB.
+
+      Cache tools
+      - Improve clearing of provider pages, catalogues, and TMDB disk and memory caches.
+      - Preserve settings and report success or failure accurately.
+
+      v1.0.50 - Correctly displayed titles
+
+      Browsing and metadata
+      - Decode HTML entities so apostrophes, quotes, and ampersands display correctly.
+
+      v1.0.49 - More direct series navigation
+
+      Menus and browsing
+      - Remove Search from the root menu.
+      - Improve exact-show routing into provider season and episode views.
+
+      v1.0.48 - Better search results and pagination
+
+      Search
+      - Improve TMDB-assisted search and prioritise exact matches.
+      - Support multi-page search results.
+
+      Browsing
+      - Show consistent item counts on pagination controls across catalogues.
+
+      v1.0.47 - Richer episode search results
+
+      Metadata and artwork
+      - Add TMDB posters, artwork, and metadata to episode search results.
+
+      v1.0.46 - B98 episodes in Search
+
+      Search
+      - Include matching playable B98.TV cartoons alongside results from existing providers.
+
+      v1.0.45 - B98.TV joins Cartoonio
+
+      Sources and browsing
+      - Add B98.TV as a playable source.
+      - Merge B98 cartoons into Latest and All Cartoons A-Z.
+      - Preserve matching playback sources from existing providers.
+
+      v1.0.44 - Richer A-Z listings
+
+      Browsing and metadata
+      - Add episode descriptions and metadata to All Cartoons A-Z.
+      - Use 20-item pages for A-Z and Latest.
+
+      Menus and playback
+      - Remove obsolete menu options and improve Kodi playback safety.
+
+      v1.0.43 - Cached pages and safer MP4 playback
+
+      Browsing
+      - Add cached catalogue pagination and respect the configured items per page.
+
+      Playback
+      - Harden direct MP4 playback across the remaining providers to reduce Stop and seek hangs.
+
+      v1.0.37 - One catalogue, multiple sources
+
+      Sources and browsing
+      - Unify MegaCartoons, TopCartoons, SuperCartoons, and ToonTales catalogues.
+      - Add cached parallel source checks, exact-title availability filtering, and direct playable streams.
+      - Correct pagination and season grouping.
+
+      Metadata and artwork
+      - Expand TMDB show, season, episode, poster, and alias matching.
+
+      v1.0.0 - Welcome to Cartoonio
+
+      Initial release
+      - Add full MegaCartoons.net browsing and playback integration.
+      - Include TMDB metadata.
+    </news>
+  </extension>
+
+</addon>

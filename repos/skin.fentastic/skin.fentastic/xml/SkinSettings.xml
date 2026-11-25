@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload condition="String.IsEqual(Skin.String(current_search_provider),0) + String.IsEqual(Skin.String(SearchBehavior),2)">Skin.SetString(SearchBehavior,1)</onload>
@@ -942,22 +942,15 @@
 					<onclick>Skin.ToggleSetting(ToolsNoMaintenance)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools)</visible>
 				</control>
+				<!-- SKIN PRESETS -->
 				<control type="radiobutton" id="63823">
-					<label>   - Custom Configs</label>
+					<label>   - Skin Presets</label>
 					<include>DefaultSettingButton</include>
-					<selected>!Skin.HasSetting(ToolsNoCustomConfigs)</selected>
-					<onclick>Skin.ToggleSetting(ToolsNoCustomConfigs)</onclick>
+					<selected>!Skin.HasSetting(ToolsNoSkinPresets)</selected>
+					<onclick>Skin.ToggleSetting(ToolsNoSkinPresets)</onclick>
 					<visible>Skin.HasSetting(Enable.MaintenanceTools)</visible>
 				</control>
-				<!-- PRE-MADE CONFIGS -->
-				<control type="radiobutton" id="63824">
-					<label>   - Pre-made Configs</label>
-					<include>DefaultSettingButton</include>
-					<selected>!Skin.HasSetting(Enable.PreMadeConfigs)</selected>
-					<onclick>Skin.ToggleSetting(Enable.PreMadeConfigs)</onclick>
-					<visible>Skin.HasSetting(Enable.MaintenanceTools) + [System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight)]</visible>
-				</control>
-				<control type="radiobutton" id="63825">
+								<control type="radiobutton" id="63825">
 					<label>   - Backup &amp; Restore</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(ToolsNoBackupRestore)</selected>
@@ -982,6 +975,13 @@
 					<aligny>center</aligny>
 					<onclick>noop</onclick>
 					<enable>false</enable>
+				</control>
+				<!-- SHOW MY PRESETS TOP BAR -->
+				<control type="radiobutton" id="63832">
+					<label>Show switch presets in top bar</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(Enable.TopBarMyPresets)</selected>
+					<onclick>Skin.ToggleSetting(Enable.TopBarMyPresets)</onclick>
 				</control>
 				<!-- SHOW FAVOURITES TOP BAR -->
 				<control type="radiobutton" id="63828">
@@ -1563,11 +1563,11 @@
 					<selected>Skin.HasSetting(autoscroll)</selected>
 				</control>
 				<!-- LIST ITEM FOCUS STYLE -->
-				<control type="button" id="7051">
+				<control type="button" id="61015">
 					<label>List item focus style</label>
 					<label2>$INFO[Skin.String(ListFocusStyle)]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick condition="String.IsEmpty(Skin.String(ListFocusStyle)) | String.IsEqual(Skin.String(ListFocusStyle),Default)">Skin.SetString(ListFocusStyle,Background Solid)</onclick>
+					<onclick condition="![String.IsEqual(Skin.String(ListFocusStyle),Background Solid) | String.IsEqual(Skin.String(ListFocusStyle),Background Dark) | String.IsEqual(Skin.String(ListFocusStyle),Background Light) | String.IsEqual(Skin.String(ListFocusStyle),Background Transparent) | String.IsEqual(Skin.String(ListFocusStyle),Border Solid) | String.IsEqual(Skin.String(ListFocusStyle),Border Dark) | String.IsEqual(Skin.String(ListFocusStyle),Border Light) | String.IsEqual(Skin.String(ListFocusStyle),Border Transparent)]">Skin.SetString(ListFocusStyle,Background Solid)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Background Solid)">Skin.SetString(ListFocusStyle,Background Dark)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Background Dark)">Skin.SetString(ListFocusStyle,Background Light)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Background Light)">Skin.SetString(ListFocusStyle,Background Transparent)</onclick>
@@ -1576,6 +1576,21 @@
 					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Border Dark)">Skin.SetString(ListFocusStyle,Border Light)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Border Light)">Skin.SetString(ListFocusStyle,Border Transparent)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Border Transparent)">Skin.SetString(ListFocusStyle,Default)</onclick>
+<!--
+					<onclick condition="String.IsEmpty(Skin.String(ListFocusStyle)) | String.IsEqual(Skin.String(ListFocusStyle),Text Only) | String.IsEqual(Skin.String(ListFocusStyle),Focus Indicator)">Skin.SetString(ListFocusStyle,Highlight)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Highlight)">Skin.SetString(ListFocusStyle,Rounded Highlight)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Rounded Highlight)">Skin.SetString(ListFocusStyle,Border Highlight)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Border Highlight)">Skin.SetString(ListFocusStyle,Rounded Border Highlight)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Rounded Border Highlight)">Skin.SetString(ListFocusStyle,Transparent Frame)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Transparent Frame)">Skin.SetString(ListFocusStyle,Rounded Transparent Frame)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Rounded Transparent Frame)">Skin.SetString(ListFocusStyle,Icon Color)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Icon Color)">Skin.SetString(ListFocusStyle,Icon Accent Bar)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Icon Accent Bar)">Skin.SetString(ListFocusStyle,Icon Highlight)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Icon Highlight)">Skin.SetString(ListFocusStyle,Round Icon Highlight)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Round Icon Highlight)">Skin.SetString(ListFocusStyle,Icon Border Highlight)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Icon Border Highlight)">Skin.SetString(ListFocusStyle,Round Icon Border Highlight)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(ListFocusStyle),Round Icon Border Highlight)">Skin.SetString(ListFocusStyle,Text Only)</onclick>
+-->
 				</control>
 				<!-- SEPARATOR -->
 				<control type="button" id="708">
@@ -1815,7 +1830,6 @@
 					<label>   - Restore default search background</label>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.fentastic.helper,mode=reset_search_background)</onclick>
-					
 				</control>
 				<control type="button" id="6067">
 					<label>   - Choose search background brightness</label>

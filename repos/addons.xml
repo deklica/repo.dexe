@@ -50,6 +50,7 @@ repository.elementumorg
  
   plugin.program.autocompletion
    script.module.autocompletion
+  script.skinswitcher
   script.toolbox
 
 
@@ -313,7 +314,7 @@ repository.zeus768
 </addon>
 
 
-<addon id="skin.estouchy" version="4.0.1" name="Estouchy" provider-name="Team Kodi, [COLOR red]The Red Wizard[/COLOR]">
+<addon id="skin.estouchy" version="4.0.2" name="Estouchy" provider-name="Team Kodi, [COLOR red]The Red Wizard[/COLOR]">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 	</requires>
@@ -412,7 +413,7 @@ repository.zeus768
 		<description lang="eu_ES">Ukipen-pantaila duten gailuetan erabiltzeko diseinatutako azala</description>
 		<description lang="fi_FI">Ulkoasu, joka on suunniteltu käytettäväksi kosketusnäytöllisillä laitteilla, kuten tableteilla ja älypuhelimilla</description>
 		<description lang="fr_CA">Habillage conçu pour être utilisé sur les appareils à écran tactile comme les tablettes et les téléphones intelligents</description>
-		<description lang="fr_FR">[CR]Habillage conçu pour les appareils à écran tactile comme les tablettes et [CR]les téléphonesHabillage conçu pour les appareils à écran tactile comme les tablettes et les téléphones</description>
+		<description lang="fr_FR">Habillage conçu pour les appareils à écran tactile comme les tablettes et [CR]les téléphonesHabillage conçu pour les appareils à écran tactile comme les tablettes et les téléphones</description>
 		<description lang="gl_ES">Pel deseñada para se empregar en dispositivos táctiles como tabletas e móbiles</description>
 		<description lang="he_IL">מעטפת מיועדת לשימוש בהתקני מסך מגע כגון טאבלט וסמארטפון</description>
 		<description lang="hr_HR">Presvlaka dizajnirana za korištenje na uređajima s dodirom na zaslon poput tableta i pametnih telefona</description>
@@ -446,7 +447,7 @@ repository.zeus768
 </addon>
 
 
-<addon id="skin.estouchy" version="5.0.0" name="Estouchy" provider-name="Team Kodi, [COLOR red]The Red Wizard[/COLOR]">
+<addon id="skin.estouchy" version="5.0.1" name="Estouchy" provider-name="Team Kodi, [COLOR red]The Red Wizard[/COLOR]">
 	<requires>
 		<import addon="xbmc.gui" version="5.18.0"/>
 	</requires>
@@ -545,7 +546,7 @@ repository.zeus768
 		<description lang="eu_ES">Ukipen-pantaila duten gailuetan erabiltzeko diseinatutako azala</description>
 		<description lang="fi_FI">Ulkoasu, joka on suunniteltu käytettäväksi kosketusnäytöllisillä laitteilla, kuten tableteilla ja älypuhelimilla</description>
 		<description lang="fr_CA">Habillage conçu pour être utilisé sur les appareils à écran tactile comme les tablettes et les téléphones intelligents</description>
-		<description lang="fr_FR">[CR]Habillage conçu pour les appareils à écran tactile comme les tablettes et [CR]les téléphonesHabillage conçu pour les appareils à écran tactile comme les tablettes et les téléphones</description>
+		<description lang="fr_FR">Habillage conçu pour les appareils à écran tactile comme les tablettes et [CR]les téléphonesHabillage conçu pour les appareils à écran tactile comme les tablettes et les téléphones</description>
 		<description lang="gl_ES">Pel deseñada para se empregar en dispositivos táctiles como tabletas e móbiles</description>
 		<description lang="he_IL">מעטפת מיועדת לשימוש בהתקני מסך מגע כגון טאבלט וסמארטפון</description>
 		<description lang="hr_HR">Presvlaka dizajnirana za korištenje na uređajima s dodirom na zaslon poput tableta i pametnih telefona</description>
@@ -787,10 +788,10 @@ repository.zeus768
 </addon>
 
 
-<addon id="skin.fentastic" version="100.0.35b+mod" name="FENtastic Plus (mod)" provider-name="Ivar Brandt, Zaxxon709">
+<addon id="skin.fentastic" version="100.0.36+mod" name="FENtastic Plus (mod)" provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" version="100.6.29b" />
+		<import addon="script.fentastic.helper" version="100.6.30" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -865,7 +866,7 @@ Various other small tweaks and refinements throughout.</news>
 </addon>
 
 
-<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.29b" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.30" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.19.1"/>
@@ -1157,6 +1158,31 @@ Various other small tweaks and refinements throughout.</news>
 			<icon>icon.png</icon>
 		</assets>
 	</extension>
+</addon>
+
+
+<addon id="script.skinswitcher" 
+         name="Skin Switcher" 
+         version="1.0.3" 
+         provider-name="Surfacingx, OpenELEQ, Fire TV Guru, GKoBu">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <assets>
+            <icon>icon.png</icon>
+    </assets>
+    <summary lang="en">Choose your installed skin</summary>
+    <description lang="en">This utility will allow you to quickly switch between installed skins</description>
+    <disclaimer lang="en">You have to install the skins you want before using this script</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
 </addon>
 
 
@@ -3069,7 +3095,7 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 	</extension>
 </addon>
 
-<addon id="repository.octopus" name="Octopus Repository" version="0.7.6" provider-name="Twiglet">
+<addon id="repository.octopus" name="Octopus Repository" version="0.7.7" provider-name="Twiglet">
 	<extension point="xbmc.addon.repository" name="Octopus Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>

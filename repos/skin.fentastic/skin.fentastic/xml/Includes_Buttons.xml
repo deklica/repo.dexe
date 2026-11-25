@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <includes>
 	<include name="OSDButton">
 		<textureradioonfocus colordiffuse="focused_text">$PARAM[texture]</textureradioonfocus>
@@ -208,6 +208,34 @@
 			</control>
 		</definition>
 	</include>
+	<include name="PresetSwitchIconButton">
+		<param name="height">120</param>
+		<param name="visible">true</param>
+		<definition>
+			<control type="radiobutton" id="$PARAM[control_id]">
+				<include>FocusBounce</include>
+				<width>120</width>
+				<height>$PARAM[height]</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<onclick>$PARAM[onclick]</onclick>
+				<onclick>$PARAM[onclick_2]</onclick>
+				<font/>
+				<label>$PARAM[label]</label>
+				<texturefocus colordiffuse="button_focus">buttons/roundbutton-fo.png</texturefocus>
+				<texturenofocus/>
+				<radioposx>34</radioposx>
+				<radioposy>0</radioposy>
+				<radiowidth>52</radiowidth>
+				<radioheight>52</radioheight>
+				<textureradioonfocus colordiffuse="focused_text">$PARAM[icon]</textureradioonfocus>
+				<textureradioonnofocus colordiffuse="grey">$PARAM[icon]</textureradioonnofocus>
+				<textureradioofffocus colordiffuse="focused_text">$PARAM[icon]</textureradioofffocus>
+				<textureradiooffnofocus colordiffuse="grey">$PARAM[icon]</textureradiooffnofocus>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
 	<include name="BottomMainMenuToggleItem">
 		<param name="height">120</param>
 		<definition>
@@ -374,49 +402,118 @@
 			</control>
 		</focusedlayout>
 	</include>
-<include name="ButtonMenuList_dialog">
-	<param name="panel_height">530</param>
-	<definition>
-		<left>0</left>
-		<top>105</top>
-		<width>600</width>
-		<height>$PARAM[panel_height]</height>
-		<onleft>9000</onleft>
-		<onright>9000</onright>
-		<onup>9000</onup>
-		<ondown>9000</ondown>
-		<orientation>vertical</orientation>
-		<itemlayout height="70" width="600">
-			<control type="label">
-				<left>0</left>
-				<top>0</top>
-				<width>600</width>
-				<height>70</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>unfocused_text</textcolor>
-				<label>$INFO[ListItem.Label]</label>
-			</control>
-		</itemlayout>
-		<focusedlayout height="70" width="600">
-			<control type="image">
-				<left>25</left>
-				<top>0</top>
-				<width>550</width>
-				<height>70</height>
-				<texture colordiffuse="button_focus">masks/focus.png</texture>
-			</control>
-			<control type="label">
-				<left>0</left>
-				<top>0</top>
-				<width>600</width>
-				<height>70</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Label][/B]</label>
-				<textcolor>focused_text</textcolor>
-			</control>
-		</focusedlayout>
-	</definition>
-</include>
+	<include name="ButtonMenuList_dialog">
+		<param name="panel_height">530</param>
+		<definition>
+			<left>0</left>
+			<top>105</top>
+			<width>600</width>
+			<height>$PARAM[panel_height]</height>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<orientation>vertical</orientation>
+			<itemlayout height="70" width="600">
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>600</width>
+					<height>70</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>unfocused_text</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="70" width="600">
+				<control type="image">
+					<left>25</left>
+					<top>0</top>
+					<width>550</width>
+					<height>70</height>
+					<texture colordiffuse="button_focus">masks/focus.png</texture>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>600</width>
+					<height>70</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
+					<textcolor>focused_text</textcolor>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+	<include name="ButtonMenuList_presets">
+		<param name="panel_height">530</param>
+		<definition>
+			<left>0</left>
+			<top>105</top>
+			<width>600</width>
+			<height>$PARAM[panel_height]</height>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<orientation>vertical</orientation>
+			<itemlayout height="70" width="600">
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>600</width>
+					<height>70</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>unfocused_text</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>!String.IsEqual(ListItem.Label,Window(Home).Property(FENtastic.Preset.ActiveName))</visible>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>600</width>
+					<height>70</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button_focus</textcolor>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
+					<visible>String.IsEqual(ListItem.Label,Window(Home).Property(FENtastic.Preset.ActiveName))</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout height="70" width="600">
+				<control type="image">
+					<left>25</left>
+					<top>0</top>
+					<width>550</width>
+					<height>70</height>
+					<texture colordiffuse="button_focus">masks/focus.png</texture>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>600</width>
+					<height>70</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
+					<textcolor>focused_text</textcolor>
+					<visible>!String.IsEqual(ListItem.Label,Window(Home).Property(FENtastic.Preset.ActiveName))</visible>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>600</width>
+					<height>70</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
+					<textcolor>focused_text</textcolor>
+					<visible>String.IsEqual(ListItem.Label,Window(Home).Property(FENtastic.Preset.ActiveName))</visible>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
 </includes>

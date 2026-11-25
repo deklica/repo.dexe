@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <includes>
 
 	<include name="View_50_List">
@@ -8,9 +8,9 @@
 			<visible>Control.IsVisible(50)</visible>
 			<include>Visible_Right</include>
 			<include content="ListContainer">
-				<param name="list_id" value="50" />
-				<param name="right" value="594" />
-				<param name="viewtype_label" value="$LOCALIZE[535]" />
+				<param name="list_id" value="50"/>
+				<param name="right" value="594"/>
+				<param name="viewtype_label" value="$LOCALIZE[535]"/>
 			</include>
 			<control type="group">
 				<depth>DepthContentPanel</depth>
@@ -19,7 +19,7 @@
 					<width>634</width>
 					<!-- right content panel -->
 					<include content="RightListPanel">
-						<param name="list_id" value="50" />
+						<param name="list_id" value="50"/>
 					</include>
 					<control type="scrollbar" id="50600">
 						<left>35</left>
@@ -43,10 +43,10 @@
 				<right>-32</right>
 				<!-- right content panel -->
 				<include content="ContentPanel">
-					<param name="left" value="-150" />
-					<param name="top" value="-20" />
-					<param name="width" value="806" />
-					<param name="flipx" value="true" />
+					<param name="left" value="-150"/>
+					<param name="top" value="-20"/>
+					<param name="width" value="806"/>
+					<param name="flipx" value="true"/>
 				</include>
 				<control type="group">
 					<visible>!Container.Content(songs)</visible>
@@ -65,7 +65,7 @@
 						<left>540</left>
 						<top>143</top>
 						<include content="RatingCircle">
-							<param name="animation" value="True" />
+							<param name="animation" value="True"/>
 							<param name="left">-72</param>
 							<param name="top">17</param>
 							<param name="width">119</param>
@@ -99,10 +99,10 @@
 						<control type="group">
 							<animation effect="fade" time="0" condition="$PARAM[animation]">VisibleChange</animation>
 							<include content="UserRatingContent" condition="Skin.HasSetting(circle_userrating)">
-								<param name="infolabel" value="MusicPlayer.UserRating" />
+								<param name="infolabel" value="MusicPlayer.UserRating"/>
 							</include>
 							<include content="UserRatingContent" condition="Skin.HasSetting(circle_rating)">
-								<param name="infolabel" value="MusicPlayer.Rating" />
+								<param name="infolabel" value="MusicPlayer.Rating"/>
 							</include>
 						</control>
 					</control>
@@ -198,8 +198,8 @@
 				<focusedlayout height="85" condition="String.IsEqual(Skin.String(ListFocusStyle),Background Solid)">
 					<control type="image">
 						<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto"/>
+							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto"/>
 						</animation>
 						<left>0</left>
 						<right>0</right>
@@ -255,8 +255,8 @@
 				<focusedlayout height="85" condition="String.IsEqual(Skin.String(ListFocusStyle),Background Dark)">
 					<control type="image">
 						<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto"/>
+							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto"/>
 						</animation>
 						<left>0</left>
 						<right>0</right>
@@ -312,8 +312,8 @@
 				<focusedlayout height="85" condition="String.IsEqual(Skin.String(ListFocusStyle),Background Light)">
 					<control type="image">
 						<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto"/>
+							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto"/>
 						</animation>
 						<left>0</left>
 						<right>0</right>
@@ -369,8 +369,8 @@
 				<focusedlayout height="85" condition="String.IsEqual(Skin.String(ListFocusStyle),Background Transparent)">
 					<control type="image">
 						<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto"/>
+							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto"/>
 						</animation>
 						<left>0</left>
 						<right>0</right>
@@ -426,8 +426,8 @@
 				<focusedlayout height="85" condition="String.IsEqual(Skin.String(ListFocusStyle),Border Solid)">
 					<control type="image">
 						<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto"/>
+							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto"/>
 						</animation>
 						<left>0</left>
 						<right>0</right>
@@ -439,8 +439,8 @@
 					</control>
 					<control type="image">
 						<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto"/>
+							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto"/>
 						</animation>
 						<left>3</left>
 						<right>3</right>
@@ -496,8 +496,8 @@
 				<focusedlayout height="85" condition="String.IsEqual(Skin.String(ListFocusStyle),Border Dark)">
 					<control type="image">
 						<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto"/>
+							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto"/>
 						</animation>
 						<left>0</left>
 						<right>0</right>
@@ -509,8 +509,8 @@
 					</control>
 					<control type="image">
 						<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto"/>
+							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto"/>
 						</animation>
 						<left>3</left>
 						<right>3</right>
@@ -566,8 +566,8 @@
 				<focusedlayout height="85" condition="String.IsEqual(Skin.String(ListFocusStyle),Border Light)">
 					<control type="image">
 						<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto"/>
+							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto"/>
 						</animation>
 						<left>0</left>
 						<right>0</right>
@@ -579,8 +579,8 @@
 					</control>
 					<control type="image">
 						<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto"/>
+							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto"/>
 						</animation>
 						<left>3</left>
 						<right>3</right>
@@ -591,8 +591,8 @@
 					</control>
 					<control type="image">
 						<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto"/>
+							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto"/>
 						</animation>
 						<left>3</left>
 						<right>3</right>
@@ -603,8 +603,8 @@
 					</control>
 					<control type="image">
 						<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto"/>
+							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto"/>
 						</animation>
 						<left>3</left>
 						<right>3</right>
@@ -660,8 +660,8 @@
 				<focusedlayout height="85" condition="String.IsEqual(Skin.String(ListFocusStyle),Border Transparent)">
 					<control type="image">
 						<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto"/>
+							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto"/>
 						</animation>
 						<left>0</left>
 						<right>0</right>
@@ -673,8 +673,8 @@
 					</control>
 					<control type="image">
 						<animation type="Focus" condition="!Skin.HasSetting(NoFocusAnimations)" reversible="false">
-							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto" />
-							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto" />
+							<effect type="zoom" end="102" time="75" tween="sine" easing="out" center="auto"/>
+							<effect type="zoom" end="97" time="225" tween="sine" delay="100" easing="out" center="auto"/>
 						</animation>
 						<left>3</left>
 						<right>3</right>
@@ -763,14 +763,14 @@
 	</include>
 
 	<include name="ListThumbInfoPanel">
-		<param name="fallback_image"></param>
+		<param name="fallback_image"/>
 		<param name="flip_bg">false</param>
 		<definition>
 			<control type="group">
 				<depth>DepthContentPanel</depth>
 				<include content="ContentPanel">
-					<param name="width" value="1106" />
-					<param name="flipx" value="$PARAM[flip_bg]" />
+					<param name="width" value="1106"/>
+					<param name="flipx" value="$PARAM[flip_bg]"/>
 				</include>
 				<control type="grouplist">
 					<left>30</left>
@@ -1223,11 +1223,11 @@
 					<top>640</top>
 					<visible>ListItem.IsCollection + String.IsEmpty(ListItem.Plot)</visible>
 					<include content="InfoList">
-						<param name="bottom" value="100" />
-						<param name="width" value="540" />
-						<param name="sortby" value="year" />
-						<param name="sortorder" value="ascending" />
-						<param name="font" value="font13" />
+						<param name="bottom" value="100"/>
+						<param name="width" value="540"/>
+						<param name="sortby" value="year"/>
+						<param name="sortorder" value="ascending"/>
+						<param name="font" value="font13"/>
 					</include>
 				</control>
 				<control type="group">
@@ -1251,22 +1251,22 @@
 						<top>640</top>
 						<visible>!String.IsEmpty(ListItem.DBID)</visible>
 						<include content="InfoList">
-							<param name="list_id" value="42000" />
-							<param name="bottom" value="100" />
-							<param name="width" value="540" />
-							<param name="sortby" value="year" />
-							<param name="sortorder" value="ascending" />
-							<param name="item_label" value="$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]" />
-							<param name="visible" value="String.IsEqual(ListItem.DBType,artist)" />
+							<param name="list_id" value="42000"/>
+							<param name="bottom" value="100"/>
+							<param name="width" value="540"/>
+							<param name="sortby" value="year"/>
+							<param name="sortorder" value="ascending"/>
+							<param name="item_label" value="$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]"/>
+							<param name="visible" value="String.IsEqual(ListItem.DBType,artist)"/>
 						</include>
 						<include content="InfoList">
-							<param name="list_id" value="43000" />
-							<param name="bottom" value="100" />
-							<param name="width" value="540" />
-							<param name="sortby" value="track" />
-							<param name="sortorder" value="ascending" />
-							<param name="item_label" value="$INFO[ListItem.Duration,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]" />
-							<param name="visible" value="String.IsEqual(ListItem.DBType,album)" />
+							<param name="list_id" value="43000"/>
+							<param name="bottom" value="100"/>
+							<param name="width" value="540"/>
+							<param name="sortby" value="track"/>
+							<param name="sortorder" value="ascending"/>
+							<param name="item_label" value="$INFO[ListItem.Duration,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]"/>
+							<param name="visible" value="String.IsEqual(ListItem.DBType,album)"/>
 						</include>
 					</control>
 				</control>

@@ -1496,4 +1496,8 @@
 		<value condition="String.IsEqual(Skin.String(TopBarCustomMenuSize),8)">Skin.SetString(TopBarCustomMenuSize,2)</value>
 		<value>Skin.SetString(TopBarCustomMenuSize,3)</value>
 	</variable>
+	<variable name="MyPresetsSwitchIconVar">
+		<value condition="Skin.HasSetting(FENtastic.Preset.SwitchIconOn)">icons/profiles/on.png</value>
+		<value>icons/profiles/off.png</value>
+	</variable>
 </includes>

@@ -3,10 +3,17 @@
 	<include name="Changelog">
 		<label>[B]Fixes &amp; improvements by dEXE[/B]
 Reworked and restyled several dialogs and overlays across the skin - including the context menu, power/tools menus, video OSD, top bar, and video info screen.
-Introduced a brand-new focused list-item style with nine appearance options throughout the List and WideList views (Skin Settings/Options).
+Introduced a brand-new focused list-item style with 9 appearance options throughout the List and WideList views (Skin Settings → Look &amp; Feel).
 Various other small tweaks and refinements throughout.
 
 [B][COLOR accent_color]Version $INFO[System.AddonVersion(skin.fentastic)] by Zaxxon709[/COLOR][/B]
+- Added one-click preset switching from the top bar
+- Renamed Pre-configurations to Presets throughout the skin
+- Added backup, restore, import, and export support for Advanced Settings
+- Reorganized and simplified the Backup &amp; Restore menus
+- Updated Custom Menu shortcuts to include the latest helper actions and skin dialogs
+
+[B][COLOR accent_color]Version 100.0.35b[/COLOR][/B]
 - Added optional backup of Kodi's guisettings.xml and favourites.xml when creating a user configuration backup.
 - Fixed an issue where skin colors were not correctly applied when restoring user backups.
 - Updated the Estuary Look &amp; Feel logo to dynamically reflect the selected skin color.
@@ -27,7 +34,7 @@ Improved the Open Search Window functionality:
 - Fixed an issue where switching from Cinema Mode to Classic FENtastic would leave the Cinema Mode home layout active.
 - Added a Cinema Mode setting to enable and select the default home section on startup.
 
-[B][COLOR accent_color]Version 100.0.34a[/COLOR][/B]
+[B][COLOR accent_color]Version 100.0.34[/COLOR][/B]
 - Refined the Estuary Look &amp; Feel main menu
 - Fixed an incorrect Top Bar Overlay timer reference that could cause repeated skin timer errors
 
@@ -463,28 +470,93 @@ Main changes from default Estuary include:
     </label>
 	</include>
 	<include name="SetupGuide">
-		<label>[B][COLOR accent_color]Welcome to the FENtastic Setup Guide[/COLOR][/B]
+		<label>[B][COLOR accent_color]Welcome to the FENtastic Plus Setup Guide[/COLOR][/B]
 
-FENtastic Plus is a skin specifically designed for TMDbH, Fen Light, Umbrella and POV users. It can display movie, tvshow, and episode widgets as well as submenu widgets. It can also set paths for main menu items (more on this later). Here in this guide I will show you how these work and how to set them up.
+FENtastic Plus lets you customize your home screen with main menu sections, widgets, submenus, and different Look &amp; Feel layouts. This guide will help you get started and explain the main setup options.
 
-On first install the home screen should be empty. This means that the Movie and Show sections should be missing from the main menu on the left.
+[B][COLOR accent_color]1. GETTING STARTED[/COLOR][/B]
 
-Now lets go set up the widgets.
-From this dialog screen click Back on your remote or Backspace if you are using a keyboard. Here you'll see a group of menu items on the left. Navigate up to Main menu items. Here is where we will set up the widgets. 
+On first install, you can choose your preferred FENtastic experience. You can change this later under Skin Settings &gt; Look &amp; Feel &gt; Choose Look &amp; Feel Preset.
 
-Click a menu item to toggle the display of a section on and off. This will show or hide the section on the home screen. Now toggle the Movie/Show section to 'on'. You'll see a couple of menu items drop down. They are set main menu path and set widgets.
+To configure your home screen, open Skin Settings and select Main Menu Items. You can build everything manually or start with a pre-configuration.
 
-[B][COLOR deeppink]- Set main menu path[/COLOR][/B] is for setting up the path when clicking on the Movie/Show section in the main menu on the left side of the home screen. You can set this to whatever you path you like within FEN. I like to set mine to my Trakt movie/tvshow collection.
+[B][COLOR accent_color]2. MAIN MENU ITEMS[/COLOR][/B]
 
-[B][COLOR deeppink]- Set widgets[/COLOR][/B] is for setting up the movie/tvshow widgets. These are the main widgets that you'll set up. You can configure up to 10 movie and 10 TV show widgets. After choosing a path you'll have the option to set the label and display type (Poster, Landscape, LandscapeInfo, and Category) for each widget. If you choose the Category display type, you'll have the option to set it up as a stacked widget. After that you can choose the display type for the stacked widget as well.
+Open Skin Settings &gt; Main Menu Items to manage the sections displayed on your home screen, including Movies, TV Shows, and custom sections.
 
-[B][COLOR deeppink]- Set main menu icons[/COLOR][/B] is for setting custom main menu icons. Main menu icons are disabled by default but can be enabled in Skin Settings/Options. Once enabled you can either use the default provided icons or browse and choose your own custom icon.
+[B][COLOR deeppink]- Enable or disable sections[/COLOR][/B]
+Toggle the sections you want to show on the home screen. Disabled sections are hidden without requiring you to delete their configuration.
 
-[B][COLOR accent_color]Stacked widgets[/COLOR][/B] contain a category widget and a normal widget beneath. The category widget "communicates" with the normal widget in order to load the new widget list according to the focused item in the category widget. If the stacked widget that you set up has 20 items in it, then that means you'll be able to have all 20 widgets available from just one widget on the home screen.
+[B][COLOR deeppink]- Set main menu path[/COLOR][/B]
+Choose what opens when you select a main menu item. For example, you can point Movies to your Trakt movie collection or a movie list in a supported video add-on. You can also use No Path for a section that only displays widgets.
 
-That's it! You're all set to go. Enjoy the skin!
+[B][COLOR deeppink]- Rename and reorder items[/COLOR][/B]
+Customize section labels and arrange the main menu items in your preferred order.
 
-If you would like to see a more detailed version of this Setup Guide, please visit my Github repo at https://github.com/ivarbrandt/skin.fentastic
-    </label>
+[B][COLOR deeppink]- Main menu icons[/COLOR][/B]
+Enable main menu icons in the skin settings, then use the supplied icons or select your own artwork.
+
+[B][COLOR accent_color]3. SETTING UP WIDGETS[/COLOR][/B]
+
+In Main Menu Items, select a section and choose Set Widgets. Browse to the content you want to display, such as Trending Movies, Next Episodes, or a Trakt list, and select its path.
+
+After selecting a path, configure the widget label and display type. Available layouts include Poster, Landscape, LandscapeInfo, larger artwork layouts, and Category. You can also manage existing widgets by changing their paths, labels, display types, or order.
+
+[B][COLOR deeppink]- Category and stacked widgets[/COLOR][/B]
+A Category widget displays a row of selectable categories. When configured as a stacked widget, focusing a category updates the content widget beneath it. This lets you browse multiple lists without filling the home screen with separate widget rows.
+
+[B][COLOR deeppink]- Widget appearance[/COLOR][/B]
+Use the widget-related skin settings to adjust limits, artwork, fanart, and other display options. You can also enable fullscreen widget browsing, which hides the main menu while widgets are focused.
+
+[B][COLOR accent_color]4. CREATING SUBMENUS[/COLOR][/B]
+
+FENtastic Plus supports custom submenus for main menu sections. In Skin Settings &gt; Main Menu Items, select the section you want to customize and open its submenu configuration.
+
+Add submenu entries, give each one a label, and choose the path or action it should open. For example, your Movies submenu could include Trending, Genres, Watchlist, and Collection. Arrange the entries to suit your browsing preferences.
+
+Submenus provide quick access to frequently used destinations without adding more sections to the main menu.
+
+[B][COLOR accent_color]5. PRE-CONFIGURATIONS[/COLOR][/B]
+
+If you prefer not to build everything from scratch, FENtastic Plus includes pre-configured menu and widget setups for supported video add-ons.
+
+Open the Tools menu and find the pre-configurations option. Select the setup you want to apply, then review your home screen and customize the resulting menu items and widgets as needed.
+
+[B]Tip:[/B] Back up your existing menu and widget configuration before applying a different setup so you can restore it if needed.
+
+[B][COLOR accent_color]6. LOOK &amp; FEEL OPTIONS[/COLOR][/B]
+
+Go to Skin Settings &gt; Look &amp; Feel &gt; Choose Look &amp; Feel Preset to select your preferred home screen layout.
+
+[B][COLOR deeppink]- Classic FENtastic[/COLOR][/B]
+A layout closer to the original FENtastic experience.
+
+[B][COLOR deeppink]- FENtastic Plus[/COLOR][/B]
+The expanded FENtastic experience with additional home screen customization.
+
+[B][COLOR deeppink]- FENtastic Hybrid[/COLOR][/B]
+An alternative layout combining elements of the available FENtastic styles.
+
+[B][COLOR deeppink]- Cinema Mode[/COLOR][/B]
+A fullscreen, widget-focused home layout with the standard main menu hidden. Cinema Mode also offers a setting to select which home section appears when Kodi starts.
+
+You can switch between Look &amp; Feel options at any time. Additional settings allow you to customize artwork, brightness, colours, and other visual details.
+
+[B][COLOR deeppink]- Estuary Mod[/COLOR][/B]
+An Estuary-style appearance for users who prefer a more traditional Kodi home screen.
+
+[B][COLOR accent_color]7. ADDITIONAL CUSTOMIZATION[/COLOR][/B]
+
+[B][COLOR deeppink]- Top Bar Menu[/COLOR][/B]
+Enable and configure shortcuts such as Search, Favourites, Add-on Browser, Tools, and custom actions.
+
+[B][COLOR deeppink]- Artwork and colours[/COLOR][/B]
+Choose backgrounds, adjust fanart brightness, and select colour presets to personalize the skin.
+
+[B][COLOR deeppink]- Backup and restore[/COLOR][/B]
+Use the Tools menu to back up and restore your menu, widgets, and other supported settings. You can also import and export configurations for use on another installation.
+
+[B][COLOR accent_color]YOU'RE ALL SET![/COLOR][/B]
+		</label>
 	</include>
 </includes>

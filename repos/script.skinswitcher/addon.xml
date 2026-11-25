@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.skinswitcher" 
+         name="Skin Switcher" 
+         version="1.0.3" 
+         provider-name="Surfacingx, OpenELEQ, Fire TV Guru, GKoBu">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <assets>
+            <icon>icon.png</icon>
+    </assets>
+    <summary lang="en">Choose your installed skin</summary>
+    <description lang="en">This utility will allow you to quickly switch between installed skins</description>
+    <disclaimer lang="en">You have to install the skins you want before using this script</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
+</addon>

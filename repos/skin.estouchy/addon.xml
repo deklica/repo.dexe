@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estouchy" version="4.0.1" name="Estouchy" provider-name="Team Kodi, [COLOR red]The Red Wizard[/COLOR]">
+<addon id="skin.estouchy" version="4.0.2" name="Estouchy" provider-name="Team Kodi, [COLOR red]The Red Wizard[/COLOR]">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 	</requires>
@@ -13,7 +13,7 @@
         <forum>https://t.me/+XiuBf9KvPfw2MzVk</forum>
         <website>https://redwizard.xyz/</website> 
         <source>https://github.com/The-Red-Wizard/TheRedWizard</source>
-        <news>Unofficial update by [COLOR red]The Red Wizard[/COLOR]</news>
+		<news>Game OSD (saves, players, video filter, stretch, rotation, volume), guide controls, Video Info resume/version/HDR, seek markers, buffering spinner, tap opens the OSD, system info lines, disabled slider texture</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
@@ -98,7 +98,7 @@
 		<description lang="eu_ES">Ukipen-pantaila duten gailuetan erabiltzeko diseinatutako azala</description>
 		<description lang="fi_FI">Ulkoasu, joka on suunniteltu käytettäväksi kosketusnäytöllisillä laitteilla, kuten tableteilla ja älypuhelimilla</description>
 		<description lang="fr_CA">Habillage conçu pour être utilisé sur les appareils à écran tactile comme les tablettes et les téléphones intelligents</description>
-		<description lang="fr_FR">[CR]Habillage conçu pour les appareils à écran tactile comme les tablettes et [CR]les téléphonesHabillage conçu pour les appareils à écran tactile comme les tablettes et les téléphones</description>
+		<description lang="fr_FR">Habillage conçu pour les appareils à écran tactile comme les tablettes et les téléphones</description>
 		<description lang="gl_ES">Pel deseñada para se empregar en dispositivos táctiles como tabletas e móbiles</description>
 		<description lang="he_IL">מעטפת מיועדת לשימוש בהתקני מסך מגע כגון טאבלט וסמארטפון</description>
 		<description lang="hr_HR">Presvlaka dizajnirana za korištenje na uređajima s dodirom na zaslon poput tableta i pametnih telefona</description>

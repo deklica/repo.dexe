@@ -17,10 +17,9 @@
 			</include>
 			<control type="panel" id="9000">
 				<include>ButtonMenuList_dialog</include>
-				<onback condition="String.IsEqual(Window(Home).Property(FENtastic.DirectDialog1106),true)">Dialog.Close(1106)</onback>
+				<onback>Dialog.Close(1106)</onback>
 				<onback condition="String.IsEqual(Window(Home).Property(FENtastic.DirectDialog1106),true)">ActivateWindow(1170)</onback>
 				<onback condition="String.IsEqual(Window(Home).Property(FENtastic.DirectDialog1106),true)">ClearProperty(FENtastic.DirectDialog1106,home)</onback>
-				<onback condition="!String.IsEqual(Window(Home).Property(FENtastic.DirectDialog1106),true)">Dialog.Close(1106)</onback>
 				<content>
 					<item>
 						<label>Account Manager</label>
@@ -41,16 +40,10 @@
 						<onclick>ActivateWindow(1120)</onclick>
 					</item>
 					<item>
-						<label>Custom Configs</label>
-						<visible>!Skin.HasSetting(ToolsNoCustomConfigs)</visible>
+						<label>Skin Presets</label>
+						<visible>!Skin.HasSetting(ToolsNoCustomConfigs) | !Skin.HasSetting(Enable.PreMadeConfigs)</visible>
 						<onclick>Dialog.Close(1106)</onclick>
 						<onclick>ActivateWindow(1126)</onclick>
-					</item>
-					<item>
-    						<label>Pre-Made Configs</label>
-    						<visible>[System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(plugin.video.fenlight) | System.HasAddon(plugin.video.umbrella) | System.HasAddon(plugin.video.pov) | System.HasAddon(plugin.video.gears) | System.HasAddon(plugin.video.redlight)] + !Skin.HasSetting(Enable.PreMadeConfigs)</visible>
-    						<onclick>Dialog.Close(1106)</onclick>
-    						<onclick>RunScript(script.fentastic.helper,mode=pre_config)</onclick>
 					</item>
 					<item>
 						<label>Backup &amp; Restore</label>

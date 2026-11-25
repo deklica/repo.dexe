@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.1.2" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.1.4" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
-        <import addon="script.gratisred.artwork" version="1.0.6"/>
+        <import addon="script.gratisred.artwork" version="1.0.7"/>
         <import addon="script.module.kodi-six"/>
         <import addon="script.module.requests"/>
         <import addon="script.module.resolveurl"/>
@@ -10,6 +10,7 @@
         <import addon="plugin.video.youtube" optional="true"/>
         <import addon="script.simkl" optional="true"/>
         <import addon="script.trakt" optional="true"/>
+        <import addon="script.wetrakr" optional="true"/>
         <import addon="service.mdblist-scrobbler" optional="true"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
@@ -26,14 +27,9 @@
 		<forum>https://t.me/+X-lt1ZDii3I3YjA0</forum>
 		<website>https://redwizard.xyz/</website> 
 		<source>https://github.com/The-Red-Wizard/TheRedWizard</source>
-        <news>2026-11-20
-[B]- Summary of v2.1.2 (see Tools > Changelog for the detail):[/B]
- * Vidnest uses the current player key. Alfa, Beta, Lamda, and Prime follow the paths the player uses now
- * HydraHD uses hydrahd.gd. The older names still redirect there
- * VidBolt uses the site resolve API first. HdHub uses the CineWave referer and a TMDb fallback
- * 2Embed uses vidsrc.buzz for movies and TV. Vidrock keeps Atlas and Astra. Jupiter and MovieUniverse are on
- * A new series is scraped as the older show of the same name when that episode's air date is still listed
- * Quality labels use the filename, API field, or hoster button when those already say 4K or 1080p</news>
+        <news>2026-11-24
+[B]- Summary of v2.1.4 (see Tools > Changelog for the detail):[/B]
+ * MDBList: a rewatch sends the time of this play, so history updates and the title leaves your watchlist</news>
         <assets>
             <icon>resources/images/icon.png</icon>
             <fanart>resources/images/fanart.jpg</fanart>

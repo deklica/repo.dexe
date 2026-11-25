@@ -6,6 +6,7 @@
 plugin.video.blacklodge
  resource.images.blacklodge.artwork
  resource.images.whitelodge.artwork
+plugin.video.cartoonio
 plugin.video.daddylive
 plugin.video.dltv
 plugin.video.dreammachine
@@ -214,6 +215,35 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
+<addon id="plugin.video.cartoonio"
+       name="Cartoonio"
+       version="1.0.64"
+       provider-name="Cartoonio">
+
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language>en</language>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary lang="en_GB">Watch cartoons from multiple public sources</summary>
+    <description lang="en_GB">Cartoonio lets you browse and watch cartoons from multiple public sources, including MegaCartoons, TopCartoons, SuperCartoons, ToonTales, B98.TV, and FunnierMoments. Explore Latest Cartoons, All Cartoons A-Z, series, and searchable episodes with provider source selection, pagination, TMDB posters, metadata, artwork, and episode screenshots.</description>
+    <disclaimer lang="en_GB">This addon scrapes publicly available content from MegaCartoons.net. Use at your own risk.</disclaimer>
+    <news></news>
+  </extension>
+
+</addon>
+
+
 <addon id="plugin.video.daddylive" name="Daddylive" version="5.2.10" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -418,9 +448,9 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.1.2" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.1.4" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
-        <import addon="script.gratisred.artwork" version="1.0.6"/>
+        <import addon="script.gratisred.artwork" version="1.0.7"/>
         <import addon="script.module.kodi-six"/>
         <import addon="script.module.requests"/>
         <import addon="script.module.resolveurl"/>
@@ -429,6 +459,7 @@ plugin.video.GreenKlikPremium
         <import addon="plugin.video.youtube" optional="true"/>
         <import addon="script.simkl" optional="true"/>
         <import addon="script.trakt" optional="true"/>
+        <import addon="script.wetrakr" optional="true"/>
         <import addon="service.mdblist-scrobbler" optional="true"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
@@ -445,7 +476,7 @@ plugin.video.GreenKlikPremium
 		<forum>https://t.me/+X-lt1ZDii3I3YjA0</forum>
 		<website>https://redwizard.xyz/</website> 
 		<source>https://github.com/The-Red-Wizard/TheRedWizard</source>
-        <news>[B]see Tools > Changelog for the detail[/B]</news>
+        <news>[B]see Tools > Changelog for the detail):[/B]</news>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
@@ -454,7 +485,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="script.gratisred.artwork" name="[COLOR red]Gratis Red Artwork[/COLOR]" version="1.0.6" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="script.gratisred.artwork" name="[COLOR red]Gratis Red Artwork[/COLOR]" version="1.0.7" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <extension point="xbmc.python.module" library="lib"/>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Gratis Red Artwork</summary>
@@ -659,7 +690,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" version="3.1.4" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" version="3.1.9" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -849,7 +880,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.vidcore" name="Vidcore" version="1.1.16" provider-name="Enigma">
+<addon id="plugin.video.vidcore" name="Vidcore" version="1.1.21" provider-name="Enigma">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="inputstream.adaptive" version="1.0.0" optional="true" />
@@ -2911,11 +2942,11 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.reauthorize" name="ReAuthorize" version="1.5.0" provider-name="Hermit Murman">
+<addon id="script.module.reauthorize" name="ReAuthorize" version="1.5.1" provider-name="Hermit Murman">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.19.1" />
-        <import addon="script.module.reauthorize-core" version="1.5.0" />
+        <import addon="script.module.reauthorize-core" version="1.5.1" />
     </requires>
     <extension point="xbmc.service" library="lib/startup.py" start="startup" />
     <extension point="xbmc.python.script" library="lib/default.py">
@@ -2940,7 +2971,7 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.reauthorize-core" name="ReAuthorize-Core" version="1.5.0" provider-name="Hermit Murman">
+<addon id="script.module.reauthorize-core" name="ReAuthorize-Core" version="1.5.1" provider-name="Hermit Murman">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -3473,10 +3504,10 @@ additional strptime modifications to fix scheduler behavior
 <!-- ====================================================================== -->
 
 
-<addon id="skin.fentastic" version="100.0.35b+mod" name="FENtastic Plus (mod)" provider-name="Ivar Brandt, Zaxxon709">
+<addon id="skin.fentastic" version="100.0.36+mod" name="FENtastic Plus (mod)" provider-name="Ivar Brandt, Zaxxon709">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.fentastic.helper" version="100.6.29b" />
+		<import addon="script.fentastic.helper" version="100.6.30" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -3514,7 +3545,7 @@ Various other small tweaks and refinements throughout.</news>
 </addon>
 
 
-<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.29b" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
+<addon id="script.fentastic.helper" name="FENtastic Plus Helper" version="100.6.30" provider-name="Tikipeter, Ivar Brandt, Zaxxon709">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
