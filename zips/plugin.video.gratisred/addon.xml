@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.1.4" provider-name="[COLOR red]The Red Wizard[/COLOR]">
+<addon id="plugin.video.gratisred" name="[COLOR red]Gratis Red[/COLOR]" version="2.1.6" provider-name="[COLOR red]The Red Wizard[/COLOR]">
     <requires>
         <import addon="script.gratisred.artwork" version="1.0.7"/>
         <import addon="script.module.kodi-six"/>
@@ -27,9 +27,9 @@
 		<forum>https://t.me/+X-lt1ZDii3I3YjA0</forum>
 		<website>https://redwizard.xyz/</website> 
 		<source>https://github.com/The-Red-Wizard/TheRedWizard</source>
-        <news>2026-11-24
-[B]- Summary of v2.1.4 (see Tools > Changelog for the detail):[/B]
- * MDBList: a rewatch sends the time of this play, so history updates and the title leaves your watchlist</news>
+        <news>2026-11-26
+[B]- Summary of v2.1.6 (see Tools > Changelog for the detail):[/B]
+ * Simkl: a season opened from a Simkl list shows that season's synopsis, genre, studio, and status, and a clear logo the skin can draw</news>
         <assets>
             <icon>resources/images/icon.png</icon>
             <fanart>resources/images/fanart.jpg</fanart>
