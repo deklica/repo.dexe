@@ -531,7 +531,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.imdb.trailers" name="IMDb Trailers" version="2.1.22" provider-name="gujal">
+<addon id="plugin.video.imdb.trailers" name="IMDb Trailers" version="2.1.23" provider-name="gujal">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.beautifulsoup4" version="4.0.0"/>
@@ -2814,7 +2814,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.6.6" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.6.8" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -3986,7 +3986,7 @@ PVR Client for EON which allows you to watch live TV channels and listen to radi
 </addon>
 
 
-<addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="6.7.6" provider-name="Taxigps, ronie">
+<addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="6.7.6.4" provider-name="Taxigps, ronie">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.beautifulsoup4" version="4.8.2+matrix.1"/>
